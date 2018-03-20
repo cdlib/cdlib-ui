@@ -1,0 +1,79 @@
+const del = require('del');
+const gulp = require('gulp');
+const postcss = require('gulp-postcss');
+const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
+const sassLint = require('gulp-sass-lint');
+const minifyCSS = require('gulp-clean-css');
+
+// Gulp Main Tasks:
+
+gulp.task('default', ['watch', 'fractal-start']);
+
+gulp.task('build', ['clean', 'sass-build', 'fractal-build']);
+
+gulp.task('deploy', ['build'], function() {
+  return gulp.src('./static/**/*')
+    .pipe(ghPages());
+});
+
+// Fractal to Gulp Integration:
+
+const fractal = require('./fractal.js');
+
+const logger = fractal.cli.console; // keep a reference to the fractal CLI console utility
+
+gulp.task('fractal-start', function(){
+  const server = fractal.web.server({
+    sync: true
+  });
+  server.on('error', err => logger.error(err.message));
+  return server.start().then(() => {
+    logger.success(`Fractal's BrowserSync is now running at the external network URL`);
+  });
+});
+
+gulp.task('fractal-build', function(){
+  const builder = fractal.web.builder();
+  builder.on('progress', (completed, total) => logger.update(`Exported ${completed} of ${total} items`, 'info'));
+  builder.on('error', err => logger.error(err.message));
+  return builder.build().then(() => {
+    logger.success('Fractal build completed');
+  });
+});
+
+// Gulp Tasks:
+
+gulp.task('clean', function() {
+  return del(['./dist', './static/css/sourcemaps']);
+})
+
+gulp.task('watch', function(){
+  gulp.watch('./scss/*.scss', ['sass-watch', 'scss-lint']);
+});
+
+gulp.task('sass-watch', function() {
+ return gulp.src('./scss/*.scss')
+  .pipe(sourcemaps.init())
+  .pipe(sass().on('error', sass.logError))
+  .pipe(postcss())
+  .pipe(sourcemaps.write('sourcemaps'))
+  .pipe(gulp.dest('./static/css'));
+});
+
+gulp.task('sass-build', function() {
+ return gulp.src('./scss/*.scss')
+  .pipe(sass().on('error', sass.logError))
+  .pipe(postcss())
+  .pipe(minifyCSS())
+  .pipe(gulp.dest('./static/css'));
+});
+
+gulp.task('scss-lint', function() {
+  return gulp.src('./scss/*.scss')
+    .pipe(sassLint({
+      configFile: 'sass-lint-config.yml'
+    }))
+    .pipe(sassLint.format())
+    .pipe(sassLint.failOnError())
+});
