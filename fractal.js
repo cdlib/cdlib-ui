@@ -5,7 +5,7 @@ const path = require('path');
 const fractal = module.exports = require('@frctl/fractal').create();
 
 // Fractal project title:
-fractal.set('project.title', 'Test Project');
+fractal.set('project.title', 'CDLIB UI Library');
 
 // Fractal components location:
 fractal.components.set('path', path.join(__dirname, 'elements'));
