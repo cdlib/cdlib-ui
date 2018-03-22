@@ -69,3 +69,15 @@ $test3: #080 solid 1px; // green
   }
 
 }
+
+// Unordered lists without space or bullets:
+
+%u-reset-list-styles {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+
+}

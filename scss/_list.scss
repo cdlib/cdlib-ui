@@ -1,0 +1,9 @@
+// ***** List Objects ***** //
+
+.o-list1 {
+  line-height: $line-height;
+}
+
+.o-list2 {
+  @extend %u-reset-list-styles;
+}
