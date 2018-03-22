@@ -6,6 +6,6 @@ module.exports = {
   default: '1',
   label: 'Headings',
   context: {
-    text: faker.lorem.sentence()
+    text: 'Astronomy, Indigenous Knowledge and Interpretation: Advancing studies of Cultural Astronomy in South Africa'
   }
 };
