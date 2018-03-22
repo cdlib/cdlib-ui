@@ -54,3 +54,18 @@ $test3: #080 solid 1px; // green
     @content;
   }
 }
+
+// Set an interactive element's minimum width and height:
+
+%u-interactive-element-size { 
+  // for mouse pointers:
+  min-width: $pointer-size-fine;
+  min-height: $pointer-size-fine;
+  
+  // for touch screens:
+  @media (any-pointer: coarse) {
+    min-width: $pointer-size-coarse;
+    min-height: $pointer-size-coarse;
+  }
+
+}
