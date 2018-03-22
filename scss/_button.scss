@@ -1,5 +1,29 @@
 // ***** Button Objects ***** //
 
-.button1 {
-  outline: $test1;
+%o-button {
+  @extend %u-interactive-element-size;
+}
+
+%o-button1 {
+  @extend %o-button;
+}
+
+.o-button1 {
+  @extend %o-button1;
+}
+
+%o-button2 {
+  @extend %o-button;
+}
+
+.o-button2 {
+  @extend %o-button2;
+}
+
+%o-button3 {
+  @extend %o-button;
+}
+
+.o-button3 {
+  @extend %o-button3;
 }
