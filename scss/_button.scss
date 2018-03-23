@@ -2,10 +2,15 @@
 
 %o-button {
   @extend %u-interactive-element-size;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 %o-button1 {
   @extend %o-button;
+  background-image: url('icons/search.svg');
 }
 
 .o-button1 {
@@ -14,6 +19,7 @@
 
 %o-button2 {
   @extend %o-button;
+  background-image: url('icons/times.svg');
 }
 
 .o-button2 {
@@ -22,8 +28,19 @@
 
 %o-button3 {
   @extend %o-button;
+  background-image: url('icons/bars.svg');
 }
 
 .o-button3 {
   @extend %o-button3;
+}
+
+%o-button4 {
+  @extend %o-button;
+  background-color: $color-dark-gray;
+  color: $color-white;
+}
+
+.o-button4 {
+  @extend %o-button4;
 }
