@@ -4,6 +4,8 @@ module.exports = {
   default: '1',
   label: 'Form Inputs',
   context: {
-    placeholder: 'placeholder text'
+    input1: {
+      placeholder: 'input 1 placeholder text'
+    }
   }
 };
