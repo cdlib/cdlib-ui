@@ -4,6 +4,7 @@ module.exports = {
   default: '1',
   label: 'Buttons',
   context: {
+    ariaLabel: 'label',
     text: 'Button'
   }
 };
