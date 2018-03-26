@@ -6,6 +6,17 @@ module.exports = {
   default: '1',
   label: 'Headings',
   context: {
-    text: 'Astronomy, Indigenous Knowledge and Interpretation: Advancing studies of Cultural Astronomy in South Africa'
+    heading1: {
+      text: 'Astronomy, Indigenous Knowledge and Interpretation: Advancing studies of Cultural Astronomy in South Africa'
+    },
+    heading2: {
+      text: 'Astronomy, Indigenous Knowledge and Interpretation: Advancing studies of Cultural Astronomy in South Africa'
+    },
+    heading3: {
+      text: 'Astronomy, Indigenous Knowledge and Interpretation: Advancing studies of Cultural Astronomy in South Africa'
+    },
+    heading4: {
+      text: 'Astronomy, Indigenous Knowledge and Interpretation: Advancing studies of Cultural Astronomy in South Africa'
+    }
   }
 };
