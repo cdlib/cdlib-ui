@@ -6,6 +6,14 @@ module.exports = {
   default: '1',
   label: 'Links',
   context: {
-    text: faker.lorem.words()
+    link1: {
+      text: 'standard link'
+    },
+    link2: {
+      text: 'external link'
+    },
+    link3: {
+      text: 'navigation link'
+    }
   }
 };
