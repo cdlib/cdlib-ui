@@ -88,3 +88,13 @@ $test3: #080 solid 1px; // green
   position: absolute;
   left: -9999px;
 }
+
+// Generate heading elements h1 through h6 in a single selector (https://trulycode.com/bytes/sass-function-loop-headings-h1h2h3h4h5h6/):
+
+@function u-heading($from: 1, $to: 6) {
+  @if $from == $to {
+    @return 'h#{$from}';
+  } @else {
+    @return 'h#{$from},' + u-heading($from + 1, $to);
+  }
+}

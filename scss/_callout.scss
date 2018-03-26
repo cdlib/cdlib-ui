@@ -9,7 +9,7 @@
     padding: $space2;
     background-color: $color-gray;
 
-    h3 {
+    #{u-heading()} {
       margin: 0;
     }
 
