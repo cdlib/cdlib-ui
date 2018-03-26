@@ -1,5 +1,39 @@
 // ***** Local Navigation Component ***** //
 
 .c-localnav {
-  outline: $test3;
+
+  ul {
+    @extend %u-reset-list-styles;
+
+    li {
+      
+      a {
+        @extend %u-interactive-element-size;
+        display: flex;
+        align-items: center;
+      }
+
+    }
+
+    // second level list:
+    ul {
+      padding-left: $space3;
+    }
+
+  }
+
+  a {
+    @extend %o-link2;
+  }
+
+}
+
+.c-localnav__header {
+  display: flex;
+  justify-content: space-between;
+
+  #{u-heading()} {
+    @extend %o-heading4;
+  }
+
 }

@@ -1,4 +1,22 @@
 
 <nav class="c-localnav">
-  [local nav component to go here]
+  <div class="c-localnav__header">
+    <h1>{{ localnav.headingText }}</h1>
+    <button>Close</button>
+  </div>
+  <ul>
+    <li><a href="">{{ localnav.linktext1 }}</a></li>
+    <li><a href="">{{ localnav.linktext2 }}</a></li>
+    <li><a href="">{{ localnav.linktext3 }}</a>
+      <ul>
+        <li><a href="">{{ localnav.linktext4 }}</a></li>
+        <li><a href="">{{ localnav.linktext5 }}</a></li>
+        <li><a href="">{{ localnav.linktext6 }}</a></li>
+        <li><a href="">{{ localnav.linktext7 }}</a></li>
+        <li><a href="">{{ localnav.linktext8 }}</a></li>
+      </ul>
+    </li>
+    <li><a href="">{{ localnav.linktext9 }}</a></li>
+    <li><a href="">{{ localnav.linktext10 }}</a></li>
+  </ul>
 </nav>
