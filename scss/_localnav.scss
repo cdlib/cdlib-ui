@@ -42,14 +42,10 @@
 }
 
 .c-localnav__header {
+  @include u-heading2($color-white);
   display: flex;
   justify-content: space-between;
   margin: (-$space2) (-$space2) 0;
   padding: $space2;
   background-color: $color-blue;
-
-  #{u-heading()} {
-    @extend %o-heading4;
-  }
-
 }
