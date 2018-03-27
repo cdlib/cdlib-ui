@@ -7,7 +7,12 @@
 
     li {
       
+      &:not(:last-child) {
+        border-bottom: 1px solid $color-gray;
+      }
+
       a {
+        @extend %o-link2;
         @extend %u-interactive-element-size;
         display: flex;
         align-items: center;
@@ -17,13 +22,19 @@
 
     // second level list:
     ul {
-      padding-left: $space3;
+      border-top: 1px solid $color-gray;
+
+      li {
+        padding-left: $space3;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+      }
+
     }
 
-  }
-
-  a {
-    @extend %o-link2;
   }
 
 }
