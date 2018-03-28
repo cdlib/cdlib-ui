@@ -35,7 +35,8 @@ const mandelbrot = require('@frctl/mandelbrot');
 
 // create a new instance with custom config options
 const CDLIBTheme = mandelbrot({
-    styles: ['default', '/css/fractal-customizations.css']
+  panels: ['notes', 'html', 'view', 'context', 'resources', 'info'],
+  styles: ['default', '/css/fractal-customizations.css']
 });
 
 // tell Fractal to use the configured theme by default
