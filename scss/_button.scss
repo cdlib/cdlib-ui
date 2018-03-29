@@ -2,10 +2,10 @@
 
 %o-button {
   @extend %u-interactive-element-size;
+  padding: $space1 $space2;
   border: none;
   background-color: transparent;
   background-repeat: no-repeat;
-  cursor: pointer;
 }
 
 %o-button1 {
@@ -43,4 +43,27 @@
 
 .o-button4 {
   @extend %o-button4;
+}
+
+%o-button5 {
+  @extend %o-button;
+  padding-right: 2.3em;
+  border: 1px solid $color-blue;
+  border-radius: $round-corner;
+  background: $color-blue url('icons/caret-up.svg' param(--color #{$color-white})) right $space2 center / 1em no-repeat;
+  color: $color-white;
+}
+
+.o-button5 {
+  @extend %o-button5;
+}
+
+%o-button6 {
+  @extend %o-button5;
+  background-image: url('icons/caret-down.svg' param(--color #{$color-white}));
+  color: $color-white;
+}
+
+.o-button6 {
+  @extend %o-button6;
 }
