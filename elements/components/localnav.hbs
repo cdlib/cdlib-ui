@@ -2,9 +2,10 @@
 <nav class="c-localnav">
   <div class="c-localnav__header">
     <h1 class="o-heading4">{{ localnav.headingText }}</h1>
-    <button class="o-button5">{{ localnav.closeButtonText }}</button>
+    <button class="o-button5" v-on:click="toggle1" v-if="!isDisplayed">{{ localnav.closeButtonText }}</button>
+    <button class="o-button6" v-on:click="toggle1" v-if="isDisplayed">{{ localnav.openButtonText }}</button>
   </div>
-  <ul>
+  <ul v-if="!isDisplayed">
     <li><a href="">{{ localnav.linktext1 }}</a></li>
     <li><a href="">{{ localnav.linktext2 }}</a></li>
     <li><a href="">{{ localnav.linktext3 }}</a>
