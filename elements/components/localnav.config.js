@@ -7,6 +7,8 @@ module.exports = {
   label: 'Local Nav',
   context: {
     localnav: {
+      closeButtonText: 'Close',
+      openButtonText: 'Open',
       headingText: 'Collection Development & Management',
       linktext1: 'Licensed Resources',
       linktext2: 'Shared Print',

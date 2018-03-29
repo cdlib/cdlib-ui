@@ -48,7 +48,7 @@
 %o-button5 {
   @extend %o-button;
   padding-right: 2.3em;
-  border: 1px solid $color-blue;
+  border: 2px solid $color-white;
   border-radius: $round-corner;
   background: $color-blue url('icons/caret-up.svg' param(--color #{$color-white})) right $space2 center / 1em no-repeat;
   color: $color-white;
