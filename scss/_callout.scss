@@ -9,7 +9,7 @@
     padding: $space2;
     background-color: $color-gray;
 
-    #{u-heading()} {
+    @include u-headings() {
       margin: 0;
     }
 
