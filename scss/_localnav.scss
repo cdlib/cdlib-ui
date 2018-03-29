@@ -43,12 +43,14 @@
 
 .c-localnav__header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin: (-$space2) (-$space2) 0;
   padding: $space2;
   background-color: $color-blue;
 
   @include u-headings() {
+    margin: 0;
 
     a {
       color: $color-white;
