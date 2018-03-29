@@ -49,7 +49,11 @@
   background-color: $color-blue;
 
   @include u-headings() {
-    color: $color-white;
+
+    a {
+      color: $color-white;
+    }
+
   }
 
 }
