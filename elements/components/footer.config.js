@@ -43,6 +43,9 @@ module.exports = {
     listItem1: linkData1,
     listItem2: linkData2,
     listItem3: linkData3,
-    listItem4: linkData4
+    listItem4: linkData4,
+    heading: {
+      text: 'Heading'
+    }
   }
 };
