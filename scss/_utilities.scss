@@ -98,3 +98,16 @@ $test3: #080 solid 1px; // green
     }
   }
 }
+
+// Bleed component to left/right of viewport by equalling <body> left/right padding:
+
+%u-page-bleed {
+  margin-left: (-$space1);
+  margin-right: (-$space1);
+
+  @include screen2 {
+    margin-left: (-$space2);
+    margin-right: (-$space2);
+  }
+
+}
