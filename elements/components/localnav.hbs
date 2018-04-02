@@ -1,9 +1,7 @@
 
 <nav class="c-localnav">
   <div class="c-localnav__header">
-    <h1 class="o-heading4">
-      <a class="o-link2" href="">{{ localnav.headingText }}</a>
-    </h1>
+    {{> @heading--8 }}
     <button class="o-button5" v-on:click="toggle1" v-if="!isDisplayed">{{ localnav.closeButtonText }}</button>
     <button class="o-button6" v-on:click="toggle1" v-if="isDisplayed">{{ localnav.openButtonText }}</button>
   </div>

@@ -9,7 +9,6 @@ module.exports = {
     localnav: {
       closeButtonText: 'Close',
       openButtonText: 'Open',
-      headingText: 'Collection Development & Management',
       linktext1: 'Licensed Resources',
       linktext2: 'Shared Print',
       linktext3: 'Mass Digitization',
@@ -19,7 +18,10 @@ module.exports = {
       linktext7: 'Library Reprints',
       linktext8: 'Story of the Digital Book',
       linktext9: 'Shared Cataloging',
-      linktext10: 'Staff Contacts'
+      linktext10: 'Staff Contacts',
+    },
+    link2: {
+      text: 'Collection Development & Management'
     }
   }
 };
