@@ -6,7 +6,7 @@ module.exports = {
   default: '1',
   label: 'Callout Box',
   context: {
-    heading3: {
+    heading: {
       text: 'Callout Box Heading'
     },
     text: faker.lorem.paragraph()

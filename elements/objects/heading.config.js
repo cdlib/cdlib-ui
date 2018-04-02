@@ -6,16 +6,10 @@ module.exports = {
   default: '1',
   label: 'Headings',
   context: {
-    heading1: {
+    heading: {
       text: 'Astronomy, Indigenous Knowledge and Interpretation: Advancing studies of Cultural Astronomy in South Africa'
     },
-    heading2: {
-      text: 'Astronomy, Indigenous Knowledge and Interpretation: Advancing studies of Cultural Astronomy in South Africa'
-    },
-    heading3: {
-      text: 'Astronomy, Indigenous Knowledge and Interpretation: Advancing studies of Cultural Astronomy in South Africa'
-    },
-    heading4: {
+    link2: {
       text: 'Astronomy, Indigenous Knowledge and Interpretation: Advancing studies of Cultural Astronomy in South Africa'
     }
   }
