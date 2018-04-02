@@ -1,5 +1,28 @@
 // ***** Global Footer Component ***** //
 
 .c-footer {
-  outline: $test3;
+  @extend %u-page-bleed;
+  padding: $space1 $space1 0;
+  border-top: 1px solid $color-gray;
+
+  section {
+    margin-bottom: $space2;
+
+    @include u-headings() {
+      margin: 0;
+    }
+
+    ul {
+      @extend %u-reset-list-styles;
+
+      a {
+        @extend %u-interactive-element-size;
+        display: flex;
+        align-items: center;
+      }
+
+    }
+
+  }
+
 }
