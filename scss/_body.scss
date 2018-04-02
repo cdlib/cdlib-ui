@@ -1,0 +1,11 @@
+// ***** Body ***** //
+
+body {
+  margin: 0 auto;
+  padding: $space1 $space1 0;
+
+  @include screen1 {
+    padding: $space1 $space2 0;
+  }
+
+}
