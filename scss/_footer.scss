@@ -12,7 +12,6 @@
   }
 
   section {
-    margin-bottom: $space2;
 
     @include u-headings() {
       margin: 0;
@@ -29,13 +28,13 @@
 
     ul {
       @extend %u-reset-list-styles;
+    }
 
-      a {
-        @extend %u-interactive-element-size;
-        display: flex;
-        align-items: center;
-      }
-
+    a {
+      @extend %u-interactive-element-size;
+      display: flex;
+      align-items: center;
+      padding: $space1 0;
     }
 
   }
