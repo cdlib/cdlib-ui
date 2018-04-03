@@ -2,12 +2,12 @@
 
 body {
   margin: 0 auto;
-  padding-left: $space1;
   padding-right: $space1;
+  padding-left: $space1;
 
   @include screen1 {
-    padding-left: $space2;
     padding-right: $space2;
+    padding-left: $space2;
   }
 
 }
