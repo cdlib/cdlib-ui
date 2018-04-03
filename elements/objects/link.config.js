@@ -6,18 +6,35 @@ module.exports = {
   default: '1',
   label: 'Links',
   context: {
-    link1: {
-      text: 'standard link'
+    link: {
+      text: 'standard link',
+      linebreak: true
+    }
+  },
+  variants: [
+    {
+      name: '2', // link--2.hbs
+      context: {
+        link: {
+          text: 'underlined standard link on focus/hover'
+        }
+      }
     },
-    link2: {
-      text: 'underlined standard link on focus/hover'
+    {
+      name: '3', // link--3.hbs
+      context: {
+        link: {
+          text: 'external link'
+        }
+      }
     },
-    link3: {
-      text: 'external link'
-    },
-    link4: {
-      text: 'underlined external link on focus/hover'
-    },
-    linebreak: true
-  }
+    {
+      name: '4', // link--4.hbs
+      context: {
+        link: {
+          text: 'underlined external link on focus/hover'
+        }
+      }
+    }
+  ]
 };

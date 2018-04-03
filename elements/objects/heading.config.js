@@ -10,7 +10,7 @@ module.exports = {
       level: '1',
       text: 'Astronomy, Indigenous Knowledge and Interpretation: Advancing studies of Cultural Astronomy in South Africa'
     },
-    link2: {
+    link: {
       text: 'Astronomy, Indigenous Knowledge and Interpretation: Advancing studies of Cultural Astronomy in South Africa'
     }
   }

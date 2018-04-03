@@ -6,7 +6,7 @@ const linkData4 = [];
 
 for (var i = 0; i < 3; i++) {
   linkData1.push({
-    link2: {
+    link: {
       text: faker.lorem.words()
     }
   });
@@ -14,7 +14,7 @@ for (var i = 0; i < 3; i++) {
 
 for (var i = 0; i < 5; i++) {
   linkData2.push({
-    link2: {
+    link: {
       text: faker.lorem.words()
     }
   });
@@ -22,7 +22,7 @@ for (var i = 0; i < 5; i++) {
 
 for (var i = 0; i < 3; i++) {
   linkData3.push({
-    link2: {
+    link: {
       text: faker.lorem.words()
     }
   });
@@ -30,7 +30,7 @@ for (var i = 0; i < 3; i++) {
 
 for (var i = 0; i < 3; i++) {
   linkData4.push({
-    link2: {
+    link: {
       text: faker.lorem.words()
     }
   });
@@ -47,7 +47,7 @@ module.exports = {
     heading: {
       level: '1'
     },
-    link2: {
+    link: {
       text: 'Heading'
     }
   }
