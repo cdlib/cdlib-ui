@@ -17,6 +17,7 @@ module.exports = {
     },
     link4: {
       text: 'underlined external link on focus/hover'
-    }
+    },
+    linebreak: true
   }
 };
