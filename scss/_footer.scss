@@ -26,3 +26,14 @@
   }
 
 }
+
+.c-footer__copyright {
+  display: flex;
+  align-items: center;
+
+  img {
+    flex: 0 0 auto;
+    margin-right: $space2;
+  }
+
+}
