@@ -13,6 +13,14 @@
       color: $color-blue;
     }
 
+    &:first-child {
+
+      a {
+        font-weight: bold;
+      }
+
+    }
+
     ul {
       @extend %u-reset-list-styles;
 
