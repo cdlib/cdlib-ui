@@ -20,6 +20,9 @@ module.exports = {
       linktext9: 'Shared Cataloging',
       linktext10: 'Staff Contacts',
     },
+    heading: {
+      level: '1',
+    },
     link2: {
       text: 'Collection Development & Management'
     }
