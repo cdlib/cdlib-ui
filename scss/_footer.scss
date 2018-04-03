@@ -5,6 +5,12 @@
   padding: $space1 $space1 0;
   border-top: 1px solid $color-gray;
 
+  @include screen1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: $space2;
+  }
+
   section {
     margin-bottom: $space2;
 
@@ -39,6 +45,7 @@
 .c-footer__copyright {
   display: flex;
   align-items: center;
+  grid-column: 1 / 5;
 
   img {
     flex: 0 0 auto;
