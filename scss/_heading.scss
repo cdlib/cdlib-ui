@@ -12,7 +12,6 @@
 
 %o-heading1 {
   @extend %o-heading;
-  color: $color-blue;
   font-size: 2.1em;
   font-weight: normal;
 }
@@ -23,7 +22,6 @@
 
 %o-heading2 {
   @extend %o-heading;
-  color: $color-red;
   font-size: 1.5em;
 }
 
@@ -33,7 +31,6 @@
 
 %o-heading3 {
   @extend %o-heading;
-  color: $color-red;
   font-size: 1.2em;
 }
 
@@ -43,7 +40,6 @@
 
 %o-heading4 {
   @extend %o-heading;
-  color: $color-red;
   font-size: 1em;
 }
 
