@@ -1,10 +1,11 @@
 const del = require('del');
 const gulp = require('gulp');
+const minifyCSS = require('gulp-clean-css');
 const postcss = require('gulp-postcss');
 const sass = require('gulp-sass');
-const sourcemaps = require('gulp-sourcemaps');
 const sassLint = require('gulp-sass-lint');
-const minifyCSS = require('gulp-clean-css');
+const sftp = require('gulp-sftp');
+const sourcemaps = require('gulp-sourcemaps');
 
 // Gulp Main Tasks:
 
@@ -12,10 +13,7 @@ gulp.task('default', ['watch', 'fractal-start']);
 
 gulp.task('build', ['clean', 'sass-build', 'fractal-build']);
 
-gulp.task('deploy', ['build'], function() {
-  return gulp.src('./static/**/*')
-    .pipe(ghPages());
-});
+gulp.task('deploy', ['upload']);
 
 // Fractal to Gulp Integration:
 
@@ -76,4 +74,14 @@ gulp.task('scss-lint', function() {
     }))
     .pipe(sassLint.format())
     .pipe(sassLint.failOnError())
+});
+
+gulp.task('upload', function () {
+  return gulp.src('dist/**')
+    .pipe(sftp({
+      host: 'webprod.cdlib.org',
+      remotePath: '/apps/webprod/apache/htdocs/cdlib/cdlib-ui',
+      authFile: 'gulp-sftp-key.json', // important: .gitignore this file
+      auth: 'keyMain'
+    }));
 });
