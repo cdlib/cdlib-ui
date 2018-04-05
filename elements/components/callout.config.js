@@ -1,8 +1,15 @@
-
 const faker = require('faker/locale/en');
+const paraData = [];
+
+for (var i = 0; i < 3; i++) {
+  paraData.push({
+    callout: {
+      text: faker.lorem.paragraph()
+    }
+  });
+}
 
 module.exports = {
-  collated: true,
   default: '1',
   label: 'Callout Box',
   context: {
@@ -10,6 +17,6 @@ module.exports = {
       level: '1',
       text: 'Callout Box Heading'
     },
-    text: faker.lorem.paragraph()
+    paragraph: paraData
   }
 };
