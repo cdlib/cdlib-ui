@@ -2,6 +2,7 @@
 const faker = require('faker/locale/en');
 
 module.exports = {
+  hidden: true,
   collated: true,
   default: '1',
   label: 'Lists',
