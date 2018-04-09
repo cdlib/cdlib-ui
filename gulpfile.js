@@ -2,6 +2,7 @@ const del = require('del');
 const gulp = require('gulp');
 const minifyCSS = require('gulp-clean-css');
 const postcss = require('gulp-postcss');
+const runSequence = require('run-sequence');
 const sass = require('gulp-sass');
 const sassLint = require('gulp-sass-lint');
 const sftp = require('gulp-sftp');
@@ -9,11 +10,17 @@ const sourcemaps = require('gulp-sourcemaps');
 
 // Gulp Main Tasks:
 
-gulp.task('default', ['watch', 'fractal-start']);
+gulp.task('default', function(callback) {
+  runSequence('watch', 'fractal-start', callback);
+});
 
-gulp.task('build', ['clean', 'sass-build', 'fractal-build']);
+gulp.task('build', function(callback) {
+  runSequence('clean', 'sass-build', 'fractal-build', callback);
+});
 
-gulp.task('deploy', ['upload']);
+gulp.task('deploy', function(callback) {
+  runSequence('build', 'upload', callback);
+});
 
 // Fractal to Gulp Integration:
 
