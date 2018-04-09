@@ -3,6 +3,10 @@ const paraData = [];
 
 for (var i = 0; i < 3; i++) {
   paraData.push({
+    heading: {
+      level: '2',
+      text: 'Sub Heading'
+    },
     box: {
       text: faker.lorem.paragraph()
     }
@@ -10,6 +14,7 @@ for (var i = 0; i < 3; i++) {
 }
 
 module.exports = {
+  collated: true,
   default: '1',
   label: 'Box',
   context: {
