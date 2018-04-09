@@ -1,0 +1,29 @@
+<table class="c-staff">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Title</th>
+      <th>Contact</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each row}}
+    <tr>
+      <th scope="row">{{ lastname.text }}, {{ firstname.text }}</th>
+      <td>{{ position.text }}</td>
+      <td>
+        <div class="c-staff__links">
+          <a href="">
+            <img src="{{ path '/images/envelope.svg' }}" alt="envelope" title="Contact information">
+          </a>
+          {{#if profile.isActive}}
+          <a href="">
+            <img src="{{ path '/images/user-circle.svg' }}" alt="avatar" title="View profile">
+          </a>
+          {{/if}}
+        </div>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
