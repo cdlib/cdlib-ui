@@ -2,7 +2,7 @@
 
 .c-box {
   margin-bottom: $space2;
-  padding: $space2;
+  padding: $space2 $space2 0;
   border: 1px solid $color-gray;
 
   header {
@@ -17,13 +17,12 @@
 
   }
 
-  p {
-    margin-top: $space2;
-    margin-bottom: 0;
+  @include u-headings() {
+    color: $color-blue;
 
-    &:not(:last-of-type) {
-      padding-bottom: $space2;
-      border-bottom: 1px solid $color-gray;
+    &:not(:first-of-type) {
+      padding-top: $space2;
+      border-top: 1px solid $color-gray;
     }
 
   }
