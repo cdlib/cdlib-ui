@@ -3,7 +3,7 @@ const paraData = [];
 
 for (var i = 0; i < 3; i++) {
   paraData.push({
-    callout: {
+    box: {
       text: faker.lorem.paragraph()
     }
   });
@@ -11,11 +11,11 @@ for (var i = 0; i < 3; i++) {
 
 module.exports = {
   default: '1',
-  label: 'Callout Box',
+  label: 'Box',
   context: {
     heading: {
       level: '1',
-      text: 'Callout Box Heading'
+      text: 'Box Heading'
     },
     paragraph: paraData
   }

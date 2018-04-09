@@ -1,6 +1,6 @@
-// ***** Callout Component ***** //
+// ***** Box Component ***** //
 
-.c-callout {
+.c-box {
   padding: $space2;
   border: 1px solid $color-gray;
 
@@ -11,6 +11,7 @@
 
     @include u-headings() {
       margin: 0;
+      color: $color-red;
     }
 
   }
