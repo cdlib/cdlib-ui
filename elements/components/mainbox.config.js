@@ -4,7 +4,9 @@ const paraData = [];
 for (var i = 0; i < 3; i++) {
   paraData.push({
     heading: {
-      level: '2',
+      level: '2'
+    },
+    link: {
       text: 'Sub Heading'
     },
     mainbox: {
