@@ -7,7 +7,7 @@ for (var i = 0; i < 3; i++) {
       level: '2',
       text: 'Sub Heading'
     },
-    box: {
+    mainbox: {
       text: faker.lorem.paragraph()
     }
   });
@@ -16,11 +16,11 @@ for (var i = 0; i < 3; i++) {
 module.exports = {
   collated: true,
   default: '1',
-  label: 'Box',
+  label: 'Main Box',
   context: {
     heading: {
       level: '1',
-      text: 'Box Heading'
+      text: 'Main Box Heading'
     },
     paragraph: paraData
   }
