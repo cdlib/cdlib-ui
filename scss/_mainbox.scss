@@ -8,7 +8,7 @@
   header {
     margin: (-$space2) (-$space2) $space2;
     padding: $space2;
-    background-color: $color-gray;
+    background-color: $color-light-gray;
 
     @include u-headings() {
       margin: 0;
