@@ -1,0 +1,11 @@
+// ***** Columns Component ***** //
+
+.c-columns {
+  
+  @include screen2 {
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-column-gap: $space3;
+  }
+
+}
