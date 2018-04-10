@@ -7,7 +7,7 @@ module.exports = {
   label: 'Links',
   context: {
     link: {
-      text: 'standard link',
+      text: 'link style 1, unlinked on focus/hover',
       linebreak: true
     }
   },
@@ -16,7 +16,7 @@ module.exports = {
       name: '2', // link--2.hbs
       context: {
         link: {
-          text: 'underlined standard link on focus/hover'
+          text: 'link style 1, linked on focus/hover'
         }
       }
     },
@@ -24,7 +24,7 @@ module.exports = {
       name: '3', // link--3.hbs
       context: {
         link: {
-          text: 'external link'
+          text: 'external link style 1, linked on focus/hover'
         }
       }
     },
@@ -32,7 +32,7 @@ module.exports = {
       name: '4', // link--4.hbs
       context: {
         link: {
-          text: 'underlined external link on focus/hover'
+          text: 'external link style 1, unlinked on focus/hover'
         }
       }
     }
