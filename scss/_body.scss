@@ -4,6 +4,7 @@ body {
   margin: 0 auto;
   padding-right: $space1;
   padding-left: $space1;
+  font-family: 'source-sans', sans-serif;
 
   @include screen1 {
     padding-right: $space2;

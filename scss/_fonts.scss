@@ -1,0 +1,9 @@
+// ***** Custom Fonts ***** //
+
+@font-face {
+  font-family: 'source-sans';
+  src:
+    url('../fonts/SourceSansPro-Regular.ttf.woff2') format('woff2'),
+    url('../fonts/SourceSansPro-Regular.ttf.woff') format('woff');
+  font-display: swap;
+}
