@@ -37,6 +37,14 @@ module.exports = {
           url: 'http://www.cdlib.org'
         }
       }
+    },
+    {
+      name: '5', // link--5.hbs
+      context: {
+        link: {
+          text: 'Light black, underlined on focus/hover'
+        }
+      }
     }
   ]
 };

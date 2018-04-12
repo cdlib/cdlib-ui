@@ -39,3 +39,18 @@
 .o-link2 {
   @extend %o-link2;
 }
+
+%o-link3 {
+  color: $color-light-black;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+
+}
+
+.o-link3 {
+  @extend %o-link3;
+}
