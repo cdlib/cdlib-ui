@@ -1,11 +1,18 @@
 // ***** Link Objects ***** //
 
-%o-link1 {
+%o-link__external {
   color: $color-blue;
+
+  &[href^='http://'],
+  &[href^='www.'] {
+    padding-right: 1.3em;
+    background: url('icons/external-link-alt.svg' param(--color #{$color-gold})) right center / 1em no-repeat;
+  }
+
 }
 
-.o-link1 {
-  @extend %o-link1;
+%o-link1 {
+  @extend %o-link__external;
 
   &:focus,
   &:hover {
@@ -14,8 +21,12 @@
 
 }
 
+.o-link1 {
+  @extend %o-link1;
+}
+
 %o-link2 {
-  color: $color-blue;
+  @extend %o-link__external;
   text-decoration: none;
 
   &:focus,
@@ -27,45 +38,4 @@
 
 .o-link2 {
   @extend %o-link2;
-}
-
-%o-link3 {
-  color: $color-blue;
-
-  &:focus,
-  &:hover {
-    text-decoration: none;
-  }
-
-  &[href^='http://'],
-  &[href^='www.'] {
-    padding-right: 1.3em;
-    background: url('icons/external-link-alt.svg' param(--color #{$color-gold})) right center / 1em no-repeat;
-  }
-
-}
-
-.o-link3 {
-  @extend %o-link3;
-}
-
-%o-link4 {
-  color: $color-blue;
-  text-decoration: none;
-
-  &:focus,
-  &:hover {
-    text-decoration: underline;
-  }
-
-  &[href^='http://'],
-  &[href^='www.'] {
-    padding-right: 1.3em;
-    background: url('icons/external-link-alt.svg' param(--color #{$color-gold})) right center / 1em no-repeat;
-  }
-
-}
-
-.o-link4 {
-  @extend %o-link4;
 }
