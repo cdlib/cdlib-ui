@@ -23,6 +23,7 @@ module.exports = {
     heading: {
       level: '1',
     },
+    link2: true,
     link: {
       text: 'Collection Development & Management'
     }

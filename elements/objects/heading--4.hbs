@@ -1,3 +1,11 @@
-<h{{ heading.level }} class="o-heading2">
-  {{> @link--1 }}
+<h{{ heading.level }} class="o-heading4">
+  {{#if link1}}
+    {{> @link--1 }}
+  {{/if}}
+  {{#if link2}}
+    {{> @link--2 }}
+  {{/if}}
+  {{#if heading.text }}
+    {{ heading.text }}
+  {{/if}}
 </h{{ heading.level }}>

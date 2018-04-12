@@ -10,8 +10,11 @@ module.exports = {
       level: '1',
       text: 'Astronomy, Indigenous Knowledge and Interpretation: Advancing studies of Cultural Astronomy in South Africa'
     },
+    // Linked headings using Link objects:
+    link1: false,
+    link2: false,
     link: {
-      text: 'Astronomy, Indigenous Knowledge and Interpretation: Advancing studies of Cultural Astronomy in South Africa'
+      text: 'Linked heading text'
     }
-  }
+  },
 };

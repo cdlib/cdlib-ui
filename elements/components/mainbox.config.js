@@ -6,8 +6,9 @@ for (var i = 0; i < 3; i++) {
     heading: {
       level: '2'
     },
+    link1: true,
     link: {
-      text: 'Sub Heading'
+      text: faker.commerce.productName()
     },
     mainbox: {
       text: faker.lorem.paragraph()
