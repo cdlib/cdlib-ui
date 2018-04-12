@@ -4,6 +4,7 @@ const minifyCSS = require('gulp-clean-css');
 const postcss = require('gulp-postcss');
 const runSequence = require('run-sequence');
 const sass = require('gulp-sass');
+const sassJson = require('gulp-sass-json');
 const sassLint = require('gulp-sass-lint');
 const sftp = require('gulp-sftp');
 const sourcemaps = require('gulp-sourcemaps');
@@ -55,6 +56,7 @@ gulp.task('clean', function() {
 
 gulp.task('watch', function(){
   gulp.watch('./scss/*.scss', ['sass-watch', 'scss-lint']);
+  gulp.watch('./scss/_breakpoints.scss', ['sass-to-json']);
 });
 
 gulp.task('sass-watch', function() {
@@ -72,6 +74,12 @@ gulp.task('sass-build', function() {
   .pipe(postcss())
   .pipe(minifyCSS())
   .pipe(gulp.dest('./static/css'));
+});
+
+gulp.task('sass-to-json', function () {
+  return gulp.src('./scss/_breakpoints.scss')
+    .pipe(sassJson())
+    .pipe(gulp.dest('./static/js')); // breakpoints.json
 });
 
 gulp.task('scss-lint', function() {
