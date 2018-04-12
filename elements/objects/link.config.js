@@ -24,7 +24,8 @@ module.exports = {
       name: '3', // link--3.hbs
       context: {
         link: {
-          text: 'Blue, underlined by default (external link)'
+          text: 'Blue, underlined by default (external link)',
+          url: 'http://www.cdlib.org'
         }
       }
     },
@@ -32,7 +33,8 @@ module.exports = {
       name: '4', // link--4.hbs
       context: {
         link: {
-          text: 'Blue, underlined on focus/hover (external link)'
+          text: 'Blue, underlined on focus/hover (external link)',
+          url: 'http://www.cdlib.org'
         }
       }
     }
