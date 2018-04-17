@@ -18,10 +18,15 @@
   ul {
     @extend %u-reset-list-styles;
 
-    a {
-      @extend %u-interactive-element-size;
-      display: inline-flex;
-      align-items: center;
+    li {
+      margin: $space2 0;
+
+      a {
+        @extend %u-interactive-element-size;
+        display: inline-flex;
+        align-items: center;
+      }
+
     }
 
   }
