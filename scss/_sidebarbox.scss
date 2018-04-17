@@ -15,4 +15,15 @@
 
   }
 
+  ul {
+    @extend %u-reset-list-styles;
+
+    a {
+      @extend %u-interactive-element-size;
+      display: inline-flex;
+      align-items: center;
+    }
+
+  }
+
 }
