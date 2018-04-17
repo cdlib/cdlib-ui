@@ -43,7 +43,7 @@
 
 .c-localnav__header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   margin: (-$space2) (-$space2) 0;
   padding: $space2;
