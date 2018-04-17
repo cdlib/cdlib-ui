@@ -1,0 +1,14 @@
+// ***** News Component ***** //
+
+.c-news {
+  
+  header {
+    background: url('icons/rss.svg' param(--color #{$color-gold})) top right / 1em no-repeat;
+
+    @include u-headings {
+      padding-right: $space4;
+    }
+
+  }
+
+}
