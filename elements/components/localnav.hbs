@@ -1,8 +1,10 @@
-<nav class="c-localnav">
+<nav class="c-localnav" v-onmedia.screen1="detectMediaQuery">
   <div class="c-localnav__header">
     {{> @heading--4 }}
-    <button class="o-button5" v-on:click="toggle1" v-if="!isDisplayed">{{ localnav.closeButtonText }}</button>
-    <button class="o-button6" v-on:click="toggle1" v-if="isDisplayed">{{ localnav.openButtonText }}</button>
+    <template v-if="!$mq.screen1">
+      <button class="o-button5" v-on:click="toggle1" v-if="!isDisplayed">{{ localnav.closeButtonText }}</button>
+      <button class="o-button6" v-on:click="toggle1" v-if="isDisplayed">{{ localnav.openButtonText }}</button>
+    </template>
   </div>
   <ul v-if="!isDisplayed">
     <li><a href="">{{ localnav.linktext1 }}</a></li>
