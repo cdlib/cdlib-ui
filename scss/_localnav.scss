@@ -58,4 +58,9 @@
 
   }
 
+  button {
+    flex-shrink: 0;
+    margin-left: $space2;
+  }
+
 }
