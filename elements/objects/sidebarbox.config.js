@@ -1,10 +1,14 @@
 const faker = require('faker/locale/en');
 const fakerData = [];
 
+function removePeriod(string) {
+  return string.replace('.', '');
+}
+
 for (var i = 0; i < 5; i++) {
   fakerData.push({
     link: {
-      text: faker.lorem.words(),
+      text: removePeriod(faker.lorem.sentence()),
       url: faker.internet.url()
     }
   });
