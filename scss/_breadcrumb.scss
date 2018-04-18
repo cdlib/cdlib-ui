@@ -1,0 +1,28 @@
+// ***** Breadcrumb Component ***** //
+
+.c-breadcrumb {
+  margin-bottom: $space2;
+
+  ul {
+    @extend %u-reset-list-styles;
+  }
+
+  li {
+    display: inline-block;
+    margin-bottom: $space1;
+    font-size: 0.9em;
+
+    &:not(:last-child) {
+
+      &::after {
+        margin-left: 0.5em;
+        padding-left: 1em;
+        background: url('icons/angle-right.svg' param(--color #{$color-blue})) no-repeat center / contain;
+        content: '';
+      }
+
+    }
+
+  }
+
+}
