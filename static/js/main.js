@@ -3,7 +3,9 @@
 new Vue({
   el: '#app',
   data: {
-    isDisplayed: false
+    isDisplayed: false,
+    isOpen1: false,
+    isOpen2: false
   },
   methods: {
     toggle1: function(){
@@ -12,7 +14,24 @@ new Vue({
     detectMediaQuery: function(alias, matches) {
       if (matches)
         this.isDisplayed = false
-    }
+    },
+    headerToggle1: function(){
+      this.isOpen1 = true
+    },
+    headerToggle2: function(){
+      this.isOpen1 = false
+    },
+    headerToggle3: function(){
+      this.isOpen2 = !this.isOpen2
+    },
+    detectMediaQuery2: function(alias, matches) {
+      if (matches)
+        this.isOpen1 = true,
+        this.isOpen2 = true
+      else
+        this.isOpen1 = false,
+        this.isOpen2 = false
+    },
   },
   mq: {
     screen1: '(min-width: 480px)',

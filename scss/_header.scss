@@ -1,26 +1,77 @@
 // ***** Global Header Component ***** //
 
 .c-header {
-  // no styles yet
+  display: grid;
+  align-items: start;
+  overflow: hidden; // for transforms below
 }
 
 .c-header__logo {
-  width: 100px;
+  display: inline-block;
+  margin-bottom: $space1;
+  grid-column: 1;
+  grid-row: 1;
 
-  @include screen1 {
-    width: 200px;
+  img {
+    display: block;
+    height: 32px;
+
+    @include screen1 {
+      height: 70px;
+    }
+
+  }
+
+}
+
+.c-header__controls {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: end;
+
+  button {
+
+    &:first-child {
+      margin-right: $space1;
+    }
+
   }
 
 }
 
 .c-header__search {
   display: flex;
+  background-color: $color-white;
+  grid-column: 1;
+  grid-row: 1;
+
+  > button {
+    margin-left: $space1;
+  }
+
+  .c-search {
+    flex: 1 0 auto;
+  }
+
 }
 
 %c-header__navs {
 
   ul {
     @extend %u-reset-list-styles;
+
+    li {
+      border-top: 1px solid $color-gray;
+      border-right: 1px solid $color-gray;
+      border-left: 1px solid $color-gray;
+
+      a {
+        display: block;
+        padding: $space2;
+      }
+
+    }
+
   }
 
 }
@@ -31,4 +82,32 @@
 
 .c-header__top-nav {
   @extend %c-header__navs;
+
+  li {
+
+    &:last-child {
+
+      a {
+        border-bottom: 1px solid $color-gray;
+      }
+
+    }
+
+  }
+
+}
+
+// Vue enter/leave transitions:
+
+.c-header__offscreen-enter-active {
+  transition: transform 0.5s;
+}
+
+.c-header__offscreen-leave-active {
+  transition: transform 0.5s;
+}
+
+.c-header__offscreen-enter,
+.c-header__offscreen-leave-to {
+  transform: translateX(100%);
 }

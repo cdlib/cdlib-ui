@@ -1,25 +1,37 @@
-<header class="c-header">
-  <img class="c-header__logo" src="https://d2v8ggac1o0f6z.cloudfront.net/gsc/SN0J4M/b8/f0/13/b8f01362043c4d8caad1f7da747849f1/images/design_components/u1701.png?token=c329a0202bd3fb0748ac751d5f82ace0" alt="California Digital Library logo">
-  <div class="c-header__search">
-    {{> @search }}
-    {{> @button--2 }}
+<header class="c-header" v-onmedia.screen1="detectMediaQuery2">
+  <a class="c-header__logo" href="">
+    <img src="{{ path '/images/logo-cdl.svg' }}" alt="California Digital Library logo">
+  </a>
+  <div class="c-header__controls" v-if="!$mq.screen1">
+    <button class="o-button1" v-on:click="headerToggle1" aria-label="search"></button>
+    <button class="o-button3" v-on:click="headerToggle3" aria-label="menu"></button>
   </div>
-  <div class="c-header__global-nav">
-    <ul>
-      {{#each list1}}
-      <li>
-        {{> @link--5 }}
-      </li>
-      {{/each}}
-    </ul>
-  </div>
-  <div class="c-header__top-nav">
-    <ul>
-      {{#each list2}}
-      <li>
-        {{> @link--5 }}
-      </li>
-      {{/each}}
-    </ul>
-  </div>
+  <transition name="c-header__offscreen">
+    <div class="c-header__search" v-if="isOpen1">
+      {{> @search }}
+      <button class="o-button2" v-on:click="headerToggle2" v-if="!$mq.screen1" aria-label="close search"></button>
+    </div>
+  </transition>
+  <transition name="c-header__offscreen">
+    <div class="c-header__global-nav" v-if="isOpen2">
+      <ul>
+        {{#each list1}}
+        <li>
+          {{> @link--5 }}
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </transition>
+  <transition name="c-header__offscreen">
+    <div class="c-header__top-nav" v-if="isOpen2">
+      <ul>
+        {{#each list2}}
+        <li>
+          {{> @link--5 }}
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </transition>
 </header>
