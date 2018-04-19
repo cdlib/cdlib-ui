@@ -1,0 +1,34 @@
+// ***** Global Header Component ***** //
+
+.c-header {
+  // no styles yet
+}
+
+.c-header__logo {
+  width: 100px;
+
+  @include screen1 {
+    width: 200px;
+  }
+
+}
+
+.c-header__search {
+  display: flex;
+}
+
+%c-header__navs {
+
+  ul {
+    @extend %u-reset-list-styles;
+  }
+
+}
+
+.c-header__global-nav {
+  @extend %c-header__navs;
+}
+
+.c-header__top-nav {
+  @extend %c-header__navs;
+}
