@@ -1,19 +1,20 @@
-const faker = require('faker/locale/en');
 const fakerGlobalNav = [];
 const fakerTopNav = [];
+const navGlobal = ['Staff Directory', 'Contact CDL', 'Report a Problem', 'System Status'];
+const navTop = ['About CDL', 'Services & Projects', 'Resources for...', 'Committees & Groups', 'News & Groups'];
 
-for (var i = 0; i < 3; i++) {
+for (var i = 0; i < 4; i++) {
   fakerGlobalNav.push({
     link: {
-      text: faker.commerce.productName(),
+      text: navGlobal[i]
     }
   });
 }
 
-for (var i = 0; i < 3; i++) {
+for (var i = 0; i < 5; i++) {
   fakerTopNav.push({
     link: {
-      text: faker.commerce.productName(),
+      text: navTop[i]
     }
   });
 }
