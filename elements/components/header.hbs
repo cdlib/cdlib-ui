@@ -1,15 +1,15 @@
-<header class="c-header" v-onmedia.screen1="detectMediaQuery2">
+<header class="c-header" v-onmedia.screen2="detectMediaQuery2">
   <a class="c-header__logo" href="">
     <img src="{{ path '/images/logo-cdl.svg' }}" alt="California Digital Library logo">
   </a>
-  <div class="c-header__controls" v-if="!$mq.screen1">
+  <div class="c-header__controls" v-if="!$mq.screen2">
     <button class="o-button1" v-on:click="headerToggle1" aria-label="search"></button>
     <button class="o-button3" v-on:click="headerToggle3" aria-label="menu"></button>
   </div>
   <transition name="c-header__offscreen">
     <div class="c-header__search" v-if="isOpen1">
       {{> @search }}
-      <button class="o-button2" v-on:click="headerToggle2" v-if="!$mq.screen1" aria-label="close search"></button>
+      <button class="o-button2" v-on:click="headerToggle2" v-if="!$mq.screen2" aria-label="close search"></button>
     </div>
   </transition>
   <transition name="c-header__offscreen">
