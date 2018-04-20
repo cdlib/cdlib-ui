@@ -1,0 +1,25 @@
+// ***** Header Nav Component ***** //
+
+.c-headernav {
+  
+  ul {
+    // @extend %u-reset-list-styles;
+
+    > ul {
+      display: none;
+
+      @include screen2 {
+        display: block;
+      }
+
+      
+
+    }
+
+  }
+
+  > ul > ul > li {  
+    font-weight: bold;
+  }
+
+}

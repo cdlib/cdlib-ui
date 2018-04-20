@@ -1,0 +1,17 @@
+<div class="c-headernav">
+  <ul>
+    {{#each list1}}
+    <li>{{> @link--5 }}</li>
+    <ul>
+      {{#each ../list2}}
+      <li>{{> @link--5 }}</li>
+      <ul>
+        {{#each ../../list3}}
+        <li>{{> @link--5 }}</li>
+        {{/each}}
+      </ul>
+      {{/each}}
+    </ul>
+    {{/each}}
+  </ul>
+</div>
