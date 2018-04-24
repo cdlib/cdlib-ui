@@ -2,11 +2,12 @@ const faker = require('faker/locale/en');
 const fakerHeaderList1 = [];
 const fakerHeaderList2 = [];
 const fakerHeaderList3 = [];
+const list1 = ['About CDL', 'Services & Projects', 'Resources for...', 'Committees & Groups', 'News & Groups'];
 
 for (var i = 0; i < 5; i++) {
   fakerHeaderList1.push({
     link: {
-      text: faker.commerce.productName(),
+      text: list1[i],
     }
   });
 }
