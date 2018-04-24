@@ -11,3 +11,9 @@
 * Replaced blue link style in [Global Footer](../components/detail/footer.html) with light-black
 
 * Linked headings in [Main Box](../components/detail/mainbox.html) component
+
+## 4/24/18
+
+* [Global Header](../components/detail/header.html) component created
+
+* [Global Header Navigation](../components/detail/headernav.html) component created
