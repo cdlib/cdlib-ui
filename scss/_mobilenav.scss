@@ -18,6 +18,11 @@ $mobilenav-padding: $space2;
 
       &:first-child {
         border-top: 1px solid $color-gray;
+
+        @include screen2 {
+          border: none;
+        }
+
       }
 
       a {
