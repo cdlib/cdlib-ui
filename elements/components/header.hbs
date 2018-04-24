@@ -14,24 +14,12 @@
   </transition>
   <transition name="c-header__offscreen">
     <div class="c-header__header-nav" v-if="isOpen2">
-      <ul>
-        {{#each list2}}
-        <li>
-          {{> @link--5 }}
-        </li>
-        {{/each}}
-      </ul>
+      {{ render '@headernav' }}
     </div>
   </transition>
   <transition name="c-header__offscreen">
     <div class="c-header__utility-nav" v-if="isOpen2">
-      <ul>
-        {{#each list1}}
-        <li>
-          {{> @link--5 }}
-        </li>
-        {{/each}}
-      </ul>
+      {{ render '@utilitynav' }}
     </div>
   </transition>
 </header>
