@@ -12,7 +12,6 @@
     @include screen2 {
       display: flex;
 
-      // Menu headings:
       > li {
         flex: 1 1 auto;
       }
@@ -21,25 +20,10 @@
 
   }
 
-  // Nav bar items (small screen):
+  // Nav bar list items:
   > ul > li {
-    border-top: 1px solid $color-gray;
-    border-right: 1px solid $color-gray;
-    border-left: 1px solid $color-gray;
-
-    &:last-child {
-      border-bottom: 1px solid $color-gray;
-
-      @include screen2 {
-        border-bottom: none;
-      }
-
-    }
 
     @include screen2 {
-      border-top: none;
-      border-bottom: none;
-      border-left: none;
 
       &:not(:last-child) {
         border-right: 1px solid $color-light-black;
@@ -47,13 +31,9 @@
 
     }
 
-    a {
-      display: block;
-    }
-
   }
 
-  // Nav bar items (large screen):
+  // Nav bar links:
   > ul > li > a {
     padding: $space2;
 
