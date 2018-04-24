@@ -1,0 +1,23 @@
+// ***** Utility Navigation ***** //
+
+.c-utilitynav {
+
+  ul {
+    @extend %u-reset-list-styles;
+
+    @include screen2 {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    li {
+
+      @include screen2 {
+        margin: 0 $space2; 
+      }
+
+    }
+
+  }
+
+}
