@@ -13,9 +13,9 @@
     </div>
   </transition>
   <transition name="c-header__offscreen">
-    <div class="c-header__global-nav" v-if="isOpen2">
+    <div class="c-header__top-nav" v-if="isOpen2">
       <ul>
-        {{#each list1}}
+        {{#each list2}}
         <li>
           {{> @link--5 }}
         </li>
@@ -24,9 +24,9 @@
     </div>
   </transition>
   <transition name="c-header__offscreen">
-    <div class="c-header__top-nav" v-if="isOpen2">
+    <div class="c-header__global-nav" v-if="isOpen2">
       <ul>
-        {{#each list2}}
+        {{#each list1}}
         <li>
           {{> @link--5 }}
         </li>
