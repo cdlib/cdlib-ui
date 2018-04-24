@@ -1,0 +1,42 @@
+// ***** Mobile Navigation ***** //
+
+$mobilenav-padding: $space2;
+
+.o-mobilenav {
+
+  ul {
+    @extend %u-reset-list-styles;
+
+    li {
+      border-right: 1px solid $color-gray;
+      border-bottom: 1px solid $color-gray;
+      border-left: 1px solid $color-gray;
+
+      @include screen2 {
+        border: none;
+      }
+
+      &:first-child {
+        border-top: 1px solid $color-gray;
+      }
+
+      a {
+        display: block;
+        padding-top: $mobilenav-padding;
+        padding-right: $mobilenav-padding / 2 + 40px;
+        padding-bottom: $mobilenav-padding;
+        padding-left: $mobilenav-padding;
+        background: url('icons/angle-right.svg' param(--color #{$color-gray})) no-repeat center right #{$mobilenav-padding} / 1em;
+
+        @include screen2 {
+          padding: 0;
+          background: none;
+        }
+
+      }
+
+    }
+
+  }
+
+}
