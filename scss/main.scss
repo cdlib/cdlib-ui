@@ -16,7 +16,16 @@
 @import 'body';
 @import 'fonts';
 
-// ***** Layouts ***** //
+// ***** Objects ***** //
+
+@import 'button';
+@import 'heading';
+@import 'input';
+@import 'label';
+@import 'link';
+@import 'list';
+@import 'mobilenav';
+@import 'sidebarbox';
 
 // ***** Components ***** //
 
@@ -32,13 +41,4 @@
 @import 'staff';
 @import 'utilitynav';
 
-// ***** Objects ***** //
-
-@import 'button';
-@import 'heading';
-@import 'input';
-@import 'label';
-@import 'link';
-@import 'list';
-@import 'mobilenav';
-@import 'sidebarbox';
+// ***** Layouts ***** //
