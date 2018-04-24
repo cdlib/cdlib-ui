@@ -85,6 +85,18 @@
     grid-row: 3 / 4;
   }
 
+  .o-mobilenav {
+
+    li {
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+    }
+
+  }
+
 }
 
 .c-header__utility-nav {
