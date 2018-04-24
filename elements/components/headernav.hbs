@@ -1,17 +1,19 @@
-<div class="c-headernav">
+<nav class="c-headernav">
   <ul>
     {{#each list1}}
-    <li>{{> @link--5 }}</li>
-    <ul>
-      {{#each ../list2}}
-      <li>{{> @link--5 }}</li>
+    <li>{{> @link--5 }}
       <ul>
-        {{#each ../../list3}}
-        <li>{{> @link--5 }}</li>
+        {{#each ../list2}}
+        <li>{{> @link--5 }}
+          <ul>
+            {{#each ../../list3}}
+            <li>{{> @link--5 }}</li>
+            {{/each}}
+          </ul>
+        </li>
         {{/each}}
       </ul>
-      {{/each}}
-    </ul>
+    </li>
     {{/each}}
   </ul>
-</div>
+</nav>
