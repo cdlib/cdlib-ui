@@ -113,6 +113,11 @@
 
 .c-header__offscreen-enter-active {
   transition: transform 0.5s;
+
+  @include screen2 {
+    transition: none;
+  }
+
 }
 
 .c-header__offscreen-leave-active {
