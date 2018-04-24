@@ -107,7 +107,7 @@
 
 }
 
-.c-header__global-nav {
+.c-header__utility-nav {
   @extend %c-header__navs;
   margin-top: $space1;
 
@@ -140,7 +140,7 @@
 
 }
 
-.c-header__top-nav {
+.c-header__header-nav {
   @extend %c-header__navs;
 
   @include screen2 {
