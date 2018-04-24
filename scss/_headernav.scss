@@ -3,23 +3,100 @@
 .c-headernav {
   
   ul {
-    // @extend %u-reset-list-styles;
+    @extend %u-reset-list-styles;
+  }
 
-    > ul {
-      display: none;
+  // Sections:
+  > ul {
 
-      @include screen2 {
-        display: block;
+    @include screen2 {
+      display: flex;
+
+      // Menu headings:
+      > li {
+        flex: 1 1 auto;
       }
-
-      
 
     }
 
   }
 
-  > ul > ul > li {  
+  // Nav bar items (small screen):
+  > ul > li {
+    border-top: 1px solid $color-gray;
+    border-right: 1px solid $color-gray;
+    border-left: 1px solid $color-gray;
+
+    &:last-child {
+      border-bottom: 1px solid $color-gray;
+
+      @include screen2 {
+        border-bottom: none;
+      }
+
+    }
+
+    @include screen2 {
+      border-top: none;
+      border-bottom: none;
+      border-left: none;
+
+      &:not(:last-child) {
+        border-right: 1px solid $color-light-black;
+      }
+
+    }
+
+    a {
+      display: block;
+    }
+
+  }
+
+  // Nav bar items (large screen):
+  > ul > li > a {
+    padding: $space2;
+
+    @include screen2 {
+      background: linear-gradient($color-light-gray, darken($color-light-gray, 10%));
+      text-align: center;
+    }
+
+  }
+
+  // Section containers:
+  > ul > li > ul {
+    position: absolute;
+    padding: $space2;
+    border-right: 1px solid $color-gray;
+    border-bottom: 1px solid $color-gray;
+    border-left: 1px solid $color-gray;
+    background-color: $color-light-gray;
+  }
+
+  // Section headings:
+  > ul > li > ul > li > a {
+    margin-bottom: $space2;
+    color: $color-red;
     font-weight: bold;
+  }
+
+  // Section items:
+  > ul > li li {
+    margin-bottom: $space2;
+  }
+
+  // Section hover toggle:
+  > ul > li > ul {
+    display: none;
+  }
+
+  > ul > li:hover > ul {
+
+    @include screen2 {
+      display: block;
+    }
+
   }
 
 }
