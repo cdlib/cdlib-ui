@@ -3,7 +3,6 @@
 $headernav-section-padding: $space3;
 
 .c-headernav {
-  position: relative;
 
   ul {
     @extend %u-reset-list-styles;
@@ -51,6 +50,7 @@ $headernav-section-padding: $space3;
   > ul > li > ul {
     display: none;
     position: absolute;
+    margin-right: $space2;
     padding: $headernav-section-padding;
     columns: auto 2;
     column-gap: $headernav-section-padding * 2;
