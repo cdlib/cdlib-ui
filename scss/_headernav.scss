@@ -1,7 +1,8 @@
 // ***** Header Nav Component ***** //
 
 .c-headernav {
-  
+  position: relative;
+
   ul {
     @extend %u-reset-list-styles;
   }
@@ -46,12 +47,17 @@
 
   // Section containers:
   > ul > li > ul {
+    display: none;
     position: absolute;
     padding: $space2;
     border-right: 1px solid $color-gray;
     border-bottom: 1px solid $color-gray;
     border-left: 1px solid $color-gray;
     background-color: $color-light-gray;
+  }
+
+  > ul > li:last-child > ul {
+    right: 0;
   }
 
   // Section headings:
@@ -66,11 +72,8 @@
     margin-bottom: $space2;
   }
 
-  // Section hover toggle:
-  > ul > li > ul {
-    display: none;
-  }
-
+  // Section toggle:
+  > ul > li > a:focus + ul,
   > ul > li:hover > ul {
 
     @include screen2 {

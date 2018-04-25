@@ -20,7 +20,7 @@ for (var i = 0; i < 3; i++) {
   });
 }
 
-for (var i = 0; i < 3; i++) {
+for (var i = 0; i < 5; i++) {
   fakerHeaderList3.push({
     link: {
       text: faker.commerce.productName(),
