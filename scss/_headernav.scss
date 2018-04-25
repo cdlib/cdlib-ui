@@ -1,5 +1,7 @@
 // ***** Header Nav Component ***** //
 
+$headernav-section-padding: $space3;
+
 .c-headernav {
   position: relative;
 
@@ -49,7 +51,10 @@
   > ul > li > ul {
     display: none;
     position: absolute;
-    padding: $space2;
+    padding: $headernav-section-padding;
+    columns: auto 2;
+    column-gap: $headernav-section-padding * 2;
+    column-rule: 1px solid $color-gray;
     border-right: 1px solid $color-gray;
     border-bottom: 1px solid $color-gray;
     border-left: 1px solid $color-gray;
