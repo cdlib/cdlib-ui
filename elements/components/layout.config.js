@@ -1,25 +1,25 @@
 const faker = require('faker/locale/en');
 
 module.exports = {
-  label: 'Columns',
+  label: 'Layout',
   context: {
-    column1: {
+    gridItem1: {
       name: 'A: Local Nav',
       text: faker.lorem.paragraph()
     },
-    column2: {
+    gridItem2: {
       name: 'B: Main Content',
       text: faker.lorem.paragraphs()
     },
-    column3: {
+    gridItem3: {
       name: 'C: Secondary / Sidebar Content',
       text: faker.lorem.sentence()
     },
-    column4: {
+    gridItem4: {
       name: 'Section X',
       text: faker.lorem.paragraph()
     },
-    column5: {
+    gridItem5: {
       name: 'Section Y',
       text: faker.lorem.paragraph()
     }

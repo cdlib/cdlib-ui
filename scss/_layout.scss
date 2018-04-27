@@ -1,13 +1,13 @@
-// ***** Columns Component ***** //
+// ***** Layout Component ***** //
 
-$column-sidebar-width: 20%;
+$layout-sidebar-width: 20%;
 
-.c-columns {
+.c-layout {
   display: grid;
   grid-gap: $space3;
   
   @include screen2 {
-    grid-template-columns: $column-sidebar-width auto;
+    grid-template-columns: $layout-sidebar-width auto;
 
     aside {
 
@@ -20,7 +20,7 @@ $column-sidebar-width: 20%;
   }
 
   @include screen3 {
-    grid-template-columns: $column-sidebar-width auto $column-sidebar-width;
+    grid-template-columns: $layout-sidebar-width auto $layout-sidebar-width;
 
     aside {
 
@@ -32,7 +32,7 @@ $column-sidebar-width: 20%;
 
   }
 
-  .c-columns__sidebar-components {
+  .c-layout__sidebar-items {
     display: grid;
     grid-gap: $space3;
 
@@ -46,7 +46,7 @@ $column-sidebar-width: 20%;
 
   }
 
-  // Styles to label columns and demonstrate content flow. This selector and its styles should not be used in production:
+  // Styles to label grid items and demonstrate content flow. This selector and its styles should not be used in production:
 
   &.demo-styles {
 
@@ -73,7 +73,7 @@ $column-sidebar-width: 20%;
         background-color: $color-light-gray;
       }
 
-      .c-columns__sidebar-components > * {
+      .c-layout__sidebar-items > * {
         background-color: $color-gray;
       }
 
