@@ -1,12 +1,25 @@
-<div class="c-columns">
+{{!-- "demo-styles" class not to be used in production --}}
+<div class="c-columns demo-styles">
   <aside>
+    <h2>{{ column1.name }}</h2>
     {{ column1.text }}
   </aside>
   <main>
+    <h2>{{ column2.name }}</h2>
     {{ column2.text }}
   </main>
   <aside>
+    <h2>{{ column3.name }}</h2>
     {{ column3.text }}
+    <div class="c-columns__sidebar-components">
+      <div>
+        <h2>{{ column4.name }}</h2>
+        {{ column4.text }}
+      </div>
+      <div>
+        <h2>{{ column5.name }}</h2>
+        {{ column5.text }}
+      </div>
+    </div>
   </aside>
 </div>
-
