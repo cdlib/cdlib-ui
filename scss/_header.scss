@@ -5,9 +5,12 @@ $header-logo-height: 50px;
 .c-header {
   display: grid;
   position: relative;
+  margin-top: $space1;
 
   @include screen2 {
     align-items: start;
+    margin-top: $space2;
+    margin-bottom: $space2;
     grid-template-columns: auto 1fr;
     grid-template-rows: repeat(3, auto);
   }
