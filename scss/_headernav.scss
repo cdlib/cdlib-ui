@@ -59,6 +59,7 @@ $headernav-section-padding: $space3;
     border-bottom: 1px solid $color-gray;
     border-left: 1px solid $color-gray;
     background-color: $color-light-gray;
+    box-shadow: $box-shadow;
   }
 
   > ul > li:last-child > ul {

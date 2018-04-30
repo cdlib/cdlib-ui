@@ -22,7 +22,7 @@ $space4: ($space2 + $space3);
 
 // General
 
-$box-shadow: 5px 5px 15px lighten($color-light-black, 30%);
+$box-shadow: 3px 3px 3px $color-gray;
 $line-height: 1.3;
 $pointer-size-coarse: 2.8rem;
 $pointer-size-fine: 2rem;
