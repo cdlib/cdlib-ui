@@ -7,10 +7,10 @@
     margin-bottom: $space2;
 
     @include u-headings() {
+      @extend %o-heading4;
       margin: 0;
       padding-bottom: $space1;
       border-bottom: 1px solid $color-gray;
-      color: $color-red;
     }
 
   }

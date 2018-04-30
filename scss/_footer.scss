@@ -14,8 +14,10 @@
   section {
 
     @include u-headings() {
+      @extend %o-heading4;
       margin: 0;
-      color: $color-black;
+      color: $color-light-black;
+      font-weight: bold;
     }
 
     &:first-child {

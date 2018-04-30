@@ -6,6 +6,7 @@
     background: url('icons/rss.svg' param(--color #{$color-gold})) top right / 1em no-repeat;
 
     @include u-headings {
+      @extend %o-heading4;
       padding-right: $space4;
     }
 

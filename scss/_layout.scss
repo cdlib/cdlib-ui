@@ -54,9 +54,10 @@ $layout-sidebar-width: 20%;
     main {
 
       h2 {
+        @extend %o-heading2;
         margin: 0;
         padding: 1rem 0;
-        font-size: 1rem;
+        color: $color-black;
         text-align: center;
       }
 
@@ -67,6 +68,11 @@ $layout-sidebar-width: 20%;
       &:first-of-type {
         background-color: $color-blue;
         color: $color-white;
+
+        h2 {
+          color: inherit;
+        }
+
       }
 
       &:last-of-type {

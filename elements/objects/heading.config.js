@@ -17,4 +17,30 @@ module.exports = {
       text: 'Linked heading text'
     }
   },
+  variants: [
+    {
+      name: '2', // link--2.hbs
+      context: {
+        heading: {
+          level: '2'
+        }
+      }
+    },
+    {
+      name: '3', // link--3.hbs
+      context: {
+        heading: {
+          level: '3'
+        }
+      }
+    },
+    {
+      name: '4', // link--4.hbs
+      context: {
+        heading: {
+          level: '4'
+        }
+      }
+    }
+  ]
 };

@@ -22,7 +22,7 @@ module.exports = {
   label: 'Main Box',
   context: {
     heading: {
-      level: '1',
+      level: '2',
       text: 'Main Box Heading'
     },
     paragraph: paraData

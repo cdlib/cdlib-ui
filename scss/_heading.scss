@@ -17,7 +17,7 @@
   font-size: 1.75em;
 }
 
-.o-heading1 {
+h1 {
   @extend %o-heading1;
 }
 
@@ -27,7 +27,7 @@
   font-size: 1.25em;
 }
 
-.o-heading2 {
+h2 {
   @extend %o-heading2;
 }
 
@@ -37,7 +37,7 @@
   font-size: 1.125em;
 }
 
-.o-heading3 {
+h3 {
   @extend %o-heading3;
 }
 
@@ -47,6 +47,6 @@
   font-size: 1em;
 }
 
-.o-heading4 {
+h4 {
   @extend %o-heading4;
 }

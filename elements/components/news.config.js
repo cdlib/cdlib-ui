@@ -20,7 +20,7 @@ module.exports = {
   label: 'News',
   context: {
     heading: {
-      level: '1',
+      level: '2',
       text: 'Latest News'
     },
     sidebarbox: {

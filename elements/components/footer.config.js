@@ -49,7 +49,7 @@ module.exports = {
     listItem3: linkData3,
     listItem4: linkData4,
     heading: {
-      level: '1',
+      level: '2',
     },
     link2: true,
     link: {

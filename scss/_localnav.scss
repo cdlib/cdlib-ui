@@ -50,6 +50,7 @@
   background-color: $color-blue;
 
   @include u-headings() {
+    @extend %o-heading4;
     margin: 0;
 
     a {
