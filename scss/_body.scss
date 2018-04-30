@@ -7,6 +7,7 @@ body {
   font-family: 'source-sans', sans-serif;
 
   @include screen1 {
+    max-width: 1400px;
     padding-right: $space2;
     padding-left: $space2;
   }
