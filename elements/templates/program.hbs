@@ -1,0 +1,30 @@
+{{ render '@header' }}
+{{ render '@breadcrumb' }}
+<div class="c-layout">
+  <aside>
+    {{ render '@localnav' }}
+  </aside>
+  <main>
+    {{> @heading--1 }}
+    {{#each paragraph}}
+      <p>{{ program.text }}</p>
+    {{/each}}
+    {{ render '@mainbox--1' }}
+    {{ render '@mainbox--2' }}
+    {{ render '@mainbox--2' }}
+    {{#each paragraph}}
+      <p>{{ program.text }}</p>
+    {{/each}}
+    {{ render '@staff' }}
+  </main>
+  <aside>
+    {{ render '@news' }}
+    <div class="c-layout__sidebar-items">
+      {{ render '@sidebarbox--2' }}
+      {{ render '@sidebarbox--2' }}
+      {{ render '@sidebarbox--1' }}
+    </div>
+  </aside>
+</div>
+{{ render '@updated' }}
+{{ render '@footer' }}
