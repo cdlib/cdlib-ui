@@ -3,6 +3,7 @@
 %o-heading {
   margin-top: 0;
   margin-bottom: 1em;
+  font-weight: normal;
 
   a {
     color: inherit;
@@ -13,8 +14,7 @@
 %o-heading1 {
   @extend %o-heading;
   color: $color-blue;
-  font-size: 2.1em;
-  font-weight: normal;
+  font-size: 1.75em;
 }
 
 .o-heading1 {
@@ -24,7 +24,7 @@
 %o-heading2 {
   @extend %o-heading;
   color: $color-red;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 .o-heading2 {
@@ -34,7 +34,7 @@
 %o-heading3 {
   @extend %o-heading;
   color: $color-red;
-  font-size: 1.2em;
+  font-size: 1.125em;
 }
 
 .o-heading3 {
