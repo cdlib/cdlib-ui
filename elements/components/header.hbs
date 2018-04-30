@@ -13,13 +13,13 @@
     </div>
   </transition>
   <transition name="c-header__offscreen">
-    <div class="c-header__header-nav" v-if="isOpen2">
+    <div class="c-header__nav" v-if="isOpen2">
+      <div class="c-header__header-nav">
       {{ render '@headernav' }}
-    </div>
-  </transition>
-  <transition name="c-header__offscreen">
-    <div class="c-header__utility-nav" v-if="isOpen2">
-      {{ render '@utilitynav' }}
+      </div>
+      <div class="c-header__utility-nav">
+        {{ render '@utilitynav' }}
+      </div>
     </div>
   </transition>
 </header>

@@ -1,8 +1,10 @@
 // ***** Global Header Component ***** //
 
+$header-logo-height: 50px;
+
 .c-header {
   display: grid;
-  overflow: hidden; // for transforms below
+  position: relative;
 
   @include screen2 {
     align-items: start;
@@ -25,7 +27,7 @@
 
   img {
     display: block;
-    height: 32px;
+    height: $header-logo-height;
 
     @include screen2 {
       height: 70px;
@@ -74,6 +76,21 @@
       flex: 0 1 auto;
     }
 
+  }
+
+}
+
+.c-header__nav {
+  position: absolute;
+  top: $header-logo-height + $space1;
+  right: 0;
+  left: 0;
+  background-color: $color-white;
+  z-index: 1;
+
+  @include screen2 {
+    display: contents;
+    position: static;
   }
 
 }
