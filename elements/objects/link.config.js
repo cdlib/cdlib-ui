@@ -45,6 +45,78 @@ module.exports = {
           text: 'Light black, underlined on focus/hover'
         }
       }
+    },
+    {
+      name: '6', // link--6.hbs
+      context: {
+        link: {
+          text: 'Link to email address',
+          url: 'wordpress/submit/email/link'
+        }
+      }
+    },
+    {
+      name: '7', // link--7.hbs
+      context: {
+        link: {
+          text: 'Link to protected content',
+          url: 'wordpress/protected/link'
+        }
+      }
+    },
+    {
+      name: '8', // link--8.hbs
+      context: {
+        link: {
+          text: 'Link to PDF',
+          url: 'wordpress/document.pdf'
+        }
+      }
+    },
+    {
+      name: '9', // link--9.hbs
+      context: {
+        link: {
+          text: 'Link to protected content',
+          url: 'wordpress/protected/document.pdf'
+        }
+      }
+    },
+    {
+      name: '10', // link--10.hbs
+      context: {
+        link: {
+          text: 'Link to Word document',
+          url: 'wordpress/document.doc'
+        }
+      }
+    },
+    {
+      name: '11', // link--11.hbs
+      context: {
+        link: {
+          text: 'Link to Excel spreadsheet',
+          url: 'wordpress/document.xls'
+        }
+      }
+    },
+    {
+      name: '12', // link--12.hbs
+      context: {
+        link: {
+          text: 'Link to text file',
+          url: 'wordpress/document.txt'
+        }
+      }
+    },
+    {
+      name: '13', // link--13.hbs
+      context: {
+        link: {
+          text: 'Link to ZIP file',
+          url: 'wordpress/document.zip'
+        }
+      }
     }
   ]
 };

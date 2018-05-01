@@ -1,18 +1,105 @@
 // ***** Link Objects ***** //
 
-%o-link__external {
-  color: $color-blue;
+$icon-light-red: rgb(219, 0, 0); // #DB0000
+$icon-light-blue: rgb(0, 116, 173); // #0074AD
+$icon-green: rgb(82, 122, 0); // #527A00
 
+%o-link__icon {
+  margin-right: 0.5em;
+  padding-right: 1.3em;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 1em;
+}
+
+%o-link__type {
+  margin-right: 0.5em;
+
+  &::after {
+    display: inline-block;
+    margin-left: 0.5em;
+    padding: 0.1em 0.5em;
+    color: $color-white;
+    font-size: 0.7em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+}
+
+%o-link {
   &[href^='http://'],
   &[href^='www.'] {
-    padding-right: 1.3em;
-    background: url('icons/external-link-alt.svg' param(--color #{$color-gold})) right center / 1em no-repeat;
+    @extend %o-link__icon;
+    background-image: url('icons/external-link-alt.svg' param(--color #{$color-gold}));
+  }
+
+  &[href*='email'] {
+    @extend %o-link__icon;
+    background-image: url('icons/envelope.svg' param(--color #{$color-gold}));
+  }
+
+  &[href*='protected'] {
+    @extend %o-link__icon;
+    background-image: url('icons/lock.svg' param(--color #{$color-red}));
+    background-size: 0.8em;
+  }
+
+  &[href$='.pdf'] {
+    @extend %o-link__type;
+
+    &::after {
+      background-color: $icon-light-red;
+      content: 'pdf';
+    }
+
+  }
+
+  &[href$='.doc'] {
+    @extend %o-link__type;
+
+    &::after {
+      background-color: $icon-light-blue;
+      content: 'doc';
+    }
+
+  }
+
+  &[href$='.xls'] {
+    @extend %o-link__type;
+
+    &::after {
+      background-color: $icon-green;
+      content: 'xls';
+    }
+
+  }
+
+  &[href$='.txt'] {
+    @extend %o-link__type;
+
+    &::after {
+      background-color: $color-dark-gray;
+      content: 'txt';
+    }
+
+  }
+
+  &[href$='.zip'] {
+    @extend %o-link__type;
+
+    &::after {
+      background-color: $color-light-black;
+      content: 'zip';
+    }
+
   }
 
 }
 
 %o-link1 {
-  @extend %o-link__external;
+  @extend %o-link;
+  color: $color-blue;
 
   &:focus,
   &:hover {
@@ -26,7 +113,8 @@
 }
 
 %o-link2 {
-  @extend %o-link__external;
+  @extend %o-link;
+  color: $color-blue;
   text-decoration: none;
 
   &:focus,
@@ -41,6 +129,7 @@
 }
 
 %o-link3 {
+  @extend %o-link;
   color: $color-light-black;
   text-decoration: none;
 
