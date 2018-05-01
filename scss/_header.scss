@@ -57,6 +57,7 @@ $header-logo-height: 50px;
 
 .c-header__search {
   display: flex;
+  align-items: flex-start;
   background-color: $color-white;
   z-index: 1;
   grid-column: 1;
