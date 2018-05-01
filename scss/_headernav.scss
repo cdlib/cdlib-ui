@@ -38,9 +38,9 @@ $headernav-section-padding: $space3;
 
   // Nav bar links:
   > ul > li > a {
-    padding: $space1;
 
     @include screen2 {
+      padding: $space1;
       background: linear-gradient($color-light-gray, darken($color-light-gray, 10%));
       text-align: center;
     }
