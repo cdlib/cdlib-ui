@@ -26,14 +26,16 @@ $mobilenav-padding: $space2;
       }
 
       a {
-        display: block;
-        padding-top: $mobilenav-padding;
+        @include u-interactive-element-min-size;
+        display: flex;
+        align-items: center;
         padding-right: $mobilenav-padding / 2 + 40px;
-        padding-bottom: $mobilenav-padding;
         padding-left: $mobilenav-padding;
         background: url('icons/angle-right.svg' param(--color #{$color-gray})) no-repeat center right #{$mobilenav-padding} / 1em;
 
         @include screen2 {
+          @include u-interactive-element-min-size(disabled);
+          display: block;
           padding: 0;
           background: none;
         }
