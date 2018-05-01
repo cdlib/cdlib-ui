@@ -33,7 +33,7 @@
     }
 
     a {
-      @extend %u-interactive-element-size;
+      @include u-interactive-element-min-size;
       display: flex;
       align-items: center;
       padding: $space1 0;

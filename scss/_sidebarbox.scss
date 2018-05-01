@@ -22,7 +22,7 @@
       margin: $space2 0;
 
       a {
-        @extend %u-interactive-element-size;
+        @include u-interactive-element-min-size;
         display: inline-flex;
         align-items: center;
       }

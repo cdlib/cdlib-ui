@@ -1,7 +1,7 @@
 // ***** Button Objects ***** //
 
 %o-button {
-  @extend %u-interactive-element-size;
+  @include u-interactive-element-min-size;
   padding: $space1 $space2;
   border: none;
   background-color: transparent;
