@@ -29,7 +29,7 @@ $headernav-section-padding: $space3;
     @include screen2 {
 
       &:not(:last-child) {
-        border-right: 1px solid $color-light-black;
+        border-right: 1px solid $color-dark-gray;
       }
 
     }
