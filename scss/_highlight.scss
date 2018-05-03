@@ -1,0 +1,63 @@
+// ***** Highlight Component ***** //
+
+.c-highlight {
+
+  @include screen1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include screen2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 $space3;
+
+    @include screen1 {
+      display: contents;
+    }
+
+    img {
+      height: 50vw;
+      margin-bottom: $space1;
+      object-fit: cover;
+
+      @include screen1 {
+        align-self: stretch;
+        height: auto;
+        min-height: 200px;
+        justify-self: stretch;
+        grid-column: 1 / 4;
+        grid-row: 1;
+      }
+
+    }
+
+    figcaption {
+      font-style: italic;
+      text-align: right;
+
+      @include screen1 {
+        grid-column: 1 / 4;
+      }
+
+    }
+
+  }
+
+  .c-highlight__description {
+    padding: $space3;
+    background-color: $color-light-blue;
+
+    @include screen1 {
+      margin: $space3 0 $space3 $space3;
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+  }
+
+}
