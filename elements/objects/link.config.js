@@ -25,7 +25,7 @@ module.exports = {
       context: {
         link: {
           text: 'Blue, underlined by default (external link)',
-          url: 'http://www.cdlib.org'
+          url: 'wordpress/external/link'
         }
       }
     },
@@ -34,7 +34,7 @@ module.exports = {
       context: {
         link: {
           text: 'Blue, underlined on focus/hover (external link)',
-          url: 'http://www.cdlib.org'
+          url: 'wordpress/external/link'
         }
       }
     },

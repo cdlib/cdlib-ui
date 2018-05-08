@@ -28,8 +28,7 @@ $icon-green: rgb(82, 122, 0); // #527A00
 }
 
 %o-link {
-  &[href^='http://'],
-  &[href^='www.'] {
+  &[href*='external'] {
     @extend %o-link__icon;
     background-image: url('icons/external-link-alt.svg' param(--color #{$color-gold}));
   }
