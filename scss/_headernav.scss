@@ -9,6 +9,11 @@ $headernav-section-padding: $space3;
     @extend %u-reset-list-styles;
   }
 
+  // Default link style:
+  a {
+    @extend %o-link3;
+  }
+
   // Sections:
   > ul {
 
