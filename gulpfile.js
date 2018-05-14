@@ -72,7 +72,7 @@ gulp.task('sass-build', function() {
  return gulp.src('./scss/*.scss')
   .pipe(sass().on('error', sass.logError))
   .pipe(postcss())
-  .pipe(minifyCSS())
+  // .pipe(minifyCSS()) (disabled)
   .pipe(gulp.dest('./static/css'));
 });
 
