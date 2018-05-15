@@ -1,9 +1,4 @@
 // ***** Custom Fonts ***** //
 
-@font-face {
-  font-family: 'source-sans';
-  src:
-    url('../fonts/SourceSansPro-Regular.ttf.woff2') format('woff2'),
-    url('../fonts/SourceSansPro-Regular.ttf.woff') format('woff');
-  font-display: swap;
-}
+// sass-lint:disable no-url-protocols
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
