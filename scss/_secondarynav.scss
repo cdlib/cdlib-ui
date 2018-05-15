@@ -1,6 +1,6 @@
-// ***** Local Navigation Component ***** //
+// ***** Secondary Navigation Component ***** //
 
-.c-localnav {
+.c-secondarynav {
   padding: $space2 $space2 0;
   border: 1px solid $color-blue;
 
@@ -41,7 +41,7 @@
 
 }
 
-.c-localnav__header {
+.c-secondarynav__header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
