@@ -51,7 +51,7 @@ module.exports = {
     heading: {
       level: '2',
     },
-    link2: true,
+    link1: true,
     link: {
       text: 'Heading'
     }

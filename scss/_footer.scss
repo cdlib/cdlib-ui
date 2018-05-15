@@ -33,6 +33,7 @@
     }
 
     a {
+      @extend %o-link3;
       @include u-interactive-element-min-size;
       display: flex;
       align-items: center;
