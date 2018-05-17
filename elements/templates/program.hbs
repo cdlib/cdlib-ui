@@ -1,10 +1,10 @@
 {{ render '@header' }}
-{{ render '@breadcrumb' }}
 <div class="c-layout">
   <aside>
     {{ render '@secondarynav' }}
   </aside>
   <main>
+    {{ render '@breadcrumb' }}
     {{> @heading--1 }}
     {{#each paragraph}}
       <p>{{ program.text }}</p>
@@ -16,6 +16,7 @@
       <p>{{ program.text }}</p>
     {{/each}}
     {{ render '@staff' }}
+    {{ render '@updated' }}
   </main>
   <aside>
     {{ render '@news' }}
@@ -26,5 +27,4 @@
     </div>
   </aside>
 </div>
-{{ render '@updated' }}
 {{ render '@footer' }}
