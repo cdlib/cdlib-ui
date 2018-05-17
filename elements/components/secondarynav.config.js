@@ -19,9 +19,9 @@ module.exports = {
       linktext10: 'Staff Contacts',
     },
     heading: {
-      level: '1',
+      level: '2',
     },
-    link2: true,
+    link1: true,
     link: {
       text: 'Collection Development & Management'
     }

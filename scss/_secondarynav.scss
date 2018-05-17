@@ -54,6 +54,7 @@
     margin: 0;
 
     a {
+      @extend %o-link2;
       color: $color-white;
     }
 
