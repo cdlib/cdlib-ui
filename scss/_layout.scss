@@ -34,7 +34,7 @@ $layout-sidebar-width: 25%;
 
   .c-layout__sidebar-items {
     display: grid;
-    grid-gap: $space3;
+    grid-column-gap: $space2;
 
     @include screen1 {
       grid-template-columns: repeat(2, auto);
