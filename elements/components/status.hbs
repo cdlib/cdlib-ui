@@ -1,0 +1,23 @@
+<table class="c-status o-table">
+  <thead>
+    <tr>
+      <th>CDL Maintained Systems</th>
+      <th>Status</th>
+      <th>Scheduled Maintenance Times</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each row}}
+    <tr>
+      <th scope="row">{{ system.name }} </th>
+      <td>
+        <div
+          class="{{#if system.status}}c-status__up{{else}}c-status__down{{/if}}">
+          {{#if system.status}}Up{{else}}Down{{/if}}
+        </div>
+      </td>
+      <td>{{ system.maintenance }}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

@@ -1,0 +1,47 @@
+// ***** System Status Component ***** //
+
+$status-color-green: #080;
+$status-color-orange: #ffa500;
+$status-color-red: #f00;
+
+%c-status__indicators {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &::after {
+    width: 1em;
+    height: 1em;
+    margin-left: $space2;
+    border-radius: 50%;
+    content: '';
+  }
+
+}
+
+.c-status__up {
+  @extend %c-status__indicators;
+
+  &::after {
+    background-color: $status-color-green;
+  }
+
+}
+
+.c-status__partial {
+  @extend %c-status__indicators;
+
+  &::after {
+    background-color: $status-color-orange;
+  }
+
+}
+
+.c-status__down {
+  @extend %c-status__indicators;
+
+  &::after {
+    background-color: $status-color-red;
+  }
+
+}
