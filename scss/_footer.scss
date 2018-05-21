@@ -1,8 +1,7 @@
 // ***** Global Footer Component ***** //
 
 .c-footer {
-  @extend %u-page-bleed;
-  padding: $space1 $space1 0;
+  margin-bottom: $space2;
   border-top: 1px solid $color-gray;
 
   ul {
