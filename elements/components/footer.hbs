@@ -1,43 +1,17 @@
 <footer class="c-footer">
-  <section>
+  <nav>
     <ul>
-      {{#each listItem1}}
-      <li>
-        {{> @link--1 }}
+      {{#each list1}}
+      <li>{{> @link--1 }}
+        <ul>
+          {{#each ../list2}}
+          <li>{{> @link--1 }}</li>
+          {{/each}}
+        </ul>
       </li>
       {{/each}}
-    <ul>
-  </section>
-  <section>
-    {{> @heading--2 }}
-    <ul>
-      {{#each listItem2}}
-      <li>
-        {{> @link--1 }}
-      </li>
-      {{/each}}
-    <ul>
-  </section>
-  <section>
-    {{> @heading--2 }}
-    <ul>
-      {{#each listItem3}}
-      <li>
-        {{> @link--1 }}
-      </li>
-      {{/each}}
-    <ul>
-  </section>
-  <section>
-    {{> @heading--2 }}
-    <ul>
-      {{#each listItem4}}
-      <li>
-        {{> @link--1 }}
-      </li>
-      {{/each}}
-    <ul>
-  </section>
+    </ul>
+  </nav>
   <div class="c-footer__copyright">
     <img src="https://www.cdlib.org/images/logos/uc_seal.gif" alt="University seal">
     <small>

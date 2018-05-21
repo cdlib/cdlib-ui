@@ -5,41 +5,34 @@
   padding: $space1 $space1 0;
   border-top: 1px solid $color-gray;
 
-  @include screen1 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: $space2;
+  ul {
+    @extend %u-reset-list-styles;
   }
 
-  section {
+  > nav {
 
-    @include u-headings() {
-      @extend %o-heading4;
-      margin: 0;
-      color: $color-light-black;
-      font-weight: bold;
-    }
+    > ul {
 
-    &:first-child {
+      @include screen1 {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: $space2;
+      }
 
-      a {
+      > li > a {
         font-weight: bold;
       }
 
     }
 
-    ul {
-      @extend %u-reset-list-styles;
-    }
+  }
 
-    a {
-      @extend %o-link3;
-      @include u-interactive-element-min-size;
-      display: flex;
-      align-items: center;
-      padding: $space1 0;
-    }
-
+  a {
+    @extend %o-link3;
+    @include u-interactive-element-min-size;
+    display: flex;
+    align-items: center;
+    padding: $space1 0;
   }
 
 }
