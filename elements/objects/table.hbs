@@ -1,0 +1,21 @@
+<table class="o-table">
+  <thead>
+    <tr>
+      {{#each row1}}
+      <th>{{ cell1.data }}</th>
+      {{/each}}
+    </tr>
+  </thead>
+  <tbody>
+    {{#each row2}}
+    <tr>
+      <th scope="row">{{ cell1.data }}</th>
+      <td>{{ cell2.data }}</td>
+      <td>{{ cell3.data }}</td>
+      <td>{{ cell4.data }}</td>
+      <td>{{ cell5.data }}</td>
+      <td>{{ cell6.data }}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

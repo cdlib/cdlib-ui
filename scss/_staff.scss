@@ -1,37 +1,5 @@
 // ***** Staff Component ***** //
 
-.c-staff {
-  margin-bottom: $space2;
-  border-collapse: collapse;
-
-  th,
-  td {
-    padding: $space2;
-    border: 1px solid $color-gray;
-  }
-
-  th {
-    text-align: left;
-  }
-
-  thead {
-
-    th {
-      background-color: $color-light-blue;
-      color: $color-red;
-    }
-
-  }
-
-  tbody {
-
-    th {
-      background-color: $color-light-gray;
-    }
-  }
-
-}
-
 .c-staff__links {
   display: flex;
 
