@@ -33,6 +33,7 @@
     display: flex;
     align-items: center;
     padding: $space1 0;
+    font-size: 0.9em;
   }
 
 }
@@ -45,6 +46,10 @@
   img {
     flex: 0 0 auto;
     margin-right: $space2;
+  }
+
+  small {
+    font-size: 0.7em;
   }
 
 }
