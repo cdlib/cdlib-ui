@@ -7,12 +7,11 @@ $status-color-red: #f00;
 %c-status__indicators {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
-  &::after {
+  &::before {
     width: 1em;
     height: 1em;
-    margin-left: $space2;
+    margin-right: $space2;
     border-radius: 50%;
     content: '';
   }
@@ -22,7 +21,7 @@ $status-color-red: #f00;
 .c-status__up {
   @extend %c-status__indicators;
 
-  &::after {
+  &::before {
     background-color: $status-color-green;
   }
 
@@ -31,7 +30,7 @@ $status-color-red: #f00;
 .c-status__partial {
   @extend %c-status__indicators;
 
-  &::after {
+  &::before {
     background-color: $status-color-orange;
   }
 
@@ -40,7 +39,7 @@ $status-color-red: #f00;
 .c-status__down {
   @extend %c-status__indicators;
 
-  &::after {
+  &::before {
     background-color: $status-color-red;
   }
 
