@@ -12,7 +12,7 @@
       <th scope="row">{{ system.name }} </th>
       <td>
         <div
-          class="{{#if system.status}}c-status__up{{else}}c-status__down{{/if}}">
+          class="c-status__indicator {{#if system.status}}up{{else}}down{{/if}}">
           {{#if system.status}}Up{{else}}Down{{/if}}
         </div>
       </td>

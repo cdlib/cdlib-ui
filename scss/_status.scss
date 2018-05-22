@@ -4,7 +4,11 @@ $status-color-green: #080;
 $status-color-orange: #ffa500;
 $status-color-red: #f00;
 
-%c-status__indicators {
+%c-status__indicator-opacity {
+  opacity: 1;
+}
+
+.c-status__indicator {
   display: flex;
   align-items: center;
 
@@ -12,35 +16,37 @@ $status-color-red: #f00;
     width: 1em;
     height: 1em;
     margin-right: $space2;
+    transition: opacity 1s;
     border-radius: 50%;
     content: '';
+    opacity: 0;
   }
 
-}
+  &.up {
 
-.c-status__up {
-  @extend %c-status__indicators;
+    &::before {
+      @extend %c-status__indicator-opacity;
+      background-color: $status-color-green;
+    }
 
-  &::before {
-    background-color: $status-color-green;
   }
 
-}
+  &.partial {
 
-.c-status__partial {
-  @extend %c-status__indicators;
+    &::before {
+      @extend %c-status__indicator-opacity;
+      background-color: $status-color-orange;
+    }
 
-  &::before {
-    background-color: $status-color-orange;
   }
 
-}
+  &.down {
 
-.c-status__down {
-  @extend %c-status__indicators;
+    &::before {
+      @extend %c-status__indicator-opacity;
+      background-color: $status-color-red;
+    }
 
-  &::before {
-    background-color: $status-color-red;
   }
 
 }
