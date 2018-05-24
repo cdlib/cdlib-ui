@@ -24,7 +24,7 @@ for (var i = 0; i < 5; i++) {
 }
 
 module.exports = {
-  label: 'Global Footer',
+  label: 'Footer',
   context: {
     list1: linkData1,
     list2: linkData2,

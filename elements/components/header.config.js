@@ -1,5 +1,5 @@
 module.exports = {
-  label: 'Global Header',
+  label: 'Header',
   context: {
     // Search component:
     label1: {
