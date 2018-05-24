@@ -4,7 +4,7 @@ const fakerHeaderList2 = [];
 const fakerHeaderList3 = [];
 const list1 = ['About CDL', 'Services & Projects', 'Resources for...', 'Committees & Groups', 'News & Groups'];
 
-for (var i = 0; i < 5; i++) {
+for (var i = 0; i < list1.length; i++) {
   fakerHeaderList1.push({
     link: {
       text: list1[i],

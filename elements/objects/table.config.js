@@ -3,7 +3,7 @@ const tableHeader = [];
 const tableData = [];
 const tableHeaderLabels = ['Country', 'Latitude', 'Longitude', 'City', 'Product', 'Inventory ID'];
 
-for (var i = 0; i < 6; i++) {
+for (var i = 0; i < tableHeaderLabels.length; i++) {
   tableHeader.push({
     cell1: {
       data: tableHeaderLabels[i]

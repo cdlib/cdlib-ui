@@ -7,7 +7,7 @@ function capFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-for (var i = 0; i < 5; i++) {
+for (var i = 0; i < list1.length; i++) {
   linkData1.push({
     link: {
       text: list1[i]
