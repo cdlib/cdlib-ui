@@ -1,0 +1,46 @@
+// ***** Sidebar Navigation Object ***** //
+
+.o-sidebarnav {
+  padding: $space2 $space2 0;
+  border: 1px solid $color-blue;
+
+  ul {
+    @extend %u-reset-list-styles;
+
+    li {
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $color-gray;
+      }
+
+      a {
+        @extend %o-link2;
+        @include u-interactive-element-min-size;
+        display: flex;
+        align-items: center;
+      }
+
+    }
+
+  }
+
+  header {
+    margin: (-$space2) (-$space2) 0;
+    padding: $space2;
+    background-color: $color-blue;
+
+    @include u-headings() {
+      @extend %o-heading4;
+      margin: 0;
+      color: $color-white;
+
+      a {
+        @extend %o-link2;
+        color: inherit;
+      }
+
+    }
+
+  }
+
+}
