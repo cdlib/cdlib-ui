@@ -1,26 +1,22 @@
-<nav class="c-secondarynav" v-onmedia.screen1="detectMediaQuery">
-  <div class="c-secondarynav__header">
+<nav class="c-secondarynav o-sidebarnav" v-onmedia.screen1="detectMediaQuery">
+  <header>
     {{> @heading }}
     <template v-if="!$mq.screen1">
       <button class="o-button5" v-on:click="toggle1" v-if="!isDisplayed">{{ secondarynav.closeButtonText }}</button>
       <button class="o-button6" v-on:click="toggle1" v-if="isDisplayed">{{ secondarynav.openButtonText }}</button>
     </template>
-  </div>
+  </header>
   <div v-if="!isDisplayed">
     <ul>
-      <li><a href="">{{ secondarynav.linktext1 }}</a></li>
-      <li><a href="">{{ secondarynav.linktext2 }}</a></li>
-      <li><a href="">{{ secondarynav.linktext3 }}</a>
+      {{#each list1}}
+      <li>{{> @link--1 }}
+      {{/each}}
         <ul>
-          <li><a href="">{{ secondarynav.linktext4 }}</a></li>
-          <li><a href="">{{ secondarynav.linktext5 }}</a></li>
-          <li><a href="">{{ secondarynav.linktext6 }}</a></li>
-          <li><a href="">{{ secondarynav.linktext7 }}</a></li>
-          <li><a href="">{{ secondarynav.linktext8 }}</a></li>
+          {{#each list2}}
+          <li>{{> @link--1 }}</li>
+          {{/each}}
         </ul>
       </li>
-      <li><a href="">{{ secondarynav.linktext9 }}</a></li>
-      <li><a href="">{{ secondarynav.linktext10 }}</a></li>
     </ul>
   </div>
 </nav>

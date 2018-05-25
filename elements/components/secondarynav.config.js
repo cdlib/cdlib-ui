@@ -1,29 +1,38 @@
-
 const faker = require('faker/locale/en');
+const fakerList1 = [];
+const fakerList2 = [];
+
+for (var i = 0; i < 5; i++) {
+  fakerList1.push({
+    link: {
+      text: faker.commerce.productName()
+    }
+  });
+}
+
+for (var i = 0; i < 5; i++) {
+  fakerList2.push({
+    link: {
+      text: faker.commerce.productName()
+    }
+  });
+}
 
 module.exports = {
   label: 'Secondary Nav',
   context: {
-    secondarynav: {
-      closeButtonText: 'Close',
-      openButtonText: 'Open',
-      linktext1: 'Licensed Resources',
-      linktext2: 'Shared Print',
-      linktext3: 'Mass Digitization',
-      linktext4: 'Where to Find Our Books',
-      linktext5: 'FAQ',
-      linktext6: 'HathiTrust',
-      linktext7: 'Library Reprints',
-      linktext8: 'Story of the Digital Book',
-      linktext9: 'Shared Cataloging',
-      linktext10: 'Staff Contacts',
-    },
     heading: {
-      level: '2',
+      level: '2'
     },
     link1: true,
     link: {
-      text: 'Collection Development & Management'
-    }
+      text: faker.commerce.productName()
+    },
+    secondarynav: {
+      closeButtonText: 'Close',
+      openButtonText: 'Open',
+    },
+    list1: fakerList1,
+    list2: fakerList2,
   }
 };
