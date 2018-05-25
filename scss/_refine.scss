@@ -1,0 +1,20 @@
+// ***** Refine Search Component ***** //
+
+.c-refine {
+
+  ul {
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      a {
+        margin-right: $space2;
+      }
+
+    }
+
+  }
+
+}
