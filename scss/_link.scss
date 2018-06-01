@@ -30,17 +30,17 @@ $icon-green: rgb(82, 122, 0); // #527A00
 %o-link {
   &[href*='external'] {
     @extend %o-link__icon;
-    background-image: url('icons/external-link-alt.svg' param(--color #{$color-gold}));
+    background-image: url('external-link-alt.svg' param(--color #{$color-gold}));
   }
 
   &[href*='email'] {
     @extend %o-link__icon;
-    background-image: url('icons/envelope.svg' param(--color #{$color-gold}));
+    background-image: url('envelope.svg' param(--color #{$color-gold}));
   }
 
   &[href*='protected'] {
     @extend %o-link__icon;
-    background-image: url('icons/lock.svg' param(--color #{$color-red}));
+    background-image: url('lock.svg' param(--color #{$color-red}));
     background-size: 0.8em;
   }
 

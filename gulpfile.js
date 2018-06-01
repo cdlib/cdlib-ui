@@ -51,7 +51,7 @@ gulp.task('fractal-build', function(){
 // Gulp Tasks:
 
 gulp.task('clean', function() {
-  return del(['./dist', './static/css/sourcemaps']);
+  return del(['./dist', './ui-assets/css/sourcemaps']);
 })
 
 gulp.task('watch', function(){
@@ -65,21 +65,21 @@ gulp.task('sass-watch', function() {
   .pipe(sass().on('error', sass.logError))
   .pipe(postcss())
   .pipe(sourcemaps.write('sourcemaps'))
-  .pipe(gulp.dest('./static/css'));
+  .pipe(gulp.dest('./ui-assets/css'));
 });
 
 gulp.task('sass-build', function() {
  return gulp.src('./scss/*.scss')
   .pipe(sass().on('error', sass.logError))
   .pipe(postcss())
-  // .pipe(minifyCSS()) (disabled)
-  .pipe(gulp.dest('./static/css'));
+  .pipe(minifyCSS())
+  .pipe(gulp.dest('./ui-assets/css'));
 });
 
 gulp.task('sass-to-json', function () {
   return gulp.src('./scss/_breakpoints.scss')
     .pipe(sassJson())
-    .pipe(gulp.dest('./static/js')); // breakpoints.json
+    .pipe(gulp.dest('./ui-assets/js')); // breakpoints.json
 });
 
 gulp.task('scss-lint', function() {

@@ -10,7 +10,7 @@
 
 %o-button1 {
   @extend %o-button;
-  background-image: url('icons/search.svg');
+  background-image: url('search.svg');
 }
 
 .o-button1 {
@@ -19,7 +19,7 @@
 
 %o-button2 {
   @extend %o-button;
-  background-image: url('icons/times.svg');
+  background-image: url('times.svg');
 }
 
 .o-button2 {
@@ -28,7 +28,7 @@
 
 %o-button3 {
   @extend %o-button;
-  background-image: url('icons/bars.svg');
+  background-image: url('bars.svg');
 }
 
 .o-button3 {
@@ -50,7 +50,7 @@
   padding-right: 2.3em;
   border: 2px solid $color-white;
   border-radius: $round-corner;
-  background: $color-blue url('icons/caret-up.svg' param(--color #{$color-white})) right $space2 center / 1em no-repeat;
+  background: $color-blue url('caret-up.svg' param(--color #{$color-white})) right $space2 center / 1em no-repeat;
   color: $color-white;
 }
 
@@ -60,7 +60,7 @@
 
 %o-button6 {
   @extend %o-button5;
-  background-image: url('icons/caret-down.svg' param(--color #{$color-white}));
+  background-image: url('caret-down.svg' param(--color #{$color-white}));
   color: $color-white;
 }
 

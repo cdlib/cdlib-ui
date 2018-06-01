@@ -2,7 +2,7 @@ gulp-sftp-key.json
 node_modules
 dist
 .DS_Store
-static/css/main.css
-static/css/sourcemaps
-static/fonts
-static/images
+ui-assets/css
+ui-assets/fonts
+ui-assets/images
+ui-assets/js/breakpoints.json
