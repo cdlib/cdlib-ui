@@ -4,17 +4,22 @@
   display: flex;
 
   a {
+    height: 1em;
 
-    &:nth-child(2) {
-      margin-left: $space2;
-      padding-left: $space2;
-      border-left: 1px solid $color-gray;
+    &:nth-child(1) {
+      width: 1em;
+      background: url('envelope.svg') right center / contain no-repeat;
     }
 
-    img {
-      display: block;
-      width: 1.3em;
-      height: 1.3em;
+    &:nth-child(2) {
+      width: 1.7em;
+      margin-left: 0.7em;
+      border-left: 1px solid $color-gray;
+      background: url('user-circle.svg' param(--color #{$color-gold})) left 0.6em center / contain no-repeat;
+    }
+
+    span {
+      @include u-hide();
     }
 
   }
