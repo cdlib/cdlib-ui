@@ -2,6 +2,7 @@ const del = require('del');
 const gulp = require('gulp');
 const minifyCSS = require('gulp-clean-css');
 const postcss = require('gulp-postcss');
+const rsync = require('gulp-rsync');
 const runSequence = require('run-sequence');
 const sass = require('gulp-sass');
 const sassJson = require('gulp-sass-json');
@@ -20,7 +21,7 @@ gulp.task('build', function(callback) {
 });
 
 gulp.task('deploy', function(callback) {
-  runSequence('build', 'upload', callback);
+  runSequence('build', 'upload-assets', 'upload-library', callback);
 });
 
 // Fractal to Gulp Integration:
@@ -91,12 +92,26 @@ gulp.task('scss-lint', function() {
     .pipe(sassLint.failOnError())
 });
 
-gulp.task('upload', function () {
+gulp.task('upload-library', function () {
   return gulp.src('dist/**')
     .pipe(sftp({
       host: 'webprod.cdlib.org',
       remotePath: '/apps/webprod/apache/htdocs/cdlib/cdlib-ui',
       authFile: 'gulp-sftp-key.json', // important: .gitignore this file
       auth: 'keyMain'
+    }));
+});
+
+gulp.task('upload-assets', function() {
+  return gulp.src('dist/ui-assets/**')
+    .pipe(rsync({
+      root: 'dist',
+      hostname: 'cdlib@web-cdlib2-dev.cdlib.org',
+      destination: '/apps/cdlib/apache/htdocs/wp-content/themes/cdlib',
+      archive: true,
+      silent: false, // -v option
+      clean: true, // --delete option
+      exclude:['.DS_Store', 'favicon.ico', 'fractal-customizations.css'],
+      emptyDirectories: true, // fixes --delete option not working. See: https://github.com/jerrysu/gulp-rsync/issues/29
     }));
 });
