@@ -1,0 +1,11 @@
+// ***** Half Width Boxes Component ***** //
+
+.c-halfboxes {
+
+  @include screen1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: $space2;
+  }
+
+}
