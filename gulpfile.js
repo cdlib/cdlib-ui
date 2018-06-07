@@ -21,7 +21,7 @@ gulp.task('build', function(callback) {
 });
 
 gulp.task('deploy', function(callback) {
-  runSequence('build', 'upload-assets', 'upload-library', callback);
+  runSequence('build', 'sync-assets-local', 'sync-assets-dev', 'upload-library', callback);
 });
 
 // Fractal to Gulp Integration:
@@ -49,7 +49,7 @@ gulp.task('fractal-build', function(){
   });
 });
 
-// Gulp Tasks:
+// General Gulp Tasks:
 
 gulp.task('clean', function() {
   return del(['./dist', './ui-assets/css/sourcemaps']);
@@ -102,16 +102,52 @@ gulp.task('upload-library', function () {
     }));
 });
 
-gulp.task('upload-assets', function() {
+// Rsync Gulp Tasks:
+
+const rsyncTemplate = {
+  root: 'dist',
+  archive: true,
+  silent: false, // -v option
+  clean: true, // --delete option
+  exclude: ['.DS_Store', 'favicon.ico', 'fractal-customizations.css'],
+  emptyDirectories: true, // fixes --delete option not working. See: https://github.com/jerrysu/gulp-rsync/issues/29
+};
+
+gulp.task('sync-assets-local', function() {
   return gulp.src('dist/ui-assets/**')
-    .pipe(rsync({
-      root: 'dist',
+    .pipe(rsync(Object.assign(
+      rsyncTemplate,
+      {
+      destination: '/Users/jhagedorn/Documents/cdlib-local/htdocs/wp-content/themes/cdlib',
+    })));
+});
+
+gulp.task('sync-assets-dev', function() {
+  return gulp.src('dist/ui-assets/**')
+    .pipe(rsync(Object.assign(
+      rsyncTemplate,
+      {
       hostname: 'cdlib@web-cdlib2-dev.cdlib.org',
       destination: '/apps/cdlib/apache/htdocs/wp-content/themes/cdlib',
-      archive: true,
-      silent: false, // -v option
-      clean: true, // --delete option
-      exclude:['.DS_Store', 'favicon.ico', 'fractal-customizations.css'],
-      emptyDirectories: true, // fixes --delete option not working. See: https://github.com/jerrysu/gulp-rsync/issues/29
-    }));
+    })));
+});
+
+gulp.task('sync-assets-stage', function() {
+  return gulp.src('dist/ui-assets/**')
+    .pipe(rsync(Object.assign(
+      rsyncTemplate,
+      {
+      hostname: 'cdlib@web-cdlib2-stg-2a.cdlib.org',
+      destination: '/apps/cdlib/apache/htdocs/wp-content/themes/cdlib',
+    })));
+});
+
+gulp.task('sync-assets-prod', function() {
+  return gulp.src('dist/ui-assets/**')
+    .pipe(rsync(Object.assign(
+      rsyncTemplate,
+      {
+      hostname: 'cdlib@web-cdlib2-prd-2a.cdlib.org',
+      destination: '/apps/cdlib/apache/htdocs/wp-content/themes/cdlib',
+    })));
 });
