@@ -4,6 +4,7 @@ $layout-sidebar-width: 25%;
 
 .c-layout2col {
   display: grid;
+  margin-bottom: $space2;
   grid-gap: $space3;
   
   @include screen2 {

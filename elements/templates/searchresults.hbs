@@ -1,0 +1,12 @@
+{{ render '@header' }}
+<div class="c-layout2col">
+  <aside>
+    {{ render '@refine' }}
+  </aside>
+  <main>
+    {{ render '@breadcrumb' }}
+    <p>{{ searchresults.sort }}</p>
+    <p>{{ searchresults.results }}</p>
+  </main>
+</div>
+{{ render '@footer' }}
