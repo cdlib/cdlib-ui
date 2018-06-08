@@ -1,0 +1,13 @@
+// ***** Layout 2 Column Component ***** //
+
+$layout-sidebar-width: 25%;
+
+.c-layout2col {
+  display: grid;
+  grid-gap: $space3;
+  
+  @include screen2 {
+    grid-template-columns: $layout-sidebar-width auto;
+  }
+
+}
