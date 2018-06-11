@@ -1,0 +1,45 @@
+// ***** Filter Search Component ***** //
+
+.c-filter {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: $space1;
+
+  ul {
+    @extend %u-reset-list-styles;
+    display: flex;
+    border: 1px solid $color-blue;
+
+    li {
+      display: flex; // stretches buttons along the y axis if text wraps
+
+      &:not(:first-child) {
+        border-left: 1px solid $color-blue;
+      }
+
+    }
+
+  }
+
+}
+
+.c-filter__group {
+  display: flex;
+  align-items: center;
+  margin-bottom: $space1;
+
+  &:first-child {
+    margin-right: $space2;
+  }
+
+  &:last-child {
+    margin-left: auto;
+  }
+
+}
+
+.c-filter__label {
+  margin-right: $space2;
+  color: $color-red;
+  font-weight: bold;
+}
