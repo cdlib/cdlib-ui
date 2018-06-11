@@ -67,3 +67,20 @@
 .o-button6 {
   @extend %o-button6;
 }
+
+%o-button7 {
+  @extend %o-button;
+
+  &[aria-pressed='false'] {
+    background-color: $color-light-blue;
+  }
+
+  &[aria-pressed='true'] {
+    background-color: $color-white;
+  }
+
+}
+
+.o-button7 {
+  @extend %o-button7;
+}

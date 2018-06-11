@@ -27,6 +27,12 @@ module.exports = {
     button6: {
       ariaLabel: 'button 6 aria label',
       text: 'Open'
+    },
+    button7: {
+      text: 'Toggle (un-pressed)'
+    },
+    button8: {
+      text: 'Toggle (pressed)'
     }
   }
 };
