@@ -59,8 +59,8 @@ module.exports = {
       name: '7', // link--7.hbs
       context: {
         link: {
-          text: 'Link to protected content',
-          url: 'wordpress/protected/link'
+          text: 'Link to Sharepoint content',
+          url: 'https://sp.ucop.edu'
         }
       }
     },
@@ -77,8 +77,8 @@ module.exports = {
       name: '9', // link--9.hbs
       context: {
         link: {
-          text: 'Link to protected content',
-          url: 'wordpress/protected/document.pdf'
+          text: 'Link to protected document',
+          url: 'https://sp.ucop.edu/document.pdf'
         }
       }
     },

@@ -38,7 +38,7 @@ $icon-green: rgb(82, 122, 0); // #527A00
     background-image: url('envelope.svg' param(--color #{$color-gold}));
   }
 
-  &[href*='protected'] {
+  &[href^='https://sp.ucop.edu'] {
     @extend %o-link__icon;
     background-image: url('lock.svg' param(--color #{$color-red}));
     background-size: 0.8em;
