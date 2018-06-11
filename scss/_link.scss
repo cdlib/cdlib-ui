@@ -28,7 +28,9 @@ $icon-green: rgb(82, 122, 0); // #527A00
 }
 
 %o-link {
-  &[href*='external'] {
+
+  // WP External Links plugin attr and value:
+  &[data-wpel-link='external'] {
     @extend %o-link__icon;
     background-image: url('external-link-alt.svg' param(--color #{$color-gold}));
   }
