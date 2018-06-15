@@ -1,0 +1,68 @@
+// ***** Document Icon Objects ***** //
+
+$docicon-light-red: rgb(219, 0, 0); // #DB0000
+$docicon-light-blue: rgb(0, 116, 173); // #0074AD
+$docicon-green: rgb(82, 122, 0); // #527A00
+
+%o-docicon {
+  padding: 0.1em 0.5em;
+  color: $color-white;
+  font-family: Monaco, 'Andale Mono', monospace;
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+%o-docicon__pdf {
+  @extend %o-docicon;
+  background-color: $docicon-light-red;
+}
+
+.o-docicon__pdf {
+  @extend %o-docicon__pdf;
+}
+
+%o-docicon__doc {
+  @extend %o-docicon;
+  background-color: $docicon-light-blue;
+}
+
+.o-docicon__doc {
+  @extend %o-docicon__doc;
+}
+
+%o-docicon__xls {
+  @extend %o-docicon;
+  background-color: $docicon-green;
+}
+
+.o-docicon__xls {
+  @extend %o-docicon__xls;
+}
+
+%o-docicon__txt {
+  @extend %o-docicon;
+  background-color: $color-dark-gray;
+}
+
+.o-docicon__txt {
+  @extend %o-docicon__txt;
+}
+
+%o-docicon__zip {
+  @extend %o-docicon;
+  background-color: $color-light-black;
+}
+
+.o-docicon__zip {
+  @extend %o-docicon__zip;
+}
+
+%o-docicon__html {
+  @extend %o-docicon;
+  background-color: $color-blue;
+}
+
+.o-docicon__html {
+  @extend %o-docicon__html;
+}

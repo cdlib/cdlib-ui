@@ -1,9 +1,5 @@
 // ***** Link Objects ***** //
 
-$icon-light-red: rgb(219, 0, 0); // #DB0000
-$icon-light-blue: rgb(0, 116, 173); // #0074AD
-$icon-green: rgb(82, 122, 0); // #527A00
-
 %o-link__icon {
   margin-right: 0.5em;
   padding-right: 1.3em;
@@ -18,11 +14,6 @@ $icon-green: rgb(82, 122, 0); // #527A00
   &::after {
     display: inline-block;
     margin-left: 0.5em;
-    padding: 0.1em 0.5em;
-    color: $color-white;
-    font-size: 0.7em;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
   }
 
 }
@@ -50,7 +41,7 @@ $icon-green: rgb(82, 122, 0); // #527A00
     @extend %o-link__type;
 
     &::after {
-      background-color: $icon-light-red;
+      @extend %o-docicon__pdf;
       content: 'pdf';
     }
 
@@ -60,7 +51,7 @@ $icon-green: rgb(82, 122, 0); // #527A00
     @extend %o-link__type;
 
     &::after {
-      background-color: $icon-light-blue;
+      @extend %o-docicon__doc;
       content: 'doc';
     }
 
@@ -70,7 +61,7 @@ $icon-green: rgb(82, 122, 0); // #527A00
     @extend %o-link__type;
 
     &::after {
-      background-color: $icon-green;
+      @extend %o-docicon__xls;
       content: 'xls';
     }
 
@@ -80,7 +71,7 @@ $icon-green: rgb(82, 122, 0); // #527A00
     @extend %o-link__type;
 
     &::after {
-      background-color: $color-dark-gray;
+      @extend %o-docicon__txt;
       content: 'txt';
     }
 
@@ -90,7 +81,7 @@ $icon-green: rgb(82, 122, 0); // #527A00
     @extend %o-link__type;
 
     &::after {
-      background-color: $color-light-black;
+      @extend %o-docicon__zip;
       content: 'zip';
     }
 
