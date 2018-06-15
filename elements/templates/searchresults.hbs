@@ -5,8 +5,8 @@
   </aside>
   <main>
     {{ render '@breadcrumb' }}
-    <p>{{ searchresults.sort }}</p>
-    <p>{{ searchresults.results }}</p>
+    {{ render '@filter' }}
+    {{ render '@result' }}
   </main>
 </div>
 {{ render '@footer' }}
