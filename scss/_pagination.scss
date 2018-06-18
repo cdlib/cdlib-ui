@@ -1,0 +1,58 @@
+// ***** Pagination Component ***** //
+
+%c-pagination {
+  margin-bottom: $space3;
+
+  ul {
+    @extend %u-reset-list-styles;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  a {
+    @include u-interactive-element-min-size;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 $space2;
+    color: $color-blue;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+
+  }
+
+}
+
+.c-pagination {
+  @extend %c-pagination;
+}
+
+%c-pagination__controls {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1em;
+
+  span {
+    @include u-hide;
+  }
+
+}
+
+.c-pagination__control-first {
+  @extend %c-pagination__controls;
+  background-image: url('fast-backward.svg' param(--color #{$color-blue}));
+}
+
+.c-pagination__control-last {
+  @extend %c-pagination__controls;
+  background-image: url('fast-forward.svg' param(--color #{$color-blue}));
+}
+
+.c-pagination__items--selected {
+  border: 1px solid $color-dark-gray;
+}
