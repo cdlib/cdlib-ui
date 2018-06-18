@@ -5,10 +5,11 @@ module.exports = {
   label: 'Search',
   context: {
     label1: {
+      for: 'c-header-search-field',
       text: 'Search the California Digital Library'
     },
     input1: {
-      id: 'c-search-field',
+      id: 'c-header-search-field',
       type: 'search',
       name: 's',
       value: '',
