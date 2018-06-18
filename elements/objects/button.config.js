@@ -17,6 +17,7 @@ module.exports = {
       text: 'Button 3'
     },
     button4: {
+      type: 'submit',
       ariaLabel: 'button 4 aria label',
       text: 'Button 4'
     },

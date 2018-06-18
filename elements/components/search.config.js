@@ -16,6 +16,7 @@ module.exports = {
       placeholder: ''
     },
     button4: {
+      type: 'submit',
       text: 'Search'
     },
   }
