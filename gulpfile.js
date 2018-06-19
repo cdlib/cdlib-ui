@@ -8,20 +8,33 @@ const sass = require('gulp-sass');
 const sassJson = require('gulp-sass-json');
 const sassLint = require('gulp-sass-lint');
 const sftp = require('gulp-sftp');
+const shell = require('gulp-shell')
 const sourcemaps = require('gulp-sourcemaps');
 
-// Gulp Main Tasks:
+// Main Tasks:
 
-gulp.task('default', function(callback) {
-  runSequence('watch', 'fractal-start', callback);
+gulp.task('default', function(cb) {
+  runSequence('watch', 'fractal-start', cb);
 });
 
-gulp.task('build', function(callback) {
-  runSequence('clean', 'sass-build', 'fractal-build', callback);
+gulp.task('build', function(cb) {
+  runSequence('clean', 'sass-build', 'fractal-build', 'sync-assets-local', cb);
 });
 
-gulp.task('deploy', function(callback) {
-  runSequence('build', 'sync-assets-local', 'sync-assets-dev', 'upload-library', callback);
+gulp.task('deploy', function(cb) {
+  runSequence('build', 'upload-library', cb);
+});
+
+gulp.task('update-dev', function(cb) {
+  runSequence('sync-assets-dev', 'git-pull-dev', cb);
+});
+
+gulp.task('update-stage', function(cb) {
+  runSequence('sync-assets-stage', 'git-pull-stage', cb);
+});
+
+gulp.task('update-prod', function(cb) {
+  runSequence('sync-assets-prod', 'git-pull-prod', cb);
 });
 
 // Fractal to Gulp Integration:
@@ -49,7 +62,7 @@ gulp.task('fractal-build', function(){
   });
 });
 
-// General Gulp Tasks:
+// General Tasks:
 
 gulp.task('clean', function() {
   return del(['./dist', './ui-assets/css/sourcemaps']);
@@ -102,7 +115,7 @@ gulp.task('upload-library', function () {
     }));
 });
 
-// Rsync Gulp Tasks:
+// Rsync Tasks:
 
 const rsyncTemplate = {
   root: 'dist',
@@ -151,3 +164,11 @@ gulp.task('sync-assets-prod', function() {
       destination: '/apps/cdlib/apache/htdocs/wp-content/themes/cdlib',
     })));
 });
+
+// Server Git Pull Shell Tasks
+
+gulp.task('git-pull-dev', shell.task('ssh cdlib@web-cdlib2-dev.cdlib.org /apps/cdlib/bin/remote_git_pull_dev.sh'))
+
+gulp.task('git-pull-stage', shell.task('ssh cdlib@web-cdlib2-stg-2a.cdlib.org /apps/cdlib/bin/remote_git_pull_stg.sh'))
+
+gulp.task('git-pull-prod', shell.task('ssh cdlib@web-cdlib2-prd-2a.cdlib.org /apps/cdlib/bin/remote_git_pull_prd.sh'))
