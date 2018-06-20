@@ -1,0 +1,18 @@
+// ***** Blockquote Object ***** //
+
+blockquote {
+  margin: $space2 $space3;
+
+  &::before {
+    content: open-quote;
+  }
+
+  &::after {
+    content: close-quote;
+  }
+
+  p {
+    display: inline;
+  }
+
+}
