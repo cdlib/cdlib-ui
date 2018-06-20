@@ -1,0 +1,50 @@
+// ***** Well Components ***** //
+
+%c-well {
+  margin-bottom: $space2;
+  padding: $space3;
+
+  p {
+    margin: 0;
+  }
+
+}
+
+.c-well1 {
+  @extend %c-well;
+  background-color: $color-light-blue;
+
+  @include u-headings() {
+    color: $color-blue;
+  }
+
+}
+
+.c-well2 {
+  @extend %c-well;
+  display: inline-block;
+  background-color: $color-gold;
+  text-align: center;
+
+  > a {
+    display: block;
+    font-size: 1.2em;
+
+    + a {
+      margin-top: $space2;
+      font-size: 1.1em;
+    }
+
+  }
+
+  p {
+    font-size: 1.2em;
+
+    + p {
+      margin-top: $space2;
+      font-size: 1.1em;
+    }
+
+  }
+
+}
