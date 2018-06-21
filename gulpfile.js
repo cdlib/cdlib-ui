@@ -14,11 +14,11 @@ const sourcemaps = require('gulp-sourcemaps');
 // Main Tasks:
 
 gulp.task('default', function(cb) {
-  runSequence('watch', 'fractal-start', cb);
+  runSequence('pull-assets-dev', 'sass-build', 'watch', 'fractal-start', cb);
 });
 
 gulp.task('build', function(cb) {
-  runSequence('clean', 'sass-build', 'fractal-build', 'sync-assets-local', cb);
+  runSequence('clean', 'sass-build', 'fractal-build', 'push-assets-local', cb);
 });
 
 gulp.task('deploy', function(cb) {
@@ -26,15 +26,15 @@ gulp.task('deploy', function(cb) {
 });
 
 gulp.task('update-dev', function(cb) {
-  runSequence('sync-assets-dev', 'git-pull-dev', cb);
+  runSequence('push-assets-dev', 'git-pull-dev', cb);
 });
 
 gulp.task('update-stage', function(cb) {
-  runSequence('sync-assets-stage', 'git-pull-stage', cb);
+  runSequence('push-assets-stage', 'git-pull-stage', cb);
 });
 
 gulp.task('update-prod', function(cb) {
-  runSequence('sync-assets-prod', 'git-pull-prod', cb);
+  runSequence('push-assets-prod', 'git-pull-prod', cb);
 });
 
 // Fractal to Gulp Integration:
@@ -124,9 +124,12 @@ const rsyncTemplate = {
   clean: true, // --delete option
   exclude: ['.DS_Store', 'favicon.ico', 'fractal-customizations.css'],
   emptyDirectories: true, // fixes --delete option not working. See: https://github.com/jerrysu/gulp-rsync/issues/29
+  command: true
 };
 
-gulp.task('sync-assets-local', function() {
+gulp.task('pull-assets-dev', shell.task('rsync -rvu cdlib@web-cdlib2-dev.cdlib.org:/apps/cdlib/apache/htdocs/wp-content/themes/cdlib/ui-assets ./'))
+
+gulp.task('push-assets-local', function() {
   return gulp.src('dist/ui-assets/**')
     .pipe(rsync(Object.assign(
       rsyncTemplate,
@@ -135,7 +138,7 @@ gulp.task('sync-assets-local', function() {
     })));
 });
 
-gulp.task('sync-assets-dev', function() {
+gulp.task('push-assets-dev', function() {
   return gulp.src('dist/ui-assets/**')
     .pipe(rsync(Object.assign(
       rsyncTemplate,
@@ -145,7 +148,7 @@ gulp.task('sync-assets-dev', function() {
     })));
 });
 
-gulp.task('sync-assets-stage', function() {
+gulp.task('push-assets-stage', function() {
   return gulp.src('dist/ui-assets/**')
     .pipe(rsync(Object.assign(
       rsyncTemplate,
@@ -155,7 +158,7 @@ gulp.task('sync-assets-stage', function() {
     })));
 });
 
-gulp.task('sync-assets-prod', function() {
+gulp.task('push-assets-prod', function() {
   return gulp.src('dist/ui-assets/**')
     .pipe(rsync(Object.assign(
       rsyncTemplate,
