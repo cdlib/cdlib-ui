@@ -7,7 +7,6 @@ const runSequence = require('run-sequence');
 const sass = require('gulp-sass');
 const sassJson = require('gulp-sass-json');
 const sassLint = require('gulp-sass-lint');
-const sftp = require('gulp-sftp');
 const shell = require('gulp-shell')
 const sourcemaps = require('gulp-sourcemaps');
 
@@ -105,17 +104,9 @@ gulp.task('scss-lint', function() {
     .pipe(sassLint.failOnError())
 });
 
-gulp.task('upload-library', function () {
-  return gulp.src('dist/**')
-    .pipe(sftp({
-      host: 'webprod.cdlib.org',
-      remotePath: '/apps/webprod/apache/htdocs/cdlib/cdlib-ui',
-      authFile: 'gulp-sftp-key.json', // important: .gitignore this file
-      auth: 'keyMain'
-    }));
-});
-
 // Rsync Tasks:
+
+gulp.task('upload-library', shell.task('rsync -rvu --delete --exclude \'.DS_Store\' ./dist/ webprod@webprod.cdlib.org:/apps/webprod/apache/htdocs/cdlib/cdlib-ui'))
 
 const rsyncTemplate = {
   root: 'dist',
