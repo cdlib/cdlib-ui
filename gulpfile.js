@@ -2,7 +2,6 @@ const del = require('del');
 const gulp = require('gulp');
 const minifyCSS = require('gulp-clean-css');
 const postcss = require('gulp-postcss');
-const rsync = require('gulp-rsync');
 const runSequence = require('run-sequence');
 const sass = require('gulp-sass');
 const sassJson = require('gulp-sass-json');
@@ -108,56 +107,15 @@ gulp.task('scss-lint', function() {
 
 gulp.task('upload-library', shell.task('rsync -rvu --delete --exclude \'.DS_Store\' ./dist/ webprod@webprod.cdlib.org:/apps/webprod/apache/htdocs/cdlib/cdlib-ui'))
 
-const rsyncTemplate = {
-  root: 'dist',
-  archive: true,
-  silent: false, // -v option
-  clean: true, // --delete option
-  exclude: ['.DS_Store', 'favicon.ico', 'fractal-customizations.css'],
-  emptyDirectories: true, // fixes --delete option not working. See: https://github.com/jerrysu/gulp-rsync/issues/29
-  command: true
-};
-
 gulp.task('pull-assets-dev', shell.task('rsync -rvu cdlib@web-cdlib2-dev.cdlib.org:/apps/cdlib/apache/htdocs/wp-content/themes/cdlib/ui-assets ./'))
 
-gulp.task('push-assets-local', function() {
-  return gulp.src('dist/ui-assets/**')
-    .pipe(rsync(Object.assign(
-      rsyncTemplate,
-      {
-      destination: '/Users/jhagedorn/Documents/cdlib-local/htdocs/wp-content/themes/cdlib',
-    })));
-});
+gulp.task('push-assets-local', shell.task('rsync -rvu --delete --exclude \'.DS_Store\' ./dist/ui-assets /Users/jhagedorn/Documents/cdlib-local/htdocs/wp-content/themes/cdlib'))
 
-gulp.task('push-assets-dev', function() {
-  return gulp.src('dist/ui-assets/**')
-    .pipe(rsync(Object.assign(
-      rsyncTemplate,
-      {
-      hostname: 'cdlib@web-cdlib2-dev.cdlib.org',
-      destination: '/apps/cdlib/apache/htdocs/wp-content/themes/cdlib',
-    })));
-});
+gulp.task('push-assets-dev', shell.task('rsync -rvu --delete --exclude \'.DS_Store\' ./dist/ui-assets cdlib@web-cdlib2-dev.cdlib.org:/apps/cdlib/apache/htdocs/wp-content/themes/cdlib'))
 
-gulp.task('push-assets-stage', function() {
-  return gulp.src('dist/ui-assets/**')
-    .pipe(rsync(Object.assign(
-      rsyncTemplate,
-      {
-      hostname: 'cdlib@web-cdlib2-stg-2a.cdlib.org',
-      destination: '/apps/cdlib/apache/htdocs/wp-content/themes/cdlib',
-    })));
-});
+gulp.task('push-assets-stage', shell.task('rsync -rvu --delete --exclude \'.DS_Store\' ./dist/ui-assets cdlib@web-cdlib2-stg-2a.cdlib.org:/apps/cdlib/apache/htdocs/wp-content/themes/cdlib'))
 
-gulp.task('push-assets-prod', function() {
-  return gulp.src('dist/ui-assets/**')
-    .pipe(rsync(Object.assign(
-      rsyncTemplate,
-      {
-      hostname: 'cdlib@web-cdlib2-prd-2a.cdlib.org',
-      destination: '/apps/cdlib/apache/htdocs/wp-content/themes/cdlib',
-    })));
-});
+gulp.task('push-assets-prod', shell.task('rsync -rvu --delete --exclude \'.DS_Store\' ./dist/ui-assets cdlib@web-cdlib2-prd-2a.cdlib.org:/apps/cdlib/apache/htdocs/wp-content/themes/cdlib'))
 
 // Server Git Pull Shell Tasks
 
