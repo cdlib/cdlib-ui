@@ -1,7 +1,7 @@
 const faker = require('faker/locale/en');
 
 module.exports = {
-  label: 'Layout',
+  label: 'Layout 3 Column',
   context: {
     gridItem1: {
       name: 'A: Local Nav',
