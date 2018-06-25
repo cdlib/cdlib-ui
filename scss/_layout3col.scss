@@ -51,49 +51,4 @@ $layout-sidebar-width: 25%;
 
   }
 
-  // Styles to label grid items and demonstrate content flow. This selector and its styles should not be used in production:
-
-  &.demo-styles {
-
-    aside,
-    main {
-
-      h2 {
-        @extend %o-heading2;
-        margin: 0;
-        padding: 1rem 0;
-        color: $color-black;
-        text-align: center;
-      }
-
-    }
-
-    aside {
-
-      &:first-of-type {
-        background-color: $color-blue;
-        color: $color-white;
-
-        h2 {
-          color: inherit;
-        }
-
-      }
-
-      &:last-of-type {
-        background-color: $color-light-gray;
-      }
-
-      .c-layout__sidebar-items > * {
-        background-color: $color-gray;
-      }
-
-    }
-
-    main {
-      background-color: $color-light-blue;
-    }
-
-  }
-
 }
