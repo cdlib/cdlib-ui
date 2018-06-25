@@ -3,6 +3,7 @@ const faker = require('faker/locale/en');
 module.exports = {
   label: 'Layout 3 Column',
   context: {
+    highlightGrid: true,
     gridItem1: {
       name: 'Header',
       text: faker.lorem.paragraph()

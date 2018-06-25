@@ -84,4 +84,21 @@
 
   }
 
+  // This class not applied in templates:
+  &.highlight-grid {
+
+    * {
+      background-color: $color-light-blue;
+    }
+
+    aside {
+
+      &:last-of-type {
+        background-color: $color-white;
+      }
+
+    }
+
+  }
+
 }
