@@ -1,10 +1,10 @@
-{{ render '@header' }}
 <div class="c-layout3col">
+  {{ render '@header' }}
+  {{ render '@breadcrumb' }}
   <aside>
     {{ render '@secondarynav' }}
   </aside>
   <main>
-    {{ render '@breadcrumb' }}
     {{> @heading--1 }}
     {{#each paragraph}}
       <p>{{ program.text }}</p>
@@ -25,5 +25,5 @@
     {{ render '@sidebarbox--2' }}
     {{ render '@sidebarbox--1' }}
   </aside>
+  {{ render '@footer' }}
 </div>
-{{ render '@footer' }}

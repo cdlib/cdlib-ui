@@ -1,52 +1,85 @@
 // ***** Layout 3 Column Component ***** //
 
-$layout-sidebar-width: 25%;
-
 .c-layout3col {
   display: grid;
   grid-gap: $space3;
+
+  aside {
+
+    &:last-of-type {
+      display: grid;
+      grid-gap: $space3 $space2;
+    }
+
+  }
 
   @include screen1 {
 
     aside {
 
       &:last-of-type {
-        display: grid;
-        align-self: start;
-        grid-template-columns: repeat(2, auto);
-        grid-column-gap: $space2;
+        grid-template-columns: auto auto;
       }
 
     }
 
   }
-  
+
   @include screen2 {
-    grid-template-columns: $layout-sidebar-width auto;
+    grid-template-columns: $sidebar-width auto;
+    grid-template-rows: auto auto auto 1fr auto;
+
+    header {
+      grid-column: 1 / 3;
+    }
+
+    nav {
+      grid-column: 2;
+    }
 
     aside {
 
       &:first-of-type {
-        grid-row: 1 / 3;
+        grid-row: 2 / 5;
       }
 
+    }
+
+    footer {
+      grid-column: 1 / 3;
     }
 
   }
 
   @include screen3 {
-    grid-template-columns: $layout-sidebar-width auto $layout-sidebar-width;
+    grid-template-columns: $sidebar-width auto $sidebar-width;
+    grid-template-rows: auto auto 1fr auto;
+
+    header {
+      grid-column: 1 / 4;
+    }
 
     aside {
 
       &:first-of-type {
-        grid-row: auto;
+        grid-row: 2 / 4;
       }
 
       &:last-of-type {
+        align-self: start;
         grid-template-columns: auto;
+        grid-column: 3;
+        grid-row: 2 / 4;
       }
 
+    }
+
+    main {
+      grid-column: 2;
+    }
+
+    footer {
+      grid-column: 1 / 4;
     }
 
   }
