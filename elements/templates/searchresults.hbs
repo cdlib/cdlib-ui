@@ -1,14 +1,14 @@
-{{ render '@header' }}
 <div class="c-layout2col">
+  {{ render '@header' }}
+  {{ render '@breadcrumb' }}
   <aside>
     {{ render '@refine' }}
   </aside>
   <main>
-    {{ render '@breadcrumb' }}
     {{ render '@filter' }}
     {{ render '@records' }}
     {{ render '@result' }}
     {{ render '@pagination' }}
   </main>
+  {{ render '@footer' }}
 </div>
-{{ render '@footer' }}
