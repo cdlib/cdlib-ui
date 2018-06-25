@@ -5,6 +5,21 @@ $layout-sidebar-width: 25%;
 .c-layout3col {
   display: grid;
   grid-gap: $space3;
+
+  @include screen1 {
+
+    aside {
+
+      &:last-of-type {
+        display: grid;
+        align-self: start;
+        grid-template-columns: repeat(2, auto);
+        grid-column-gap: $space2;
+      }
+
+    }
+
+  }
   
   @include screen2 {
     grid-template-columns: $layout-sidebar-width auto;
@@ -28,20 +43,10 @@ $layout-sidebar-width: 25%;
         grid-row: auto;
       }
 
-    }
+      &:last-of-type {
+        grid-template-columns: auto;
+      }
 
-  }
-
-  .c-layout__sidebar-items {
-    display: grid;
-    grid-column-gap: $space2;
-
-    @include screen1 {
-      grid-template-columns: repeat(2, auto);
-    }
-
-    @include screen3 {
-      grid-template-columns: auto;
     }
 
   }

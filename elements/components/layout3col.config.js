@@ -12,13 +12,10 @@ module.exports = {
       text: faker.lorem.paragraphs()
     },
     gridItem3: {
-      name: 'C: Secondary / Sidebar Content'
-    },
-    gridItem4: {
       name: 'Section X',
       text: faker.lorem.paragraph()
     },
-    gridItem5: {
+    gridItem4: {
       name: 'Section Y',
       text: faker.lorem.paragraph()
     }
