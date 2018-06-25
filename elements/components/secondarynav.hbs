@@ -1,7 +1,7 @@
-<nav class="c-secondarynav o-sidebarnav" v-onmedia.screen1="detectMediaQuery">
+<nav class="c-secondarynav o-sidebarnav" v-onmedia.screen2="detectMediaQuery">
   <header>
     {{> @heading }}
-    <template v-if="!$mq.screen1">
+    <template v-if="!$mq.screen2">
       <button class="o-button5" v-on:click="toggle1" v-if="!isDisplayed">{{ secondarynav.closeButtonText }}</button>
       <button class="o-button6" v-on:click="toggle1" v-if="isDisplayed">{{ secondarynav.openButtonText }}</button>
     </template>
