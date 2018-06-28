@@ -1,0 +1,18 @@
+// ***** Layout 1 Column Component ***** //
+
+.c-layout1col {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: repeat(2, auto) 1fr auto;
+  grid-gap: $space3;
+
+  // This class not applied in templates:
+  &.highlight-grid {
+
+    > * {
+      background-color: $color-light-blue;
+    }
+
+  }
+
+}
