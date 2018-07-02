@@ -1,14 +1,17 @@
-<div class="c-layout2col">
-  {{ render '@header' }}
-  {{ render '@breadcrumb' }}
-  <aside>
-    {{ render '@refine' }}
-  </aside>
+<div class="c-layout1col">
+  <header>
+    {{ render '@header' }}
+  </header>
+  <nav>
+    {{ render '@breadcrumb' }}
+  </nav>
   <main>
     {{ render '@filter' }}
     {{ render '@records' }}
     {{ render '@result' }}
     {{ render '@pagination' }}
   </main>
-  {{ render '@footer' }}
+  <footer>
+    {{ render '@footer' }}
+  </footer>
 </div>
