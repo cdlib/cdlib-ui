@@ -2,21 +2,6 @@
 
 .c-secondarynav {
 
-  // second level list:
-  ul ul {
-    border-top: 1px solid $color-gray;
-
-    li {
-      padding-left: $space3;
-
-      &:last-child {
-        border-bottom: none;
-      }
-
-    }
-
-  }
-
   header {
     display: flex;
     align-items: flex-start;
@@ -27,6 +12,24 @@
       margin-left: $space2;
     }
 
+  }
+
+  ul ul ul {
+    padding-left: $space3;
+    border-top: 1px solid $color-gray;
+  }
+
+  // Remove top-level link from wp_nav_menu, which is a duplicate of header link:
+
+  > div > ul > li > a {
+    display: none;
+  }
+
+  // wp_nav_menu current item style:
+
+  // sass-lint:disable class-name-format
+  .current_page_item > a {
+    background-color: $color-light-blue;
   }
 
 }

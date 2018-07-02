@@ -1,7 +1,6 @@
 // ***** Sidebar Navigation Object ***** //
 
 .o-sidebarnav {
-  padding: $space2 $space2 0;
   border: 1px solid $color-blue;
 
   ul {
@@ -18,6 +17,7 @@
         @include u-interactive-element-min-size;
         display: flex;
         align-items: center;
+        padding: $space1 $space2;
       }
 
     }
@@ -25,7 +25,6 @@
   }
 
   header {
-    margin: (-$space2) (-$space2) 0;
     padding: $space2;
     background-color: $color-blue;
 
