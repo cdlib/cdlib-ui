@@ -11,7 +11,7 @@
   "devDependencies": {
     "@frctl/fractal": "^1.1.7",
     "@frctl/mandelbrot": "^1.2.0",
-    "autoprefixer": "^8.1.0",
+    "autoprefixer": "^8.6.5",
     "faker": "^4.1.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.3",
