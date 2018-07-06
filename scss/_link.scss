@@ -26,7 +26,7 @@
     background-image: url('external-link-alt.svg' param(--color #{$color-gold}));
   }
 
-  &[href*='email'] {
+  &[href^='mailto:'] {
     @extend %o-link__icon;
     background-image: url('envelope.svg' param(--color #{$color-gold}));
   }

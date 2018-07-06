@@ -51,7 +51,7 @@ module.exports = {
       context: {
         link: {
           text: 'Link to email address',
-          url: 'wordpress/submit/email/link'
+          url: 'mailto:someone@cdlib.org'
         }
       }
     },
