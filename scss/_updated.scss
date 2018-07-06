@@ -1,14 +1,35 @@
 // ***** Last Updated Component ***** //
 
 .c-updated {
-  display: grid;
-  margin: 0 0 $space2;
-  grid-template-columns: auto 1fr;
+  display: inline-grid;
+  margin: 0;
   grid-column-gap: 0.5em;
+  grid-template:
+    'updated date'
+    'owner name' /
+    auto auto;
+
+  dt {
+
+    &:first-of-type {
+      grid-area: updated;
+    }
+
+    &:last-of-type {
+      grid-area: owner;
+    }
+
+  }
 
   dd {
-    @supports (display: grid) {
-      margin: 0;
+    margin: 0;
+
+    &:first-of-type {
+      grid-area: date;
+    }
+
+    &:last-of-type {
+      grid-area: name;
     }
 
   }
