@@ -1,31 +1,34 @@
-<div class="c-layout3col{{#if highlightGrid}} highlight-grid{{/if}}">
-  <header>
-    <h2>{{ gridItem1.name }}</h2>
-    {{ gridItem1.text }}
-  </header>
-  <nav>
-    <strong>{{ gridItem2.name }}</strong> {{ gridItem2.text }}
-  </nav>
-  <aside>
-    <h2>{{ gridItem3.name }}</h2>
-    {{ gridItem3.text }}
-  </aside>
-  <main>
-    <h2>{{ gridItem4.name }}</h2>
-    {{ gridItem4.text }}
-  </main>
-  <aside>
+<div class="c-layout--3{{#if highlightGrid}} highlight-grid{{/if}}">
+  <div class="c-layout__header">
+    <h2>{{ gridItemHeader.name }}</h2>
+    {{ gridItemHeader.text }}
+  </div>
+  <div class="c-layout__breadcrumb">
+    <strong>{{ gridItemBreadcrumb.name }}</strong> {{ gridItemBreadcrumb.text }}
+  </div>
+  <div class="c-layout__sidebar1">
+    <h2>{{ gridItemSidebar.name }}</h2>
+    {{ gridItemSidebar.text }}
+  </div>
+  <div class="c-layout__main">
+    <h2>{{ gridItemMain.name }}</h2>
+    {{ gridItemMain.text }}
+  </div>
+  <div class="c-layout__sidebar2">
     <section>
-      <h2>{{ gridItem5.name }}</h2>
-      {{ gridItem5.text }}
+      <h2>{{ gridItemX.name }}</h2>
+      {{ gridItemX.text }}
     </section>
     <section>
-      <h2>{{ gridItem6.name }}</h2>
-      {{ gridItem6.text }}
+      <h2>{{ gridItemY.name }}</h2>
+      {{ gridItemY.text }}
     </section>
-  </aside>
-  <footer>
-    <h2>{{ gridItem7.name }}</h2>
-    {{ gridItem7.text }}
-  </footer>
+  </div>
+  <div class="c-layout__updated">
+    <strong>{{ gridItemUpdated.name }}</strong> {{ gridItemUpdated.text }}
+  </div>
+  <div class="c-layout__footer">
+    <h2>{{ gridItemFooter.name }}</h2>
+    {{ gridItemFooter.text }}
+  </div>
 </div>

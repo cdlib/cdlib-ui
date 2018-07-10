@@ -1,18 +1,44 @@
-// ***** Layout 1 Column Component ***** //
+// ***** Layout 1 Component ***** //
 
-.c-layout1col {
+.c-layout--1 {
   display: grid;
   min-height: 100vh;
-  grid-template-rows: repeat(2, auto) 1fr auto;
-  grid-gap: $space3;
+  grid-row-gap: $space3;
+  grid-template:
+    'layout1a'
+    'layout1b'
+    'layout1c' 1fr
+    'layout1d'
+    'layout1e'
+    / auto;
 
-  // This class not applied in templates:
+  // This class used only in layout1.hbs:
   &.highlight-grid {
 
     > * {
       background-color: $color-light-blue;
     }
 
+  }
+
+  .c-layout__header {
+    grid-area: layout1a;
+  }
+
+  .c-layout__breadcrumb {
+    grid-area: layout1b;
+  }
+
+  .c-layout__main {
+    grid-area: layout1c;
+  }
+
+  .c-layout__updated {
+    grid-area: layout1d;
+  }
+
+  .c-layout__footer {
+    grid-area: layout1e;
   }
 
 }

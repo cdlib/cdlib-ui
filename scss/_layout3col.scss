@@ -1,102 +1,118 @@
-// ***** Layout 3 Column Component ***** //
+// ***** Layout 3 Component ***** //
 
-.c-layout3col {
+// grid-template within media query 'screen2' is not getting cascaded over with 'screen3' in IE for some reason (perhaps autoprefixer), so added 'max-width' media feature to 'screen2' queries
+
+.c-layout--3 {
   display: grid;
   min-height: 100vh;
-  grid-template-rows: repeat(4, auto) 1fr auto;
   grid-gap: $space3;
+  grid-template:
+    'layout3a'
+    'layout3b'
+    'layout3c'
+    'layout3d' 1fr
+    'layout3e'
+    'layout3f'
+    'layout3g'
+    / auto;
 
-  aside {
-
-    &:last-of-type {
-      display: grid;
-      grid-gap: $space3 $space2;
-    }
-
-  }
-
-  @include screen1 {
-
-    aside {
-
-      &:last-of-type {
-        grid-template-columns: auto auto;
-      }
-
-    }
-
-  }
-
-  @include screen2 {
-    grid-template-columns: $sidebar-width auto;
-    grid-template-rows: repeat(3, auto) 1fr auto;
-
-    header {
-      grid-column: 1 / 3;
-    }
-
-    nav {
-      grid-column: 2;
-    }
-
-    aside {
-
-      &:first-of-type {
-        grid-row: 3 / 5;
-      }
-
-    }
-
-    footer {
-      grid-column: 1 / 3;
-    }
-
+  @media (min-width: $screen2) and (max-width: $screen3) {
+    grid-gap: $space3;
+    grid-template:
+    'layout3a layout3a'
+    '........ layout3b'
+    'layout3c layout3d' 1fr
+    'layout3c layout3e'
+    '........ layout3f'
+    'layout3g layout3g'
+    / $sidebar-width auto;
   }
 
   @include screen3 {
-    grid-template-columns: $sidebar-width auto $sidebar-width;
-    grid-template-rows: repeat(2, auto) 1fr auto;
-
-    header {
-      grid-column: 1 / 4;
-    }
-
-    aside {
-
-      &:last-of-type {
-        align-self: start;
-        grid-template-columns: auto;
-        grid-column: 3;
-        grid-row: 3;
-      }
-
-    }
-
-    main {
-      grid-column: 2;
-    }
-
-    footer {
-      grid-column: 1 / 4;
-    }
-
+    grid-gap: $space3;
+    grid-template:
+    'layout3a layout3a layout3a'
+    '........ layout3b ........'
+    'layout3c layout3d layout3e' 1fr
+    '........ layout3f ........'
+    'layout3g layout3g layout3g'
+    / $sidebar-width auto $sidebar-width;
   }
 
-  // This class not applied in templates:
+  // This class used only in layout3.hbs:
   &.highlight-grid {
 
     * {
       background-color: $color-light-blue;
     }
 
-    aside {
+    .c-layout__sidebar2 {
+      background-color: $color-white;
+    }
+
+  }
+
+  .c-layout__header {
+    grid-area: layout3a;
+  }
+
+  .c-layout__breadcrumb {
+    grid-area: layout3b;
+  }
+
+  .c-layout__sidebar1 {
+    grid-area: layout3c;
+  }
+
+  .c-layout__main {
+    grid-area: layout3d;
+  }
+
+  .c-layout__sidebar2 {
+    display: grid;
+    align-self: start;
+    grid-area: layout3e;
+    grid-gap: $space3;
+    grid-template:
+      'layout3e1'
+      'layout3e2'
+      / auto;
+
+    @media (min-width: $screen2) and (max-width: $screen3) {
+      grid-gap: $space2;
+      grid-template:
+        'layout3e1 layout3e2'
+        / auto auto;
+    }
+
+    @include screen3 {
+      grid-gap: $space3;
+      grid-template:
+        'layout3e1'
+        'layout3e2' 1fr
+        / auto;
+    }
+
+    section {
+
+      &:first-of-type {
+        grid-area: layout3e1;
+      }
 
       &:last-of-type {
-        background-color: $color-white;
+        grid-area: layout3e2;
       }
 
     }
 
+  }
+
+  .c-layout__updated {
+    grid-area: layout3f;
+  }
+
+  .c-layout__footer {
+    grid-area: layout3g;
   }
 
 }

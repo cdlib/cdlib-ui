@@ -1,17 +1,17 @@
-<div class="c-layout1col">
-  <header>
+<div class="c-layout--1">
+  <div class="c-layout__header">
     {{ render '@header' }}
-  </header>
-  <nav>
+  </div>
+  <div class="c-layout__breadcrumb">
     {{ render '@breadcrumb' }}
-  </nav>
-  <main>
+  </div>
+  <main class="c-layout__main">
     {{ render '@filter' }}
     {{ render '@records' }}
     {{ render '@result' }}
     {{ render '@pagination' }}
   </main>
-  <footer>
+  <div class="c-layout__footer">
     {{ render '@footer' }}
-  </footer>
+  </div>
 </div>

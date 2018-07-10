@@ -1,17 +1,20 @@
-<div class="c-layout1col{{#if highlightGrid}} highlight-grid{{/if}}">
-  <header>
-    <h2>{{ gridItem1.name }}</h2>
-    {{ gridItem1.text }}
-  </header>
-  <nav>
-    <strong>{{ gridItem2.name }}</strong> {{ gridItem2.text }}
-  </nav>
-  <main>
-    <h2>{{ gridItem3.name }}</h2>
-    {{ gridItem3.text }}
-  </main>
-  <footer>
-    <h2>{{ gridItem4.name }}</h2>
-    {{ gridItem4.text }}
-  </footer>
+<div class="c-layout--1{{#if highlightGrid}} highlight-grid{{/if}}">
+  <div class="c-layout__header">
+    <h2>{{ gridItemHeader.name }}</h2>
+    {{ gridItemHeader.text }}
+  </div>
+  <div class="c-layout__breadcrumb">
+    <strong>{{ gridItemBreadcrumb.name }}</strong> {{ gridItemBreadcrumb.text }}
+  </div>
+  <div class="c-layout__main">
+    <h2>{{ gridItemMain.name }}</h2>
+    {{ gridItemMain.text }}
+  </div>
+  <div class="c-layout__updated">
+    <strong>{{ gridItemUpdated.name }}</strong> {{ gridItemUpdated.text }}
+  </div>
+  <div class="c-layout__footer">
+    <h2>{{ gridItemFooter.name }}</h2>
+    {{ gridItemFooter.text }}
+  </div>
 </div>

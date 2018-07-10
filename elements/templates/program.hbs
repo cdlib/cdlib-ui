@@ -1,10 +1,14 @@
-<div class="c-layout3col">
-  {{ render '@header' }}
-  {{ render '@breadcrumb' }}
-  <aside>
+<div class="c-layout--3">
+  <div class="c-layout__header">
+    {{ render '@header' }}
+  </div>
+  <div class="c-layout__breadcrumb">
+    {{ render '@breadcrumb' }}
+  </div>
+  <aside class="c-layout__sidebar1">
     {{ render '@secondarynav' }}
   </aside>
-  <main>
+  <main class="c-layout__main">
     {{> @heading--1 }}
     {{#each paragraph}}
       <p>{{ program.text }}</p>
@@ -17,13 +21,17 @@
     {{/each}}
     {{ render '@halfboxes' }}
     {{ render '@staff' }}
-    {{ render '@updated' }}
   </main>
-  <aside>
+  <aside class="c-layout__sidebar2">
     {{ render '@news' }}
     {{ render '@sidebarbox--2' }}
     {{ render '@sidebarbox--2' }}
     {{ render '@sidebarbox--1' }}
   </aside>
-  {{ render '@footer' }}
+  <div class="c-layout__updated">
+    {{ render '@updated' }}
+  </div>
+  <div class="c-layout__footer">
+    {{ render '@footer' }}
+  </div>
 </div>

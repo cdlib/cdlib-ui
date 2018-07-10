@@ -4,31 +4,35 @@ module.exports = {
   label: 'Layout 3 Column',
   context: {
     highlightGrid: true,
-    gridItem1: {
+    gridItemHeader: {
       name: 'Header',
       text: faker.lorem.paragraph()
     },
-    gridItem2: {
+    gridItemBreadcrumb: {
       name: 'Breadcrumb',
       text: faker.lorem.sentence()
     },
-    gridItem3: {
+    gridItemSidebar: {
       name: 'A: Local Nav',
-      text: faker.lorem.paragraphs()
-    },
-    gridItem4: {
-      name: 'B: Main Content',
       text: faker.lorem.paragraph()
     },
-    gridItem5: {
+    gridItemMain: {
+      name: 'B: Main Content',
+      text: faker.lorem.paragraphs()
+    },
+    gridItemX: {
       name: 'Section X',
       text: faker.lorem.paragraph()
     },
-    gridItem6: {
+    gridItemY: {
       name: 'Section Y',
       text: faker.lorem.paragraph()
     },
-    gridItem7: {
+    gridItemUpdated: {
+      name: 'Last Updated',
+      text: faker.lorem.sentence()
+    },
+    gridItemFooter: {
       name: 'Footer',
       text: faker.lorem.paragraph()
     }

@@ -4,19 +4,23 @@ module.exports = {
   label: 'Layout 1 Column',
   context: {
     highlightGrid: true,
-    gridItem1: {
+    gridItemHeader: {
       name: 'Header',
       text: faker.lorem.paragraph()
     },
-    gridItem2: {
+    gridItemBreadcrumb: {
       name: 'Breadcrumb',
       text: faker.lorem.sentence()
     },
-    gridItem3: {
+    gridItemMain: {
       name: 'Main Content',
-      text: faker.lorem.paragraph()
+      text: faker.lorem.paragraphs()
     },
-    gridItem4: {
+    gridItemUpdated: {
+      name: 'Last Updated',
+      text: faker.lorem.sentence()
+    },
+    gridItemFooter: {
       name: 'Footer',
       text: faker.lorem.paragraph()
     }
