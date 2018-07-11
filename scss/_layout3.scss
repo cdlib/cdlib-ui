@@ -1,8 +1,8 @@
-// ***** Layout 3 Component ***** //
+// ***** Layout 3 Template ***** //
 
 // grid-template within media query 'screen2' is not getting cascaded over with 'screen3' in IE for some reason (perhaps autoprefixer), so added 'max-width' media feature to 'screen2' queries
 
-.c-layout--3 {
+.t-layout--3 {
   display: grid;
   min-height: 100vh;
   grid-gap: $space3;
@@ -46,29 +46,29 @@
       background-color: $color-light-blue;
     }
 
-    .c-layout__sidebar2 {
+    .t-layout__sidebar2 {
       background-color: $color-white;
     }
 
   }
 
-  .c-layout__header {
+  .t-layout__header {
     grid-area: layout3a;
   }
 
-  .c-layout__breadcrumb {
+  .t-layout__breadcrumb {
     grid-area: layout3b;
   }
 
-  .c-layout__sidebar1 {
+  .t-layout__sidebar1 {
     grid-area: layout3c;
   }
 
-  .c-layout__main {
+  .t-layout__main {
     grid-area: layout3d;
   }
 
-  .c-layout__sidebar2 {
+  .t-layout__sidebar2 {
     display: grid;
     align-self: start;
     grid-area: layout3e;
@@ -107,11 +107,11 @@
 
   }
 
-  .c-layout__updated {
+  .t-layout__updated {
     grid-area: layout3f;
   }
 
-  .c-layout__footer {
+  .t-layout__footer {
     grid-area: layout3g;
   }
 

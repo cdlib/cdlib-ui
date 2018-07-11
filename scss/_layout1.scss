@@ -1,6 +1,6 @@
-// ***** Layout 1 Component ***** //
+// ***** Layout 1 Template ***** //
 
-.c-layout--1 {
+.t-layout--1 {
   display: grid;
   min-height: 100vh;
   grid-row-gap: $space3;
@@ -21,23 +21,23 @@
 
   }
 
-  .c-layout__header {
+  .t-layout__header {
     grid-area: layout1a;
   }
 
-  .c-layout__breadcrumb {
+  .t-layout__breadcrumb {
     grid-area: layout1b;
   }
 
-  .c-layout__main {
+  .t-layout__main {
     grid-area: layout1c;
   }
 
-  .c-layout__updated {
+  .t-layout__updated {
     grid-area: layout1d;
   }
 
-  .c-layout__footer {
+  .t-layout__footer {
     grid-area: layout1e;
   }
 

@@ -41,9 +41,6 @@
 @import 'header';
 @import 'headernav';
 @import 'highlight';
-@import 'layout1col';
-@import 'layout2col';
-@import 'layout3col';
 @import 'mainbox';
 @import 'news';
 @import 'pagination';
@@ -57,3 +54,9 @@
 @import 'updated';
 @import 'utilitynav';
 @import 'well';
+
+// ***** Templates ***** //
+
+@import 'layout1';
+@import 'layout2';
+@import 'layout3';

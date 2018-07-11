@@ -1,6 +1,6 @@
-// ***** Layout 2 Component ***** //
+// ***** Layout 2 Template ***** //
 
-.c-layout--2 {
+.t-layout--2 {
   display: grid;
   min-height: 100vh;
   grid-row-gap: $space3;
@@ -33,27 +33,27 @@
 
   }
 
-  .c-layout__header {
+  .t-layout__header {
     grid-area: layout2a;
   }
 
-  .c-layout__breadcrumb {
+  .t-layout__breadcrumb {
     grid-area: layout2b;
   }
 
-  .c-layout__sidebar1 {
+  .t-layout__sidebar1 {
     grid-area: layout2c;
   }
 
-  .c-layout__main {
+  .t-layout__main {
     grid-area: layout2d;
   }
 
-  .c-layout__updated {
+  .t-layout__updated {
     grid-area: layout2e;
   }
 
-  .c-layout__footer {
+  .t-layout__footer {
     grid-area: layout2f;
   }
 
