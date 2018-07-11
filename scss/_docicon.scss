@@ -5,9 +5,9 @@ $docicon-light-blue: rgb(0, 116, 173); // #0074AD
 $docicon-green: rgb(82, 122, 0); // #527A00
 
 %o-docicon {
-  padding: 0.1em 0.5em;
+  padding: 0.2em 0.5em;
   color: $color-white;
-  font-family: Monaco, 'Andale Mono', monospace;
+  font-family: Consolas, Monaco, monospace;
   font-size: 0.7em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
