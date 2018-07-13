@@ -9,11 +9,6 @@ $headernav-section-padding: $space3;
     @extend %u-reset-list-styles;
   }
 
-  // Default link style:
-  a {
-    @extend %o-link3;
-  }
-
   // Sections:
   > ul {
 
@@ -52,7 +47,7 @@ $headernav-section-padding: $space3;
 
   }
 
-  // Section containers:
+  // Panels:
   > ul > li > ul {
     display: none;
     position: absolute;
@@ -67,23 +62,34 @@ $headernav-section-padding: $space3;
     box-shadow: $box-shadow;
   }
 
+  // Panel lists:
+  > ul > li > ul > li {
+    margin-left: $space1;
+    page-break-inside: avoid;
+  }
+
+  // Panel sub-lists:
+  > ul > li > ul > li > ul {
+    margin-left: $space1;
+  }
+
   > ul > li:last-child > ul {
     right: 0;
   }
 
-  // Section headings:
+  // Panel list headings:
   > ul > li > ul > li > a {
-    margin-bottom: $space2;
+    margin-bottom: $space3;
     color: $color-red;
     font-weight: bold;
   }
 
-  // Section items:
+  // Panel list items:
   > ul > li li {
-    margin-bottom: $space2;
+    margin-bottom: $space3;
   }
 
-  // Section toggle:
+  // Panel toggle:
   > ul > li > a:focus + ul,
   > ul > li:hover > ul {
 
