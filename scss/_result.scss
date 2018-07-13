@@ -3,29 +3,22 @@
 .c-result {
   display: grid;
   margin-bottom: $space3;
-  grid-template-columns: 2.7em 1fr;
   grid-gap: $space2;
+  grid-template:
+    'result-doctype result-group'
+    'result-doctype result-heading'
+    'result-doctype result-quote'
+    'result-doctype result-date'
+    / 2.7em 1fr;
 
   @include u-headings() {
     display: inline;
     margin: 0;
-    grid-column: 2;
+    grid-area: result-heading;
   }
 
   time {
-    grid-column: 2;
-  }
-
-  > * {
-    margin-bottom: $space2;
-  }
-
-  @supports (display: grid) {
-
-    > * {
-      margin-bottom: 0;
-    }
-
+    grid-area: result-date;
   }
 
 }
@@ -34,15 +27,15 @@
   align-self: start;
   margin-top: 0.3em;
   justify-self: end;
-  grid-row: 1;
+  grid-area: result-doctype;
 }
 
 .c-result__group {
-  grid-column: 2;
+  grid-area: result-group;
 }
 
 .c-result__quote {
-  grid-column: 2;
+  grid-area: result-quote;
 
   &::before,
   &::after {
