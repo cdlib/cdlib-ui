@@ -135,3 +135,19 @@ a {
 .o-link3 {
   @extend %o-link3;
 }
+
+%o-link4 {
+  @extend %o-link;
+  color: $color-light-black;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: $color-blue;
+  }
+
+}
+
+.o-link4 {
+  @extend %o-link4;
+}

@@ -50,13 +50,21 @@ module.exports = {
       name: '6', // link--6.hbs
       context: {
         link: {
+          text: 'Light black, blue on focus/hover'
+        }
+      }
+    },
+    {
+      name: '7', // link--7.hbs
+      context: {
+        link: {
           text: 'Link to email address',
           url: 'mailto:someone@cdlib.org'
         }
       }
     },
     {
-      name: '7', // link--7.hbs
+      name: '8', // link--8.hbs
       context: {
         link: {
           text: 'Link to Sharepoint content',
@@ -65,7 +73,7 @@ module.exports = {
       }
     },
     {
-      name: '8', // link--8.hbs
+      name: '9', // link--9.hbs
       context: {
         link: {
           text: 'Link to PDF',
@@ -74,7 +82,7 @@ module.exports = {
       }
     },
     {
-      name: '9', // link--9.hbs
+      name: '10', // link--10.hbs
       context: {
         link: {
           text: 'Link to protected document',
@@ -83,7 +91,7 @@ module.exports = {
       }
     },
     {
-      name: '10', // link--10.hbs
+      name: '11', // link--11.hbs
       context: {
         link: {
           text: 'Link to Word document',
@@ -92,7 +100,7 @@ module.exports = {
       }
     },
     {
-      name: '11', // link--11.hbs
+      name: '12', // link--12.hbs
       context: {
         link: {
           text: 'Link to Excel spreadsheet',
@@ -101,7 +109,7 @@ module.exports = {
       }
     },
     {
-      name: '12', // link--12.hbs
+      name: '13', // link--13.hbs
       context: {
         link: {
           text: 'Link to text file',
@@ -110,7 +118,7 @@ module.exports = {
       }
     },
     {
-      name: '13', // link--13.hbs
+      name: '14', // link--14.hbs
       context: {
         link: {
           text: 'Link to ZIP file',
