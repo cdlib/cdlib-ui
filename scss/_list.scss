@@ -1,9 +1,19 @@
-// ***** List Objects ***** //
+// ***** List Object ***** //
 
-.o-list1 {
-  line-height: $line-height;
-}
+// Read notes in component config
 
-.o-list2 {
-  @extend %u-reset-list-styles;
+.entry-content {
+
+  ul,
+  ol {
+    margin-top: $space2;
+    margin-bottom: $space2;
+    padding-left: 2em;
+
+    li {
+      line-height: $line-height;
+    }
+
+  }
+
 }
