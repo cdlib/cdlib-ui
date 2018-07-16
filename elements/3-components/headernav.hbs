@@ -1,13 +1,14 @@
+{{!-- Read notes in component config --}}
 <nav class="c-headernav o-mobilenav">
   <ul>
     {{#each list1}}
-    <li>{{> @link--6 }}
+    <li>{{> @link }}
       <ul>
         {{#each ../list2}}
-        <li>{{> @link--2 }}
+        <li>{{> @link }}
           <ul>
             {{#each ../../list3}}
-            <li>{{> @link--2 }}</li>
+            <li>{{> @link }}</li>
             {{/each}}
           </ul>
         </li>

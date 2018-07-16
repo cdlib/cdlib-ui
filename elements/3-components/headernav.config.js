@@ -34,5 +34,6 @@ module.exports = {
     list1: fakerHeaderList1,
     list2: fakerHeaderList2,
     list3: fakerHeaderList3
-  }
+  },
+  notes: 'Instead of using link variants link--2 and link--6 in headernav.hbs, default links are used and then styled as those variants in _headernav.scss. This is for WP Nav Menus, which output anchors tags without classes, by default.'
 };
