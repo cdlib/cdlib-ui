@@ -18,6 +18,8 @@ new Vue({
     },
     detectMediaQuery: function(alias, matches) {
       if (matches)
+        this.isDisplayed = true
+      else
         this.isDisplayed = false
     },
     headerToggle1: function(){

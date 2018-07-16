@@ -2,11 +2,11 @@
   <header>
     {{> @heading }}
     <template v-if="!$mq.screen2">
-      <button class="o-button5" v-on:click="toggle1" v-if="!isDisplayed">{{ secondarynav.closeButtonText }}</button>
-      <button class="o-button6" v-on:click="toggle1" v-if="isDisplayed">{{ secondarynav.openButtonText }}</button>
+      <button class="o-button5" v-on:click="toggle1" v-if="isDisplayed">{{ secondarynav.closeButtonText }}</button>
+      <button class="o-button6" v-on:click="toggle1" v-if="!isDisplayed">{{ secondarynav.openButtonText }}</button>
     </template>
   </header>
-  <div v-if="!isDisplayed">
+  <div v-if="isDisplayed">
     <ul>
       <li>{{> @link--1 }}
         <ul>
