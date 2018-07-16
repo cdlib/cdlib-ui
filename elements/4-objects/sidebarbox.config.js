@@ -9,7 +9,8 @@ for (var i = 0; i < 5; i++) {
   fakerData.push({
     link: {
       text: removePeriod(faker.lorem.sentence()),
-      url: faker.internet.url()
+      url: faker.internet.url(),
+      external: faker.random.boolean()
     }
   });
 }

@@ -24,7 +24,7 @@
       a {
         @extend %o-link2;
         @include u-interactive-element-min-size;
-        display: inline-flex;
+        display: flex;
         align-items: center;
       }
 
