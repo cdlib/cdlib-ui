@@ -3,9 +3,17 @@
 .c-halfboxes {
 
   @include screen1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: $space2;
+    display: flex;
+
+    > * {
+      flex: 1 1 50%;
+
+      &:nth-child(2) {
+        margin-left: $space2;
+      }
+
+    }
+
   }
 
 }
