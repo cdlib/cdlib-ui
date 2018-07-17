@@ -6,8 +6,8 @@ for (var i = 0; i < 8; i++) {
     heading: {
       level: '3'
     },
-    link1: false,
-    link2: true,
+    link1: true,
+    link2: false,
     link: {
       text: faker.commerce.productName()
     },
