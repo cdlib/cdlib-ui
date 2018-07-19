@@ -1,7 +1,9 @@
 const faker = require('faker/locale/en');
 const linkData1 = [];
 const linkData2 = [];
-const list1 = ['About CDL', 'Services & Projects', 'Resources for...', 'Committees & Groups', 'News & Groups'];
+const linkData3 = [];
+const list1 = ['About CDL', 'Our Organization', 'Services & Projects', 'Resources For...', 'Committees & Groups', 'News & Media'];
+const list3 = ['Site Map', 'Terms & Conditions', 'Privacy Policy', 'Accessibility Policy'];
 
 function capFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
@@ -23,17 +25,19 @@ for (var i = 0; i < 5; i++) {
   });
 }
 
+for (var i = 0; i < list3.length; i++) {
+  linkData3.push({
+    link: {
+      text: list3[i]
+    }
+  });
+}
+
 module.exports = {
   label: 'Footer',
   context: {
     list1: linkData1,
     list2: linkData2,
-    heading: {
-      level: '2',
-    },
-    link1: true,
-    link: {
-      text: 'Heading'
-    }
+    list3: linkData3
   }
 };
