@@ -8,6 +8,7 @@ module.exports = {
   context: {
     link: {
       text: 'Blue, underlined by default',
+      external: false,
       linebreak: true
     }
   },
@@ -25,7 +26,8 @@ module.exports = {
       context: {
         link: {
           text: 'Blue, underlined by default, external link',
-          url: 'wordpress/external/link'
+          url: 'wordpress/external/link',
+          external: true
         }
       }
     },
@@ -34,7 +36,8 @@ module.exports = {
       context: {
         link: {
           text: 'Blue, underlined on focus/hover, external link',
-          url: 'wordpress/external/link'
+          url: 'wordpress/external/link',
+          external: true
         }
       }
     },

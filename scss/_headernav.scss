@@ -1,6 +1,9 @@
 // ***** Header Nav Component ***** //
 
+// Read notes in component config
+
 $headernav-section-padding: $space3;
+$headernav-item-margin: $space3;
 
 .c-headernav {
   position: relative;
@@ -38,6 +41,7 @@ $headernav-section-padding: $space3;
 
   // Nav bar links:
   > ul > li > a {
+    @extend %o-link4;
 
     @include screen2 {
       padding: $space1;
@@ -64,29 +68,37 @@ $headernav-section-padding: $space3;
 
   // Panel lists:
   > ul > li > ul > li {
-    margin-left: $space1;
     page-break-inside: avoid;
   }
 
-  // Panel sub-lists:
-  > ul > li > ul > li > ul {
-    margin-left: $space1;
-  }
-
-  > ul > li:last-child > ul {
-    right: 0;
-  }
-
-  // Panel list headings:
+  // Panel list 'heading' links:
   > ul > li > ul > li > a {
-    margin-bottom: $space3;
+    @extend %o-link2;
+    margin-bottom: $headernav-item-margin;
     color: $color-red;
     font-weight: bold;
   }
 
-  // Panel list items:
+  // Panel sub-lists:
+  > ul > li > ul > li > ul {
+    padding-right: $space1;
+    padding-left: $space1;
+  }
+
+   // Panel sub-list links:
+  > ul > li > ul > li > ul > li > a {
+    @extend %o-link2;
+  }
+
+  // Positioning for rightmost panels:
+  > ul > li:nth-last-child(1) > ul,
+  > ul > li:nth-last-child(2) > ul {
+    right: 0;
+  }
+
+  // All panel list items:
   > ul > li li {
-    margin-bottom: $space3;
+    margin-bottom: $headernav-item-margin;
   }
 
   // Panel toggle:

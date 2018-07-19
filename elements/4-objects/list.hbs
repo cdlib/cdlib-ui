@@ -1,7 +1,8 @@
-<ul class="o-list1">
-  <li>{{ text }}</li>
-  <li>{{ text }}</li>
-  <li>{{ text }}</li>
-  <li>{{ text }}</li>
-  <li>{{ text }}</li>
-</ul>
+{{!-- Read notes in component config --}}
+<div class="entry-content">
+  <ul>
+    {{#each list}}
+    <li>{{ list.text }}</li>
+    {{/each}}
+  </ul>
+</div>

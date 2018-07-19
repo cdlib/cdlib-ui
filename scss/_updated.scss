@@ -2,7 +2,7 @@
 
 .c-updated {
   display: inline-grid;
-  margin: 0;
+  margin: 0 0 $space2;
   grid-column-gap: 0.5em;
   grid-template:
     'updated date'
@@ -33,7 +33,8 @@
     }
 
     a {
-      background: none;
+      // disable default mailto icon:
+      background-image: none;
     }
 
   }
