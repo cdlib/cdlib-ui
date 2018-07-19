@@ -1,0 +1,13 @@
+<div class="c-timeline">
+  <ul>
+    {{#each list1}}
+    <li><time>{{ timeline.year }}</time>
+      <ul>
+        {{#each ../list2}}
+        <li>{{> @link }}</li>
+        {{/each}}
+      </ul>
+    </li>
+    {{/each}}
+  </ul>
+</div>

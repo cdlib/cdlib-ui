@@ -1,0 +1,29 @@
+// ***** Timeline Component ***** //
+
+.c-timeline {
+
+  ul {
+    @extend %u-reset-list-styles;
+  }
+
+  > ul > li {
+    display: flex;
+  }
+
+  > ul > li > ul {
+    margin-left: $space2;
+    border-left: 3px solid $color-blue;
+  }
+
+  > ul > li > ul > li {
+    margin-top: $space2;
+    margin-bottom: $space2;
+    margin-left: $space2;
+  }
+
+  time {
+    margin-top: $space2;
+    font-weight: bold;
+  }
+
+}
