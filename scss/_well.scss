@@ -2,7 +2,7 @@
 
 %c-well {
   margin-bottom: $space2;
-  padding: $space3;
+  padding: $space3 2.5em;
 
   p {
     margin: 0;
@@ -16,6 +16,10 @@
 
   @include u-headings() {
     color: $color-blue;
+  }
+
+  blockquote {
+    padding: 0;
   }
 
 }

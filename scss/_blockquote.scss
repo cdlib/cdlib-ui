@@ -1,17 +1,9 @@
 // ***** Blockquote Object ***** //
 
 blockquote {
-  margin: $space2 0;
-  padding: $space2 $space3;
-  background-color: $color-light-blue;
-
-  &::before {
-    content: open-quote;
-  }
-
-  &::after {
-    content: close-quote;
-  }
+  margin: 0 0 $space2;
+  padding: $space3 2.5em;
+  font-style: italic;
 
   p {
     display: inline;
