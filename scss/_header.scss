@@ -6,12 +6,17 @@ $header-logo-height: 50px;
   display: grid;
   position: relative;
   margin-top: $space1;
+  grid-template:
+    'header-logo header-controls';
 
   @include screen2 {
     align-items: start;
     margin-top: $space2;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: repeat(3, auto);
+    grid-template:
+      'header-logo header-util-nav'
+      'header-logo header-search'
+      'header-nav header-nav'
+      / auto 1fr;
   }
 
 }
@@ -19,20 +24,14 @@ $header-logo-height: 50px;
 .c-header__logo {
   display: inline-block;
   margin-bottom: $space2;
-  grid-column: 1;
-  grid-row: 1;
-
-  @include screen2 {
-    grid-column: 1;
-    grid-row: 1 / 3;
-  }
+  grid-area: header-logo;
 
   img {
     display: block;
     height: $header-logo-height;
 
     @include screen2 {
-      height: 70px;
+      height: 4.4rem;
     }
 
   }
@@ -40,8 +39,7 @@ $header-logo-height: 50px;
 }
 
 .c-header__controls {
-  grid-column: 1;
-  grid-row: 1;
+  grid-area: header-controls;
   justify-self: end;
 
   button {
@@ -56,16 +54,21 @@ $header-logo-height: 50px;
 
 .c-header__search {
   display: flex;
+  position: absolute;
+  right: 0;
+  left: 0;
   align-items: flex-start;
+  height: $header-logo-height;
   background-color: $color-white;
   z-index: 1;
-  grid-column: 1;
-  grid-row: 1;
+  grid-area: header-search;
 
   @include screen2 {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    justify-self: center;
+    position: static;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    grid-column: 1 / 3;
   }
 
   > button {
@@ -77,6 +80,7 @@ $header-logo-height: 50px;
 
     @include screen2 {
       flex: 0 1 auto;
+      width: 18rem;
     }
 
   }
@@ -101,8 +105,7 @@ $header-logo-height: 50px;
 .c-header__header-nav {
   
   @include screen2 {
-    grid-column: 1 / 3;
-    grid-row: 3 / 4;
+    grid-area: header-nav;
   }
 
   .o-mobilenav {
@@ -123,8 +126,7 @@ $header-logo-height: 50px;
 
   @include screen2 {
     margin-top: 0;
-    grid-column: 2 / 3;
-    grid-row: 1;
+    grid-area: header-util-nav;
   }
 
 }
