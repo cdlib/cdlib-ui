@@ -68,7 +68,8 @@ $headernav-item-margin: $space3;
 
   // Panel lists:
   > ul > li > ul > li {
-    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-inside: avoid; // Firefox
   }
 
   // Panel list 'heading' links:
@@ -83,6 +84,7 @@ $headernav-item-margin: $space3;
   > ul > li > ul > li > ul {
     padding-right: $space1;
     padding-left: $space1;
+    page-break-inside: avoid; // Firefox
   }
 
    // Panel sub-list links:
