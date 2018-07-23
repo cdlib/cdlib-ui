@@ -11,9 +11,6 @@ for (var i = 0; i < 10; i++) {
     },
     position: {
       text: faker.name.jobTitle()
-    },
-    profile: {
-      isActive: faker.random.boolean()
     }
   });
 }

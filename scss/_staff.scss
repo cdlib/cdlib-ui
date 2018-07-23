@@ -1,5 +1,7 @@
 // ***** Staff Component ***** //
 
+$staff-icon-size: 1.5em;
+
 .c-staff {
   margin-bottom: $space2;
 
@@ -8,28 +10,41 @@
     display: none;
   }
 
-}
+  tbody tr {
 
-.c-staff__links {
-  display: flex;
+    th,
+    td {
 
-  a {
-    height: 1em;
+      &:first-child {
+        width: 30%;
+      }
 
-    &:nth-of-type(1) {
-      width: 1em;
-      background: url('envelope.svg') right center / contain no-repeat;
     }
 
-    &:nth-of-type(2) {
-      width: 1.7em;
-      margin-left: 0.7em;
-      border-left: 1px solid $color-gray;
-      background: url('user-circle.svg' param(--color #{$color-gold})) left 0.6em center / contain no-repeat;
-    }
+    td {
 
-    span {
-      @include u-hide();
+      &:nth-child(2) {
+        width: 70%;
+      }
+
+      &:last-child {
+        padding: 0;
+
+        a {
+          display: block;
+          width: $staff-icon-size;
+          height: $staff-icon-size;
+          margin: 0 auto;
+          background: url('user-circle.svg' param(--color #{$color-gold})) center / contain no-repeat;
+
+          span {
+            @include u-hide();
+          }
+
+        }
+
+      }
+
     }
 
   }

@@ -12,16 +12,9 @@
       <th scope="row">{{ lastname.text }}, {{ firstname.text }}</th>
       <td>{{ position.text }}</td>
       <td>
-        <div class="c-staff__links">
-          <a href="">
-            <span>Contact information</span>
-          </a>
-          {{#if profile.isActive}}
-          <a href="">
-            <span>View profile</span>
-          </a>
-          {{/if}}
-        </div>
+        <a href="">
+          <span>View profile</span>
+        </a>
       </td>
     </tr>
     {{/each}}
