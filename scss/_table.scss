@@ -25,9 +25,16 @@
 
   tbody {
 
-    th {
-      background-color: $color-light-gray;
+    th,
+    td {
+
+      &:first-child {
+        background-color: $color-light-gray;
+        font-weight: bold;
+      }
+
     }
+
   }
 
 }
