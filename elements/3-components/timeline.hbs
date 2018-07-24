@@ -4,7 +4,8 @@
     <li><time>{{ timeline.year }}</time>
       <ul>
         {{#each ../list2}}
-        <li>{{> @link }}</li>
+        <li>{{> @link }} {{ timeline.sentence1 }}</li>
+        <li>{{ timeline.sentence2 }}</li>
         {{/each}}
       </ul>
     </li>

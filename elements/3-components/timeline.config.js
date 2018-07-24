@@ -10,10 +10,14 @@ for (var i = 0; i < 22; i++) {
   });
 }
 
-for (var i = 0; i < 2; i++) {
+for (var i = 0; i < 1; i++) {
   fakerData2.push({
     link: {
       text: faker.lorem.sentence()
+    },
+    timeline: {
+      sentence1: faker.lorem.sentence(),
+      sentence2: faker.lorem.sentence()
     }
   });
 }
