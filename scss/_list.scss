@@ -5,31 +5,37 @@
 %o-list {
   margin-top: $space2;
   margin-bottom: $space2;
-  padding-left: 2em;
-
-  li {
-    line-height: $line-height;
-  }
-
+  line-height: $line-height;
 }
 
 // WP editor <div> wrapper:
-.entry-content {
 
-  ul {
-    @extend %o-list;
-    // Default (no bullets or indentation):
-    list-style: none;
+ul {
+  @extend %o-list;
 
-    // WP inline style 'list-style-type' equal to circle, disc, or square:
-    &[style^='list-style-type:'] {
-      padding-left: 2em;
+  // Default (top/bottom margin with no bullets or indentation):
+  padding-left: 0;
+  list-style-type: none;
+
+  li {
+    margin-top: $space2;
+    margin-bottom: $space2;
+  }
+
+  // WP inline style 'list-style-type' equal to circle, disc, or square:
+  &[style^='list-style-type:'] {
+    padding-left: 2em;
+
+    li {
+      margin-top: 0;
+      margin-bottom: 0;
     }
 
   }
 
-  ol {
-    @extend %o-list;
-  }
+}
 
+ol {
+  @extend %o-list;
+  padding-left: 2em;
 }

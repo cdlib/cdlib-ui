@@ -92,9 +92,12 @@ $test3: #080 solid 1px; // green
   margin-bottom: 0;
   padding-right: 0;
   padding-left: 0;
+  line-height: normal;
+  list-style-type: none;
 
   li {
-    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
 }
