@@ -1,7 +1,6 @@
 // ***** Link Objects ***** //
 
 %o-link__icon {
-  margin-right: 0.5em;
   padding-right: 1.3em;
   background-repeat: no-repeat;
   background-position: right center;
@@ -9,7 +8,6 @@
 }
 
 %o-link__type {
-  margin-right: 0.5em;
 
   &::after {
     display: inline-block;
