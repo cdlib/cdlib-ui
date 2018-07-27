@@ -30,6 +30,10 @@
   background-color: $color-gold;
   text-align: center;
 
+  a {
+    @extend %o-link2;
+  }
+
   > a {
     display: block;
     font-size: 1.2em;
