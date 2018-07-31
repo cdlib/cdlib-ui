@@ -1,0 +1,46 @@
+// ***** Categories Component ***** //
+
+$categories-left-space: 1.5em;
+
+.c-categories {
+  @extend %u-reset-list-styles;
+
+  a {
+    @extend %o-link2;
+    @include u-interactive-element-min-size;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  > li > a {
+    margin-left: $categories-left-space;
+  }
+
+  details {
+
+    summary {
+      display: inline-block;
+      padding-left: $categories-left-space;
+      background-image: url('caret-down.svg' param(--color #{$color-blue}));
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 1em;
+      list-style: none;
+    }
+
+    &[open] {
+
+      summary {
+        background-image: url('caret-up.svg' param(--color #{$color-blue}));
+      }
+
+    }
+
+    ul {
+      @extend %u-reset-list-styles;
+      margin-left: $categories-left-space * 2;
+    }
+
+  }
+
+}
