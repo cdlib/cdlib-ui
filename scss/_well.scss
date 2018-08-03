@@ -27,11 +27,12 @@
 .c-well2 {
   @extend %c-well;
   display: inline-block;
-  background-color: $color-gold;
+  background-color: $color-blue;
   text-align: center;
 
   a {
     @extend %o-link2;
+    color: $color-light-blue;
   }
 
   > a {
