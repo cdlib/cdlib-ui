@@ -1,0 +1,19 @@
+// ***** Resets ***** //
+
+// sass-lint:disable no-vendor-prefixes
+
+// IE 11:
+main {
+  display: block;
+}
+
+summary {
+  cursor: pointer;
+  user-select: none;
+
+  // Chrome and Safari:
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+}
