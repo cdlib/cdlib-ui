@@ -1,0 +1,14 @@
+<section class="c-mainbox">
+  <header>{{> @heading }}</header>
+  {{!-- WP RSS Aggregator HTML: --}}
+  <ul class="rss-aggregator">
+    {{#each feed}}
+    <li>
+      {{> @link }}
+      <div>
+        <span>{{ feed.date }}</span>
+      </div>
+    </li>
+    {{/each}}
+  </ul>
+</section>
