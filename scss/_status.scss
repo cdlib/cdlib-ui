@@ -8,6 +8,26 @@ $status-color-red: #f00;
   opacity: 1;
 }
 
+.c-status {
+
+  thead tr {
+
+    th {
+
+      &:first-child {
+        width: 30%;
+      }
+
+      &:last-child {
+        width: 70%;
+      }
+
+    }
+
+  }
+
+}
+
 .c-status__indicator {
   display: flex;
   align-items: center;
