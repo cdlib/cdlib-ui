@@ -9,6 +9,7 @@ new Vue({
     showButton1isPressed: true,
     showButton2isPressed: false,
     showButton3isPressed: false,
+    showButton4isPressed: false,
     sortButton1isPressed: true,
     sortButton2isPressed: false
   },
@@ -42,25 +43,34 @@ new Vue({
     showButtonToggle1: function(){
       this.showButton1isPressed = true,
       this.showButton2isPressed = false,
-      this.showButton3isPressed = false
+      this.showButton3isPressed = false,
+      this.showButton4isPressed = false
     },
     showButtonToggle2: function(){
-      this.showButton2isPressed = true,
       this.showButton1isPressed = false,
-      this.showButton3isPressed = false
+      this.showButton2isPressed = true,
+      this.showButton3isPressed = false,
+      this.showButton4isPressed = false
     },
     showButtonToggle3: function(){
-      this.showButton3isPressed = true,
       this.showButton1isPressed = false,
-      this.showButton2isPressed = false
+      this.showButton2isPressed = false,
+      this.showButton3isPressed = true,
+      this.showButton4isPressed = false
+    },
+    showButtonToggle4: function(){
+      this.showButton1isPressed = false,
+      this.showButton2isPressed = false,
+      this.showButton3isPressed = false,
+      this.showButton4isPressed = true
     },
     sortButtonToggle1: function(){
       this.sortButton1isPressed = true,
       this.sortButton2isPressed = false
     },
     sortButtonToggle2: function(){
-      this.sortButton2isPressed = true,
-      this.sortButton1isPressed = false
+      this.sortButton1isPressed = false,
+      this.sortButton2isPressed = true
     }
   },
   mq: {

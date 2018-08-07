@@ -1,6 +1,6 @@
 const faker = require('faker/locale/en');
 const buttonList1 = [];
-const buttonLabels1 = ['All results', 'Web pages', 'Documents'];
+const buttonLabels1 = ['All results', 'Web pages', 'CDL Info posts', 'Documents'];
 const buttonList2 = [];
 const buttonLabels2 = ['Relevancy', 'Date'];
 
