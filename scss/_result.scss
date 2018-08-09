@@ -3,7 +3,7 @@
 .c-result {
   display: grid;
   margin-bottom: $space3;
-  grid-gap: $space2;
+  grid-column-gap: $space2;
   grid-template:
     'result-doctype result-group'
     'result-doctype result-heading'
@@ -11,9 +11,16 @@
     'result-doctype result-date'
     / 2.7em 1fr;
 
+  > * {
+
+    &:not(:last-child) {
+      margin-bottom: $space2;
+    }
+
+  }
+
   @include u-headings() {
     display: inline;
-    margin: 0;
     grid-area: result-heading;
 
     a {
