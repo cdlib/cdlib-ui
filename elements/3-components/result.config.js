@@ -4,7 +4,7 @@ const fakerData = [];
 for (var i = 0; i < 8; i++) {
   fakerData.push({
     heading: {
-      level: '3'
+      level: '2'
     },
     link1: true,
     link2: false,
