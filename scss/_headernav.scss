@@ -81,12 +81,16 @@ $headernav-item-margin: $space3;
     page-break-inside: avoid; // Firefox
   }
 
-  // Panel list 'heading' links:
+  // Panel list links:
   > ul > li > ul > li > a {
     @extend %o-link2;
     margin-bottom: $headernav-item-margin;
     color: $color-red;
-    font-weight: bold;
+  }
+
+  // Panel sub-list 'heading' links:
+  > ul > li > ul > li > a:only-child {
+    color: $color-blue;
   }
 
   // Panel sub-lists:
