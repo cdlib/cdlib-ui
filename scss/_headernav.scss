@@ -26,11 +26,20 @@ $headernav-item-margin: $space3;
 
   }
 
-  // Nav bar list items:
   > ul > li {
+
+    // Custom columns per panel:
+    &:nth-child(2) {
+
+      > ul {
+        column-count: 3;
+      }
+
+    }
 
     @include screen2 {
 
+      // Nav bar main items:
       &:not(:last-child) {
         border-right: 1px solid $color-dark-gray;
       }
@@ -56,9 +65,9 @@ $headernav-item-margin: $space3;
     display: none;
     position: absolute;
     padding: $headernav-section-padding;
-    columns: auto 2;
     column-gap: $headernav-section-padding * 2;
     column-rule: 1px solid $color-gray;
+    column-count: 2;
     border-right: 1px solid $color-gray;
     border-bottom: 1px solid $color-gray;
     border-left: 1px solid $color-gray;
