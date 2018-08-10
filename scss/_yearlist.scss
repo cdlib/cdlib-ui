@@ -1,0 +1,25 @@
+// ***** Year List Component ***** //
+
+$yearlist-border-size: 1px;
+
+.c-yearlist {
+  @extend %u-reset-list-styles;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: $space2;
+  padding-top: $yearlist-border-size;
+
+  li {
+    margin-top: -($yearlist-border-size);
+    margin-left: -($yearlist-border-size);
+    border: $yearlist-border-size solid $color-blue;
+
+    a {
+      @extend %o-link2;
+      display: block;
+      padding: $space2;
+    }
+
+  }
+
+}
