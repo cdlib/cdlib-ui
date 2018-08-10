@@ -41,6 +41,15 @@ module.exports = {
           level: '4'
         }
       }
+    },
+    {
+      name: '5', // link--5.hbs
+      context: {
+        heading: {
+          level: '2',
+          text: 'FAQ Heading: Astronomy, Indigenous Knowledge and Interpretation'
+        }
+      }
     }
   ]
 };
