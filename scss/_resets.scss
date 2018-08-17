@@ -2,6 +2,21 @@
 
 // sass-lint:disable no-vendor-prefixes
 
+fieldset {
+  padding: 0;
+  border: none;
+  font-weight: bold;
+
+  label {
+    font-weight: normal;
+  }
+
+}
+
+label {
+  font-weight: bold;
+}
+
 // IE 11:
 main {
   display: block;
