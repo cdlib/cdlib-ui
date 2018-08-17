@@ -122,6 +122,7 @@ $headernav-item-margin: $space3;
 
     @include screen2 {
       display: block;
+      z-index: 10;
     }
 
   }
