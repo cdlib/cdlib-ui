@@ -1,0 +1,26 @@
+// ***** Checkbox Component ***** //
+
+.c-checkbox {
+  padding-top: $space3;
+
+  p { // WP Contact Form 7 generated
+    margin: 0;
+
+    @include screen1 {
+      column-count: 2;
+    }
+
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    margin-bottom: $space2;
+
+    input {
+      margin-right: $space1;
+    }
+
+  }
+
+}
