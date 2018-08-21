@@ -1,6 +1,6 @@
 // ***** Search Result Component ***** //
 
-.c-result {
+.c-searchresult {
   display: grid;
   margin-bottom: $space4;
   grid-column-gap: $space2;
@@ -35,18 +35,18 @@
 
 }
 
-.c-result__doctype {
+.c-searchresult__doctype {
   align-self: start;
   margin-top: 0.3em;
   justify-self: end;
   grid-area: result-doctype;
 }
 
-.c-result__group {
+.c-searchresult__group {
   grid-area: result-group;
 }
 
-.c-result__quote {
+.c-searchresult__quote {
   grid-area: result-quote;
 
   &::before,

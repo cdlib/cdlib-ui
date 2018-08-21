@@ -11,7 +11,7 @@ for (var i = 0; i < 8; i++) {
     link: {
       text: faker.commerce.productName()
     },
-    result: {
+    searchresult: {
       group: faker.helpers.randomize(['News and Media: CDLINFO', 'Information Services', 'User Experience Design Services', 'Discovery ＆ Delivery Program', 'Collections Program']),
       doctype: faker.helpers.randomize(['pdf', 'doc', 'xls', 'txt', 'zip', 'html']),
       quote: faker.lorem.words(30),
