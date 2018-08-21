@@ -1,0 +1,27 @@
+// ***** Blog Result Component ***** //
+
+.c-blogresult {
+  margin-bottom: $space4;
+
+  @include u-headings() {
+    margin-bottom: $space2;
+    color: $color-blue;
+  }
+
+}
+
+.c-blogresult__metadata {
+  margin-bottom: $space2;
+  font-weight: bold;
+
+  > * {
+
+    &:not(:last-child) {
+      margin-right: 0.2em;
+      padding-right: 0.5em;
+      border-right: 2px solid $color-black;
+    }
+
+  }
+
+}
