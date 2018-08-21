@@ -1,6 +1,8 @@
 // ***** Half Width Boxes Component ***** //
 
 .c-halfboxes {
+  margin-top: $space3;
+  margin-bottom: $space3;
 
   @include screen1 {
     display: flex;
@@ -14,6 +16,10 @@
 
     }
 
+  }
+
+  .c-mainbox {
+    margin-bottom: 0;
   }
 
 }
