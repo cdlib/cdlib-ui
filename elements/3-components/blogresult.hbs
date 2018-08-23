@@ -1,11 +1,7 @@
 {{#each list}}
 <div class="c-blogresult">
   {{> @heading }}
-  <div class="c-blogresult__metadata">
-    <time>{{ blogresult.date }}</time>
-    <span>Categories: {{ blogresult.categories }}</span>
-    <span>Author: {{ blogresult.author }}</span>
-  </div>
+  {{ render '@blogmetadata' }}
   <div class="c-blogresult__quote">{{ blogresult.quote }}</div>
 </div>
 {{/each}}
