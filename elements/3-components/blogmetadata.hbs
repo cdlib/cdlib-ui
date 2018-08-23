@@ -1,0 +1,18 @@
+<div class="c-blogmetadata">
+  <time>{{ blogmetadata.date }}</time>
+  <span>Author: {{> @link--1 }}</span>
+  <span>Categories:
+    <ul>
+      {{#each categoryList}}
+      <li>{{> @link--1 }}</li>
+      {{/each}}
+    </ul>
+  </span>
+  <span>Tags:
+    <ul>
+      {{#each tagList}}
+      <li>{{> @link--1 }}</li>
+      {{/each}}
+    </ul>
+  </span>
+</div>

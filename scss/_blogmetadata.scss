@@ -1,0 +1,36 @@
+// ***** Blog Meta Data Component ***** //
+
+.c-blogmetadata {
+  margin-bottom: $space2;
+  padding: $space2;
+  border-top: 1px solid $color-gray;
+  border-bottom: 1px solid $color-gray;
+  font-size: 0.9em;
+  font-weight: bold;
+
+  ul {
+    @extend %u-reset-list-styles;
+    display: inline;
+
+    li {
+      display: inline;
+
+      &:not(:last-child)::after {
+        content: ', ';
+      }
+
+    }
+
+  }
+
+  > * {
+
+    &:not(:last-child) {
+      margin-right: 0.2em;
+      padding-right: 0.5em;
+      border-right: 2px solid $color-black;
+    }
+
+  }
+
+}

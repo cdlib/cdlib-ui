@@ -9,19 +9,3 @@
   }
 
 }
-
-.c-blogresult__metadata {
-  margin-bottom: $space2;
-  font-weight: bold;
-
-  > * {
-
-    &:not(:last-child) {
-      margin-right: 0.2em;
-      padding-right: 0.5em;
-      border-right: 2px solid $color-black;
-    }
-
-  }
-
-}
