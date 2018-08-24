@@ -1,0 +1,35 @@
+<div class="t-layout--4">
+  <div class="t-layout__header">
+    {{ render '@header' }}
+  </div>
+  <div class="t-layout__breadcrumb">
+    {{ render '@breadcrumb' }}
+  </div>
+  <div class="t-layout__main">
+    {{> @heading }}
+    {{ render '@blogresult' }}
+  </div>
+  <div class="t-layout__sidebar1">
+    <section class="o-sidebarbox">
+      <header><h2>Categories</h2></header>
+      {{ render '@categories' }}
+    </section>
+  </div>
+  <div class="t-layout__sidebar2">
+    <section class="o-sidebarbox">
+      <header><h2>Publication Date</h2></header>
+      {{ render '@select' }}
+    </section>
+    <section class="o-sidebarbox">
+      <header><h2>Author</h2></header>
+      {{ render '@select' }}
+    </section>
+    <section class="o-sidebarbox">
+      <header><h2>Subscribe</h2></header>
+      {{ render '@list' }}
+    </section>
+  </div>
+  <div class="t-layout__footer">
+    {{ render '@footer' }}
+  </div>
+</div>
