@@ -1,11 +1,12 @@
 <div class="t-layout--1">
+  {{ render '@skipnav' }}
   <div class="t-layout__header">
     {{ render '@header' }}
   </div>
   <div class="t-layout__breadcrumb">
     {{ render '@breadcrumb' }}
   </div>
-  <main class="t-layout__main">
+  <div id="maincontent" class="t-layout__main">
     {{ render '@filter' }}
     {{ render '@records' }}
     {{ render '@searchresult' }}

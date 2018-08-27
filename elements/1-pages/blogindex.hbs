@@ -1,11 +1,12 @@
 <div class="t-layout--4">
+  {{ render '@skipnav' }}
   <div class="t-layout__header">
     {{ render '@header' }}
   </div>
   <div class="t-layout__breadcrumb">
     {{ render '@breadcrumb' }}
   </div>
-  <div class="t-layout__main">
+  <div id="maincontent" class="t-layout__main">
     {{> @heading }}
     {{ render '@blogresult' }}
   </div>

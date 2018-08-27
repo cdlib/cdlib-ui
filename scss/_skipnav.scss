@@ -1,0 +1,15 @@
+// ***** Skip Navigation Component ***** //
+
+.c-skipnav {
+  @include u-hide;
+  transition: opacity 0.5s;
+  opacity: 0;
+  z-index: 1;
+
+  &:focus {
+    top: $space1;
+    left: $space1;
+    opacity: 1;
+  }
+
+}

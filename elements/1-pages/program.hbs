@@ -1,4 +1,5 @@
 <div class="t-layout--3">
+  {{ render '@skipnav' }}
   <div class="t-layout__header">
     {{ render '@header' }}
   </div>
@@ -8,7 +9,7 @@
   <aside class="t-layout__sidebar1">
     {{ render '@secondarynav' }}
   </aside>
-  <main class="t-layout__main">
+  <div id="maincontent" class="t-layout__main">
     {{> @heading--1 }}
     {{#each paragraph}}
       <p>{{ program.text }}</p>
