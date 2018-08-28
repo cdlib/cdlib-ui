@@ -12,7 +12,7 @@ module.exports = {
       name: 'Breadcrumb',
       text: faker.lorem.sentence()
     },
-    gridItemSidebar: {
+    gridItemSidebar1: {
       name: 'A: Local Nav',
       text: faker.lorem.paragraph()
     },
@@ -20,12 +20,20 @@ module.exports = {
       name: 'B: Main Content',
       text: faker.lorem.paragraphs()
     },
-    gridItemX: {
-      name: 'Section X',
+    gridItemSidebar2a: {
+      name: 'Sidebar Box 1',
       text: faker.lorem.paragraph()
     },
-    gridItemY: {
-      name: 'Section Y',
+    gridItemSidebar2b: {
+      name: 'Sidebar Box 2',
+      text: faker.lorem.paragraph()
+    },
+    gridItemSidebar2c: {
+      name: 'Sidebar Box 3',
+      text: faker.lorem.paragraph()
+    },
+    gridItemSidebar2d: {
+      name: 'Sidebar Box 4',
       text: faker.lorem.paragraph()
     },
     gridItemUpdated: {

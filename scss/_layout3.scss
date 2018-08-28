@@ -69,38 +69,49 @@
   }
 
   .t-layout__sidebar2 {
-    display: grid;
     align-self: start;
     grid-area: layout3e;
-    grid-gap: $space3;
-    grid-template:
-      'layout3e1'
-      'layout3e2'
-      / auto;
 
-    @media (min-width: $screen2) and (max-width: $screen3) {
-      grid-gap: $space2;
-      grid-template:
-        'layout3e1 layout3e2'
-        / auto auto;
+    > * {
+
+      &:not(:last-of-type) {
+        margin-bottom: $space2;
+      }
+
+    }
+
+    @include screen2 {
+      display: flex;
+      flex-wrap: wrap;
+
+      > * {
+        flex: 1 1 45%;
+
+        &:nth-of-type(odd) {
+          margin-right: $space1;
+        }
+
+        &:nth-of-type(even) {
+          margin-left: $space1;
+        }
+        
+      }
+
     }
 
     @include screen3 {
-      grid-gap: $space3;
-      grid-template:
-        'layout3e1'
-        'layout3e2' 1fr
-        / auto;
-    }
+      display: block;
 
-    section {
+      > * {
 
-      &:first-of-type {
-        grid-area: layout3e1;
-      }
+        &:nth-of-type(odd) {
+          margin-right: 0;
+        }
 
-      &:last-of-type {
-        grid-area: layout3e2;
+        &:nth-of-type(even) {
+          margin-left: 0;
+        }
+        
       }
 
     }
