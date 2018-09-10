@@ -1,0 +1,36 @@
+// ***** Post Navigation Component ***** //
+
+.c-postnav {
+
+  ul {
+    @extend %u-reset-list-styles;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    li {
+      padding-right: 1em;
+      padding-left: 1em;
+      background-repeat: no-repeat;
+      background-size: 0.7em;
+
+      &:last-child {
+        background-image: url('angle-right.svg' param(--color #{$color-blue}));
+        background-position: right center;
+      }
+
+      // first list item and if only list item:
+      &:first-child { 
+        background-image: url('angle-left.svg' param(--color #{$color-blue}));
+        background-position: left center;
+      }
+
+      a {
+        @extend %o-link2;
+      }
+
+    }
+
+  }
+
+}
