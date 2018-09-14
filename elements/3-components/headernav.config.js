@@ -3,12 +3,14 @@ const fakerHeaderList1 = [];
 const fakerHeaderList2 = [];
 const fakerHeaderList3 = [];
 const list1 = ['About CDL', 'Services & Projects', 'Resources for...', 'Committees & Groups', 'News & Groups'];
+const columnClasses = ['columns-2', 'columns-3', '', '', ''];
 
 for (var i = 0; i < list1.length; i++) {
   fakerHeaderList1.push({
     link: {
       text: list1[i],
-    }
+    },
+    columnClass: columnClasses[i]
   });
 }
 

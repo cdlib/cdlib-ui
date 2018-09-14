@@ -28,15 +28,6 @@ $headernav-item-margin: $space3;
 
   > ul > li {
 
-    // Custom columns per panel:
-    &:nth-child(2) {
-
-      > ul {
-        column-count: 3;
-      }
-
-    }
-
     @include screen2 {
 
       // Nav bar main items:
@@ -67,12 +58,21 @@ $headernav-item-margin: $space3;
     padding: $headernav-section-padding;
     column-gap: $headernav-section-padding * 2;
     column-rule: 1px solid $color-gray;
-    column-count: 2;
     border-right: 1px solid $color-gray;
     border-bottom: 1px solid $color-gray;
     border-left: 1px solid $color-gray;
     background-color: $color-light-gray;
     box-shadow: $box-shadow;
+  }
+
+  // Panel columns (no columns, by default). These are set via 'column-[#]' classes defined in the top-level menu items within WP Menus:
+
+  > ul > .columns-2 > ul {
+    column-count: 2;
+  }
+
+  > ul > .columns-3 > ul {
+    column-count: 3;
   }
 
   // Panel lists:
