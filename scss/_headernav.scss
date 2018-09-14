@@ -105,12 +105,6 @@ $headernav-item-margin: $space3;
     @extend %o-link2;
   }
 
-  // Positioning for rightmost panels:
-  > ul > li:nth-last-child(1) > ul,
-  > ul > li:nth-last-child(2) > ul {
-    right: 0;
-  }
-
   // All panel list items:
   > ul > li li {
     margin-bottom: $headernav-item-margin;
