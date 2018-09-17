@@ -1,26 +1,33 @@
 // ***** Categories Component ***** //
 
-$categories-left-space: 1.5em;
+$category-items-left-space: 1.5em;
+
+%category-items-vertical-space {
+  margin-top: $space2;
+  margin-bottom: $space2;
+}
 
 .c-categories {
   @extend %u-reset-list-styles;
 
   a {
     @extend %o-link2;
-    @include u-interactive-element-min-size;
-    display: inline-flex;
-    align-items: center;
+  }
+
+  li {
+    @extend %category-items-vertical-space;
   }
 
   > li > a {
-    margin-left: $categories-left-space;
+    display: block;
+    margin-left: $category-items-left-space;
   }
 
   details {
 
     summary {
       display: inline-block;
-      padding-left: $categories-left-space;
+      padding-left: $category-items-left-space;
       background-image: url('caret-down.svg' param(--color #{$color-blue}));
       background-repeat: no-repeat;
       background-position: left center;
@@ -38,7 +45,12 @@ $categories-left-space: 1.5em;
 
     ul {
       @extend %u-reset-list-styles;
-      margin-left: $categories-left-space * 2;
+      margin-left: $category-items-left-space * 2;
+
+      li {
+        @extend %category-items-vertical-space;
+      }
+
     }
 
   }
