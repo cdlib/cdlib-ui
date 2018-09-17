@@ -16,16 +16,13 @@
   }
 
   ul {
-    @extend %u-reset-list-styles;
 
     li {
-      margin: $space2 0;
 
       a {
         @extend %o-link2;
-        @include u-interactive-element-min-size;
-        display: flex;
-        align-items: center;
+        // position link icons to right of sidebarbox container:
+        display: block;
       }
 
     }
