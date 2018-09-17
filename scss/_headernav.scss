@@ -58,6 +58,7 @@ $headernav-item-margin: $space3;
     padding: $headernav-section-padding;
     column-gap: $headernav-section-padding * 2;
     column-rule: 1px solid $color-gray;
+    column-width: 9.5em;
     border-right: 1px solid $color-gray;
     border-bottom: 1px solid $color-gray;
     border-left: 1px solid $color-gray;
