@@ -1,0 +1,151 @@
+// ***** Slideshow Component ***** //
+
+$slideshow-controls-height: 50px;
+$slideshow-caption-spacing: 1.7%;
+
+.c-slideshow {
+  display: grid;
+  background-color: $color-gray;
+  grid-template-rows: auto $slideshow-controls-height;
+}
+
+.c-slideshow__controls {
+  display: none; // gets set to 'flex' if there's JS
+  align-items: center;
+  justify-content: space-around;
+  // sass-lint:disable no-duplicate-properties
+  justify-content: space-evenly;
+  margin: 0 $slideshow-caption-spacing $slideshow-caption-spacing;
+  border-top: 1px solid $color-white;
+  background-color: rgba($color-blue, 0.7);
+  z-index: 3;
+  grid-column: 1;
+  grid-row: 2;
+
+  @include screen1 {
+    width: 75%;
+  }
+
+  @include screen2 {
+    width: 50%;
+  }
+
+  @include screen3 {
+    width: 30%;
+  }
+
+  button {
+    width: 2em;
+    height: 2em;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0.8em;
+    cursor: pointer;
+
+    span { // button label for screen readers
+      @include u-hide;
+    }
+
+  }
+
+}
+
+@each $class, $image in (previous, angle-left),
+                        (play, play),
+                        (pause, pause),
+                        (next, angle-right) {
+
+  .c-slideshow__controls-#{$class} {
+    background-image: url('#{$image}.svg' param(--color #{$color-white}));
+
+    &:focus,
+    &:hover {
+      background-image: url('#{$image}.svg' param(--color #{$color-gold}));
+    }
+
+  }
+
+}
+
+.c-slideshow__slide {
+  display: grid;
+  transition: opacity 1s;
+  opacity: 0;
+  z-index: 1;
+  grid-template-rows: auto $slideshow-controls-height;
+  grid-column: 1;
+  grid-row: 1 / 3;
+
+  &.active {
+    opacity: 1;
+    z-index: 2;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-fit: cover;
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+
+  figcaption {
+    margin-top: $slideshow-caption-spacing;
+    margin-right: $slideshow-caption-spacing;
+    margin-left: $slideshow-caption-spacing;
+    padding: $slideshow-caption-spacing;
+    background-color: rgba($color-blue, 0.8);
+    color: $color-white;
+    font-style: normal;
+    z-index: 0;
+    grid-column: 1;
+    grid-row: 1;
+
+    @include screen1 {
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+    }
+
+    @include screen2 {
+      width: 50%;
+    }
+
+    @include screen3 {
+      width: 30%;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    b {
+      font-size: 1.5em;
+
+      @include screen2 {
+        font-size: 2em;
+      }
+
+    }
+
+    p {
+      font-size: 1.1em;
+
+      @include screen2 {
+        font-size: 1.3em;
+      }
+
+    }
+
+  }
+
+}
+
+.c-slideshow__slide-more {
+  margin-top: auto;
+}
