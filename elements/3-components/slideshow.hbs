@@ -1,0 +1,18 @@
+<div class="c-slideshow">
+  <div class="c-slideshow__controls">
+    <button class="c-slideshow__controls-previous"><span>go to previous slide</span></button>
+    <button class="c-slideshow__controls-play"><span>play slide show</span></button>
+    <button class="c-slideshow__controls-pause"><span>pause slide show</span></button>
+    <button class="c-slideshow__controls-next"><span>go to next slide</span></button>
+  </div>
+  {{#each slides}}
+  <figure class="c-slideshow__slide active">
+    <figcaption>
+      <b>{{ slide.heading }}</b>
+      <p>{{ slide.text }}</p>
+      <a href="" class="c-slideshow__slide-more">Read more</a>
+    </figcaption>
+    <img src="{{ slide.image }}" alt="">
+  </figure>
+  {{/each}}
+</div>
