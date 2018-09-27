@@ -1,0 +1,27 @@
+// ***** By The Numbers Component ***** //
+
+.c-numbers {
+  
+  ul {
+    @extend %u-reset-list-styles;
+
+    li {
+      display: flex;
+
+      b {
+        width: 50%;
+        padding: $space2 $space2 $space2 0;
+        border-right: 3px solid $color-blue;
+        text-align: right;
+      }
+
+      a {
+        width: 50%;
+        padding: $space2 0 $space2 $space2;
+      }
+
+    }
+
+  }
+
+}
