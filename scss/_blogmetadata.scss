@@ -2,12 +2,11 @@
 
 .c-blogmetadata {
   margin-bottom: $space2;
-  padding-top: $space2;
-  padding-bottom: $space2;
-  border-top: 1px solid $color-gray;
-  border-bottom: 1px solid $color-gray;
-  font-size: 0.9em;
-  font-weight: bold;
+  color: $color-light-black;
+
+  a {
+    @extend %o-link2;
+  }
 
   ul {
     @extend %u-reset-list-styles;
@@ -29,7 +28,7 @@
     &:not(:last-child) {
       margin-right: 0.2em;
       padding-right: 0.5em;
-      border-right: 2px solid $color-black;
+      border-right: 2px solid $color-dark-gray;
     }
 
   }

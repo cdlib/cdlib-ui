@@ -1,11 +1,30 @@
 // ***** Blog Result Component ***** //
 
 .c-blogresult {
-  margin-bottom: $space4;
+
+  &:not(:last-child) {
+    margin-bottom: $space3;
+    border-bottom: 1px solid $color-gray;
+  }
 
   @include u-headings() {
     margin-bottom: $space2;
     color: $color-blue;
+
+    a {
+      @extend %o-link2;
+    }
+
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: $space2;
+
+    a {
+      @extend %o-link2;
+    }
+
   }
 
 }

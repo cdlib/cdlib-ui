@@ -11,7 +11,10 @@ for (var i = 0; i < 8; i++) {
       text: faker.commerce.productName() + faker.helpers.randomize([' for ', ' with ', ' and ', ': ']) + faker.commerce.productName()
     },
     blogresult: {
-      quote: faker.lorem.sentence(30)
+      quote: faker.lorem.sentence(30).slice(0, -1),
+      link: {
+        text: 'Read more'
+      }
     }
   });
 }

@@ -2,6 +2,6 @@
 <div class="c-blogresult">
   {{> @heading }}
   {{ render '@blogmetadata' }}
-  <div class="c-blogresult__quote">{{ blogresult.quote }}</div>
+  <p>{{ blogresult.quote }} &hellip; {{> @link blogresult }}</p>
 </div>
 {{/each}}
