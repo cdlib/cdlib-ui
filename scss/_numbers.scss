@@ -1,7 +1,11 @@
 // ***** By The Numbers Component ***** //
 
 .c-numbers {
-  
+  // Remove WordPress auto-generated break tags:
+  br {
+    display: none;
+  }
+
   ul {
     @extend %u-reset-list-styles;
 
