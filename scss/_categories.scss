@@ -30,8 +30,8 @@ $category-items-left-space: 1.5em;
       padding-left: $category-items-left-space;
       background-image: url('caret-down.svg' param(--color #{$color-blue}));
       background-repeat: no-repeat;
-      background-position: left top -.2em;
-      background-size: 1em;
+      background-position: left top;
+      background-size: .8em;
       list-style: none;
     }
 
