@@ -34,6 +34,9 @@ module.exports = {
     },
     button8: {
       text: 'Toggle (pressed)'
+    },
+    button9: {
+      text: 'Contact Information'
     }
   }
 };

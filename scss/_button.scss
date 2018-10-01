@@ -85,3 +85,13 @@
 .o-button7 {
   @extend %o-button7;
 }
+
+%o-button8 {
+  @extend %o-button5;
+  margin-bottom: $space3;
+  background-image: url('envelope.svg' param(--color #{$color-white}));
+}
+
+.o-button8 {
+  @extend %o-button8;
+}
