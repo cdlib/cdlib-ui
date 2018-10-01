@@ -1,0 +1,19 @@
+// ***** Avatar Component ***** //
+
+.c-avatar {
+  max-width: 150px;
+  max-height: 150px;
+  margin-bottom: $space3;
+  margin-left: $space3;
+  float: right;
+
+  // reset WP clear styles from style.css:
+  ~ h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+    clear: none;
+  }
+
+}
