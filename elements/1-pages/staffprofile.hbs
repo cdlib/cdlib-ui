@@ -1,0 +1,41 @@
+<div class="t-layout--2">
+  {{ render '@skipnav' }}
+  <div class="t-layout__header">
+    {{ render '@header' }}
+  </div>
+  <div class="t-layout__breadcrumb">
+    {{ render '@breadcrumb' }}
+  </div>
+  <aside class="t-layout__sidebar1">
+    {{ render '@secondarynav' }}
+  </aside>
+  <div id="maincontent" class="t-layout__main">
+    {{> @heading--1 }}
+    {{ render '@button--9' }}
+    {{ render '@avatar' }}
+    <h2>{{ program.heading }}</h2>
+    <p>{{ program.text }}</p>
+    <h2>{{ title.heading }}</h2>
+    <p>{{ title.text }}</p>
+    <h2>{{ responsibilities.heading }}</h2>
+    <p>{{ responsibilities.text }}</p>
+    <h2>{{ education.heading }}</h2>
+    <p>{{ education.text }}</p>
+    <h2>{{ background.heading }}</h2>
+    <p>{{ background.text }}</p>
+    <h2>{{ interests.heading }}</h2>
+    <p>{{ interests.text }}</p>
+    <h2>{{ affiliations.heading }}</h2>
+    <p>{{ affiliations.text }}</p>
+    <h2><abbr title="Orchid">ORCID</abbr> ID</h2>
+    {{ render '@orcid' }}
+    <h2>{{ social.heading }}</h2>
+    <a href="{{ social.url }}">{{ social.url }}</a>
+  </div>
+  <div class="t-layout__updated">
+    {{ render '@updated' }}
+  </div>
+  <div class="t-layout__footer">
+    {{ render '@footer' }}
+  </div>
+</div>
