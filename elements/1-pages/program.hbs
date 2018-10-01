@@ -6,9 +6,9 @@
   <div class="t-layout__breadcrumb">
     {{ render '@breadcrumb' }}
   </div>
-  <aside class="t-layout__sidebar1">
+  <div class="t-layout__sidebar1">
     {{ render '@secondarynav' }}
-  </aside>
+  </div>
   <div id="maincontent" class="t-layout__main">
     {{> @heading--1 }}
     {{#each paragraph}}
@@ -22,13 +22,13 @@
     {{/each}}
     {{ render '@halfboxes' }}
     {{ render '@staff' }}
-  </main>
-  <aside class="t-layout__sidebar2">
+  </div>
+  <div class="t-layout__sidebar2">
     {{ render '@news' }}
     {{ render '@sidebarbox--2' }}
     {{ render '@sidebarbox--2' }}
     {{ render '@sidebarbox--1' }}
-  </aside>
+  </div>
   <div class="t-layout__updated">
     {{ render '@updated' }}
   </div>
