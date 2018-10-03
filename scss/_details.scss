@@ -1,0 +1,34 @@
+// ***** Details Object ***** //
+
+details {
+  margin-bottom: $space2;
+
+  summary {
+    margin-bottom: $space2;
+    padding-left: 1.2em;
+    background-image: url('caret-down.svg' param(--color #{$color-blue}));
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: .8em;
+    // remove default caret in Firefox:
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+
+    // remove default caret in Chrome and Safari:
+    // sass-lint:disable no-vendor-prefixes
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+  }
+
+  &[open] {
+
+    summary {
+      background-image: url('caret-up.svg' param(--color #{$color-blue}));
+    }
+
+  }
+
+}

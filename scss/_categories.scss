@@ -27,20 +27,9 @@ $category-items-left-space: 1.5em;
 
     summary {
       display: inline-block;
+      // these two properties reset those in details.scss:
+      margin-bottom: 0;
       padding-left: $category-items-left-space;
-      background-image: url('caret-down.svg' param(--color #{$color-blue}));
-      background-repeat: no-repeat;
-      background-position: left top;
-      background-size: .8em;
-      list-style: none;
-    }
-
-    &[open] {
-
-      summary {
-        background-image: url('caret-up.svg' param(--color #{$color-blue}));
-      }
-
     }
 
     ul {

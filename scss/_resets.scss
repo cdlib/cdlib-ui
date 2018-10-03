@@ -21,14 +21,3 @@ label {
 main {
   display: block;
 }
-
-summary {
-  cursor: pointer;
-  user-select: none;
-
-  // Chrome and Safari:
-  &::-webkit-details-marker {
-    display: none;
-  }
-
-}
