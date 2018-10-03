@@ -1,6 +1,10 @@
 // ***** Timeline Component ***** //
 
 .c-timeline {
+  // Remove WordPress auto-generated break tags:
+  br {
+    display: none;
+  }
 
   ul {
     @extend %u-reset-list-styles;
@@ -8,6 +12,13 @@
 
   > ul > li {
     display: flex;
+
+    b,
+    strong {
+      margin-top: $space2;
+      font-weight: bold;
+    }
+
   }
 
   > ul > li > ul {
@@ -19,11 +30,6 @@
     margin-top: $space2;
     margin-bottom: $space2;
     margin-left: $space2;
-  }
-
-  time {
-    margin-top: $space2;
-    font-weight: bold;
   }
 
 }
