@@ -27,8 +27,7 @@ $category-items-left-space: 1.5em;
 
     summary {
       display: inline-block;
-      // these two properties reset those in details.scss:
-      margin-bottom: 0;
+      // reset in details.scss:
       padding-left: $category-items-left-space;
     }
 
