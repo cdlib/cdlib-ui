@@ -69,16 +69,9 @@
   }
 
   .t-layout__sidebar2 {
+    @extend %u-sidebar-item-top-bottom-margins;
     align-self: start;
     grid-area: layout3e;
-
-    > * {
-
-      &:not(:last-of-type) {
-        margin-bottom: $space2;
-      }
-
-    }
 
     @include screen2 {
       display: flex;

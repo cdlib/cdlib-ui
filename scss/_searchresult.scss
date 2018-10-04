@@ -21,6 +21,7 @@
 
   @include u-headings() {
     display: inline;
+    margin: 0;
     grid-area: result-heading;
 
     a {

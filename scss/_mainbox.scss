@@ -21,10 +21,11 @@
 
   @include u-headings() {
     @extend %o-heading3;
+    margin-top: 0;
     color: $color-blue;
 
     &:not(:first-of-type) {
-      padding-top: $space2;
+      padding-top: $space3;
       border-top: 1px solid $color-gray;
     }
 

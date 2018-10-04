@@ -18,7 +18,9 @@
 
   }
 
+  // remove predefined margins on mainbox component:
   .c-mainbox {
+    margin-top: 0;
     margin-bottom: 0;
   }
 

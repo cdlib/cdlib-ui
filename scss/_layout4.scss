@@ -46,11 +46,15 @@
   }
 
   .t-layout__sidebar1 {
+    @extend %u-sidebar-item-top-bottom-margins;
     grid-area: layout4d;
+
   }
 
   .t-layout__sidebar2 {
+    @extend %u-sidebar-item-top-bottom-margins;
     grid-area: layout4e;
+
   }
 
   .t-layout__footer {
