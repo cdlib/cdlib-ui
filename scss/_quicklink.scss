@@ -1,0 +1,33 @@
+// ***** Quick Link Component ***** //
+
+// This component is based on style and structure from sidebarnav.
+
+%c-quicklink {
+
+  ul {
+
+    li {
+
+      a {
+        @extend %o-link3;
+      }
+
+    }
+
+  }
+
+}
+
+.c-quicklink1 {
+  @extend %c-quicklink;
+}
+
+.c-quicklink2 {
+  @extend %c-quicklink;
+
+  header {
+    padding-right: 2.1em;
+    background: $color-blue url('external-link-alt.svg' param(--color #{$color-gold})) right $space1 center / 1.3em no-repeat;
+  }
+
+}
