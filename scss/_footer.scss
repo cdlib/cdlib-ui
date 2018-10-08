@@ -34,7 +34,6 @@
 
     @include screen2 {
       display: flex;
-      justify-content: space-between;
       column-count: auto;
     }
 
@@ -43,6 +42,7 @@
       page-break-inside: avoid; // Firefox
 
       @include screen2 {
+        width: 100%;
 
         &:not(:last-child) {
           margin-right: $space2;
