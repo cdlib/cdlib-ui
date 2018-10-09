@@ -1,0 +1,56 @@
+// ***** Service Box Component ***** //
+
+.c-servicebox {
+  display: grid;
+  height: 100%;
+  grid-gap: $space2;
+  grid-template:
+    'servicebox1'
+    'servicebox2'
+    'servicebox3'
+    'servicebox4';
+
+  @include screen1 {
+    grid-template:
+    'servicebox1 servicebox2'
+    'servicebox3 servicebox4';
+  }
+
+  @include screen2 {
+    grid-template:
+    'servicebox1 servicebox2 servicebox3 servicebox4';
+  }
+
+  section {
+    padding: $space2;
+    background-image: linear-gradient(lighten($color-light-blue, 5%), $color-light-blue);
+
+    @include u-headings {
+      margin: 0;
+      color: $color-blue;
+      font-weight: bold;
+    }
+
+    &:nth-child(1) {
+      grid-area: servicebox1;
+    }
+
+    &:nth-child(2) {
+      grid-area: servicebox2;
+    }
+
+    &:nth-child(3) {
+      grid-area: servicebox3;
+    }
+
+    &:nth-child(4) {
+      grid-area: servicebox4;
+    }
+
+    a {
+      @extend %o-link2;
+    }
+
+  }
+
+}

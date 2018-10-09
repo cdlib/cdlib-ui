@@ -1,0 +1,14 @@
+<div class="c-servicebox">
+  {{#each box}}
+  <section>
+    <header>
+      {{> @heading }}
+    </header>
+    <ul>
+    {{#each ../list}}
+      <li>{{> @link }}</li>
+    {{/each}}
+    </ul>
+  </section>
+  {{/each}}
+</div>
