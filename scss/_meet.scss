@@ -1,0 +1,33 @@
+// ***** Meet Component ***** //
+
+.c-meet {
+  display: grid;
+  height: 100%;
+  background-color: $color-dark-gray;
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  grid-template-rows: 1fr auto;
+
+  figcaption {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: $space2;
+    color: $color-white;
+    font-style: normal;
+
+    a {
+      margin-top: $space2;
+      color: inherit;
+    }
+
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+
+}
