@@ -12,7 +12,7 @@ const sourcemaps = require('gulp-sourcemaps');
 // Main Tasks:
 
 gulp.task('default', function(cb) {
-  runSequence('pull-assets-dev', 'sass-build', 'watch', 'fractal-start', cb);
+  runSequence('sass-build', 'watch', 'fractal-start', cb);
 });
 
 gulp.task('build', function(cb) {

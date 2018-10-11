@@ -1,0 +1,93 @@
+// ***** Home Template ***** //
+
+.t-home {
+  display: grid;
+  grid-row-gap: $space2;
+  grid-template:
+    'home-header'
+    'home-slideshow'
+    'home-subheading'
+    'home-services'
+    'home-news'
+    'home-quicklinks1'
+    'home-quicklinks2'
+    'home-meet'
+    'home-social'
+    'home-footer';
+  
+  @include screen1 {
+    grid-gap: $space2;
+    grid-template:
+    'home-header home-header'
+    'home-slideshow home-slideshow'
+    'home-subheading home-subheading'
+    'home-services home-services'
+    'home-news home-news'
+    'home-quicklinks1 home-quicklinks2'
+    'home-meet home-social'
+    'home-footer home-footer';
+  }
+
+  @include screen2 {
+    grid-gap: $space2;
+    grid-template:
+    'home-header home-header'
+    'home-slideshow home-quicklinks1'
+    'home-slideshow home-quicklinks2' 1fr
+    'home-subheading home-quicklinks2'
+    'home-services home-meet'
+    'home-news home-social'
+    'home-footer home-footer'
+    / auto $sidebar-width;
+  }
+
+  // This class used only in layout4.hbs:
+  &.highlight-grid {
+
+    > * {
+      background-color: $color-light-blue;
+    }
+
+  }
+
+  .t-home__header {
+    grid-area: home-header;
+  }
+
+  .t-home__slideshow {
+    grid-area: home-slideshow;
+  }
+
+  .t-home__subheading {
+    grid-area: home-subheading;
+  }
+
+  .t-home__services {
+    grid-area: home-services;
+  }
+
+  .t-home__news {
+    grid-area: home-news;
+  }
+
+  .t-home__quicklinks1 {
+    grid-area: home-quicklinks1;
+  }
+
+  .t-home__quicklinks2 {
+    grid-area: home-quicklinks2;
+  }
+
+  .t-home__meet {
+    grid-area: home-meet;
+  }
+
+  .t-home__social {
+    grid-area: home-social;
+  }
+
+  .t-home__footer {
+    grid-area: home-footer;
+  }
+
+}
