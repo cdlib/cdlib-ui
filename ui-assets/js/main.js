@@ -148,3 +148,58 @@ if (slideshowExists){
   };
 
 };
+
+// ***** Newsreel Component ***** //
+
+if (document.querySelector('.c-newsreel')) {
+
+  var items = document.querySelectorAll('.c-newsreel li');
+  var firstItem = document.querySelector('.c-newsreel li:first-child');
+  var currentItem = 0;
+  var reelSpeed = 7000;
+  var itemInterval = setInterval(nextItem, reelSpeed);
+  var playControl = document.querySelector('.c-newsreel__play');
+  var pauseControl = document.querySelector('.c-newsreel__pause');
+  var tabControl = document.querySelector('.c-newsreel li a')
+
+  // initial states:
+  playControl.style.display = 'none';
+  firstItem.className = 'active';
+
+  function goToItem(n) {
+    items[currentItem].removeAttribute('class');
+    currentItem = (n + items.length) % items.length;
+    items[currentItem].className = 'active';
+  }
+
+  function playNewsreel() {
+    itemInterval = setInterval(nextItem, reelSpeed);
+    playControl.style.display = 'none';
+    pauseControl.style.display = 'inline-block';
+  }
+
+  function pauseNewsreel() {
+    clearInterval(itemInterval);
+    playControl.style.display = 'inline-block';
+    pauseControl.style.display = 'none';
+  }
+
+  function nextItem() {
+    goToItem(currentItem + 1);
+  }
+
+  playControl.onclick = function() {
+    playNewsreel();
+    pauseControl.focus();
+  };
+
+  pauseControl.onclick = function() {
+    pauseNewsreel();
+    playControl.focus();
+  };
+
+  tabControl.onfocus = function() {
+    pauseNewsreel();
+  }
+
+};

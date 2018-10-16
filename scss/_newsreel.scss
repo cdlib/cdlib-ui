@@ -1,0 +1,100 @@
+// ***** Newsreel Component ***** //
+
+.c-newsreel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  padding: $space2 $space1;
+  border: 1px solid $color-blue;
+
+  @include screen1 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  > * {
+
+    &:not(:last-child) {
+      margin-bottom: $space2;
+
+      @include screen1 {
+        margin-right: $space3;
+        margin-bottom: 0;
+      }
+      
+    }
+
+  }
+
+  @include u-headings {
+    margin: 0;
+    color: $color-black;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  ul {
+    @extend %u-reset-list-styles;
+    display: grid;
+    flex: 1 1 auto;
+
+    li {
+      transition: opacity 1s;
+      opacity: 0;
+      z-index: 1;
+      grid-row: 1;
+      grid-column: 1;
+
+      &.active {
+        opacity: 1;
+        z-index: 2;
+      }
+
+      a {
+        @extend %o-link2;
+      }
+
+    }
+
+  }
+
+  // 'view all' link:
+  > a {
+    @extend %o-link2;
+    margin-left: auto;
+  }
+
+}
+
+%c-newsreel__buttons {
+  width: 2em;
+  height: 2em;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0.8em;
+  cursor: pointer;
+
+  span {
+    @include u-hide;
+  }
+
+}
+
+@each $class, $image in (play, play), (pause, pause) {
+
+  .c-newsreel__#{$class} {
+    @extend %c-newsreel__buttons;
+    background-image: url('#{$image}.svg' param(--color #{$color-black}));
+
+    &:focus,
+    &:hover {
+      background-image: url('#{$image}.svg' param(--color #{$color-gold}));
+    }
+
+  }
+
+}
