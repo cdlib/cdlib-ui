@@ -1,0 +1,11 @@
+// ***** Social Link Component ***** //
+
+.c-social {
+  @extend %o-link2;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: $space2 3em $space2 $space1;
+  border: 1px solid $color-blue;
+  background: url('twitter.svg') right center / 2.5em no-repeat;
+}
