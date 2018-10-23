@@ -1,0 +1,24 @@
+// ***** Contact Component ***** //
+
+$horiz-padding: 0.7em;
+$right-padding: $horiz-padding + 1.6em;
+
+%reset-wp-external-link-plugin {
+  padding: 0.5em $right-padding 0.5em $horiz-padding;
+  background: $color-blue url('external-link-alt.svg' param(--color #{$color-white})) right $horiz-padding center / 1em no-repeat;
+}
+
+.c-contact {
+  @extend %reset-wp-external-link-plugin;
+  display: inline-block;
+  border: none;
+  color: $color-white;
+  text-decoration: none;
+  cursor: pointer;
+
+  // If WP External Links plugin presents its attr and value:
+  &[data-wpel-link='external'] {
+    @extend %reset-wp-external-link-plugin;
+  }
+
+}
