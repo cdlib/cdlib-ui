@@ -7,6 +7,11 @@ module.exports = {
       level: '1',
       text: faker.name.findName()
     },
+    contact: {
+      button: {
+        text: 'Contact Information'
+      }
+    },
     program: {
       heading: 'Program / Service',
       text: faker.lorem.sentence()
