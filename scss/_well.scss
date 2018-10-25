@@ -1,8 +1,6 @@
 // ***** Well Components ***** //
 
 %c-well {
-  margin-bottom: $space2;
-  padding: $space3 2.5em;
 
   p {
     margin: 0;
@@ -10,33 +8,42 @@
 
 }
 
+// Block Well:
+
 .c-well1 {
   @extend %c-well;
+  padding: $space3 2.5em;
   background-color: $color-light-blue;
 
   @include u-headings() {
+    margin-top: 0;
     color: $color-blue;
   }
 
   blockquote {
+    margin: 0;
     padding: 0;
   }
 
 }
 
+// Link Well:
+
 .c-well2 {
   @extend %c-well;
   display: inline-block;
+  padding: $space2 $space3;
   background-color: $color-blue;
   text-align: center;
 
   a {
     @extend %o-link2;
+    display: block;
     color: $color-light-blue;
+    line-height: normal;
   }
 
   > a {
-    display: block;
     font-size: 1.2em;
 
     + a {
@@ -46,7 +53,7 @@
 
   }
 
-  p {
+  > p {
     font-size: 1.2em;
 
     + p {
