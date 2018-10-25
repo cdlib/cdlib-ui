@@ -1,0 +1,10 @@
+// ***** Main Heading Component ***** //
+
+.c-mainheading {
+  margin-bottom: $space3;
+
+  p {
+    @extend %o-heading3;
+  }
+
+}
