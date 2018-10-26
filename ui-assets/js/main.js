@@ -84,26 +84,28 @@ new Vue({
 
 // ***** Slideshow Component ***** //
 
-var slideshowExists = document.querySelector('.c-slideshow');
+if (document.querySelector('.c-slideshow')) {
 
-if (slideshowExists){
-
-  var slides = document.querySelectorAll('.c-slideshow .c-slideshow__slide');
+  var slides = document.querySelectorAll('.c-slideshow__slide');
+  var firstSlide = document.querySelector('.c-slideshow figure');
   var currentSlide = 0;
-  var transitionSpeed = 5000;
+  var transitionSpeed = 10000;
   var slideInterval = setInterval(nextSlide, transitionSpeed);
   var controls = document.querySelector('.c-slideshow__controls');
-  var prevButton = document.querySelector('.c-slideshow__controls-previous');
-  var playButton = document.querySelector('.c-slideshow__controls-play');
-  var pauseButton = document.querySelector('.c-slideshow__controls-pause');
-  var nextButton = document.querySelector('.c-slideshow__controls-next');
+  var playButton = document.querySelector('.c-slideshow__play');
+  var pauseButton = document.querySelector('.c-slideshow__pause');
+  var slide1button = document.querySelector('.c-slideshow__slide1');
+  var slide2button = document.querySelector('.c-slideshow__slide2');
+  var slide3button = document.querySelector('.c-slideshow__slide3');
+  var slide4button = document.querySelector('.c-slideshow__slide4');
 
-  controls.style.display = 'flex'; // unhides controls if there's JS
+  // controls.style.display = 'flex'; // unhides controls if there's JS
   playButton.style.display = 'none'; // initial play button state
+  firstSlide.classList.add('active');
 
   function goToSlide(n) {
     slides[currentSlide].className = 'c-slideshow__slide';
-    currentSlide = (n + slides.length) %slides.length;
+    currentSlide = (n + slides.length) % slides.length;
     slides[currentSlide].className = 'c-slideshow__slide active';
   }
 
@@ -119,18 +121,9 @@ if (slideshowExists){
     pauseButton.style.display = 'none';
   }
 
-  function previousSlide() {
-    goToSlide(currentSlide - 1);
-  }
-
   function nextSlide() {
     goToSlide(currentSlide + 1);
   }
-
-  prevButton.onclick = function() {
-    pauseSlideshow();
-    previousSlide();
-  };
 
   playButton.onclick = function() {
     playSlideshow();
@@ -142,9 +135,28 @@ if (slideshowExists){
     playButton.focus();
   };
 
-  nextButton.onclick = function() {
+  slide1button.onclick = function() {
     pauseSlideshow();
-    nextSlide();
+    slides[currentSlide].className = 'c-slideshow__slide';
+    goToSlide(currentSlide = 0);
+  };
+
+  slide2button.onclick = function() {
+    pauseSlideshow();
+    slides[currentSlide].className = 'c-slideshow__slide';
+    goToSlide(currentSlide = 1);
+  };
+
+  slide3button.onclick = function() {
+    pauseSlideshow();
+    slides[currentSlide].className = 'c-slideshow__slide';
+    goToSlide(currentSlide = 2);
+  };
+
+  slide4button.onclick = function() {
+    pauseSlideshow();
+    slides[currentSlide].className = 'c-slideshow__slide';
+    goToSlide(currentSlide = 3);
   };
 
 };

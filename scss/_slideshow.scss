@@ -1,37 +1,53 @@
 // ***** Slideshow Component ***** //
 
 $slideshow-controls-height: 50px;
-$slideshow-caption-spacing: 1.7%;
+$slideshow-caption-spacing: 15px;
+$slideshow-grid-column-size1: 50%;
+$slideshow-grid-column-size2: 35%;
+
+@mixin slideshow-caption-bg {
+  background-color: rgba($color-blue, 0.7);
+
+  @supports (backdrop-filter: blur(1px)) {
+    background-color: rgba($color-blue, 0.6);
+    backdrop-filter: blur(5px);
+  }
+
+}
 
 .c-slideshow {
   display: grid;
-  background-color: $color-gray;
+  height: 100%;
+  background-color: $color-light-gray;
   grid-template-rows: auto $slideshow-controls-height;
+
+  @include screen1 {
+    grid-template-columns: $slideshow-grid-column-size1 1fr;
+  }
+
+  @include screen2 {
+    grid-template-columns: $slideshow-grid-column-size2 1fr;
+  }
+
 }
 
 .c-slideshow__controls {
-  display: none; // gets set to 'flex' if there's JS
+  display: flex;
   align-items: center;
   justify-content: space-around;
   // sass-lint:disable no-duplicate-properties
   justify-content: space-evenly;
-  margin: 0 $slideshow-caption-spacing $slideshow-caption-spacing;
   border-top: 1px solid $color-white;
-  background-color: rgba($color-blue, 0.7);
+  background-color: $color-blue;
   z-index: 3;
   grid-column: 1;
   grid-row: 2;
 
   @include screen1 {
-    width: 75%;
-  }
-
-  @include screen2 {
-    width: 50%;
-  }
-
-  @include screen3 {
-    width: 30%;
+    @include slideshow-caption-bg;
+    margin-right: $slideshow-caption-spacing;
+    margin-bottom: $slideshow-caption-spacing;
+    margin-left: $slideshow-caption-spacing;
   }
 
   button {
@@ -43,9 +59,15 @@ $slideshow-caption-spacing: 1.7%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 0.8em;
+    color: $color-gold;
     cursor: pointer;
 
-    span { // button label for screen readers
+    &:focus,
+    &:hover {
+      color: $color-white;
+    }
+
+    span {
       @include u-hide;
     }
 
@@ -53,25 +75,29 @@ $slideshow-caption-spacing: 1.7%;
 
 }
 
-@each $class, $image in (previous, angle-left),
-                        (play, play),
-                        (pause, pause),
-                        (next, angle-right) {
+.c-slideshow__play {
+  background-image: url('play.svg' param(--color #{$color-gold}));
 
-  .c-slideshow__controls-#{$class} {
-    background-image: url('#{$image}.svg' param(--color #{$color-white}));
+  &:focus,
+  &:hover {
+    background-image: url('play.svg' param(--color #{$color-white}));
+  }
 
-    &:focus,
-    &:hover {
-      background-image: url('#{$image}.svg' param(--color #{$color-gold}));
-    }
+}
 
+.c-slideshow__pause {
+  background-image: url('pause.svg' param(--color #{$color-gold}));
+
+  &:focus,
+  &:hover {
+    background-image: url('pause.svg' param(--color #{$color-white}));
   }
 
 }
 
 .c-slideshow__slide {
   display: grid;
+  position: relative;
   transition: opacity 1s;
   opacity: 0;
   z-index: 1;
@@ -79,73 +105,114 @@ $slideshow-caption-spacing: 1.7%;
   grid-column: 1;
   grid-row: 1 / 3;
 
+  @include screen1 {
+    grid-template-columns: $slideshow-grid-column-size1 1fr;
+    grid-column: 1 / 3;
+  }
+
+  @include screen2 {
+    grid-template-columns: $slideshow-grid-column-size2 1fr;
+  }
+
   &.active {
     opacity: 1;
     z-index: 2;
   }
 
-  img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    min-height: 0;
-    object-fit: cover;
-    grid-column: 1;
-    grid-row: 1 / 3;
-  }
-
   figcaption {
-    margin-top: $slideshow-caption-spacing;
-    margin-right: $slideshow-caption-spacing;
-    margin-left: $slideshow-caption-spacing;
     padding: $slideshow-caption-spacing;
-    background-color: rgba($color-blue, 0.8);
     color: $color-white;
     font-style: normal;
-    z-index: 0;
+    z-index: 1;
     grid-column: 1;
     grid-row: 1;
 
     @include screen1 {
+      @include slideshow-caption-bg;
       display: flex;
       flex-direction: column;
-      width: 75%;
-    }
-
-    @include screen2 {
-      width: 50%;
-    }
-
-    @include screen3 {
-      width: 30%;
+      margin-top: $slideshow-caption-spacing;
+      margin-right: $slideshow-caption-spacing;
+      margin-left: $slideshow-caption-spacing;
     }
 
     a {
-      color: inherit;
-    }
-
-    b {
-      font-size: 1.5em;
-
-      @include screen2 {
-        font-size: 2em;
-      }
-
-    }
-
-    p {
-      font-size: 1.1em;
-
-      @include screen2 {
-        font-size: 1.3em;
-      }
-
+      color: $color-gold;
     }
 
   }
 
 }
 
+.c-slideshow__slide-heading {
+  font-size: 1.5em;
+
+  @include screen2 {
+    font-size: 2em;
+  }
+
+}
+
+.c-slideshow__slide-text {
+  font-size: 1.1em;
+
+  @include screen2 {
+    font-size: 1.3em;
+  }
+
+}
+
 .c-slideshow__slide-more {
   margin-top: auto;
+}
+
+.c-slideshow__slide-credits {
+  display: none;
+  position: absolute; // to .c-slideshow__slide
+  right: 0;
+  bottom: 0;
+  padding: $space2;
+  background-color: rgba($color-black, 0.4);
+  font-size: 1em;
+  text-align: right;
+
+  @supports (backdrop-filter: blur(1px)) {
+    background-color: rgba($color-black, 0.2);
+    backdrop-filter: blur(5px);
+  }
+
+  @include screen1 {
+    display: block;
+    max-width: 100 - $slideshow-grid-column-size1;
+  }
+
+  @include screen2 {
+    max-width: 100 - $slideshow-grid-column-size2;
+  }
+
+}
+
+.c-slideshow__slide-image {
+  position: relative;
+  background-color: $color-blue;
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+
+  img {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @include screen1 {
+    background-color: $color-gray;
+
+    img {
+      display: block;
+    }
+
+  }
+
 }
