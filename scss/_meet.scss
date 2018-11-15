@@ -3,13 +3,13 @@
 .c-meet {
   display: grid;
   height: 100%;
+  border: 1px solid $color-dark-gray;
   background-color: $color-dark-gray;
   grid-template-columns: repeat(auto-fit, minmax(100px, auto));
-  grid-template-rows: 1fr auto;
 
   figcaption {
+    @extend %u-break-words;
     display: flex;
-    flex: 1 1 auto;
     flex-direction: column;
     justify-content: space-between;
     padding: $space2;
@@ -18,7 +18,7 @@
 
     a {
       margin-top: $space2;
-      color: inherit;
+      color: $color-gold;
     }
 
   }
