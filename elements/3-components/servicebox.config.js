@@ -1,13 +1,12 @@
 const faker = require('faker/locale/en');
 const serviceBoxes = [];
-const serviceBoxHeadings = ['Collect', 'Publish', 'Preserve', 'Access'];
 const fakerData = [];
 
 for (var i = 0; i < 4; i++) {
   serviceBoxes.push({
     heading: {
       level: '2',
-      text: serviceBoxHeadings[i]
+      text: faker.commerce.product()
     }
   });
 }

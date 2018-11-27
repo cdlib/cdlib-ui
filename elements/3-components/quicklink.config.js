@@ -1,21 +1,19 @@
 const faker = require('faker/locale/en');
 const fakerData1 = [];
 const fakerData2 = [];
-const list1 = ['For Campus Libraries', 'For Content Contributors', 'For Faculty', 'For Vendors', 'For Technologists'];
-const list2 = ['Calisphere', 'eScholarship', 'Merritt Repository Service', 'Melvyl', 'Online Archive of California', 'UC Libraries', 'DMPTool'];
 
-for (var i = 0; i < list1.length; i++) {
+for (var i = 0; i < 5; i++) {
   fakerData1.push({
     link: {
-      text: list1[i]
+      text: faker.commerce.productName()
     }
   });
 }
 
-for (var i = 0; i < list2.length; i++) {
+for (var i = 0; i < 7; i++) {
   fakerData2.push({
     link: {
-      text: list2[i]
+      text: faker.commerce.productName()
     }
   });
 }
@@ -28,13 +26,13 @@ module.exports = {
     quicklink1: {
       heading: {
         level: '2',
-        text: 'Information Gateways'
+        text: faker.commerce.productName()
       }
     },
     quicklink2: {
       heading: {
         level: '2',
-        text: 'Go Directly To'
+        text: faker.commerce.productName()
       }
     },
     list1: fakerData1,
