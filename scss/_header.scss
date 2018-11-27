@@ -22,9 +22,13 @@ $header-logo-height: 50px;
 }
 
 .c-header__logo {
-  display: inline-block;
   margin-bottom: $space2;
   grid-area: header-logo;
+
+  @include screen2 {
+    // stack over spanned grid-column in .c-header__search:
+    z-index: 2;
+  }
 
   img {
     display: block;
