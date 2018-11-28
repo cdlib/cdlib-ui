@@ -4,7 +4,8 @@ const fakerData = [];
 for (var i = 0; i < 22; i++) {
   fakerData.push({
     link: {
-      text: 2018 - i
+      text: 2018 - i,
+      url: '#' + (2018 - i)
     }
   });
 }
