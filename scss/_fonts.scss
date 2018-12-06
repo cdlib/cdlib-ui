@@ -1,4 +1,20 @@
 // ***** Custom Fonts ***** //
 
-// sass-lint:disable no-url-protocols
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@font-face {
+  font-family: 'Source Sans Pro Roman';
+  font-weight: 1 999;
+  src:
+    url('../fonts/SourceSansVariable-Roman.ttf.woff2') format('woff2-variations'),
+    url('../fonts/SourceSansPro-Regular.ttf.woff') format('woff');
+}
+
+// Note: When declaring the following italic font on a component in the CSS, you must include the font-family and font-style properties as listed below for consistent variable font browser rendering.
+
+@font-face {
+  font-family: 'Source Sans Pro Italic';
+  font-style: italic;
+  font-weight: 1 999;
+  src:
+    url('../fonts/SourceSansVariable-Italic.ttf.woff2') format('woff2-variations'),
+    url('../fonts/SourceSansPro-It.ttf.woff') format('woff');
+}
