@@ -4,7 +4,7 @@ body {
   margin: 0 auto;
   padding-right: $space1;
   padding-left: $space1;
-  font-family: 'Source Sans Pro Roman';
+  font-family: 'Source Sans Pro Roman', Arial;
 
   @include screen1 {
     max-width: 1400px;

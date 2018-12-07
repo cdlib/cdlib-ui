@@ -6,6 +6,7 @@
   src:
     url('../fonts/SourceSansVariable-Roman.ttf.woff2') format('woff2-variations'),
     url('../fonts/SourceSansPro-Regular.ttf.woff') format('woff');
+  font-display: swap;
 }
 
 // Note: When declaring the following italic font on a component in the CSS, you must include the font-family and font-style properties as listed below for consistent variable font browser rendering.
@@ -17,4 +18,5 @@
   src:
     url('../fonts/SourceSansVariable-Italic.ttf.woff2') format('woff2-variations'),
     url('../fonts/SourceSansPro-It.ttf.woff') format('woff');
+  font-display: swap;
 }
