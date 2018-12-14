@@ -2,11 +2,14 @@
   <header>
     {{> @heading }}
   </header>
-  <div>
-    <ul>
-      {{#each list1}}
-      <li>{{> @link--1 }} <span aria-label="results">({{ number }})</span></li>
-      {{/each}}
-    </ul>
-  </div>
+  <ul>
+    {{#each list}}
+    <li>
+      <a href="">
+        <span class="c-refine__item-text">{{ text }}</span>
+        <span class="c-refine__item-number">({{ number }} <span>results</span>)</span>
+      </a>
+    </li>
+    {{/each}}
+  </ul>
 </div>

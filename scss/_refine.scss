@@ -2,19 +2,24 @@
 
 .c-refine {
 
-  ul {
+  a {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    li {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+}
 
-      a {
-        margin-right: $space2;
-      }
+.c-refine__item-text {
+  margin-right: $space2;
+}
 
-    }
+.c-refine__item-number {
+  display: inline-flex; // collapses leftover whitespace after hidden label
+  color: $color-black;
 
+  // 'Results' label:
+  span {
+    @include u-hide;
   }
 
 }
