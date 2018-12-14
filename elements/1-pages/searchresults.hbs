@@ -1,4 +1,4 @@
-<div class="t-layout--1">
+<div class="t-layout--2">
   {{ render '@skipnav' }}
   <div class="t-layout__header">
     {{ render '@header' }}
@@ -6,6 +6,9 @@
   <div class="t-layout__breadcrumb">
     {{ render '@breadcrumb' }}
   </div>
+  <aside class="t-layout__sidebar1">
+    {{ render '@refine' }}
+  </aside>
   <div id="maincontent" class="t-layout__main">
     {{ render '@filter' }}
     {{ render '@records' }}
