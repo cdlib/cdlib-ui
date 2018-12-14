@@ -31,7 +31,7 @@ $mobilenav-padding: $space2;
         align-items: center;
         padding-right: $mobilenav-padding / 2 + 40px;
         padding-left: $mobilenav-padding;
-        background: url('angle-right.svg' param(--color #{$color-gray})) no-repeat center right #{$mobilenav-padding} / 1em;
+        background: url('angle-right-light.svg' param(--color #{$color-gray})) no-repeat center right #{$mobilenav-padding} / 0.6em;
 
         @include screen2 {
           @include u-interactive-element-min-size(disabled);

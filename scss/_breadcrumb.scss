@@ -15,9 +15,9 @@
     &:not(:last-child) {
 
       &::after {
-        margin-left: 0.5em;
-        padding-left: 1em;
-        background: url('angle-right.svg' param(--color #{$color-blue})) no-repeat center / contain;
+        margin-left: 0.3em;
+        padding-left: 1.3em;
+        background: url('angle-right-light.svg' param(--color #{$color-blue})) no-repeat center / 0.6em;
         content: '';
       }
 

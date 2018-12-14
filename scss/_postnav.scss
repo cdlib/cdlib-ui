@@ -12,16 +12,16 @@
       padding-right: 1em;
       padding-left: 1em;
       background-repeat: no-repeat;
-      background-size: 0.7em;
+      background-size: 0.6em;
 
       &:last-child {
-        background-image: url('angle-right.svg' param(--color #{$color-blue}));
+        background-image: url('angle-right-light.svg' param(--color #{$color-blue}));
         background-position: right center;
       }
 
       // first list item and if only list item:
       &:first-child { 
-        background-image: url('angle-left.svg' param(--color #{$color-blue}));
+        background-image: url('angle-left-light.svg' param(--color #{$color-blue}));
         background-position: left center;
       }
 
