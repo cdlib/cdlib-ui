@@ -8,7 +8,7 @@
   </div>
   <transition name="c-header__offscreen">
     <div class="c-header__search" v-if="isOpen1">
-      {{> @search }}
+      {{ render '@search' }}
       <button class="o-button2" v-on:click="headerToggle2" v-if="!$mq.screen2" aria-label="close search"></button>
     </div>
   </transition>
