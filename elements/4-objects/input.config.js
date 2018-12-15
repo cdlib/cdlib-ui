@@ -6,6 +6,7 @@ module.exports = {
     input1: {
       id: 'c-search-field',
       type: 'text',
+      list: '',
       name: '',
       value: '',
       placeholder: 'input 1 placeholder text'

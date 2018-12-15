@@ -1,5 +1,10 @@
 <form class="c-search" action="{{ search.action }}">
   {{> @label--1 }}
   {{> @input }}
+  <datalist id="c-search-list">
+    {{#each list}}
+    <option value="{{ datalist.option }} ">
+    {{/each}}
+  </datalist>
   {{> @button--4 }}
 </form>

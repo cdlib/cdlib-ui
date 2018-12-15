@@ -1,7 +1,15 @@
+const faker = require('faker/locale/en');
+const fakerData = [];
+
+for (var i = 0; i < 10; i++) {
+  fakerData.push({
+    datalist: {
+      option: faker.commerce.productName()
+    }
+  });
+}
 
 module.exports = {
-  collated: true,
-  default: '1',
   label: 'Search',
   context: {
     search: {
@@ -14,6 +22,7 @@ module.exports = {
     input1: {
       id: 'c-header-search-field',
       type: 'search',
+      list: 'c-search-list',
       name: 's',
       value: '',
       placeholder: ''
@@ -22,5 +31,7 @@ module.exports = {
       type: 'submit',
       text: 'Search'
     },
-  }
+    list: fakerData,
+  },
+  notes: "To test search field 'auto suggest' functionality, try entering sample titles used in Search Results component or page."
 };
