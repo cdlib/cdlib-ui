@@ -7,10 +7,10 @@
   }
 
   li {
-    display: inline-block;
+    display: inline-flex;
     margin-bottom: $space1;
     font-size: 0.9em;
-    font-weight: bold;
+    line-height: normal;
 
     &:not(:last-child) {
 
