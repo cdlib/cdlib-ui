@@ -66,3 +66,12 @@ $docicon-green: rgb(82, 122, 0); // #527A00
 .o-docicon__html {
   @extend %o-docicon__html;
 }
+
+%o-docicon__rtf {
+  @extend %o-docicon;
+  background-color: $color-dark-gray;
+}
+
+.o-docicon__rtf {
+  @extend %o-docicon__rtf;
+}

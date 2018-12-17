@@ -85,6 +85,16 @@
 
   }
 
+  &[href$='.rtf'] {
+    @extend %o-link__type;
+
+    &::after {
+      @extend %o-docicon__rtf;
+      content: 'rtf';
+    }
+
+  }
+
 }
 
 %o-link1 {

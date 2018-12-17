@@ -128,6 +128,15 @@ module.exports = {
           url: 'wordpress/document.zip'
         }
       }
+    },
+    {
+      name: '15', // link--15.hbs
+      context: {
+        link: {
+          text: 'Link to Rich Text file',
+          url: 'wordpress/document.rtf'
+        }
+      }
     }
   ]
 };
