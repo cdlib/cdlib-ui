@@ -26,6 +26,7 @@ h1 {
   @extend %o-heading;
   color: $color-red;
   font-size: 1.25em;
+  font-weight: bold;
 }
 
 h2 {
@@ -46,6 +47,7 @@ h3 {
   @extend %o-heading;
   color: $color-red;
   font-size: 1em;
+  font-weight: bold;
 }
 
 h4 {
