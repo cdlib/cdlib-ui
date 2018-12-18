@@ -1,22 +1,47 @@
 // ***** Custom Fonts ***** //
 
+// Regular:
+
 @font-face {
-  font-family: 'Source Sans Pro Roman';
-  font-weight: 1 999;
+  font-family: 'Source Sans Pro';
+  font-weight: 200 900;
   src:
     url('../fonts/SourceSansVariable-Roman.ttf.woff2') format('woff2-variations'),
     url('../fonts/SourceSansPro-Regular.ttf.woff') format('woff');
   font-display: swap;
 }
 
-// Note: When declaring the following italic font on a component in the CSS, you must include the font-family and font-style properties as listed below for consistent variable font browser rendering.
+// Bold:
 
 @font-face {
-  font-family: 'Source Sans Pro Italic';
+  font-family: 'Source Sans Pro';
+  font-weight: 700;
+  src:
+    url('../fonts/SourceSansVariable-Roman.ttf.woff2') format('woff2-variations'),
+    url('../fonts/SourceSansPro-Semibold.ttf.woff') format('woff');
+  font-display: swap;
+}
+
+// Italic:
+
+@font-face {
+  font-family: 'Source Sans Pro';
   font-style: italic;
-  font-weight: 1 999;
+  font-weight: 200 900;
   src:
     url('../fonts/SourceSansVariable-Italic.ttf.woff2') format('woff2-variations'),
     url('../fonts/SourceSansPro-It.ttf.woff') format('woff');
+  font-display: swap;
+}
+
+// Bold Italic:
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 700;
+  src:
+    url('../fonts/SourceSansVariable-Italic.ttf.woff2') format('woff2-variations'),
+    url('../fonts/SourceSansPro-SemiboldIt.ttf.woff') format('woff');
   font-display: swap;
 }
