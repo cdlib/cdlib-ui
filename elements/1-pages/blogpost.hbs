@@ -6,13 +6,13 @@
   <div class="t-layout__breadcrumb">
     {{ render '@breadcrumb' }}
   </div>
-  <div id="maincontent" class="t-layout__main">
+  <main id="maincontent" class="t-layout__main">
     {{> @heading }}
     {{ render '@blogmetadata' }}
     {{#each paragraph}}
     <p>{{ blogpost.text }}</p>
     {{/each}}
-  </div>
+  </main>
   <div class="t-layout__sidebar1">
     <section class="o-sidebarbox">
       <header><h2>Categories</h2></header>

@@ -9,7 +9,7 @@
   <div class="t-layout__sidebar1">
     {{ render '@secondarynav' }}
   </div>
-  <div id="maincontent" class="t-layout__main">
+  <main id="maincontent" class="t-layout__main">
     {{> @heading--1 }}
     {{#each paragraph}}
       <p>{{ program.text }}</p>
@@ -22,7 +22,7 @@
     {{/each}}
     {{ render '@halfboxes' }}
     {{ render '@staff' }}
-  </div>
+  </main>
   <div class="t-layout__sidebar2">
     {{ render '@news' }}
     {{ render '@sidebarbox--2' }}

@@ -9,7 +9,7 @@
   <aside class="t-layout__sidebar1">
     {{ render '@secondarynav' }}
   </aside>
-  <div id="maincontent" class="t-layout__main">
+  <main id="maincontent" class="t-layout__main">
     {{> @heading--1 }}
     {{> @contact }}
     {{ render '@avatar' }}
@@ -31,7 +31,7 @@
     {{ render '@orcid' }}
     <h2>{{ social.heading }}</h2>
     <a href="{{ social.url }}">{{ social.url }}</a>
-  </div>
+  </main>
   <div class="t-layout__updated">
     {{ render '@updated' }}
   </div>
