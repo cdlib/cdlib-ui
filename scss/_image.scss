@@ -1,0 +1,10 @@
+// ***** Image Object ***** //
+
+main {
+
+  img {
+    max-width: 100%;
+    max-height: calc(100vh - #{$space1});
+  }
+
+}
