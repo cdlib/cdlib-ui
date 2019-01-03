@@ -7,10 +7,12 @@ $header-logo-height: 50px;
   position: relative;
   margin-top: $space1;
   grid-template:
-    'header-logo header-controls';
+    'header-logo header-controls'
+    'header-nav header-nav'
+    'header-util-nav header-util-nav'
+    / 1fr auto;
 
   @include screen2 {
-    align-items: start;
     margin-top: $space2;
     grid-template:
       'header-logo header-util-nav'
@@ -22,6 +24,7 @@ $header-logo-height: 50px;
 }
 
 .c-header__logo {
+  display: block;
   margin-bottom: $space2;
   grid-area: header-logo;
 
@@ -44,7 +47,6 @@ $header-logo-height: 50px;
 
 .c-header__controls {
   grid-area: header-controls;
-  justify-self: end;
 
   button {
 
@@ -58,7 +60,7 @@ $header-logo-height: 50px;
 
 .c-header__search {
   display: flex;
-  position: absolute;
+  position: absolute; // to .c-header
   right: 0;
   left: 0;
   align-items: flex-start;
@@ -91,26 +93,8 @@ $header-logo-height: 50px;
 
 }
 
-.c-header__nav {
-  position: absolute;
-  top: $header-logo-height + $space1;
-  right: 0;
-  left: 0;
-  background-color: $color-white;
-  z-index: 1;
-
-  @include screen2 {
-    display: contents;
-    position: static;
-  }
-
-}
-
 .c-header__header-nav {
-  
-  @include screen2 {
-    grid-area: header-nav;
-  }
+  grid-area: header-nav;
 
   .o-mobilenav {
 
@@ -127,10 +111,10 @@ $header-logo-height: 50px;
 }
 
 .c-header__utility-nav {
+  grid-area: header-util-nav;
 
   @include screen2 {
     margin-top: 0;
-    grid-area: header-util-nav;
   }
 
 }

@@ -12,14 +12,10 @@
       <button class="o-button2" v-on:click="headerToggle2" v-if="!$mq.screen2" aria-label="close search"></button>
     </div>
   </transition>
-  <transition name="c-header__offscreen">
-    <div class="c-header__nav" v-if="isOpen2">
-      <div class="c-header__header-nav">
-      {{ render '@headernav' }}
-      </div>
-      <div class="c-header__utility-nav">
-        {{ render '@utilitynav' }}
-      </div>
-    </div>
-  </transition>
+  <div class="c-header__header-nav" v-if="isOpen2">
+  {{ render '@headernav' }}
+  </div>
+  <div class="c-header__utility-nav" v-if="isOpen2">
+    {{ render '@utilitynav' }}
+  </div>
 </header>
