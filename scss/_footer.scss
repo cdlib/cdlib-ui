@@ -9,7 +9,7 @@
   }
 
   a {
-    @extend %o-link3;
+    @include o-link3;
     font-size: 0.9em;
   }
 

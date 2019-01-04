@@ -128,18 +128,6 @@ a {
   @extend %o-link2;
 }
 
-%o-link3 {
-  @extend %o-link;
-  color: $color-light-black;
-  text-decoration: none;
-
-  &:focus,
-  &:hover {
-    text-decoration: underline;
-  }
-
-}
-
 @mixin o-link3 {
   color: $color-light-black;
   text-decoration: none;
@@ -152,19 +140,7 @@ a {
 }
 
 .o-link3 {
-  @extend %o-link3;
-}
-
-%o-link4 {
-  @extend %o-link;
-  color: $color-light-black;
-  text-decoration: none;
-
-  &:focus,
-  &:hover {
-    color: $color-blue;
-  }
-
+  @include o-link3;
 }
 
 @mixin o-link4 {
@@ -179,5 +155,5 @@ a {
 }
 
 .o-link4 {
-  @extend %o-link4;
+  @include o-link4;
 }

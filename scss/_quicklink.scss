@@ -9,7 +9,7 @@
     li {
 
       a {
-        @extend %o-link3;
+        @include o-link3;
       }
 
     }
