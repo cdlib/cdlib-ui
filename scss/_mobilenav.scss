@@ -1,45 +1,26 @@
 // ***** Mobile Navigation ***** //
 
-$mobilenav-padding: $space2;
-
 .o-mobilenav {
 
-  ul {
-    @extend %u-reset-list-styles;
+  @media (max-width: $screen2) {
 
     li {
       border-right: 1px solid $color-gray;
       border-bottom: 1px solid $color-gray;
       border-left: 1px solid $color-gray;
 
-      @include screen2 {
-        border: none;
-      }
-
       &:first-child {
         border-top: 1px solid $color-gray;
-
-        @include screen2 {
-          border: none;
-        }
-
       }
 
       a {
+        @include o-link3;
         @include u-interactive-element-min-size;
         display: flex;
         align-items: center;
-        padding-right: $mobilenav-padding / 2 + 40px;
-        padding-left: $mobilenav-padding;
-        background: url('angle-right-light.svg' param(--color #{$color-gray})) no-repeat center right #{$mobilenav-padding} / 0.6em;
-
-        @include screen2 {
-          @include u-interactive-element-min-size(disabled);
-          display: block;
-          padding: 0;
-          background: none;
-        }
-
+        padding-right: $space2;
+        padding-left: $space2;
+        background: url('angle-right-light.svg' param(--color #{$color-gray})) no-repeat center right #{$space2} / 0.6em;
       }
 
     }

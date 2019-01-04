@@ -140,12 +140,34 @@ a {
 
 }
 
+@mixin o-link3 {
+  color: $color-light-black;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+
+}
+
 .o-link3 {
   @extend %o-link3;
 }
 
 %o-link4 {
   @extend %o-link;
+  color: $color-light-black;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: $color-blue;
+  }
+
+}
+
+@mixin o-link4 {
   color: $color-light-black;
   text-decoration: none;
 

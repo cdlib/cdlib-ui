@@ -3,6 +3,7 @@
 .c-utilitynav {
 
   ul {
+    @extend %u-reset-list-styles;
 
     @include screen2 {
       display: flex;
@@ -20,7 +21,11 @@
   }
 
   a {
-    @extend %o-link3;
+
+    @include screen2 {
+      @include o-link3;
+    }
+
   }
 
 }
