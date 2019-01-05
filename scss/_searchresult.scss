@@ -1,9 +1,8 @@
 // ***** Search Result Component ***** //
 
 .c-searchresult {
-  display: grid;
   margin-bottom: $space4;
-  grid-column-gap: $space2;
+  grid-gap: $space2;
   grid-template:
     'result-doctype result-group'
     'result-doctype result-heading'
@@ -11,16 +10,25 @@
     'result-doctype result-date'
     / 2.7em 1fr;
 
+  @supports (display: grid) {
+    display: grid;
+  }
+
   > * {
 
     &:not(:last-child) {
       margin-bottom: $space2;
+
+      @supports (display: grid) {
+        margin-bottom: 0;
+      }
+
     }
 
   }
 
   @include u-headings() {
-    display: inline;
+    display: inline-block;
     margin: 0;
     grid-area: result-heading;
 
