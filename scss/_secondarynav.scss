@@ -1,5 +1,7 @@
 // ***** Secondary Navigation Component ***** //
 
+$secondarynav-list-indent: $space2;
+
 .c-secondarynav {
 
   header {
@@ -15,11 +17,26 @@
   }
 
   ul ul ul {
-    padding-left: $space3;
     border-top: 1px solid $color-gray;
+
+    // 2nd level list:
+    a {
+      padding-left: $secondarynav-list-indent * 2;
+    }
+
+    // 3rd level list:
+    ul a {
+      padding-left: $secondarynav-list-indent * 3;
+    }
+
+    // 4th level list:
+    ul ul a {
+      padding-left: $secondarynav-list-indent * 4;
+    }
+
   }
 
-  // Remove top-level link from wp_nav_menu, which is a duplicate of header link:
+  // Remove top-level link generated from wp_nav_menu, which is a duplicate of header link:
 
   > div > ul > li > a {
     display: none;

@@ -18,6 +18,12 @@
         display: flex;
         align-items: center;
         padding: $space1 $space2;
+
+        // initially defined in o-link styles:
+        &[href] {
+          padding-right: calc(#{$link-icon-padding} + #{$space2});
+          background-position: right $space2 center;
+        }
       }
 
     }
