@@ -1,6 +1,7 @@
 // ***** Meet Component ***** //
 
 .c-meet {
+  /* autoprefixer grid: off */
   display: grid;
   height: 100%;
   border: 1px solid $color-dark-gray;
@@ -25,9 +26,14 @@
 
   img {
     display: block;
-    width: 100%;
+    width: auto;
     height: 120px;
     object-fit: cover;
+
+    @supports (object-fit: cover) {
+      width: 100%;
+    }
+
   }
 
 }
