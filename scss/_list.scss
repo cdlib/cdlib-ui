@@ -8,8 +8,6 @@
   line-height: $line-height;
 }
 
-// WP editor <div> wrapper:
-
 ul {
   @extend %o-list;
 
@@ -20,6 +18,12 @@ ul {
   li {
     margin-top: $space2;
     margin-bottom: $space2;
+
+    // nested lists:
+    li {
+      padding-left: 2em;
+    }
+
   }
 
   // WP inline style 'list-style-type' equal to circle, disc, or square:
