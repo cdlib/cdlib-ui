@@ -1,15 +1,12 @@
 // ***** Slideshow Component ***** //
 
-$slideshow-controls-height: 50px;
-$slideshow-caption-spacing: 15px;
-$slideshow-grid-column-size1: 50%;
-$slideshow-grid-column-size2: 35%;
+$slideshow-grid-width1: 50%;
 
 @mixin slideshow-caption-bg {
-  background-color: rgba($color-blue, 0.7);
+  background-color: rgba($color-blue, 0.8);
 
   @supports (backdrop-filter: blur(1px)) {
-    background-color: rgba($color-blue, 0.6);
+    background-color: rgba($color-blue, 0.7);
     backdrop-filter: blur(5px);
   }
 
@@ -19,14 +16,11 @@ $slideshow-grid-column-size2: 35%;
   display: grid;
   height: 100%;
   background-color: $color-light-gray;
-  grid-template-rows: auto $slideshow-controls-height;
+  grid-template-rows: 1fr auto;
 
   @include screen1 {
-    grid-template-columns: $slideshow-grid-column-size1 1fr;
-  }
-
-  @include screen2 {
-    grid-template-columns: $slideshow-grid-column-size2 1fr;
+    position: relative;
+    grid-template-columns: minmax(auto, 19rem) minmax($slideshow-grid-width1, auto);
   }
 
 }
@@ -34,20 +28,17 @@ $slideshow-grid-column-size2: 35%;
 .c-slideshow__controls {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  // sass-lint:disable no-duplicate-properties
   justify-content: space-evenly;
   border-top: 1px solid $color-white;
   background-color: $color-blue;
-  z-index: 3;
-  grid-column: 1;
+  z-index: 2;
   grid-row: 2;
+  grid-column: 1;
 
   @include screen1 {
     @include slideshow-caption-bg;
-    margin-right: $slideshow-caption-spacing;
-    margin-bottom: $slideshow-caption-spacing;
-    margin-left: $slideshow-caption-spacing;
+    margin-bottom: $space2;
+    margin-left: $space2;
   }
 
   button {
@@ -96,44 +87,39 @@ $slideshow-grid-column-size2: 35%;
 }
 
 .c-slideshow__slide {
-  display: grid;
-  position: relative;
-  transition: opacity 1s;
-  opacity: 0;
-  z-index: 1;
-  grid-template-rows: auto $slideshow-controls-height;
-  grid-column: 1;
-  grid-row: 1 / 3;
-
-  @include screen1 {
-    grid-template-columns: $slideshow-grid-column-size1 1fr;
-    grid-column: 1 / 3;
-  }
-
-  @include screen2 {
-    grid-template-columns: $slideshow-grid-column-size2 1fr;
-  }
-
-  &.active {
-    opacity: 1;
-    z-index: 2;
-  }
+  display: contents;
 
   figcaption {
-    padding: $slideshow-caption-spacing;
+    padding: $space2;
+    transition: opacity 1s;
+    background-color: $color-blue;
     color: $color-white;
     font-style: normal;
-    z-index: 1;
-    grid-column: 1;
+    opacity: 0;
+    z-index: 2;
     grid-row: 1;
+    grid-column: 1;
+
+    + .c-slideshow__slide-image {
+      transition: opacity 1s;
+      opacity: 0;
+    }
+
+    &.active {
+      opacity: 1;
+
+      + .c-slideshow__slide-image {
+        opacity: 1;
+      }
+
+    }
 
     @include screen1 {
       @include slideshow-caption-bg;
       display: flex;
       flex-direction: column;
-      margin-top: $slideshow-caption-spacing;
-      margin-right: $slideshow-caption-spacing;
-      margin-left: $slideshow-caption-spacing;
+      margin-top: $space2;
+      margin-left: $space2;
     }
 
     a {
@@ -145,21 +131,12 @@ $slideshow-grid-column-size2: 35%;
 }
 
 .c-slideshow__slide-heading {
-  font-size: 1.5em;
-
-  @include screen2 {
-    font-size: 2em;
-  }
-
+  font-size: 2rem;
+  font-weight: normal;
 }
 
 .c-slideshow__slide-text {
-  font-size: 1.1em;
-
-  @include screen2 {
-    font-size: 1.3em;
-  }
-
+  font-size: 1.3rem;
 }
 
 .c-slideshow__slide-more {
@@ -168,49 +145,46 @@ $slideshow-grid-column-size2: 35%;
 
 .c-slideshow__slide-credits {
   display: none;
-  position: absolute; // to .c-slideshow__slide
-  right: 0;
-  bottom: 0;
-  padding: $space2;
-  background-color: rgba($color-black, 0.4);
-  font-size: 1em;
-  text-align: right;
-
-  @supports (backdrop-filter: blur(1px)) {
-    background-color: rgba($color-black, 0.2);
-    backdrop-filter: blur(5px);
-  }
 
   @include screen1 {
     display: block;
-    max-width: 100 - $slideshow-grid-column-size1;
-  }
+    position: absolute; // to .c-slideshow
+    right: 0;
+    bottom: 0;
+    max-width: calc(#{$slideshow-grid-width1} - #{$space2});
+    padding: $space2;
+    background-color: rgba($color-black, 0.4);
+    font-size: 1em;
+    text-align: right;
 
-  @include screen2 {
-    max-width: 100 - $slideshow-grid-column-size2;
+    @supports (backdrop-filter: blur(1px)) {
+      background-color: rgba($color-black, 0.2);
+      backdrop-filter: blur(5px);
+    }
+
   }
 
 }
 
 .c-slideshow__slide-image {
-  position: relative;
-  background-color: $color-blue;
-  grid-column: 1 / 3;
-  grid-row: 1 / 3;
 
   img {
     display: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
 
   @include screen1 {
+    position: relative;
     background-color: $color-gray;
+    z-index: 1;
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
 
     img {
       display: block;
+      position: absolute; // to .c-slideshow__slide-image
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
   }

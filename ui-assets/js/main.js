@@ -86,8 +86,8 @@ new Vue({
 
 if (document.querySelector('.c-slideshow')) {
 
-  var slides = document.querySelectorAll('.c-slideshow__slide');
-  var firstSlide = document.querySelector('.c-slideshow figure');
+  var slides = document.querySelectorAll('.c-slideshow__slide figcaption');
+  var firstSlide = document.querySelector('.c-slideshow figcaption');
   var currentSlide = 0;
   var transitionSpeed = 10000;
   var slideInterval = setInterval(nextSlide, transitionSpeed);
@@ -99,14 +99,14 @@ if (document.querySelector('.c-slideshow')) {
   var slide3button = document.querySelector('.c-slideshow__slide3');
   var slide4button = document.querySelector('.c-slideshow__slide4');
 
-  // controls.style.display = 'flex'; // unhides controls if there's JS
-  playButton.style.display = 'none'; // initial play button state
+  // initial states:  
+  playButton.style.display = 'none';
   firstSlide.classList.add('active');
 
   function goToSlide(n) {
-    slides[currentSlide].className = 'c-slideshow__slide';
+    slides[currentSlide].classList.remove('active');
     currentSlide = (n + slides.length) % slides.length;
-    slides[currentSlide].className = 'c-slideshow__slide active';
+    slides[currentSlide].classList.add('active');
   }
 
   function playSlideshow() {
@@ -137,25 +137,25 @@ if (document.querySelector('.c-slideshow')) {
 
   slide1button.onclick = function() {
     pauseSlideshow();
-    slides[currentSlide].className = 'c-slideshow__slide';
+    slides[currentSlide].classList.remove('active');
     goToSlide(currentSlide = 0);
   };
 
   slide2button.onclick = function() {
     pauseSlideshow();
-    slides[currentSlide].className = 'c-slideshow__slide';
+    slides[currentSlide].classList.remove('active');
     goToSlide(currentSlide = 1);
   };
 
   slide3button.onclick = function() {
     pauseSlideshow();
-    slides[currentSlide].className = 'c-slideshow__slide';
+    slides[currentSlide].classList.remove('active');
     goToSlide(currentSlide = 2);
   };
 
   slide4button.onclick = function() {
     pauseSlideshow();
-    slides[currentSlide].className = 'c-slideshow__slide';
+    slides[currentSlide].classList.remove('active');
     goToSlide(currentSlide = 3);
   };
 
