@@ -84,8 +84,18 @@ new Vue({
 
 // ***** Slideshow Component ***** //
 
+// test if browser CSS.supports API is supported, then define it to 'enhanced' variable:
+
+var supportsCSS = !!((window.CSS && window.CSS.supports) || window.supportsCSS || false);
+var enhanced = false;
+
+if (supportsCSS) {
+  enhanced = CSS.supports('(display: grid) and (display: contents)');
+}
+
 if (document.querySelector('.c-slideshow')) {
 
+  var slideGroups = document.querySelectorAll('.c-slideshow__slide');
   var slides = document.querySelectorAll('.c-slideshow__slide figcaption');
   var firstSlide = document.querySelector('.c-slideshow figcaption');
   var currentSlide = 0;
@@ -98,15 +108,26 @@ if (document.querySelector('.c-slideshow')) {
   var slide2button = document.querySelector('.c-slideshow__slide2');
   var slide3button = document.querySelector('.c-slideshow__slide3');
   var slide4button = document.querySelector('.c-slideshow__slide4');
+  var randomSlide = Math.floor(Math.random() * slideGroups.length);
 
-  // initial states:  
-  playButton.style.display = 'none';
-  firstSlide.classList.add('active');
+  if (!enhanced) {
+    for (i = 0; i < slideGroups.length; i++) {
+      slideGroups[i].style.display = 'none';
+      slideGroups[randomSlide].style.display = 'block';
+      slides[randomSlide].classList.add('active');
+    }
+  } else {
+    // set initial states:  
+    playButton.style.display = 'none';
+    firstSlide.classList.add('active');
+  }
 
   function goToSlide(n) {
-    slides[currentSlide].classList.remove('active');
-    currentSlide = (n + slides.length) % slides.length;
-    slides[currentSlide].classList.add('active');
+    if (enhanced) {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (n + slides.length) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }
   }
 
   function playSlideshow() {
