@@ -21,6 +21,11 @@
 
   }
 
+  a {
+    @extend %o-button7;
+    text-decoration: none;
+  }
+
 }
 
 .c-filter__group {
