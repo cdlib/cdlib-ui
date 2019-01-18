@@ -27,10 +27,77 @@ $slideshow-grid-width2: 50%;
     grid-template-columns: minmax(auto, $slideshow-grid-width1) minmax($slideshow-grid-width2, auto);
   }
 
+  // ***** Set 'no js', 'basic', and 'enhanced' modes; displays a single, random, or all slides ***** //
+
+  // no js mode - show only the first slide; hide controls.
+  .c-slideshow__slide {
+    display: contents;
+
+    &:not(:first-of-type) {
+      display: none;
+    }
+
+  }
+
+  .c-slideshow__controls {
+    display: none;
+  }
+
+  // basic mode - like no js mode, but randomly show a fixed slide. Active when @supports (display: grid) and (display: contents) condition is false, as with IE 11.
+  &.basic {
+
+    .c-slideshow__slide {
+      display: none;
+
+      &.fixed {
+        display: block;
+      }
+
+    }
+
+  }
+
+  // enhanced mode - show all slides; set opacity and transitions. Active when @supports (display: grid) and (display: contents) condition is true, as with modern browsers.
+  &.enhanced {
+
+    .c-slideshow__slide {
+      display: contents;
+
+      figcaption {
+        transition: opacity 1s;
+        opacity: 0;
+
+        @include screen1 {
+          margin-bottom: 0;
+        }
+
+        + .c-slideshow__slide-image {
+          transition: opacity 1s;
+          opacity: 0;
+        }
+
+        &.active {
+          opacity: 1;
+
+          + .c-slideshow__slide-image {
+            opacity: 1;
+          }
+
+        }
+
+      }
+
+    }
+
+    .c-slideshow__controls {
+      display: flex;
+    }
+
+  }
+
 }
 
 .c-slideshow__controls {
-  display: none;
   align-items: center;
   justify-content: space-evenly;
   border-top: 1px solid $color-white;
@@ -38,10 +105,6 @@ $slideshow-grid-width2: 50%;
   z-index: 2;
   grid-row: 2;
   grid-column: 1;
-
-  @supports (display: grid) and (display: contents) {
-    display: flex;
-  }
 
   @include screen1 {
     @include slideshow-caption-bg;
@@ -95,32 +158,15 @@ $slideshow-grid-width2: 50%;
 }
 
 .c-slideshow__slide {
-  display: contents;
 
   figcaption {
     padding: $space2;
-    transition: opacity 1s;
     background-color: $color-blue;
     color: $color-white;
     font-style: normal;
-    opacity: 0;
     z-index: 2;
     grid-row: 1;
     grid-column: 1;
-
-    + .c-slideshow__slide-image {
-      transition: opacity 1s;
-      opacity: 0;
-    }
-
-    &.active {
-      opacity: 1;
-
-      + .c-slideshow__slide-image {
-        opacity: 1;
-      }
-
-    }
 
     @include screen1 {
       @include slideshow-caption-bg;
@@ -135,7 +181,6 @@ $slideshow-grid-width2: 50%;
       @supports (display: grid) and (display: contents) {
         position: static;
         width: auto;
-        margin-bottom: 0;
       }
 
     }

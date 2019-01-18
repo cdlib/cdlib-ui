@@ -95,6 +95,7 @@ if (supportsCSS) {
 
 if (document.querySelector('.c-slideshow')) {
 
+  var mode = document.querySelector('.c-slideshow');
   var slideGroups = document.querySelectorAll('.c-slideshow__slide');
   var slides = document.querySelectorAll('.c-slideshow__slide figcaption');
   var firstSlide = document.querySelector('.c-slideshow figcaption');
@@ -111,13 +112,12 @@ if (document.querySelector('.c-slideshow')) {
   var randomSlide = Math.floor(Math.random() * slideGroups.length);
 
   if (!enhanced) {
+    mode.classList.add('basic');
     for (i = 0; i < slideGroups.length; i++) {
-      slideGroups[i].style.display = 'none';
-      slideGroups[randomSlide].style.display = 'block';
-      slides[randomSlide].classList.add('active');
+      slideGroups[randomSlide].classList.add('fixed');
     }
   } else {
-    // set initial states:  
+    mode.classList.add('enhanced');
     playButton.style.display = 'none';
     firstSlide.classList.add('active');
   }
