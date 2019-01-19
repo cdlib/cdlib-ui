@@ -75,3 +75,51 @@ $docicon-green: rgb(82, 122, 0); // #527A00
 .o-docicon__rtf {
   @extend %o-docicon__rtf;
 }
+
+// ###
+
+%o-docicon__ps {
+  @extend %o-docicon;
+  background-color: $docicon-light-red;
+}
+
+.o-docicon__ps {
+  @extend %o-docicon__ps;
+}
+
+%o-docicon__ppt {
+  @extend %o-docicon;
+  background-color: $color-orange;
+}
+
+.o-docicon__ppt {
+  @extend %o-docicon__ppt;
+}
+
+%o-docicon__pptx {
+  @extend %o-docicon;
+  background-color: $color-orange;
+}
+
+.o-docicon__pptx {
+  @extend %o-docicon__pptx;
+}
+
+%o-docicon__xlsx {
+  @extend %o-docicon;
+  background-color: $docicon-green;
+}
+
+.o-docicon__xlsx {
+  @extend %o-docicon__xlsx;
+}
+
+%o-docicon__docx {
+  @extend %o-docicon;
+  background-color: $color-blue;
+}
+
+.o-docicon__docx {
+  @extend %o-docicon__docx;
+}
+

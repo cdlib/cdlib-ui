@@ -94,6 +94,56 @@
 
   }
 
+  &[href$='.ps'] {
+    @extend %o-link__type;
+
+    &::after {
+      @extend %o-docicon__ps;
+      content: 'ps';
+    }
+
+  }
+
+  &[href$='.ppt'] {
+    @extend %o-link__type;
+
+    &::after {
+      @extend %o-docicon__ppt;
+      content: 'ppt';
+    }
+
+  }
+
+  &[href$='.pptx'] {
+    @extend %o-link__type;
+
+    &::after {
+      @extend %o-docicon__pptx;
+      content: 'pptx';
+    }
+
+  }
+
+  &[href$='.xlsx'] {
+    @extend %o-link__type;
+
+    &::after {
+      @extend %o-docicon__xlsx;
+      content: 'xlsx';
+    }
+
+  }
+
+  &[href$='.docx'] {
+    @extend %o-link__type;
+
+    &::after {
+      @extend %o-docicon__docx;
+      content: 'docx';
+    }
+
+  }
+
 }
 
 %o-link1 {
