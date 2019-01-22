@@ -2,7 +2,7 @@
 
 .c-searchresult {
   margin-bottom: $space4;
-  grid-gap: $space2;
+  grid-column-gap: $space2;
   grid-template:
     'result-doctype result-group'
     'result-doctype result-heading'
@@ -18,11 +18,6 @@
 
     &:not(:last-child) {
       margin-bottom: $space2;
-
-      @supports (display: grid) {
-        margin-bottom: 0;
-      }
-
     }
 
   }

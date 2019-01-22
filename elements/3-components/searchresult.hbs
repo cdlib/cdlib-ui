@@ -2,7 +2,9 @@
 <div class="c-searchresult">
   {{> @heading }}
   <span class="c-searchresult__doctype o-docicon__{{ searchresult.doctype }}" aria-label="{{ searchresult.doctype }} document">{{ searchresult.doctype }}</span>
+  {{#if searchresult.group}}
   <div class="c-searchresult__group">{{ searchresult.group }}</div>
+  {{/if}}
   <div class="c-searchresult__quote">{{ searchresult.quote }}</div>
   <time>{{ searchresult.date }}</time>
 </div>

@@ -12,10 +12,11 @@ for (var i = 0; i < 20; i++) {
       text: faker.commerce.productName()
     },
     searchresult: {
-      group: faker.helpers.randomize(['News and Media: CDLINFO', 'Information Services', 'User Experience Design Services', 'Discovery ＆ Delivery Program', 'Collections Program']),
+      group: faker.helpers.randomize(['News and Media: CDLINFO', 'Information Services', 'User Experience Design Services', 'Discovery ＆ Delivery Program', 'Collections Program', '']),
       doctype: faker.helpers.randomize(['ps', 'pdf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'txt', 'zip', 'html', 'rtf']),
       quote: faker.lorem.words(30),
-      date: faker.date.month() + ' ' + faker.random.number({min: 1, max: 30}) + ', ' + faker.random.number({min: 2000, max: 2018})
+      date: faker.date.month() + ' ' + faker.random.number({min: 1, max: 30}) + ', ' + faker.random.number({min: 2000, max: 2018}),
+      // exists: faker.random.boolean();
     }
   });
 }
