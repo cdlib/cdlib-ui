@@ -2,9 +2,9 @@
 
 .c-blogresult {
 
-  &:not(:last-child) {
-    margin-bottom: $space3;
-    border-bottom: 1px solid $color-gray;
+  + .c-blogresult {
+    margin-top: $space2;
+    border-top: 1px solid $color-gray;
   }
 
   @include u-headings() {
