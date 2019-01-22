@@ -3,8 +3,10 @@
 main {
 
   img {
+    width: auto;
     max-width: 100%;
-    max-height: calc(100vh - #{$space1});
+    height: auto;
+    max-height: calc(100vh - #{$space2});
   }
 
 }

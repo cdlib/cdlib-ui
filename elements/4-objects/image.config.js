@@ -1,7 +1,7 @@
 const faker = require('faker/locale/en');
 const fakerData = [];
 
-for (var i = 0; i < 10; i++) {
+for (var i = 0; i < 1; i++) {
   fakerData.push({
     image: {
       src: 'https://loremflickr.com/800/600/nature?random=' + i,
