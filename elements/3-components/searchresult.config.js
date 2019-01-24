@@ -1,5 +1,6 @@
 const faker = require('faker/locale/en');
 const fakerData = [];
+const filetypes = ['ps', 'pdf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'txt', 'zip', 'html', 'rtf'];
 
 for (var i = 0; i < 20; i++) {
   fakerData.push({
@@ -9,14 +10,14 @@ for (var i = 0; i < 20; i++) {
     link1: true,
     link2: false,
     link: {
-      text: faker.commerce.productName()
+      text: faker.commerce.productName(),
+      url: 'file.' + faker.helpers.randomize(filetypes),
     },
     searchresult: {
       group: faker.helpers.randomize(['News and Media: CDLINFO', 'Information Services', 'User Experience Design Services', 'Discovery ＆ Delivery Program', 'Collections Program', '']),
-      doctype: faker.helpers.randomize(['ps', 'pdf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'txt', 'zip', 'html', 'rtf']),
+      doctype: faker.helpers.randomize(filetypes),
       quote: faker.lorem.words(30),
       date: faker.date.month() + ' ' + faker.random.number({min: 1, max: 30}) + ', ' + faker.random.number({min: 2000, max: 2018}),
-      // exists: faker.random.boolean();
     }
   });
 }

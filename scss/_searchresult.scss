@@ -29,6 +29,12 @@
 
     a {
       color: $color-blue;
+
+      // remove docicons defined in %o-link:
+      &::after {
+        display: none;
+      }
+
     }
 
   }
