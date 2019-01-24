@@ -1,0 +1,9 @@
+// ***** Horizontal Rule Object ***** //
+
+hr {
+  margin-top: $space2;
+  margin-bottom: $space2;
+  border-width: 1px;
+  border-style: solid none none;
+  border-color: $color-gray;
+}
