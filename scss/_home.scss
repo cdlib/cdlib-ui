@@ -4,90 +4,92 @@
   display: grid;
   grid-row-gap: $space2;
   grid-template:
-    'home-header'
-    'home-slideshow'
-    'home-subheading'
-    'home-services'
-    'home-news'
-    'home-quicklinks1'
-    'home-quicklinks2'
-    'home-meet'
-    'home-social'
-    'home-footer';
+    'header'
+    'slideshow'
+    'serviceheading'
+    'servicebox'
+    'newsreel'
+    'quicklink1'
+    'quicklink2'
+    'meet'
+    'social'
+    'footer';
   
   @include screen1 {
     grid-gap: $space2;
     grid-template:
-    'home-header home-header'
-    'home-slideshow home-slideshow'
-    'home-subheading home-subheading'
-    'home-services home-services'
-    'home-news home-news'
-    'home-quicklinks1 home-quicklinks2'
-    'home-meet home-social'
-    'home-footer home-footer';
+    'header header'
+    'slideshow slideshow'
+    'serviceheading serviceheading'
+    'servicebox servicebox'
+    'newsreel newsreel'
+    'quicklink1 quicklink2'
+    'meet social'
+    'footer footer';
   }
 
   @include screen2 {
     grid-gap: $space2;
     grid-template:
-    'home-header home-header'
-    'home-slideshow home-quicklinks1'
-    'home-slideshow home-quicklinks2' 1fr
-    'home-subheading home-quicklinks2'
-    'home-services home-meet'
-    'home-news home-social'
-    'home-footer home-footer'
+    'header header'
+    'slideshow quicklink1'
+    'slideshow quicklink2' 1fr
+    'serviceheading quicklink2'
+    'servicebox meet'
+    'newsreel social'
+    'footer footer'
     / auto $sidebar-width;
   }
 
-  // This class used only in layout4.hbs:
+  // This class used only to highlight the grid in layout4.hbs:
   &.highlight-grid {
 
     > * {
+      // sass-lint:disable property-sort-order
+      all: unset;
       background-color: $color-light-blue;
     }
 
   }
 
-  .t-home__header {
-    grid-area: home-header;
+  .c-header {
+    grid-area: header;
   }
 
-  .t-home__slideshow {
-    grid-area: home-slideshow;
+  .c-slideshow {
+    grid-area: slideshow;
   }
 
-  .t-home__subheading {
-    grid-area: home-subheading;
+  .c-serviceheading {
+    grid-area: serviceheading;
   }
 
-  .t-home__services {
-    grid-area: home-services;
+  .c-servicebox {
+    grid-area: servicebox;
   }
 
-  .t-home__news {
-    grid-area: home-news;
+  .c-newsreel {
+    grid-area: newsreel;
   }
 
-  .t-home__quicklinks1 {
-    grid-area: home-quicklinks1;
+  .c-quicklink1 {
+    grid-area: quicklink1;
   }
 
-  .t-home__quicklinks2 {
-    grid-area: home-quicklinks2;
+  .c-quicklink2 {
+    grid-area: quicklink2;
   }
 
-  .t-home__meet {
-    grid-area: home-meet;
+  .c-meet {
+    grid-area: meet;
   }
 
-  .t-home__social {
-    grid-area: home-social;
+  .c-social {
+    grid-area: social;
   }
 
-  .t-home__footer {
-    grid-area: home-footer;
+  .c-footer {
+    grid-area: footer;
   }
 
 }

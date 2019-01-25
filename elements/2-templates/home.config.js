@@ -13,23 +13,23 @@ module.exports = {
       text: faker.lorem.paragraph()
     },
     gridItemSubheading: {
-      name: 'Sub Heading',
-      text: faker.lorem.paragraph()
+      name: 'Service Heading',
+      text: faker.lorem.sentence()
     },
     gridItemServices: {
-      name: 'Services',
+      name: 'Service Boxes',
       text: faker.lorem.paragraph()
     },
     gridItemNews: {
-      name: 'News',
+      name: 'Newsreel',
       text: faker.lorem.paragraph()
     },
     gridItemQuicklinks1: {
-      name: 'Quicklinks 1',
+      name: 'Quicklink 1',
       text: faker.lorem.paragraph()
     },
     gridItemQuicklinks2: {
-      name: 'Quicklinks 2',
+      name: 'Quicklink 2',
       text: faker.lorem.paragraph()
     },
     gridItemMeet: {

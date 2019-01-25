@@ -3,7 +3,6 @@
 .c-meet {
   /* autoprefixer grid: off */
   display: grid;
-  height: 100%;
   border: 1px solid $color-dark-gray;
   background-color: $color-dark-gray;
   grid-template-columns: repeat(auto-fit, minmax(100px, auto));
