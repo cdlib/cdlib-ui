@@ -10,10 +10,10 @@
   {{#each slides}}
   <figure class="c-slideshow__slide">
     <figcaption>
-      <b class="c-slideshow__slide-heading">{{ slide.heading }}</b>
-      <p class="c-slideshow__slide-text">{{ slide.text }}</p>
-      <a href="" class="c-slideshow__slide-more">Read more</a>
-      <small class="c-slideshow__slide-credits">{{ slide.credits }} [Slide {{ slide.number }}]</small>
+      <h1>{{ slide.heading }}</h1>
+      <p>{{ slide.text }}</p>
+      <a href="">Read more</a>
+      <small>{{ slide.credits }} [Slide {{ slide.number }}]</small>
     </figcaption>
     <div class="c-slideshow__slide-image">
       <img srcset="{{ slide.imageSmall }} 740w, {{ slide.imageLarge }} 1095w" sizes="(min-width: 760px) 77vw, 100vw" src="{{ slide.imageLarge }}" alt="{{ slide.alt }}">

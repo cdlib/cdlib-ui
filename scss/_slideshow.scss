@@ -159,6 +159,8 @@ $slideshow-grid-width2: 50%;
 .c-slideshow__slide {
 
   figcaption {
+    display: flex;
+    flex-direction: column;
     padding: $space2;
     background-color: $color-blue;
     color: $color-white;
@@ -169,9 +171,7 @@ $slideshow-grid-width2: 50%;
 
     @include screen1 {
       @include slideshow-caption-bg;
-      display: flex;
       position: relative;
-      flex-direction: column;
       width: calc(#{$slideshow-grid-width2} - #{$space2});
       margin-top: $space2;
       margin-bottom: $space2;
@@ -197,48 +197,57 @@ $slideshow-grid-width2: 50%;
 
     }
 
+    // ***** Slide Text ***** //
+
+    // heading:
+    @include u-headings {
+      margin-bottom: $space2;
+      color: inherit;
+      font-size: 2rem;
+      font-weight: normal;
+    }
+
+    // body copy:
+    p {
+      font-size: 1.3rem;
+    }
+
+    // any linked text:
     a {
       color: $color-gold;
     }
 
-  }
+    // 'read more' link at bottom:
+    > a {
+      margin-top: auto;
+    }
 
-}
+    // credits:
+    small {
+      display: none;
 
-.c-slideshow__slide-heading {
-  font-size: 2rem;
-  font-weight: normal;
-}
+      @include screen1 {
+        display: block;
+        margin-top: 1em;
+        font-size: 0.9em;
 
-.c-slideshow__slide-text {
-  font-size: 1.3rem;
-}
+        @supports (display: grid) and (display: contents) {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          max-width: calc(#{$slideshow-grid-width2} - #{$space2});
+          padding: $space2;
+          background-color: rgba($color-black, 0.4);
+          font-size: 1em;
+          text-align: right;
 
-.c-slideshow__slide-more {
-  margin-top: auto;
-}
+          @supports (backdrop-filter: blur(1px)) {
+            background-color: rgba($color-black, 0.2);
+            backdrop-filter: blur(5px);
+          }
 
-.c-slideshow__slide-credits {
-  display: none;
+        }
 
-  @include screen1 {
-    display: block;
-    margin-top: 1em;
-    font-size: 0.9em;
-
-    @supports (display: grid) and (display: contents) {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      max-width: calc(#{$slideshow-grid-width2} - #{$space2});
-      padding: $space2;
-      background-color: rgba($color-black, 0.4);
-      font-size: 1em;
-      text-align: right;
-
-      @supports (backdrop-filter: blur(1px)) {
-        background-color: rgba($color-black, 0.2);
-        backdrop-filter: blur(5px);
       }
 
     }
