@@ -73,11 +73,11 @@
   @extend %o-button;
 
   &[aria-pressed='false'] {
-    background-color: $color-light-blue;
+    background-color: $color-white;
   }
 
   &[aria-pressed='true'] {
-    background-color: $color-white;
+    background-color: $color-light-blue;
   }
 
 }
