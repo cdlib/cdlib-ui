@@ -15,6 +15,10 @@ module.exports = {
       level: '2',
       text: 'Narrow Your Results'
     },
+    toggle: {
+      closeButtonText: 'Close',
+      openButtonText: 'Open',
+    },
     list: fakerData,
   }
 };

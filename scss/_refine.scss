@@ -1,6 +1,22 @@
 // ***** Refine Search Component ***** //
 
 .c-refine {
+  position: relative;
+
+  header {
+    display: flex;
+    align-items: flex-start;
+
+    @include u-headings {
+      margin-right: auto;
+    }
+
+    button {
+      flex-shrink: 0;
+      margin-left: $space2;
+    }
+
+  }
 
   a {
     display: flex;
@@ -10,12 +26,27 @@
 
 }
 
+.c-refine__open {
+  @extend %o-button6;
+}
+
+.c-refine__close {
+  @extend %o-button5;
+}
+
+.c-refine__clear {
+  @extend %o-button5;
+  padding-right: $space2;
+  background: none;
+}
+
 .c-refine__item-text {
   margin-right: $space2;
 }
 
 .c-refine__item-number {
   display: inline-flex; // collapses leftover whitespace after hidden label
+  flex-shrink: 0;
   color: $color-black;
 
   // 'Results' label:
