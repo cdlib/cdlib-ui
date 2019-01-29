@@ -30,15 +30,13 @@
 
 .c-filter__group {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: $space1;
 
-  &:first-child {
-    margin-right: $space2;
-  }
 
-  &:last-child {
-    margin-left: auto;
+  &:first-child {
+    margin-right: auto;
   }
 
 }
