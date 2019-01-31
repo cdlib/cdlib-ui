@@ -57,6 +57,7 @@
 }
 
 .c-searchresult__quote {
+  @extend %u-break-words;
   grid-area: result-quote;
 
   &::before,
