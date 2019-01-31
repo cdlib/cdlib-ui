@@ -6,7 +6,6 @@
     @extend %u-reset-list-styles;
     display: inline-flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
   }
 
   a {
@@ -29,6 +28,8 @@
 
 .c-pagination {
   @extend %c-pagination;
+  display: flex;
+  justify-content: center;
 }
 
 %c-pagination__controls {
@@ -40,16 +41,6 @@
     @include u-hide;
   }
 
-}
-
-.c-pagination__control-first {
-  @extend %c-pagination__controls;
-  background-image: url('fast-backward.svg' param(--color #{$color-blue}));
-}
-
-.c-pagination__control-last {
-  @extend %c-pagination__controls;
-  background-image: url('fast-forward.svg' param(--color #{$color-blue}));
 }
 
 .c-pagination__items--selected {

@@ -1,11 +1,13 @@
 <nav class="c-pagination">
   <ul>
-    <li><a href="" class="c-pagination__control-first"><span>first result set</span></a></li>
-    <li><a href="" aria-label="previous result set">Previous</a></li>
+    <li><a href="" aria-label="previous page">Previous</a></li>
+    <li><a href="" aria-label="first page">{{ minimumNumber }}</a></li>
+    <li><a href="" aria-label="previous page set">&hellip;</a></li>
     {{#each list}}
-    <li><a href="" {{#if pagination.isSelected}}class="c-pagination__items--selected"{{/if}} aria-label="{{#if pagination.isSelected}}current {{/if}}result set {{ pagination.number }}">{{ pagination.number }}</a></li>
+    <li><a href="" {{#if pagination.isSelected}}class="c-pagination__items--selected"{{/if}} aria-label="{{#if pagination.isSelected}}current {{/if}}page {{ pagination.number }}">{{ pagination.number }}</a></li>
     {{/each}}
-    <li><a href="" aria-label="next result set">Next</a></li>
-    <li><a href="" class="c-pagination__control-last"><span>last result set</span></a></li>
+    <li><a href="" aria-label="next page set">&hellip;</a></li>
+    <li><a href="" aria-label="last page">{{ maximumNumber }}</a></li>
+    <li><a href="" aria-label="next page">Next</a></li>
   </ul>
 </nav>
