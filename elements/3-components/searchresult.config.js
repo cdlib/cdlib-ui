@@ -1,6 +1,7 @@
 const faker = require('faker/locale/en');
 const fakerData = [];
 const filetypes = ['ps', 'pdf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'txt', 'zip', 'html', 'rtf'];
+const terms = ['digital', 'library', 'books', 'report', 'campus']
 
 for (var i = 0; i < 20; i++) {
   fakerData.push({
@@ -16,7 +17,9 @@ for (var i = 0; i < 20; i++) {
     searchresult: {
       group: faker.helpers.randomize(['News and Media: CDLINFO', 'Information Services', 'User Experience Design Services', 'Discovery ＆ Delivery Program', 'Collections Program', '']),
       doctype: faker.helpers.randomize(filetypes),
-      quote: faker.lorem.words(30),
+      quoteFirstHalf: faker.lorem.words(15),
+      terms: faker.helpers.randomize(terms),
+      quoteSecondHalf: faker.lorem.words(15),
       date: faker.date.month() + ' ' + faker.random.number({min: 1, max: 30}) + ', ' + faker.random.number({min: 2000, max: 2018}),
     }
   });

@@ -5,7 +5,7 @@
   {{#if searchresult.group}}
   <div class="c-searchresult__group">{{ searchresult.group }}</div>
   {{/if}}
-  <div class="c-searchresult__quote">{{ searchresult.quote }}</div>
+  <div class="c-searchresult__quote">{{ searchresult.quoteFirstHalf }} <em>{{ searchresult.terms }}</em> {{ searchresult.quoteSecondHalf }}</div>
   <time>{{ searchresult.date }}</time>
 </div>
 {{/each}}
