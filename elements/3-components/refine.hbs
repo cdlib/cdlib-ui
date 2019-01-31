@@ -1,7 +1,7 @@
 <div class="c-refine o-sidebarnav" v-onmedia.screen2="detectMediaQuery">
   <header>
     {{> @heading }}
-    <button class="c-refine__clear">Clear</button>
+    <a href="" class="c-refine__clear">Clear</a>
     <template v-if="!$mq.screen2">
       <button class="c-refine__open" v-on:click="toggle1" v-if="!isDisplayed">{{ toggle.openButtonText }}</button>
       <button class="c-refine__close" v-on:click="toggle1" v-if="isDisplayed">{{ toggle.closeButtonText }}</button>

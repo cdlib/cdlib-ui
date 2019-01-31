@@ -11,6 +11,7 @@
       margin-right: auto;
     }
 
+    a,
     button {
       flex-shrink: 0;
       margin-left: $space2;
@@ -38,6 +39,7 @@
   @extend %o-button5;
   padding-right: $space2;
   background: none;
+  text-decoration: none;
 }
 
 .c-refine__item-text {
