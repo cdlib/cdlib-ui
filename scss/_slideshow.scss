@@ -173,23 +173,10 @@ $slideshow-grid-width2: 50%;
     @include screen1 {
       @include slideshow-caption-bg;
       position: relative;
-      width: calc(#{$slideshow-grid-width2} - #{$space2});
+      width: $slideshow-grid-width1;
       margin-top: $space2;
       margin-bottom: $space2;
       margin-left: $space2;
-
-      @supports (display: grid) and (display: contents) {
-        position: static;
-        width: auto;
-      }
-
-    }
-
-    @include screen2 {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      width: calc(#{$slideshow-grid-width1} - #{$space2});
 
       @supports (display: grid) and (display: contents) {
         position: static;
