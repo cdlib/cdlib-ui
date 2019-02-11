@@ -3,6 +3,7 @@
     <tr>
       <th>Name</th>
       <th>Title</th>
+      <th>Program</th>
       <th>Contact</th>
     </tr>
   </thead>
@@ -10,7 +11,8 @@
     {{#each row}}
     <tr>
       <th scope="row">{{ lastname.text }}, {{ firstname.text }}</th>
-      <td>{{ position.text }}</td>
+      <td>{{ title.text }}</td>
+      <td>{{ program.text }}</td>
       <td>
         <a href="">
           <span>View profile</span>

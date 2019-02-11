@@ -10,22 +10,10 @@ $staff-icon-size: 1.5em;
 
   tbody tr {
 
-    th,
     td {
-
-      &:first-child {
-        width: 30%;
-      }
-
-    }
-
-    td {
-
-      &:nth-child(2) {
-        width: 70%;
-      }
 
       &:last-child {
+        width: $staff-icon-size;
         padding: 0;
 
         a {
