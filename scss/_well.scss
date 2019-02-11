@@ -8,21 +8,29 @@
 
 }
 
-// Block Well:
-
-.c-well1 {
+%c-well__block {
   @extend %c-well;
   padding: $space3 2.5em;
-  background-color: $color-light-blue;
 
   @include u-headings() {
     margin-top: 0;
-    color: $color-blue;
   }
 
   blockquote {
     margin: 0;
     padding: 0;
+  }
+
+}
+
+// Block Well:
+
+.c-well1 {
+  @extend %c-well__block;
+  background-color: $color-light-blue;
+
+  @include u-headings() {
+    color: $color-blue;
   }
 
 }
@@ -61,6 +69,16 @@
       font-size: 1.1em;
     }
 
+  }
+
+}
+
+.c-well3 {
+  @extend %c-well__block;
+  background-color: $color-light-gray;
+
+  @include u-headings() {
+    color: $color-red;
   }
 
 }
