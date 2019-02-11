@@ -40,6 +40,7 @@
 .c-well2 {
   @extend %c-well;
   display: inline-block;
+  margin-top: $space2;
   padding: $space2 $space3;
   background-color: $color-blue;
   text-align: center;
