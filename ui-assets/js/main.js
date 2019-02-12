@@ -100,15 +100,17 @@ if (document.querySelector('.c-slideshow')) {
   var slides = document.querySelectorAll('.c-slideshow__slide figcaption');
   var firstSlide = document.querySelector('.c-slideshow figcaption');
   var currentSlide = 0;
+  var goToButtons = document.querySelectorAll('.c-slideshow__goto');
+  var firstGoToButton = document.querySelector('#c-slideshow__goto1');
+  var currentGoToButton = 0;
   var transitionSpeed = 10000;
   var slideInterval = setInterval(nextSlide, transitionSpeed);
-  var controls = document.querySelector('.c-slideshow__controls');
   var playButton = document.querySelector('.c-slideshow__play');
   var pauseButton = document.querySelector('.c-slideshow__pause');
-  var slide1button = document.querySelector('.c-slideshow__slide1');
-  var slide2button = document.querySelector('.c-slideshow__slide2');
-  var slide3button = document.querySelector('.c-slideshow__slide3');
-  var slide4button = document.querySelector('.c-slideshow__slide4');
+  var slide1button = document.querySelector('#c-slideshow__goto1');
+  var slide2button = document.querySelector('#c-slideshow__goto2');
+  var slide3button = document.querySelector('#c-slideshow__goto3');
+  var slide4button = document.querySelector('#c-slideshow__goto4');
   var randomSlide = Math.floor(Math.random() * slideGroups.length);
 
   if (!enhanced) {
@@ -120,13 +122,19 @@ if (document.querySelector('.c-slideshow')) {
     mode.classList.add('enhanced');
     playButton.style.display = 'none';
     firstSlide.classList.add('active');
+    firstGoToButton.classList.add('active');
   }
 
   function goToSlide(n) {
     if (enhanced) {
+      // slides:
       slides[currentSlide].classList.remove('active');
       currentSlide = (n + slides.length) % slides.length;
       slides[currentSlide].classList.add('active');
+      // goto slide buttons:
+      goToButtons[currentGoToButton].classList.remove('active');
+      currentGoToButton = (n + goToButtons.length) % goToButtons.length;
+      goToButtons[currentGoToButton].classList.add('active');
     }
   }
 

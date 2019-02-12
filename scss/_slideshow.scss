@@ -124,11 +124,6 @@ $slideshow-grid-width2: 50%;
     color: $color-gold;
     cursor: pointer;
 
-    &:focus,
-    &:hover {
-      color: $color-white;
-    }
-
     span {
       @include u-hide;
     }
@@ -139,20 +134,16 @@ $slideshow-grid-width2: 50%;
 
 .c-slideshow__play {
   background-image: url('play.svg' param(--color #{$color-gold}));
-
-  &:focus,
-  &:hover {
-    background-image: url('play.svg' param(--color #{$color-white}));
-  }
-
 }
 
 .c-slideshow__pause {
   background-image: url('pause.svg' param(--color #{$color-gold}));
+}
 
-  &:focus,
-  &:hover {
-    background-image: url('pause.svg' param(--color #{$color-white}));
+.c-slideshow__goto {
+
+  &.active {
+    color: $color-white;
   }
 
 }
