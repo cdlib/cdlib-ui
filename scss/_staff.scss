@@ -33,6 +33,16 @@ $staff-icon-size: 1.5em;
 
     }
 
+    th,
+    td {
+
+      &:first-child {
+        background-color: $color-light-gray;
+        font-weight: bold;
+      }
+
+    }
+
   }
 
 }
