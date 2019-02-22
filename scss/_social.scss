@@ -2,6 +2,7 @@
 
 .c-social {
   @extend %o-link2;
+  @include u-disable-general-link-icon;
   display: flex;
   align-items: center;
   padding: $space2 3em $space2 $space2;

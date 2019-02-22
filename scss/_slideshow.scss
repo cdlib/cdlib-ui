@@ -191,13 +191,14 @@ $slideshow-grid-width2: 50%;
       font-size: 1.3rem;
     }
 
-    // any linked text:
+    // any linked text in slide:
     a {
       color: $color-gold;
     }
 
-    // 'read more' link at bottom:
+    // 'read more' link after body copy:
     > a {
+      @include u-disable-general-link-icon;
       margin-top: auto;
     }
 
