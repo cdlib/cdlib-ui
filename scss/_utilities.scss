@@ -97,6 +97,16 @@ $test3: #080 solid 1px; // green
 
 }
 
+// Disable file type link icons:
+
+@mixin u-disable-filetype-link-icon {
+
+  &::after {
+    display: none;
+  }
+
+}
+
 // Unordered lists without space or bullets:
 
 %u-reset-list-styles {

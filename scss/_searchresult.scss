@@ -28,13 +28,8 @@
     grid-area: result-heading;
 
     a {
+      @include u-disable-filetype-link-icon;
       color: $color-blue;
-
-      // remove docicons defined in %o-link:
-      &::after {
-        display: none;
-      }
-
     }
 
   }
