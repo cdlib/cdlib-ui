@@ -16,8 +16,8 @@
 }
 
 %o-link {
+  // General link icons:
 
-  // WP External Links plugin attr and value:
   &[data-wpel-link='external'] {
     @extend %o-link__icon;
     background-image: url('external-link-alt.svg' param(--color #{$color-gold}));
@@ -34,117 +34,25 @@
     background-size: 0.8em;
   }
 
-  &[href$='.pdf'] {
-    @extend %o-link__type;
+  // File type link icons:
 
-    &::after {
-      @extend %o-docicon__pdf;
-      content: 'pdf';
-    }
+  @each $filetype in $filetypes {
 
-  }
+    &[href$='.#{$filetype}'] {
 
-  &[href$='.doc'] {
-    @extend %o-link__type;
+      &::after {
+        @extend %o-docicon__#{$filetype};
+        margin-left: 0.5em;
+        content: '#{$filetype}';
+      }
 
-    &::after {
-      @extend %o-docicon__doc;
-      content: 'doc';
-    }
-
-  }
-
-  &[href$='.xls'] {
-    @extend %o-link__type;
-
-    &::after {
-      @extend %o-docicon__xls;
-      content: 'xls';
-    }
-
-  }
-
-  &[href$='.txt'] {
-    @extend %o-link__type;
-
-    &::after {
-      @extend %o-docicon__txt;
-      content: 'txt';
-    }
-
-  }
-
-  &[href$='.zip'] {
-    @extend %o-link__type;
-
-    &::after {
-      @extend %o-docicon__zip;
-      content: 'zip';
-    }
-
-  }
-
-  &[href$='.rtf'] {
-    @extend %o-link__type;
-
-    &::after {
-      @extend %o-docicon__rtf;
-      content: 'rtf';
-    }
-
-  }
-
-  &[href$='.ps'] {
-    @extend %o-link__type;
-
-    &::after {
-      @extend %o-docicon__ps;
-      content: 'ps';
-    }
-
-  }
-
-  &[href$='.ppt'] {
-    @extend %o-link__type;
-
-    &::after {
-      @extend %o-docicon__ppt;
-      content: 'ppt';
-    }
-
-  }
-
-  &[href$='.pptx'] {
-    @extend %o-link__type;
-
-    &::after {
-      @extend %o-docicon__pptx;
-      content: 'pptx';
-    }
-
-  }
-
-  &[href$='.xlsx'] {
-    @extend %o-link__type;
-
-    &::after {
-      @extend %o-docicon__xlsx;
-      content: 'xlsx';
-    }
-
-  }
-
-  &[href$='.docx'] {
-    @extend %o-link__type;
-
-    &::after {
-      @extend %o-docicon__docx;
-      content: 'docx';
     }
 
   }
 
 }
+
+// Default link styling:
 
 %o-link1 {
   @extend %o-link;
@@ -160,6 +68,8 @@
 a {
   @extend %o-link1;
 }
+
+// Alternative link styling:
 
 %o-link2 {
   @extend %o-link;
