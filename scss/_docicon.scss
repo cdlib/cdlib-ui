@@ -1,125 +1,63 @@
 // ***** Document Icon Objects ***** //
 
-$docicon-light-red: rgb(219, 0, 0); // #DB0000
-$docicon-light-blue: rgb(0, 116, 173); // #0074AD
-$docicon-green: rgb(82, 122, 0); // #527A00
+@each $filetype in $filetypes {
 
-%o-docicon {
-  padding: 0.2em 0.5em;
-  color: $color-white;
-  font-family: Consolas, Monaco, monospace;
-  font-size: 0.7em;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  $docicon-light-red: rgb(219, 0, 0); // #DB0000
+  $docicon-light-blue: rgb(0, 116, 173); // #0074AD
+  $docicon-green: rgb(82, 122, 0); // #527A00
+
+  %o-docicon__#{$filetype} {
+    padding: 0.2em 0.5em;
+    color: $color-white;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 0.7em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    @if $filetype == 'pdf' {
+      background-color: $docicon-light-red;
+    }
+
+    @else if $filetype == 'html' {
+      background-color: $docicon-light-blue;
+    }
+
+    @else if $filetype == 'doc' {
+      background-color: $docicon-light-blue;
+    }
+
+    @else if $filetype == 'docx' {
+      background-color: $docicon-light-blue;
+    }
+
+    @else if $filetype == 'xls' {
+      background-color: $docicon-green;
+    }
+
+    @else if $filetype == 'xlsx' {
+      background-color: $docicon-green;
+    }
+
+    @else if $filetype == 'ppt' {
+      background-color: $color-orange;
+    }
+
+    @else if $filetype == 'pptx' {
+      background-color: $color-orange;
+    }
+
+    @else if $filetype == 'zip' {
+      background-color: $color-light-black;
+    }
+
+    @else {
+      background-color: $color-dark-gray;
+    }
+
+  }
+
+  .o-docicon__#{$filetype} {
+    @extend %o-docicon__#{$filetype};
+  }
+
 }
-
-%o-docicon__pdf {
-  @extend %o-docicon;
-  background-color: $docicon-light-red;
-}
-
-.o-docicon__pdf {
-  @extend %o-docicon__pdf;
-}
-
-%o-docicon__doc {
-  @extend %o-docicon;
-  background-color: $docicon-light-blue;
-}
-
-.o-docicon__doc {
-  @extend %o-docicon__doc;
-}
-
-%o-docicon__xls {
-  @extend %o-docicon;
-  background-color: $docicon-green;
-}
-
-.o-docicon__xls {
-  @extend %o-docicon__xls;
-}
-
-%o-docicon__txt {
-  @extend %o-docicon;
-  background-color: $color-dark-gray;
-}
-
-.o-docicon__txt {
-  @extend %o-docicon__txt;
-}
-
-%o-docicon__zip {
-  @extend %o-docicon;
-  background-color: $color-light-black;
-}
-
-.o-docicon__zip {
-  @extend %o-docicon__zip;
-}
-
-%o-docicon__html {
-  @extend %o-docicon;
-  background-color: $color-blue;
-}
-
-.o-docicon__html {
-  @extend %o-docicon__html;
-}
-
-%o-docicon__rtf {
-  @extend %o-docicon;
-  background-color: $color-dark-gray;
-}
-
-.o-docicon__rtf {
-  @extend %o-docicon__rtf;
-}
-
-// ###
-
-%o-docicon__ps {
-  @extend %o-docicon;
-  background-color: $docicon-light-red;
-}
-
-.o-docicon__ps {
-  @extend %o-docicon__ps;
-}
-
-%o-docicon__ppt {
-  @extend %o-docicon;
-  background-color: $color-orange;
-}
-
-.o-docicon__ppt {
-  @extend %o-docicon__ppt;
-}
-
-%o-docicon__pptx {
-  @extend %o-docicon;
-  background-color: $color-orange;
-}
-
-.o-docicon__pptx {
-  @extend %o-docicon__pptx;
-}
-
-%o-docicon__xlsx {
-  @extend %o-docicon;
-  background-color: $docicon-green;
-}
-
-.o-docicon__xlsx {
-  @extend %o-docicon__xlsx;
-}
-
-%o-docicon__docx {
-  @extend %o-docicon;
-  background-color: $color-blue;
-}
-
-.o-docicon__docx {
-  @extend %o-docicon__docx;
-}
-

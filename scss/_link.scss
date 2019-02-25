@@ -38,12 +38,16 @@
 
   @each $filetype in $filetypes {
 
-    &[href$='.#{$filetype}'] {
+    @if $filetype != 'html' {
 
-      &::after {
-        @extend %o-docicon__#{$filetype};
-        margin-left: 0.5em;
-        content: '#{$filetype}';
+      &[href$='.#{$filetype}'] {
+
+        &::after {
+          @extend %o-docicon__#{$filetype};
+          margin-left: 0.5em;
+          content: '#{$filetype}';
+        }
+
       }
 
     }
