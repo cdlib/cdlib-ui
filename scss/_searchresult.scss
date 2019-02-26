@@ -1,6 +1,8 @@
 // ***** Search Result Component ***** //
 
 .c-searchresult {
+  /* autoprefixer grid: off */
+  display: grid;
   margin-bottom: $space4;
   grid-column-gap: $space2;
   grid-template:
@@ -9,10 +11,6 @@
     'result-doctype result-quote'
     'result-doctype result-date'
     / 2.7em 1fr;
-
-  @supports (display: grid) {
-    display: grid;
-  }
 
   > * {
 
