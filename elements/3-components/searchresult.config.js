@@ -1,6 +1,6 @@
 const faker = require('faker/locale/en');
 const fakerData = [];
-const filetypes = ['ps', 'pdf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'txt', 'zip', 'html', 'rtf'];
+const filetypes = ['pdf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'txt', 'zip', 'html', 'rtf'];
 const terms = ['digital', 'library', 'books', 'report', 'campus'];
 const unbrokenText = ' UnbrokenTextloremipsumdolorsitametconsecteturadipisicingelitNequedignissimosfugitnamreprehenderitminimadelenitiquamquiasitisteexpeditatemp'
 
