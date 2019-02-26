@@ -13,7 +13,8 @@
     'quicklink2'
     'meet'
     'social'
-    'footer';
+    'footer'
+    / 1fr;
   
   @include screen1 {
     grid-gap: $space2;
@@ -25,7 +26,8 @@
     'newsreel newsreel'
     'quicklink1 quicklink2'
     'meet social'
-    'footer footer';
+    'footer footer'
+    / 1fr 1fr;
   }
 
   @include screen2 {
@@ -38,7 +40,7 @@
     'servicebox meet'
     'newsreel social'
     'footer footer'
-    / auto $sidebar-width;
+    / 1fr $sidebar-width;
   }
 
   // This class used only to highlight the grid in layout4.hbs:
