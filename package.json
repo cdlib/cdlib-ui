@@ -27,7 +27,7 @@
     "run-sequence": "^2.2.1"
   },
   "browserslist": [
-    "last 2 versions"
+    "> 1% in my stats"
   ],
   "dependencies": {
     "vue": "^2.5.16"
