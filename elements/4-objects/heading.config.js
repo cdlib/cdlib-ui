@@ -8,7 +8,8 @@ module.exports = {
   context: {
     heading: {
       level: '1',
-      text: 'Astronomy, Indigenous Knowledge and Interpretation: Advancing studies of Cultural Astronomy in South Africa'
+      text: 'Astronomy, Indigenous Knowledge and Interpretation: Advancing studies of Cultural Astronomy in South Africa',
+      abbr: true
     },
     // Linked headings using Link objects:
     link1: false,

@@ -9,6 +9,15 @@
     color: inherit;
   }
 
+  abbr[title] {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline dotted;
+    }
+
+  }
+
 }
 
 %o-heading1 {
