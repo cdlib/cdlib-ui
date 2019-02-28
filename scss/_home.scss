@@ -31,7 +31,6 @@
   }
 
   @include screen2 {
-    grid-gap: $space2;
     grid-template:
     'header header'
     'slideshow quicklink1'

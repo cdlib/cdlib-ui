@@ -17,7 +17,6 @@
     / 1fr;
 
   @media (min-width: $screen2) and (max-width: $screen3) {
-    grid-gap: $space3;
     grid-template:
     'layout3a layout3a'
     '........ layout3b'
@@ -29,7 +28,6 @@
   }
 
   @include screen3 {
-    grid-gap: $space3;
     grid-template:
     'layout3a layout3a layout3a'
     '........ layout3b ........'
