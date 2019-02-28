@@ -11,7 +11,7 @@
     'layout2d' 1fr
     'layout2e'
     'layout2f'
-    / auto;
+    / 1fr;
   
   @include screen2 {
     grid-gap: $space3;
@@ -21,7 +21,7 @@
       'layout2c layout2d' 1fr
       '........ layout2e'
       'layout2f layout2f'
-      / $sidebar-width auto;
+      / $sidebar-width 1fr;
   }
 
   // This class used only in layout2.hbs:

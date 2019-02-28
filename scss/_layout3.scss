@@ -14,7 +14,7 @@
     'layout3e'
     'layout3f'
     'layout3g'
-    / auto;
+    / 1fr;
 
   @media (min-width: $screen2) and (max-width: $screen3) {
     grid-gap: $space3;
@@ -25,7 +25,7 @@
     'layout3c layout3e'
     '........ layout3f'
     'layout3g layout3g'
-    / $sidebar-width auto;
+    / $sidebar-width 1fr;
   }
 
   @include screen3 {
@@ -36,7 +36,7 @@
     'layout3c layout3d layout3e' 1fr
     '........ layout3f ........'
     'layout3g layout3g layout3g'
-    / $sidebar-width auto $sidebar-width;
+    / $sidebar-width 1fr $sidebar-width;
   }
 
   // This class used only in layout3.hbs:
