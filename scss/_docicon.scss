@@ -13,6 +13,7 @@
     font-size: 0.7em;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    white-space: nowrap;
 
     @if $filetype == 'pdf' {
       background-color: $docicon-light-red;
