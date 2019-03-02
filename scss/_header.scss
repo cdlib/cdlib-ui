@@ -46,6 +46,7 @@ $header-logo-height: 50px;
 }
 
 .c-header__controls {
+  @include u-hide-until-vue-ready();
   grid-area: header-controls;
 
   button {
@@ -59,6 +60,7 @@ $header-logo-height: 50px;
 }
 
 .c-header__search {
+  @include u-hide-until-vue-ready();
   display: flex;
   position: absolute; // to .c-header
   right: 0;
@@ -94,6 +96,7 @@ $header-logo-height: 50px;
 }
 
 .c-header__header-nav {
+  @include u-hide-until-vue-ready($screen2);
   grid-area: header-nav;
 
   .c-mobilenav {
@@ -111,6 +114,7 @@ $header-logo-height: 50px;
 }
 
 .c-header__utility-nav {
+  @include u-hide-until-vue-ready($screen2);
   grid-area: header-util-nav;
 
   @include screen2 {

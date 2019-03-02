@@ -7,7 +7,7 @@
       <button class="c-refine__close" v-on:click="toggle1" v-if="isDisplayed">{{ toggle.closeButtonText }}</button>
     </template>
   </header>
-  <ul v-if="isDisplayed">
+  <ul v-if="isDisplayed" v-cloak>
     {{#each list}}
     <li>
       <a href="">

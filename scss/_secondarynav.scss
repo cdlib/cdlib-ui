@@ -16,6 +16,10 @@ $secondarynav-list-indent: $space2;
 
   }
 
+  div {
+    @include u-hide-until-vue-ready($screen2);
+  }
+
   ul ul ul {
     border-top: 1px solid $color-gray;
 

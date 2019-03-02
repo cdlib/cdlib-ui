@@ -6,7 +6,7 @@
       <button class="o-button6" v-on:click="toggle1" v-if="!isDisplayed">{{ secondarynav.openButtonText }}</button>
     </template>
   </header>
-  <div v-if="isDisplayed">
+  <div v-if="isDisplayed" v-cloak>
     <ul>
       <li>{{> @link }}
         <ul>

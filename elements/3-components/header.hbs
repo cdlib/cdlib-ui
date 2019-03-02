@@ -2,20 +2,20 @@
   <a class="c-header__logo" href="">
     <img src="{{ path '/ui-assets/images/logo-cdl.svg' }}" alt="California Digital Library logo">
   </a>
-  <div class="c-header__controls" v-if="!$mq.screen2">
+  <div class="c-header__controls" v-if="!$mq.screen2" v-cloak>
     <button class="o-button1" v-on:click="headerToggle1" aria-label="search"></button>
     <button class="o-button3" v-on:click="headerToggle3" aria-label="menu"></button>
   </div>
   <transition name="c-header__offscreen">
-    <div class="c-header__search" v-if="isOpen1">
+    <div class="c-header__search" v-if="isOpen1" v-cloak>
       {{ render '@search' }}
       <button class="o-button2" v-on:click="headerToggle2" v-if="!$mq.screen2" aria-label="close search"></button>
     </div>
   </transition>
-  <div class="c-header__header-nav" v-if="isOpen2">
+  <div class="c-header__header-nav" v-if="isOpen2" v-cloak>
   {{ render '@headernav' }}
   </div>
-  <div class="c-header__utility-nav" v-if="isOpen2">
+  <div class="c-header__utility-nav" v-if="isOpen2" v-cloak>
     {{ render '@utilitynav' }}
   </div>
 </header>
