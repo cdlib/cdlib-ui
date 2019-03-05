@@ -48,15 +48,6 @@ $header-logo-height: 50px;
 .c-header__controls {
   @include u-hide-until-vue-ready();
   grid-area: header-controls;
-
-  button {
-
-    &:first-child {
-      margin-right: $space1;
-    }
-
-  }
-
 }
 
 .c-header__search {
