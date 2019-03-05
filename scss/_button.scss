@@ -8,12 +8,19 @@
   border: none;
   background-color: transparent;
   background-repeat: no-repeat;
+  background-position: center;
   cursor: pointer;
 }
 
-%o-button1 {
+%o-button__header-controls {
   @extend %o-button;
-  background-image: url('search.svg');
+  width: 2em;
+  background-size: 1.8em;
+}
+
+%o-button1 {
+  @extend %o-button__header-controls;
+  background-image: url('search-light.svg');
 }
 
 .o-button1 {
@@ -21,8 +28,8 @@
 }
 
 %o-button2 {
-  @extend %o-button;
-  background-image: url('times.svg');
+  @extend %o-button__header-controls;
+  background-image: url('times-light.svg');
 }
 
 .o-button2 {
@@ -30,8 +37,8 @@
 }
 
 %o-button3 {
-  @extend %o-button;
-  background-image: url('bars.svg');
+  @extend %o-button__header-controls;
+  background-image: url('bars-light.svg');
 }
 
 .o-button3 {
@@ -53,7 +60,10 @@
   padding-right: 2.3em;
   border: 2px solid $color-white;
   border-radius: $round-corner;
-  background: $color-blue url('caret-up.svg' param(--color #{$color-white})) right $space2 center / 1em no-repeat;
+  background-color: $color-blue;
+  background-image: url('caret-up.svg' param(--color #{$color-white}));
+  background-position: right $space2 center;
+  background-size: 1.4em;
   color: $color-white;
 }
 
@@ -64,7 +74,6 @@
 %o-button6 {
   @extend %o-button5;
   background-image: url('caret-down.svg' param(--color #{$color-white}));
-  color: $color-white;
 }
 
 .o-button6 {
@@ -89,8 +98,13 @@
 }
 
 %o-button8 {
-  @extend %o-button5;
+  @extend %o-button;
+  padding-right: 2.4em;
+  background-color: $color-blue;
   background-image: url('envelope.svg' param(--color #{$color-white}));
+  background-position: right $space2 center;
+  background-size: 1.1em;
+  color: $color-white;
 }
 
 .o-button8 {
