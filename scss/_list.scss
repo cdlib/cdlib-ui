@@ -1,12 +1,14 @@
 // ***** List Objects ***** //
 
-// Read notes in list.config.js
+$list-left-space: 2rem;
 
 %o-list {
   margin-top: $space2;
   margin-bottom: $space2;
   line-height: $line-height;
 }
+
+// Unordered lists:
 
 ul {
   @extend %o-list;
@@ -21,14 +23,14 @@ ul {
 
     // nested lists:
     li {
-      padding-left: 2em;
+      padding-left: $list-left-space;
     }
 
   }
 
-  // WP inline style 'list-style-type' equal to circle, disc, or square:
+  // WP inline style 'list-style-type' equal to circle, disc, or square (read notes in list.config.js):
   &[style^='list-style-type:'] {
-    padding-left: 2em;
+    padding-left: $list-left-space;
 
     li {
       margin-top: 0;
@@ -39,7 +41,26 @@ ul {
 
 }
 
+// Ordered lists:
+
 ol {
   @extend %o-list;
-  padding-left: 2em;
+  padding-left: $list-left-space;
+}
+
+// Description lists:
+
+dl {
+  @extend %o-list;
+}
+
+dt {
+  margin-bottom: 0.2rem;
+  color: $color-red;
+  font-weight: 500;
+}
+
+dd {
+  margin-bottom: $space2;
+  margin-left: $list-left-space - 1rem;
 }
