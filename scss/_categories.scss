@@ -1,7 +1,5 @@
 // ***** Categories Component ***** //
 
-$category-items-left-space: 1.5em;
-
 %category-items-vertical-space {
   margin-top: $space2;
   margin-bottom: $space2;
@@ -20,20 +18,18 @@ $category-items-left-space: 1.5em;
 
   > li > a {
     display: block;
-    margin-left: $category-items-left-space;
+    margin-left: $details-summary-left-space;
   }
 
   details {
 
     summary {
       display: inline-block;
-      // reset in details.scss:
-      padding-left: $category-items-left-space;
     }
 
     ul {
       @extend %u-reset-list-styles;
-      margin-left: $category-items-left-space * 2;
+      margin-left: $details-summary-left-space * 2;
 
       li {
         @extend %category-items-vertical-space;
