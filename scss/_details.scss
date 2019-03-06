@@ -9,15 +9,21 @@ details {
     background-repeat: no-repeat;
     background-position: left -0.2rem top -0.1rem;
     background-size: 1.4em;
-    // remove default caret in Firefox:
+
+    // remove default arrow in Firefox:
     list-style: none;
     cursor: pointer;
     user-select: none;
 
-    // remove default caret in Chrome and Safari:
+    // remove default arrow in Chrome and Safari:
     // sass-lint:disable no-vendor-prefixes
     &::-webkit-details-marker {
       display: none;
+    }
+
+    // remove right arrow applied from details polyfill:
+    &::before {
+      content: normal;
     }
 
   }
@@ -26,6 +32,12 @@ details {
 
     summary {
       background-image: url('caret-up.svg' param(--color #{$color-blue}));
+
+      // remove down arrow applied from details polyfill:
+      &::before {
+        content: normal;
+      }
+
     }
 
   }
