@@ -5,7 +5,7 @@
   header {
     background: url('rss.svg' param(--color #{$color-gold})) top right / 1em no-repeat;
 
-    @include u-headings {
+    h2 {
       padding-right: $space4;
     }
 

@@ -5,7 +5,7 @@
   header {
     margin-bottom: $space2;
 
-    @include u-headings() {
+    h2 {
       @extend %o-heading3;
       margin: 0;
       padding-bottom: $space1;

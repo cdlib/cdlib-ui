@@ -20,7 +20,7 @@
 
   }
 
-  @include u-headings() {
+  h2 {
     display: inline-block;
     margin: 0;
     grid-area: result-heading;

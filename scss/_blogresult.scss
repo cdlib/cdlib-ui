@@ -7,7 +7,7 @@
     border-top: 1px solid $color-gray;
   }
 
-  @include u-headings() {
+  h2 {
     margin-bottom: $space2;
     color: $color-blue;
 

@@ -132,16 +132,6 @@ $test3: #080 solid 1px; // green
   left: -9999px;
 }
 
-// Generate heading elements h1 through h6:
-
-@mixin u-headings() {
-  @for $i from 1 through 6 {
-    h#{$i} {
-      @content
-    }
-  }
-}
-
 // Bleed component to left/right of viewport by equalling <body> left/right padding:
 
 %u-page-bleed {

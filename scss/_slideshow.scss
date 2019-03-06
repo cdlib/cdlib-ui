@@ -179,7 +179,7 @@ $slideshow-grid-width2: 50%;
     // ***** Slide Text ***** //
 
     // heading:
-    @include u-headings {
+    h2 {
       margin-bottom: $space2;
       color: inherit;
       font-size: 2rem;

@@ -12,7 +12,8 @@
   @extend %c-well;
   padding: $space3 2.5em;
 
-  @include u-headings() {
+  h2,
+  h3 {
     margin-top: 0;
   }
 
@@ -29,7 +30,8 @@
   @extend %c-well__block;
   background-color: $color-light-blue;
 
-  @include u-headings() {
+  h2,
+  h3 {
     color: $color-blue;
   }
 
@@ -78,7 +80,8 @@
   @extend %c-well__block;
   background-color: $color-light-gray;
 
-  @include u-headings() {
+  h2,
+  h3 {
     color: $color-red;
   }
 

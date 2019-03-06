@@ -34,7 +34,7 @@
     padding: $space2;
     background-color: $color-blue;
 
-    @include u-headings() {
+    h2 {
       @extend %o-heading4;
       margin: 0;
       color: $color-white;

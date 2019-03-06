@@ -11,7 +11,7 @@
     padding: $space2;
     background-color: $color-light-blue;
 
-    @include u-headings() {
+    h2 {
       @extend %o-heading3;
       margin: 0;
       font-weight: bold;
@@ -19,7 +19,7 @@
 
   }
 
-  @include u-headings() {
+  h3 {
     @extend %o-heading3;
     margin-top: 0;
     color: $color-blue;

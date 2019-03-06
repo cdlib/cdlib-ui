@@ -21,7 +21,7 @@ module.exports = {
   label: 'Sidebar Box',
   context: {
     heading: {
-      level: '1',
+      level: '2',
       text: 'Sidebar Box Heading'
     },
     sidebarbox: {

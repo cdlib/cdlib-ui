@@ -63,9 +63,10 @@ h4 {
   @extend %o-heading4;
 }
 
-// Any heading tags with the following class are for FAQ headings. The class is added by the WP editor in the "format" menu:
+// The following heading tags and class will style an "FAQ heading". The class is added by the WP editor in the "format" menu:
 
-@include u-headings() {
+h2,
+h3 {
 
   &.o-heading__faq {
     @extend %o-heading4;
