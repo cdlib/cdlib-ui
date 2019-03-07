@@ -1,13 +1,21 @@
 // ***** Orcid ID Object ***** //
 
 .o-orcid {
-  display: inline-block;
+  @include u-disable-general-link-icon;
+  position: relative;
   padding-left: 1.6em;
-  background: url('orcid.svg') left center no-repeat;
 
-  // reset WP external link background:
-  &[data-wpel-link='external'] {
-    background: url('orcid.svg') left center no-repeat;
+  // Orcid.svg - and only that icon - wouldn't position 'center left' in IE when using background properties, so resorted to pseudo element:
+
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 1.1em;
+    margin-right: 1em;
+    background: url('orcid.svg') no-repeat center;
+    content: '';
   }
 
 }
