@@ -6,31 +6,34 @@
     @extend %u-reset-list-styles;
     display: flex;
     flex-wrap: wrap;
+  }
 
-    li {
-      padding-right: 1em;
-      padding-left: 1em;
-      background-repeat: no-repeat;
-      background-size: 0.6em;
-
-      a {
-        @extend %o-link2;
-      }
-
-    }
-
+  a {
+    @extend %o-link2;
+    background-repeat: no-repeat;
+    background-size: 1.4em;
   }
 
 }
 
 .c-postnav__newer {
   margin-right: auto;
-  background-image: url('angle-left-light.svg' param(--color #{$color-blue}));
-  background-position: left center;
+
+  a {
+    padding-left: 1em;
+    background-image: url('angle-left-light.svg' param(--color #{$color-blue}));
+    background-position: left -0.4em center;
+  }
+
 }
 
 .c-postnav__older {
   margin-left: auto;
-  background-image: url('angle-right-light.svg' param(--color #{$color-blue}));
-  background-position: right center;
+
+  a {
+    padding-right: 1em;
+    background-image: url('angle-right-light.svg' param(--color #{$color-blue}));
+    background-position: right -0.4em center;
+  }
+
 }
