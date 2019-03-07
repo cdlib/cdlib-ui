@@ -5,7 +5,7 @@ const fakerData = [];
 for (var i = 0; i < 4; i++) {
   serviceBoxes.push({
     heading: {
-      level: '2',
+      level: '3',
       text: faker.commerce.product()
     }
   });
