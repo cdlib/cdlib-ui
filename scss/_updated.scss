@@ -1,40 +1,23 @@
 // ***** Last Updated Component ***** //
 
 .c-updated {
-  display: inline-grid;
-  margin: 0 0 $space2;
-  grid-column-gap: 0.5em;
-  grid-template:
-    'updated date'
-    'owner name' /
-    auto auto;
+  /* autoprefixer grid: off */
+  display: grid;
+  margin: 0;
+  grid-template-columns: auto 1fr;
 
   dt {
-
-    &:first-of-type {
-      grid-area: updated;
-    }
-
-    &:last-of-type {
-      grid-area: owner;
-    }
-
+    margin-right: 0.5em;
+    margin-bottom: 0;
+    float: left;
+    color: $color-black;
   }
 
   dd {
     margin: 0;
 
-    &:first-of-type {
-      grid-area: date;
-    }
-
-    &:last-of-type {
-      grid-area: name;
-    }
-
     a {
-      // disable default mailto icon:
-      background-image: none;
+      @include u-disable-general-link-icon;
     }
 
   }
