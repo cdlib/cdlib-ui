@@ -5,7 +5,13 @@
   @include u-disable-general-link-icon;
   display: flex;
   align-items: center;
-  padding: $space2 3em $space2 $space2;
+  padding: $space2;
   border: 1px solid $color-blue;
-  background: url('twitter.svg') right center / 2.5em no-repeat;
+
+  // match u-disable-general-link-icon mixin selector:
+  &[href] {
+    padding-right: 3em;
+    background: url('twitter.svg') right center / 2.5em no-repeat;
+  }
+
 }
