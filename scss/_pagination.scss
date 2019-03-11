@@ -24,6 +24,10 @@
 
   }
 
+  [aria-current] {
+    border: 1px solid $color-dark-gray;
+  }
+
 }
 
 .c-pagination {
@@ -41,8 +45,4 @@
     @include u-hide;
   }
 
-}
-
-.c-pagination__items--selected {
-  border: 1px solid $color-dark-gray;
 }

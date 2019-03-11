@@ -17,7 +17,7 @@ for (let i of range(startNum, endNum, 1)) {
   fakerData.push({
     pagination: {
       number: i,
-      isSelected: i == Math.floor((startNum + endNum) / 2) // nearest middle number within range gets selected
+      current: i == Math.floor((startNum + endNum) / 2) // nearest middle number within range gets selected
     }
   });
 }
