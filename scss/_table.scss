@@ -17,10 +17,6 @@ table {
     text-align: left;
   }
 
-  td {
-    @extend %u-break-words;
-  }
-
   thead {
 
     th {
