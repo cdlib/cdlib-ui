@@ -66,32 +66,27 @@
 
 }
 
-%c-newsreel__buttons {
-  width: 2em;
-  height: 2em;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 0.8em;
-  cursor: pointer;
-
-  span {
-    @include u-hide;
-  }
-
-}
-
 @each $class, $image in (play, play), (pause, pause) {
 
   .c-newsreel__#{$class} {
-    @extend %c-newsreel__buttons;
+    width: 2em;
+    height: 2em;
+    padding: 0;
+    border: none;
+    background-color: transparent;
     background-image: url('#{$image}.svg' param(--color #{$color-black}));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0.8em;
+    cursor: pointer;
 
     &:focus,
     &:hover {
       background-image: url('#{$image}.svg' param(--color #{$color-gold}));
+    }
+
+    span {
+      @include u-hide;
     }
 
   }
