@@ -205,12 +205,12 @@ if (document.querySelector('.c-newsreel')) {
 
   // initial states:
   playControl.style.display = 'none';
-  firstItem.className = 'active';
+  firstItem.setAttribute('aria-current', 'true');
 
   function goToItem(n) {
-    items[currentItem].removeAttribute('class');
+    items[currentItem].removeAttribute('aria-current');
     currentItem = (n + items.length) % items.length;
-    items[currentItem].className = 'active';
+    items[currentItem].setAttribute('aria-current', 'true');
   }
 
   function playNewsreel() {
