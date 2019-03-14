@@ -142,7 +142,7 @@ $slideshow-grid-width2: 50%;
 
 .c-slideshow__goto {
 
-  &.active {
+  &[aria-current] {
     color: $color-white;
   }
 

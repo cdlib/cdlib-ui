@@ -122,7 +122,7 @@ if (document.querySelector('.c-slideshow')) {
     mode.classList.add('enhanced');
     playButton.style.display = 'none';
     firstSlide.classList.add('active');
-    firstGoToButton.classList.add('active');
+    firstGoToButton.setAttribute('aria-current', 'true');
   }
 
   function goToSlide(n) {
@@ -132,9 +132,9 @@ if (document.querySelector('.c-slideshow')) {
       currentSlide = (n + slides.length) % slides.length;
       slides[currentSlide].classList.add('active');
       // goto slide buttons:
-      goToButtons[currentGoToButton].classList.remove('active');
+      goToButtons[currentGoToButton].removeAttribute('aria-current');
       currentGoToButton = (n + goToButtons.length) % goToButtons.length;
-      goToButtons[currentGoToButton].classList.add('active');
+      goToButtons[currentGoToButton].setAttribute('aria-current', 'true');
     }
   }
 
