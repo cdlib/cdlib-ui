@@ -1,11 +1,11 @@
-<div class="c-newsreel">
+<div role="marquee" class="c-newsreel">
   {{> @heading }}
+  <button class="c-newsreel__play"><span>play</span></button>
+  <button class="c-newsreel__pause"><span>pause</span></button>
   <ul>
     {{#each list}}
     <li>{{> @link }}</li>
     {{/each}}
   </ul>
-  <button class="c-newsreel__play" title="play newsreel"><span>play newsreel</span></button>
-  <button class="c-newsreel__pause" title="pause newsreel"><span>pause newsreel</span></button>
   {{> @link }}
 </div>

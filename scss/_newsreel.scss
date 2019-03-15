@@ -27,6 +27,7 @@
   }
 
   h2 {
+    order: 1;
     margin: 0;
     color: $color-black;
     font-size: 1em;
@@ -37,6 +38,7 @@
     @extend %u-reset-list-styles;
     display: grid;
     flex: 1 1 auto;
+    order: 2;
 
     li {
       transition: opacity 1s;
@@ -61,6 +63,7 @@
   // 'view all' link:
   > a {
     @extend %o-link2;
+    order: 4;
     margin-left: auto;
   }
 
@@ -69,8 +72,11 @@
 @each $class, $image in (play, play), (pause, pause) {
 
   .c-newsreel__#{$class} {
+    flex: 0 0 auto;
+    order: 3;
     width: 2em;
     height: 2em;
+    margin-left: auto;
     padding: 0;
     border: none;
     background-color: transparent;
