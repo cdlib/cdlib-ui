@@ -40,11 +40,11 @@
     }
 
     @else if $filetype == 'ppt' {
-      background-color: $color-orange;
+      background-color: $color-dark-orange;
     }
 
     @else if $filetype == 'pptx' {
-      background-color: $color-orange;
+      background-color: $color-dark-orange;
     }
 
     @else if $filetype == 'zip' {
