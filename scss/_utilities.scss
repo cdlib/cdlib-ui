@@ -191,3 +191,19 @@ $test3: #080 solid 1px; // green
   }
 
 }
+
+// Highlight grid areas in templates with background color; reset styles inherited from components:
+
+%u-highlight-grid-areas {
+
+  > * {
+    display: block;
+    border: none;
+    background-color: $color-light-blue;
+  }
+
+  h2 {
+    margin: 1em auto !important;
+  }
+
+}

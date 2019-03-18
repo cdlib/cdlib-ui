@@ -24,37 +24,35 @@
       / $sidebar-width 1fr;
   }
 
-  // This class used only in layout2.hbs:
+  // This class used only to highlight the grid in layout2.hbs:
   &.highlight-grid {
-
-    > * {
-      background-color: $color-light-blue;
-    }
-
+    @extend %u-highlight-grid-areas;
   }
 
-  .t-layout__header {
+  .c-header {
     grid-area: layout2a;
   }
 
-  .t-layout__breadcrumb {
+  .c-breadcrumb {
     grid-area: layout2b;
   }
 
-  .t-layout__sidebar1 {
-    grid-area: layout2c;
-  }
-
-  .t-layout__main {
+  main {
     grid-area: layout2d;
   }
 
-  .t-layout__updated {
+  .c-updated {
     grid-area: layout2e;
   }
 
-  .t-layout__footer {
+  .c-footer {
     grid-area: layout2f;
+  }
+
+  // Grid areas that may contain multiple components:
+
+  .t-layout__sidebar1 {
+    grid-area: layout2c;
   }
 
 }

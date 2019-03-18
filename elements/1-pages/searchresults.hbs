@@ -1,21 +1,15 @@
 <div class="t-layout--2">
   {{ render '@skipnav' }}
-  <div class="t-layout__header">
-    {{ render '@header' }}
-  </div>
-  <div class="t-layout__breadcrumb">
-    {{ render '@breadcrumb' }}
-  </div>
+  {{ render '@header' }}
+  {{ render '@breadcrumb' }}
   <aside class="t-layout__sidebar1">
     {{ render '@refine' }}
   </aside>
-  <main id="maincontent" class="t-layout__main">
+  <main id="maincontent">
     {{ render '@filter' }}
     {{ render '@records' }}
     {{ render '@searchresult' }}
     {{ render '@pagination' }}
   </main>
-  <div class="t-layout__footer">
-    {{ render '@footer' }}
-  </div>
+  {{ render '@footer' }}
 </div>

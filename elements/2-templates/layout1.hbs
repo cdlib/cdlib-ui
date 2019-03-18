@@ -1,20 +1,20 @@
 <div class="t-layout--1{{#if highlightGrid}} highlight-grid{{/if}}">
-  <div class="t-layout__header">
+  <header class="c-header">
     <h2>{{ gridItemHeader.name }}</h2>
     {{ gridItemHeader.text }}
-  </div>
-  <div class="t-layout__breadcrumb">
+  </header>
+  <nav class="c-breadcrumb">
     <strong>{{ gridItemBreadcrumb.name }}</strong> {{ gridItemBreadcrumb.text }}
-  </div>
-  <main class="t-layout__main">
+  </nav>
+  <main>
     <h2>{{ gridItemMain.name }}</h2>
     {{ gridItemMain.text }}
   </main>
-  <div class="t-layout__updated">
+  <aside class="c-updated">
     <strong>{{ gridItemUpdated.name }}</strong> {{ gridItemUpdated.text }}
-  </div>
-  <div class="t-layout__footer">
+  </aside>
+  <footer class="c-footer">
     <h2>{{ gridItemFooter.name }}</h2>
     {{ gridItemFooter.text }}
-  </div>
+  </footer>
 </div>

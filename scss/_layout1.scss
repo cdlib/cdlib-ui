@@ -12,32 +12,28 @@
     'layout1e'
     / 1fr;
 
-  // This class used only in layout1.hbs:
+  // This class used only to highlight the grid in layout1.hbs:
   &.highlight-grid {
-
-    > * {
-      background-color: $color-light-blue;
-    }
-
+    @extend %u-highlight-grid-areas;
   }
 
-  .t-layout__header {
+  .c-header {
     grid-area: layout1a;
   }
 
-  .t-layout__breadcrumb {
+  .c-breadcrumb {
     grid-area: layout1b;
   }
 
-  .t-layout__main {
+  main {
     grid-area: layout1c;
   }
 
-  .t-layout__updated {
+  .c-updated {
     grid-area: layout1d;
   }
 
-  .t-layout__footer {
+  .c-footer {
     grid-area: layout1e;
   }
 

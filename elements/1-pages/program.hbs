@@ -1,15 +1,11 @@
 <div class="t-layout--3">
   {{ render '@skipnav' }}
-  <div class="t-layout__header">
-    {{ render '@header' }}
-  </div>
-  <div class="t-layout__breadcrumb">
-    {{ render '@breadcrumb' }}
-  </div>
-  <div class="t-layout__sidebar1">
+  {{ render '@header' }}
+  {{ render '@breadcrumb' }}
+  <aside class="t-layout__sidebar1">
     {{ render '@secondarynav' }}
-  </div>
-  <main id="maincontent" class="t-layout__main">
+  </aside>
+  <main id="maincontent">
     {{> @heading--1 }}
     {{#each paragraph}}
       <p>{{ program.text }}</p>
@@ -23,16 +19,12 @@
     {{ render '@halfboxes' }}
     {{ render '@staff' }}
   </main>
-  <div class="t-layout__sidebar2">
+  <aside class="t-layout__sidebar2">
     {{ render '@news' }}
     {{ render '@sidebarbox--2' }}
     {{ render '@sidebarbox--2' }}
     {{ render '@sidebarbox--1' }}
-  </div>
-  <div class="t-layout__updated">
-    {{ render '@updated' }}
-  </div>
-  <div class="t-layout__footer">
-    {{ render '@footer' }}
-  </div>
+  </aside>
+  {{ render '@updated' }}
+  {{ render '@footer' }}
 </div>

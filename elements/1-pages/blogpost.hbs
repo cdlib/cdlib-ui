@@ -1,25 +1,21 @@
 <div class="t-layout--4">
   {{ render '@skipnav' }}
-  <div class="t-layout__header">
-    {{ render '@header' }}
-  </div>
-  <div class="t-layout__breadcrumb">
-    {{ render '@breadcrumb' }}
-  </div>
-  <main id="maincontent" class="t-layout__main">
+  {{ render '@header' }}
+  {{ render '@breadcrumb' }}
+  <main id="maincontent">
     {{> @heading }}
     {{ render '@blogmetadata' }}
     {{#each paragraph}}
     <p>{{ blogpost.text }}</p>
     {{/each}}
   </main>
-  <div class="t-layout__sidebar1">
+  <aside class="t-layout__sidebar1">
     <section class="o-sidebarbox">
       <header><h2>Categories</h2></header>
       {{ render '@categories' }}
     </section>
-  </div>
-  <div class="t-layout__sidebar2">
+  </aside>
+  <aside class="t-layout__sidebar2">
     <section class="o-sidebarbox">
       <header><h2>Publication Date</h2></header>
       {{ render '@select' }}
@@ -32,8 +28,6 @@
       <header><h2>Subscribe</h2></header>
       {{ render '@list' }}
     </section>
-  </div>
-  <div class="t-layout__footer">
-    {{ render '@footer' }}
-  </div>
+  </aside>
+  {{ render '@footer' }}
 </div>

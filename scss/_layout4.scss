@@ -24,26 +24,28 @@
       / 1fr $sidebar-width;
   }
 
-  // This class used only in layout4.hbs:
+  // This class used only to highlight the grid in layout4.hbs:
   &.highlight-grid {
-
-    > * {
-      background-color: $color-light-blue;
-    }
-
+    @extend %u-highlight-grid-areas;
   }
 
-  .t-layout__header {
+  .c-header {
     grid-area: layout4a;
   }
 
-  .t-layout__breadcrumb {
+  .c-breadcrumb {
     grid-area: layout4b;
   }
 
-  .t-layout__main {
+  main {
     grid-area: layout4c;
   }
+
+  .c-footer {
+    grid-area: layout4f;
+  }
+
+  // Grid areas that may contain multiple components:
 
   .t-layout__sidebar1 {
     @extend %u-sidebar-item-top-bottom-margins;
@@ -55,10 +57,6 @@
     @extend %u-sidebar-item-top-bottom-margins;
     grid-area: layout4e;
 
-  }
-
-  .t-layout__footer {
-    grid-area: layout4f;
   }
 
 }

@@ -37,33 +37,35 @@
     / $sidebar-width 1fr $sidebar-width;
   }
 
-  // This class used only in layout3.hbs:
+  // This class used only to highlight the grid in layout3.hbs:
   &.highlight-grid {
-
-    * {
-      background-color: $color-light-blue;
-    }
-
-    .t-layout__sidebar2 {
-      background-color: $color-white;
-    }
-
+    @extend %u-highlight-grid-areas;
   }
 
-  .t-layout__header {
+  .c-header {
     grid-area: layout3a;
   }
 
-  .t-layout__breadcrumb {
+  .c-breadcrumb {
     grid-area: layout3b;
   }
 
-  .t-layout__sidebar1 {
-    grid-area: layout3c;
+  main {
+    grid-area: layout3d;
   }
 
-  .t-layout__main {
-    grid-area: layout3d;
+  .c-updated {
+    grid-area: layout3f;
+  }
+
+  .c-footer {
+    grid-area: layout3g;
+  }
+
+  // Grid areas that may contain multiple components:
+
+  .t-layout__sidebar1 {
+    grid-area: layout3c;
   }
 
   .t-layout__sidebar2 {
@@ -107,14 +109,6 @@
 
     }
 
-  }
-
-  .t-layout__updated {
-    grid-area: layout3f;
-  }
-
-  .t-layout__footer {
-    grid-area: layout3g;
   }
 
 }
