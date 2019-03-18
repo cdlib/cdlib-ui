@@ -3,23 +3,26 @@
 .c-updated {
   /* autoprefixer grid: off */
   display: grid;
-  margin: 0;
+  grid-column-gap: 0.5em;
   grid-template-columns: auto 1fr;
+}
 
-  dt {
-    margin-right: 0.5em;
-    margin-bottom: 0;
-    float: left;
-    color: $color-black;
+.c-updated__label {
+  width: 9em; // approximate length of longest label
+  float: left;
+  clear: left;
+
+  @supports (display: grid) {
+    width: auto;
   }
 
-  dd {
-    margin: 0;
+}
 
-    a {
-      @include u-disable-general-link-icon;
-    }
+.c-updated__data {
+  font-style: normal;
 
+  a {
+    @include u-disable-general-link-icon;
   }
 
 }

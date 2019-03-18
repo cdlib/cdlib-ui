@@ -1,8 +1,8 @@
-<dl class="c-updated">
-  <dt>Last updated:</dt>
-  <dd>{{ updated.date }}</dd>
-  <dt>Page owner:</dt>
-  <dd>
+<aside class="c-updated">
+  <div id="updated-owner" class="c-updated__label" aria-label="owner">Document owner:</div>
+  <address class="c-updated__data" aria-labeledby="updated-owner">
     {{> @link }}
-  </dd>
-</dl>
+  </address>
+  <div id="updated-last" class="c-updated__label">Last updated:</div>
+  <time class="c-updated__data" aria-labeledby="updated-last">{{ updated.date }}</time>
+</aside>
