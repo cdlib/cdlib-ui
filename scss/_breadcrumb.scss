@@ -2,6 +2,8 @@
 
 .c-breadcrumb {
 
+  $icon-padding: 1.7rem;
+
   ul {
     @extend %u-reset-list-styles;
   }
@@ -9,16 +11,37 @@
   li {
     display: inline-flex;
     margin-bottom: $space1;
-    font-size: 0.9em;
+    background-repeat: no-repeat;
+    background-size: 1.4rem;
+    font-size: 0.9rem;
     line-height: normal;
 
-    &:not(:last-child) {
+    &:not(:nth-last-of-type(2)) {
+      display: none;
 
-      &::after {
-        margin-left: 0.3em;
-        padding-left: 1.3em;
-        background: url('angle-right-light.svg' param(--color #{$color-blue})) no-repeat center / 1.4em;
-        content: '';
+      @include screen1 {
+        display: inline-flex;
+      }
+
+    }
+
+    &:nth-last-of-type(2) {
+      padding-left: $icon-padding;
+      background-image: url('angle-left-light.svg' param(--color #{$color-blue}));
+      background-position: left center;
+
+      @include screen1 {
+        padding-left: 0;
+      }
+
+    }
+
+    @include screen1 {
+
+      &:not(:last-child) {
+        padding-right: $icon-padding;
+        background-image: url('angle-right-light.svg' param(--color #{$color-blue}));
+        background-position: right center;
       }
 
     }
