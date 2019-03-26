@@ -51,7 +51,7 @@
     @extend %o-link2;
     display: block;
     color: $color-light-blue;
-    line-height: normal;
+    line-height: $line-height0;
   }
 
   > a {

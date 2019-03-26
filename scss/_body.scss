@@ -6,6 +6,7 @@ body {
   padding-left: $space1;
   font-family: 'Source Sans Pro', Arial;
   font-weight: 400;
+  line-height: $line-height0;
 
   @include screen1 {
     max-width: 1400px;

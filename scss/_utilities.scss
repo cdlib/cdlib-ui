@@ -114,7 +114,7 @@ $test3: #080 solid 1px; // green
   margin-bottom: 0;
   padding-right: 0;
   padding-left: 0;
-  line-height: normal;
+  line-height: $line-height0;
   list-style-type: none;
 
   li {
