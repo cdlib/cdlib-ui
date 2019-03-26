@@ -1,6 +1,18 @@
 {{!-- Read notes in list.config.js --}}
-<ol>
-  {{#each list}}
-  <li>{{ list.text }}</li>
+<ul style="list-style-type: disc;">
+  {{#each compoundlist1}}
+  <li>{{ compoundlist1.text }}
+    <ul style="list-style-type: circle;">
+      {{#each ../compoundlist2}}
+      <li>{{ compoundlist2.text }}
+        <ul style="list-style-type: square;">
+          {{#each ../../compoundlist3}}
+          <li>{{ compoundlist3.text }}</li>
+          {{/each}}
+        </ul>
+      </li>
+      {{/each}}
+    </ul>
+  </li>
   {{/each}}
-</ol>
+</ul>
