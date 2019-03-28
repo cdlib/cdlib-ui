@@ -1,4 +1,4 @@
-<div class="t-layout--2">
+<div class="t-layout--3">
   {{ render '@skipnav' }}
   {{ render '@header' }}
   {{ render '@breadcrumb' }}
@@ -28,6 +28,9 @@
     <h2>{{ social.heading }}</h2>
     <a href="{{ social.url }}">{{ social.url }}</a>
   </main>
+  <aside class="t-layout__sidebar2">
+    {{ render '@news' }}
+  </aside>
   {{ render '@updated' }}
   {{ render '@footer' }}
 </div>
