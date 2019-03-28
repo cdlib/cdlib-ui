@@ -4,7 +4,7 @@ module.exports = {
   label: 'Avatar',
   context: {
     avatar: {
-      img: faker.image.avatar(),
+      img: 'https://loremflickr.com/134/145/face',
       alt: faker.name.findName()
     }
   }
