@@ -1,6 +1,6 @@
 // ***** List Objects ***** //
 
-$list-left-space: 2rem;
+$list-indentation: 30px;
 
 %o-list {
   margin-top: $space2;
@@ -23,14 +23,14 @@ ul {
 
     // nested lists:
     li {
-      padding-left: $list-left-space;
+      padding-left: $list-indentation;
     }
 
   }
 
   // WP inline style 'list-style-type' equal to circle, disc, or square (read notes in list.config.js):
   &[style^='list-style-type:'] {
-    padding-left: $list-left-space;
+    padding-left: $list-indentation;
 
     li {
       margin-top: 0;
@@ -46,7 +46,7 @@ ul {
 
 ol {
   @extend %o-list;
-  padding-left: $list-left-space;
+  padding-left: $list-indentation;
 }
 
 // Description lists:
@@ -63,5 +63,5 @@ dt {
 
 dd {
   margin-bottom: $space2;
-  margin-left: $list-left-space - 1rem;
+  margin-left: $list-indentation;
 }
