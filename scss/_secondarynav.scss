@@ -1,7 +1,5 @@
 // ***** Secondary Navigation Component ***** //
 
-$secondarynav-list-indent: $space2;
-
 .c-secondarynav {
 
   header {
@@ -25,17 +23,17 @@ $secondarynav-list-indent: $space2;
 
     // 2nd level list:
     a {
-      padding-left: $secondarynav-list-indent * 2;
+      padding-left: 30px;
     }
 
     // 3rd level list:
     ul a {
-      padding-left: $secondarynav-list-indent * 3;
+      padding-left: 50px;
     }
 
     // 4th level list:
     ul ul a {
-      padding-left: $secondarynav-list-indent * 4;
+      padding-left: 70px;
     }
 
   }
