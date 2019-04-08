@@ -96,17 +96,3 @@
 .o-button7 {
   @extend %o-button7;
 }
-
-%o-button8 {
-  @extend %o-button;
-  padding-right: 2.4em;
-  background-color: $color-blue;
-  background-image: url('envelope.svg' param(--color #{$color-white}));
-  background-position: right $space2 center;
-  background-size: 1.1em;
-  color: $color-white;
-}
-
-.o-button8 {
-  @extend %o-button8;
-}
