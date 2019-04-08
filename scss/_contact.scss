@@ -1,25 +1,43 @@
 // ***** Contact Component ***** //
 
+%contact-styles {
+  margin-bottom: $space3;
+  padding-top: $space1;
+  padding-bottom: $space1;
+  border: none;
+  color: $color-white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 %contact-icon {
   padding-right: 2.4rem;
   background: $color-blue url('external-link-alt.svg' param(--color #{$color-white})) right 12px center / 1em no-repeat;
 }
 
 .c-contact {
-  @extend %contact-icon;
-  display: inline-block;
-  margin-bottom: $space3;
-  padding-top: $space1;
-  padding-bottom: $space1;
-  padding-left: $space2;
-  border: none;
-  color: $color-white;
-  text-decoration: none;
-  cursor: pointer;
 
-  // reset general link icon when component is a link:
-  &[data-wpel-link] {
-    @extend %contact-icon;
+  // When applied to the <form>:
+  &:not(a) {
+    display: inline;
+
+    button {
+      @extend %contact-styles;
+      @extend %contact-icon;
+    }
+
+  }
+
+  // When applied to the <a>:
+  &:not(form) {
+    @extend %contact-styles;
+    display: inline-block;
+    padding-left: $space2;
+
+    &[data-wpel-link] {
+      @extend %contact-icon;
+    }
+
   }
 
 }

@@ -10,6 +10,9 @@ module.exports = {
     contact: {
       button: {
         text: 'Contact Information'
+      },
+      link: {
+        text: 'Contact Information'
       }
     },
     program: {
