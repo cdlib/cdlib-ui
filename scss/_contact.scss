@@ -11,6 +11,7 @@ $right-padding: $horiz-padding + 1.6em;
 .c-contact {
   @extend %reset-wp-external-link-plugin;
   display: inline-block;
+  margin-bottom: $space3;
   border: none;
   color: $color-white;
   text-decoration: none;

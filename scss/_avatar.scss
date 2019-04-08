@@ -5,6 +5,15 @@
   margin-left: $space3;
   float: right;
 
+  @include screen1 {
+    margin-right: 3vw;
+    margin-left: 3vw;
+  }
+
+  + h2 {
+    margin-top: 0;
+  }
+
   // reset WP clear styles from style.css:
   ~ h2,
     h3,
