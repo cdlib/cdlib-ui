@@ -1,25 +1,25 @@
 // ***** Contact Component ***** //
 
-$horiz-padding: 0.7em;
-$right-padding: $horiz-padding + 1.6em;
-
-%reset-wp-external-link-plugin {
-  padding: 0.5em $right-padding 0.5em $horiz-padding;
-  background: $color-blue url('external-link-alt.svg' param(--color #{$color-white})) right $horiz-padding center / 1em no-repeat;
+%contact-icon {
+  padding-right: 2.4rem;
+  background: $color-blue url('external-link-alt.svg' param(--color #{$color-white})) right 12px center / 1em no-repeat;
 }
 
 .c-contact {
-  @extend %reset-wp-external-link-plugin;
+  @extend %contact-icon;
   display: inline-block;
   margin-bottom: $space3;
+  padding-top: $space1;
+  padding-bottom: $space1;
+  padding-left: $space2;
   border: none;
   color: $color-white;
   text-decoration: none;
   cursor: pointer;
 
-  // If WP External Links plugin presents its attr and value:
-  &[data-wpel-link='external'] {
-    @extend %reset-wp-external-link-plugin;
+  // reset general link icon when component is a link:
+  &[data-wpel-link] {
+    @extend %contact-icon;
   }
 
 }
