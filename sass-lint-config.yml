@@ -72,7 +72,7 @@ rules:
   mixins-before-declarations: 0
   nesting-depth:
     - 1
-    - max-depth: 3
+    - max-depth: 4
   no-color-keywords: 1
   no-color-literals: 0
   no-css-comments: 0
