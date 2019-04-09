@@ -30,6 +30,7 @@ $slideshow-grid-width2: 50%;
 
   // no js mode - show only the first slide; hide controls.
   .c-slideshow__slide {
+    /* autoprefixer: ignore next */
     display: contents;
 
     &:not(:first-of-type) {
@@ -60,6 +61,7 @@ $slideshow-grid-width2: 50%;
   &.enhanced {
 
     .c-slideshow__slide {
+      /* autoprefixer: ignore next */
       display: contents;
 
       figcaption {
