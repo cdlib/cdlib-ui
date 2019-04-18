@@ -5,10 +5,10 @@ details {
 
   summary {
     padding-left: $details-summary-left-space;
-    background-image: url('caret-down.svg' param(--color #{$color-blue}));
+    background-image: url('caret-right.svg' param(--color #{$color-blue}));
     background-repeat: no-repeat;
-    background-position: left -0.2rem top -0.1rem;
-    background-size: 1.4em;
+    background-position: left 0.3rem top -0.1rem;
+    background-size: 0.9em;
 
     // remove default arrow in Firefox:
     list-style: none;
@@ -31,7 +31,9 @@ details {
   &[open] {
 
     summary {
-      background-image: url('caret-up.svg' param(--color #{$color-blue}));
+      background-image: url('caret-down.svg' param(--color #{$color-blue}));
+      background-position: left -0.2rem top -0.1rem;
+      background-size: 1.4em;
 
       // remove down arrow applied from details polyfill:
       &::before {
