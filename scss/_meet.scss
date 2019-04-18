@@ -6,6 +6,8 @@
   border: 1px solid $color-dark-gray;
   background-color: $color-dark-gray;
   grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  grid-template-rows: 1fr auto;
+  direction: rtl;
 
   figcaption {
     @extend %u-break-words;
@@ -15,6 +17,8 @@
     padding: $space2;
     color: $color-white;
     font-style: normal;
+    line-height: $line-height1;
+    text-align: left;
 
     a {
       margin-top: $space2;
@@ -23,14 +27,29 @@
 
   }
 
+}
+
+.c-meet__avatar {
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+
   img {
     display: block;
-    width: auto;
-    height: 120px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: auto;
     object-fit: cover;
 
-    @supports (object-fit: cover) {
+    @supports (display: grid) {
+      position: absolute;
       width: 100%;
+    }
+
+    @supports (object-fit: cover) {
+      height: 100%;
     }
 
   }
