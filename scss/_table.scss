@@ -1,15 +1,17 @@
 // ***** Table Object ***** //
 
 table {
-  min-width: 100%;
+  width: 100%;
   margin-top: $space3;
   margin-bottom: $space3;
   border-collapse: collapse;
+  table-layout: fixed;
 
   th,
   td {
     padding: $space2;
     border: 1px solid $color-gray;
+    overflow: hidden;
     vertical-align: top;
   }
 
