@@ -107,20 +107,20 @@ gulp.task('scss-lint', function() {
 
 gulp.task('upload-library', shell.task('rsync -rvu --delete --exclude \'.DS_Store\' ./dist/ webprod@webprod.cdlib.org:/apps/webprod/apache/htdocs/cdlib/cdlib-ui'))
 
-gulp.task('pull-assets-dev', shell.task('rsync -rvu cdlib@web-cdlib2-dev.cdlib.org:/apps/cdlib/apache/htdocs/wp-content/themes/cdlib/ui-assets ./'))
+gulp.task('pull-assets-dev', shell.task('rsync -rvu cdlib@web-cdlib2x2-dev.cdlib.org:/apps/cdlib/apache/htdocs/wp-content/themes/cdlib/ui-assets ./'))
 
 gulp.task('push-assets-local', shell.task('rsync -rvu --delete --exclude \'.DS_Store\' ./dist/ui-assets /Users/jhagedorn/Documents/cdlib-local/htdocs/wp-content/themes/cdlib'))
 
-gulp.task('push-assets-dev', shell.task('rsync -rvu --delete --exclude \'.DS_Store\' ./dist/ui-assets cdlib@web-cdlib2-dev.cdlib.org:/apps/cdlib/apache/htdocs/wp-content/themes/cdlib'))
+gulp.task('push-assets-dev', shell.task('rsync -rvu --delete --exclude \'.DS_Store\' ./dist/ui-assets cdlib@web-cdlib2x2-dev.cdlib.org:/apps/cdlib/apache/htdocs/wp-content/themes/cdlib'))
 
-gulp.task('push-assets-stage', shell.task('rsync -rvu --delete --exclude \'.DS_Store\' ./dist/ui-assets cdlib@web-cdlib2-stg-2a.cdlib.org:/apps/cdlib/apache/htdocs/wp-content/themes/cdlib'))
+gulp.task('push-assets-stage', shell.task('rsync -rvu --delete --exclude \'.DS_Store\' ./dist/ui-assets cdlib@web-cdlib2x2-stg-2a.cdlib.org:/apps/cdlib/apache/htdocs/wp-content/themes/cdlib'))
 
-gulp.task('push-assets-prod', shell.task('rsync -rvu --delete --exclude \'.DS_Store\' ./dist/ui-assets cdlib@web-cdlib2-prd-2a.cdlib.org:/apps/cdlib/apache/htdocs/wp-content/themes/cdlib'))
+gulp.task('push-assets-prod', shell.task('rsync -rvu --delete --exclude \'.DS_Store\' ./dist/ui-assets cdlib@web-cdlib2x2-prd-2a.cdlib.org:/apps/cdlib/apache/htdocs/wp-content/themes/cdlib'))
 
 // Server Git Pull Shell Tasks
 
-gulp.task('git-pull-dev', shell.task('ssh cdlib@web-cdlib2-dev.cdlib.org /apps/cdlib/bin/remote_git_pull_dev.sh'))
+gulp.task('git-pull-dev', shell.task('ssh cdlib@web-cdlib2x2-dev.cdlib.org /apps/cdlib/bin/remote_git_pull_dev.sh'))
 
-gulp.task('git-pull-stage', shell.task('ssh cdlib@web-cdlib2-stg-2a.cdlib.org /apps/cdlib/bin/remote_git_pull_stg.sh'))
+gulp.task('git-pull-stage', shell.task('ssh cdlib@web-cdlib2x2-stg-2a.cdlib.org /apps/cdlib/bin/remote_git_pull_stg.sh'))
 
-gulp.task('git-pull-prod', shell.task('ssh cdlib@web-cdlib2-prd-2a.cdlib.org /apps/cdlib/bin/remote_git_pull_prd.sh'))
+gulp.task('git-pull-prod', shell.task('ssh cdlib@web-cdlib2x2-prd-2a.cdlib.org /apps/cdlib/bin/remote_git_pull_prd.sh'))
