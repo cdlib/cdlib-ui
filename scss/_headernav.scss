@@ -116,7 +116,7 @@ $headernav-item-margin: $space3;
   }
 
   // Panel toggle:
-  > ul > li > a:focus + ul,
+  > ul > li:focus-within > ul,
   > ul > li:hover > ul {
 
     @include screen2 {
