@@ -151,6 +151,7 @@ $slideshow-grid-width2: 50%;
 }
 
 .c-slideshow__slide {
+  @include u-reset-figure;
 
   figcaption {
     display: flex;
@@ -158,7 +159,6 @@ $slideshow-grid-width2: 50%;
     padding: $space2;
     background-color: $color-blue;
     color: $color-white;
-    font-style: normal;
     z-index: 1;
     grid-row: 1;
     grid-column: 1;

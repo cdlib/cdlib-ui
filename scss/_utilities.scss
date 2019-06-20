@@ -206,3 +206,17 @@ $test3: #080 solid 1px; // green
   }
 
 }
+
+// Reset <figure> and <figcaption> styles defined in _figure.scss:
+
+@mixin u-reset-figure {
+  width: auto;
+  margin: 0;
+
+  figcaption {
+    padding: 0;
+    font-style: normal;
+    line-height: $line-height0;
+  }
+
+}

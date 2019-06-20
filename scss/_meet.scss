@@ -1,6 +1,7 @@
 // ***** Meet Component ***** //
 
 .c-meet {
+  @include u-reset-figure;
   /* autoprefixer grid: off */
   display: grid;
   border: 1px solid $color-dark-gray;
@@ -16,7 +17,6 @@
     justify-content: space-between;
     padding: $space2;
     color: $color-white;
-    font-style: normal;
     line-height: $line-height1;
     text-align: left;
 
