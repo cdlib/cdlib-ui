@@ -4,8 +4,8 @@
   @include u-reset-figure;
   /* autoprefixer grid: off */
   display: grid;
-  border: 1px solid $color-dark-gray;
-  background-color: $color-dark-gray;
+  border: 1px solid $color-darker-gray;
+  background-color: $color-darker-gray;
   grid-template-columns: repeat(auto-fit, minmax(100px, auto));
   grid-template-rows: 1fr auto;
   direction: rtl;
@@ -22,7 +22,7 @@
 
     a {
       margin-top: $space2;
-      color: $color-gold;
+      color: $color-light-gold;
     }
 
   }

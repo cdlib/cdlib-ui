@@ -4,10 +4,10 @@ $slideshow-grid-width1: 19rem;
 $slideshow-grid-width2: 50%;
 
 @mixin slideshow-caption-bg {
-  background-color: rgba($color-blue, 0.8);
+  background-color: rgba($color-medium-blue, 0.9);
 
   @supports (backdrop-filter: blur(1px)) {
-    background-color: rgba($color-blue, 0.7);
+    background-color: rgba($color-medium-blue, 0.8);
     backdrop-filter: blur(5px);
   }
 
@@ -104,7 +104,7 @@ $slideshow-grid-width2: 50%;
   align-items: center;
   justify-content: space-evenly;
   border-top: 1px solid $color-white;
-  background-color: $color-blue;
+  background-color: $color-medium-blue;
   grid-row: 2;
   grid-column: 1;
 
@@ -123,7 +123,7 @@ $slideshow-grid-width2: 50%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 0.8em;
-    color: $color-gold;
+    color: $color-light-gold;
     cursor: pointer;
 
     span {
@@ -135,17 +135,18 @@ $slideshow-grid-width2: 50%;
 }
 
 .c-slideshow__play {
-  background-image: url('play.svg' param(--color #{$color-gold}));
+  background-image: url('play.svg' param(--color #{$color-light-gold}));
 }
 
 .c-slideshow__pause {
-  background-image: url('pause.svg' param(--color #{$color-gold}));
+  background-image: url('pause.svg' param(--color #{$color-light-gold}));
 }
 
 .c-slideshow__goto {
 
   &[aria-current] {
-    color: $color-white;
+    background-color: $color-white;
+    color: $color-medium-blue;
   }
 
 }
@@ -157,7 +158,7 @@ $slideshow-grid-width2: 50%;
     display: flex;
     flex-direction: column;
     padding: $space2;
-    background-color: $color-blue;
+    background-color: $color-medium-blue;
     color: $color-white;
     z-index: 1;
     grid-row: 1;
@@ -196,7 +197,7 @@ $slideshow-grid-width2: 50%;
 
     // any linked text in slide:
     a {
-      color: $color-gold;
+      color: $color-light-gold;
     }
 
     // 'read more' link after body copy:
