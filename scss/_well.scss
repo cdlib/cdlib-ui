@@ -28,11 +28,23 @@
 
 .c-well1 {
   @extend %c-well__block;
+  @include u-clearfix;
   background-color: $color-light-blue;
 
   h2,
   h3 {
     color: $color-blue;
+  }
+
+  // When embedded element (like image) is aligned left via WP editor:
+  .alignleft {
+
+    ~ * {
+      @include u-clearfix;
+      min-width: 10rem;
+      clear: none; // override elements styled with 'clear: both' in WP style.css
+    }
+
   }
 
 }
