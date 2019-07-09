@@ -1,4 +1,4 @@
-<figure>
+<figure{{#if figure.alignmentClass}} class="{{ figure.alignmentClass }}"{{/if}}>
   <img src="{{ figure.imageUrl }}" alt="">
   <figcaption>{{ figure.caption }}</figcaption>
 </figure>

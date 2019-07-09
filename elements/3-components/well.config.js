@@ -10,10 +10,15 @@ module.exports = {
       text: faker.commerce.productName()
     },
     well: {
-      text: faker.lorem.sentences()
+      text: faker.lorem.sentences(10)
     },
     link: {
       text: faker.commerce.productName()
+    },
+    figure: {
+      alignmentClass: 'alignleft',
+      imageUrl: 'http://lorempixel.com/300/200/nature',
+      caption: faker.lorem.sentences(2)
     }
   }
 };
