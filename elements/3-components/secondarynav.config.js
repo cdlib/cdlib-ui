@@ -49,8 +49,8 @@ module.exports = {
       text: topMenuItem
     },
     secondarynav: {
-      closeButtonText: 'Close',
-      openButtonText: 'Open',
+      closeButtonText: 'Close Menu',
+      openButtonText: 'Open Menu',
     },
     list1: fakerList1,
     list2: fakerList2,
