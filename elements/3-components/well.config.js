@@ -17,7 +17,7 @@ module.exports = {
     },
     figure: {
       alignmentClass: 'alignleft',
-      imageUrl: 'http://lorempixel.com/300/200/nature',
+      imageUrl: 'http://loremflickr.com/300/200/nature',
       caption: faker.lorem.sentences(2)
     }
   }
