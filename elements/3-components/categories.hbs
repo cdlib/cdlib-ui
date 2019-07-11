@@ -5,7 +5,7 @@
   {{/each}}
   <li>
     <details>
-      <summary>{{> @link }}</summary>
+      <summary aria-label="{{ link.text }}">{{> @link }}</summary>
       <ul>
         {{#each ../list3}}
         <li>{{> @link }}</li>
