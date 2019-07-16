@@ -225,6 +225,7 @@ if (document.querySelector('.c-slideshow')) {
 if (document.querySelector('.c-newsreel')) {
 
   var items = document.querySelectorAll('.c-newsreel li');
+  var newsreelLinks = document.querySelectorAll('.c-newsreel a');
   var firstItem = document.querySelector('.c-newsreel li:first-child');
   var currentItem = 0;
   var reelSpeed = 7000;
@@ -236,10 +237,15 @@ if (document.querySelector('.c-newsreel')) {
   // initial states:
   playControl.style.display = 'none';
   firstItem.setAttribute('aria-current', 'true');
+  for (i = 0; i < newsreelLinks.length; i++) {
+    newsreelLinks[i].setAttribute('tabindex', -1);
+  }
 
   function goToItem(n) {
     items[currentItem].removeAttribute('aria-current');
+    newsreelLinks[currentItem].setAttribute('tabindex', -1);
     currentItem = (n + items.length) % items.length;
+    newsreelLinks[currentItem].setAttribute('tabindex', 0);
     items[currentItem].setAttribute('aria-current', 'true');
   }
 
