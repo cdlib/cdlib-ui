@@ -3,11 +3,11 @@
 .c-mainbox {
   margin-top: $space3;
   margin-bottom: $space3;
-  padding: $space2 $space2 0;
+  padding: $space2;
   border: 1px solid $color-gray;
 
   header {
-    margin: (-$space2) (-$space2) $space2;
+    margin: (-$space2) (-$space2) $space3;
     padding: $space2;
     background-color: $color-light-blue;
 
@@ -21,7 +21,7 @@
 
   h3 {
     @extend %o-heading3;
-    margin-top: 0;
+    margin-top: $space3;
     color: $color-blue;
 
     &:not(:first-of-type) {
