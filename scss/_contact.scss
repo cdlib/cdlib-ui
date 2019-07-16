@@ -1,18 +1,19 @@
 // ***** Contact Component ***** //
 
+$contact-leftright-padding: 1rem
+;
+
 %contact-styles {
   margin-bottom: $space3;
-  padding-top: $space1;
-  padding-bottom: $space1;
-  border: none;
+  padding-top: $space2;
+  padding-bottom: $space2;
+  padding-left: $contact-leftright-padding;
   color: $color-white;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 %contact-icon {
-  padding-right: 2.4rem;
-  background: $color-blue url('external-link-alt.svg' param(--color #{$color-white})) right 12px center / 1em no-repeat;
+  padding-right: $contact-leftright-padding + 1.5rem;
+  background: $color-blue url('external-link-alt.svg' param(--color #{$color-white})) right $contact-leftright-padding center / 1em no-repeat;
 }
 
 .c-contact {
@@ -24,6 +25,8 @@
     button {
       @extend %contact-styles;
       @extend %contact-icon;
+      border: none;
+      cursor: pointer;
     }
 
   }
@@ -32,7 +35,7 @@
   &:not(form) {
     @extend %contact-styles;
     display: inline-block;
-    padding-left: $space2;
+    text-decoration: none;
 
     &[data-wpel-link] {
       @extend %contact-icon;
