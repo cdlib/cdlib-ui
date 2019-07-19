@@ -1,5 +1,5 @@
 <footer class="c-footer">
-  <nav class="c-footer__main">
+  <nav class="c-footer__main" aria-label="footer">
     <ul>
       {{#each list1}}
       <li>{{> @link--1 }}
@@ -12,13 +12,13 @@
       {{/each}}
     </ul>
   </nav>
-  <nav class="c-footer__legal">
+  <div class="c-footer__legal">
     <ul>
       {{#each list3}}
       <li>{{> @link--1 }}</li>
       {{/each}}
     </ul>
-  </nav>
+  </div>
   <div class="c-footer__copyright">
     <small>Copyright © 2018 The Regents of The University of California</small>
     <small>California Digital Library</small>
