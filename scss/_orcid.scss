@@ -2,10 +2,9 @@
 
 .o-orcid {
   @include u-disable-general-link-icon;
+  display: inline-block;
   position: relative;
   padding-left: 1.6em;
-
-  // Orcid.svg - and only that icon - wouldn't position 'center left' in IE when using background properties, so resorted to pseudo element:
 
   &::before {
     position: absolute;
@@ -14,8 +13,7 @@
     left: 0;
     width: 1.1em;
     margin-right: 1em;
-    background: url('orcid.svg') no-repeat center;
-    content: '';
+    content: url('orcid.svg');
   }
 
 }
