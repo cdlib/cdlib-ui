@@ -12,7 +12,7 @@
     'layout4e'
     'layout4f'
     / 1fr;
-  
+
   @include screen2 {
     grid-gap: $space3;
     grid-template:
@@ -22,6 +22,11 @@
       'layout4c layout4e' 1fr
       'layout4f layout4f'
       / 1fr $sidebar-width;
+  }
+
+  @media print {
+    display: block;
+    min-height: auto;
   }
 
   // This class used only to highlight the grid in layout4.hbs:
@@ -47,6 +52,11 @@
 
   .t-layout__sidebar1 {
     grid-area: layout4d;
+
+    @media print {
+      display: none;
+    }
+
   }
 
   .t-layout__sidebar2 {
@@ -73,6 +83,10 @@
         'sidebar-item3'
         'sidebar-item4'
         / 1fr;
+    }
+
+    @media print {
+      display: none;
     }
 
   }

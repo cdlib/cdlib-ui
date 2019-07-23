@@ -12,7 +12,7 @@
     'layout2e'
     'layout2f'
     / 1fr;
-  
+
   @include screen2 {
     grid-gap: $space3;
     grid-template:
@@ -22,6 +22,11 @@
       '........ layout2e'
       'layout2f layout2f'
       / $sidebar-width 1fr;
+  }
+
+  @media print {
+    display: block;
+    min-height: auto;
   }
 
   // This class used only to highlight the grid in layout2.hbs:
@@ -53,6 +58,11 @@
 
   .t-layout__sidebar1 {
     grid-area: layout2c;
+
+    @media print {
+      display: none;
+    }
+
   }
 
 }

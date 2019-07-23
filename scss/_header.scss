@@ -21,6 +21,10 @@ $header-logo-height: 50px;
       / auto 1fr;
   }
 
+  @media print {
+    display: none;
+  }
+
 }
 
 .c-header__logo {

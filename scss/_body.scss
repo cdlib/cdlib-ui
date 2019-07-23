@@ -14,4 +14,8 @@ body {
     padding-left: $space2;
   }
 
+  @media print {
+    padding: 0;
+  }
+
 }

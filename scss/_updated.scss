@@ -2,6 +2,10 @@
 
 .c-updated {
 
+  @media print {
+    display: none;
+  }
+
   address {
     font-style: normal;
 

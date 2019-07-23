@@ -10,6 +10,19 @@ $staff-icon-size: 1.5em;
     display: none;
   }
 
+  @media print {
+
+    th,
+    td {
+
+      &:last-child {
+        display: none;
+      }
+
+    }
+
+  }
+
   tbody tr {
 
     td {

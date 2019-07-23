@@ -37,6 +37,11 @@
     / $sidebar-width 1fr $sidebar-width;
   }
 
+  @media print {
+    display: block;
+    min-height: auto;
+  }
+
   // This class used only to highlight the grid in layout3.hbs:
   &.highlight-grid {
     @extend %u-highlight-grid-areas;
@@ -64,6 +69,11 @@
 
   .t-layout__sidebar1 {
     grid-area: layout3c;
+
+    @media print {
+      display: none;
+    }
+
   }
 
   .t-layout__sidebar2 {
@@ -90,6 +100,10 @@
         'sidebar-item3'
         'sidebar-item4'
         / 1fr;
+    }
+
+    @media print {
+      display: none;
     }
 
   }

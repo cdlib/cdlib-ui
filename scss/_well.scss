@@ -6,6 +6,10 @@
     margin: 0;
   }
 
+  @media print {
+    break-inside: avoid;
+  }
+
 }
 
 %c-well__block {
@@ -30,6 +34,10 @@
   @extend %c-well__block;
   @include u-clearfix;
   background-color: $color-light-blue;
+
+  @media print {
+    border: 1px solid $color-light-blue;
+  }
 
   h2,
   h3 {
@@ -58,6 +66,10 @@
   padding: $space2 $space3;
   background-color: $color-blue;
   text-align: center;
+
+  @media print {
+    border: 1px solid $color-blue;
+  }
 
   a {
     @extend %o-link2;
@@ -91,6 +103,10 @@
 .c-well3 {
   @extend %c-well__block;
   background-color: $color-light-gray;
+
+  @media print {
+    border: 1px solid $color-light-gray;
+  }
 
   h2,
   h3 {

@@ -18,6 +18,10 @@ $contact-leftright-padding: 1rem
 
 .c-contact {
 
+  @media print {
+    display: none !important;
+  }
+
   // When applied to the <form>:
   &:not(a) {
     display: inline;

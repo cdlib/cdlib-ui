@@ -67,6 +67,11 @@
     text-decoration: none;
   }
 
+  @media print {
+    @include u-disable-general-link-icon;
+    @include u-disable-filetype-link-icon;
+  }
+
 }
 
 a {
