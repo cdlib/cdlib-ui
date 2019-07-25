@@ -8,6 +8,19 @@ $list-indentation: 30px;
   line-height: $line-height1;
 }
 
+// List items:
+
+li {
+  margin-top: $space2;
+  margin-bottom: $space2;
+
+  // nested lists:
+  li {
+    padding-left: $list-indentation;
+  }
+
+}
+
 // Unordered lists:
 
 ul {
@@ -17,24 +30,11 @@ ul {
   padding-left: 0;
   list-style-type: none;
 
-  li {
-    margin-top: $space2;
-    margin-bottom: $space2;
-
-    // nested lists:
-    li {
-      padding-left: $list-indentation;
-    }
-
-  }
-
   // WP inline style 'list-style-type' equal to circle, disc, or square (read notes in list.config.js):
   &[style^='list-style-type:'] {
     padding-left: $list-indentation;
 
     li {
-      margin-top: 0;
-      margin-bottom: 0;
       padding-left: 0;
     }
 
