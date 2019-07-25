@@ -7,11 +7,13 @@
   $docicon-green: rgb(82, 122, 0); // #527A00
 
   %o-docicon__#{$filetype} {
-    padding: 0.2em 0.5em;
+    display: inline-block;
+    padding: 0.2rem 0.2rem 0.05rem 0.3rem;
     color: $color-white;
     font-family: Consolas, Monaco, monospace;
     font-size: 0.7em;
     letter-spacing: 0.1em;
+    line-height: 1;
     text-transform: uppercase;
     white-space: nowrap;
 
