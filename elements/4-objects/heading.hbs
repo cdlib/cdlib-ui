@@ -1,4 +1,4 @@
-<h{{ heading.level }}>
+<h{{ heading.level }} {{#if heading.id }}id="{{ heading.id }}"{{/if}}>
   {{#if link1}}
     {{> @link--1 }}
   {{/if}}
