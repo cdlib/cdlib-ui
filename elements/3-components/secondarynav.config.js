@@ -42,7 +42,8 @@ module.exports = {
   label: 'Secondary Nav',
   context: {
     heading: {
-      level: '2'
+      level: '2',
+      id: 'secondarynav-heading'
     },
     link1: true,
     link: {
