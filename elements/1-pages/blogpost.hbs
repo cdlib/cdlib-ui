@@ -9,13 +9,13 @@
     <p>{{ blogpost.text }}</p>
     {{/each}}
   </main>
-  <aside class="t-layout__sidebar1">
+  <aside aria-label="first" class="t-layout__sidebar1">
     <section class="o-sidebarbox">
       <header><h2>Categories</h2></header>
       {{ render '@categories' }}
     </section>
   </aside>
-  <aside class="t-layout__sidebar2">
+  <aside aria-label="second" class="t-layout__sidebar2">
     <section class="o-sidebarbox">
       <header><h2>Publication Date</h2></header>
       {{ render '@select' }}
