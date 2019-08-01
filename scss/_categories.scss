@@ -8,6 +8,15 @@
 .c-categories {
   @extend %u-reset-list-styles;
 
+  @include screen1 {
+    column-gap: $space3;
+    column-count: 2;
+  }
+
+  @include screen2 {
+    column-count: auto;
+  }
+
   a {
     @extend %o-link2;
   }
@@ -22,6 +31,8 @@
   }
 
   details {
+    break-inside: avoid;
+    page-break-inside: avoid; // Firefox
 
     summary {
       display: inline-block;
