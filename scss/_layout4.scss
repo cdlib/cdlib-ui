@@ -45,17 +45,35 @@
     grid-area: layout4f;
   }
 
-  // Grid areas that may contain multiple components:
-
   .t-layout__sidebar1 {
-    @extend %u-sidebar-item-top-bottom-margins;
     grid-area: layout4d;
-
   }
 
   .t-layout__sidebar2 {
-    @extend %u-sidebar-item-top-bottom-margins;
+    @include u-sidebar-grid;
     grid-area: layout4e;
+    grid-template:
+      'sidebar-item1'
+      'sidebar-item2'
+      'sidebar-item3'
+      'sidebar-item4'
+      / 1fr;
+
+    @include screen1 {
+      grid-template:
+        'sidebar-item1 sidebar-item2'
+        'sidebar-item3 sidebar-item4'
+        / 1fr 1fr;
+    }
+
+    @include screen2 {
+      grid-template:
+        'sidebar-item1'
+        'sidebar-item2'
+        'sidebar-item3'
+        'sidebar-item4'
+        / 1fr;
+    }
 
   }
 

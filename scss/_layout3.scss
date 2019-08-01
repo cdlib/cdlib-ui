@@ -62,51 +62,34 @@
     grid-area: layout3g;
   }
 
-  // Grid areas that may contain multiple components:
-
   .t-layout__sidebar1 {
     grid-area: layout3c;
   }
 
   .t-layout__sidebar2 {
-    @extend %u-sidebar-item-top-bottom-margins;
-    align-self: start;
+    @include u-sidebar-grid;
     grid-area: layout3e;
+    grid-template:
+      'sidebar-item1'
+      'sidebar-item2'
+      'sidebar-item3'
+      'sidebar-item4'
+      / 1fr;
 
     @include screen2 {
-      display: flex;
-      flex-wrap: wrap;
-
-      > * {
-        flex: 1 1 45%;
-
-        &:nth-of-type(odd) {
-          margin-right: $space1;
-        }
-
-        &:nth-of-type(even) {
-          margin-left: $space1;
-        }
-        
-      }
-
+      grid-template:
+        'sidebar-item1 sidebar-item2'
+        'sidebar-item3 sidebar-item4'
+        / 1fr 1fr;
     }
 
     @include screen3 {
-      display: block;
-
-      > * {
-
-        &:nth-of-type(odd) {
-          margin-right: 0;
-        }
-
-        &:nth-of-type(even) {
-          margin-left: 0;
-        }
-        
-      }
-
+      grid-template:
+        'sidebar-item1'
+        'sidebar-item2'
+        'sidebar-item3'
+        'sidebar-item4'
+        / 1fr;
     }
 
   }
