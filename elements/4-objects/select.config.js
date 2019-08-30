@@ -4,7 +4,10 @@ const fakerData = [];
 for (var i = 0; i < 10; i++) {
   fakerData.push({
     select: {
-      label: 'Option ' + (i + 1)
+      option: {
+        value: i + 1,
+        label: faker.commerce.productName()
+      }
     }
   });
 }
@@ -12,10 +15,20 @@ for (var i = 0; i < 10; i++) {
 module.exports = {
   label: 'Select',
   context: {
-    label1: {
-      for: 'select1',
-      text: 'Select Label'
+    label: {
+      exists: true,
+      for: 'select',
+      text: 'Label'
     },
-    option: fakerData
+    select: {
+      name: 'name',
+      id: 'select',
+      labelledby: 'labelledby',
+      placeholder: {
+        exists: true,
+        label: 'Choose Your Option'
+      },
+    },
+    selectoption: fakerData
   }
 };

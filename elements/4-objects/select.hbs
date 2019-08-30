@@ -1,6 +1,7 @@
-{{> @label }}
-<select class="o-select" name="" id="{{ label1.for }}">
-  {{#each option}}
-  <option value="{{ select.label }}">{{ select.label }}</option>
+{{> @label--2 }}
+<select class="o-select" {{#if select.name}}name="{{ select.name }}"{{/if}} {{#if select.id}}id="{{ select.id }}"{{/if}} {{#if select.labelledby}}aria-labelledby="{{ select.labelledby }}"{{/if}}>
+  {{#if select.placeholder.exists}}<option value="">{{ select.placeholder.label }}</option>{{/if}}
+  {{#each selectoption}}
+  <option value="{{ select.option.value }}">{{ select.option.label }}</option>
   {{/each}}
 </select>
