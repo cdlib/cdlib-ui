@@ -280,3 +280,35 @@ if (document.querySelector('.c-newsreel')) {
   }
 
 };
+
+// ***** Sidebar Post Components ***** //
+
+// Author Component:
+
+var authorSelect = document.querySelector('#c-sidebarpost--author select');
+
+function openAuthor() {
+  var selectValue = authorSelect.options[authorSelect.selectedIndex].value;
+  window.open(selectValue, '_self');
+}
+
+authorSelect.addEventListener('change', enableAuthorButton);
+
+function enableAuthorButton() {
+  document.querySelector('#c-sidebarpost--author button').disabled = false;
+}
+
+// Month Component:
+
+var monthsSelect = document.querySelector('#c-sidebarpost--month select');
+
+function openMonth() {
+  var selectValue = monthsSelect.options[monthsSelect.selectedIndex].value;
+  window.open(selectValue, '_self');
+}
+
+monthsSelect.addEventListener('change', enableMonthButton);
+
+function enableMonthButton() {
+  document.querySelector('#c-sidebarpost--month button').disabled = false;
+}

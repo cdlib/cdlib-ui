@@ -13,14 +13,8 @@
     </section>
   </aside>
   <aside aria-label="second" class="t-layout__sidebar2">
-    <section class="o-sidebarbox">
-      <header><h2>Publication Date</h2></header>
-      {{ render '@select' }}
-    </section>
-    <section class="o-sidebarbox">
-      <header><h2>Author</h2></header>
-      {{ render '@select' }}
-    </section>
+    {{ render '@sidebarpost' }}
+    {{ render '@sidebarpost--2' }}
     <section class="o-sidebarbox">
       <header><h2>Subscribe</h2></header>
       {{ render '@list' }}
