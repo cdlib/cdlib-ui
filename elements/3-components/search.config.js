@@ -15,7 +15,8 @@ module.exports = {
     search: {
       action: '/'
     },
-    label1: {
+    label: {
+      exists: true,
       for: 'c-header-search-field',
       text: 'Search the California Digital Library'
     },

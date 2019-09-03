@@ -3,13 +3,22 @@ module.exports = {
   default: '1',
   label: 'Form Labels',
   context: {
-    label1: {
+    label: {
+      exists: true,
       for: '',
-      text: 'Label 1 Text'
-    },
-    label2: {
-      for: '',
-      text: 'Label 2 Text'
+      text: 'Label 1 (Hidden Offscreen)'
     }
-  }
+  },
+  variants: [
+    {
+      name: '2', // label--2.hbs
+      context: {
+        label: {
+          exists: true,
+          for: '',
+          text: 'Label 2'
+        }
+      }
+    }
+  ]
 };
