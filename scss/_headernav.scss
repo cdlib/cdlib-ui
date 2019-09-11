@@ -126,19 +126,38 @@ $headernav-item-margin: $space3;
 
   }
 
-  // hover:
-  > ul > li:hover > ul {
-    @include panel-toggle;
+  // If c-headernav JS not supported:
+
+  &.c-headernav-no-js {
+
+    > ul > li:hover > ul {
+      @include panel-toggle;
+    }
+
+    // If :focus-within not supported. Only primary links accessible via tabkey:
+
+    > ul > li a:focus {
+      @include panel-toggle;
+    }
+
+    // If :focus-within supported. All links accessbile via focus. No toggle state on primary links, so user must tab through every secondary link in each section to reach the next section:
+
+    > ul > li:focus-within > ul {
+      @include panel-toggle;
+    }
+
   }
 
-  // focus-within not supported:
-  > ul > li > a:focus + ul {
-    @include panel-toggle;
-  }
+  // If c-headernav JS supported:
 
-  // focus-within supported:
-  > ul > li:focus-within > ul {
-    @include panel-toggle;
+  &.c-headernav-js {
+
+    // Primary links disabled via JS and used as a toggle for each section. Hover and focus states handled by JS and set via 'open' class:
+
+    li.open ul {
+      @include panel-toggle;
+    }
+
   }
 
 }
