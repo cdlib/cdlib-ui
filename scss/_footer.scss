@@ -26,7 +26,7 @@
 
   a {
     @include o-link3;
-    font-size: 0.9em;
+    font-size: 0.9rem;
   }
 
 }
@@ -114,7 +114,17 @@
 
   small {
     @include footer-pipe-separator;
-    font-size: 0.7em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 0.7rem;
+
+    a {
+      @include u-disable-general-link-icon;
+      margin-right: $space1;
+      font-size: 0.7rem;
+    }
+
   }
 
 }
