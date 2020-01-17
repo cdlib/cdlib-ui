@@ -118,7 +118,7 @@ if (document.querySelector('.c-slideshow')) {
 
   if (!enhanced) {
     mode.classList.add('basic');
-    for (i = 0; i < slideGroups.length; i++) {
+    for (var i = 0; i < slideGroups.length; i++) {
       slideGroups[randomSlide].classList.add('fixed');
     }
   } else {
@@ -126,7 +126,7 @@ if (document.querySelector('.c-slideshow')) {
     playButton.style.display = 'none';
     firstSlide.classList.add('active');
     firstGoToButton.setAttribute('aria-current', 'true');
-    for (i = 0; i < slideshowLinks.length; i++) {
+    for (var i = 0; i < slideshowLinks.length; i++) {
       slideshowLinks[i].setAttribute('tabindex', -1);
     }
   }
@@ -135,14 +135,14 @@ if (document.querySelector('.c-slideshow')) {
     if (enhanced) {
       // slides:
       slides[currentSlide].classList.remove('active');
-      let currentSlideLinks = slides[currentSlide].querySelectorAll('a');
-      for (i = 0; i < currentSlideLinks.length; i++) {
+      var currentSlideLinks = slides[currentSlide].querySelectorAll('a');
+      for (var i = 0; i < currentSlideLinks.length; i++) {
         currentSlideLinks[i].setAttribute('tabindex', -1);
       }
       currentSlide = (n + slides.length) % slides.length;
       slides[currentSlide].classList.add('active');
       currentSlideLinks = slides[currentSlide].querySelectorAll('a');
-      for (i = 0; i < currentSlideLinks.length; i++) {
+      for (var i = 0; i < currentSlideLinks.length; i++) {
         currentSlideLinks[i].setAttribute('tabindex', 0);
       }
       // goto slide buttons:
@@ -181,8 +181,8 @@ if (document.querySelector('.c-slideshow')) {
   slide1button.onclick = function() {
     pauseSlideshow();
     slides[currentSlide].classList.remove('active');
-    currentSlideLinks = slides[currentSlide].querySelectorAll('a');
-    for (i = 0; i < currentSlideLinks.length; i++) {
+    var currentSlideLinks = slides[currentSlide].querySelectorAll('a');
+    for (var i = 0; i < currentSlideLinks.length; i++) {
       currentSlideLinks[i].setAttribute('tabindex', -1);
     };
     goToSlide(currentSlide = 0);
@@ -191,8 +191,8 @@ if (document.querySelector('.c-slideshow')) {
   slide2button.onclick = function() {
     pauseSlideshow();
     slides[currentSlide].classList.remove('active');
-    currentSlideLinks = slides[currentSlide].querySelectorAll('a');
-    for (i = 0; i < currentSlideLinks.length; i++) {
+    var currentSlideLinks = slides[currentSlide].querySelectorAll('a');
+    for (var i = 0; i < currentSlideLinks.length; i++) {
       currentSlideLinks[i].setAttribute('tabindex', -1);
     };
     goToSlide(currentSlide = 1);
@@ -201,8 +201,8 @@ if (document.querySelector('.c-slideshow')) {
   slide3button.onclick = function() {
     pauseSlideshow();
     slides[currentSlide].classList.remove('active');
-    currentSlideLinks = slides[currentSlide].querySelectorAll('a');
-    for (i = 0; i < currentSlideLinks.length; i++) {
+    var currentSlideLinks = slides[currentSlide].querySelectorAll('a');
+    for (var i = 0; i < currentSlideLinks.length; i++) {
       currentSlideLinks[i].setAttribute('tabindex', -1);
     };
     goToSlide(currentSlide = 2);
@@ -211,8 +211,8 @@ if (document.querySelector('.c-slideshow')) {
   slide4button.onclick = function() {
     pauseSlideshow();
     slides[currentSlide].classList.remove('active');
-    currentSlideLinks = slides[currentSlide].querySelectorAll('a');
-    for (i = 0; i < currentSlideLinks.length; i++) {
+    var currentSlideLinks = slides[currentSlide].querySelectorAll('a');
+    for (var i = 0; i < currentSlideLinks.length; i++) {
       currentSlideLinks[i].setAttribute('tabindex', -1);
     };
     goToSlide(currentSlide = 3);
@@ -237,7 +237,7 @@ if (document.querySelector('.c-newsreel')) {
   // initial states:
   playControl.style.display = 'none';
   firstItem.setAttribute('aria-current', 'true');
-  for (i = 0; i < newsreelLinks.length; i++) {
+  for (var i = 0; i < newsreelLinks.length; i++) {
     newsreelLinks[i].setAttribute('tabindex', -1);
   }
 
