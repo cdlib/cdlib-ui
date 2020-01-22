@@ -19,10 +19,6 @@ $status-color-red: #f00;
         width: 30%;
       }
 
-      &:last-child {
-        width: 70%;
-      }
-
     }
 
   }
@@ -32,6 +28,7 @@ $status-color-red: #f00;
 .c-status__indicator {
   display: flex;
   align-items: center;
+  white-space: nowrap;
 
   &::before {
     width: 1em;
