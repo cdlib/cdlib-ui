@@ -1,6 +1,7 @@
 .DS_Store
 dist
 node_modules
+.publish
 ui-assets
 
 # hardlinked and symlinked from cdlib-ui-kit:
