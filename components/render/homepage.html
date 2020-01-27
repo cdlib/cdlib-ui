@@ -1,0 +1,985 @@
+
+
+<div class="t-home">
+  <a href="#maincontent" class="c-skipnav o-button4">Skip to main content</a>
+
+  <header class="c-header" v-onmedia.screen2="detectMediaQuery2">
+  <a class="c-header__logo" href="">
+    <img src="../../ui-assets/images/logo-cdl.svg" alt="California Digital Library logo">
+  </a>
+  <div class="c-header__controls" v-if="!$mq.screen2" v-cloak>
+    <button class="o-button1" v-on:click="headerToggle1" aria-label="search"></button>
+    <button class="o-button3" v-on:click="headerToggle3" aria-label="menu"></button>
+  </div>
+  <transition name="c-header__offscreen">
+    <div class="c-header__search" v-if="isOpen1" v-cloak>
+      <form role="search" action="/" class="c-search">
+  <label class="o-label1" for="c-header-search-field">Search the California Digital Library</label>
+  <input class="o-input1" id="c-header-search-field" type="search" list="c-search-list" name="s" value="" placeholder="">
+  <datalist id="c-search-list">
+    <option value="Rustic Steel Mouse ">
+    <option value="Rustic Plastic Towels ">
+    <option value="Ergonomic Wooden Ball ">
+    <option value="Gorgeous Frozen Chips ">
+    <option value="Small Wooden Chair ">
+    <option value="Licensed Steel Shoes ">
+    <option value="Handmade Rubber Ball ">
+    <option value="Gorgeous Plastic Cheese ">
+    <option value="Practical Granite Table ">
+    <option value="Small Frozen Gloves ">
+  </datalist>
+  <button class="o-button4" type="submit">Search</button>
+</form>
+
+      <button class="o-button2" v-on:click="headerToggle2" v-if="!$mq.screen2" aria-label="close search"></button>
+    </div>
+  </transition>
+  <div class="c-header__header-nav" v-if="isOpen2" v-cloak>
+  <nav aria-label="global" class="c-headernav c-headernav-no-js c-mobilenav">
+  <ul>
+    <li class="columns-2 menu-item-has-children">
+<a href="" >About CDL</a>
+
+
+      <ul>
+        <li class="menu-item-has-children">
+<a href="" >Intelligent Cotton Keyboard</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Unbranded Concrete Gloves</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Generic Metal Chips</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="columns-3 menu-item-has-children">
+<a href="" >Services &amp; Projects</a>
+
+
+      <ul>
+        <li class="menu-item-has-children">
+<a href="" >Intelligent Cotton Keyboard</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Unbranded Concrete Gloves</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Generic Metal Chips</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class=" menu-item-has-children">
+<a href="" >Resources for...</a>
+
+
+      <ul>
+        <li class="menu-item-has-children">
+<a href="" >Intelligent Cotton Keyboard</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Unbranded Concrete Gloves</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Generic Metal Chips</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class=" menu-item-has-children">
+<a href="" >Committees &amp; Groups</a>
+
+
+      <ul>
+        <li class="menu-item-has-children">
+<a href="" >Intelligent Cotton Keyboard</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Unbranded Concrete Gloves</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Generic Metal Chips</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class=" menu-item-has-children">
+<a href="" >News &amp; Groups</a>
+
+
+      <ul>
+        <li class="menu-item-has-children">
+<a href="" >Intelligent Cotton Keyboard</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Unbranded Concrete Gloves</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Generic Metal Chips</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+  </div>
+  <div class="c-header__utility-nav" v-if="isOpen2" v-cloak>
+    <nav aria-label="top" class="c-utilitynav c-mobilenav">
+  <ul>
+    <li>
+      
+      <a href="" >Staff Directory</a>
+      
+    </li>
+    <li>
+      
+      <a href="" >Contact CDL</a>
+      
+    </li>
+    <li>
+      
+      <a href="" >Report a Problem</a>
+      
+    </li>
+    <li>
+      
+      <a href="" >System Status</a>
+      
+    </li>
+  </ul>
+</nav>
+
+  </div>
+</header>
+
+  <h1 id="maincontent" class="c-homeheading">California Digital Library</h1>
+
+  <main class="c-slideshow" aria-label="slideshow">
+  <div class="c-slideshow__controls">
+    <button class="c-slideshow__play" title="play slideshow"><span>play slideshow</span></button>
+    <button class="c-slideshow__pause" title="pause slideshow"><span>pause slideshow</span></button>
+    <button id="c-slideshow__goto1" class="c-slideshow__goto" aria-label="go to slide 1 of 4">1</button>
+    <button id="c-slideshow__goto2" class="c-slideshow__goto" aria-label="go to slide 2 of 4">2</button>
+    <button id="c-slideshow__goto3" class="c-slideshow__goto" aria-label="go to slide 3 of 4">3</button>
+    <button id="c-slideshow__goto4" class="c-slideshow__goto" aria-label="go to slide 4 of 4">4</button>
+  </div>
+  <figure class="c-slideshow__slide">
+    <figcaption>
+      <h2>Awesome Concrete Bacon</h2>
+      <p>Quod quia cum iste dignissimos magnam non. Odio quia placeat corporis eveniet.</p>
+      <a href="https://calisphere.org">Read more</a>
+      <small>Photo by Miss Lenny Huels. Courtesy of repellendus recusandae omnis [Slide 1]</small>
+    </figcaption>
+    <div class="c-slideshow__slide-image">
+      <img srcset="https://loremflickr.com/740/500/nature?size&#x3D;small&amp;random&#x3D;0 740w, https://loremflickr.com/1095/740/nature?size&#x3D;big&amp;random&#x3D;0 1095w" sizes="(min-width: 760px) 77vw, 100vw" src="https://loremflickr.com/1095/740/nature?size&#x3D;big&amp;random&#x3D;0" alt="Licensed Soft Chips">
+    </div>
+  </figure>
+  <figure class="c-slideshow__slide">
+    <figcaption>
+      <h2>Tasty Granite Sausages</h2>
+      <p>Illum debitis laudantium sunt qui ut. Quo error maiores.</p>
+      <a href="https://escholarship.org">Read more</a>
+      <small>Photo by Chad Rolfson III. Courtesy of voluptatem aperiam totam [Slide 2]</small>
+    </figcaption>
+    <div class="c-slideshow__slide-image">
+      <img srcset="https://loremflickr.com/740/500/nature?size&#x3D;small&amp;random&#x3D;1 740w, https://loremflickr.com/1095/740/nature?size&#x3D;big&amp;random&#x3D;1 1095w" sizes="(min-width: 760px) 77vw, 100vw" src="https://loremflickr.com/1095/740/nature?size&#x3D;big&amp;random&#x3D;1" alt="Ergonomic Concrete Pants">
+    </div>
+  </figure>
+  <figure class="c-slideshow__slide">
+    <figcaption>
+      <h2>Generic Frozen Ball</h2>
+      <p>Libero minus necessitatibus odio quas. Odit illo accusamus qui voluptas similique dicta quaerat.</p>
+      <a href="https://www.hathitrust.org">Read more</a>
+      <small>Photo by Anabel Bashirian. Courtesy of voluptas alias in [Slide 3]</small>
+    </figcaption>
+    <div class="c-slideshow__slide-image">
+      <img srcset="https://loremflickr.com/740/500/nature?size&#x3D;small&amp;random&#x3D;2 740w, https://loremflickr.com/1095/740/nature?size&#x3D;big&amp;random&#x3D;2 1095w" sizes="(min-width: 760px) 77vw, 100vw" src="https://loremflickr.com/1095/740/nature?size&#x3D;big&amp;random&#x3D;2" alt="Generic Soft Mouse">
+    </div>
+  </figure>
+  <figure class="c-slideshow__slide">
+    <figcaption>
+      <h2>Incredible Concrete Chair</h2>
+      <p>Veniam voluptatem quos nemo ipsam incidunt temporibus consectetur. Assumenda quod sint.</p>
+      <a href="https://escholarship.org">Read more</a>
+      <small>Photo by Angie Fritsch. Courtesy of atque dolor illum [Slide 4]</small>
+    </figcaption>
+    <div class="c-slideshow__slide-image">
+      <img srcset="https://loremflickr.com/740/500/nature?size&#x3D;small&amp;random&#x3D;3 740w, https://loremflickr.com/1095/740/nature?size&#x3D;big&amp;random&#x3D;3 1095w" sizes="(min-width: 760px) 77vw, 100vw" src="https://loremflickr.com/1095/740/nature?size&#x3D;big&amp;random&#x3D;3" alt="Gorgeous Soft Chips">
+    </div>
+  </figure>
+</main>
+
+  <h2 class="c-serviceheading"> CDL Services </h2>
+
+  <div class="c-servicebox">
+  <section>
+    <header>
+      <h3 >
+          Hat 
+      </h3>
+    </header>
+    <ul>
+      <li>
+<a href="" >Rustic Plastic Bike</a>
+
+</li>
+      <li>
+<a href="" >Handcrafted Granite Table</a>
+
+</li>
+      <li>
+<a href="" >Handcrafted Soft Car</a>
+
+</li>
+      <li>
+<a href="" >Unbranded Wooden Bike</a>
+
+</li>
+    </ul>
+  </section>
+  <section>
+    <header>
+      <h3 >
+          Pizza 
+      </h3>
+    </header>
+    <ul>
+      <li>
+<a href="" >Rustic Plastic Bike</a>
+
+</li>
+      <li>
+<a href="" >Handcrafted Granite Table</a>
+
+</li>
+      <li>
+<a href="" >Handcrafted Soft Car</a>
+
+</li>
+      <li>
+<a href="" >Unbranded Wooden Bike</a>
+
+</li>
+    </ul>
+  </section>
+  <section>
+    <header>
+      <h3 >
+          Soap 
+      </h3>
+    </header>
+    <ul>
+      <li>
+<a href="" >Rustic Plastic Bike</a>
+
+</li>
+      <li>
+<a href="" >Handcrafted Granite Table</a>
+
+</li>
+      <li>
+<a href="" >Handcrafted Soft Car</a>
+
+</li>
+      <li>
+<a href="" >Unbranded Wooden Bike</a>
+
+</li>
+    </ul>
+  </section>
+  <section>
+    <header>
+      <h3 >
+          Keyboard 
+      </h3>
+    </header>
+    <ul>
+      <li>
+<a href="" >Rustic Plastic Bike</a>
+
+</li>
+      <li>
+<a href="" >Handcrafted Granite Table</a>
+
+</li>
+      <li>
+<a href="" >Handcrafted Soft Car</a>
+
+</li>
+      <li>
+<a href="" >Unbranded Wooden Bike</a>
+
+</li>
+    </ul>
+  </section>
+</div>
+
+  <div role="marquee" class="c-newsreel">
+  <h2 >
+      Latest News from CDL 
+  </h2>
+  <button class="c-newsreel__play"><span>play newsreel</span></button>
+  <button class="c-newsreel__pause"><span>pause newsreel</span></button>
+  <ul>
+    <li>
+<a href="" >Sleek Concrete Pants with CDL and Handmade Wooden Mouse</a>
+
+</li>
+    <li>
+<a href="" >Fantastic Frozen Shirt with CDL and Fantastic Rubber Chair</a>
+
+</li>
+    <li>
+<a href="" >Sleek Soft Hat at CDL for Tasty Fresh Shoes</a>
+
+</li>
+    <li>
+<a href="" >Fantastic Granite Sausages with CDL for Sleek Frozen Soap</a>
+
+</li>
+    <li>
+<a href="" >Small Plastic Car at CDL for Awesome Wooden Chair</a>
+
+</li>
+  </ul>
+  
+  <a href="" >View all news</a>
+  
+</div>
+
+  <section class="c-quicklink1 o-sidebarnav">
+  <header>
+    <h2 >
+        Awesome Granite Chips 
+    </h2>
+  </header>
+  <ul>
+    <li>
+<a href="" >Generic Granite Chips</a>
+
+</li>
+    <li>
+<a href="" >Sleek Cotton Chair</a>
+
+</li>
+    <li>
+<a href="" >Rustic Granite Chicken</a>
+
+</li>
+    <li>
+<a href="" >Awesome Rubber Chicken</a>
+
+</li>
+    <li>
+<a href="" >Unbranded Metal Soap</a>
+
+</li>
+  </ul>
+</section>
+
+  <section class="c-quicklink2 o-sidebarnav">
+  <header>
+    <h2 >
+        Small Fresh Cheese 
+    </h2>
+  </header>
+  <ul>
+    <li>
+<a href="" >Sleek Frozen Tuna</a>
+
+</li>
+    <li>
+<a href="" >Incredible Concrete Gloves</a>
+
+</li>
+    <li>
+<a href="" >Handcrafted Granite Bike</a>
+
+</li>
+    <li>
+<a href="" >Incredible Concrete Table</a>
+
+</li>
+    <li>
+<a href="" >Incredible Granite Mouse</a>
+
+</li>
+    <li>
+<a href="" >Handcrafted Soft Shirt</a>
+
+</li>
+    <li>
+<a href="" >Generic Plastic Chips</a>
+
+</li>
+  </ul>
+</section>
+
+  <figure class="c-meet">
+  <div class="c-meet__avatar">
+    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/dingyi/128.jpg" alt="Janelle Hermann">
+  </div>
+  <figcaption>
+    Meet Dr. Leonel Hansen, User Experience Global Intranet Executive
+    
+    <a href="" >Read more</a>
+    
+  </figcaption>
+</figure>
+
+  <a class="c-social" href="https://twitter.com/caldiglib" data-wpel-link="external">Follow us on Twitter</a>
+
+  <footer class="c-footer">
+  <nav class="c-footer__main" aria-label="footer">
+    <ul>
+      <li>
+<a href="" >About CDL</a>
+
+
+        <ul>
+          <li>
+<a href="" >Unde et cupiditate</a>
+
+</li>
+          <li>
+<a href="" >Asperiores eum ratione</a>
+
+</li>
+          <li>
+<a href="" >Quasi adipisci sed</a>
+
+</li>
+          <li>
+<a href="" >Laboriosam est sed</a>
+
+</li>
+          <li>
+<a href="" >Eos iure laborum</a>
+
+</li>
+        </ul>
+      </li>
+      <li>
+<a href="" >Our Organization</a>
+
+
+        <ul>
+          <li>
+<a href="" >Unde et cupiditate</a>
+
+</li>
+          <li>
+<a href="" >Asperiores eum ratione</a>
+
+</li>
+          <li>
+<a href="" >Quasi adipisci sed</a>
+
+</li>
+          <li>
+<a href="" >Laboriosam est sed</a>
+
+</li>
+          <li>
+<a href="" >Eos iure laborum</a>
+
+</li>
+        </ul>
+      </li>
+      <li>
+<a href="" >Services &amp; Projects</a>
+
+
+        <ul>
+          <li>
+<a href="" >Unde et cupiditate</a>
+
+</li>
+          <li>
+<a href="" >Asperiores eum ratione</a>
+
+</li>
+          <li>
+<a href="" >Quasi adipisci sed</a>
+
+</li>
+          <li>
+<a href="" >Laboriosam est sed</a>
+
+</li>
+          <li>
+<a href="" >Eos iure laborum</a>
+
+</li>
+        </ul>
+      </li>
+      <li>
+<a href="" >Resources For...</a>
+
+
+        <ul>
+          <li>
+<a href="" >Unde et cupiditate</a>
+
+</li>
+          <li>
+<a href="" >Asperiores eum ratione</a>
+
+</li>
+          <li>
+<a href="" >Quasi adipisci sed</a>
+
+</li>
+          <li>
+<a href="" >Laboriosam est sed</a>
+
+</li>
+          <li>
+<a href="" >Eos iure laborum</a>
+
+</li>
+        </ul>
+      </li>
+      <li>
+<a href="" >Committees &amp; Groups</a>
+
+
+        <ul>
+          <li>
+<a href="" >Unde et cupiditate</a>
+
+</li>
+          <li>
+<a href="" >Asperiores eum ratione</a>
+
+</li>
+          <li>
+<a href="" >Quasi adipisci sed</a>
+
+</li>
+          <li>
+<a href="" >Laboriosam est sed</a>
+
+</li>
+          <li>
+<a href="" >Eos iure laborum</a>
+
+</li>
+        </ul>
+      </li>
+      <li>
+<a href="" >News &amp; Media</a>
+
+
+        <ul>
+          <li>
+<a href="" >Unde et cupiditate</a>
+
+</li>
+          <li>
+<a href="" >Asperiores eum ratione</a>
+
+</li>
+          <li>
+<a href="" >Quasi adipisci sed</a>
+
+</li>
+          <li>
+<a href="" >Laboriosam est sed</a>
+
+</li>
+          <li>
+<a href="" >Eos iure laborum</a>
+
+</li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div class="c-footer__legal">
+    <ul>
+      <li>
+<a href="" >Site Map</a>
+
+</li>
+      <li>
+<a href="" >Terms &amp; Conditions</a>
+
+</li>
+      <li>
+<a href="" >Privacy Policy</a>
+
+</li>
+      <li>
+<a href="" >Accessibility Policy</a>
+
+</li>
+    </ul>
+  </div>
+  <div class="c-footer__copyright">
+    <small>Copyright © 2018 The Regents of The University of California</small>
+    <small><a href="https://creativecommons.org/licenses/by/4.0/">Site text licensed under CC BY 4.0</a> <img src="https://licensebuttons.net/l/by/4.0/80x15.png" alt="CC BY 4.0"></small>
+    <small>California Digital Library</small>
+  </div>
+</footer>
+
+</div>
+

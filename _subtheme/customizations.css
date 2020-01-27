@@ -1,0 +1,5 @@
+/* Remove 'Components' label in Fractal UI: */
+
+.Navigation-group:first-child .Tree-title {
+  display: none;
+}

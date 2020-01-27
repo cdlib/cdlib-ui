@@ -1,0 +1,1056 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CDLIB UI Library Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link rel="stylesheet" href="../../ui-assets/css/main.css" media="all">
+  <style>
+    /***** Demo Styles (not used in production CSS) *****/
+    /* matches selector in WP styles.css: */
+    .alignleft {
+      display: inline;
+      float: left;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="t-layout--2">
+  <a href="#maincontent" class="c-skipnav o-button4">Skip to main content</a>
+
+  <header class="c-header" v-onmedia.screen2="detectMediaQuery2">
+  <a class="c-header__logo" href="">
+    <img src="../../ui-assets/images/logo-cdl.svg" alt="California Digital Library logo">
+  </a>
+  <div class="c-header__controls" v-if="!$mq.screen2" v-cloak>
+    <button class="o-button1" v-on:click="headerToggle1" aria-label="search"></button>
+    <button class="o-button3" v-on:click="headerToggle3" aria-label="menu"></button>
+  </div>
+  <transition name="c-header__offscreen">
+    <div class="c-header__search" v-if="isOpen1" v-cloak>
+      <form role="search" action="/" class="c-search">
+  <label class="o-label1" for="c-header-search-field">Search the California Digital Library</label>
+  <input class="o-input1" id="c-header-search-field" type="search" list="c-search-list" name="s" value="" placeholder="">
+  <datalist id="c-search-list">
+    <option value="Rustic Steel Mouse ">
+    <option value="Rustic Plastic Towels ">
+    <option value="Ergonomic Wooden Ball ">
+    <option value="Gorgeous Frozen Chips ">
+    <option value="Small Wooden Chair ">
+    <option value="Licensed Steel Shoes ">
+    <option value="Handmade Rubber Ball ">
+    <option value="Gorgeous Plastic Cheese ">
+    <option value="Practical Granite Table ">
+    <option value="Small Frozen Gloves ">
+  </datalist>
+  <button class="o-button4" type="submit">Search</button>
+</form>
+
+      <button class="o-button2" v-on:click="headerToggle2" v-if="!$mq.screen2" aria-label="close search"></button>
+    </div>
+  </transition>
+  <div class="c-header__header-nav" v-if="isOpen2" v-cloak>
+  <nav aria-label="global" class="c-headernav c-headernav-no-js c-mobilenav">
+  <ul>
+    <li class="columns-2 menu-item-has-children">
+<a href="" >About CDL</a>
+
+
+      <ul>
+        <li class="menu-item-has-children">
+<a href="" >Intelligent Cotton Keyboard</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Unbranded Concrete Gloves</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Generic Metal Chips</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="columns-3 menu-item-has-children">
+<a href="" >Services &amp; Projects</a>
+
+
+      <ul>
+        <li class="menu-item-has-children">
+<a href="" >Intelligent Cotton Keyboard</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Unbranded Concrete Gloves</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Generic Metal Chips</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class=" menu-item-has-children">
+<a href="" >Resources for...</a>
+
+
+      <ul>
+        <li class="menu-item-has-children">
+<a href="" >Intelligent Cotton Keyboard</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Unbranded Concrete Gloves</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Generic Metal Chips</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class=" menu-item-has-children">
+<a href="" >Committees &amp; Groups</a>
+
+
+      <ul>
+        <li class="menu-item-has-children">
+<a href="" >Intelligent Cotton Keyboard</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Unbranded Concrete Gloves</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Generic Metal Chips</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class=" menu-item-has-children">
+<a href="" >News &amp; Groups</a>
+
+
+      <ul>
+        <li class="menu-item-has-children">
+<a href="" >Intelligent Cotton Keyboard</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Unbranded Concrete Gloves</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Generic Metal Chips</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+  </div>
+  <div class="c-header__utility-nav" v-if="isOpen2" v-cloak>
+    <nav aria-label="top" class="c-utilitynav c-mobilenav">
+  <ul>
+    <li>
+      
+      <a href="" >Staff Directory</a>
+      
+    </li>
+    <li>
+      
+      <a href="" >Contact CDL</a>
+      
+    </li>
+    <li>
+      
+      <a href="" >Report a Problem</a>
+      
+    </li>
+    <li>
+      
+      <a href="" >System Status</a>
+      
+    </li>
+  </ul>
+</nav>
+
+  </div>
+</header>
+
+  <nav aria-label="breadcrumb" class="c-breadcrumb">
+  <ul>
+    <li>
+<a href="" >Unbranded Fresh Bike</a>
+
+</li>
+    <li>
+<a href="" >Fantastic Metal Sausages</a>
+
+</li>
+    <li>This Page Title</li>
+  </ul>
+</nav>
+
+  <aside class="t-layout__sidebar1">
+    <div class="c-refine o-sidebarnav" v-onmedia.screen2="detectMediaQuery">
+  <header>
+    <h2 >
+        Narrow Your Results 
+    </h2>
+    <a href="" class="c-refine__clear">Clear</a>
+    <template v-if="!$mq.screen2">
+      <button class="c-refine__open" v-on:click="toggle1" v-if="!isDisplayed">Open</button>
+      <button class="c-refine__close" v-on:click="toggle1" v-if="isDisplayed">Close</button>
+    </template>
+  </header>
+  <ul v-if="isDisplayed" v-cloak>
+    <li>
+      <a href="">
+        <span class="c-refine__item-text">Small Soft Ball</span>
+        <span class="c-refine__item-number">(185 <span>results</span>)</span>
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <span class="c-refine__item-text">Handmade Rubber Chips</span>
+        <span class="c-refine__item-number">(79 <span>results</span>)</span>
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <span class="c-refine__item-text">Generic Wooden Car</span>
+        <span class="c-refine__item-number">(118 <span>results</span>)</span>
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <span class="c-refine__item-text">Incredible Concrete Towels</span>
+        <span class="c-refine__item-number">(89 <span>results</span>)</span>
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <span class="c-refine__item-text">Sleek Fresh Ball</span>
+        <span class="c-refine__item-number">(106 <span>results</span>)</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+  </aside>
+  <main id="maincontent">
+    <div class="c-filter">
+  <div class="c-filter__group">
+    <div class="c-filter__label" id="c-filter-show-label">Show:</div>
+    <ul aria-labelledby="c-filter-show-label">
+      <li><a href="#" v-on:click="showButtonToggle1" v-bind:aria-current="[showButton1isPressed]">All results</a></li>
+      <li><a href="#" v-on:click="showButtonToggle2" v-bind:aria-current="[showButton2isPressed]">Web pages</a></li>
+      <li><a href="#" v-on:click="showButtonToggle3" v-bind:aria-current="[showButton3isPressed]">CDLINFO posts</a></li>
+      <li><a href="#" v-on:click="showButtonToggle4" v-bind:aria-current="[showButton4isPressed]">Documents</a></li>
+    </ul>
+  </div>
+  <div class="c-filter__group">
+    <div class="c-filter__label" id="c-filter-sort-label">Sort by:</div>
+    <ul aria-labelledby="c-filter-sort-label">
+      <li><a href="#" v-on:click="sortButtonToggle1" v-bind:aria-current="[sortButton1isPressed]">Relevancy</a></li>
+      <li><a href="#" v-on:click="sortButtonToggle2" v-bind:aria-current="[sortButton2isPressed]">Date</a></li>
+    </ul>
+  </div>
+</div>
+
+    <h1 class="c-records">
+  Showing 1 - 10 of 1024 results for "hat"
+</h1>
+
+    <div class="c-searchresult">
+  <h2 >
+      
+      <a href="file.html" >Tasty Concrete Gloves</a>
+      
+  </h2>
+  <span class="c-searchresult__doctype o-docicon__xls" aria-label="xls document">xls</span>
+  <div class="c-searchresult__group">News and Media: CDLINFO</div>
+  <div class="c-searchresult__quote">quia iure commodi aliquid est sit autem at molestias aut voluptas sapiente architecto accusantium omnis UnbrokenTextloremipsumdolorsitametconsecteturadipisicingelitNequedignissimosfugitnamreprehenderitminimadelenitiquamquiasitisteexpeditatemp <em>report</em> dolor sit dolorem corporis commodi vitae possimus asperiores doloremque et dolorum est qui sint quidem</div>
+  <time>November 10, 2018</time>
+</div>
+<div class="c-searchresult">
+  <h2 >
+      
+      <a href="file.pptx" >Sleek Steel Sausages</a>
+      
+  </h2>
+  <span class="c-searchresult__doctype o-docicon__docx" aria-label="docx document">docx</span>
+  <div class="c-searchresult__group">Information Services</div>
+  <div class="c-searchresult__quote">nisi molestias qui veritatis sit sequi soluta explicabo nobis delectus eum iusto doloremque optio nisi UnbrokenTextloremipsumdolorsitametconsecteturadipisicingelitNequedignissimosfugitnamreprehenderitminimadelenitiquamquiasitisteexpeditatemp <em>campus</em> aut dolor architecto occaecati id omnis distinctio ratione aliquam vero a sunt voluptas debitis officiis</div>
+  <time>January 21, 2015</time>
+</div>
+<div class="c-searchresult">
+  <h2 >
+      
+      <a href="file.pdf" >Rustic Metal Towels</a>
+      
+  </h2>
+  <span class="c-searchresult__doctype o-docicon__pdf" aria-label="pdf document">pdf</span>
+  <div class="c-searchresult__group">User Experience Design Services</div>
+  <div class="c-searchresult__quote">libero ea dolores alias placeat velit deleniti architecto dolor consectetur et eius delectus veritatis ipsum UnbrokenTextloremipsumdolorsitametconsecteturadipisicingelitNequedignissimosfugitnamreprehenderitminimadelenitiquamquiasitisteexpeditatemp <em>campus</em> perspiciatis at quaerat hic magnam consequatur molestiae consequatur odit numquam quo molestias id est qui</div>
+  <time>December 28, 2018</time>
+</div>
+<div class="c-searchresult">
+  <h2 >
+      
+      <a href="file.html" >Fantastic Concrete Salad</a>
+      
+  </h2>
+  <span class="c-searchresult__doctype o-docicon__ppt" aria-label="ppt document">ppt</span>
+  <div class="c-searchresult__group">News and Media: CDLINFO</div>
+  <div class="c-searchresult__quote">rerum porro provident omnis enim repellendus at vitae est exercitationem laborum molestias eos doloribus enim UnbrokenTextloremipsumdolorsitametconsecteturadipisicingelitNequedignissimosfugitnamreprehenderitminimadelenitiquamquiasitisteexpeditatemp <em>library</em> officiis perspiciatis id voluptatibus architecto soluta reiciendis laboriosam quasi praesentium quisquam occaecati totam perspiciatis aut</div>
+  <time>August 2, 2017</time>
+</div>
+<div class="c-searchresult">
+  <h2 >
+      
+      <a href="file.pdf" >Sleek Plastic Table</a>
+      
+  </h2>
+  <span class="c-searchresult__doctype o-docicon__xls" aria-label="xls document">xls</span>
+  <div class="c-searchresult__group">Discovery ＆ Delivery Program</div>
+  <div class="c-searchresult__quote">voluptas ad dolores similique et pariatur itaque ab in aliquid at nemo quam enim vero UnbrokenTextloremipsumdolorsitametconsecteturadipisicingelitNequedignissimosfugitnamreprehenderitminimadelenitiquamquiasitisteexpeditatemp <em>digital</em> ipsa provident nihil repellat sed rerum fugit cupiditate dolores ab est nostrum ratione cumque et</div>
+  <time>May 5, 2018</time>
+</div>
+<div class="c-searchresult">
+  <h2 >
+      
+      <a href="file.pptx" >Licensed Concrete Chair</a>
+      
+  </h2>
+  <span class="c-searchresult__doctype o-docicon__pdf" aria-label="pdf document">pdf</span>
+  <div class="c-searchresult__group">Information Services</div>
+  <div class="c-searchresult__quote">unde facere perferendis et officia sed voluptatem expedita ut est consequatur dolorum et qui ratione UnbrokenTextloremipsumdolorsitametconsecteturadipisicingelitNequedignissimosfugitnamreprehenderitminimadelenitiquamquiasitisteexpeditatemp <em>library</em> consequuntur quo qui labore ut magni animi officia ipsa ea molestias consequatur consequatur distinctio et</div>
+  <time>January 13, 2016</time>
+</div>
+<div class="c-searchresult">
+  <h2 >
+      
+      <a href="file.zip" >Incredible Cotton Towels</a>
+      
+  </h2>
+  <span class="c-searchresult__doctype o-docicon__zip" aria-label="zip document">zip</span>
+  <div class="c-searchresult__group">User Experience Design Services</div>
+  <div class="c-searchresult__quote">dolores et temporibus in aut repellat natus rem eligendi eaque at illum voluptatum ea exercitationem UnbrokenTextloremipsumdolorsitametconsecteturadipisicingelitNequedignissimosfugitnamreprehenderitminimadelenitiquamquiasitisteexpeditatemp <em>report</em> quia quos id ullam sunt unde deleniti minus consequuntur quia dignissimos corrupti qui totam alias</div>
+  <time>September 5, 2014</time>
+</div>
+<div class="c-searchresult">
+  <h2 >
+      
+      <a href="file.ppt" >Ergonomic Fresh Pizza</a>
+      
+  </h2>
+  <span class="c-searchresult__doctype o-docicon__html" aria-label="html document">html</span>
+  <div class="c-searchresult__group">Collections Program</div>
+  <div class="c-searchresult__quote">necessitatibus inventore deserunt nemo nesciunt excepturi fugiat corrupti ut aliquid ipsam ab omnis vero magnam UnbrokenTextloremipsumdolorsitametconsecteturadipisicingelitNequedignissimosfugitnamreprehenderitminimadelenitiquamquiasitisteexpeditatemp <em>library</em> cum voluptas sequi cumque aut ut assumenda nesciunt facilis et sit ipsum et perferendis et</div>
+  <time>September 15, 2001</time>
+</div>
+<div class="c-searchresult">
+  <h2 >
+      
+      <a href="file.xlsx" >Practical Wooden Car</a>
+      
+  </h2>
+  <span class="c-searchresult__doctype o-docicon__xls" aria-label="xls document">xls</span>
+  <div class="c-searchresult__group">Collections Program</div>
+  <div class="c-searchresult__quote">deserunt molestiae et esse ut et amet minima fuga beatae totam distinctio quas sunt rerum UnbrokenTextloremipsumdolorsitametconsecteturadipisicingelitNequedignissimosfugitnamreprehenderitminimadelenitiquamquiasitisteexpeditatemp <em>digital</em> vero ut libero eveniet pariatur laborum aut sed deleniti saepe vero vel in non blanditiis</div>
+  <time>November 24, 2012</time>
+</div>
+<div class="c-searchresult">
+  <h2 >
+      
+      <a href="file.xls" >Ergonomic Rubber Soap</a>
+      
+  </h2>
+  <span class="c-searchresult__doctype o-docicon__xls" aria-label="xls document">xls</span>
+  <div class="c-searchresult__group">Discovery ＆ Delivery Program</div>
+  <div class="c-searchresult__quote">dolore et aliquam hic repellat exercitationem illum qui beatae rerum eos ut est modi autem UnbrokenTextloremipsumdolorsitametconsecteturadipisicingelitNequedignissimosfugitnamreprehenderitminimadelenitiquamquiasitisteexpeditatemp <em>report</em> sapiente nisi quis iusto iure omnis earum quos aut fuga nostrum quas explicabo quas vitae</div>
+  <time>March 25, 2008</time>
+</div>
+<div class="c-searchresult">
+  <h2 >
+      
+      <a href="file.xlsx" >Handcrafted Plastic Mouse</a>
+      
+  </h2>
+  <span class="c-searchresult__doctype o-docicon__xls" aria-label="xls document">xls</span>
+  <div class="c-searchresult__group">News and Media: CDLINFO</div>
+  <div class="c-searchresult__quote">quis nemo dolores ab qui voluptatem consequatur sunt quia deleniti sed nostrum voluptates rerum qui UnbrokenTextloremipsumdolorsitametconsecteturadipisicingelitNequedignissimosfugitnamreprehenderitminimadelenitiquamquiasitisteexpeditatemp <em>campus</em> non facere voluptatem saepe voluptate eaque asperiores recusandae iusto repellat laboriosam ut incidunt saepe modi</div>
+  <time>October 1, 2004</time>
+</div>
+<div class="c-searchresult">
+  <h2 >
+      
+      <a href="file.html" >Intelligent Metal Ball</a>
+      
+  </h2>
+  <span class="c-searchresult__doctype o-docicon__pptx" aria-label="pptx document">pptx</span>
+  <div class="c-searchresult__group">Collections Program</div>
+  <div class="c-searchresult__quote">maxime ipsa sint voluptatem explicabo velit rem et doloribus sit ea dolore dolorum amet nemo UnbrokenTextloremipsumdolorsitametconsecteturadipisicingelitNequedignissimosfugitnamreprehenderitminimadelenitiquamquiasitisteexpeditatemp <em>campus</em> praesentium unde qui voluptate et unde ut tenetur quas illo et eius sunt ipsam autem</div>
+  <time>February 15, 2010</time>
+</div>
+<div class="c-searchresult">
+  <h2 >
+      
+      <a href="file.xls" >Gorgeous Cotton Computer</a>
+      
+  </h2>
+  <span class="c-searchresult__doctype o-docicon__pdf" aria-label="pdf document">pdf</span>
+  <div class="c-searchresult__quote">nobis officiis deserunt quidem minima iure quae eveniet repellat et consequuntur assumenda quia recusandae ea UnbrokenTextloremipsumdolorsitametconsecteturadipisicingelitNequedignissimosfugitnamreprehenderitminimadelenitiquamquiasitisteexpeditatemp <em>digital</em> accusantium amet quos corporis beatae autem molestiae et fuga libero rerum nam dolores et cupiditate</div>
+  <time>June 28, 2017</time>
+</div>
+<div class="c-searchresult">
+  <h2 >
+      
+      <a href="file.pdf" >Ergonomic Steel Chair</a>
+      
+  </h2>
+  <span class="c-searchresult__doctype o-docicon__pdf" aria-label="pdf document">pdf</span>
+  <div class="c-searchresult__group">User Experience Design Services</div>
+  <div class="c-searchresult__quote">et dicta fugit provident molestiae enim maxime similique ullam voluptates sit aspernatur labore harum neque UnbrokenTextloremipsumdolorsitametconsecteturadipisicingelitNequedignissimosfugitnamreprehenderitminimadelenitiquamquiasitisteexpeditatemp <em>library</em> dolores ipsum aliquid ipsum ut dolorem quas aut commodi dolor eum quo dolor nihil quod</div>
+  <time>December 7, 2001</time>
+</div>
+<div class="c-searchresult">
+  <h2 >
+      
+      <a href="file.html" >Sleek Steel Hat</a>
+      
+  </h2>
+  <span class="c-searchresult__doctype o-docicon__zip" aria-label="zip document">zip</span>
+  <div class="c-searchresult__group">Discovery ＆ Delivery Program</div>
+  <div class="c-searchresult__quote">ut et vel quaerat et sed sunt ratione qui quas nesciunt nihil illo mollitia perferendis UnbrokenTextloremipsumdolorsitametconsecteturadipisicingelitNequedignissimosfugitnamreprehenderitminimadelenitiquamquiasitisteexpeditatemp <em>campus</em> accusantium qui aut et placeat aut provident doloremque totam unde similique voluptas pariatur magnam fugiat</div>
+  <time>July 18, 2017</time>
+</div>
+<div class="c-searchresult">
+  <h2 >
+      
+      <a href="file.pptx" >Awesome Cotton Ball</a>
+      
+  </h2>
+  <span class="c-searchresult__doctype o-docicon__zip" aria-label="zip document">zip</span>
+  <div class="c-searchresult__group">Information Services</div>
+  <div class="c-searchresult__quote">fugit qui doloremque nihil hic inventore quia sunt et repudiandae dolorem numquam quaerat sed iste UnbrokenTextloremipsumdolorsitametconsecteturadipisicingelitNequedignissimosfugitnamreprehenderitminimadelenitiquamquiasitisteexpeditatemp <em>books</em> quibusdam dolorem voluptas aliquam perspiciatis laborum ab repellat et excepturi ut harum non quibusdam ut</div>
+  <time>August 16, 2005</time>
+</div>
+<div class="c-searchresult">
+  <h2 >
+      
+      <a href="file.rtf" >Licensed Plastic Bike</a>
+      
+  </h2>
+  <span class="c-searchresult__doctype o-docicon__xlsx" aria-label="xlsx document">xlsx</span>
+  <div class="c-searchresult__group">Collections Program</div>
+  <div class="c-searchresult__quote">sequi eum optio odio quis adipisci officia qui molestias repudiandae cupiditate quis et deserunt id UnbrokenTextloremipsumdolorsitametconsecteturadipisicingelitNequedignissimosfugitnamreprehenderitminimadelenitiquamquiasitisteexpeditatemp <em>books</em> provident vel dolor assumenda itaque error veniam eligendi in quod laboriosam eum tenetur quo voluptatem</div>
+  <time>February 8, 2010</time>
+</div>
+<div class="c-searchresult">
+  <h2 >
+      
+      <a href="file.pdf" >Licensed Frozen Car</a>
+      
+  </h2>
+  <span class="c-searchresult__doctype o-docicon__xls" aria-label="xls document">xls</span>
+  <div class="c-searchresult__group">User Experience Design Services</div>
+  <div class="c-searchresult__quote">qui illum qui quas ea veritatis nam consequuntur aut aut exercitationem recusandae illum in sit UnbrokenTextloremipsumdolorsitametconsecteturadipisicingelitNequedignissimosfugitnamreprehenderitminimadelenitiquamquiasitisteexpeditatemp <em>campus</em> numquam deserunt ad voluptatem adipisci voluptatem eveniet aut deleniti voluptas autem consequatur tempore in dicta</div>
+  <time>November 2, 2013</time>
+</div>
+<div class="c-searchresult">
+  <h2 >
+      
+      <a href="file.txt" >Handcrafted Rubber Soap</a>
+      
+  </h2>
+  <span class="c-searchresult__doctype o-docicon__pptx" aria-label="pptx document">pptx</span>
+  <div class="c-searchresult__group">User Experience Design Services</div>
+  <div class="c-searchresult__quote">sit architecto rerum repellat et commodi aliquid nihil numquam suscipit aut necessitatibus nesciunt eius placeat UnbrokenTextloremipsumdolorsitametconsecteturadipisicingelitNequedignissimosfugitnamreprehenderitminimadelenitiquamquiasitisteexpeditatemp <em>digital</em> quas nulla quis nulla similique est ratione repudiandae pariatur ut officia accusantium quisquam et praesentium</div>
+  <time>August 24, 2014</time>
+</div>
+<div class="c-searchresult">
+  <h2 >
+      
+      <a href="file.xls" >Sleek Wooden Pizza</a>
+      
+  </h2>
+  <span class="c-searchresult__doctype o-docicon__doc" aria-label="doc document">doc</span>
+  <div class="c-searchresult__quote">alias tenetur ipsum dignissimos quos provident et quidem odit itaque quo velit vitae porro culpa UnbrokenTextloremipsumdolorsitametconsecteturadipisicingelitNequedignissimosfugitnamreprehenderitminimadelenitiquamquiasitisteexpeditatemp <em>campus</em> voluptas tenetur dolor at minima vel placeat modi libero ullam facilis sunt illo tenetur velit</div>
+  <time>July 17, 2008</time>
+</div>
+
+    <nav class="c-pagination">
+  <ul>
+    <li><a href="" aria-label="previous page">Previous</a></li>
+    <li><a href="" aria-label="page 1">1</a></li>
+    <li><a href="" title="previous set of pages">&hellip;</a></li>
+    <li><a href="" aria-label="page 11">11</a></li>
+    <li><a href="" aria-label="page 12">12</a></li>
+    <li><a href="" aria-current="page">13</a></li>
+    <li><a href="" aria-label="page 14">14</a></li>
+    <li><a href="" aria-label="page 15">15</a></li>
+    <li><a href="" title="next set of pages">&hellip;</a></li>
+    <li><a href="" aria-label="page 47">47</a></li>
+    <li><a href="" aria-label="next page">Next</a></li>
+  </ul>
+</nav>
+
+  </main>
+  <footer class="c-footer">
+  <nav class="c-footer__main" aria-label="footer">
+    <ul>
+      <li>
+<a href="" >About CDL</a>
+
+
+        <ul>
+          <li>
+<a href="" >Unde et cupiditate</a>
+
+</li>
+          <li>
+<a href="" >Asperiores eum ratione</a>
+
+</li>
+          <li>
+<a href="" >Quasi adipisci sed</a>
+
+</li>
+          <li>
+<a href="" >Laboriosam est sed</a>
+
+</li>
+          <li>
+<a href="" >Eos iure laborum</a>
+
+</li>
+        </ul>
+      </li>
+      <li>
+<a href="" >Our Organization</a>
+
+
+        <ul>
+          <li>
+<a href="" >Unde et cupiditate</a>
+
+</li>
+          <li>
+<a href="" >Asperiores eum ratione</a>
+
+</li>
+          <li>
+<a href="" >Quasi adipisci sed</a>
+
+</li>
+          <li>
+<a href="" >Laboriosam est sed</a>
+
+</li>
+          <li>
+<a href="" >Eos iure laborum</a>
+
+</li>
+        </ul>
+      </li>
+      <li>
+<a href="" >Services &amp; Projects</a>
+
+
+        <ul>
+          <li>
+<a href="" >Unde et cupiditate</a>
+
+</li>
+          <li>
+<a href="" >Asperiores eum ratione</a>
+
+</li>
+          <li>
+<a href="" >Quasi adipisci sed</a>
+
+</li>
+          <li>
+<a href="" >Laboriosam est sed</a>
+
+</li>
+          <li>
+<a href="" >Eos iure laborum</a>
+
+</li>
+        </ul>
+      </li>
+      <li>
+<a href="" >Resources For...</a>
+
+
+        <ul>
+          <li>
+<a href="" >Unde et cupiditate</a>
+
+</li>
+          <li>
+<a href="" >Asperiores eum ratione</a>
+
+</li>
+          <li>
+<a href="" >Quasi adipisci sed</a>
+
+</li>
+          <li>
+<a href="" >Laboriosam est sed</a>
+
+</li>
+          <li>
+<a href="" >Eos iure laborum</a>
+
+</li>
+        </ul>
+      </li>
+      <li>
+<a href="" >Committees &amp; Groups</a>
+
+
+        <ul>
+          <li>
+<a href="" >Unde et cupiditate</a>
+
+</li>
+          <li>
+<a href="" >Asperiores eum ratione</a>
+
+</li>
+          <li>
+<a href="" >Quasi adipisci sed</a>
+
+</li>
+          <li>
+<a href="" >Laboriosam est sed</a>
+
+</li>
+          <li>
+<a href="" >Eos iure laborum</a>
+
+</li>
+        </ul>
+      </li>
+      <li>
+<a href="" >News &amp; Media</a>
+
+
+        <ul>
+          <li>
+<a href="" >Unde et cupiditate</a>
+
+</li>
+          <li>
+<a href="" >Asperiores eum ratione</a>
+
+</li>
+          <li>
+<a href="" >Quasi adipisci sed</a>
+
+</li>
+          <li>
+<a href="" >Laboriosam est sed</a>
+
+</li>
+          <li>
+<a href="" >Eos iure laborum</a>
+
+</li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div class="c-footer__legal">
+    <ul>
+      <li>
+<a href="" >Site Map</a>
+
+</li>
+      <li>
+<a href="" >Terms &amp; Conditions</a>
+
+</li>
+      <li>
+<a href="" >Privacy Policy</a>
+
+</li>
+      <li>
+<a href="" >Accessibility Policy</a>
+
+</li>
+    </ul>
+  </div>
+  <div class="c-footer__copyright">
+    <small>Copyright © 2018 The Regents of The University of California</small>
+    <small><a href="https://creativecommons.org/licenses/by/4.0/">Site text licensed under CC BY 4.0</a> <img src="https://licensebuttons.net/l/by/4.0/80x15.png" alt="CC BY 4.0"></small>
+    <small>California Digital Library</small>
+  </div>
+</footer>
+
+</div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/core-js@2.6.1/client/core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.15/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-match-media@1.0.2/dist/index.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/details-element-polyfill@2.0.3/dist/details-element-polyfill.min.js"></script>
+  <script src="../../ui-assets/js/main.js"></script>
+ </body>
+</html>
+

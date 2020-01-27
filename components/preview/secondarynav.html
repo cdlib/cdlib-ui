@@ -1,0 +1,127 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CDLIB UI Library Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link rel="stylesheet" href="../../ui-assets/css/main.css" media="all">
+  <style>
+    /***** Demo Styles (not used in production CSS) *****/
+    /* matches selector in WP styles.css: */
+    .alignleft {
+      display: inline;
+      float: left;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <nav aria-labelledby="secondarynav-heading" class="c-secondarynav o-sidebarnav" v-onmedia.screen2="detectMediaQuery">
+  <header>
+    <h2 id="secondarynav-heading">
+        
+        <a href="" >Tasty Concrete Bacon</a>
+        
+    </h2>
+    <template v-if="!$mq.screen2">
+      <button aria-label="close navigation menu" aria-expanded="true" class="o-button5" v-on:click="toggle1" v-if="isDisplayed">Close Menu</button>
+      <button aria-label="open navigation menu" aria-expanded="false" class="o-button6" v-on:click="toggle1" v-if="!isDisplayed">Open Menu</button>
+    </template>
+  </header>
+  <div v-if="isDisplayed" v-cloak>
+    <ul>
+      <li>
+<a href="" >Tasty Concrete Bacon</a>
+
+
+        <ul>
+          <li>
+<a href="" >Handmade Rubber Soap</a>
+
+</li>
+          <li>
+<a href="" >Gorgeous Wooden Ball</a>
+
+</li>
+          <li>
+<a href="" >Intelligent Steel Tuna</a>
+
+</li>
+          <li>
+<a href="" >Tasty Concrete Bacon</a>
+
+
+            <ul>
+              <li>
+<a href="" >Handcrafted Concrete Chair</a>
+
+</li>
+              <li>
+<a href="" >Incredible Wooden Sausages</a>
+
+</li>
+              <li>
+<a href="" >Small Cotton Fish</a>
+
+</li>
+              <li>
+<a href="" >Tasty Concrete Bacon</a>
+
+
+                <ul>
+                  <li>
+<a href="https://sp.ucop.edu/document.html" >Generic Fresh Ball</a>
+
+</li>
+                  <li>
+<a href="https://sp.ucop.edu/document.html" >Incredible Rubber Ball</a>
+
+</li>
+                  <li>
+<a href="https://sp.ucop.edu/document.html" >Intelligent Soft Chair</a>
+
+</li>
+                  <li>
+<a href="" >Tasty Concrete Bacon</a>
+
+
+                    <ul>
+                      <li>
+<a href="" >Refined Granite Gloves</a>
+
+</li>
+                      <li>
+<a href="" >Unbranded Wooden Tuna</a>
+
+</li>
+                      <li>
+<a href="" >Refined Metal Shoes</a>
+
+</li>
+                      <li class="current_page_item">
+<a href="" >Tasty Concrete Bacon</a>
+
+
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/core-js@2.6.1/client/core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.15/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-match-media@1.0.2/dist/index.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/details-element-polyfill@2.0.3/dist/details-element-polyfill.min.js"></script>
+  <script src="../../ui-assets/js/main.js"></script>
+ </body>
+</html>
+

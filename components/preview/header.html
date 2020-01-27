@@ -1,0 +1,536 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CDLIB UI Library Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link rel="stylesheet" href="../../ui-assets/css/main.css" media="all">
+  <style>
+    /***** Demo Styles (not used in production CSS) *****/
+    /* matches selector in WP styles.css: */
+    .alignleft {
+      display: inline;
+      float: left;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <header class="c-header" v-onmedia.screen2="detectMediaQuery2">
+  <a class="c-header__logo" href="">
+    <img src="../../ui-assets/images/logo-cdl.svg" alt="California Digital Library logo">
+  </a>
+  <div class="c-header__controls" v-if="!$mq.screen2" v-cloak>
+    <button class="o-button1" v-on:click="headerToggle1" aria-label="search"></button>
+    <button class="o-button3" v-on:click="headerToggle3" aria-label="menu"></button>
+  </div>
+  <transition name="c-header__offscreen">
+    <div class="c-header__search" v-if="isOpen1" v-cloak>
+      <form role="search" action="/" class="c-search">
+  <label class="o-label1" for="c-header-search-field">Search the California Digital Library</label>
+  <input class="o-input1" id="c-header-search-field" type="search" list="c-search-list" name="s" value="" placeholder="">
+  <datalist id="c-search-list">
+    <option value="Rustic Steel Mouse ">
+    <option value="Rustic Plastic Towels ">
+    <option value="Ergonomic Wooden Ball ">
+    <option value="Gorgeous Frozen Chips ">
+    <option value="Small Wooden Chair ">
+    <option value="Licensed Steel Shoes ">
+    <option value="Handmade Rubber Ball ">
+    <option value="Gorgeous Plastic Cheese ">
+    <option value="Practical Granite Table ">
+    <option value="Small Frozen Gloves ">
+  </datalist>
+  <button class="o-button4" type="submit">Search</button>
+</form>
+
+      <button class="o-button2" v-on:click="headerToggle2" v-if="!$mq.screen2" aria-label="close search"></button>
+    </div>
+  </transition>
+  <div class="c-header__header-nav" v-if="isOpen2" v-cloak>
+  <nav aria-label="global" class="c-headernav c-headernav-no-js c-mobilenav">
+  <ul>
+    <li class="columns-2 menu-item-has-children">
+<a href="" >About CDL</a>
+
+
+      <ul>
+        <li class="menu-item-has-children">
+<a href="" >Intelligent Cotton Keyboard</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Unbranded Concrete Gloves</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Generic Metal Chips</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="columns-3 menu-item-has-children">
+<a href="" >Services &amp; Projects</a>
+
+
+      <ul>
+        <li class="menu-item-has-children">
+<a href="" >Intelligent Cotton Keyboard</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Unbranded Concrete Gloves</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Generic Metal Chips</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class=" menu-item-has-children">
+<a href="" >Resources for...</a>
+
+
+      <ul>
+        <li class="menu-item-has-children">
+<a href="" >Intelligent Cotton Keyboard</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Unbranded Concrete Gloves</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Generic Metal Chips</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class=" menu-item-has-children">
+<a href="" >Committees &amp; Groups</a>
+
+
+      <ul>
+        <li class="menu-item-has-children">
+<a href="" >Intelligent Cotton Keyboard</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Unbranded Concrete Gloves</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Generic Metal Chips</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class=" menu-item-has-children">
+<a href="" >News &amp; Groups</a>
+
+
+      <ul>
+        <li class="menu-item-has-children">
+<a href="" >Intelligent Cotton Keyboard</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Unbranded Concrete Gloves</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Generic Metal Chips</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+  </div>
+  <div class="c-header__utility-nav" v-if="isOpen2" v-cloak>
+    <nav aria-label="top" class="c-utilitynav c-mobilenav">
+  <ul>
+    <li>
+      
+      <a href="" >Staff Directory</a>
+      
+    </li>
+    <li>
+      
+      <a href="" >Contact CDL</a>
+      
+    </li>
+    <li>
+      
+      <a href="" >Report a Problem</a>
+      
+    </li>
+    <li>
+      
+      <a href="" >System Status</a>
+      
+    </li>
+  </ul>
+</nav>
+
+  </div>
+</header>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/core-js@2.6.1/client/core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.15/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-match-media@1.0.2/dist/index.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/details-element-polyfill@2.0.3/dist/details-element-polyfill.min.js"></script>
+  <script src="../../ui-assets/js/main.js"></script>
+ </body>
+</html>
+

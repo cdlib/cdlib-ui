@@ -1,0 +1,1027 @@
+
+
+<div class="t-layout--4">
+  <a href="#maincontent" class="c-skipnav o-button4">Skip to main content</a>
+
+  <header class="c-header" v-onmedia.screen2="detectMediaQuery2">
+  <a class="c-header__logo" href="">
+    <img src="../../ui-assets/images/logo-cdl.svg" alt="California Digital Library logo">
+  </a>
+  <div class="c-header__controls" v-if="!$mq.screen2" v-cloak>
+    <button class="o-button1" v-on:click="headerToggle1" aria-label="search"></button>
+    <button class="o-button3" v-on:click="headerToggle3" aria-label="menu"></button>
+  </div>
+  <transition name="c-header__offscreen">
+    <div class="c-header__search" v-if="isOpen1" v-cloak>
+      <form role="search" action="/" class="c-search">
+  <label class="o-label1" for="c-header-search-field">Search the California Digital Library</label>
+  <input class="o-input1" id="c-header-search-field" type="search" list="c-search-list" name="s" value="" placeholder="">
+  <datalist id="c-search-list">
+    <option value="Rustic Steel Mouse ">
+    <option value="Rustic Plastic Towels ">
+    <option value="Ergonomic Wooden Ball ">
+    <option value="Gorgeous Frozen Chips ">
+    <option value="Small Wooden Chair ">
+    <option value="Licensed Steel Shoes ">
+    <option value="Handmade Rubber Ball ">
+    <option value="Gorgeous Plastic Cheese ">
+    <option value="Practical Granite Table ">
+    <option value="Small Frozen Gloves ">
+  </datalist>
+  <button class="o-button4" type="submit">Search</button>
+</form>
+
+      <button class="o-button2" v-on:click="headerToggle2" v-if="!$mq.screen2" aria-label="close search"></button>
+    </div>
+  </transition>
+  <div class="c-header__header-nav" v-if="isOpen2" v-cloak>
+  <nav aria-label="global" class="c-headernav c-headernav-no-js c-mobilenav">
+  <ul>
+    <li class="columns-2 menu-item-has-children">
+<a href="" >About CDL</a>
+
+
+      <ul>
+        <li class="menu-item-has-children">
+<a href="" >Intelligent Cotton Keyboard</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Unbranded Concrete Gloves</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Generic Metal Chips</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="columns-3 menu-item-has-children">
+<a href="" >Services &amp; Projects</a>
+
+
+      <ul>
+        <li class="menu-item-has-children">
+<a href="" >Intelligent Cotton Keyboard</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Unbranded Concrete Gloves</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Generic Metal Chips</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class=" menu-item-has-children">
+<a href="" >Resources for...</a>
+
+
+      <ul>
+        <li class="menu-item-has-children">
+<a href="" >Intelligent Cotton Keyboard</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Unbranded Concrete Gloves</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Generic Metal Chips</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class=" menu-item-has-children">
+<a href="" >Committees &amp; Groups</a>
+
+
+      <ul>
+        <li class="menu-item-has-children">
+<a href="" >Intelligent Cotton Keyboard</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Unbranded Concrete Gloves</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Generic Metal Chips</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class=" menu-item-has-children">
+<a href="" >News &amp; Groups</a>
+
+
+      <ul>
+        <li class="menu-item-has-children">
+<a href="" >Intelligent Cotton Keyboard</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Unbranded Concrete Gloves</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+        <li class="menu-item-has-children">
+<a href="" >Generic Metal Chips</a>
+
+
+          <ul>
+            <li>
+<a href="" >Unbranded Fresh Cheese</a>
+
+</li>
+            <li>
+<a href="" >Awesome Concrete Sausages</a>
+
+</li>
+            <li>
+<a href="" >Licensed Cotton Cheese</a>
+
+</li>
+            <li>
+<a href="" >Handcrafted Soft Chicken</a>
+
+</li>
+            <li>
+<a href="" >Refined Fresh Bike</a>
+
+</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+  </div>
+  <div class="c-header__utility-nav" v-if="isOpen2" v-cloak>
+    <nav aria-label="top" class="c-utilitynav c-mobilenav">
+  <ul>
+    <li>
+      
+      <a href="" >Staff Directory</a>
+      
+    </li>
+    <li>
+      
+      <a href="" >Contact CDL</a>
+      
+    </li>
+    <li>
+      
+      <a href="" >Report a Problem</a>
+      
+    </li>
+    <li>
+      
+      <a href="" >System Status</a>
+      
+    </li>
+  </ul>
+</nav>
+
+  </div>
+</header>
+
+  <nav aria-label="breadcrumb" class="c-breadcrumb">
+  <ul>
+    <li>
+<a href="" >Unbranded Fresh Bike</a>
+
+</li>
+    <li>
+<a href="" >Fantastic Metal Sausages</a>
+
+</li>
+    <li>This Page Title</li>
+  </ul>
+</nav>
+
+  <main id="maincontent">
+    <h1 >
+        Post Title 
+    </h1>
+    <div class="c-blogmetadata">
+  <time>May 8, 2003</time>
+  <span>Author: 
+<a href="" >Clifford Buckridge</a>
+
+</span>
+  <span>Categories:
+    <ul>
+      <li>
+<a href="" >Collection Development</a>
+
+</li>
+      <li>
+<a href="" >Newsletter</a>
+
+</li>
+      <li>
+<a href="" >Shared Print</a>
+
+</li>
+      <li>
+<a href="" >Staff News</a>
+
+</li>
+    </ul>
+  </span>
+  <span>Tags:
+    <ul>
+      <li>
+<a href="" >resource_change</a>
+
+</li>
+      <li>
+<a href="" >arks</a>
+
+</li>
+      <li>
+<a href="" >citation</a>
+
+</li>
+      <li>
+<a href="" >community</a>
+
+</li>
+      <li>
+<a href="" >open source</a>
+
+</li>
+    </ul>
+  </span>
+</div>
+
+    <p>Dignissimos nemo quo rerum a molestiae labore ipsa. Qui optio nesciunt et quidem placeat. Cum nihil tempora omnis sit aut quis numquam et. Aut sequi labore et. Quos minus ex rerum sit cumque possimus est.
+ Et expedita ea. Id numquam quibusdam doloremque voluptatem id quia rerum occaecati. Quia asperiores voluptas. Minima voluptatem iure rerum ipsa omnis quos ab eveniet mollitia. A aut perferendis dignissimos dolorum expedita. Explicabo ex iusto culpa aperiam.
+ Aliquam qui voluptas repellat maxime. Repudiandae quia libero velit in. Necessitatibus dignissimos excepturi. Iure animi dolorem consequatur nam quia et doloremque neque. Corporis quos non nam sit corporis quia.</p>
+    <p>Praesentium deleniti optio minima odio dolor sed hic at eveniet. Molestiae nobis quidem rem consequatur ut aliquam doloremque autem. Repellendus explicabo ut.
+ Explicabo sapiente totam dolores harum. Non quidem sint ullam molestiae consequuntur omnis vero. Quibusdam quia et unde veniam aut corrupti eos saepe. Dolores non esse est aliquid tempore eveniet eaque consequatur.
+ Porro voluptatem sit omnis aperiam voluptatem eos aperiam optio. Iusto autem ut. Debitis optio sequi explicabo tempore accusamus. Similique fuga ad.</p>
+    <p>Aspernatur facere excepturi aut nobis alias aut. Ea suscipit vel maxime quaerat eos expedita quibusdam. Porro et sint aut voluptatibus. Nihil voluptatem eius voluptatem et consequuntur. Deserunt optio modi repudiandae.
+ Dolore sequi repellat alias iste dicta temporibus est dolores. Impedit at recusandae sit necessitatibus ea quos officiis architecto repellendus. Illum esse quia recusandae praesentium eum necessitatibus inventore nostrum. Et aliquid perspiciatis ipsam quia doloremque ullam aut dicta aliquam. Adipisci ut quos distinctio necessitatibus illo dicta beatae expedita. Iure impedit necessitatibus unde eveniet voluptas cupiditate qui enim corrupti.
+ Libero deleniti quia est sed vel fuga animi molestiae. At laudantium amet. Et quam libero consequatur voluptate nulla.</p>
+    <p>Nulla explicabo saepe est. Qui debitis tempore qui quaerat dolorem vel. Officia nisi cumque qui excepturi accusamus quia. Ipsam ad ratione sit dolor sed facere ab. Consequatur perferendis molestiae totam dignissimos excepturi ipsum unde officiis. Quaerat non aperiam natus error sunt sed accusamus minima.
+ Maiores est natus fuga. Architecto tenetur aspernatur est. Sit adipisci nesciunt vel modi perspiciatis omnis quia magnam. Totam et sed nesciunt quae quidem inventore ea aperiam.
+ Sint beatae est voluptatem laboriosam. Asperiores temporibus quasi repudiandae id autem. Numquam eligendi rerum dolor voluptas dolores ducimus. Odio inventore voluptas quidem aut aliquam.</p>
+    <p>Inventore et mollitia consequuntur distinctio. Quibusdam et aut. Asperiores necessitatibus ut illum facere fugiat voluptas.
+ Suscipit itaque architecto a mollitia. Mollitia sapiente nam culpa ut et. Eos incidunt aut assumenda laborum cupiditate id mollitia. Ipsa quas saepe perspiciatis at et aut facilis. Velit nisi officiis enim incidunt dolor cupiditate quis. Quibusdam cum repudiandae.
+ Sunt quo id laboriosam modi occaecati voluptatem vel officiis nisi. Est non et et dolorem atque. Repellendus quos natus.</p>
+    <p>Expedita eius fugiat eum corporis et. Autem alias dolores quibusdam et consectetur. Et est quaerat cum porro et aut nam. Possimus voluptatem voluptate et officia nam non omnis. Molestias cumque vitae quis dolor velit.
+ Laborum enim sed sit repellat quidem voluptatum. Deleniti illum adipisci consequatur quisquam error nesciunt. Totam commodi similique laborum ullam quibusdam eum. Ut sunt qui consectetur rem sit optio.
+ Totam atque sit distinctio tenetur corrupti non sit et iusto. Temporibus voluptatem architecto non sit aliquam similique. Ipsa unde assumenda eius delectus rerum est qui quaerat beatae. Sed pariatur necessitatibus enim dolore dolor eum qui.</p>
+    <p>Voluptas ut in labore placeat autem eaque. Aliquam dicta tempora itaque nihil illo provident cum magni quae. Praesentium illum aspernatur adipisci nam. Ipsa id minima quibusdam tempore dolorum cupiditate mollitia at.
+ Sunt dolorem iusto sequi ad. Nam minima qui adipisci est quaerat. Laborum ut eum non amet qui sit voluptas laudantium qui. Nesciunt qui suscipit eius porro consequatur. Et nisi alias consequuntur deleniti sint et at voluptas non. Maxime veritatis doloribus perspiciatis enim voluptas molestiae consequatur dolor et.
+ Et debitis quia. Voluptatem aspernatur quam perferendis. Similique beatae eius. Iusto quisquam voluptatum eos.</p>
+    <p>Nesciunt soluta dolor ut est nesciunt velit minima. In nobis soluta consequatur natus cupiditate. Magni ea voluptatum et earum porro explicabo. Enim sit fuga ad vero ipsum vero explicabo libero ut. Aut officiis dolorem quidem sed necessitatibus eum sed ducimus animi. Eos neque nesciunt dolorem ad ipsa.
+ Aut aspernatur omnis. Repudiandae vero provident unde sapiente natus aut. Illum non reprehenderit velit dolores vero repudiandae. Quia aut rerum error veniam.
+ Libero molestiae autem est qui et et. Porro et ullam esse. Vitae eius illum. Accusantium aliquid molestiae. Aperiam sunt quos veritatis facilis saepe.</p>
+  </main>
+  <aside aria-label="first" class="t-layout__sidebar1">
+    <section class="o-sidebarbox">
+      <header><h2>Categories</h2></header>
+      <ul class="c-categories">
+  <li>
+<a href="" >Rustic Rubber Chips</a>
+
+</li>
+  <li>
+<a href="" >Licensed Rubber Towels</a>
+
+</li>
+  <li>
+<a href="" >Small Frozen Salad</a>
+
+</li>
+  <li>
+    <details>
+      <summary aria-label="Refined Metal Towels">
+<a href="" >Refined Metal Towels</a>
+
+</summary>
+      <ul>
+        <li>
+<a href="" >Intelligent Concrete Mouse</a>
+
+</li>
+        <li>
+<a href="" >Unbranded Granite Chair</a>
+
+</li>
+        <li>
+<a href="" >Refined Rubber Table</a>
+
+</li>
+      </ul>
+    </details>
+  </li>
+  <li>
+<a href="" >Rustic Rubber Chips</a>
+
+</li>
+  <li>
+<a href="" >Licensed Rubber Towels</a>
+
+</li>
+  <li>
+<a href="" >Small Frozen Salad</a>
+
+</li>
+  <li>
+    <details>
+      <summary aria-label="Intelligent Wooden Pizza">
+<a href="" >Intelligent Wooden Pizza</a>
+
+</summary>
+      <ul>
+        <li>
+<a href="" >Intelligent Concrete Mouse</a>
+
+</li>
+        <li>
+<a href="" >Unbranded Granite Chair</a>
+
+</li>
+        <li>
+<a href="" >Refined Rubber Table</a>
+
+</li>
+      </ul>
+    </details>
+  </li>
+  <li>
+<a href="" >Rustic Rubber Chips</a>
+
+</li>
+  <li>
+<a href="" >Licensed Rubber Towels</a>
+
+</li>
+  <li>
+<a href="" >Small Frozen Salad</a>
+
+</li>
+  <li>
+    <details>
+      <summary aria-label="Sleek Wooden Pants">
+<a href="" >Sleek Wooden Pants</a>
+
+</summary>
+      <ul>
+        <li>
+<a href="" >Intelligent Concrete Mouse</a>
+
+</li>
+        <li>
+<a href="" >Unbranded Granite Chair</a>
+
+</li>
+        <li>
+<a href="" >Refined Rubber Table</a>
+
+</li>
+      </ul>
+    </details>
+  </li>
+  <li>
+<a href="" >Rustic Rubber Chips</a>
+
+</li>
+  <li>
+<a href="" >Licensed Rubber Towels</a>
+
+</li>
+  <li>
+<a href="" >Small Frozen Salad</a>
+
+</li>
+  <li>
+    <details>
+      <summary aria-label="Handcrafted Cotton Salad">
+<a href="" >Handcrafted Cotton Salad</a>
+
+</summary>
+      <ul>
+        <li>
+<a href="" >Intelligent Concrete Mouse</a>
+
+</li>
+        <li>
+<a href="" >Unbranded Granite Chair</a>
+
+</li>
+        <li>
+<a href="" >Refined Rubber Table</a>
+
+</li>
+      </ul>
+    </details>
+  </li>
+  <li>
+<a href="" >Rustic Rubber Chips</a>
+
+</li>
+  <li>
+<a href="" >Licensed Rubber Towels</a>
+
+</li>
+  <li>
+<a href="" >Small Frozen Salad</a>
+
+</li>
+  <li>
+    <details>
+      <summary aria-label="Licensed Wooden Chicken">
+<a href="" >Licensed Wooden Chicken</a>
+
+</summary>
+      <ul>
+        <li>
+<a href="" >Intelligent Concrete Mouse</a>
+
+</li>
+        <li>
+<a href="" >Unbranded Granite Chair</a>
+
+</li>
+        <li>
+<a href="" >Refined Rubber Table</a>
+
+</li>
+      </ul>
+    </details>
+  </li>
+</ul>
+
+    </section>
+  </aside>
+  <aside aria-label="second" class="t-layout__sidebar2">
+    <section class="c-sidebarpost o-sidebarbox" id="c-sidebarpost--author">
+  <header>
+    <h2 id="c-sidebarpost--author-heading">Authors</h2>
+  </header>
+  
+  <select class="o-select"   aria-labelledby="c-sidebarpost--author-heading">
+    <option value="">Select Author</option>
+    <option value="https://www.cdlib.org/cdlinfo/author/abrin/">Adam Brin (15)</option>
+    <option value="https://www.cdlib.org/cdlinfo/author/bhui/">Barbara Hui (10)</option>
+    <option value="https://www.cdlib.org/cdlinfo/author/cli/">Chan Li (17)</option>
+    <option value="https://www.cdlib.org/cdlinfo/author/dlowenberg/">Daniella Lowenberg (18)</option>
+    <option value="https://www.cdlib.org/cdlinfo/author/eproulx/">Elise Proulx (4)</option>
+  </select>
+  <button onclick="openAuthor()" disabled>View All by Author</button>
+</section>
+
+    <section class="c-sidebarpost o-sidebarbox" id="c-sidebarpost--month">
+  <header>
+    <h2 id="c-sidebarpost--month-heading">Months of Publication</h2>
+  </header>
+  
+  <select class="o-select"   aria-labelledby="c-sidebarpost--month-heading">
+    <option value="">Select Month</option>
+    <option value="https://www.cdlib.org/cdlinfo/2019/08/">August 2019 (12)</option>
+    <option value="https://www.cdlib.org/cdlinfo/2019/07/">July 2019 (11)</option>
+    <option value="https://www.cdlib.org/cdlinfo/2019/06/">June 2019 (5)</option>
+    <option value="https://www.cdlib.org/cdlinfo/2019/05/">May 2019 (14)</option>
+    <option value="https://www.cdlib.org/cdlinfo/2019/04/">April 2019 (19)</option>
+    <option value="https://www.cdlib.org/cdlinfo/2019/03/">March 2019 (7)</option>
+  </select>
+  <button onclick="openMonth()" disabled>View All from Month</button>
+</section>
+
+    <section class="o-sidebarbox">
+      <header><h2>Subscribe</h2></header>
+      <ul>
+  <li>Autem eos dicta.</li>
+  <li>Doloremque inventore possimus suscipit quam quo ipsa eum provident.</li>
+  <li>Temporibus voluptatum molestiae cum et temporibus tempora at numquam.</li>
+  <li>Ea omnis voluptas porro sunt ipsa aut provident enim qui.</li>
+  <li>Sit est non id dolorem quo enim non.</li>
+</ul>
+
+    </section>
+  </aside>
+  <footer class="c-footer">
+  <nav class="c-footer__main" aria-label="footer">
+    <ul>
+      <li>
+<a href="" >About CDL</a>
+
+
+        <ul>
+          <li>
+<a href="" >Unde et cupiditate</a>
+
+</li>
+          <li>
+<a href="" >Asperiores eum ratione</a>
+
+</li>
+          <li>
+<a href="" >Quasi adipisci sed</a>
+
+</li>
+          <li>
+<a href="" >Laboriosam est sed</a>
+
+</li>
+          <li>
+<a href="" >Eos iure laborum</a>
+
+</li>
+        </ul>
+      </li>
+      <li>
+<a href="" >Our Organization</a>
+
+
+        <ul>
+          <li>
+<a href="" >Unde et cupiditate</a>
+
+</li>
+          <li>
+<a href="" >Asperiores eum ratione</a>
+
+</li>
+          <li>
+<a href="" >Quasi adipisci sed</a>
+
+</li>
+          <li>
+<a href="" >Laboriosam est sed</a>
+
+</li>
+          <li>
+<a href="" >Eos iure laborum</a>
+
+</li>
+        </ul>
+      </li>
+      <li>
+<a href="" >Services &amp; Projects</a>
+
+
+        <ul>
+          <li>
+<a href="" >Unde et cupiditate</a>
+
+</li>
+          <li>
+<a href="" >Asperiores eum ratione</a>
+
+</li>
+          <li>
+<a href="" >Quasi adipisci sed</a>
+
+</li>
+          <li>
+<a href="" >Laboriosam est sed</a>
+
+</li>
+          <li>
+<a href="" >Eos iure laborum</a>
+
+</li>
+        </ul>
+      </li>
+      <li>
+<a href="" >Resources For...</a>
+
+
+        <ul>
+          <li>
+<a href="" >Unde et cupiditate</a>
+
+</li>
+          <li>
+<a href="" >Asperiores eum ratione</a>
+
+</li>
+          <li>
+<a href="" >Quasi adipisci sed</a>
+
+</li>
+          <li>
+<a href="" >Laboriosam est sed</a>
+
+</li>
+          <li>
+<a href="" >Eos iure laborum</a>
+
+</li>
+        </ul>
+      </li>
+      <li>
+<a href="" >Committees &amp; Groups</a>
+
+
+        <ul>
+          <li>
+<a href="" >Unde et cupiditate</a>
+
+</li>
+          <li>
+<a href="" >Asperiores eum ratione</a>
+
+</li>
+          <li>
+<a href="" >Quasi adipisci sed</a>
+
+</li>
+          <li>
+<a href="" >Laboriosam est sed</a>
+
+</li>
+          <li>
+<a href="" >Eos iure laborum</a>
+
+</li>
+        </ul>
+      </li>
+      <li>
+<a href="" >News &amp; Media</a>
+
+
+        <ul>
+          <li>
+<a href="" >Unde et cupiditate</a>
+
+</li>
+          <li>
+<a href="" >Asperiores eum ratione</a>
+
+</li>
+          <li>
+<a href="" >Quasi adipisci sed</a>
+
+</li>
+          <li>
+<a href="" >Laboriosam est sed</a>
+
+</li>
+          <li>
+<a href="" >Eos iure laborum</a>
+
+</li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div class="c-footer__legal">
+    <ul>
+      <li>
+<a href="" >Site Map</a>
+
+</li>
+      <li>
+<a href="" >Terms &amp; Conditions</a>
+
+</li>
+      <li>
+<a href="" >Privacy Policy</a>
+
+</li>
+      <li>
+<a href="" >Accessibility Policy</a>
+
+</li>
+    </ul>
+  </div>
+  <div class="c-footer__copyright">
+    <small>Copyright © 2018 The Regents of The University of California</small>
+    <small><a href="https://creativecommons.org/licenses/by/4.0/">Site text licensed under CC BY 4.0</a> <img src="https://licensebuttons.net/l/by/4.0/80x15.png" alt="CC BY 4.0"></small>
+    <small>California Digital Library</small>
+  </div>
+</footer>
+
+</div>
+

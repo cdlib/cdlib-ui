@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CDLIB UI Library Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link rel="stylesheet" href="../../ui-assets/css/main.css" media="all">
+  <style>
+    /***** Demo Styles (not used in production CSS) *****/
+    /* matches selector in WP styles.css: */
+    .alignleft {
+      display: inline;
+      float: left;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <main class="c-slideshow" aria-label="slideshow">
+  <div class="c-slideshow__controls">
+    <button class="c-slideshow__play" title="play slideshow"><span>play slideshow</span></button>
+    <button class="c-slideshow__pause" title="pause slideshow"><span>pause slideshow</span></button>
+    <button id="c-slideshow__goto1" class="c-slideshow__goto" aria-label="go to slide 1 of 4">1</button>
+    <button id="c-slideshow__goto2" class="c-slideshow__goto" aria-label="go to slide 2 of 4">2</button>
+    <button id="c-slideshow__goto3" class="c-slideshow__goto" aria-label="go to slide 3 of 4">3</button>
+    <button id="c-slideshow__goto4" class="c-slideshow__goto" aria-label="go to slide 4 of 4">4</button>
+  </div>
+  <figure class="c-slideshow__slide">
+    <figcaption>
+      <h2>Awesome Concrete Bacon</h2>
+      <p>Quod quia cum iste dignissimos magnam non. Odio quia placeat corporis eveniet.</p>
+      <a href="https://calisphere.org">Read more</a>
+      <small>Photo by Miss Lenny Huels. Courtesy of repellendus recusandae omnis [Slide 1]</small>
+    </figcaption>
+    <div class="c-slideshow__slide-image">
+      <img srcset="https://loremflickr.com/740/500/nature?size&#x3D;small&amp;random&#x3D;0 740w, https://loremflickr.com/1095/740/nature?size&#x3D;big&amp;random&#x3D;0 1095w" sizes="(min-width: 760px) 77vw, 100vw" src="https://loremflickr.com/1095/740/nature?size&#x3D;big&amp;random&#x3D;0" alt="Licensed Soft Chips">
+    </div>
+  </figure>
+  <figure class="c-slideshow__slide">
+    <figcaption>
+      <h2>Tasty Granite Sausages</h2>
+      <p>Illum debitis laudantium sunt qui ut. Quo error maiores.</p>
+      <a href="https://escholarship.org">Read more</a>
+      <small>Photo by Chad Rolfson III. Courtesy of voluptatem aperiam totam [Slide 2]</small>
+    </figcaption>
+    <div class="c-slideshow__slide-image">
+      <img srcset="https://loremflickr.com/740/500/nature?size&#x3D;small&amp;random&#x3D;1 740w, https://loremflickr.com/1095/740/nature?size&#x3D;big&amp;random&#x3D;1 1095w" sizes="(min-width: 760px) 77vw, 100vw" src="https://loremflickr.com/1095/740/nature?size&#x3D;big&amp;random&#x3D;1" alt="Ergonomic Concrete Pants">
+    </div>
+  </figure>
+  <figure class="c-slideshow__slide">
+    <figcaption>
+      <h2>Generic Frozen Ball</h2>
+      <p>Libero minus necessitatibus odio quas. Odit illo accusamus qui voluptas similique dicta quaerat.</p>
+      <a href="https://www.hathitrust.org">Read more</a>
+      <small>Photo by Anabel Bashirian. Courtesy of voluptas alias in [Slide 3]</small>
+    </figcaption>
+    <div class="c-slideshow__slide-image">
+      <img srcset="https://loremflickr.com/740/500/nature?size&#x3D;small&amp;random&#x3D;2 740w, https://loremflickr.com/1095/740/nature?size&#x3D;big&amp;random&#x3D;2 1095w" sizes="(min-width: 760px) 77vw, 100vw" src="https://loremflickr.com/1095/740/nature?size&#x3D;big&amp;random&#x3D;2" alt="Generic Soft Mouse">
+    </div>
+  </figure>
+  <figure class="c-slideshow__slide">
+    <figcaption>
+      <h2>Incredible Concrete Chair</h2>
+      <p>Veniam voluptatem quos nemo ipsam incidunt temporibus consectetur. Assumenda quod sint.</p>
+      <a href="https://escholarship.org">Read more</a>
+      <small>Photo by Angie Fritsch. Courtesy of atque dolor illum [Slide 4]</small>
+    </figcaption>
+    <div class="c-slideshow__slide-image">
+      <img srcset="https://loremflickr.com/740/500/nature?size&#x3D;small&amp;random&#x3D;3 740w, https://loremflickr.com/1095/740/nature?size&#x3D;big&amp;random&#x3D;3 1095w" sizes="(min-width: 760px) 77vw, 100vw" src="https://loremflickr.com/1095/740/nature?size&#x3D;big&amp;random&#x3D;3" alt="Gorgeous Soft Chips">
+    </div>
+  </figure>
+</main>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/core-js@2.6.1/client/core.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.15/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-match-media@1.0.2/dist/index.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/details-element-polyfill@2.0.3/dist/details-element-polyfill.min.js"></script>
+  <script src="../../ui-assets/js/main.js"></script>
+ </body>
+</html>
+
