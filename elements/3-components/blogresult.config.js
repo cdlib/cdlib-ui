@@ -1,7 +1,12 @@
 const faker = require('faker/locale/en');
 const fakerData = [];
+// process.env.NODE_ENV = 'testing'
+// console.log(process.env.NODE_ENV)
 
 for (var i = 0; i < 8; i++) {
+  if (process.env.NODE_ENV === 'testing') {
+    faker.seed(123);
+  }
   fakerData.push({
     heading: {
       level: '2'

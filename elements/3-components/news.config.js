@@ -6,6 +6,9 @@ function removePeriod(string) {
 }
 
 for (var i = 0; i < 3; i++) {
+  if (process.env.NODE_ENV === 'testing') {
+    faker.seed(123);
+  }
   fakerData.push({
     link: {
       text: removePeriod(faker.lorem.sentence()),

@@ -18,6 +18,9 @@ for (var i = 0; i < list1.length; i++) {
 }
 
 for (var i = 0; i < 5; i++) {
+  if (process.env.NODE_ENV === 'testing') {
+    faker.seed(123);
+  }
   linkData2.push({
     link: {
       text: capFirstLetter(faker.lorem.words())

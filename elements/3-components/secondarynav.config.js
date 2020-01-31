@@ -6,6 +6,9 @@ const fakerList4 = [];
 const topMenuItem = faker.commerce.productName()
 
 for (var i = 0; i < 3; i++) {
+  if (process.env.NODE_ENV === 'testing') {
+    faker.seed(123);
+  }
   fakerList1.push({
     link: {
       text: faker.commerce.productName()
@@ -14,6 +17,9 @@ for (var i = 0; i < 3; i++) {
 }
 
 for (var i = 0; i < 3; i++) {
+  if (process.env.NODE_ENV === 'testing') {
+    faker.seed(123);
+  }
   fakerList2.push({
     link: {
       text: faker.commerce.productName()
@@ -22,6 +28,9 @@ for (var i = 0; i < 3; i++) {
 }
 
 for (var i = 0; i < 3; i++) {
+  if (process.env.NODE_ENV === 'testing') {
+    faker.seed(123);
+  }
   fakerList3.push({
     link: {
       text: faker.commerce.productName(),
@@ -31,6 +40,9 @@ for (var i = 0; i < 3; i++) {
 }
 
 for (var i = 0; i < 3; i++) {
+  if (process.env.NODE_ENV === 'testing') {
+    faker.seed(123);
+  }
   fakerList4.push({
     link: {
       text: faker.commerce.productName()

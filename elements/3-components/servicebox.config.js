@@ -3,6 +3,9 @@ const serviceBoxes = [];
 const fakerData = [];
 
 for (var i = 0; i < 4; i++) {
+  if (process.env.NODE_ENV === 'testing') {
+    faker.seed(123);
+  }
   serviceBoxes.push({
     heading: {
       level: '3',
@@ -12,6 +15,9 @@ for (var i = 0; i < 4; i++) {
 }
 
 for (var i = 0; i < 4; i++) {
+  if (process.env.NODE_ENV === 'testing') {
+    faker.seed(123);
+  }
   fakerData.push({
     link: {
       text: faker.commerce.productName()

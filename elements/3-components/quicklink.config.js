@@ -3,6 +3,9 @@ const fakerData1 = [];
 const fakerData2 = [];
 
 for (var i = 0; i < 5; i++) {
+  if (process.env.NODE_ENV === 'testing') {
+    faker.seed(123);
+  }
   fakerData1.push({
     link: {
       text: faker.commerce.productName()
@@ -11,6 +14,9 @@ for (var i = 0; i < 5; i++) {
 }
 
 for (var i = 0; i < 7; i++) {
+  if (process.env.NODE_ENV === 'testing') {
+    faker.seed(123);
+  }
   fakerData2.push({
     link: {
       text: faker.commerce.productName()

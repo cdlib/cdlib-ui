@@ -11,6 +11,9 @@ for (var i = 0; i < 22; i++) {
 }
 
 for (var i = 0; i < 1; i++) {
+  if (process.env.NODE_ENV === 'testing') {
+    faker.seed(123);
+  }
   fakerData2.push({
     link: {
       text: faker.lorem.sentence()

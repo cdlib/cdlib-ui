@@ -15,6 +15,9 @@ for (var i = 0; i < list1.length; i++) {
 }
 
 for (var i = 0; i < 3; i++) {
+  if (process.env.NODE_ENV === 'testing') {
+    faker.seed(123);
+  }
   fakerHeaderList2.push({
     link: {
       text: faker.commerce.productName(),
@@ -23,6 +26,9 @@ for (var i = 0; i < 3; i++) {
 }
 
 for (var i = 0; i < 5; i++) {
+  if (process.env.NODE_ENV === 'testing') {
+    faker.seed(123);
+  }
   fakerHeaderList3.push({
     link: {
       text: faker.commerce.productName(),

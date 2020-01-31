@@ -3,6 +3,9 @@ const program = ['UC Curation Center (UC3)', 'Collection Development & Managemen
 const tableData = [];
 
 for (var i = 0; i < 15; i++) {
+  if (process.env.NODE_ENV === 'testing') {
+    faker.seed(123);
+  }
   tableData.push({
     firstname: {
       text: faker.name.firstName()

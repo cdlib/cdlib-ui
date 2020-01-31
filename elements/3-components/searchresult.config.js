@@ -5,6 +5,9 @@ const terms = ['digital', 'library', 'books', 'report', 'campus'];
 const unbrokenText = ' UnbrokenTextloremipsumdolorsitametconsecteturadipisicingelitNequedignissimosfugitnamreprehenderitminimadelenitiquamquiasitisteexpeditatemp'
 
 for (var i = 0; i < 20; i++) {
+  if (process.env.NODE_ENV === 'testing') {
+    faker.seed(123);
+  }
   fakerData.push({
     heading: {
       level: '2'
