@@ -4,7 +4,6 @@
 
 .t-layout--3 {
   display: grid;
-  min-height: 100vh;
   grid-gap: $space3;
   grid-template:
     'layout3a'
@@ -15,6 +14,7 @@
     'layout3f'
     'layout3g'
     / 1fr;
+  min-height: 100vh;
 
   @media (min-width: $screen2) and (max-width: $screen3) {
     grid-template:

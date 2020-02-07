@@ -44,8 +44,8 @@
 
         &::after {
           @extend %o-docicon__#{$filetype};
-          margin-left: 0.5em;
           content: '#{$filetype}';
+          margin-left: 0.5em;
         }
 
       }

@@ -5,20 +5,20 @@ $header-logo-height: 50px;
 .c-header {
   display: grid;
   position: relative;
-  margin-top: $space1;
   grid-template:
     'header-logo header-controls'
     'header-nav header-nav'
     'header-util-nav header-util-nav'
     / 1fr auto;
+  margin-top: $space1;
 
   @include screen2 {
-    margin-top: $space2;
     grid-template:
       'header-logo header-util-nav'
       'header-logo header-search'
       'header-nav header-nav'
       / auto 1fr;
+    margin-top: $space2;
   }
 
   @media print {
@@ -29,8 +29,8 @@ $header-logo-height: 50px;
 
 .c-header__logo {
   display: block;
-  margin-bottom: $space2;
   grid-area: header-logo;
+  margin-bottom: $space2;
 
   @include screen2 {
     // stack over spanned grid-column in .c-header__search:
@@ -58,20 +58,20 @@ $header-logo-height: 50px;
   @include u-hide-until-vue-ready();
   display: flex;
   position: absolute; // to .c-header
+  z-index: 1;
   right: 0;
   left: 0;
+  grid-area: header-search;
   align-items: flex-start;
   height: $header-logo-height;
   background-color: $color-white;
-  z-index: 1;
-  grid-area: header-search;
 
   @include screen2 {
     position: static;
+    grid-column: 1 / 3;
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    grid-column: 1 / 3;
   }
 
   > button {

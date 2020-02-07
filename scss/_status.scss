@@ -31,12 +31,12 @@ $status-color-red: #f00;
   white-space: nowrap;
 
   &::before {
+    content: '';
     width: 1em;
     height: 1em;
     margin-right: $space2;
     transition: opacity 1s;
     border-radius: 50%;
-    content: '';
     opacity: 0;
   }
 

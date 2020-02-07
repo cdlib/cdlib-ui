@@ -7,13 +7,13 @@
   padding-left: 1.6em;
 
   &::before {
+    content: url('orcid.svg');
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     width: 1.1em;
     margin-right: 1em;
-    content: url('orcid.svg');
   }
 
 }

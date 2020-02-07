@@ -4,14 +4,14 @@ table {
   width: 100%;
   margin-top: $space3;
   margin-bottom: $space3;
-  border-collapse: collapse;
   table-layout: fixed;
+  border-collapse: collapse;
 
   th,
   td {
     padding: $space2;
-    border: 1px solid $color-gray;
     overflow: hidden;
+    border: 1px solid $color-gray;
     vertical-align: top;
   }
 

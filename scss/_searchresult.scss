@@ -3,7 +3,6 @@
 .c-searchresult {
   /* autoprefixer grid: off */
   display: grid;
-  margin-bottom: $space4;
   grid-column-gap: $space2;
   grid-template:
     'result-doctype result-group'
@@ -11,6 +10,7 @@
     'result-doctype result-quote'
     'result-doctype result-date'
     / 2.7em 1fr;
+  margin-bottom: $space4;
 
   > * {
 
@@ -22,8 +22,8 @@
 
   h2 {
     display: inline-block;
-    margin: 0;
     grid-area: result-heading;
+    margin: 0;
 
     a {
       @include u-disable-filetype-link-icon;
@@ -39,10 +39,10 @@
 }
 
 .c-searchresult__doctype {
+  grid-area: result-doctype;
   align-self: start;
   margin-top: 0.3em;
   justify-self: end;
-  grid-area: result-doctype;
 }
 
 .c-searchresult__group {

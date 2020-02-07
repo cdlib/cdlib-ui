@@ -2,7 +2,6 @@
 
 .t-layout--1 {
   display: grid;
-  min-height: 100vh;
   grid-row-gap: $space3;
   grid-template:
     'layout1a'
@@ -11,6 +10,7 @@
     'layout1d'
     'layout1e'
     / 1fr;
+  min-height: 100vh;
 
   @media print {
     display: block;
