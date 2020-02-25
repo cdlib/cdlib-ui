@@ -14,6 +14,7 @@ for (var i = 0; i < 8; i++) {
 
 module.exports = {
   label: 'Blog Post',
+  preview: '@template-page',
   context: {
     heading: {
       level: '1',

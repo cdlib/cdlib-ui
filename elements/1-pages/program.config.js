@@ -14,6 +14,7 @@ for (var i = 0; i < 2; i++) {
 
 module.exports = {
   label: 'Program',
+  preview: '@template-page',
   context: {
     paragraph: fakeData,
     heading: {

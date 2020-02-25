@@ -1,3 +1,4 @@
 module.exports = {
-  label: 'Search Results'
+  label: 'Search Results',
+  preview: '@template-page'
 };

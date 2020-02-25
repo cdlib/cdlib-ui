@@ -6,6 +6,7 @@ if (process.env.NODE_ENV === 'testing') {
 
 module.exports = {
   label: 'Staff Profile',
+  preview: '@template-page',
   context: {
     heading: {
       level: '1',

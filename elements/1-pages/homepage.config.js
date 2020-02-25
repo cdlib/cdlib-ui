@@ -1,3 +1,4 @@
 module.exports = {
-  label: 'Home'
+  label: 'Home',
+  preview: '@template-page'
 };
