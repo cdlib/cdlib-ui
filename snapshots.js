@@ -35,3 +35,9 @@ PercyScript.run(async (page, percySnapshot) => {
   await page.evaluateHandle('document.fonts.ready');
   await percySnapshot('Staff Profile');
 });
+
+PercyScript.run(async (page, percySnapshot) => {
+  await page.goto('http://localhost:8080/components/preview/systemstatus.html');
+  await page.evaluateHandle('document.fonts.ready');
+  await percySnapshot('System Status');
+});

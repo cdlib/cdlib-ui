@@ -1,0 +1,15 @@
+<div class="t-layout--3">
+  {{ render '@skipnav' }}
+  {{ render '@header' }}
+  {{ render '@breadcrumb' }}
+  <aside aria-label="first" class="t-layout__sidebar1">
+    {{ render '@secondarynav' }}
+  </aside>
+  <main id="maincontent">
+    {{> @heading--1 mainheading }}
+    {{> @rssfeed cdlalert }}
+    {{ render '@status' }}
+  </main>
+  {{ render '@updated' }}
+  {{ render '@footer' }}
+</div>
