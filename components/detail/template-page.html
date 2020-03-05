@@ -374,51 +374,6 @@
             }
         }
 
-        @font-face {
-            font-family: 'Source Sans Pro';
-            font-weight: 200 900;
-            src: url(/ui-assets/fonts/SourceSansVariable-Roman.ttf.woff2) format("woff2-variations"), url(/ui-assets/fonts/SourceSansPro-Regular.ttf.woff) format("woff");
-            font-display: swap
-        }
-
-        @font-face {
-            font-family: 'Source Sans Pro';
-            font-weight: 600;
-            src: url(/ui-assets/fonts/SourceSansVariable-Roman.ttf.woff2) format("woff2-variations"), url(/ui-assets/fonts/SourceSansPro-Semibold.ttf.woff) format("woff");
-            font-display: swap
-        }
-
-        @font-face {
-            font-family: 'Source Sans Pro';
-            font-weight: 700;
-            src: url(/ui-assets/fonts/SourceSansVariable-Roman.ttf.woff2) format("woff2-variations"), url(/ui-assets/fonts/SourceSansPro-Bold.ttf.woff) format("woff");
-            font-display: swap
-        }
-
-        @font-face {
-            font-family: 'Source Sans Pro';
-            font-style: italic;
-            font-weight: 200 900;
-            src: url(/ui-assets/fonts/SourceSansVariable-Italic.ttf.woff2) format("woff2-variations"), url(/ui-assets/fonts/SourceSansPro-It.ttf.woff) format("woff");
-            font-display: swap
-        }
-
-        @font-face {
-            font-family: 'Source Sans Pro';
-            font-style: italic;
-            font-weight: 600;
-            src: url(/ui-assets/fonts/SourceSansVariable-Italic.ttf.woff2) format("woff2-variations"), url(/ui-assets/fonts/SourceSansPro-SemiboldIt.ttf.woff) format("woff");
-            font-display: swap
-        }
-
-        @font-face {
-            font-family: 'Source Sans Pro';
-            font-style: italic;
-            font-weight: 700;
-            src: url(/ui-assets/fonts/SourceSansVariable-Italic.ttf.woff2) format("woff2-variations"), url(/ui-assets/fonts/SourceSansPro-BoldIt.ttf.woff) format("woff");
-            font-display: swap
-        }
-
         fieldset {
             padding: 0;
             border: none;
@@ -435,86 +390,6 @@
 
         main {
             display: block
-        }
-
-        .o-button1,
-        .o-button2,
-        .o-button3,
-        .o-button4,
-        .o-button5,
-        .o-button6,
-        .o-button7 {
-            min-width: 1.8rem;
-            min-height: 1.8rem;
-            display: inline-flex;
-            align-items: center;
-            padding: 5px 10px;
-            border: none;
-            background-color: transparent;
-            background-repeat: no-repeat;
-            background-position: center;
-            cursor: pointer
-        }
-
-        @media (any-pointer:coarse) {
-            .o-button1,
-            .o-button2,
-            .o-button3,
-            .o-button4,
-            .o-button5,
-            .o-button6,
-            .o-button7 {
-                min-width: 2.8rem;
-                min-height: 2.8rem
-            }
-        }
-
-        .o-button1,
-        .o-button2,
-        .o-button3 {
-            width: 2em;
-            background-size: 1.8em
-        }
-
-        .o-button1 {
-            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='1' height='1'%3E%3Cpath d='M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z'/%3E%3C/svg%3E")
-        }
-
-        .o-button2 {
-            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512' width='1' height='1'%3E%3Cpath d='M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z'/%3E%3C/svg%3E")
-        }
-
-        .o-button3 {
-            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' width='1' height='1'%3E%3Cpath d='M442 114H6a6 6 0 01-6-6V84a6 6 0 016-6h436a6 6 0 016 6v24a6 6 0 01-6 6zm0 160H6a6 6 0 01-6-6v-24a6 6 0 016-6h436a6 6 0 016 6v24a6 6 0 01-6 6zm0 160H6a6 6 0 01-6-6v-24a6 6 0 016-6h436a6 6 0 016 6v24a6 6 0 01-6 6z'/%3E%3C/svg%3E")
-        }
-
-        .o-button4 {
-            background-color: #3d3a3b;
-            color: #fff
-        }
-
-        .o-button5,
-        .o-button6 {
-            padding-right: 2.3em;
-            border: 2px solid #fff;
-            border-radius: 3px;
-            background-color: #005695;
-            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512' width='1' height='1'%3E%3Cpath d='M288.662 352H31.338c-17.818 0-26.741-21.543-14.142-34.142l128.662-128.662c7.81-7.81 20.474-7.81 28.284 0l128.662 128.662c12.6 12.599 3.676 34.142-14.142 34.142z' fill='%23fff'/%3E%3C/svg%3E");
-            background-position: right 10px center;
-            background-size: 1.4em;
-            color: #fff
-        }
-
-        .o-button6 {
-            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512' width='100' height='100'%3E%3Cpath d='M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z' fill='%23fff'/%3E%3C/svg%3E")
-        }
-
-        .o-button7[aria-current=false] {
-            background-color: #fff
-        }
-
-        .o-button7[aria-current=true] {
-            background-color: #e5eef4
         }
 
         .o-sidebarnav header h2,
