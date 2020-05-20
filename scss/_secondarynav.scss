@@ -14,10 +14,6 @@
 
   }
 
-  div {
-    @include u-hide-until-vue-ready($screen2);
-  }
-
   ul ul ul {
     border-top: 1px solid $color-gray;
 
@@ -51,4 +47,13 @@
     background-color: $color-light-blue;
   }
 
+}
+
+.c-secondarynav__buttons,
+.c-secondarynav__body {
+  display: none;
+
+  &.is-open {
+    display: block;
+  }
 }
