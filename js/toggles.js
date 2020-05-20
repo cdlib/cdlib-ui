@@ -21,3 +21,37 @@ if (document.querySelector('.c-secondarynav')) {
     secondaryNavOpenButton.focus()
   })
 }
+
+// Header Component:
+
+if (document.querySelector('.c-header')) {
+  var headerSearchControl = document.querySelector('.js-header__search-control')
+  var headerMenuControl = document.querySelector('.js-header__menu-control')
+  var headerSearch = document.querySelector('.js-header__search')
+  var headerSearchField = document.querySelector('#c-header-search-field')
+  var headerCloseSearch = document.querySelector('.js-header__close-search')
+  var headerMainNav = document.querySelector('.js-header__header-nav')
+  var headerUtilNav = document.querySelector('.js-header__utility-nav')
+
+  headerSearchControl.addEventListener('click', function () {
+    headerSearch.classList.add('is-open')
+    headerSearchField.focus()
+  })
+
+  headerMenuControl.addEventListener('click', function () {
+    if (headerMenuControl.getAttribute('aria-expanded') === 'false') {
+      headerMainNav.classList.add('is-open')
+      headerUtilNav.classList.add('is-open')
+      headerMenuControl.setAttribute('aria-expanded', true)
+    } else {
+      headerMainNav.classList.remove('is-open')
+      headerUtilNav.classList.remove('is-open')
+      headerMenuControl.setAttribute('aria-expanded', false)
+    }
+  })
+
+  headerCloseSearch.addEventListener('click', function () {
+    headerSearch.classList.remove('is-open')
+    headerSearchControl.focus()
+  })
+}
