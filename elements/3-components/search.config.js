@@ -17,11 +17,11 @@ module.exports = {
     },
     label: {
       exists: true,
-      for: 'c-header-search-field',
+      for: 'c-search-field',
       text: 'Search the California Digital Library'
     },
     input1: {
-      id: 'c-header-search-field',
+      id: 'c-search-field',
       type: 'search',
       list: 'c-search-list',
       name: 's',

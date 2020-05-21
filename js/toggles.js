@@ -28,14 +28,14 @@ if (document.querySelector('.c-header')) {
   var headerSearchControl = document.querySelector('.js-header__search-control')
   var headerMenuControl = document.querySelector('.js-header__menu-control')
   var headerSearch = document.querySelector('.js-header__search')
-  var headerSearchField = document.querySelector('#c-header-search-field')
+  var searchField = document.querySelector('#c-search-field')
   var headerCloseSearch = document.querySelector('.js-header__close-search')
   var headerMainNav = document.querySelector('.js-header__header-nav')
   var headerUtilNav = document.querySelector('.js-header__utility-nav')
 
   headerSearchControl.addEventListener('click', function () {
     headerSearch.classList.add('is-open')
-    headerSearchField.focus()
+    searchField.focus()
   })
 
   headerMenuControl.addEventListener('click', function () {
