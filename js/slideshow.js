@@ -57,7 +57,7 @@ if (document.querySelector('.c-slideshow')) {
   var goToButtons = document.querySelectorAll('.c-slideshow__goto')
   var firstGoToButton = document.querySelector('#c-slideshow__goto1')
   var currentGoToButton = 0
-  var transitionSpeed = 10000
+  var transitionSpeed = 11000
   var slideInterval = setInterval(nextSlide, transitionSpeed)
   var playButton = document.querySelector('.c-slideshow__play')
   var pauseButton = document.querySelector('.c-slideshow__pause')
