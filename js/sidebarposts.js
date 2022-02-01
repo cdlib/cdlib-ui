@@ -1,33 +1,37 @@
 // ***** Sidebar Post Components ***** //
 
-function openAuthor () {
-  var selectValue = authorSelect.options[authorSelect.selectedIndex].value
-  window.open(selectValue, '_self')
+const sidebarPost = document.querySelector('.c-sidebarpost')
+const authorSelect = document.querySelector('.js-sidebarpost--author select')
+const authorButton = document.querySelector('.js-sidebarpost--author button')
+const monthSelect = document.querySelector('.js-sidebarpost--month select')
+const monthButton = document.querySelector('.js-sidebarpost--month button')
+
+const selectType = type => {
+  const selectValue = type.options[type.selectedIndex].value
+
+  if (selectValue !== '') {
+    window.open(selectValue, '_self')
+  }
 }
 
-function enableAuthorButton () {
-  document.querySelector('#c-sidebarpost--author button').disabled = false
+const buttonType = type => {
+  type.setAttribute('aria-disabled', false)
 }
 
-function openMonth () {
-  var selectValue = monthsSelect.options[monthsSelect.selectedIndex].value
-  window.open(selectValue, '_self')
-}
+if (sidebarPost) {
+  authorSelect.addEventListener('change', () => {
+    buttonType(authorButton)
+  })
 
-function enableMonthButton () {
-  document.querySelector('#c-sidebarpost--month button').disabled = false
-}
+  authorButton.addEventListener('click', () => {
+    selectType(authorSelect)
+  })
 
-if (document.querySelector('.c-sidebarpost')) {
-  // Author Component:
+  monthSelect.addEventListener('change', () => {
+    buttonType(monthButton)
+  })
 
-  var authorSelect = document.querySelector('#c-sidebarpost--author select')
-
-  authorSelect.addEventListener('change', enableAuthorButton)
-
-  // Month Component:
-
-  var monthsSelect = document.querySelector('#c-sidebarpost--month select')
-
-  monthsSelect.addEventListener('change', enableMonthButton)
+  monthButton.addEventListener('click', () => {
+    selectType(monthSelect)
+  })
 }

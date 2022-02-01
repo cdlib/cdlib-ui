@@ -1,7 +1,7 @@
-<section class="c-sidebarpost o-sidebarbox" id="c-sidebarpost--author">
+<section class="c-sidebarpost o-sidebarbox js-sidebarpost--author">
   <header>
     <h2 id="{{ heading.id }}">{{ heading.text }}</h2>
   </header>
   {{> @select }}
-  <button onclick="openAuthor()" disabled>{{ sidebarpost.button }}</button>
+  <button type="button" aria-disabled="true">{{ sidebarpost.button }}</button>
 </section>
