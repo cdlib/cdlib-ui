@@ -10,9 +10,10 @@
   {{#each slides}}
   <figure class="c-slideshow__slide">
     <figcaption>
-      <h2>{{ slide.heading }}</h2>
+      <h2>
+        <a href="{{ slide.link }}">{{ slide.heading }}</a>
+      </h2>
       <p>{{ slide.text }}</p>
-      <a href="{{ slide.link }}">Read more</a>
       <small>{{ slide.credits }} [Slide {{ slide.number }}]</small>
     </figcaption>
     <div class="c-slideshow__slide-image">

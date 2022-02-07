@@ -113,22 +113,33 @@ $slideshow-caption-width: 20rem;
     color: inherit;
     font-size: 2rem;
     font-weight: 400;
+
+    a {
+      @include u-disable-general-link-icon;
+      text-decoration: none;
+
+      &:focus,
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   // caption copy:
   p {
     font-size: 1.3rem;
 
-    // 'read more' link after body copy:
-    + a {
+    // if there's a link in the copy:
+    a {
       @include u-disable-general-link-icon;
-      margin-top: auto; // position to bottom
-    }
-  }
+      color: $color-light-gold;
+      text-decoration: underline;
 
-  // any linked text:
-  a {
-    color: $color-light-gold;
+      &:focus,
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 
   // caption:
