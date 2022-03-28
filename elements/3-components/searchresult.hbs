@@ -2,7 +2,7 @@
 <div class="c-searchresult">
   {{> @heading }}
   <span class="c-searchresult__doctype o-docicon__{{ searchresult.doctype }}" aria-label="{{ searchresult.doctype }} document">{{ searchresult.doctype }}</span>
-  <div class="c-searchresult__excerpt">{{ searchresult.excerptFirstHalf }} <em>{{ searchresult.keyword }}</em> {{ searchresult.excerptSecondHalf }}</div>
+  <div class="c-searchresult__excerpt">{{ searchresult.excerptFirstHalf }} <mark>{{ searchresult.keyword }}</mark> {{ searchresult.excerptSecondHalf }}</div>
   <div class="c-searchresult__datetime">
     <time>{{ searchresult.datetime }}</time>
   </div>

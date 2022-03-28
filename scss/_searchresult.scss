@@ -28,7 +28,11 @@
       @include u-disable-filetype-link-icon;
       color: $color-blue;
     }
+  }
 
+  mark {
+    background-color: $color-light-gold;
+    color: $color-black;
   }
 }
 
@@ -42,12 +46,6 @@
 .c-searchresult__excerpt {
   @extend %u-break-words;
   grid-area: result-excerpt;
-
-  em {
-    font-style: normal;
-    font-weight: 700;
-  }
-
 }
 
 .c-searchresult__datetime {
