@@ -6,7 +6,7 @@
   grid-column-gap: $space2;
   grid-template:
     'result-doctype result-heading'
-    'result-doctype result-quote'
+    'result-doctype result-excerpt'
     'result-doctype result-date'
     / 2.7em 1fr;
   margin-bottom: $space4;
@@ -44,9 +44,9 @@
   justify-self: end;
 }
 
-.c-searchresult__quote {
+.c-searchresult__excerpt {
   @extend %u-break-words;
-  grid-area: result-quote;
+  grid-area: result-excerpt;
 
   &::before,
   &::after {
