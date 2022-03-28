@@ -23,7 +23,7 @@ for (var i = 0; i < 20; i++) {
       excerptFirstHalf: faker.lorem.words(15) + unbrokenText,
       terms: faker.helpers.randomize(terms),
       excerptSecondHalf: faker.lorem.words(15),
-      date: faker.date.month() + ' ' + faker.random.number({min: 1, max: 30}) + ', ' + faker.random.number({min: 2000, max: 2018}),
+      datetime: faker.date.month() + ' ' + faker.random.number({min: 1, max: 30}) + ', ' + faker.random.number({min: 2000, max: 2018}),
     }
   });
 }
