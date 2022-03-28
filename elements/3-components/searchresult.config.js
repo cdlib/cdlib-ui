@@ -20,9 +20,9 @@ for (var i = 0; i < 20; i++) {
     },
     searchresult: {
       doctype: faker.helpers.randomize(filetypes),
-      quoteFirstHalf: faker.lorem.words(15) + unbrokenText,
+      excerptFirstHalf: faker.lorem.words(15) + unbrokenText,
       terms: faker.helpers.randomize(terms),
-      quoteSecondHalf: faker.lorem.words(15),
+      excerptSecondHalf: faker.lorem.words(15),
       date: faker.date.month() + ' ' + faker.random.number({min: 1, max: 30}) + ', ' + faker.random.number({min: 2000, max: 2018}),
     }
   });
