@@ -3,21 +3,13 @@
 .c-searchresult {
   /* autoprefixer grid: off */
   display: grid;
-  grid-column-gap: $space2;
+  gap: $space2;
   grid-template:
     'result-doctype result-heading'
     'result-doctype result-excerpt'
     'result-doctype result-datetime'
     / 2.7em 1fr;
   margin-bottom: $space4;
-
-  > * {
-
-    &:not(:last-child) {
-      margin-bottom: $space2;
-    }
-
-  }
 
   h2 {
     display: inline-block;
