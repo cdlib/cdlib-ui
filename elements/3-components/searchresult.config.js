@@ -19,7 +19,6 @@ for (var i = 0; i < 20; i++) {
       url: 'file.' + faker.helpers.randomize(filetypes),
     },
     searchresult: {
-      group: faker.helpers.randomize(['News and Media: CDLINFO', 'Information Services', 'User Experience Design Services', 'Discovery ＆ Delivery Program', 'Collections Program', '']),
       doctype: faker.helpers.randomize(filetypes),
       quoteFirstHalf: faker.lorem.words(15) + unbrokenText,
       terms: faker.helpers.randomize(terms),
