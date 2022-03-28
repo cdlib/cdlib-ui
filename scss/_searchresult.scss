@@ -7,7 +7,7 @@
   grid-template:
     'result-doctype result-heading'
     'result-doctype result-excerpt'
-    'result-doctype result-date'
+    'result-doctype result-datetime'
     / 2.7em 1fr;
   margin-bottom: $space4;
 
@@ -30,11 +30,6 @@
     }
 
   }
-
-  time {
-    grid-area: result-date;
-  }
-
 }
 
 .c-searchresult__doctype {
@@ -58,4 +53,8 @@
     font-weight: 700;
   }
 
+}
+
+.c-searchresult__datetime {
+  grid-area: result-datetime;
 }
