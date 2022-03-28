@@ -43,11 +43,6 @@
   @extend %u-break-words;
   grid-area: result-excerpt;
 
-  &::before,
-  &::after {
-    content: '\2026'; // horizontal ellipsis
-  }
-
   em {
     font-style: normal;
     font-weight: 700;
