@@ -1,7 +1,7 @@
 const faker = require('faker/locale/en');
 const fakerData = [];
 const filetypes = ['pdf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'txt', 'zip', 'html', 'rtf'];
-const terms = ['digital', 'library', 'books', 'report', 'campus'];
+const keywords = ['digital', 'library', 'books', 'report', 'campus'];
 const unbrokenText = ' UnbrokenTextloremipsumdolorsitametconsecteturadipisicingelitNequedignissimosfugitnamreprehenderitminimadelenitiquamquiasitisteexpeditatemp'
 
 for (var i = 0; i < 20; i++) {
@@ -21,7 +21,7 @@ for (var i = 0; i < 20; i++) {
     searchresult: {
       doctype: faker.helpers.randomize(filetypes),
       excerptFirstHalf: faker.lorem.words(15) + unbrokenText,
-      terms: faker.helpers.randomize(terms),
+      keyword: faker.helpers.randomize(keywords),
       excerptSecondHalf: faker.lorem.words(15),
       datetime: faker.date.month() + ' ' + faker.random.number({min: 1, max: 30}) + ', ' + faker.random.number({min: 2000, max: 2018}),
     }
