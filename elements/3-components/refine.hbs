@@ -1,20 +1,11 @@
-<div class="c-refine o-sidebarnav" v-onmedia.screen2="detectMediaQuery">
+<section class="c-refine">
   <header>
     {{> @heading }}
-    <a href="" class="c-refine__clear">Clear</a>
-    <template v-if="!$mq.screen2">
-      <button class="c-refine__open" v-on:click="toggle1" v-if="!isDisplayed">{{ toggle.openButtonText }}</button>
-      <button class="c-refine__close" v-on:click="toggle1" v-if="isDisplayed">{{ toggle.closeButtonText }}</button>
-    </template>
   </header>
-  <ul v-if="isDisplayed" v-cloak>
-    {{#each list}}
-    <li>
-      <a href="">
-        <span class="c-refine__item-text">{{ text }}</span>
-        <span class="c-refine__item-number">({{ number }} <span>results</span>)</span>
-      </a>
-    </li>
-    {{/each}}
-  </ul>
-</div>
+  <div class="facetwp-facet">
+    <div class="facetwp-radio checked" data-value="" role="checkbox" aria-checked="true" aria-label="All documents" tabindex="0">All documents</div>
+    <div class="facetwp-radio" data-value="attachment" role="checkbox" aria-checked="false" aria-label="Media (168)" tabindex="0">Media <span class="facetwp-counter">(168)</span></div>
+    <div class="facetwp-radio" data-value="page" role="checkbox" aria-checked="false" aria-label="Pages (19)" tabindex="0">Pages <span class="facetwp-counter">(19)</span></div>
+    <div class="facetwp-radio" data-value="post" role="checkbox" aria-checked="false" aria-label="Posts (13)" tabindex="0">Posts <span class="facetwp-counter">(13)</span></div>
+  </div>
+</section>
