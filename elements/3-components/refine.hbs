@@ -1,11 +1,24 @@
 <section class="c-refine">
   <header>
-    {{> @heading }}
+    {{> @heading document_type }}
   </header>
-  <div class="facetwp-facet">
+  <div class="facetwp-facet facetwp-type-radio">
     <div class="facetwp-radio checked" data-value="" role="checkbox" aria-checked="true" aria-label="All documents" tabindex="0">All documents</div>
     <div class="facetwp-radio" data-value="attachment" role="checkbox" aria-checked="false" aria-label="Media (168)" tabindex="0">Media <span class="facetwp-counter">(168)</span></div>
     <div class="facetwp-radio" data-value="page" role="checkbox" aria-checked="false" aria-label="Pages (19)" tabindex="0">Pages <span class="facetwp-counter">(19)</span></div>
     <div class="facetwp-radio" data-value="post" role="checkbox" aria-checked="false" aria-label="Posts (13)" tabindex="0">Posts <span class="facetwp-counter">(13)</span></div>
+  </div>
+</section>
+
+<section class="c-refine">
+  <header>
+    {{> @heading narrow_results}}
+  </header>
+  <div class="facetwp-facet facetwp-type-link">
+    <div class="facetwp-link" data-value="discovery-delivery-program" role="link" aria-label="Discovery &amp; Delivery Program (4)" tabindex="0">Discovery &amp; Delivery Program <span class="facetwp-counter">(4)</span></div>
+    <div class="facetwp-link" data-value="news-and-media-cdlinfo" role="link" aria-label="News and Media: CDLINFO (3)" tabindex="0">News and Media: CDLINFO <span class="facetwp-counter">(3)</span></div>
+    <div class="facetwp-link" data-value="about-cdl" role="link" aria-label="About CDL (26)" tabindex="0">About CDL <span class="facetwp-counter">(26)</span></div>
+    <div class="facetwp-link" data-value="collections-program" role="link" aria-label="Collections Program (2)" tabindex="0">Collections Program <span class="facetwp-counter">(2)</span></div>
+    <div class="facetwp-link" data-value="contact-cdl" role="link" aria-label="Contact CDL (1)" tabindex="0">Contact CDL <span class="facetwp-counter">(1)</span></div>
   </div>
 </section>

@@ -1,27 +1,17 @@
-const faker = require('faker/locale/en');
-const fakerData = [];
-
-for (var i = 0; i < 5; i++) {
-  if (process.env.NODE_ENV === 'testing') {
-    faker.seed(123);
-  }
-  fakerData.push({
-    text: faker.commerce.productName(),
-    number: faker.random.number(200)
-  });
-}
-
 module.exports = {
   label: 'Refine Search',
   context: {
-    heading: {
-      level: '2',
-      text: 'Narrow Your Results'
+    document_type: {
+      heading: {
+        level: '2',
+        text: 'Display by Document Type'
+      },
     },
-    toggle: {
-      closeButtonText: 'Close',
-      openButtonText: 'Open',
+    narrow_results: {
+      heading: {
+        level: '2',
+        text: 'Narrow Your Results'
+      },
     },
-    list: fakerData,
   }
 };

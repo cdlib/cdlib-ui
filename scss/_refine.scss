@@ -15,10 +15,37 @@
     }
   }
 
-  // WP class for facetWP container <div>:
+  // WP class to reset all facetWP container <div>s:
 
   .facetwp-facet {
     margin-bottom: revert;
-    padding: $space2;
+  }
+}
+
+// WP class for facetWP radio container <div>
+
+.facetwp-type-radio {
+  padding: $space2;
+}
+
+// WP classes for facetWP link <div>
+
+.facetwp-link {
+  display: flex;
+  justify-content: space-between;
+  gap: $space2;
+  padding: $space1 $space2;
+  color: $color-blue;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $color-gray;
+  }
+
+  .facetwp-counter {
+    color: $color-black;
   }
 }
