@@ -2,16 +2,4 @@
 dist
 node_modules
 .parcel-cache
-.publish
 ui-assets
-
-# hardlinked and symlinked from cdlib-ui-kit:
-
-browserslist-stats.json
-fractal_subtheme
-fractal.js
-gulpfile.js
-package-lock.json
-package.json
-postcss.config.js
-sass-lint-config.yml
