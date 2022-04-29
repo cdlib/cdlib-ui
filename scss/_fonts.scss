@@ -6,8 +6,8 @@
   font-family: 'Source Sans';
   font-weight: 200 900;
   src:
-    url('../fonts/SourceSans3VF-Roman.ttf.woff2') format('woff2-variations'),
-    url('../fonts/SourceSans3-Regular.ttf.woff') format('woff');
+    url('../node_modules/source-sans/WOFF2/VAR/SourceSans3VF-Roman.ttf.woff2') format('woff2-variations'),
+    url('../node_modules/source-sans/WOFF/TTF/SourceSans3-Regular.ttf.woff') format('woff');
   font-display: swap;
 }
 
@@ -17,8 +17,8 @@
   font-family: 'Source Sans';
   font-weight: 600;
   src:
-    url('../fonts/SourceSans3VF-Roman.ttf.woff2') format('woff2-variations'),
-    url('../fonts/SourceSans3-Semibold.ttf.woff') format('woff');
+    url('../node_modules/source-sans/WOFF2/VAR/SourceSans3VF-Roman.ttf.woff2') format('woff2-variations'),
+    url('../node_modules/source-sans/WOFF/TTF/SourceSans3-Semibold.ttf.woff') format('woff');
   font-display: swap;
 }
 
@@ -28,8 +28,8 @@
   font-family: 'Source Sans';
   font-weight: 700;
   src:
-    url('../fonts/SourceSans3VF-Roman.ttf.woff2') format('woff2-variations'),
-    url('../fonts/SourceSans3-Bold.ttf.woff') format('woff');
+    url('../node_modules/source-sans/WOFF2/VAR/SourceSans3VF-Roman.ttf.woff2') format('woff2-variations'),
+    url('../node_modules/source-sans/WOFF/TTF/SourceSans3-Bold.ttf.woff') format('woff');
   font-display: swap;
 }
 
@@ -40,8 +40,8 @@
   font-style: italic;
   font-weight: 200 900;
   src:
-    url('../fonts/SourceSans3VF-Italic.ttf.woff2') format('woff2-variations'),
-    url('../fonts/SourceSans3-It.ttf.woff') format('woff');
+    url('../node_modules/source-sans/WOFF2/VAR/SourceSans3VF-Italic.ttf.woff2') format('woff2-variations'),
+    url('../node_modules/source-sans/WOFF/TTF/SourceSans3-It.ttf.woff') format('woff');
   font-display: swap;
 }
 
@@ -52,8 +52,8 @@
   font-style: italic;
   font-weight: 600;
   src:
-    url('../fonts/SourceSans3VF-Italic.ttf.woff2') format('woff2-variations'),
-    url('../fonts/SourceSans3-SemiboldIt.ttf.woff') format('woff');
+    url('../node_modules/source-sans/WOFF2/VAR/SourceSans3VF-Italic.ttf.woff2') format('woff2-variations'),
+    url('../node_modules/source-sans/WOFF/TTF/SourceSans3-SemiboldIt.ttf.woff') format('woff');
   font-display: swap;
 }
 
@@ -64,7 +64,7 @@
   font-style: italic;
   font-weight: 700;
   src:
-    url('../fonts/SourceSans3VF-Italic.ttf.woff2') format('woff2-variations'),
-    url('../fonts/SourceSans3-BoldIt.ttf.woff') format('woff');
+    url('../node_modules/source-sans/WOFF2/VAR/SourceSans3VF-Italic.ttf.woff2') format('woff2-variations'),
+    url('../node_modules/source-sans/WOFF/TTF/SourceSans3-BoldIt.ttf.woff') format('woff');
   font-display: swap;
 }
