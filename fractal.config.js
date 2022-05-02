@@ -1,11 +1,10 @@
-// Require the path module:
 const path = require('path');
 
-// Require the Fractal module:
+// Create a new Fractal instance:
 const fractal = module.exports = require('@frctl/fractal').create();
 
-// Fractal project title:
-fractal.set('project.title', 'CDLIB UI Library');
+// Title of Fractal project:
+fractal.set('project.title', 'CDLIB UI');
 
 // Fractal components location:
 fractal.components.set('path', path.join(__dirname, 'elements'));
@@ -22,30 +21,14 @@ fractal.web.set('static.mount', 'ui-assets');
 // Destination of files on 'build' task:
 fractal.web.set('builder.dest', __dirname + '/dist');
 
-// Fractal global preview component handle:
+// Default Fractal template:
 fractal.components.set('default.preview', '@template-default');
 
-// BrowserSync options:
-fractal.web.set('server.syncOptions', {
-  // Inject CSS on change w/o reloading the page:
-  files: './ui-assets/css/*.css',
-  // Open BrowserSync at an external network URL:
-  open: 'external'
-});
-
-// ***** Mandelbrot Theme ***** //
-
-// Require the Mandelbrot theme module to enable customizations:
+// Mandelbrot theme with custom configuration:
 const mandelbrot = require('@frctl/mandelbrot');
 
-// Create a new theme instance with custom config options:
 const CDLIBTheme = mandelbrot({
   panels: ['notes', 'html', 'view', 'context', 'resources', 'info'],
-  styles: ['default', '/_subtheme/customizations.css']
 });
 
-// Specify the static assets directory that contains the custom theme CSS:
-CDLIBTheme.addStatic(__dirname + '/fractal_subtheme', '/_subtheme');
-
-// Use the configured theme by default:
 fractal.web.theme(CDLIBTheme);
