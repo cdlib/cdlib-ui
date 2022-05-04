@@ -1,0 +1,20 @@
+- name: Blog Index
+  url: http://localhost:8080/components/preview/blogindex.html
+
+- name: Blog Post
+  url: http://localhost:8080/components/preview/blogpost.html
+
+- name: Home Page
+  url: http://localhost:8080/components/preview/homepage.html
+
+- name: Program Page
+  url: http://localhost:8080/components/preview/program.html
+
+- name: Search Results
+  url: http://localhost:8080/components/preview/searchresults.html
+
+- name: Staff Profile
+  url: http://localhost:8080/components/preview/staffprofile.html
+
+- name: System Status
+  url: http://localhost:8080/components/preview/systemstatus.html
