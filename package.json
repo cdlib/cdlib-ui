@@ -24,9 +24,11 @@
     "copy-images": "imagemin images/* --out-dir=ui-assets/images",
     "copy-assets": "copyfiles --error ui-assets/**/* dist",
     "copy-local": "copyfiles --error ./dist/ui-assets ~/'Local Sites'/cdlib/app/public/wp-content/themes/cdlib",
-    "percy-server": "http-server dist -c-1 -s",
-    "test-percy": "start-server-and-test percy-server 8080 run-percy",
-    "run-percy": "export NODE_ENV=testing&&npm run build&&npx percy snapshot snapshots.yml",
+    "percy": "run-s build-percy test-percy",
+    "build-percy": "export NODE_ENV=testing&&npm run build",
+    "serve-percy": "http-server dist -c-1 -s",
+    "test-percy": "start-server-and-test serve-percy 8080 run-percy",
+    "run-percy": "npx percy snapshot snapshots.yml",
     "a11y": "pa11y-ci --sitemap http://localhost:8080/sitemap.xml --threshold 1000"
   },
   "repository": {
