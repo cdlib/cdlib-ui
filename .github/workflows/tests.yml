@@ -1,0 +1,67 @@
+name: Tests
+on: push
+jobs:
+  job1:
+    name: Create Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Create test build
+        run: npm run test-build
+      - name: Cache test build
+        uses: actions/cache@v3
+        with:
+          path: dist
+          key: run-id-${{ github.run_id }}
+  job2:
+    name: Accessibility Audit
+    needs: job1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Retrieve cached test build
+        uses: actions/cache@v3
+        with:
+          path: dist
+          key: run-id-${{ github.run_id }}
+      - name: Run pa11y-ci test
+        run: npm run start-pa11y
+  job3:
+    name: Visual Regression
+    needs: job1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Retrieve cached test build
+        uses: actions/cache@v3
+        with:
+          path: dist
+          key: run-id-${{ github.run_id }}
+      - name: Run percy test
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+        run: npm run start-percy
