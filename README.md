@@ -1,38 +1,59 @@
 # cdlib-ui
-The UI library for the California Digital Library website.
+
+The UI for the California Digital Library website.
+
+View at: https://cdlib.github.io/cdlib-ui
 
 ## Installation
 
-1. `cd` to your root directory containing the [cdlib repo](https://github.com/cdlib/cdlib).
+Requires Node, npm.
 
-2. Clone cdlib repo into that directory.
+Run `npm install`.
 
-3. `cd` to `cdlib-ui` and run `npm install`.
+## Developing
 
-4. Run `gulp pull-assets-dev` to copy initial UI assets from remote server to the UI library.
+1. Run `npm run serve`
 
-UI assets include the compiled stylesheet, fonts, images, and JavaScript. These automatically get updated during development and get pushed to the local and remote instances via the commands below. They don't include the Sass, HTML, or any other files.
+This will watch and compile **.hbs**, **.scss**, **.js**, and **/images/** files as you work on them.
 
-## Running Toolkit
+2. Go to http://localhost:3000 to view the UI
 
-* Run `gulp` during development.
+To test the UI on other devices (phone, tablet, etc.), use the Fractal Server Network URL listed in your CLI at first run.
 
-* Run `gulp build` to create a finished build of ui assets updated during development. This copies them to within your local cdlib repo for review and prepares them for getting pushed to the remote servers via the `update` commands below.
+## Building
 
-* `gulp deploy` executes the same process as `gulp build`, but also uploads the updated UI library to the [webprod server](http://webprod.cdlib.org/cdlib/cdlib-ui) for review.
+Run `npm run build`.
 
-* Run `gulp update-dev` to upload a finished build of the ui assets to the development server. This also executes a `git pull` of the cdlib repo on the server.
+This will create a finished build of all components and pages of this UI at **/dist/**
 
-* `gulp update-stage` does the same as `gulp update-dev above, but for the staging server.
+All UI assets, including minified images, compiled CSS & JS, and font files are copied to **/dist/ui-assets/**.
 
-* `gulp update-prod` does the same as `gulp update-dev above, but for the production server.
+## Testing
 
-## Best Practices
+The following tests are run via GitHub Actions with each push to the repository:
 
-* Please commit to the `dev` branch, not `master`.
+* [Pa11y-ci](https://github.com/pa11y/pa11y-ci) (accessibility audit)
+* [Percy](https://percy.io) (visual regression)
 
-* When diagnosing layout issues, be sure to compare the rendering between the UI library and cdlib websites to confirm if the problem is in the UI or if it's related to content in WordPress.
+To run manually:
 
-* When planning UI updates, use your browser's DevTools to inspect the code on the cdlib site or UI library site first. Finding UI component class names and HTML is often easier this way than trying to initially locate this within the UI library files.
+* `npm run test-pa11y`
+* `npm run test-percy`
 
-* If HTML is modified within the cdlib repo along with styles in the cdlib-ui repo, commit and push the cdlib repo changes first. When running one of the `update` commands above, the styles and HTML will get updated on the dev/stage/prod server at the same time.
+[View test results](https://github.com/cdlib/cdlib-ui/actions).
+
+Percy requires an active account for uploading visual snapshots and a `PERCY_TOKEN` added as a GitHub repository secret.
+
+## Publishing to GitHub Pages
+
+This requires [GitHub Pages](https://pages.github.com) to be configured.
+
+Run `npm run publish` to publish a finished build of this UI to https://cdlib.github.io/cdlib-ui.
+
+## Deployment
+
+To deploy UI assets to WordPress servers, run:
+
+* `npm run push-assets-dev`
+* `npm run push-assets-stage`
+* `npm run push-assets-prod`
