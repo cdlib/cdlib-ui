@@ -2,16 +2,14 @@
 
 body {
   margin: 0 auto;
-  padding-right: $space1;
-  padding-left: $space1;
+  padding-inline: $space3;
   font-family: 'Source Sans', Arial, sans-serif;
   font-weight: 400;
   line-height: $line-height0;
 
   @include screen1 {
     max-width: 1400px;
-    padding-right: $space2;
-    padding-left: $space2;
+    padding-inline: $space2;
   }
 
   @media print {
