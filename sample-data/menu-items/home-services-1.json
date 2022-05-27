@@ -1,0 +1,38 @@
+[
+    {
+        "id": 42609,
+        "title": {
+            "rendered": "Licensed Resources"
+        },
+        "url": "https://cdlib.org/services/collections/licensed/",
+        "menu_order": 1,
+        "menus": 888
+    },
+    {
+        "id": 42610,
+        "title": {
+            "rendered": "Shared Print"
+        },
+        "url": "https://cdlib.org/services/collections/sharedprint/",
+        "menu_order": 2,
+        "menus": 888
+    },
+    {
+        "id": 42611,
+        "title": {
+            "rendered": "Mass Digitization"
+        },
+        "url": "https://cdlib.org/services/pad/massdig/",
+        "menu_order": 3,
+        "menus": 888
+    },
+    {
+        "id": 42612,
+        "title": {
+            "rendered": "Calisphere"
+        },
+        "url": "https://cdlib.org/services/pad/calisphere/",
+        "menu_order": 4,
+        "menus": 888
+    }
+]

@@ -1,0 +1,502 @@
+[
+    {
+        "id": 435,
+        "link": "https://cdlib.org/cdlinfo/tag/accessibility/",
+        "name": "Accessibility"
+    },
+    {
+        "id": 451,
+        "link": "https://cdlib.org/cdlinfo/tag/arks/",
+        "name": "arks"
+    },
+    {
+        "id": 1023,
+        "link": "https://cdlib.org/cdlinfo/tag/artificial-intelligence/",
+        "name": "artificial intelligence"
+    },
+    {
+        "id": 340,
+        "link": "https://cdlib.org/cdlinfo/tag/behind-the-scenes/",
+        "name": "Behind the Scenes"
+    },
+    {
+        "id": 428,
+        "link": "https://cdlib.org/cdlinfo/tag/berkeley/",
+        "name": "Berkeley"
+    },
+    {
+        "id": 366,
+        "link": "https://cdlib.org/cdlinfo/tag/branding/",
+        "name": "branding"
+    },
+    {
+        "id": 986,
+        "link": "https://cdlib.org/cdlinfo/tag/calisphere/",
+        "name": "calisphere"
+    },
+    {
+        "id": 356,
+        "link": "https://cdlib.org/cdlinfo/tag/career-development/",
+        "name": "career development"
+    },
+    {
+        "id": 351,
+        "link": "https://cdlib.org/cdlinfo/tag/change-management/",
+        "name": "change management"
+    },
+    {
+        "id": 407,
+        "link": "https://cdlib.org/cdlinfo/tag/citation/",
+        "name": "citation"
+    },
+    {
+        "id": 438,
+        "link": "https://cdlib.org/cdlinfo/tag/cobweb/",
+        "name": "Cobweb"
+    },
+    {
+        "id": 1038,
+        "link": "https://cdlib.org/cdlinfo/tag/codile/",
+        "name": "CoDiLe"
+    },
+    {
+        "id": 358,
+        "link": "https://cdlib.org/cdlinfo/tag/collaboration/",
+        "name": "collaboration"
+    },
+    {
+        "id": 341,
+        "link": "https://cdlib.org/cdlinfo/tag/communication/",
+        "name": "communication"
+    },
+    {
+        "id": 449,
+        "link": "https://cdlib.org/cdlinfo/tag/community/",
+        "name": "community"
+    },
+    {
+        "id": 1039,
+        "link": "https://cdlib.org/cdlinfo/tag/controlled-digital-lending/",
+        "name": "Controlled Digital Lending"
+    },
+    {
+        "id": 401,
+        "link": "https://cdlib.org/cdlinfo/tag/cool-stuff/",
+        "name": "cool stuff"
+    },
+    {
+        "id": 434,
+        "link": "https://cdlib.org/cdlinfo/tag/copyright/",
+        "name": "copyright"
+    },
+    {
+        "id": 406,
+        "link": "https://cdlib.org/cdlinfo/tag/data-management/",
+        "name": "data management"
+    },
+    {
+        "id": 409,
+        "link": "https://cdlib.org/cdlinfo/tag/data-management-plan/",
+        "name": "data management plan"
+    },
+    {
+        "id": 443,
+        "link": "https://cdlib.org/cdlinfo/tag/data-metrics/",
+        "name": "data metrics"
+    },
+    {
+        "id": 402,
+        "link": "https://cdlib.org/cdlinfo/tag/data-mining/",
+        "name": "data mining"
+    },
+    {
+        "id": 378,
+        "link": "https://cdlib.org/cdlinfo/tag/datacite/",
+        "name": "DataCite"
+    },
+    {
+        "id": 430,
+        "link": "https://cdlib.org/cdlinfo/tag/dataone/",
+        "name": "DataONE"
+    },
+    {
+        "id": 431,
+        "link": "https://cdlib.org/cdlinfo/tag/dataset-level-metrics-dlm/",
+        "name": "dataset level metrics (DLM)"
+    },
+    {
+        "id": 411,
+        "link": "https://cdlib.org/cdlinfo/tag/dataup/",
+        "name": "DataUp"
+    },
+    {
+        "id": 381,
+        "link": "https://cdlib.org/cdlinfo/tag/design/",
+        "name": "design"
+    },
+    {
+        "id": 403,
+        "link": "https://cdlib.org/cdlinfo/tag/digital-humanities/",
+        "name": "digital humanities"
+    },
+    {
+        "id": 447,
+        "link": "https://cdlib.org/cdlinfo/tag/digital-images/",
+        "name": "Digital Images"
+    },
+    {
+        "id": 374,
+        "link": "https://cdlib.org/cdlinfo/tag/digitization/",
+        "name": "digitization"
+    },
+    {
+        "id": 410,
+        "link": "https://cdlib.org/cdlinfo/tag/dmp/",
+        "name": "dmp"
+    },
+    {
+        "id": 412,
+        "link": "https://cdlib.org/cdlinfo/tag/dmptool/",
+        "name": "DMPTool"
+    },
+    {
+        "id": 408,
+        "link": "https://cdlib.org/cdlinfo/tag/doi/",
+        "name": "DOI"
+    },
+    {
+        "id": 418,
+        "link": "https://cdlib.org/cdlinfo/tag/dpla/",
+        "name": "DPLA"
+    },
+    {
+        "id": 433,
+        "link": "https://cdlib.org/cdlinfo/tag/ebooks/",
+        "name": "ebooks"
+    },
+    {
+        "id": 385,
+        "link": "https://cdlib.org/cdlinfo/tag/educational/",
+        "name": "educational"
+    },
+    {
+        "id": 352,
+        "link": "https://cdlib.org/cdlinfo/tag/escholarship/",
+        "name": "eScholarship"
+    },
+    {
+        "id": 390,
+        "link": "https://cdlib.org/cdlinfo/tag/extensible-text-framework/",
+        "name": "eXtensible Text Framework"
+    },
+    {
+        "id": 427,
+        "link": "https://cdlib.org/cdlinfo/tag/ezid/",
+        "name": "EZID"
+    },
+    {
+        "id": 1025,
+        "link": "https://cdlib.org/cdlinfo/tag/fair-use/",
+        "name": "Fair Use"
+    },
+    {
+        "id": 371,
+        "link": "https://cdlib.org/cdlinfo/tag/feature-extraction/",
+        "name": "feature extraction"
+    },
+    {
+        "id": 398,
+        "link": "https://cdlib.org/cdlinfo/tag/fixity/",
+        "name": "Fixity"
+    },
+    {
+        "id": 372,
+        "link": "https://cdlib.org/cdlinfo/tag/format-identification/",
+        "name": "format identification"
+    },
+    {
+        "id": 373,
+        "link": "https://cdlib.org/cdlinfo/tag/format-validation/",
+        "name": "format validation"
+    },
+    {
+        "id": 404,
+        "link": "https://cdlib.org/cdlinfo/tag/google/",
+        "name": "google"
+    },
+    {
+        "id": 423,
+        "link": "https://cdlib.org/cdlinfo/tag/google-books/",
+        "name": "Google Books"
+    },
+    {
+        "id": 439,
+        "link": "https://cdlib.org/cdlinfo/tag/harvard-library/",
+        "name": "Harvard Library"
+    },
+    {
+        "id": 337,
+        "link": "https://cdlib.org/cdlinfo/tag/hathitrust/",
+        "name": "HathiTrust"
+    },
+    {
+        "id": 420,
+        "link": "https://cdlib.org/cdlinfo/tag/hathitrust-reseach-center/",
+        "name": "HathiTrust Reseach Center"
+    },
+    {
+        "id": 1036,
+        "link": "https://cdlib.org/cdlinfo/tag/help-center/",
+        "name": "Help Center"
+    },
+    {
+        "id": 876,
+        "link": "https://cdlib.org/cdlinfo/tag/identifiers/",
+        "name": "identifiers"
+    },
+    {
+        "id": 359,
+        "link": "https://cdlib.org/cdlinfo/tag/innovation/",
+        "name": "innovation"
+    },
+    {
+        "id": 987,
+        "link": "https://cdlib.org/cdlinfo/tag/internship/",
+        "name": "internship"
+    },
+    {
+        "id": 394,
+        "link": "https://cdlib.org/cdlinfo/tag/job/",
+        "name": "job"
+    },
+    {
+        "id": 363,
+        "link": "https://cdlib.org/cdlinfo/tag/job-satisfaction/",
+        "name": "job satisfaction"
+    },
+    {
+        "id": 353,
+        "link": "https://cdlib.org/cdlinfo/tag/journals/",
+        "name": "journals"
+    },
+    {
+        "id": 1012,
+        "link": "https://cdlib.org/cdlinfo/tag/library-publishing/",
+        "name": "library publishing"
+    },
+    {
+        "id": 395,
+        "link": "https://cdlib.org/cdlinfo/tag/linkeddata/",
+        "name": "LinkedData"
+    },
+    {
+        "id": 988,
+        "link": "https://cdlib.org/cdlinfo/tag/machine-learning/",
+        "name": "machine learning"
+    },
+    {
+        "id": 355,
+        "link": "https://cdlib.org/cdlinfo/tag/management/",
+        "name": "management"
+    },
+    {
+        "id": 369,
+        "link": "https://cdlib.org/cdlinfo/tag/mark-twain/",
+        "name": "Mark Twain"
+    },
+    {
+        "id": 338,
+        "link": "https://cdlib.org/cdlinfo/tag/mass-digitization/",
+        "name": "Mass Digitization"
+    },
+    {
+        "id": 335,
+        "link": "https://cdlib.org/cdlinfo/tag/measurement/",
+        "name": "measurement"
+    },
+    {
+        "id": 388,
+        "link": "https://cdlib.org/cdlinfo/tag/merritt/",
+        "name": "Merritt"
+    },
+    {
+        "id": 379,
+        "link": "https://cdlib.org/cdlinfo/tag/metadata/",
+        "name": "metadata"
+    },
+    {
+        "id": 392,
+        "link": "https://cdlib.org/cdlinfo/tag/milestone/",
+        "name": "milestone"
+    },
+    {
+        "id": 370,
+        "link": "https://cdlib.org/cdlinfo/tag/mtpo/",
+        "name": "MTPO"
+    },
+    {
+        "id": 871,
+        "link": "https://cdlib.org/cdlinfo/tag/n2t-net/",
+        "name": "N2T.net"
+    },
+    {
+        "id": 421,
+        "link": "https://cdlib.org/cdlinfo/tag/ngram/",
+        "name": "Ngram"
+    },
+    {
+        "id": 1013,
+        "link": "https://cdlib.org/cdlinfo/tag/open-access/",
+        "name": "open access"
+    },
+    {
+        "id": 444,
+        "link": "https://cdlib.org/cdlinfo/tag/open-data/",
+        "name": "open data"
+    },
+    {
+        "id": 450,
+        "link": "https://cdlib.org/cdlinfo/tag/open-source/",
+        "name": "open source"
+    },
+    {
+        "id": 377,
+        "link": "https://cdlib.org/cdlinfo/tag/open_access/",
+        "name": "open_access"
+    },
+    {
+        "id": 446,
+        "link": "https://cdlib.org/cdlinfo/tag/opening-rights/",
+        "name": "Opening Rights"
+    },
+    {
+        "id": 405,
+        "link": "https://cdlib.org/cdlinfo/tag/papr/",
+        "name": "PAPR"
+    },
+    {
+        "id": 422,
+        "link": "https://cdlib.org/cdlinfo/tag/pearsons-magazine/",
+        "name": "Pearson's Magazine"
+    },
+    {
+        "id": 873,
+        "link": "https://cdlib.org/cdlinfo/tag/photography/",
+        "name": "Photography"
+    },
+    {
+        "id": 1004,
+        "link": "https://cdlib.org/cdlinfo/tag/planning/",
+        "name": "planning"
+    },
+    {
+        "id": 432,
+        "link": "https://cdlib.org/cdlinfo/tag/plos/",
+        "name": "PLoS"
+    },
+    {
+        "id": 1027,
+        "link": "https://cdlib.org/cdlinfo/tag/preprints/",
+        "name": "preprints"
+    },
+    {
+        "id": 360,
+        "link": "https://cdlib.org/cdlinfo/tag/professional-fitness/",
+        "name": "professional fitness"
+    },
+    {
+        "id": 344,
+        "link": "https://cdlib.org/cdlinfo/tag/project-management/",
+        "name": "project management"
+    },
+    {
+        "id": 967,
+        "link": "https://cdlib.org/cdlinfo/tag/public-domain/",
+        "name": "Public Domain"
+    },
+    {
+        "id": 354,
+        "link": "https://cdlib.org/cdlinfo/tag/digital-publishing/",
+        "name": "Publishing"
+    },
+    {
+        "id": 396,
+        "link": "https://cdlib.org/cdlinfo/tag/registry/",
+        "name": "Registry"
+    },
+    {
+        "id": 437,
+        "link": "https://cdlib.org/cdlinfo/tag/research/",
+        "name": "Research"
+    },
+    {
+        "id": 872,
+        "link": "https://cdlib.org/cdlinfo/tag/resolvers/",
+        "name": "resolvers"
+    },
+    {
+        "id": 357,
+        "link": "https://cdlib.org/cdlinfo/tag/resource-management/",
+        "name": "resource management"
+    },
+    {
+        "id": 1026,
+        "link": "https://cdlib.org/cdlinfo/tag/resource-sharing/",
+        "name": "Resource Sharing"
+    },
+    {
+        "id": 364,
+        "link": "https://cdlib.org/cdlinfo/tag/resource_cancellation/",
+        "name": "resource_cancellation"
+    },
+    {
+        "id": 346,
+        "link": "https://cdlib.org/cdlinfo/tag/resource_change/",
+        "name": "resource_change"
+    },
+    {
+        "id": 343,
+        "link": "https://cdlib.org/cdlinfo/tag/resource_new/",
+        "name": "resource_new"
+    },
+    {
+        "id": 1005,
+        "link": "https://cdlib.org/cdlinfo/tag/roadmaps/",
+        "name": "roadmaps"
+    },
+    {
+        "id": 426,
+        "link": "https://cdlib.org/cdlinfo/tag/sag2/",
+        "name": "SAG2"
+    },
+    {
+        "id": 386,
+        "link": "https://cdlib.org/cdlinfo/tag/scanning/",
+        "name": "scanning"
+    },
+    {
+        "id": 347,
+        "link": "https://cdlib.org/cdlinfo/tag/scholarly-communication/",
+        "name": "scholarly communication"
+    },
+    {
+        "id": 397,
+        "link": "https://cdlib.org/cdlinfo/tag/semanticweb/",
+        "name": "SemanticWeb"
+    },
+    {
+        "id": 342,
+        "link": "https://cdlib.org/cdlinfo/tag/social-networking/",
+        "name": "social networking"
+    },
+    {
+        "id": 874,
+        "link": "https://cdlib.org/cdlinfo/tag/special-collections/",
+        "name": "Special Collections"
+    },
+    {
+        "id": 384,
+        "link": "https://cdlib.org/cdlinfo/tag/strategic-planning/",
+        "name": "strategic planning"
+    }
+]

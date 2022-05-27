@@ -1,0 +1,65 @@
+[
+    {
+        "id": 53310,
+        "title": {
+            "rendered": "Calisphere"
+        },
+        "url": "https://calisphere.org/",
+        "menu_order": 1,
+        "menus": 879
+    },
+    {
+        "id": 53311,
+        "title": {
+            "rendered": "eScholarship"
+        },
+        "url": "https://escholarship.org/",
+        "menu_order": 2,
+        "menus": 879
+    },
+    {
+        "id": 53312,
+        "title": {
+            "rendered": "Merritt"
+        },
+        "url": "https://merritt.cdlib.org/",
+        "menu_order": 3,
+        "menus": 879
+    },
+    {
+        "id": 57366,
+        "title": {
+            "rendered": "UC Library Search"
+        },
+        "url": "https://cdlib.org/services/d2d/uc-library-search/",
+        "menu_order": 4,
+        "menus": 879
+    },
+    {
+        "id": 53314,
+        "title": {
+            "rendered": "Online Archive of California"
+        },
+        "url": "http://www.oac.cdlib.org/",
+        "menu_order": 5,
+        "menus": 879
+    },
+    {
+        "id": 53316,
+        "title": {
+            "rendered": "UC Libraries"
+        },
+        "url": "https://libraries.universityofcalifornia.edu/",
+        "menu_order": 6,
+        "menus": 879
+    },
+    {
+        "id": 53315,
+        "title": {
+            "rendered": "DMPTool"
+        },
+        "url": "https://dmptool.org/",
+        "menu_order": 7,
+        "menus": 879
+    }
+]

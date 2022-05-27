@@ -1,0 +1,1596 @@
+[
+    {
+        "id": 25815,
+        "title": {
+            "rendered": "News and Media"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 30598,
+        "title": {
+            "rendered": "SciFinder-n Campus Contacts"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 52889,
+        "title": {
+            "rendered": "Welcome to SciFinder-n &#8212; UC San Francisco"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 52886,
+        "title": {
+            "rendered": "Welcome to SciFinder-n &#8212; UC San Diego"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 52882,
+        "title": {
+            "rendered": "Welcome to SciFinder-n &#8212; UC Santa Barbara"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 52879,
+        "title": {
+            "rendered": "Welcome to SciFinder-n &#8212; UC Riverside"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 52872,
+        "title": {
+            "rendered": "Welcome to SciFinder-n &#8212; UCOP"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 52869,
+        "title": {
+            "rendered": "Welcome to SciFinder-n &#8212; UC Merced"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 52864,
+        "title": {
+            "rendered": "Welcome to SciFinder-n &#8212; UCLA"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 30693,
+        "title": {
+            "rendered": "SciFinder-n"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 52859,
+        "title": {
+            "rendered": "Welcome to SciFinder-n &#8212; UC Irvine"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 52847,
+        "title": {
+            "rendered": "Welcome to SciFinder-n &#8212; UC Santa Cruz"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 52856,
+        "title": {
+            "rendered": "Welcome to SciFinder-n &#8212; UC Davis"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 52849,
+        "title": {
+            "rendered": "Welcome to SciFinder-n &#8212; UC Berkeley"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 58702,
+        "title": {
+            "rendered": "Zainab Olaosebikan Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "Zainab ",
+            "last_name": "Olaosebikan",
+            "campus": "CDL",
+            "profile_photograph": "",
+            "program_service": [
+                "Business Services"
+            ],
+            "title": "Director of Finance and Operations",
+            "responsibilities": "",
+            "education": "",
+            "background": "",
+            "professional_development": "",
+            "professional_interests": "",
+            "committees_affiliations": "",
+            "publications": "",
+            "papers_and_presentations": "",
+            "orcid_id": "",
+            "linkedin_profile": ""
+        }
+    },
+    {
+        "id": 58684,
+        "title": {
+            "rendered": "Devin Smith Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "Devin",
+            "last_name": "Smith",
+            "campus": "CDL",
+            "profile_photograph": "",
+            "program_service": [
+                "Publishing, Archives, and Digitization"
+            ],
+            "title": "Application Programmer",
+            "responsibilities": "",
+            "education": "",
+            "background": "",
+            "professional_development": "",
+            "professional_interests": "",
+            "committees_affiliations": "",
+            "publications": "",
+            "papers_and_presentations": "",
+            "orcid_id": "",
+            "linkedin_profile": ""
+        }
+    },
+    {
+        "id": 58615,
+        "title": {
+            "rendered": "Raiden van Bronkhorst Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "Raiden",
+            "last_name": "van Bronkhorst",
+            "campus": "CDL",
+            "profile_photograph": "",
+            "program_service": [
+                "Discovery & Delivery"
+            ],
+            "title": "Software Engineer",
+            "responsibilities": "",
+            "education": "",
+            "background": "",
+            "professional_development": "",
+            "professional_interests": "",
+            "committees_affiliations": "",
+            "publications": "",
+            "papers_and_presentations": "",
+            "orcid_id": "",
+            "linkedin_profile": ""
+        }
+    },
+    {
+        "id": 58402,
+        "title": {
+            "rendered": "Sherry Lochhaas Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "Sherry",
+            "last_name": "Lochhaas",
+            "campus": "CDL",
+            "profile_photograph": "",
+            "program_service": [
+                "Shared Collections"
+            ],
+            "title": " Electronic Resources Service Manager",
+            "responsibilities": "",
+            "education": "",
+            "background": "",
+            "professional_development": "",
+            "professional_interests": "",
+            "committees_affiliations": "",
+            "publications": "",
+            "papers_and_presentations": "",
+            "orcid_id": "",
+            "linkedin_profile": ""
+        }
+    },
+    {
+        "id": 58365,
+        "title": {
+            "rendered": "Satomi Saito Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "Satomi",
+            "last_name": "Saito",
+            "campus": "CDL",
+            "profile_photograph": "",
+            "program_service": [
+                "Business Services"
+            ],
+            "title": "Senior Financial Analyst",
+            "responsibilities": "",
+            "education": "",
+            "background": "",
+            "professional_development": "",
+            "professional_interests": "",
+            "committees_affiliations": "",
+            "publications": "",
+            "papers_and_presentations": "",
+            "orcid_id": "",
+            "linkedin_profile": ""
+        }
+    },
+    {
+        "id": 30674,
+        "title": {
+            "rendered": "Reporting Problems After Hours"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 30668,
+        "title": {
+            "rendered": "How to Use the CDL Helpline Website"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 33279,
+        "title": {
+            "rendered": "Users Council Roster"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 25545,
+        "title": {
+            "rendered": "Job Opportunities"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 58159,
+        "title": {
+            "rendered": "Jade Yonehiro Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "Jade",
+            "last_name": "Yonehiro",
+            "campus": "CDL",
+            "profile_photograph": "",
+            "program_service": [
+                "Shared Collections"
+            ],
+            "title": "Open Access Data Analyst",
+            "responsibilities": "",
+            "education": "",
+            "background": "",
+            "professional_development": "",
+            "professional_interests": "",
+            "committees_affiliations": "",
+            "publications": "",
+            "papers_and_presentations": "",
+            "orcid_id": "",
+            "linkedin_profile": ""
+        }
+    },
+    {
+        "id": 58048,
+        "title": {
+            "rendered": "SCP Record Distribution Statistics for fiscal year 2020-2021"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 57993,
+        "title": {
+            "rendered": "Kristen Chua Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "Kristen",
+            "last_name": "Chua",
+            "campus": "CDL",
+            "profile_photograph": "",
+            "program_service": [
+                "Information Services"
+            ],
+            "title": "Information Services Analyst",
+            "responsibilities": "",
+            "education": "",
+            "background": "",
+            "professional_development": "",
+            "professional_interests": "",
+            "committees_affiliations": "",
+            "publications": "",
+            "papers_and_presentations": "",
+            "orcid_id": "",
+            "linkedin_profile": ""
+        }
+    },
+    {
+        "id": 57835,
+        "title": {
+            "rendered": "Mark Clemente Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "Mark",
+            "last_name": "Clemente",
+            "campus": "CDL",
+            "profile_photograph": "",
+            "program_service": [
+                "Shared Collections"
+            ],
+            "title": "Open Access Publisher Agreements Manager",
+            "responsibilities": "",
+            "education": "",
+            "background": "",
+            "professional_development": "",
+            "professional_interests": "",
+            "committees_affiliations": "",
+            "publications": "",
+            "papers_and_presentations": "",
+            "orcid_id": "",
+            "linkedin_profile": ""
+        }
+    },
+    {
+        "id": 57789,
+        "title": {
+            "rendered": "Esther Verreau Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "Esther",
+            "last_name": "Verreau",
+            "campus": "CDL",
+            "profile_photograph": "",
+            "program_service": [
+                "Publishing, Archives, and Digitization"
+            ],
+            "title": "Senior Software Developer",
+            "responsibilities": "",
+            "education": "",
+            "background": "",
+            "professional_development": "",
+            "professional_interests": "",
+            "committees_affiliations": "",
+            "publications": "",
+            "papers_and_presentations": "",
+            "orcid_id": "",
+            "linkedin_profile": ""
+        }
+    },
+    {
+        "id": 35767,
+        "title": {
+            "rendered": "Factiva"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 57716,
+        "title": {
+            "rendered": "SILS Operations Center at CDL"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 57702,
+        "title": {
+            "rendered": "Lisa Moske Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "Lisa",
+            "last_name": "Moske",
+            "campus": "CDL",
+            "profile_photograph": "",
+            "program_service": [
+                "Shared Collections"
+            ],
+            "title": "Shared Content Service Support Coordinator",
+            "responsibilities": "<p>Lisa provides support in all areas of shared collection development efforts, including working on behalf of JSC to survey campuses and gather information for potential purchases.</p>",
+            "education": "<p>BA Sociology, UCLA | MA Sociology, Cal State LA | MLS, UCLA</p>",
+            "background": "<p>Lisa's experience in higher education includes systemwide roles licensing resources for libraries, and in academic and information technology, information security, and project management. </p>",
+            "professional_development": "",
+            "professional_interests": "",
+            "committees_affiliations": "",
+            "publications": "",
+            "papers_and_presentations": "",
+            "orcid_id": "",
+            "linkedin_profile": ""
+        }
+    },
+    {
+        "id": 28049,
+        "title": {
+            "rendered": "Users Council"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 57270,
+        "title": {
+            "rendered": "UC Library Search"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 57262,
+        "title": {
+            "rendered": "Systemwide ILS (SILS)"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 57249,
+        "title": {
+            "rendered": "Colin Thompson Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "Colin ",
+            "last_name": "Thompson",
+            "campus": "CDL",
+            "profile_photograph": "",
+            "program_service": [
+                "Infrastructure and Applications Support"
+            ],
+            "title": "Infrastructure Engineer",
+            "responsibilities": "",
+            "education": "",
+            "background": "",
+            "professional_development": "",
+            "professional_interests": "",
+            "committees_affiliations": "",
+            "publications": "",
+            "papers_and_presentations": "",
+            "orcid_id": "",
+            "linkedin_profile": ""
+        }
+    },
+    {
+        "id": 25618,
+        "title": {
+            "rendered": "Instructional Materials"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 25615,
+        "title": {
+            "rendered": "Information Services"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 56909,
+        "title": {
+            "rendered": "Thank you for your submission!"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 56904,
+        "title": {
+            "rendered": "Contact WEST"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 56881,
+        "title": {
+            "rendered": "Thank you for your submission!"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 56842,
+        "title": {
+            "rendered": "Contact Shared Print"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 33805,
+        "title": {
+            "rendered": "Press Releases"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 56600,
+        "title": {
+            "rendered": "Lisa Mackinder Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "Lisa",
+            "last_name": "Mackinder",
+            "campus": "CDL",
+            "profile_photograph": "",
+            "program_service": [
+                "Shared Collections"
+            ],
+            "title": "Licensing Analyst",
+            "responsibilities": "",
+            "education": "",
+            "background": "",
+            "professional_development": "",
+            "professional_interests": "",
+            "committees_affiliations": "",
+            "publications": "",
+            "papers_and_presentations": "",
+            "orcid_id": "",
+            "linkedin_profile": ""
+        }
+    },
+    {
+        "id": 31868,
+        "title": {
+            "rendered": "Campus Contacts Related to SCP Activities"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 56557,
+        "title": {
+            "rendered": "Gem Stone-Logan Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "Gem",
+            "last_name": "Stone-Logan",
+            "campus": "CDL",
+            "profile_photograph": 56563,
+            "program_service": [
+                "Discovery & Delivery"
+            ],
+            "title": "Senior Systems Analyst",
+            "responsibilities": "",
+            "education": "",
+            "background": "",
+            "professional_development": "",
+            "professional_interests": "",
+            "committees_affiliations": "",
+            "publications": "",
+            "papers_and_presentations": "",
+            "orcid_id": "",
+            "linkedin_profile": ""
+        }
+    },
+    {
+        "id": 25910,
+        "title": {
+            "rendered": "Publications"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 56394,
+        "title": {
+            "rendered": "AP Newsroom"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 56097,
+        "title": {
+            "rendered": "Resources for Archivers"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 56093,
+        "title": {
+            "rendered": "Accessing the WEST collections"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 56088,
+        "title": {
+            "rendered": "Contributing to the Archives"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 56072,
+        "title": {
+            "rendered": "Archiving Standards &amp; Requirements"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 56065,
+        "title": {
+            "rendered": "Archive Types"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 56056,
+        "title": {
+            "rendered": "WEST Archives"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 56061,
+        "title": {
+            "rendered": "Collections Model"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 55646,
+        "title": {
+            "rendered": "WEST Membership"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 55638,
+        "title": {
+            "rendered": "Value of WEST"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 55602,
+        "title": {
+            "rendered": "History"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 55650,
+        "title": {
+            "rendered": "Documents &amp; Presentations"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 55648,
+        "title": {
+            "rendered": "Become a WEST Member"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 55570,
+        "title": {
+            "rendered": "About WEST"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 55477,
+        "title": {
+            "rendered": "PubMed UC Davis"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 55414,
+        "title": {
+            "rendered": "PubMed"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 55409,
+        "title": {
+            "rendered": "Scottish Women Poets of the Romantic Period"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 55407,
+        "title": {
+            "rendered": "Latino Literature"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 55405,
+        "title": {
+            "rendered": "Latin American Women Writers"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 55403,
+        "title": {
+            "rendered": "Digitale Bibliothek Deutscher Klassiker"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 55401,
+        "title": {
+            "rendered": "Twentieth-Century English Poetry"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 55399,
+        "title": {
+            "rendered": "Twentieth-Century American Poetry"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 55397,
+        "title": {
+            "rendered": "Twentieth-Century African American Poetry"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 55395,
+        "title": {
+            "rendered": "American Drama 1714–1915"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 55391,
+        "title": {
+            "rendered": "African Writers Series"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 55267,
+        "title": {
+            "rendered": "Ashley Gould Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "Ashley",
+            "last_name": "Gould",
+            "campus": "CDL",
+            "profile_photograph": "",
+            "program_service": [
+                "UC Curation Center (UC3)"
+            ],
+            "title": "Senior DevOps/Infrastructure Engineer",
+            "responsibilities": "",
+            "education": "",
+            "background": "",
+            "professional_development": "",
+            "professional_interests": "",
+            "committees_affiliations": "",
+            "publications": "",
+            "papers_and_presentations": "",
+            "orcid_id": "",
+            "linkedin_profile": ""
+        }
+    },
+    {
+        "id": 55162,
+        "title": {
+            "rendered": "Dave Pcolar Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "David",
+            "last_name": "Pcolar",
+            "campus": "CDL",
+            "profile_photograph": "",
+            "program_service": [
+                "Publishing, Archives, and Digitization"
+            ],
+            "title": "Technical Project Manager",
+            "responsibilities": "",
+            "education": "",
+            "background": "",
+            "professional_development": "",
+            "professional_interests": "",
+            "committees_affiliations": "",
+            "publications": "",
+            "papers_and_presentations": "",
+            "orcid_id": "",
+            "linkedin_profile": ""
+        }
+    },
+    {
+        "id": 55159,
+        "title": {
+            "rendered": "Ellen Finnie Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "Ellen",
+            "last_name": "Finnie",
+            "campus": "CDL",
+            "profile_photograph": "",
+            "program_service": [
+                "Shared Collections"
+            ],
+            "title": "Director, Collection Development and Management Program",
+            "responsibilities": "<p>Responsible for a significant strategic portfolio encompassing systemwide licensing, open access publisher agreements, and shared print initiatives.</p>",
+            "education": "<p>A.B., Psychology, Princeton University </p>\r\n<p>M.S., Library and Information Science, Simmons College </p>\r\n<p>M.A., English Literature, Northeastern University</p>",
+            "background": "<p>Before joining CDL in 2020, Ellen held several roles in the MIT Libraries related to advancing open access in the scholarly communications system.   Her responsibilities included outreach, and program and workflow development in scholarly communications, copyright, open access, licensing, and collection strategy.  Her responsibilities encompassed negotiating licenses and transformative open access agreements with publishers, with the aim of optimizing access and openness to scholarly resources.  Her two most recent titles were Head, Scholarly Communications and Collections Strategy, and Program Manager, Scholarly Publishing, Copyright, and Licensing.  Prior roles involved building digital resources acquisitions and licensing programs for the MIT Libraries.  </p>",
+            "professional_development": "<p>Harvard Program on Negotiation and Leadership (Harvard Law School), 2017.<br />\r\nMIT Leader to Leader program class of 2016. <br />\r\nCopyrightx – Harvard Law School edX course, 2014.<br />\r\nCopyright Management and Leadership Certification, Center for Intellectual Property, University of Maryland University College, Level 1, 2009-10; Level II, 2011.<br />\r\nLeadership Institute for Academic Librarians, Harvard Graduate School of Education, 2011.</p>",
+            "professional_interests": "<p>Ellen's professional interest is in advancing open access to scholarly research. Areas of particular focus have been outreach and program/workflow development in scholarly communications, copyright, open access, licensing, and collection strategy.</p>",
+            "committees_affiliations": "<p>AAAS Librarian Advisory Group, 2017-</p>\r\n<p>PNAS Librarian Advisory Group, June 2014-   </p>\r\n<p>Ad-hoc Working Group on author rights language in library content license Agreements: Dec 2009 – 2010/11</p>\r\n<p>ACRL New England Scholarly Communication SIG – Program Planner 6/2009-6/2010; Co-chair  6/2010-6/2012; Advisory board 6/2012-c2016</p>\r\n<p>Member, Blackwell Publishing Library Advisory Board, 2005 – 2007</p>\r\n<p>Member, License Expression Working Group, joint project of DLF, EDItEUR, NISO, and PLS, 2005 to 2006.</p>\r\n<p>&nbsp;</p>",
+            "publications": "<p>Selected publications:</p>\r\n<ul>\r\n\t<li>With Karrie Peterson. “MIT Libraries Liaison Program: A Paradigm Shift.” Research Library Issues, no. 294 (2018): 16–30. https://doi.org/10.29242/rli.294.3.</li>\r\n</ul>\r\n<p>With Sue Kriegsman. “Campus Open Access Policy Implementation Models and Implications for IR Services.”  In: Making IRs Work, Purdue University Press, November 2015.</p>\r\n<p>Invited ARL Policy Note: “Canceling Green OA Journals: A Very Expensive Way to Not Save Money (while impeding your community’s access)” September 30, 2013. (http://policynotes.arl.org/?p=80)</p>\r\n<p>With Sue Kriegsman. “Implementing Open Access Policies Using Institutional Repositories.” Chapter 5 of: The Institutional Repository: Benefits and Challenges.  ALA ALCTS, eversion published January 2013. Print version circa May 2013. http://www.ala.org/alcts/sites/ala.org.alcts/files/content/resources/papers/ir_ch05_.pdf)</p>\r\n<p>With Willmott, Mathew, and Katharine Dunn: “The Accessibility Quotient: A New Measure of Open Access,” Inaugural issue of “Journal of Librarianship and Scholarly Communication,” v.1, no.1, spring 2012.<br />\r\n“Copyright Initiatives at MIT: Reducing the Burden on Authors.” Eye on Copyright: Member Newsletter of the CIP. Winter 2010.</p>\r\n<p>With Richard Rodgers. “Automated IR Deposit via the SWORD Protocol: An MIT/BioMed Central Experiment.” UKSG Serials, v. 23, no. 3, November, 2010.(one of 6 most downloaded articles in 2010 for Serials)</p>\r\n<p>With MIT Libraries authors:  \"Publishing Practices of NIH-Funded Faculty at MIT\", Issues in Science and Technology Librarianship, Summer 2010. http://www.istl.org/10-summer/</p>\r\n<p>With Ivy Anderson. “Author-Rights Language in Library Content Licenses.” Research Library Issues: A Bimonthly Report from ARL, CNI, and SPARC no. 263, April 2009, pp. 33-37.</p>",
+            "papers_and_presentations": "<p>Selected presentations: </p>\r\n<p>\"Tailoring Transformative Agreements to Support OA through Automatic Deposit,\" COAPI Community Call, April 7, 2020, via webinar.</p>\r\n<p>“MIT Libraries OA Strategies,” Meeting of ALCTS Collection Development Officers, February 7, 2019, via webinar.</p>\r\n<p>Invited workshop speaker: “License negotiation as a means of scholarly communication transformation,” and “Negotiation methods and theory.”  ACRL New England Scholarly Communications Special Interest Group, Copyright Bootcamp workshop, Worcester, MA, January 10, 2019.</p>\r\n<p>Invited facilitator for a working forum, “Choosing Pathways to OA,” October 16-17, 2018, Berkeley, California, sponsored by University of California Libraries.</p>\r\n<p>“Reducing barriers to open access publishing: Ideas for action.” Invited speaker at Better Science Ideathon, MIT, Cambridge MA, April 23, 2018. https://betterscience.mit.edu/</p>\r\n<p>“Voting with our dollars, democratizing access: Using licensing and budgeting as levers for scholarly communications transformation.” OA2020 Workshop at ICOLC conference, April 18, 2018.</p>\r\n<p>“Campus repositories &amp; the future of research libraries as global open platforms,” ARL Board of Directors Meeting, September 2016.</p>\r\n<p>“Text and Data Mining -- MIT Libraries’ Services,” NISO Webinar: Text and Data Mining: The Way Forward,” June 30, 2016<br />\r\n<br />\r\n“Bringing Therapy Dogs to Academic Libraries: The MIT Libraries Experience.”  October Conference, October 17, 2105, Dartmouth College, Hanover, NH.</p>\r\n<p>“White House Directive: Support for researchers@MIT,” SPARC Webinar on Compliance with White House Directive, October 14, 2015.</p>",
+            "orcid_id": "",
+            "linkedin_profile": "https://www.linkedin.com/in/ellen-finnie"
+        }
+    },
+    {
+        "id": 55154,
+        "title": {
+            "rendered": "Hardy Pottinger Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "Hardy",
+            "last_name": "Pottinger",
+            "campus": "CDL",
+            "profile_photograph": 55259,
+            "program_service": [
+                "Publishing, Archives, and Digitization"
+            ],
+            "title": "Publishing Systems Developer",
+            "responsibilities": "",
+            "education": "",
+            "background": "<p>Hardy is a DSpace Commiter, since 2011, and works for CDL as a Publishing Systems Developer. He holds a BA in English, from Fontbonne in Saint Louis. He worked on the school paper, and leveraged that experience into a few jobs at the American Academy of Orthopaedic Surgeons in Chicago. During that period, he ended up doing quite a bit of developing/publishing work, mainly on web sites, and narrowly missed the tail end of the dot-com bubble. He then moved back to Missouri to be closer to family. He's been working in the Library space ever since, including 16 years as the technical lead for MOspace, the institutional repository of the University of Missouri. And, more recently, 3 years at UCLA Library as part of their Services and Applications teams. He works from home in Columbia, Missouri, has four cats and one dog, and three kids (Ms. 11, Mr. 14 and Mr. 17). He's crazy about his wife, his kids, yo-yos, fountain pens, beer, tea, and dark chocolate. He also really enjoys working from home, and will talk your ear off about it if you let him.</p>",
+            "professional_development": "",
+            "professional_interests": "",
+            "committees_affiliations": "",
+            "publications": "",
+            "papers_and_presentations": "",
+            "orcid_id": "https://orcid.org/0000-0001-8549-9354",
+            "linkedin_profile": "https://www.linkedin.com/in/hardy-pottinger-8730b2118/"
+        }
+    },
+    {
+        "id": 25687,
+        "title": {
+            "rendered": "Subscribe to CDL"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 53632,
+        "title": {
+            "rendered": "Accessibility Problem Reported"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 53149,
+        "title": {
+            "rendered": "Terry Brady Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "Terrence",
+            "last_name": "Brady",
+            "campus": "CDL",
+            "profile_photograph": 53321,
+            "program_service": [
+                "UC Curation Center (UC3)"
+            ],
+            "title": "Senior Software Developer",
+            "responsibilities": "",
+            "education": "<p>B.S., Science-Computing Collegiate Sequence, University of Notre Dame</p>",
+            "background": "<p>Terry Brady is a software developer in Seattle. Before joining CDL, Terry built applications for higher education, government, non-profit, and corporate institutions including the Georgetown University Library, LexisNexis and the National Archives and Records Administration.</p>",
+            "professional_development": "",
+            "professional_interests": "",
+            "committees_affiliations": "<ul>\r\n\t<li>Committer, DSpace project, <a href=\"https://dspace.org\">https://dspace.org</a></li>\r\n</ul>\r\n<p>&nbsp;</p>",
+            "publications": "",
+            "papers_and_presentations": "<p>Terry's conference presentations are captured here: <a href=\"https://github.com/terrywbrady\">https://github.com/terrywbrady</a>.</p>",
+            "orcid_id": "https://orcid.org/0000-0002-2411-9845",
+            "linkedin_profile": "https://www.linkedin.com/in/terrywbrady/"
+        }
+    },
+    {
+        "id": 52528,
+        "title": {
+            "rendered": "Rushiraj Nenuji Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "Rushiraj",
+            "last_name": "Nenuji",
+            "campus": "CDL",
+            "profile_photograph": "",
+            "program_service": [
+                "UC Curation Center (UC3)"
+            ],
+            "title": "Computer Network Technician 3",
+            "responsibilities": "",
+            "education": "",
+            "background": "",
+            "professional_development": "",
+            "professional_interests": "",
+            "committees_affiliations": "",
+            "publications": "",
+            "papers_and_presentations": "",
+            "orcid_id": "",
+            "linkedin_profile": ""
+        }
+    },
+    {
+        "id": 52518,
+        "title": {
+            "rendered": "Rachel Lee Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "Rachel",
+            "last_name": "Lee",
+            "campus": "CDL",
+            "profile_photograph": "",
+            "program_service": [
+                "Publishing, Archives, and Digitization"
+            ],
+            "title": "Publications Manager",
+            "responsibilities": "<p>Rachel provides day-to-day support for the journals of the <a href=\"https://escholarship.org/\">eScholarship Publishing</a> program, ongoing advice and support for editors, including establishing journal 'best practices' and promoting discoverability for journal partners.</p>",
+            "education": "<p>BA (Hons), Oxford Polytechnic, Oxford, U.K. </p>",
+            "background": "<p>Rachel has worked almost exclusively in scholarly publishing, most recently at University of California Press, where she was Library Relations Manager, and Journals Manager.</p>",
+            "professional_development": "",
+            "professional_interests": "",
+            "committees_affiliations": "",
+            "publications": "",
+            "papers_and_presentations": "",
+            "orcid_id": "",
+            "linkedin_profile": "https://www.linkedin.com/in/rachel-lee-30b84a4/"
+        }
+    },
+    {
+        "id": 52296,
+        "title": {
+            "rendered": "Catherine Nancarrow Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "Catherine",
+            "last_name": "Nancarrow",
+            "campus": "CDL",
+            "profile_photograph": 52425,
+            "program_service": [
+                "UC Curation Center (UC3)"
+            ],
+            "title": "Associate Director",
+            "responsibilities": "",
+            "education": "",
+            "background": "",
+            "professional_development": "",
+            "professional_interests": "",
+            "committees_affiliations": "",
+            "publications": "",
+            "papers_and_presentations": "",
+            "orcid_id": "",
+            "linkedin_profile": ""
+        }
+    },
+    {
+        "id": 52109,
+        "title": {
+            "rendered": "Early English Books Online [EEBO] (via ProQuest)"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 52106,
+        "title": {
+            "rendered": "African American Song"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 52104,
+        "title": {
+            "rendered": "Naxos Music Library Jazz"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 52101,
+        "title": {
+            "rendered": "17th and 18th Century Burney Collection"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 51885,
+        "title": {
+            "rendered": "Mahjabeen Yucekul Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "Mahjabeen",
+            "last_name": "Yucekul",
+            "campus": "CDL",
+            "profile_photograph": 57642,
+            "program_service": [
+                "Publishing, Archives, and Digitization"
+            ],
+            "title": "Senior Software Developer",
+            "responsibilities": "<p>As a Senior Software Developer of the Publishing, Archives, and Digitization group at the California Digital Library, Mahjabeen Yucekul is responsible for planning, development, administration, and operations of production systems and services focused on supporting the publishing, research, and learning activities of the University of California academic community.</p>",
+            "education": "<p>M.Sc, Medical Engineering, University of Washington, Seattle</p>\r\n<p>M.Sc., Computer Science, University of Minnesota, Minneapolis</p>\r\n<p>B.Tech, Computer Science and Technology, Indian Institute of Technology, Roorkee, India</p>",
+            "background": "<p>Mahjabeen Yucekul is a Senior Software Developer for the California Digital Library’s Publishing, Archives, and Digitization group. Previous to joining the CDL, she was a Senior Engineer at Genentech. Prior to that she was a Software Design Engineer at Microsoft.</p>",
+            "professional_development": "",
+            "professional_interests": "<ul style=\"list-style-type: circle;\">\r\n\t<li>Data Management</li>\r\n\t<li>Library publishing</li>\r\n\t<li>Information systems design</li>\r\n\t<li>Institutional repositories</li>\r\n\t<li>Medical science</li>\r\n\t<li>Open access to information</li>\r\n</ul>",
+            "committees_affiliations": "<p>President's Advisory Committee on the Status of Women, Member</p>",
+            "publications": "",
+            "papers_and_presentations": "",
+            "orcid_id": "",
+            "linkedin_profile": "https://www.linkedin.com/in/mahjabeenyucekul/"
+        }
+    },
+    {
+        "id": 51767,
+        "title": {
+            "rendered": "Anna Striker Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "Anna",
+            "last_name": "Striker",
+            "campus": "CDL",
+            "profile_photograph": "",
+            "program_service": [
+                "Shared Collections"
+            ],
+            "title": "Shared Print Operations and Collections Analyst",
+            "responsibilities": "",
+            "education": "",
+            "background": "",
+            "professional_development": "",
+            "professional_interests": "",
+            "committees_affiliations": "",
+            "publications": "",
+            "papers_and_presentations": "",
+            "orcid_id": "",
+            "linkedin_profile": ""
+        }
+    },
+    {
+        "id": 51626,
+        "title": {
+            "rendered": "Maria Praetzellis Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "Maria",
+            "last_name": "Praetzellis",
+            "campus": "CDL",
+            "profile_photograph": "",
+            "program_service": [
+                "UC Curation Center (UC3)"
+            ],
+            "title": "Product Manager, Research Data Management",
+            "responsibilities": "<p>Maria is ​Product Manager for CDL’s research data management initiatives including DMPTool, theSupport Your Data resource, and the NSF-funded machine-actionable DMP grant project.</p>",
+            "education": "<p>MA, History, New York University</p>\r\n<p>BA, Community Studies, UC Santa Cruz</p>",
+            "background": "<p>Maria joins CDL with extensive experience in program management working on<br />\r\nwidely-used services for digital preservation, data stewardship, and open access from<br />\r\nprior roles at the Internet Archive, the American JewishJoint Distribution Committee,<br />\r\nand Rolling Stone​ magazine.</p>",
+            "professional_development": "",
+            "professional_interests": "",
+            "committees_affiliations": "",
+            "publications": "",
+            "papers_and_presentations": "",
+            "orcid_id": "https://orcid.org/0000-0001-5047-3090",
+            "linkedin_profile": "https://www.linkedin.com/in/mariapraetzellis/"
+        }
+    },
+    {
+        "id": 51564,
+        "title": {
+            "rendered": "SCP Record Distribution Statistics for fiscal year 2019-2020"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 50898,
+        "title": {
+            "rendered": "SCP Record Distribution Statistics for fiscal year 2008-2009"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 50611,
+        "title": {
+            "rendered": "Eric Lopatin Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "Eric",
+            "last_name": "Lopatin",
+            "campus": "CDL",
+            "profile_photograph": 51917,
+            "program_service": [
+                "UC Curation Center (UC3)"
+            ],
+            "title": "Product Manager, Digital Preservation",
+            "responsibilities": "<p>Eric is Product Manager for CDL's digital preservation initiatives, including the Merritt repository that preserves library special collection content from libraries across all ten UC campuses, as well as eScholarship publications, ETDs, and Dryad datasets.</p>",
+            "education": "<p>MS, Graphic Arts Publishing – Rochester Institute of Technology, Rochester, NY</p>\r\n<p>BFA, Graphic Design – Rochester Institute of Technology, Rochester, NY</p>",
+            "background": "<p>Eric joins CDL with experience in product management, as well as quality assurance and engineering. His recent work in OA publishing, as well as a string of years spent at Adobe Systems enabling cross-application workflows and shared technology, have all contributed to his interests in the realm of preservation, publishing, software development.</p>",
+            "professional_development": "",
+            "professional_interests": "",
+            "committees_affiliations": "",
+            "publications": "",
+            "papers_and_presentations": "",
+            "orcid_id": "https://orcid.org/0000-0002-5296-1116",
+            "linkedin_profile": "https://www.linkedin.com/in/eslopatin/"
+        }
+    },
+    {
+        "id": 47352,
+        "title": {
+            "rendered": "Infrastructure and Applications Support"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 47101,
+        "title": {
+            "rendered": "Merritt Digital Preservation Repository Policies &amp; User Guidelines"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 46093,
+        "title": {
+            "rendered": "Literature Online (LION) via ProQuest"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 45500,
+        "title": {
+            "rendered": "Maria Gould Staff Profile"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": {
+            "first_name": "Maria",
+            "last_name": "Gould",
+            "campus": "CDL",
+            "profile_photograph": 51966,
+            "program_service": [
+                "UC Curation Center (UC3)"
+            ],
+            "title": "Research Data Specialist & Product Manager",
+            "responsibilities": "",
+            "education": "<ul style=\"list-style-type: disc;\">\r\n\t<li>MLIS, Simmons University</li>\r\n\t<li>MA, UC Berkeley</li>\r\n\t<li>BA, Wesleyan University</li>\r\n</ul>",
+            "background": "",
+            "professional_development": "",
+            "professional_interests": "",
+            "committees_affiliations": "",
+            "publications": "",
+            "papers_and_presentations": "",
+            "orcid_id": "http://orcid.org/0000-0002-2916-3423",
+            "linkedin_profile": "https://linkedin.com/in/mariagould"
+        }
+    },
+    {
+        "id": 44844,
+        "title": {
+            "rendered": "Program Updates &amp; Record Distribution Statistics"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 44175,
+        "title": {
+            "rendered": "Page List"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 44045,
+        "title": {
+            "rendered": "Request the UC Systemwide IP Address List"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 44030,
+        "title": {
+            "rendered": "CDL Licensing Process"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    },
+    {
+        "id": 44004,
+        "title": {
+            "rendered": "CDL Technical Guidelines for Vendors"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "acf": []
+    }
+]

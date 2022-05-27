@@ -31,7 +31,8 @@
     "start-percy": "start-server-and-test test-serve 8080 run-percy",
     "run-percy": "npx percy snapshot http://localhost:8080/sitemap.xml --exclude '**/'",
     "start-pa11y": "start-server-and-test test-serve 8080 run-pa11y",
-    "run-pa11y": "pa11y-ci --sitemap http://localhost:8080/sitemap.xml --sitemap-exclude /$"
+    "run-pa11y": "pa11y-ci --sitemap http://localhost:8080/sitemap.xml --sitemap-exclude /$",
+    "format-sample-data": "format-json-files sample-data"
   },
   "repository": {
     "type": "git",
@@ -50,6 +51,7 @@
     "@percy/cli": "^1.2.1",
     "del-cli": "^4.0.1",
     "faker": "^4.1.0",
+    "format-json-files": "^1.0.6",
     "gh-pages": "^4.0.0",
     "http-server": "^14.1.0",
     "imagemin-cli": "^7.0.0",

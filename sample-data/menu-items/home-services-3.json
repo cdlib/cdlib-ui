@@ -1,0 +1,38 @@
+[
+    {
+        "id": 42619,
+        "title": {
+            "rendered": "DMPTool"
+        },
+        "url": "https://cdlib.org/services/uc3/dmptool/",
+        "menu_order": 1,
+        "menus": 890
+    },
+    {
+        "id": 42620,
+        "title": {
+            "rendered": "Merritt"
+        },
+        "url": "https://cdlib.org/services/uc3/merritt/",
+        "menu_order": 2,
+        "menus": 890
+    },
+    {
+        "id": 42621,
+        "title": {
+            "rendered": "Web Archiving Activities"
+        },
+        "url": "https://cdlib.org/services/pad/webarchiving/",
+        "menu_order": 3,
+        "menus": 890
+    },
+    {
+        "id": 42622,
+        "title": {
+            "rendered": "WEST: Western Regional Storage Trust"
+        },
+        "url": "https://cdlib.org/west/",
+        "menu_order": 4,
+        "menus": 890
+    }
+]

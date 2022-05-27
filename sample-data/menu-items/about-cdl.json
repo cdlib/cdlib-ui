@@ -1,0 +1,101 @@
+[
+    {
+        "id": 25515,
+        "title": {
+            "rendered": "About CDL"
+        },
+        "url": "https://cdlib.org/about/",
+        "menu_order": 1,
+        "menus": 486
+    },
+    {
+        "id": 25519,
+        "title": {
+            "rendered": "Mission, Vision, and Values"
+        },
+        "url": "https://cdlib.org/about/mission-vision-and-values/",
+        "menu_order": 2,
+        "menus": 486
+    },
+    {
+        "id": 25526,
+        "title": {
+            "rendered": "Message from the Associate Vice Provost / Executive Director"
+        },
+        "url": "https://cdlib.org/about/mfted/",
+        "menu_order": 3,
+        "menus": 486
+    },
+    {
+        "id": 25529,
+        "title": {
+            "rendered": "Our Organization"
+        },
+        "url": "https://cdlib.org/about/our-organization/",
+        "menu_order": 4,
+        "menus": 486
+    },
+    {
+        "id": 25743,
+        "title": {
+            "rendered": "CDL Executive Office"
+        },
+        "url": "https://cdlib.org/about/executive-office/",
+        "menu_order": 5,
+        "menus": 486
+    },
+    {
+        "id": 25532,
+        "title": {
+            "rendered": "Grants and Partnerships"
+        },
+        "url": "https://cdlib.org/about/grants-and-partnerships/",
+        "menu_order": 6,
+        "menus": 486
+    },
+    {
+        "id": 25535,
+        "title": {
+            "rendered": "Standards and Memberships"
+        },
+        "url": "https://cdlib.org/about/standards-and-memberships/",
+        "menu_order": 7,
+        "menus": 486
+    },
+    {
+        "id": 25538,
+        "title": {
+            "rendered": "Policies and Guidelines"
+        },
+        "url": "https://cdlib.org/about/policies-and-guidelines/",
+        "menu_order": 8,
+        "menus": 486
+    },
+    {
+        "id": 25541,
+        "title": {
+            "rendered": "CDL Awards and Honors"
+        },
+        "url": "https://cdlib.org/about/cdl-awards-and-honors/",
+        "menu_order": 9,
+        "menus": 486
+    },
+    {
+        "id": 25544,
+        "title": {
+            "rendered": "CDL by the Numbers"
+        },
+        "url": "https://cdlib.org/about/cdl-by-the-numbers/",
+        "menu_order": 10,
+        "menus": 486
+    },
+    {
+        "id": 25547,
+        "title": {
+            "rendered": "Job Opportunities"
+        },
+        "url": "https://cdlib.org/about/job-opportunities/",
+        "menu_order": 11,
+        "menus": 486
+    }
+]

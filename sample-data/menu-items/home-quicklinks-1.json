@@ -1,0 +1,47 @@
+[
+    {
+        "id": 41860,
+        "title": {
+            "rendered": "Campus Libraries"
+        },
+        "url": "https://cdlib.org/resources/libraries/",
+        "menu_order": 1,
+        "menus": 878
+    },
+    {
+        "id": 41861,
+        "title": {
+            "rendered": "Content Contributors"
+        },
+        "url": "https://cdlib.org/resources/contributors/",
+        "menu_order": 2,
+        "menus": 878
+    },
+    {
+        "id": 41862,
+        "title": {
+            "rendered": "Faculty"
+        },
+        "url": "https://cdlib.org/resources/faculty/",
+        "menu_order": 3,
+        "menus": 878
+    },
+    {
+        "id": 41865,
+        "title": {
+            "rendered": "Technologists"
+        },
+        "url": "https://cdlib.org/resources/technologists/",
+        "menu_order": 4,
+        "menus": 878
+    },
+    {
+        "id": 41863,
+        "title": {
+            "rendered": "Vendors"
+        },
+        "url": "https://cdlib.org/resources/vendors/",
+        "menu_order": 5,
+        "menus": 878
+    }
+]
