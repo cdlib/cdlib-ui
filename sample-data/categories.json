@@ -1,0 +1,252 @@
+[
+    {
+        "id": 322,
+        "link": "https://cdlib.org/cdlinfo/category/publishing-archives-and-digitization/calisphere/",
+        "name": "Calisphere"
+    },
+    {
+        "id": 1040,
+        "link": "https://cdlib.org/cdlinfo/category/publishing-archives-and-digitization/codile/",
+        "name": "Controlled Digital Lending"
+    },
+    {
+        "id": 375,
+        "link": "https://cdlib.org/cdlinfo/category/digital-preservation/micro-services/",
+        "name": "Curation Micro-services"
+    },
+    {
+        "id": 441,
+        "link": "https://cdlib.org/cdlinfo/category/digital-preservation/dash/",
+        "name": "Dash"
+    },
+    {
+        "id": 312,
+        "link": "https://cdlib.org/cdlinfo/category/discodeli-services/",
+        "name": "Discovery &amp; Delivery"
+    },
+    {
+        "id": 448,
+        "link": "https://cdlib.org/cdlinfo/category/digital-preservation/dmptool/",
+        "name": "DMPTool"
+    },
+    {
+        "id": 1014,
+        "link": "https://cdlib.org/cdlinfo/category/digital-preservation/dryad/",
+        "name": "Dryad"
+    },
+    {
+        "id": 330,
+        "link": "https://cdlib.org/cdlinfo/category/collections/erms-collections/",
+        "name": "ERMS"
+    },
+    {
+        "id": 339,
+        "link": "https://cdlib.org/cdlinfo/category/publishing-archives-and-digitization/escholarship/",
+        "name": "eScholarship"
+    },
+    {
+        "id": 383,
+        "link": "https://cdlib.org/cdlinfo/category/digital-preservation/ezid/",
+        "name": "EZID"
+    },
+    {
+        "id": 315,
+        "link": "https://cdlib.org/cdlinfo/category/grants/",
+        "name": "Grants"
+    },
+    {
+        "id": 502,
+        "link": "https://cdlib.org/cdlinfo/category/identifiers/",
+        "name": "Identifiers"
+    },
+    {
+        "id": 309,
+        "link": "https://cdlib.org/cdlinfo/category/information-services/",
+        "name": "Information Services"
+    },
+    {
+        "id": 333,
+        "link": "https://cdlib.org/cdlinfo/category/infrastructure-services/",
+        "name": "Infrastructure Services"
+    },
+    {
+        "id": 328,
+        "link": "https://cdlib.org/cdlinfo/category/collections/licensed/",
+        "name": "Licensed Resources"
+    },
+    {
+        "id": 329,
+        "link": "https://cdlib.org/cdlinfo/category/publishing-archives-and-digitization/mass-digitization/",
+        "name": "Mass Digitization"
+    },
+    {
+        "id": 311,
+        "link": "https://cdlib.org/cdlinfo/category/discodeli-services/melvyl/",
+        "name": "Melvyl"
+    },
+    {
+        "id": 389,
+        "link": "https://cdlib.org/cdlinfo/category/digital-preservation/merritt/",
+        "name": "Merritt"
+    },
+    {
+        "id": 345,
+        "link": "https://cdlib.org/cdlinfo/category/executive-director/",
+        "name": "Message from the Executive Director"
+    },
+    {
+        "id": 368,
+        "link": "https://cdlib.org/cdlinfo/category/mobile/",
+        "name": "Mobile"
+    },
+    {
+        "id": 306,
+        "link": "https://cdlib.org/cdlinfo/category/newsletter/",
+        "name": "Newsletter"
+    },
+    {
+        "id": 314,
+        "link": "https://cdlib.org/cdlinfo/category/publishing-archives-and-digitization/online-archive-of-california/",
+        "name": "Online Archive of California"
+    },
+    {
+        "id": 1009,
+        "link": "https://cdlib.org/cdlinfo/category/open-access/",
+        "name": "Open Access"
+    },
+    {
+        "id": 350,
+        "link": "https://cdlib.org/cdlinfo/category/opinion-and-commentary/",
+        "name": "Opinion and Commentary"
+    },
+    {
+        "id": 334,
+        "link": "https://cdlib.org/cdlinfo/category/press-release/",
+        "name": "Press Releases"
+    },
+    {
+        "id": 319,
+        "link": "https://cdlib.org/cdlinfo/category/publishing-archives-and-digitization/digital-publishing/",
+        "name": "Publishing"
+    },
+    {
+        "id": 417,
+        "link": "https://cdlib.org/cdlinfo/category/publishing-archives-and-digitization/",
+        "name": "Publishing, Archives, and Digitization"
+    },
+    {
+        "id": 316,
+        "link": "https://cdlib.org/cdlinfo/category/collections/resource-liaisons/",
+        "name": "Resource Liaisons"
+    },
+    {
+        "id": 332,
+        "link": "https://cdlib.org/cdlinfo/category/discodeli-services/request/",
+        "name": "Resource Sharing"
+    },
+    {
+        "id": 318,
+        "link": "https://cdlib.org/cdlinfo/category/collections/shared-cataloging/",
+        "name": "Shared Cataloging"
+    },
+    {
+        "id": 310,
+        "link": "https://cdlib.org/cdlinfo/category/collections/",
+        "name": "Shared Collections"
+    },
+    {
+        "id": 326,
+        "link": "https://cdlib.org/cdlinfo/category/collections/shared-print/",
+        "name": "Shared Print"
+    },
+    {
+        "id": 313,
+        "link": "https://cdlib.org/cdlinfo/category/publishing-archives-and-digitization/special-collections/",
+        "name": "Special Collections"
+    },
+    {
+        "id": 307,
+        "link": "https://cdlib.org/cdlinfo/category/staff-news/",
+        "name": "Staff News"
+    },
+    {
+        "id": 336,
+        "link": "https://cdlib.org/cdlinfo/category/strategic-and-project-planning/",
+        "name": "Strategic &amp; Project Planning"
+    },
+    {
+        "id": 1031,
+        "link": "https://cdlib.org/cdlinfo/category/discodeli-services/sils/",
+        "name": "Systemwide ILS"
+    },
+    {
+        "id": 325,
+        "link": "https://cdlib.org/cdlinfo/category/systemwide-library-info/",
+        "name": "Systemwide Library Information"
+    },
+    {
+        "id": 308,
+        "link": "https://cdlib.org/cdlinfo/category/technology/",
+        "name": "Technology"
+    },
+    {
+        "id": 323,
+        "link": "https://cdlib.org/cdlinfo/category/digital-preservation/",
+        "name": "UC Curation Center (UC3)"
+    },
+    {
+        "id": 414,
+        "link": "https://cdlib.org/cdlinfo/category/uc-libraries-news/",
+        "name": "UC Libraries News"
+    },
+    {
+        "id": 1032,
+        "link": "https://cdlib.org/cdlinfo/category/discodeli-services/ucls/",
+        "name": "UC Library Search"
+    },
+    {
+        "id": 376,
+        "link": "https://cdlib.org/cdlinfo/category/publishing-archives-and-digitization/ucpubs/",
+        "name": "UC Publishing Services (UCPubS)"
+    },
+    {
+        "id": 324,
+        "link": "https://cdlib.org/cdlinfo/category/publishing-archives-and-digitization/uc-shared-images/",
+        "name": "UC Shared Images"
+    },
+    {
+        "id": 327,
+        "link": "https://cdlib.org/cdlinfo/category/discodeli-services/uc-elinks/",
+        "name": "UC-eLinks"
+    },
+    {
+        "id": 1,
+        "link": "https://cdlib.org/cdlinfo/category/uncategorized/",
+        "name": "Uncategorized"
+    },
+    {
+        "id": 317,
+        "link": "https://cdlib.org/cdlinfo/category/collections/usage-stats/",
+        "name": "Usage Statistics"
+    },
+    {
+        "id": 321,
+        "link": "https://cdlib.org/cdlinfo/category/ux-design/",
+        "name": "User Experience Design"
+    },
+    {
+        "id": 508,
+        "link": "https://cdlib.org/cdlinfo/category/users-council/",
+        "name": "Users Council"
+    },
+    {
+        "id": 331,
+        "link": "https://cdlib.org/cdlinfo/category/publishing-archives-and-digitization/web-archiving/",
+        "name": "Web Archiving"
+    },
+    {
+        "id": 416,
+        "link": "https://cdlib.org/cdlinfo/category/collections/west/",
+        "name": "WEST"
+    }
+]

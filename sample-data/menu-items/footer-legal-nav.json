@@ -1,0 +1,29 @@
+[
+    {
+        "id": 26130,
+        "title": {
+            "rendered": "Terms and Conditions"
+        },
+        "url": "https://cdlib.org/about/policies-and-guidelines/terms-conditions/",
+        "menu_order": 1,
+        "menus": 500
+    },
+    {
+        "id": 26129,
+        "title": {
+            "rendered": "Privacy Policy"
+        },
+        "url": "https://cdlib.org/about/policies-and-guidelines/privacy-policy/",
+        "menu_order": 2,
+        "menus": 500
+    },
+    {
+        "id": 26128,
+        "title": {
+            "rendered": "Accessibility"
+        },
+        "url": "https://cdlib.org/about/policies-and-guidelines/accessibility/",
+        "menu_order": 3,
+        "menus": 500
+    }
+]

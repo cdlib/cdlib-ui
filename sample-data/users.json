@@ -1,0 +1,602 @@
+[
+    {
+        "id": 110,
+        "name": "Adam Brin",
+        "link": "https://cdlib.org/cdlinfo/author/abrin/",
+        "slug": "abrin"
+    },
+    {
+        "id": 123,
+        "name": "Adolfo Tarango",
+        "link": "https://cdlib.org/cdlinfo/author/atarango/",
+        "slug": "atarango"
+    },
+    {
+        "id": 78,
+        "name": "Adrian Turner",
+        "link": "https://cdlib.org/cdlinfo/author/aturner/",
+        "slug": "aturner"
+    },
+    {
+        "id": 187,
+        "name": "Adriana Moran",
+        "link": "https://cdlib.org/cdlinfo/author/amoran/",
+        "slug": "amoran"
+    },
+    {
+        "id": 219,
+        "name": "Alainna Therese Wrigley",
+        "link": "https://cdlib.org/cdlinfo/author/awrigley/",
+        "slug": "awrigley"
+    },
+    {
+        "id": 138,
+        "name": "Alana Miller",
+        "link": "https://cdlib.org/cdlinfo/author/amiller/",
+        "slug": "amiller"
+    },
+    {
+        "id": 108,
+        "name": "Alison Ray",
+        "link": "https://cdlib.org/cdlinfo/author/aray/",
+        "slug": "aray"
+    },
+    {
+        "id": 185,
+        "name": "Alison Wohlers",
+        "link": "https://cdlib.org/cdlinfo/author/awohlers/",
+        "slug": "awohlers"
+    },
+    {
+        "id": 186,
+        "name": "Amy Wieliczka",
+        "link": "https://cdlib.org/cdlinfo/author/awieliczka/",
+        "slug": "awieliczka"
+    },
+    {
+        "id": 222,
+        "name": "Andy Mardesich",
+        "link": "https://cdlib.org/cdlinfo/author/amardesich/",
+        "slug": "amardesich"
+    },
+    {
+        "id": 154,
+        "name": "Angie Felix",
+        "link": "https://cdlib.org/cdlinfo/author/afelix/",
+        "slug": "afelix"
+    },
+    {
+        "id": 227,
+        "name": "Anna Striker",
+        "link": "https://cdlib.org/cdlinfo/author/astriker/",
+        "slug": "astriker"
+    },
+    {
+        "id": 184,
+        "name": "Annie Ross",
+        "link": "https://cdlib.org/cdlinfo/author/aross/",
+        "slug": "aross"
+    },
+    {
+        "id": 240,
+        "name": "Ashley Gould",
+        "link": "https://cdlib.org/cdlinfo/author/agould/",
+        "slug": "agould"
+    },
+    {
+        "id": 153,
+        "name": "Barbara Cormack",
+        "link": "https://cdlib.org/cdlinfo/author/bcormack/",
+        "slug": "bcormack"
+    },
+    {
+        "id": 162,
+        "name": "Barbara Hui",
+        "link": "https://cdlib.org/cdlinfo/author/bhui/",
+        "slug": "bhui"
+    },
+    {
+        "id": 115,
+        "name": "Beaumont Yung",
+        "link": "https://cdlib.org/cdlinfo/author/byung/",
+        "slug": "byung"
+    },
+    {
+        "id": 135,
+        "name": "Becky Culbertson",
+        "link": "https://cdlib.org/cdlinfo/author/rculbertson/",
+        "slug": "rculbertson"
+    },
+    {
+        "id": 126,
+        "name": "Benjamin Moss",
+        "link": "https://cdlib.org/cdlinfo/author/bmoss/",
+        "slug": "bmoss"
+    },
+    {
+        "id": 211,
+        "name": "Bie-Hwa Ma",
+        "link": "https://cdlib.org/cdlinfo/author/bhma/",
+        "slug": "bhma"
+    },
+    {
+        "id": 200,
+        "name": "Bobbi Perkins-Hill",
+        "link": "https://cdlib.org/cdlinfo/author/bperkins-hill/",
+        "slug": "bperkins-hill"
+    },
+    {
+        "id": 209,
+        "name": "Brian David",
+        "link": "https://cdlib.org/cdlinfo/author/bdavid/",
+        "slug": "bdavid"
+    },
+    {
+        "id": 214,
+        "name": "Brian Riley",
+        "link": "https://cdlib.org/cdlinfo/author/briley/",
+        "slug": "briley"
+    },
+    {
+        "id": 191,
+        "name": "Brian Tingle",
+        "link": "https://cdlib.org/cdlinfo/author/btingle/",
+        "slug": "btingle"
+    },
+    {
+        "id": 168,
+        "name": "Caitlin Nelson",
+        "link": "https://cdlib.org/cdlinfo/author/cnelson/",
+        "slug": "cnelson"
+    },
+    {
+        "id": 127,
+        "name": "Carly Strasser",
+        "link": "https://cdlib.org/cdlinfo/author/cstrasser/",
+        "slug": "cstrasser"
+    },
+    {
+        "id": 92,
+        "name": "Catherine Mitchell",
+        "link": "https://cdlib.org/cdlinfo/author/cmitchell/",
+        "slug": "cmitchell"
+    },
+    {
+        "id": 231,
+        "name": "Catherine Nancarrow",
+        "link": "https://cdlib.org/cdlinfo/author/cnancarrow/",
+        "slug": "cnancarrow"
+    },
+    {
+        "id": 75,
+        "name": "CDL",
+        "link": "https://cdlib.org/cdlinfo/author/cdl_adm/",
+        "slug": "cdl_adm"
+    },
+    {
+        "id": 224,
+        "name": "CDL Stats",
+        "link": "https://cdlib.org/cdlinfo/author/cdl-stats/",
+        "slug": "cdl-stats"
+    },
+    {
+        "id": 79,
+        "name": "Chan Li",
+        "link": "https://cdlib.org/cdlinfo/author/cli/",
+        "slug": "cli"
+    },
+    {
+        "id": 152,
+        "name": "Charlie Collett",
+        "link": "https://cdlib.org/cdlinfo/author/ccollett/",
+        "slug": "ccollett"
+    },
+    {
+        "id": 192,
+        "name": "Chris Erdmann",
+        "link": "https://cdlib.org/cdlinfo/author/cerdmann/",
+        "slug": "cerdmann"
+    },
+    {
+        "id": 207,
+        "name": "Christine Kim",
+        "link": "https://cdlib.org/cdlinfo/author/ckim/",
+        "slug": "ckim"
+    },
+    {
+        "id": 195,
+        "name": "Claudia Conrad",
+        "link": "https://cdlib.org/cdlinfo/author/cconrad/",
+        "slug": "cconrad"
+    },
+    {
+        "id": 244,
+        "name": "Colin Thompson",
+        "link": "https://cdlib.org/cdlinfo/author/colinthompson/",
+        "slug": "colinthompson"
+    },
+    {
+        "id": 133,
+        "name": "Colleen Whitney",
+        "link": "https://cdlib.org/cdlinfo/author/cwhitney/",
+        "slug": "cwhitney"
+    },
+    {
+        "id": 128,
+        "name": "Craig Thompson",
+        "link": "https://cdlib.org/cdlinfo/author/cthompson/",
+        "slug": "cthompson"
+    },
+    {
+        "id": 164,
+        "name": "Dana Jemison",
+        "link": "https://cdlib.org/cdlinfo/author/djemison/",
+        "slug": "djemison"
+    },
+    {
+        "id": 144,
+        "name": "Daniella Lowenberg",
+        "link": "https://cdlib.org/cdlinfo/author/dlowenberg/",
+        "slug": "dlowenberg"
+    },
+    {
+        "id": 130,
+        "name": "Danielle Watters Westbrook",
+        "link": "https://cdlib.org/cdlinfo/author/dwestbrook/",
+        "slug": "dwestbrook"
+    },
+    {
+        "id": 239,
+        "name": "Dave Pcolar",
+        "link": "https://cdlib.org/cdlinfo/author/dpcolar/",
+        "slug": "dpcolar"
+    },
+    {
+        "id": 205,
+        "name": "David Chan",
+        "link": "https://cdlib.org/cdlinfo/author/dchan/",
+        "slug": "dchan"
+    },
+    {
+        "id": 193,
+        "name": "David Loy",
+        "link": "https://cdlib.org/cdlinfo/author/dloy/",
+        "slug": "dloy"
+    },
+    {
+        "id": 212,
+        "name": "David Moles",
+        "link": "https://cdlib.org/cdlinfo/author/dmoles/",
+        "slug": "dmoles"
+    },
+    {
+        "id": 146,
+        "name": "Debra Bartling",
+        "link": "https://cdlib.org/cdlinfo/author/dbartling/",
+        "slug": "dbartling"
+    },
+    {
+        "id": 257,
+        "name": "Devin Smith",
+        "link": "https://cdlib.org/cdlinfo/author/devin-smith/",
+        "slug": "devin-smith"
+    },
+    {
+        "id": 189,
+        "name": "Discovery and Delivery Services Team",
+        "link": "https://cdlib.org/cdlinfo/author/discovery-and-delivery-services-team/",
+        "slug": "discovery-and-delivery-services-team"
+    },
+    {
+        "id": 213,
+        "name": "Donal O'Sullivan",
+        "link": "https://cdlib.org/cdlinfo/author/dosullivan/",
+        "slug": "dosullivan"
+    },
+    {
+        "id": 117,
+        "name": "Elise Proulx",
+        "link": "https://cdlib.org/cdlinfo/author/eproulx/",
+        "slug": "eproulx"
+    },
+    {
+        "id": 237,
+        "name": "Ellen Finnie",
+        "link": "https://cdlib.org/cdlinfo/author/efinnie/",
+        "slug": "efinnie"
+    },
+    {
+        "id": 77,
+        "name": "Ellen Meltzer",
+        "link": "https://cdlib.org/cdlinfo/author/emeltzer/",
+        "slug": "emeltzer"
+    },
+    {
+        "id": 125,
+        "name": "Emily Lin",
+        "link": "https://cdlib.org/cdlinfo/author/elin/",
+        "slug": "elin"
+    },
+    {
+        "id": 97,
+        "name": "Emily Stambaugh",
+        "link": "https://cdlib.org/cdlinfo/author/estambaugh/",
+        "slug": "estambaugh"
+    },
+    {
+        "id": 220,
+        "name": "Eric Lopatin",
+        "link": "https://cdlib.org/cdlinfo/author/elopatin/",
+        "slug": "elopatin"
+    },
+    {
+        "id": 1,
+        "name": "Eric Satzman",
+        "link": "https://cdlib.org/cdlinfo/author/esatzman/",
+        "slug": "esatzman"
+    },
+    {
+        "id": 251,
+        "name": "Erin Winter",
+        "link": "https://cdlib.org/cdlinfo/author/ewinter/",
+        "slug": "ewinter"
+    },
+    {
+        "id": 247,
+        "name": "Esther Verreau",
+        "link": "https://cdlib.org/cdlinfo/author/everreau/",
+        "slug": "everreau"
+    },
+    {
+        "id": 84,
+        "name": "Felicia Poe",
+        "link": "https://cdlib.org/cdlinfo/author/fpoe/",
+        "slug": "fpoe"
+    },
+    {
+        "id": 202,
+        "name": "Gabriela Montoya",
+        "link": "https://cdlib.org/cdlinfo/author/gmontoya/",
+        "slug": "gmontoya"
+    },
+    {
+        "id": 242,
+        "name": "Gem Stone-Logan",
+        "link": "https://cdlib.org/cdlinfo/author/gstone-logan/",
+        "slug": "gstone-logan"
+    },
+    {
+        "id": 136,
+        "name": "Guenter Waibel",
+        "link": "https://cdlib.org/cdlinfo/author/gwaibel/",
+        "slug": "gwaibel"
+    },
+    {
+        "id": 235,
+        "name": "Hardy Pottinger",
+        "link": "https://cdlib.org/cdlinfo/author/hpottinger/",
+        "slug": "hpottinger"
+    },
+    {
+        "id": 96,
+        "name": "Heather Christenson",
+        "link": "https://cdlib.org/cdlinfo/author/hchristenson/",
+        "slug": "hchristenson"
+    },
+    {
+        "id": 112,
+        "name": "Holly Eggleston",
+        "link": "https://cdlib.org/cdlinfo/author/hegglest/",
+        "slug": "hegglest"
+    },
+    {
+        "id": 105,
+        "name": "Hunter Stern",
+        "link": "https://cdlib.org/cdlinfo/author/hstern/",
+        "slug": "hstern"
+    },
+    {
+        "id": 81,
+        "name": "Ivy Anderson",
+        "link": "https://cdlib.org/cdlinfo/author/ianderson/",
+        "slug": "ianderson"
+    },
+    {
+        "id": 111,
+        "name": "Jacqueline Wilson",
+        "link": "https://cdlib.org/cdlinfo/author/jwilson/",
+        "slug": "jwilson"
+    },
+    {
+        "id": 253,
+        "name": "Jade Yonehiro",
+        "link": "https://cdlib.org/cdlinfo/author/jyonehiro/",
+        "slug": "jyonehiro"
+    },
+    {
+        "id": 85,
+        "name": "Jane Lee",
+        "link": "https://cdlib.org/cdlinfo/author/jalee/",
+        "slug": "jalee"
+    },
+    {
+        "id": 122,
+        "name": "Jason Colman",
+        "link": "https://cdlib.org/cdlinfo/author/jcolman/",
+        "slug": "jcolman"
+    },
+    {
+        "id": 103,
+        "name": "Jayne Dickson",
+        "link": "https://cdlib.org/cdlinfo/author/jdickson/",
+        "slug": "jdickson"
+    },
+    {
+        "id": 109,
+        "name": "Jennifer Colvin",
+        "link": "https://cdlib.org/cdlinfo/author/jcolvin/",
+        "slug": "jcolvin"
+    },
+    {
+        "id": 217,
+        "name": "Jim Vanderveen",
+        "link": "https://cdlib.org/cdlinfo/author/jvanderveen/",
+        "slug": "jvanderveen"
+    },
+    {
+        "id": 165,
+        "name": "Jing Jiang",
+        "link": "https://cdlib.org/cdlinfo/author/jjiang/",
+        "slug": "jjiang"
+    },
+    {
+        "id": 100,
+        "name": "Joan Starr",
+        "link": "https://cdlib.org/cdlinfo/author/jstarr/",
+        "slug": "jstarr"
+    },
+    {
+        "id": 121,
+        "name": "Joanne Miller",
+        "link": "https://cdlib.org/cdlinfo/author/jmiller/",
+        "slug": "jmiller"
+    },
+    {
+        "id": 155,
+        "name": "Joe Ferrie",
+        "link": "https://cdlib.org/cdlinfo/author/jferrie/",
+        "slug": "jferrie"
+    },
+    {
+        "id": 159,
+        "name": "Joel Hagedorn",
+        "link": "https://cdlib.org/cdlinfo/author/jhagedorn/",
+        "slug": "jhagedorn"
+    },
+    {
+        "id": 151,
+        "name": "John Borghi",
+        "link": "https://cdlib.org/cdlinfo/author/jborghi/",
+        "slug": "jborghi"
+    },
+    {
+        "id": 137,
+        "name": "John Chodacki",
+        "link": "https://cdlib.org/cdlinfo/author/jchodacki/",
+        "slug": "jchodacki"
+    },
+    {
+        "id": 147,
+        "name": "John Kratz",
+        "link": "https://cdlib.org/cdlinfo/author/jkratz/",
+        "slug": "jkratz"
+    },
+    {
+        "id": 101,
+        "name": "John Kunze",
+        "link": "https://cdlib.org/cdlinfo/author/jkunze/",
+        "slug": "jkunze"
+    },
+    {
+        "id": 95,
+        "name": "John Ober",
+        "link": "https://cdlib.org/cdlinfo/author/jober/",
+        "slug": "jober"
+    },
+    {
+        "id": 145,
+        "name": "Joseph Somontan",
+        "link": "https://cdlib.org/cdlinfo/author/jsomontan/",
+        "slug": "jsomontan"
+    },
+    {
+        "id": 198,
+        "name": "Joshua Maloney",
+        "link": "https://cdlib.org/cdlinfo/author/jmaloney/",
+        "slug": "jmaloney"
+    },
+    {
+        "id": 142,
+        "name": "Judy Dobry",
+        "link": "https://cdlib.org/cdlinfo/author/jdobry/",
+        "slug": "jdobry"
+    },
+    {
+        "id": 150,
+        "name": "Justin Gonder",
+        "link": "https://cdlib.org/cdlinfo/author/jgonder/",
+        "slug": "jgonder"
+    },
+    {
+        "id": 206,
+        "name": "Kate Garvey-Clasby",
+        "link": "https://cdlib.org/cdlinfo/author/kgarveyclasby/",
+        "slug": "kgarveyclasby"
+    },
+    {
+        "id": 143,
+        "name": "Kathryn Stine",
+        "link": "https://cdlib.org/cdlinfo/author/kstine/",
+        "slug": "kstine"
+    },
+    {
+        "id": 158,
+        "name": "Katie Fortney",
+        "link": "https://cdlib.org/cdlinfo/author/kfortney/",
+        "slug": "kfortney"
+    },
+    {
+        "id": 129,
+        "name": "Katrina Romanowsky",
+        "link": "https://cdlib.org/cdlinfo/author/kromanowsky/",
+        "slug": "kromanowsky"
+    },
+    {
+        "id": 178,
+        "name": "Khatira Nawabi",
+        "link": "https://cdlib.org/cdlinfo/author/knawabi/",
+        "slug": "knawabi"
+    },
+    {
+        "id": 160,
+        "name": "Kirk Hastings",
+        "link": "https://cdlib.org/cdlinfo/author/khastings/",
+        "slug": "khastings"
+    },
+    {
+        "id": 86,
+        "name": "Kirsten Neilsen",
+        "link": "https://cdlib.org/cdlinfo/author/kneilsen/",
+        "slug": "kneilsen"
+    },
+    {
+        "id": 252,
+        "name": "Kristen Chua",
+        "link": "https://cdlib.org/cdlinfo/author/kchua/",
+        "slug": "kchua"
+    },
+    {
+        "id": 132,
+        "name": "Kurt Ewoldsen",
+        "link": "https://cdlib.org/cdlinfo/author/kewoldsen/",
+        "slug": "kewoldsen"
+    },
+    {
+        "id": 88,
+        "name": "Laine Farley",
+        "link": "https://cdlib.org/cdlinfo/author/lfarley/",
+        "slug": "lfarley"
+    },
+    {
+        "id": 89,
+        "name": "Lena Zentall",
+        "link": "https://cdlib.org/cdlinfo/author/lzentall/",
+        "slug": "lzentall"
+    },
+    {
+        "id": 118,
+        "name": "Leslie Wolf",
+        "link": "https://cdlib.org/cdlinfo/author/lwolf/",
+        "slug": "lwolf"
+    }
+]

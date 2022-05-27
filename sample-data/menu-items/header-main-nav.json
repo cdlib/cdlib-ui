@@ -1,0 +1,632 @@
+[
+    {
+        "id": 22166,
+        "title": {
+            "rendered": "About CDL"
+        },
+        "url": "https://cdlib.org/about/",
+        "menu_order": 1,
+        "menus": 251
+    },
+    {
+        "id": 27258,
+        "title": {
+            "rendered": "About CDL"
+        },
+        "url": "https://cdlib.org/about/",
+        "menu_order": 2,
+        "menus": 251
+    },
+    {
+        "id": 25693,
+        "title": {
+            "rendered": "Mission, Vision, and Values"
+        },
+        "url": "https://cdlib.org/about/mission-vision-and-values/",
+        "menu_order": 3,
+        "menus": 251
+    },
+    {
+        "id": 25702,
+        "title": {
+            "rendered": "Message from the Associate Vice Provost / Executive Director"
+        },
+        "url": "https://cdlib.org/about/mfted/",
+        "menu_order": 4,
+        "menus": 251
+    },
+    {
+        "id": 25704,
+        "title": {
+            "rendered": "Our Organization"
+        },
+        "url": "https://cdlib.org/about/our-organization/",
+        "menu_order": 5,
+        "menus": 251
+    },
+    {
+        "id": 25745,
+        "title": {
+            "rendered": "CDL Executive Office"
+        },
+        "url": "https://cdlib.org/about/executive-office/",
+        "menu_order": 6,
+        "menus": 251
+    },
+    {
+        "id": 25703,
+        "title": {
+            "rendered": "Grants and Partnerships"
+        },
+        "url": "https://cdlib.org/about/grants-and-partnerships/",
+        "menu_order": 7,
+        "menus": 251
+    },
+    {
+        "id": 25706,
+        "title": {
+            "rendered": "Standards and Memberships"
+        },
+        "url": "https://cdlib.org/about/standards-and-memberships/",
+        "menu_order": 8,
+        "menus": 251
+    },
+    {
+        "id": 25707,
+        "title": {
+            "rendered": "Policies and Guidelines"
+        },
+        "url": "https://cdlib.org/about/policies-and-guidelines/",
+        "menu_order": 9,
+        "menus": 251
+    },
+    {
+        "id": 25708,
+        "title": {
+            "rendered": "CDL Awards and Honors"
+        },
+        "url": "https://cdlib.org/about/cdl-awards-and-honors/",
+        "menu_order": 10,
+        "menus": 251
+    },
+    {
+        "id": 25710,
+        "title": {
+            "rendered": "CDL by the Numbers"
+        },
+        "url": "https://cdlib.org/about/cdl-by-the-numbers/",
+        "menu_order": 11,
+        "menus": 251
+    },
+    {
+        "id": 25738,
+        "title": {
+            "rendered": "Job Opportunities"
+        },
+        "url": "https://cdlib.org/about/job-opportunities/",
+        "menu_order": 12,
+        "menus": 251
+    },
+    {
+        "id": 26535,
+        "title": {
+            "rendered": "Our Organization"
+        },
+        "url": "https://cdlib.org/about/our-organization/",
+        "menu_order": 13,
+        "menus": 251
+    },
+    {
+        "id": 26494,
+        "title": {
+            "rendered": "Discovery &amp; Delivery"
+        },
+        "url": "https://cdlib.org/services/d2d/",
+        "menu_order": 14,
+        "menus": 251
+    },
+    {
+        "id": 25716,
+        "title": {
+            "rendered": "Publishing, Archives, and Digitization"
+        },
+        "url": "https://cdlib.org/services/pad/",
+        "menu_order": 15,
+        "menus": 251
+    },
+    {
+        "id": 39803,
+        "title": {
+            "rendered": "Shared Collections"
+        },
+        "url": "https://cdlib.org/services/collections/",
+        "menu_order": 16,
+        "menus": 251
+    },
+    {
+        "id": 25717,
+        "title": {
+            "rendered": "University of California Curation Center (UC3)"
+        },
+        "url": "https://cdlib.org/services/uc3/",
+        "menu_order": 17,
+        "menus": 251
+    },
+    {
+        "id": 25723,
+        "title": {
+            "rendered": "Business Services"
+        },
+        "url": "https://cdlib.org/services/business/",
+        "menu_order": 18,
+        "menus": 251
+    },
+    {
+        "id": 25728,
+        "title": {
+            "rendered": "Information Services"
+        },
+        "url": "https://cdlib.org/services/info-services/",
+        "menu_order": 19,
+        "menus": 251
+    },
+    {
+        "id": 51390,
+        "title": {
+            "rendered": "Infrastructure Services"
+        },
+        "url": "https://cdlib.org/services/infrastructure/",
+        "menu_order": 20,
+        "menus": 251
+    },
+    {
+        "id": 25736,
+        "title": {
+            "rendered": "User Experience Design Service"
+        },
+        "url": "https://cdlib.org/services/uxdesign/",
+        "menu_order": 21,
+        "menus": 251
+    },
+    {
+        "id": 22167,
+        "title": {
+            "rendered": "Services and Projects"
+        },
+        "url": "https://cdlib.org/services/",
+        "menu_order": 22,
+        "menus": 251
+    },
+    {
+        "id": 26495,
+        "title": {
+            "rendered": "Discovery &amp; Delivery"
+        },
+        "url": "https://cdlib.org/services/d2d/",
+        "menu_order": 23,
+        "menus": 251
+    },
+    {
+        "id": 46151,
+        "title": {
+            "rendered": "AGUA"
+        },
+        "url": "https://cdlib.org/services/d2d/agua/",
+        "menu_order": 24,
+        "menus": 251
+    },
+    {
+        "id": 26500,
+        "title": {
+            "rendered": "Resource Sharing"
+        },
+        "url": "https://cdlib.org/services/d2d/ill/",
+        "menu_order": 25,
+        "menus": 251
+    },
+    {
+        "id": 57361,
+        "title": {
+            "rendered": "SILS"
+        },
+        "url": "https://cdlib.org/services/d2d/sils/",
+        "menu_order": 26,
+        "menus": 251
+    },
+    {
+        "id": 57436,
+        "title": {
+            "rendered": "UC Library Search"
+        },
+        "url": "https://cdlib.org/services/d2d/uc-library-search/",
+        "menu_order": 27,
+        "menus": 251
+    },
+    {
+        "id": 46152,
+        "title": {
+            "rendered": "Zephir"
+        },
+        "url": "https://cdlib.org/services/d2d/zephir/",
+        "menu_order": 28,
+        "menus": 251
+    },
+    {
+        "id": 25770,
+        "title": {
+            "rendered": "Publishing, Archives, and Digitization"
+        },
+        "url": "https://cdlib.org/services/pad/",
+        "menu_order": 29,
+        "menus": 251
+    },
+    {
+        "id": 26508,
+        "title": {
+            "rendered": "Calisphere"
+        },
+        "url": "https://cdlib.org/services/pad/calisphere/",
+        "menu_order": 30,
+        "menus": 251
+    },
+    {
+        "id": 25771,
+        "title": {
+            "rendered": "eScholarship"
+        },
+        "url": "https://cdlib.org/services/pad/escholarship/",
+        "menu_order": 31,
+        "menus": 251
+    },
+    {
+        "id": 25763,
+        "title": {
+            "rendered": "Mass Digitization"
+        },
+        "url": "https://cdlib.org/services/pad/massdig/",
+        "menu_order": 32,
+        "menus": 251
+    },
+    {
+        "id": 29098,
+        "title": {
+            "rendered": "Online Archive of California"
+        },
+        "url": "https://cdlib.org/services/pad/oac/",
+        "menu_order": 33,
+        "menus": 251
+    },
+    {
+        "id": 26511,
+        "title": {
+            "rendered": "UC Shared DAMS (Nuxeo) and ArchivesSpace"
+        },
+        "url": "https://cdlib.org/services/pad/ucdams/",
+        "menu_order": 34,
+        "menus": 251
+    },
+    {
+        "id": 54585,
+        "title": {
+            "rendered": "Web Archiving Activities"
+        },
+        "url": "https://cdlib.org/services/pad/webarchiving/",
+        "menu_order": 35,
+        "menus": 251
+    },
+    {
+        "id": 39799,
+        "title": {
+            "rendered": "Shared Collections"
+        },
+        "url": "https://cdlib.org/services/collections/",
+        "menu_order": 36,
+        "menus": 251
+    },
+    {
+        "id": 39801,
+        "title": {
+            "rendered": "Licensed Resources"
+        },
+        "url": "https://cdlib.org/services/collections/licensed/",
+        "menu_order": 37,
+        "menus": 251
+    },
+    {
+        "id": 25764,
+        "title": {
+            "rendered": "Shared Cataloging Program"
+        },
+        "url": "https://cdlib.org/services/collections/scp/",
+        "menu_order": 38,
+        "menus": 251
+    },
+    {
+        "id": 25765,
+        "title": {
+            "rendered": "Shared Print"
+        },
+        "url": "https://cdlib.org/services/collections/sharedprint/",
+        "menu_order": 39,
+        "menus": 251
+    },
+    {
+        "id": 25781,
+        "title": {
+            "rendered": "University of California Curation Center (UC3)"
+        },
+        "url": "https://cdlib.org/services/uc3/",
+        "menu_order": 40,
+        "menus": 251
+    },
+    {
+        "id": 25783,
+        "title": {
+            "rendered": "DMPTool"
+        },
+        "url": "https://cdlib.org/services/uc3/dmptool/",
+        "menu_order": 41,
+        "menus": 251
+    },
+    {
+        "id": 28175,
+        "title": {
+            "rendered": "Dryad"
+        },
+        "url": "https://cdlib.org/services/uc3/dryad/",
+        "menu_order": 42,
+        "menus": 251
+    },
+    {
+        "id": 25784,
+        "title": {
+            "rendered": "EZID"
+        },
+        "url": "https://cdlib.org/services/uc3/ezid/",
+        "menu_order": 43,
+        "menus": 251
+    },
+    {
+        "id": 25785,
+        "title": {
+            "rendered": "Merritt"
+        },
+        "url": "https://cdlib.org/services/uc3/merritt/",
+        "menu_order": 44,
+        "menus": 251
+    },
+    {
+        "id": 25787,
+        "title": {
+            "rendered": "Information Services"
+        },
+        "url": "https://cdlib.org/services/info-services/",
+        "menu_order": 45,
+        "menus": 251
+    },
+    {
+        "id": 25786,
+        "title": {
+            "rendered": "Instructional Materials"
+        },
+        "url": "https://cdlib.org/services/info-services/instruct/",
+        "menu_order": 46,
+        "menus": 251
+    },
+    {
+        "id": 25788,
+        "title": {
+            "rendered": "Consortial Partnerships"
+        },
+        "url": "https://cdlib.org/services/consortial-partnerships/",
+        "menu_order": 47,
+        "menus": 251
+    },
+    {
+        "id": 25789,
+        "title": {
+            "rendered": "HathiTrust"
+        },
+        "url": "https://cdlib.org/services/consortial-partnerships/hathitrust/",
+        "menu_order": 48,
+        "menus": 251
+    },
+    {
+        "id": 30379,
+        "title": {
+            "rendered": "WEST"
+        },
+        "url": "https://cdlib.org/west/",
+        "menu_order": 49,
+        "menus": 251
+    },
+    {
+        "id": 25796,
+        "title": {
+            "rendered": "All Services and Projects&#8230;"
+        },
+        "url": "https://cdlib.org/services/",
+        "menu_order": 50,
+        "menus": 251
+    },
+    {
+        "id": 22172,
+        "title": {
+            "rendered": "Resources For…"
+        },
+        "url": "https://cdlib.org/resources/",
+        "menu_order": 51,
+        "menus": 251
+    },
+    {
+        "id": 52613,
+        "title": {
+            "rendered": "Resources For"
+        },
+        "url": "https://cdlib.org/resources/",
+        "menu_order": 52,
+        "menus": 251
+    },
+    {
+        "id": 25797,
+        "title": {
+            "rendered": "Campus Libraries"
+        },
+        "url": "https://cdlib.org/resources/libraries/",
+        "menu_order": 53,
+        "menus": 251
+    },
+    {
+        "id": 26534,
+        "title": {
+            "rendered": "Content Contributors"
+        },
+        "url": "https://cdlib.org/resources/contributors/",
+        "menu_order": 54,
+        "menus": 251
+    },
+    {
+        "id": 25799,
+        "title": {
+            "rendered": "Faculty"
+        },
+        "url": "https://cdlib.org/resources/faculty/",
+        "menu_order": 55,
+        "menus": 251
+    },
+    {
+        "id": 25801,
+        "title": {
+            "rendered": "Technologists"
+        },
+        "url": "https://cdlib.org/resources/technologists/",
+        "menu_order": 56,
+        "menus": 251
+    },
+    {
+        "id": 25800,
+        "title": {
+            "rendered": "Vendors"
+        },
+        "url": "https://cdlib.org/resources/vendors/",
+        "menu_order": 57,
+        "menus": 251
+    },
+    {
+        "id": 22173,
+        "title": {
+            "rendered": "Committees and Groups"
+        },
+        "url": "https://cdlib.org/groups/",
+        "menu_order": 58,
+        "menus": 251
+    },
+    {
+        "id": 52614,
+        "title": {
+            "rendered": "Committees and Groups"
+        },
+        "url": "https://cdlib.org/groups/",
+        "menu_order": 59,
+        "menus": 251
+    },
+    {
+        "id": 25804,
+        "title": {
+            "rendered": "Acquisitions Liaisons"
+        },
+        "url": "https://cdlib.org/groups/acquisition-liaisons/",
+        "menu_order": 60,
+        "menus": 251
+    },
+    {
+        "id": 25806,
+        "title": {
+            "rendered": "Joint Steering Committee on Shared Collections (JSC)"
+        },
+        "url": "https://cdlib.org/groups/jsc/",
+        "menu_order": 61,
+        "menus": 251
+    },
+    {
+        "id": 46153,
+        "title": {
+            "rendered": "Resource Liaisons"
+        },
+        "url": "https://cdlib.org/services/collections/licensed/rl/",
+        "menu_order": 62,
+        "menus": 251
+    },
+    {
+        "id": 28097,
+        "title": {
+            "rendered": "Users Council"
+        },
+        "url": "https://cdlib.org/groups/users_council/",
+        "menu_order": 63,
+        "menus": 251
+    },
+    {
+        "id": 49776,
+        "title": {
+            "rendered": "All Committees and Groups&#8230;"
+        },
+        "url": "/groups/",
+        "menu_order": 64,
+        "menus": 251
+    },
+    {
+        "id": 26235,
+        "title": {
+            "rendered": "News and Media"
+        },
+        "url": "https://cdlib.org/news/",
+        "menu_order": 65,
+        "menus": 251
+    },
+    {
+        "id": 52615,
+        "title": {
+            "rendered": "News and Media"
+        },
+        "url": "https://cdlib.org/news/",
+        "menu_order": 66,
+        "menus": 251
+    },
+    {
+        "id": 27900,
+        "title": {
+            "rendered": "CDLINFO News"
+        },
+        "url": "https://cdlib.org/cdlinfo/",
+        "menu_order": 67,
+        "menus": 251
+    },
+    {
+        "id": 27921,
+        "title": {
+            "rendered": "Press Kit"
+        },
+        "url": "https://cdlib.org/news/press-center/",
+        "menu_order": 68,
+        "menus": 251
+    },
+    {
+        "id": 27259,
+        "title": {
+            "rendered": "Publications"
+        },
+        "url": "https://cdlib.org/news/publications/",
+        "menu_order": 69,
+        "menus": 251
+    },
+    {
+        "id": 25813,
+        "title": {
+            "rendered": "Subscribe"
+        },
+        "url": "https://cdlib.org/news/subscribe-to-cdl/",
+        "menu_order": 70,
+        "menus": 251
+    }
+]

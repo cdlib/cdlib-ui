@@ -1,0 +1,29 @@
+[
+    {
+        "id": 42614,
+        "title": {
+            "rendered": "eScholarship"
+        },
+        "url": "https://cdlib.org/services/pad/escholarship/",
+        "menu_order": 1,
+        "menus": 889
+    },
+    {
+        "id": 42615,
+        "title": {
+            "rendered": "Dryad"
+        },
+        "url": "https://cdlib.org/services/uc3/dryad/",
+        "menu_order": 2,
+        "menus": 889
+    },
+    {
+        "id": 53431,
+        "title": {
+            "rendered": "Open Access Policy Tools"
+        },
+        "url": "https://cdlib.org/services/pad/open-access-tools/",
+        "menu_order": 3,
+        "menus": 889
+    }
+]
