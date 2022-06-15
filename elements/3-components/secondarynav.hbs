@@ -10,31 +10,9 @@
     <ul>
       <li>{{> @link }}
         <ul>
-          {{#each list1}}
+          {{#each list}}
           <li>{{> @link }}</li>
           {{/each}}
-          <li>{{> @link }}
-            <ul>
-              {{#each list2}}
-              <li>{{> @link }}</li>
-              {{/each}}
-              <li>{{> @link }}
-                <ul>
-                  {{#each list3}}
-                  <li>{{> @link }}</li>
-                  {{/each}}
-                  <li>{{> @link }}
-                    <ul>
-                      {{#each list4}}
-                      <li>{{> @link }}</li>
-                      {{/each}}
-                      <li class="current_page_item">{{> @link }}
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
         </ul>
       </li>
     </ul>

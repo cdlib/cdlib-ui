@@ -1,6 +1,6 @@
-const faker = require('faker/locale/en');
-const firstname = faker.name.firstName();
-const lastname = faker.name.firstName();
+const users = require('../../sample-data/users.json')
+const name = users[50].name
+const url = users[50].link
 
 module.exports = {
   label: 'Updated',
@@ -9,8 +9,8 @@ module.exports = {
       date: 'February 27, 2018'
     },
     link: {
-      url: 'mailto:' + lastname + '.' + firstname + '@ucop.edu',
-      text: firstname + ' ' + lastname
+      url: url,
+      text: name
     }
   }
 };

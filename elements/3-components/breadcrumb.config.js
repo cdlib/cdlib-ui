@@ -1,13 +1,10 @@
-const faker = require('faker/locale/en');
-const fakerData = [];
+const breadcrumbSamples = [];
+const breadcrumbLevels = ['California Digital Library', 'Level 2', 'Level 3']
 
-for (var i = 0; i < 2; i++) {
-  if (process.env.NODE_ENV === 'testing') {
-    faker.seed(123);
-  }
-  fakerData.push({
+for (const breadcrumbLevel of breadcrumbLevels) {
+  breadcrumbSamples.push({
     link: {
-      text: faker.commerce.productName()
+      text: breadcrumbLevel
     }
   });
 }
@@ -15,9 +12,9 @@ for (var i = 0; i < 2; i++) {
 module.exports = {
   label: 'Breadcrumb Nav',
   context: {
-    list: fakerData,
     breadcrumb: {
-      activetext: 'This Page Title'
+      list: breadcrumbSamples,
+      activelevel: 'Active Page'
     }
   }
 };
