@@ -1,32 +1,54 @@
 <div class="t-layout--3">
   {{ render '@skipnav' }}
   {{ render '@header' }}
-  {{ render '@breadcrumb' }}
+  {{> @breadcrumb }}
   <aside aria-label="first" class="t-layout__sidebar1">
     {{ render '@secondarynav' }}
   </aside>
   <main id="maincontent">
     {{> @heading--1 }}
     {{> @contact }}
-    {{ render '@avatar' }}
-    <h2>{{ program.heading }}</h2>
-    <p>{{ program.text }}</p>
-    <h2>{{ title.heading }}</h2>
-    <p>{{ title.text }}</p>
-    <h2>{{ responsibilities.heading }}</h2>
-    <p>{{ responsibilities.text }}</p>
-    <h2>{{ education.heading }}</h2>
-    <p>{{ education.text }}</p>
-    <h2>{{ background.heading }}</h2>
-    <p>{{ background.text }}</p>
-    <h2>{{ interests.heading }}</h2>
-    <p>{{ interests.text }}</p>
-    <h2>{{ affiliations.heading }}</h2>
-    <p>{{ affiliations.text }}</p>
-    <h2><abbr title="Orchid">ORCID</abbr> ID</h2>
-    {{ render '@orcid' }}
-    <h2>{{ social.heading }}</h2>
-    <a href="{{ social.url }}">{{ social.url }}</a>
+    {{> @avatar }}
+    <h2>Program / Service</h2>
+    <p>{{{ program }}}</p>
+    <h2>Job Title</h2>
+    <p>{{{ title }}}</p>
+    {{#if responsibilities }}
+      <h2>Responsibilities</h2>
+    {{/if}}
+    <p>{{{ responsibilities }}}</p>
+    {{#if education }}
+      <h2>Education</h2>
+    {{/if}}
+    <p>{{{ education }}}</p>
+    {{#if background }}
+      <h2>Background</h2>
+    {{/if}}
+    <p>{{{ background }}}</p>
+    {{#if interests }}
+      <h2>Professional Interests</h2>
+    {{/if}}
+    <p>{{{ interests }}}</p>
+    {{#if affiliations }}
+      <h2>Committees / Affiliations</h2>
+    {{/if}}
+    <p>{{{ affiliations }}}</p>
+    {{#if publications }}
+      <h2>Publications</h2>
+    {{/if}}
+    <p>{{{ publications }}}</p>
+    {{#if papers }}
+      <h2>Papers and Presentations</h2>
+    {{/if}}
+    <p>{{{ papers }}}</p>
+    {{#if orcid.url }}
+      <h2><abbr title="Orchid">ORCID</abbr> ID</h2>
+      {{> @orcid }}
+    {{/if}}
+    {{#if linkedin.url }}
+      <h2>LinkedIn Profile</h2>
+      <a href="{{ linkedin.url }}">{{ linkedin.url }}</a>
+    {{/if}}
   </main>
   <aside aria-label="second" class="t-layout__sidebar2">
     {{ render '@news' }}
