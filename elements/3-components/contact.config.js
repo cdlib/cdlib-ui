@@ -4,6 +4,8 @@ module.exports = {
   default: '1',
   context: {
     contact: {
+      firstname: 'Firstname',
+      lastname: 'Lastname',
       button: {
         text: 'UCOP Contact Information'
       },

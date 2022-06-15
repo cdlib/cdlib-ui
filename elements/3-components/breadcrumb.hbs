@@ -1,8 +1,8 @@
 <nav aria-label="breadcrumb" class="c-breadcrumb">
   <ul>
-    {{#each list}}
+    {{#each breadcrumb.list}}
     <li>{{> @link--1 }}</li>
     {{/each}}
-    <li>{{ breadcrumb.activetext }}</li>
+    <li>{{ breadcrumb.activelevel }}</li>
   </ul>
 </nav>

@@ -1,14 +1,42 @@
 <div class="c-servicebox">
-  {{#each box}}
   <section>
     <header>
-      {{> @heading }}
+      {{> @heading service_box1 }}
     </header>
     <ul>
-    {{#each ../list}}
+    {{#each service_box1.menu}}
       <li>{{> @link }}</li>
     {{/each}}
     </ul>
   </section>
-  {{/each}}
+  <section>
+    <header>
+      {{> @heading service_box2 }}
+    </header>
+    <ul>
+    {{#each service_box2.menu}}
+      <li>{{> @link }}</li>
+    {{/each}}
+    </ul>
+  </section>
+  <section>
+    <header>
+      {{> @heading service_box3 }}
+    </header>
+    <ul>
+    {{#each service_box3.menu}}
+      <li>{{> @link }}</li>
+    {{/each}}
+    </ul>
+  </section>
+  <section>
+    <header>
+      {{> @heading service_box4 }}
+    </header>
+    <ul>
+    {{#each service_box4.menu}}
+      <li>{{> @link }}</li>
+    {{/each}}
+    </ul>
+  </section>
 </div>

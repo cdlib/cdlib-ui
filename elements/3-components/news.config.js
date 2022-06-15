@@ -1,18 +1,14 @@
-const faker = require('faker/locale/en');
-const fakerData = [];
-
-function removePeriod(string) {
-  return string.replace('.', '');
-}
+const sampleData = [];
+const posts = require('../../sample-data/posts.json')
 
 for (var i = 0; i < 3; i++) {
-  if (process.env.NODE_ENV === 'testing') {
-    faker.seed(123);
-  }
-  fakerData.push({
+  const link = posts[i].link
+  const title = posts[i].title.rendered
+
+  sampleData.push({
     link: {
-      text: removePeriod(faker.lorem.sentence()),
-      url: faker.internet.url()
+      text: title,
+      url: link
     }
   });
 }
@@ -26,10 +22,7 @@ module.exports = {
       level: '2',
       text: 'Latest News'
     },
-    sidebarbox: {
-      text: faker.lorem.paragraph()
-    },
-    list: fakerData,
+    list: sampleData,
     link: {
       text: 'More...'
     }

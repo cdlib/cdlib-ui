@@ -1,3 +1,5 @@
-<form class="c-contact" action="">
-  <button>{{ contact.button.text }}</button>
+<form class="c-contact" method="post" action="https://www.ucop.edu/directory-search/index.php">
+  <input type="hidden" name="first_name" value="{{ contact.firstname }}">
+  <input type="hidden" name="last_name" value="{{ contact.lastname }}">
+  <button name="submit">{{ contact.button.text }}</button>
 </form>

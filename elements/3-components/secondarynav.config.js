@@ -1,51 +1,17 @@
-const faker = require('faker/locale/en');
-const fakerList1 = [];
-const fakerList2 = [];
-const fakerList3 = [];
-const fakerList4 = [];
-const topMenuItem = faker.commerce.productName()
+const sampleData = [];
+const menuItems = require('../../sample-data/menu-items/about-cdl.json')
+const menuItemsSkipFirst = menuItems.slice(1)
+const firstTitle = menuItems[0].title.rendered
+const firstUrl = menuItems[0].url
 
-for (var i = 0; i < 3; i++) {
-  if (process.env.NODE_ENV === 'testing') {
-    faker.seed(123);
-  }
-  fakerList1.push({
-    link: {
-      text: faker.commerce.productName()
-    }
-  });
-}
+for (const i of menuItemsSkipFirst.keys()) {
+  const title = menuItemsSkipFirst[i].title.rendered
+  const url = menuItemsSkipFirst[i].url
 
-for (var i = 0; i < 3; i++) {
-  if (process.env.NODE_ENV === 'testing') {
-    faker.seed(123);
-  }
-  fakerList2.push({
+  sampleData.push({
     link: {
-      text: faker.commerce.productName()
-    }
-  });
-}
-
-for (var i = 0; i < 3; i++) {
-  if (process.env.NODE_ENV === 'testing') {
-    faker.seed(123);
-  }
-  fakerList3.push({
-    link: {
-      text: faker.commerce.productName(),
-      url: 'https://sp.ucop.edu/document.html'
-    }
-  });
-}
-
-for (var i = 0; i < 3; i++) {
-  if (process.env.NODE_ENV === 'testing') {
-    faker.seed(123);
-  }
-  fakerList4.push({
-    link: {
-      text: faker.commerce.productName()
+      text: title,
+      url: url
     }
   });
 }
@@ -59,15 +25,13 @@ module.exports = {
     },
     link1: true,
     link: {
-      text: topMenuItem
+      text: firstTitle,
+      url: firstUrl
     },
     secondarynav: {
       closeButtonText: 'Close Menu',
       openButtonText: 'Open Menu',
     },
-    list1: fakerList1,
-    list2: fakerList2,
-    list3: fakerList3,
-    list4: fakerList4
+    list: sampleData
   }
 };
