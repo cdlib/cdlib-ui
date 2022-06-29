@@ -1,25 +1,18 @@
-const faker = require('faker/locale/en');
-const fakerData = [];
-
-for (var i = 0; i < 8; i++) {
-  if (process.env.NODE_ENV === 'testing') {
-    faker.seed(123);
-  }
-  fakerData.push({
-    blogpost: {
-      text: faker.lorem.paragraphs()
-    }
-  });
-}
+const posts = require('../../sample-data/posts.json')
+const post = 1
+const postTitle = posts[post].title.rendered
+const postContent = posts[post].content.rendered
 
 module.exports = {
   label: 'Blog Post',
   preview: '@template-page',
   context: {
-    heading: {
-      level: '1',
-      text: 'Post Title'
-    },
-    paragraph: fakerData
+    blogpost: {
+      heading: {
+        level: '1',
+        text: postTitle
+      },
+      content: postContent
+    }
   }
-};
+}

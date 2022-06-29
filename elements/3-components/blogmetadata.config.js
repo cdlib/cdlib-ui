@@ -1,41 +1,48 @@
-const faker = require('faker/locale/en');
+const post = 1
+const posts = require('../../sample-data/posts.json')
+const authors = require('../../sample-data/users.json')
+const categories = require('../../sample-data/categories.json')
+const postAuthorId = posts[post].author
+let authorname = 'Firstname Lastname'
+let authorlink = ''
+const postCategoryIds = posts[post].categories
+const postDateUnformatted = new Date(posts[post].modified)
+const dateFormat = {year: 'numeric', month: 'long', day: 'numeric'};
+const postDate = postDateUnformatted.toLocaleDateString('en-US', dateFormat)
 const categoryData = [];
-const categories = ['Collection Development', 'Newsletter', 'Shared Print', 'Staff News'];
-const tagData = [];
-const tags = ['resource_change', 'arks', 'citation', 'community', 'open source'];
 
-for (var i = 0; i < categories.length; i++) {
-  if (process.env.NODE_ENV === 'testing') {
-    faker.seed(123);
+for (const author of authors) {
+  if (author.id === postAuthorId) {
+    authorname = author.name
+    authorlink = author.link
   }
-  categoryData.push({
-    link: {
-      text: categories[i]
-    }
-  });
 }
 
-for (var i = 0; i < tags.length; i++) {
-  if (process.env.NODE_ENV === 'testing') {
-    faker.seed(123);
-  }
-  tagData.push({
-    link: {
-      text: tags[i]
+for (const postCategoryId of postCategoryIds) {
+  for (const category of categories) {
+    if (category.id === postCategoryId) {
+      categoryData.push({
+        link: {
+          text: category.name,
+          url: category.link
+        }
+      })
     }
-  });
+  }
 }
 
 module.exports = {
   label: 'Blog Metadata',
   context: {
-    link: {
-      text: faker.name.findName()
-    },
     blogmetadata: {
-      date: faker.date.month() + ' ' + faker.random.number({min: 1, max: 30}) + ', ' + faker.random.number({min: 2000, max: 2018})
-    },
-    categoryList: categoryData,
-    tagList: tagData
+      date: postDate,
+      author: {
+        link: {
+          text: authorname,
+          url: authorlink
+        },
+      },
+      categoryList: categoryData
+    }
   }
 };

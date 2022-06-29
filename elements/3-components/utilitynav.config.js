@@ -1,10 +1,14 @@
+const utilityNav = require('../../sample-data/menu-items/header-utility-nav.json')
 const navList = [];
-const utilityNav = ['Staff Directory', 'Contact CDL', 'Report a Problem', 'System Status'];
 
-for (var i = 0; i < utilityNav.length; i++) {
+for (const i of utilityNav.keys()) {
+  const title = utilityNav[i].title.rendered
+  const url = utilityNav[i].url
+
   navList.push({
     link: {
-      text: utilityNav[i],
+      text: title,
+      url: url
     }
   });
 }
