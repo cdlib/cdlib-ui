@@ -3,11 +3,9 @@
   {{ render '@header' }}
   {{ render '@breadcrumb' }}
   <main id="maincontent">
-    {{> @heading }}
+    {{> @heading blogpost }}
     {{ render '@blogmetadata' }}
-    {{#each paragraph}}
-    <p>{{ blogpost.text }}</p>
-    {{/each}}
+    {{{ blogpost.content }}}
   </main>
   <aside aria-label="first" class="t-layout__sidebar1">
     <section class="o-sidebarbox">

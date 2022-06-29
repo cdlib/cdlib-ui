@@ -1,7 +1,7 @@
-{{#each list}}
+{{#each blogresult}}
 <div class="c-blogresult">
-  {{> @heading }}
-  {{ render '@blogmetadata' }}
-  <p>{{ blogresult.quote }} &hellip; {{> @link blogresult }}</p>
+  {{> @heading blogheading }}
+  {{> @blogmetadata }}
+  {{{ blogexcerpt }}}
 </div>
 {{/each}}
