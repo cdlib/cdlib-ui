@@ -1,6 +1,4 @@
 <section class="c-mainbox">
-  <header>{{> @heading }}</header>
-  {{#each paragraph}}
-  <p>{{ mainbox.text }}</p>
-  {{/each}}
+  <header>{{> @heading mainbox }}</header>
+  {{{ mainbox.text }}}
 </section>

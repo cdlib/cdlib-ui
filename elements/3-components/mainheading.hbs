@@ -1,4 +1,6 @@
 <header class="c-mainheading">
   {{> @heading }}
-  <p>{{ tagline.text }}</p>
+  {{#if tagline.text }}
+    <p>{{ tagline.text }}</p>
+  {{/if}}
 </header>

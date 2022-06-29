@@ -6,16 +6,8 @@
     {{ render '@secondarynav' }}
   </aside>
   <main id="maincontent">
-    {{> @heading--1 }}
-    {{#each paragraph}}
-      <p>{{ program.text }}</p>
-    {{/each}}
-    {{ render '@mainbox--1' }}
-    {{ render '@mainbox--2' }}
-    {{ render '@mainbox--2' }}
-    {{#each paragraph}}
-      <p>{{ program.text }}</p>
-    {{/each}}
+    {{ render '@mainheading' }}
+    {{ render '@mainbox' }}
     {{ render '@halfboxes' }}
     {{ render '@staff' }}
   </main>
