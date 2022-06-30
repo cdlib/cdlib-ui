@@ -1,7 +1,7 @@
 const sampleData = [];
 const posts = require('../../sample-data/posts.json')
 
-for (var i = 0; i < 3; i++) {
+for (let i = 0; i < 3; i++) {
   const link = posts[i].link
   const title = posts[i].title.rendered
 
@@ -20,11 +20,11 @@ module.exports = {
   context: {
     heading: {
       level: '2',
-      text: 'Latest News'
+      text: 'Recent Posts'
     },
     list: sampleData,
     link: {
-      text: 'More...'
+      text: 'More Posts...'
     }
   }
 };
