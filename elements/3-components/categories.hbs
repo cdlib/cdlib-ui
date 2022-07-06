@@ -1,17 +1,3 @@
 <ul class="c-categories">
-{{#each list1}}
-  {{#each ../list2}}
-  <li>{{> @link }}</li>
-  {{/each}}
-  <li>
-    <details>
-      <summary aria-label="{{ link.text }}">{{> @link }}</summary>
-      <ul>
-        {{#each ../list3}}
-        <li>{{> @link }}</li>
-        {{/each}}
-      </ul>
-    </details>
-  </li>
-{{/each}}
+  {{> @categories-items}}
 </ul>
