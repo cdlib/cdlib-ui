@@ -2,251 +2,301 @@
     {
         "id": 322,
         "link": "https://cdlib.org/cdlinfo/category/publishing-archives-and-digitization/calisphere/",
-        "name": "Calisphere"
+        "name": "Calisphere",
+        "parent": 417
     },
     {
         "id": 1040,
         "link": "https://cdlib.org/cdlinfo/category/publishing-archives-and-digitization/codile/",
-        "name": "Controlled Digital Lending"
+        "name": "Controlled Digital Lending",
+        "parent": 417
     },
     {
         "id": 375,
         "link": "https://cdlib.org/cdlinfo/category/digital-preservation/micro-services/",
-        "name": "Curation Micro-services"
+        "name": "Curation Micro-services",
+        "parent": 323
     },
     {
         "id": 441,
         "link": "https://cdlib.org/cdlinfo/category/digital-preservation/dash/",
-        "name": "Dash"
+        "name": "Dash",
+        "parent": 323
     },
     {
         "id": 312,
         "link": "https://cdlib.org/cdlinfo/category/discodeli-services/",
-        "name": "Discovery &amp; Delivery"
+        "name": "Discovery &amp; Delivery",
+        "parent": 0
     },
     {
         "id": 448,
         "link": "https://cdlib.org/cdlinfo/category/digital-preservation/dmptool/",
-        "name": "DMPTool"
+        "name": "DMPTool",
+        "parent": 323
     },
     {
         "id": 1014,
         "link": "https://cdlib.org/cdlinfo/category/digital-preservation/dryad/",
-        "name": "Dryad"
+        "name": "Dryad",
+        "parent": 323
     },
     {
         "id": 330,
         "link": "https://cdlib.org/cdlinfo/category/collections/erms-collections/",
-        "name": "ERMS"
+        "name": "ERMS",
+        "parent": 310
     },
     {
         "id": 339,
         "link": "https://cdlib.org/cdlinfo/category/publishing-archives-and-digitization/escholarship/",
-        "name": "eScholarship"
+        "name": "eScholarship",
+        "parent": 417
     },
     {
         "id": 383,
         "link": "https://cdlib.org/cdlinfo/category/digital-preservation/ezid/",
-        "name": "EZID"
+        "name": "EZID",
+        "parent": 323
     },
     {
         "id": 315,
         "link": "https://cdlib.org/cdlinfo/category/grants/",
-        "name": "Grants"
+        "name": "Grants",
+        "parent": 0
     },
     {
         "id": 502,
         "link": "https://cdlib.org/cdlinfo/category/identifiers/",
-        "name": "Identifiers"
+        "name": "Identifiers",
+        "parent": 0
     },
     {
         "id": 309,
         "link": "https://cdlib.org/cdlinfo/category/information-services/",
-        "name": "Information Services"
+        "name": "Information Services",
+        "parent": 0
     },
     {
         "id": 333,
         "link": "https://cdlib.org/cdlinfo/category/infrastructure-services/",
-        "name": "Infrastructure Services"
+        "name": "Infrastructure Services",
+        "parent": 0
     },
     {
         "id": 328,
         "link": "https://cdlib.org/cdlinfo/category/collections/licensed/",
-        "name": "Licensed Resources"
+        "name": "Licensed Resources",
+        "parent": 310
     },
     {
         "id": 329,
         "link": "https://cdlib.org/cdlinfo/category/publishing-archives-and-digitization/mass-digitization/",
-        "name": "Mass Digitization"
+        "name": "Mass Digitization",
+        "parent": 417
     },
     {
         "id": 311,
         "link": "https://cdlib.org/cdlinfo/category/discodeli-services/melvyl/",
-        "name": "Melvyl"
+        "name": "Melvyl",
+        "parent": 312
     },
     {
         "id": 389,
         "link": "https://cdlib.org/cdlinfo/category/digital-preservation/merritt/",
-        "name": "Merritt"
+        "name": "Merritt",
+        "parent": 323
     },
     {
         "id": 345,
         "link": "https://cdlib.org/cdlinfo/category/executive-director/",
-        "name": "Message from the Executive Director"
+        "name": "Message from the Executive Director",
+        "parent": 0
     },
     {
         "id": 368,
         "link": "https://cdlib.org/cdlinfo/category/mobile/",
-        "name": "Mobile"
+        "name": "Mobile",
+        "parent": 0
     },
     {
         "id": 306,
         "link": "https://cdlib.org/cdlinfo/category/newsletter/",
-        "name": "Newsletter"
+        "name": "Newsletter",
+        "parent": 0
     },
     {
         "id": 314,
         "link": "https://cdlib.org/cdlinfo/category/publishing-archives-and-digitization/online-archive-of-california/",
-        "name": "Online Archive of California"
+        "name": "Online Archive of California",
+        "parent": 417
     },
     {
         "id": 1009,
         "link": "https://cdlib.org/cdlinfo/category/open-access/",
-        "name": "Open Access"
+        "name": "Open Access",
+        "parent": 0
     },
     {
         "id": 350,
         "link": "https://cdlib.org/cdlinfo/category/opinion-and-commentary/",
-        "name": "Opinion and Commentary"
+        "name": "Opinion and Commentary",
+        "parent": 0
     },
     {
         "id": 334,
         "link": "https://cdlib.org/cdlinfo/category/press-release/",
-        "name": "Press Releases"
+        "name": "Press Releases",
+        "parent": 0
     },
     {
         "id": 319,
         "link": "https://cdlib.org/cdlinfo/category/publishing-archives-and-digitization/digital-publishing/",
-        "name": "Publishing"
+        "name": "Publishing",
+        "parent": 417
     },
     {
         "id": 417,
         "link": "https://cdlib.org/cdlinfo/category/publishing-archives-and-digitization/",
-        "name": "Publishing, Archives, and Digitization"
+        "name": "Publishing, Archives, and Digitization",
+        "parent": 0
     },
     {
         "id": 316,
         "link": "https://cdlib.org/cdlinfo/category/collections/resource-liaisons/",
-        "name": "Resource Liaisons"
+        "name": "Resource Liaisons",
+        "parent": 310
     },
     {
         "id": 332,
         "link": "https://cdlib.org/cdlinfo/category/discodeli-services/request/",
-        "name": "Resource Sharing"
+        "name": "Resource Sharing",
+        "parent": 312
     },
     {
         "id": 318,
         "link": "https://cdlib.org/cdlinfo/category/collections/shared-cataloging/",
-        "name": "Shared Cataloging"
+        "name": "Shared Cataloging",
+        "parent": 310
     },
     {
         "id": 310,
         "link": "https://cdlib.org/cdlinfo/category/collections/",
-        "name": "Shared Collections"
+        "name": "Shared Collections",
+        "parent": 0
     },
     {
         "id": 326,
         "link": "https://cdlib.org/cdlinfo/category/collections/shared-print/",
-        "name": "Shared Print"
+        "name": "Shared Print",
+        "parent": 310
     },
     {
         "id": 313,
         "link": "https://cdlib.org/cdlinfo/category/publishing-archives-and-digitization/special-collections/",
-        "name": "Special Collections"
+        "name": "Special Collections",
+        "parent": 417
     },
     {
         "id": 307,
         "link": "https://cdlib.org/cdlinfo/category/staff-news/",
-        "name": "Staff News"
+        "name": "Staff News",
+        "parent": 0
     },
     {
         "id": 336,
         "link": "https://cdlib.org/cdlinfo/category/strategic-and-project-planning/",
-        "name": "Strategic &amp; Project Planning"
+        "name": "Strategic &amp; Project Planning",
+        "parent": 0
     },
     {
         "id": 1031,
         "link": "https://cdlib.org/cdlinfo/category/discodeli-services/sils/",
-        "name": "Systemwide ILS"
+        "name": "Systemwide ILS",
+        "parent": 312
     },
     {
         "id": 325,
         "link": "https://cdlib.org/cdlinfo/category/systemwide-library-info/",
-        "name": "Systemwide Library Information"
+        "name": "Systemwide Library Information",
+        "parent": 0
     },
     {
         "id": 308,
         "link": "https://cdlib.org/cdlinfo/category/technology/",
-        "name": "Technology"
+        "name": "Technology",
+        "parent": 0
     },
     {
         "id": 323,
         "link": "https://cdlib.org/cdlinfo/category/digital-preservation/",
-        "name": "UC Curation Center (UC3)"
+        "name": "UC Curation Center (UC3)",
+        "parent": 0
     },
     {
         "id": 414,
         "link": "https://cdlib.org/cdlinfo/category/uc-libraries-news/",
-        "name": "UC Libraries News"
+        "name": "UC Libraries News",
+        "parent": 0
     },
     {
         "id": 1032,
         "link": "https://cdlib.org/cdlinfo/category/discodeli-services/ucls/",
-        "name": "UC Library Search"
+        "name": "UC Library Search",
+        "parent": 312
     },
     {
         "id": 376,
         "link": "https://cdlib.org/cdlinfo/category/publishing-archives-and-digitization/ucpubs/",
-        "name": "UC Publishing Services (UCPubS)"
+        "name": "UC Publishing Services (UCPubS)",
+        "parent": 417
     },
     {
         "id": 324,
         "link": "https://cdlib.org/cdlinfo/category/publishing-archives-and-digitization/uc-shared-images/",
-        "name": "UC Shared Images"
+        "name": "UC Shared Images",
+        "parent": 417
     },
     {
         "id": 327,
         "link": "https://cdlib.org/cdlinfo/category/discodeli-services/uc-elinks/",
-        "name": "UC-eLinks"
+        "name": "UC-eLinks",
+        "parent": 312
     },
     {
         "id": 1,
         "link": "https://cdlib.org/cdlinfo/category/uncategorized/",
-        "name": "Uncategorized"
+        "name": "Uncategorized",
+        "parent": 0
     },
     {
         "id": 317,
         "link": "https://cdlib.org/cdlinfo/category/collections/usage-stats/",
-        "name": "Usage Statistics"
+        "name": "Usage Statistics",
+        "parent": 310
     },
     {
         "id": 321,
         "link": "https://cdlib.org/cdlinfo/category/ux-design/",
-        "name": "User Experience Design"
+        "name": "User Experience Design",
+        "parent": 0
     },
     {
         "id": 508,
         "link": "https://cdlib.org/cdlinfo/category/users-council/",
-        "name": "Users Council"
+        "name": "Users Council",
+        "parent": 0
     },
     {
         "id": 331,
         "link": "https://cdlib.org/cdlinfo/category/publishing-archives-and-digitization/web-archiving/",
-        "name": "Web Archiving"
+        "name": "Web Archiving",
+        "parent": 417
     },
     {
         "id": 416,
         "link": "https://cdlib.org/cdlinfo/category/collections/west/",
-        "name": "WEST"
+        "name": "WEST",
+        "parent": 310
     }
 ]

@@ -1,0 +1,15 @@
+{{!-- Recursive nested list Handlebars templating adapted from: http://www.boduch.ca/2014/03/recursive-list-building-with-handlebars.html --}}
+{{#each list}}
+  <li>
+  {{#if list}}
+  <details>
+    <summary aria-label="{{{name}}}"><a href="{{link}}">{{{name}}}</a></summary>
+    <ul>
+    {{> @categories-items }}
+    </ul>
+  </details>
+  {{else}}
+    <a href="{{link}}">{{{name}}}</a>
+  {{/if}}
+  </li>
+{{/each}}
