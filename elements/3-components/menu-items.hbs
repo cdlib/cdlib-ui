@@ -1,0 +1,11 @@
+{{!-- Recursive nested list Handlebars templating adapted from: http://www.boduch.ca/2014/03/recursive-list-building-with-handlebars.html --}}
+{{#each list}}
+<li>
+  <a href="{{url}}">{{{title.rendered}}}</a>
+  {{#if list}}
+  <ul>
+  {{> @menu-items }}
+  </ul>
+  {{/if}}
+</li>
+{{/each}}
