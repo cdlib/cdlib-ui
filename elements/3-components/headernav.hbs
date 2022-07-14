@@ -1,20 +1,6 @@
 {{!-- Read notes in component config --}}
 <nav aria-label="global" class="c-headernav c-headernav-no-js c-mobilenav">
   <ul>
-    {{#each list1}}
-    <li class="{{ columnClass }} menu-item-has-children">{{> @link }}
-      <ul>
-        {{#each ../list2}}
-        <li class="menu-item-has-children">{{> @link }}
-          <ul>
-            {{#each ../../list3}}
-            <li>{{> @link }}</li>
-            {{/each}}
-          </ul>
-        </li>
-        {{/each}}
-      </ul>
-    </li>
-    {{/each}}
+    {{> @menu-items}}
   </ul>
 </nav>

@@ -1,6 +1,6 @@
 {{!-- Recursive nested list Handlebars templating adapted from: http://www.boduch.ca/2014/03/recursive-list-building-with-handlebars.html --}}
 {{#each list}}
-<li>
+<li {{#if parent_columns}}class="{{parent_columns}}"{{/if}}>
   <a href="{{url}}">{{{title.rendered}}}</a>
   {{#if list}}
   <ul>

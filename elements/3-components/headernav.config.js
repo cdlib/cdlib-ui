@@ -1,47 +1,30 @@
-const faker = require('faker/locale/en');
-const fakerHeaderList1 = [];
-const fakerHeaderList2 = [];
-const fakerHeaderList3 = [];
-const list1 = ['About CDL', 'Services & Projects', 'Resources for...', 'Committees & Groups', 'News & Groups'];
-const columnClasses = ['columns-2', 'columns-3', '', '', ''];
+const nav = require('../../sample-data/menu-items/header-main-nav.json')
+const navParents = nav.filter(el => el.parent === 0)
+const navChildren = nav.filter(el => el.parent !== 0)
+const navSorted = navParents.concat(navChildren)
+const navMap = new Map();
+const parentColumns = ['columns-2', 'columns-3']
+let parentIndex = 0
+const navData = []
 
-for (var i = 0; i < list1.length; i++) {
-  fakerHeaderList1.push({
-    link: {
-      text: list1[i],
-    },
-    columnClass: columnClasses[i]
-  });
-}
+// Nest JSON child objects within their parents using id and parent properties. Adapted from https://stackoverflow.com/questions/72320459/restructure-2-arrays-with-objects-as-a-nested-array:
 
-for (var i = 0; i < 3; i++) {
-  if (process.env.NODE_ENV === 'testing') {
-    faker.seed(123);
+for (const navItem of navSorted) {
+  navItem.list = []
+  navMap.set(navItem.id, navItem)
+
+  if (navItem.parent === 0) {
+    navItem.parent_columns = parentColumns[parentIndex]
+    parentIndex++
+    navData.push(navItem)
+  } else {
+    navMap.get(navItem.parent).list.push(navItem)
   }
-  fakerHeaderList2.push({
-    link: {
-      text: faker.commerce.productName(),
-    }
-  });
-}
-
-for (var i = 0; i < 5; i++) {
-  if (process.env.NODE_ENV === 'testing') {
-    faker.seed(123);
-  }
-  fakerHeaderList3.push({
-    link: {
-      text: faker.commerce.productName(),
-    }
-  });
 }
 
 module.exports = {
   label: 'Header Nav',
   context: {
-    list1: fakerHeaderList1,
-    list2: fakerHeaderList2,
-    list3: fakerHeaderList3
-  },
-  notes: 'Instead of using link variants link--2 and link--6 in headernav.hbs, default links are used and then styled as those variants in _headernav.scss. This is for WP Nav Menus, which output anchors tags without classes, by default.'
-};
+    list: navData
+  }
+}
