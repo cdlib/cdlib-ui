@@ -5,6 +5,7 @@
             "rendered": "About CDL"
         },
         "url": "https://cdlib.org/about/",
+        "parent": 0,
         "menu_order": 1,
         "menus": 445
     },
@@ -14,6 +15,7 @@
             "rendered": "Mission, Vision, and Values"
         },
         "url": "https://cdlib.org/about/mission-vision-and-values/",
+        "parent": 24732,
         "menu_order": 2,
         "menus": 445
     },
@@ -23,6 +25,7 @@
             "rendered": "Message from the Associate Vice Provost / Executive Director"
         },
         "url": "https://cdlib.org/about/mfted/",
+        "parent": 24732,
         "menu_order": 3,
         "menus": 445
     },
@@ -32,6 +35,7 @@
             "rendered": "Our Organization"
         },
         "url": "https://cdlib.org/about/our-organization/",
+        "parent": 24732,
         "menu_order": 4,
         "menus": 445
     },
@@ -41,6 +45,7 @@
             "rendered": "CDL Executive Office"
         },
         "url": "https://cdlib.org/about/executive-office/",
+        "parent": 24732,
         "menu_order": 5,
         "menus": 445
     },
@@ -50,6 +55,7 @@
             "rendered": "Grants and Partnerships"
         },
         "url": "https://cdlib.org/about/grants-and-partnerships/",
+        "parent": 24732,
         "menu_order": 6,
         "menus": 445
     },
@@ -59,6 +65,7 @@
             "rendered": "Standards and Memberships"
         },
         "url": "https://cdlib.org/about/standards-and-memberships/",
+        "parent": 24732,
         "menu_order": 7,
         "menus": 445
     },
@@ -68,6 +75,7 @@
             "rendered": "Policies and Guidelines"
         },
         "url": "https://cdlib.org/about/policies-and-guidelines/",
+        "parent": 24732,
         "menu_order": 8,
         "menus": 445
     },
@@ -77,6 +85,7 @@
             "rendered": "CDL Awards and Honors"
         },
         "url": "https://cdlib.org/about/cdl-awards-and-honors/",
+        "parent": 24732,
         "menu_order": 9,
         "menus": 445
     },
@@ -86,6 +95,7 @@
             "rendered": "CDL by the Numbers"
         },
         "url": "https://cdlib.org/about/cdl-by-the-numbers/",
+        "parent": 24732,
         "menu_order": 10,
         "menus": 445
     },
@@ -95,6 +105,7 @@
             "rendered": "Job Opportunities"
         },
         "url": "https://cdlib.org/about/job-opportunities/",
+        "parent": 24732,
         "menu_order": 11,
         "menus": 445
     },
@@ -104,6 +115,7 @@
             "rendered": "Our Organization"
         },
         "url": "https://cdlib.org/about/our-organization/",
+        "parent": 0,
         "menu_order": 12,
         "menus": 445
     },
@@ -113,6 +125,7 @@
             "rendered": "Discovery &amp; Delivery"
         },
         "url": "https://cdlib.org/services/d2d/",
+        "parent": 26561,
         "menu_order": 13,
         "menus": 445
     },
@@ -122,6 +135,7 @@
             "rendered": "Publishing, Archives, and Digitization"
         },
         "url": "https://cdlib.org/services/pad/",
+        "parent": 26561,
         "menu_order": 14,
         "menus": 445
     },
@@ -131,6 +145,7 @@
             "rendered": "Shared Collections"
         },
         "url": "https://cdlib.org/services/collections/",
+        "parent": 26561,
         "menu_order": 15,
         "menus": 445
     },
@@ -140,6 +155,7 @@
             "rendered": "University of California Curation Center (UC3)"
         },
         "url": "https://cdlib.org/services/uc3/",
+        "parent": 26561,
         "menu_order": 16,
         "menus": 445
     },
@@ -149,6 +165,7 @@
             "rendered": "Business Services"
         },
         "url": "https://cdlib.org/services/business/",
+        "parent": 26561,
         "menu_order": 17,
         "menus": 445
     },
@@ -158,6 +175,7 @@
             "rendered": "Information Services"
         },
         "url": "https://cdlib.org/services/info-services/",
+        "parent": 26561,
         "menu_order": 18,
         "menus": 445
     },
@@ -167,6 +185,7 @@
             "rendered": "Infrastructure Services"
         },
         "url": "https://cdlib.org/services/infrastructure/",
+        "parent": 26561,
         "menu_order": 19,
         "menus": 445
     },
@@ -176,6 +195,7 @@
             "rendered": "User Experience Design Service"
         },
         "url": "https://cdlib.org/services/uxdesign/",
+        "parent": 26561,
         "menu_order": 20,
         "menus": 445
     },
@@ -185,6 +205,7 @@
             "rendered": "Services and Projects"
         },
         "url": "https://cdlib.org/services/",
+        "parent": 0,
         "menu_order": 21,
         "menus": 445
     },
@@ -194,6 +215,7 @@
             "rendered": "All Services and Projects&#8230;"
         },
         "url": "https://cdlib.org/services/",
+        "parent": 24733,
         "menu_order": 22,
         "menus": 445
     },
@@ -203,6 +225,7 @@
             "rendered": "Resources For…"
         },
         "url": "https://cdlib.org/resources/",
+        "parent": 0,
         "menu_order": 23,
         "menus": 445
     },
@@ -212,6 +235,7 @@
             "rendered": "Campus Libraries"
         },
         "url": "https://cdlib.org/resources/libraries/",
+        "parent": 24734,
         "menu_order": 24,
         "menus": 445
     },
@@ -221,6 +245,7 @@
             "rendered": "Content Contributors"
         },
         "url": "https://cdlib.org/resources/contributors/",
+        "parent": 24734,
         "menu_order": 25,
         "menus": 445
     },
@@ -230,6 +255,7 @@
             "rendered": "Faculty"
         },
         "url": "https://cdlib.org/resources/faculty/",
+        "parent": 24734,
         "menu_order": 26,
         "menus": 445
     },
@@ -239,6 +265,7 @@
             "rendered": "Technologists"
         },
         "url": "https://cdlib.org/resources/technologists/",
+        "parent": 24734,
         "menu_order": 27,
         "menus": 445
     },
@@ -248,6 +275,7 @@
             "rendered": "Vendors"
         },
         "url": "https://cdlib.org/resources/vendors/",
+        "parent": 24734,
         "menu_order": 28,
         "menus": 445
     },
@@ -257,6 +285,7 @@
             "rendered": "Committees and Groups"
         },
         "url": "https://cdlib.org/groups/",
+        "parent": 0,
         "menu_order": 29,
         "menus": 445
     },
@@ -266,6 +295,7 @@
             "rendered": "Acquisitions Liaisons"
         },
         "url": "https://cdlib.org/groups/acquisition-liaisons/",
+        "parent": 24735,
         "menu_order": 30,
         "menus": 445
     },
@@ -275,6 +305,7 @@
             "rendered": "Joint Steering Committee on Shared Collections (JSC)"
         },
         "url": "https://cdlib.org/groups/jsc/",
+        "parent": 24735,
         "menu_order": 31,
         "menus": 445
     },
@@ -284,6 +315,7 @@
             "rendered": "Users Council"
         },
         "url": "https://cdlib.org/groups/users_council/",
+        "parent": 24735,
         "menu_order": 32,
         "menus": 445
     },
@@ -293,6 +325,7 @@
             "rendered": "All Committees and Groups&#8230;"
         },
         "url": "https://cdlib.org/groups/",
+        "parent": 24735,
         "menu_order": 33,
         "menus": 445
     },
@@ -302,6 +335,7 @@
             "rendered": "News and Media"
         },
         "url": "https://cdlib.org/news/",
+        "parent": 0,
         "menu_order": 34,
         "menus": 445
     },
@@ -311,6 +345,7 @@
             "rendered": "CDLINFO"
         },
         "url": "https://cdlib.org/cdlinfo/",
+        "parent": 26574,
         "menu_order": 35,
         "menus": 445
     },
@@ -320,6 +355,7 @@
             "rendered": "Press Kit"
         },
         "url": "https://cdlib.org/news/press-center/",
+        "parent": 26574,
         "menu_order": 36,
         "menus": 445
     },
@@ -329,6 +365,7 @@
             "rendered": "Publications"
         },
         "url": "https://cdlib.org/news/publications/",
+        "parent": 26574,
         "menu_order": 37,
         "menus": 445
     },
@@ -338,6 +375,7 @@
             "rendered": "Subscribe to CDL"
         },
         "url": "https://cdlib.org/news/subscribe-to-cdl/",
+        "parent": 26574,
         "menu_order": 38,
         "menus": 445
     }

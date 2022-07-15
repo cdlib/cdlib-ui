@@ -1,26 +1,18 @@
 <footer class="c-footer">
   <nav class="c-footer__main" aria-label="footer">
     <ul>
-      {{#each list1}}
-      <li>{{> @link--1 }}
-        <ul>
-          {{#each ../list2}}
-          <li>{{> @link--1 }}</li>
-          {{/each}}
-        </ul>
-      </li>
-      {{/each}}
+      {{> @menu-items }}
     </ul>
   </nav>
   <div class="c-footer__legal">
     <ul>
-      {{#each list3}}
+      {{#each list2}}
       <li>{{> @link--1 }}</li>
       {{/each}}
     </ul>
   </div>
   <div class="c-footer__copyright">
-    <small>Copyright © 2018 The Regents of The University of California</small>
+    <small>Copyright © 2022 The Regents of The University of California</small>
     <small><a href="https://creativecommons.org/licenses/by/4.0/">Site text licensed under CC BY 4.0</a> <img src="https://licensebuttons.net/l/by/4.0/80x15.png" alt="CC BY 4.0"></small>
     <small>California Digital Library</small>
   </div>

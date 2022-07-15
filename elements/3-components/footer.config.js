@@ -1,46 +1,39 @@
-const faker = require('faker/locale/en');
-const linkData1 = [];
-const linkData2 = [];
-const linkData3 = [];
-const list1 = ['About CDL', 'Our Organization', 'Services & Projects', 'Resources For...', 'Committees & Groups', 'News & Media'];
-const list3 = ['Site Map', 'Terms & Conditions', 'Privacy Policy', 'Accessibility Policy'];
+const footerNav = require('../../sample-data/menu-items/footer-main-nav.json')
+const legalNav = require('../../sample-data/menu-items/footer-legal-nav.json')
+const footerNavParents = footerNav.filter(el => el.parent === 0)
+const footerNavChildren = footerNav.filter(el => el.parent !== 0)
+const footerNavSorted = footerNavParents.concat(footerNavChildren)
+const footerNavMap = new Map()
+const footerNavData = []
+const legalNavData = []
 
-function capFirstLetter(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
-}
+for (const footerNavItem of footerNavSorted) {
+  footerNavItem.list = []
+  footerNavMap.set(footerNavItem.id, footerNavItem)
 
-for (var i = 0; i < list1.length; i++) {
-  linkData1.push({
-    link: {
-      text: list1[i]
-    }
-  });
-}
-
-for (var i = 0; i < 5; i++) {
-  if (process.env.NODE_ENV === 'testing') {
-    faker.seed(123);
+  if (footerNavItem.parent === 0) {
+    footerNavData.push(footerNavItem)
+  } else {
+    footerNavMap.get(footerNavItem.parent).list.push(footerNavItem)
   }
-  linkData2.push({
-    link: {
-      text: capFirstLetter(faker.lorem.words())
-    }
-  });
 }
 
-for (var i = 0; i < list3.length; i++) {
-  linkData3.push({
+for (const i of legalNav.keys()) {
+  const title = legalNav[i].title.rendered
+  const url = legalNav[i].url
+
+  legalNavData.push({
     link: {
-      text: list3[i]
+      text: title,
+      url: url
     }
-  });
+  })
 }
 
 module.exports = {
   label: 'Footer',
   context: {
-    list1: linkData1,
-    list2: linkData2,
-    list3: linkData3
+    list: footerNavData,
+    list2: legalNavData
   }
-};
+}

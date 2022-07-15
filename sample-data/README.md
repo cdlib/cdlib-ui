@@ -18,7 +18,7 @@ Browse the following REST API endpoints and save the resulting JSON as JSON file
 
 * https://cdlib.org/wp-json/wp/v2/menu-items?menus=251&_fields=id,title,url,parent,menu_order,menus
 * https://cdlib.org/wp-json/wp/v2/menu-items?menus=252&_fields=id,title,url,menu_order,menus
-* https://cdlib.org/wp-json/wp/v2/menu-items?menus=445&_fields=id,title,url,menu_order,menus
+* https://cdlib.org/wp-json/wp/v2/menu-items?menus=445&_fields=id,title,url,parent,menu_order,menus
 * https://cdlib.org/wp-json/wp/v2/menu-items?menus=486&_fields=id,title,url,menu_order,menus
 * https://cdlib.org/wp-json/wp/v2/menu-items?menus=500&_fields=id,title,url,menu_order,menus
 * https://cdlib.org/wp-json/wp/v2/menu-items?menus=878&_fields=id,title,url,menu_order,menus
