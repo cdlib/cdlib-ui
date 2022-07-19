@@ -581,7 +581,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "Related Resources",
+            "sidebar_box_1_content": "<ul>\r\n\t<li><a href=\"https://cdlib.org/contact/system-status/\">System Status</a><br />\r\n<a href=\"http://listserv.ucop.edu/cgi-bin/wa.exe?A0=CDLALERT-L\">CDLALERT-L Archive</a></li>\r\n</ul>",
+            "sidebar_box_2_heading": "Normal Business Hours",
+            "sidebar_box_2_content": "<ul>\r\n\t<li>Mon - Fri, 9 AM - 5 PM</li>\r\n\t<li> </li>\r\n</ul>",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -863,7 +869,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "",
+            "sidebar_box_1_content": "",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -920,7 +932,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "",
+            "sidebar_box_1_content": "",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -947,7 +965,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "",
+            "sidebar_box_1_content": "",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -974,7 +998,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "",
+            "sidebar_box_1_content": "",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -1058,7 +1088,13 @@
             "side_by_side_box_1_content": "<p><a href=\"https://cdlib.org/contact/report-a-problem/\">Report a Problem</a></p>\r\n<p>See <a href=\"https://cdlib.org/services/info-services/guides/reporting-problems-after-hours/\">After Hours</a> to report problems with CDL resources after 5 PM.</p>",
             "side_by_side_box_2_heading": "Non-Urgent Issues",
             "side_by_side_box_2_content": "<ul>\r\n\t<li><a href=\"http://helpline.cdlib.org\">CDL Helpline</a></li>\r\n\t<li><a href=\"https://helpline.cdlib.org/MRcgi/MRentrancePage.pl\">Login</a></li>\r\n\t<li><a href=\"https://cdlib.org/services/info-services/guides/how-to-use-the-cdl-helpline-web-site/\">Instructions</a></li>\r\n</ul>",
-            "bottom_content": "<p>[table id=70 /]</p>"
+            "bottom_content": "<p>[table id=70 /]</p>",
+            "sidebar_box_1_heading": "",
+            "sidebar_box_1_content": "",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -1085,7 +1121,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "",
+            "sidebar_box_1_content": "",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -1112,7 +1154,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "",
+            "sidebar_box_1_content": "",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -1139,7 +1187,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "",
+            "sidebar_box_1_content": "",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -1166,7 +1220,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "",
+            "sidebar_box_1_content": "",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -1180,7 +1240,7 @@
         },
         "acf": {
             "tagline": "",
-            "top_content": "<h2 id=\"anchor-62bcc110d667a\" >2022</h2>\r\n<p><a href=\"https://osc.universityofcalifornia.edu/2022/05/uc-csu-scelc-acs-new-transformative-agreement/\">Institutions partner with ACS to advance first California-wide transformative open access agreement</a>, May 17, 2022</p>\r\n<h2 id=\"anchor-6287dc03e2408\">2021</h2>\r\n<p><a href=\"https://drive.google.com/file/d/19plti0-Cp5W-WdcL-nEXRWNr5q-1fPS7/view\">The CDL, CRL, &amp; HathiTrust Shared Print Collaboration launches a free collection comparison tool to advance equity of collection decision making</a>, January 22, 2021</p>\r\n<h2 id=\"anchor-601870e127823\">2019</h2>\r\n<ul>\r\n\t<li><a href=\"https://cdlib.org/cdlinfo/2019/08/29/next-gen-library-publishing-partnership-awarded-2-2m-arcadia-grant-to-improve-scholarly-publishing-infrastructure/\">Next Gen Library Publishing partnership awarded $2.2M Arcadia grant to improve scholarly publishing infrastructure</a>, August 29, 2019</li>\r\n\t<li><a href=\"https://cdlib.org/cdlinfo/2019/04/10/cambridge-university-press-and-the-university-of-california-agree-to-open-access-publishing-deal/\">Cambridge University Press and the University of California Agree to Open Access Publishing Deal</a>, April 10, 2019</li>\r\n</ul>\r\n<h2 id=\"anchor-5c197f4ecf60b\">2018</h2>\r\n<p><a href=\"https://www.cdlib.org/cdlinfo/2018/05/30/letter-to-the-community-cdl-and-dryad-partnership/\">Letter to the Community: CDL and Dryad Partnership</a>, May 30, 2018</p>\r\n<h2 id=\"anchor-5c197f4ecf6d3\">2017</h2>\r\n<p><a href=\"https://www.cdlib.org/cdlinfo/2017/05/24/make-data-count-building-a-system-to-support-recognition-of-data-as-a-first-class-research-output/\">Make Data Count: Building a System to Support Recognition of Data as a First Class Research Output</a>, May 24, 2017</p>\r\n<p><a href=\"https://www.cdlib.org/cdlinfo/2017/03/30/uc-irvine-book-featured-as-hathitrusts-15-millionth-volume/\">UC Irvine Book Featured as HathiTrust’s 15 Millionth Volume</a>, March 30, 2017</p>\r\n<h2 id=\"anchor-5c197f4ecf791\">2016</h2>\r\n<p><a href=\"http://www.cdlib.org/cdlinfo/2016/06/07/west-libraries-achieve-500000-volumes/\">WEST libraries achieve 500,000 volumes</a>, June 7, 2016</p>\r\n<p><a href=\"http://osc.universityofcalifornia.edu/2016/04/ucpress-and-cdl-to-partner-with-collaborative-knowledge-foundation-to-build-open-source-monograph-publishing-platform/\">University of California Press and California Digital Library partner with Collaborative Knowledge Foundation to build open source monograph publishing platform</a>, April 22, 2016</p>\r\n<p><a href=\"http://www.cdlib.org/cdlinfo/2016/02/01/california-digital-library-announces-new-leadership/\">California Digital Library announces new leadership</a>, February 1, 2016</p>\r\n<h2 id=\"anchor-5c197f4ecf84d\">2015</h2>\r\n<p><a href=\"http://www.cdlib.org/cdlinfo/2015/10/29/john-chodacki-named-director-of-the-university-of-california-curation-center-at-the-california-digital-library/\">John Chodacki Named Director of the University of California Curation Center at the California Digital Library</a>, October 28, 2015</p>\r\n<p><a href=\"http://osc.universityofcalifornia.edu/2015/10/groundbreaking-presidential-oa-policy-covers-all-employees/\">Groundbreaking University of California policy extends free access to all scholarly articles written by UC employees</a>, October 26, 2015</p>\r\n<p><a href=\"http://www.cdlib.org/cdlinfo/2015/03/20/uc-davis-cdl-to-lead-major-project-to-build-open-access-financial-model/\">UC Davis, CDL to Lead Major Project to Build Open Access Financial Model</a>, March 20, 2015</p>\r\n<p><a href=\"http://www.cdlib.org/cdlinfo/2015/03/05/uc-press-and-the-california-digital-library-receive-750k-grant-from-the-andrew-w-mellon-foundation/\">UC Press and the CDL Receive $750K Grant from the Andrew W. Mellon Foundation</a>, March 5, 2015</p>\r\n<h2 id=\"anchor-5c197f4ecf909\">2014</h2>\r\n<p><a href=\"http://www.crossref.org/01company/pr/news080514.html\">CrossRef and California Digital Library Agreement Extends Discoverability of Scholarly Publications</a>, August 5, 2014</p>\r\n<p><a href=\"http://www.universityofcalifornia.edu/press-room/updated-data-management-tool-more-responsive-researchers%E2%80%99-needs\">Data management tool meets researchers’ needs</a>, June 3, 2014</p>\r\n<p><a href=\"http://dp.la/info/2014/04/17/dpla-1st-birthday-announcement/\">DPLA Welcomes CDL and UC Libraries Participation: Content Hub Launch</a>, April 17, 2014</p>\r\n<h2 id=\"anchor-5c197f4ecf9c4\">2013</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http:/www.universityofcalifornia.edu/news/article/30220\">UC Libraries receive grant to support Phase 2 of the Western Regional Storage Trust</a>, October 21, 2013</p>\r\n<p><a href=\"https://senate.universityofcalifornia.edu/_files/news/source/openaccess.august2013.html\">University of California Faculty Senate Passes Open Access Policy</a>, August 2, 2013</p>\r\n<h2 id=\"anchor-5c197f4ecfa7e\">2012</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/28420\">California Digital Library and partners launch DataUp</a>, October 2, 2012</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/28256\">Archiving milestone for journal repository program</a>, August 30, 2012</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/28143\">UC names winners for technology innovation awards</a>, August 6, 2012</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/28062\">Portal for Earth science data exploration</a>, July 23, 2012</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/27093\">California Digital Library joins Public Knowledge Project</a>, February 7, 2012</p>\r\n<h2 id=\"anchor-5c197f4ecfb39\">2011</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/26584\">Libraries launch data management tool</a>, November 1, 2011</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/26172\">UC Libraries expand access to orphan works</a>, August 24, 2011</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/25856\">Further documentation on Japanese Americans in WWII</a>, June 29, 2011</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/24992\">Data management planning tool in development</a>, February 15, 2011</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/24890\">UC libraries get grant to implement storage trust</a>, January 1, 2011</p>\r\n<h2 id=\"anchor-5c197f4ecfbf3\">2010</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/24513\">Libraries partner in digital stewardship alliance</a>, November 16, 2010</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/24482\">Digital library's global, local services</a>, November 10, 2010</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/24215\">eXtensible Text Framework site launched</a>, September 29, 2010</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/23055\">DataCite boosts visibility, access to research data</a>, March 22, 2010</p>\r\n<h2 id=\"anchor-5c197f4ecfcae\">2009</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/22525\">UC Press, California Digital Library launch venture</a>, December 8, 2009</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/22485\">Uncovering California’s environmental collections</a>, December 3, 2009</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/22398\">DataONE to deal with data deluge</a>, November 18, 2009</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/22401\">Librarians build Web archives on swine flu, wildfires</a>, November 17, 2009</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/22047\">New look, enhanced services for eScholarship</a>, October 19, 2009</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/21543\">Web archiving service preserves data for the future</a>, July 21, 2009</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/19335\">University of California Libraries and Springer sign pilot agreement for open access journal publishing</a>, January 21, 2009</p>\r\n<h2 id=\"anchor-5c197f4ecfd68\">2008</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/19105\">Laine Farley named executive director of the CDL</a>, December 5, 2008</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/18850\">Universities see promise in Google Book settlement</a>, October 28, 2008</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/17903\">UC libraries launch next-generation Melvyl Catalog</a>, May 27, 2008</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/17656\">Chronopolis Project to preserve at-risk digital information</a>, April 14, 2008</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/17470\">University of California to test new Google software that will provide greater online access to digitized books</a>, March 13, 2008</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/17141\">University of California eScholarship® Repository exceeds 5 million full-text downloads</a>, January 14, 2008</p>\r\n<h2 id=\"anchor-5c197f4ecfe22\">2007</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/17039\">UC libraries share the wealth</a>, December 12, 2007</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/16696\">Mark Twain Project Online launched</a>, July 11, 2007</p>\r\n<p><a href=\"https://cdlib.org/wp-content/uploads/2019/09/uc_oclc_press_release_20070621.pdf\">University of California libraries collaborate with OCLC on next generation Melvyl® Catalog</a>, June 22, 2007</p>\r\n<h2 id=\"anchor-5c197f4ecfede\">2006</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/2006/aug21a.html\">UC launches Calisphere web site</a>, August 21, 2006</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/2006/aug09.html\">UC libraries partner with Google to digitize books</a>, August 9, 2006</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/2006/may18.html\">UC libraries highlight important initiatives and new digital services to Regents</a>, May 18, 2006</p>\r\n<h2 id=\"anchor-5c197f4ecff99\">2005</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/10185\">UC libraries partner with technology companies and non-profits to provide free public access to digitized books</a>, October 3, 2005</p>\r\n<p><a href=\"https://cdlib.org/wp-content/uploads/2018/12/anderson_release_final_20050906.doc\">CDL announces new director of licensed content for UC</a>, September 6, 2005</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/6950\">UC launches postprints service to provide greater access to UC scholarship</a>, February 23, 2005</p>\r\n<h2 id=\"anchor-5c197f4ed0052\">2004</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/6654\">CDL receives $2.4 million Library of Congress grant to preserve online government and political materials</a>, September 30, 2004</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/10035\">New eScholarship service expands UC effort to publish scholarship</a>, September 14, 2004</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/6480\">Counting California web site wins prestigious award</a>, June 28, 2004</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/9993\">UC's eScholarship Repository adds peer-reviewed publications</a>, March 9, 2004</p>\r\n<h2 id=\"anchor-5c197f4ed010d\">2003</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/5941\">eScholarship Editions publishes innovative books from UC Press</a>, November 24, 2003</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/5344\">UC libraries unveil new Melvyl® Catalog</a>, April 24, 2003</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/5244\">CDL's eScholarship repository reaches major milestones</a>, March 12, 2003</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/19980\">Three hundred UC Press eScholarship Editions now available on the web</a>, January 7, 2003</p>\r\n<h2 id=\"anchor-5c197f4ed01c8\">2002</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/4918\">UC Joins Forces with BioMed Central</a>, November 6, 2002</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/3988\">New Director of the CDL</a>, February 14, 2002</p>\r\n<h2 id=\"anchor-5c197f4ed027f\">2001</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1cf9m45q/http://www.universityofcalifornia.edu/news/article/19772\">New service provides free interactive access to California statistics</a>, August 9, 2001</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/3609\">CDL and Berkeley Electronic Press announce partnership for scholarly communication initiatives</a>, October 4, 2001</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/3461\">California Digital Library and UC Press Collaborate to Deliver Scholarly Books Online</a>, July 31, 2001</p>\r\n<p><a href=\"https://cdlib.org/wp-content/uploads/2018/12/cdljan01.pdf\">Digital publications highlights new release of the CDL</a>, January 19, 2001</p>\r\n<p><a href=\"https://cdlib.org/wp-content/uploads/2018/12/cdlebsco.pdf\">CDL to partner with EBSCO on UC ejournal access</a>, January 10, 2001</p>\r\n<p><a href=\"https://cdlib.org/wp-content/uploads/2018/12/cdlasp.pdf\">CDL acquires unique humanities databases for the UC from Alexander Street Press</a>, January 10, 2001</p>\r\n<h2 id=\"anchor-5c197f4ed0336\">2000</h2>\r\n<p><a href=\"https://cdlib.org/wp-content/uploads/2018/12/LoC-CDLpartnership_final.pdf\">UC and state libraries agree to create new information services</a>, June 12, 2000</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/9557\">One-stop scholarly searching unveiled in new release of the CDL</a>, January 6, 2000</p>\r\n<h2 id=\"anchor-5c197f4ed03ec\">1999</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/9519\">California history and culture available online: $1.5 million supports the CDL's Online Archive of California</a>, November 6, 1999</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/9522\">California Digital Library Unveils Advances in Accessing Scholarly Information</a>, July 8, 1999</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/9529\">California Digital Library Gets Extensive Online Databases for Literature &amp; Periodicals from Publisher Chadwyck-Healey Inc.</a>, April 5, 1999</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/9521\">California Digital Library Acquires Data from the Web of Science</a>, February 3, 1999</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/9520\">Electronic Doors Click Open on California Digital Library</a>, January 19, 1999</p>\r\n<h2 id=\"anchor-5c197f4ed04a2\">1998</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/9466\">California Digital Library and UC Get Online Access to Academic Journals</a>, September 15, 1998</p>\r\n<h2 id=\"anchor-5c197f4ed0557\">1997</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/10459\">UCSF Librarian to Head California Digital Library</a>, October 14, 1997</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/10444\">UC Announces Founding of the California Digital Library</a>, October 14, 1997</p>",
+            "top_content": "<h2 id=\"anchor-62d5e84aa8a37\" >2022</h2>\r\n<p><a href=\"https://osc.universityofcalifornia.edu/2022/05/uc-csu-scelc-acs-new-transformative-agreement/\">Institutions partner with ACS to advance first California-wide transformative open access agreement</a>, May 17, 2022</p>\r\n<h2 id=\"anchor-6287dc03e2408\">2021</h2>\r\n<p><a href=\"https://drive.google.com/file/d/19plti0-Cp5W-WdcL-nEXRWNr5q-1fPS7/view\">The CDL, CRL, &amp; HathiTrust Shared Print Collaboration launches a free collection comparison tool to advance equity of collection decision making</a>, January 22, 2021</p>\r\n<h2 id=\"anchor-601870e127823\">2019</h2>\r\n<ul>\r\n\t<li><a href=\"https://cdlib.org/cdlinfo/2019/08/29/next-gen-library-publishing-partnership-awarded-2-2m-arcadia-grant-to-improve-scholarly-publishing-infrastructure/\">Next Gen Library Publishing partnership awarded $2.2M Arcadia grant to improve scholarly publishing infrastructure</a>, August 29, 2019</li>\r\n\t<li><a href=\"https://cdlib.org/cdlinfo/2019/04/10/cambridge-university-press-and-the-university-of-california-agree-to-open-access-publishing-deal/\">Cambridge University Press and the University of California Agree to Open Access Publishing Deal</a>, April 10, 2019</li>\r\n</ul>\r\n<h2 id=\"anchor-5c197f4ecf60b\">2018</h2>\r\n<p><a href=\"https://www.cdlib.org/cdlinfo/2018/05/30/letter-to-the-community-cdl-and-dryad-partnership/\">Letter to the Community: CDL and Dryad Partnership</a>, May 30, 2018</p>\r\n<h2 id=\"anchor-5c197f4ecf6d3\">2017</h2>\r\n<p><a href=\"https://www.cdlib.org/cdlinfo/2017/05/24/make-data-count-building-a-system-to-support-recognition-of-data-as-a-first-class-research-output/\">Make Data Count: Building a System to Support Recognition of Data as a First Class Research Output</a>, May 24, 2017</p>\r\n<p><a href=\"https://www.cdlib.org/cdlinfo/2017/03/30/uc-irvine-book-featured-as-hathitrusts-15-millionth-volume/\">UC Irvine Book Featured as HathiTrust’s 15 Millionth Volume</a>, March 30, 2017</p>\r\n<h2 id=\"anchor-5c197f4ecf791\">2016</h2>\r\n<p><a href=\"http://www.cdlib.org/cdlinfo/2016/06/07/west-libraries-achieve-500000-volumes/\">WEST libraries achieve 500,000 volumes</a>, June 7, 2016</p>\r\n<p><a href=\"http://osc.universityofcalifornia.edu/2016/04/ucpress-and-cdl-to-partner-with-collaborative-knowledge-foundation-to-build-open-source-monograph-publishing-platform/\">University of California Press and California Digital Library partner with Collaborative Knowledge Foundation to build open source monograph publishing platform</a>, April 22, 2016</p>\r\n<p><a href=\"http://www.cdlib.org/cdlinfo/2016/02/01/california-digital-library-announces-new-leadership/\">California Digital Library announces new leadership</a>, February 1, 2016</p>\r\n<h2 id=\"anchor-5c197f4ecf84d\">2015</h2>\r\n<p><a href=\"http://www.cdlib.org/cdlinfo/2015/10/29/john-chodacki-named-director-of-the-university-of-california-curation-center-at-the-california-digital-library/\">John Chodacki Named Director of the University of California Curation Center at the California Digital Library</a>, October 28, 2015</p>\r\n<p><a href=\"http://osc.universityofcalifornia.edu/2015/10/groundbreaking-presidential-oa-policy-covers-all-employees/\">Groundbreaking University of California policy extends free access to all scholarly articles written by UC employees</a>, October 26, 2015</p>\r\n<p><a href=\"http://www.cdlib.org/cdlinfo/2015/03/20/uc-davis-cdl-to-lead-major-project-to-build-open-access-financial-model/\">UC Davis, CDL to Lead Major Project to Build Open Access Financial Model</a>, March 20, 2015</p>\r\n<p><a href=\"http://www.cdlib.org/cdlinfo/2015/03/05/uc-press-and-the-california-digital-library-receive-750k-grant-from-the-andrew-w-mellon-foundation/\">UC Press and the CDL Receive $750K Grant from the Andrew W. Mellon Foundation</a>, March 5, 2015</p>\r\n<h2 id=\"anchor-5c197f4ecf909\">2014</h2>\r\n<p><a href=\"http://www.crossref.org/01company/pr/news080514.html\">CrossRef and California Digital Library Agreement Extends Discoverability of Scholarly Publications</a>, August 5, 2014</p>\r\n<p><a href=\"http://www.universityofcalifornia.edu/press-room/updated-data-management-tool-more-responsive-researchers%E2%80%99-needs\">Data management tool meets researchers’ needs</a>, June 3, 2014</p>\r\n<p><a href=\"http://dp.la/info/2014/04/17/dpla-1st-birthday-announcement/\">DPLA Welcomes CDL and UC Libraries Participation: Content Hub Launch</a>, April 17, 2014</p>\r\n<h2 id=\"anchor-5c197f4ecf9c4\">2013</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http:/www.universityofcalifornia.edu/news/article/30220\">UC Libraries receive grant to support Phase 2 of the Western Regional Storage Trust</a>, October 21, 2013</p>\r\n<p><a href=\"https://senate.universityofcalifornia.edu/_files/news/source/openaccess.august2013.html\">University of California Faculty Senate Passes Open Access Policy</a>, August 2, 2013</p>\r\n<h2 id=\"anchor-5c197f4ecfa7e\">2012</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/28420\">California Digital Library and partners launch DataUp</a>, October 2, 2012</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/28256\">Archiving milestone for journal repository program</a>, August 30, 2012</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/28143\">UC names winners for technology innovation awards</a>, August 6, 2012</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/28062\">Portal for Earth science data exploration</a>, July 23, 2012</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/27093\">California Digital Library joins Public Knowledge Project</a>, February 7, 2012</p>\r\n<h2 id=\"anchor-5c197f4ecfb39\">2011</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/26584\">Libraries launch data management tool</a>, November 1, 2011</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/26172\">UC Libraries expand access to orphan works</a>, August 24, 2011</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/25856\">Further documentation on Japanese Americans in WWII</a>, June 29, 2011</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/24992\">Data management planning tool in development</a>, February 15, 2011</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/24890\">UC libraries get grant to implement storage trust</a>, January 1, 2011</p>\r\n<h2 id=\"anchor-5c197f4ecfbf3\">2010</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/24513\">Libraries partner in digital stewardship alliance</a>, November 16, 2010</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/24482\">Digital library's global, local services</a>, November 10, 2010</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/24215\">eXtensible Text Framework site launched</a>, September 29, 2010</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/23055\">DataCite boosts visibility, access to research data</a>, March 22, 2010</p>\r\n<h2 id=\"anchor-5c197f4ecfcae\">2009</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/22525\">UC Press, California Digital Library launch venture</a>, December 8, 2009</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/22485\">Uncovering California’s environmental collections</a>, December 3, 2009</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/22398\">DataONE to deal with data deluge</a>, November 18, 2009</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/22401\">Librarians build Web archives on swine flu, wildfires</a>, November 17, 2009</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/22047\">New look, enhanced services for eScholarship</a>, October 19, 2009</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/21543\">Web archiving service preserves data for the future</a>, July 21, 2009</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/19335\">University of California Libraries and Springer sign pilot agreement for open access journal publishing</a>, January 21, 2009</p>\r\n<h2 id=\"anchor-5c197f4ecfd68\">2008</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/19105\">Laine Farley named executive director of the CDL</a>, December 5, 2008</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/18850\">Universities see promise in Google Book settlement</a>, October 28, 2008</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/17903\">UC libraries launch next-generation Melvyl Catalog</a>, May 27, 2008</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/17656\">Chronopolis Project to preserve at-risk digital information</a>, April 14, 2008</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/17470\">University of California to test new Google software that will provide greater online access to digitized books</a>, March 13, 2008</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/17141\">University of California eScholarship® Repository exceeds 5 million full-text downloads</a>, January 14, 2008</p>\r\n<h2 id=\"anchor-5c197f4ecfe22\">2007</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/17039\">UC libraries share the wealth</a>, December 12, 2007</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/16696\">Mark Twain Project Online launched</a>, July 11, 2007</p>\r\n<p><a href=\"https://cdlib.org/wp-content/uploads/2019/09/uc_oclc_press_release_20070621.pdf\">University of California libraries collaborate with OCLC on next generation Melvyl® Catalog</a>, June 22, 2007</p>\r\n<h2 id=\"anchor-5c197f4ecfede\">2006</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/2006/aug21a.html\">UC launches Calisphere web site</a>, August 21, 2006</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/2006/aug09.html\">UC libraries partner with Google to digitize books</a>, August 9, 2006</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/2006/may18.html\">UC libraries highlight important initiatives and new digital services to Regents</a>, May 18, 2006</p>\r\n<h2 id=\"anchor-5c197f4ecff99\">2005</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/10185\">UC libraries partner with technology companies and non-profits to provide free public access to digitized books</a>, October 3, 2005</p>\r\n<p><a href=\"https://cdlib.org/wp-content/uploads/2018/12/anderson_release_final_20050906.doc\">CDL announces new director of licensed content for UC</a>, September 6, 2005</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/6950\">UC launches postprints service to provide greater access to UC scholarship</a>, February 23, 2005</p>\r\n<h2 id=\"anchor-5c197f4ed0052\">2004</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/6654\">CDL receives $2.4 million Library of Congress grant to preserve online government and political materials</a>, September 30, 2004</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/10035\">New eScholarship service expands UC effort to publish scholarship</a>, September 14, 2004</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/6480\">Counting California web site wins prestigious award</a>, June 28, 2004</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/9993\">UC's eScholarship Repository adds peer-reviewed publications</a>, March 9, 2004</p>\r\n<h2 id=\"anchor-5c197f4ed010d\">2003</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/5941\">eScholarship Editions publishes innovative books from UC Press</a>, November 24, 2003</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/5344\">UC libraries unveil new Melvyl® Catalog</a>, April 24, 2003</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/5244\">CDL's eScholarship repository reaches major milestones</a>, March 12, 2003</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/19980\">Three hundred UC Press eScholarship Editions now available on the web</a>, January 7, 2003</p>\r\n<h2 id=\"anchor-5c197f4ed01c8\">2002</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/4918\">UC Joins Forces with BioMed Central</a>, November 6, 2002</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/3988\">New Director of the CDL</a>, February 14, 2002</p>\r\n<h2 id=\"anchor-5c197f4ed027f\">2001</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1cf9m45q/http://www.universityofcalifornia.edu/news/article/19772\">New service provides free interactive access to California statistics</a>, August 9, 2001</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/3609\">CDL and Berkeley Electronic Press announce partnership for scholarly communication initiatives</a>, October 4, 2001</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/3461\">California Digital Library and UC Press Collaborate to Deliver Scholarly Books Online</a>, July 31, 2001</p>\r\n<p><a href=\"https://cdlib.org/wp-content/uploads/2018/12/cdljan01.pdf\">Digital publications highlights new release of the CDL</a>, January 19, 2001</p>\r\n<p><a href=\"https://cdlib.org/wp-content/uploads/2018/12/cdlebsco.pdf\">CDL to partner with EBSCO on UC ejournal access</a>, January 10, 2001</p>\r\n<p><a href=\"https://cdlib.org/wp-content/uploads/2018/12/cdlasp.pdf\">CDL acquires unique humanities databases for the UC from Alexander Street Press</a>, January 10, 2001</p>\r\n<h2 id=\"anchor-5c197f4ed0336\">2000</h2>\r\n<p><a href=\"https://cdlib.org/wp-content/uploads/2018/12/LoC-CDLpartnership_final.pdf\">UC and state libraries agree to create new information services</a>, June 12, 2000</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/9557\">One-stop scholarly searching unveiled in new release of the CDL</a>, January 6, 2000</p>\r\n<h2 id=\"anchor-5c197f4ed03ec\">1999</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/9519\">California history and culture available online: $1.5 million supports the CDL's Online Archive of California</a>, November 6, 1999</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/9522\">California Digital Library Unveils Advances in Accessing Scholarly Information</a>, July 8, 1999</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/9529\">California Digital Library Gets Extensive Online Databases for Literature &amp; Periodicals from Publisher Chadwyck-Healey Inc.</a>, April 5, 1999</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/9521\">California Digital Library Acquires Data from the Web of Science</a>, February 3, 1999</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/9520\">Electronic Doors Click Open on California Digital Library</a>, January 19, 1999</p>\r\n<h2 id=\"anchor-5c197f4ed04a2\">1998</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/9466\">California Digital Library and UC Get Online Access to Academic Journals</a>, September 15, 1998</p>\r\n<h2 id=\"anchor-5c197f4ed0557\">1997</h2>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1st7gf68/http://www.universityofcalifornia.edu/news/article/10459\">UCSF Librarian to Head California Digital Library</a>, October 14, 1997</p>\r\n<p><a href=\"http://webarchives.cdlib.org/sw1js9k34s/http://www.universityofcalifornia.edu/news/article/10444\">UC Announces Founding of the California Digital Library</a>, October 14, 1997</p>",
             "main_box_1_heading": "",
             "main_box_1_content": "",
             "main_box_2_heading": "",
@@ -1361,7 +1421,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "",
+            "sidebar_box_1_content": "",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -1388,7 +1454,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "Quick Links",
+            "sidebar_box_1_content": "<ul>\r\n\t<li><a href=\"https://cdlib.org/wp-content/uploads/2022/04/WEST-Access-Policy.pdf\">WEST Access Policy</a></li>\r\n\t<li><a href=\"https://rosemontsharedprintalliance.org/sites/rosemont.wrlc.org/files/Rosemont_Alliance_Access_Principles_2018_06_0.pdf\">Rosemont Access Principles</a></li>\r\n\t<li> </li>\r\n</ul>",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -1415,7 +1487,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "",
+            "sidebar_box_1_content": "",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -1442,7 +1520,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "Quick Links",
+            "sidebar_box_1_content": "<ul>\r\n\t<li><a href=\"https://cdlib.org/wp-content/uploads/2021/08/WEST-Archive-Holder-Builder-Responsibilities.pdf\">WEST Archive Holder Builder Responsibilities</a></li>\r\n\t<li><a href=\"https://cdlib.org/wp-content/uploads/2021/01/WEST-Disclosure-Policy.pdf\">WEST Disclosure Policy</a></li>\r\n\t<li><a href=\"https://cdlib.org/wp-content/uploads/2022/04/WEST-Standards-for-Issue-and-Volume-Level-Validation.pdf\">WEST Standards for Issue and Volume Level Validation</a></li>\r\n\t<li><a href=\"https://cdlib.org/wp-content/uploads/2020/08/Environmental-Standards-for-WEST-Archives.pdf\">Environmental Standards for WEST Archives</a></li>\r\n\t<li><a href=\"https://cdlib.org/wp-content/uploads/2022/04/WEST-Access-Policy.pdf\">WEST Access Policy</a></li>\r\n</ul>",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -1469,7 +1553,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "",
+            "sidebar_box_1_content": "",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -1496,7 +1586,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "",
+            "sidebar_box_1_content": "",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -1523,7 +1619,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "",
+            "sidebar_box_1_content": "",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -1550,7 +1652,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "",
+            "sidebar_box_1_content": "",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -1577,7 +1685,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "",
+            "sidebar_box_1_content": "",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -1604,7 +1718,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "",
+            "sidebar_box_1_content": "",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -1631,7 +1751,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "",
+            "sidebar_box_1_content": "",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -1658,7 +1784,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "",
+            "sidebar_box_1_content": "",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -1685,7 +1817,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "",
+            "sidebar_box_1_content": "",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -2129,7 +2267,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "",
+            "sidebar_box_1_content": "",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -2156,7 +2300,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "",
+            "sidebar_box_1_content": "",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -2585,7 +2735,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": "<h2 id=\"our-role\">Our Role</h2>\r\nWith a focus on efficiency and availability, we design and manage an environment that meets the demanding needs of our service delivery teams and our end users. We adopt and promote technology standards and best practices, leverage open-source solutions, and collaborate with others to create a stable, cost-effective infrastructure. We create this infrastructure to support existing and future CDL operations, with a focus on innovation and adaptability that will allow us to quickly and easily adapt to future needs and technology trends.\r\n\r\nThe Infrastructure and Applications Support group is specifically responsible for:\r\n<ul style=\"list-style-type: disc;\">\r\n \t<li>Designing, implementing, maintaining, and operating the overall computing and networking resources of the CDL</li>\r\n \t<li>Designing, building, operating and maintaining the technical infrastructure for CDL services</li>\r\n \t<li>Partnering with technology providers to deliver a cost-effective platform for application development and deployment</li>\r\n \t<li>Providing quality and timely technical support to the organization on a 24x7 basis</li>\r\n \t<li>Ensuring security policy compliance and remediation as necessary</li>\r\n \t<li>Delivering technology services that are highly available and recoverable</li>\r\n \t<li>Collaborating with development teams to support the software development lifecycle</li>\r\n \t<li>Leading by example and serving as a model for excellence in the IT field</li>\r\n</ul>\r\n<h2 id=\"information-and-applications-s\">Information and Applications Support Services Team</h2>\r\n[table id=48 /]"
+            "bottom_content": "<h2 id=\"our-role\">Our Role</h2>\r\nWith a focus on efficiency and availability, we design and manage an environment that meets the demanding needs of our service delivery teams and our end users. We adopt and promote technology standards and best practices, leverage open-source solutions, and collaborate with others to create a stable, cost-effective infrastructure. We create this infrastructure to support existing and future CDL operations, with a focus on innovation and adaptability that will allow us to quickly and easily adapt to future needs and technology trends.\r\n\r\nThe Infrastructure and Applications Support group is specifically responsible for:\r\n<ul style=\"list-style-type: disc;\">\r\n \t<li>Designing, implementing, maintaining, and operating the overall computing and networking resources of the CDL</li>\r\n \t<li>Designing, building, operating and maintaining the technical infrastructure for CDL services</li>\r\n \t<li>Partnering with technology providers to deliver a cost-effective platform for application development and deployment</li>\r\n \t<li>Providing quality and timely technical support to the organization on a 24x7 basis</li>\r\n \t<li>Ensuring security policy compliance and remediation as necessary</li>\r\n \t<li>Delivering technology services that are highly available and recoverable</li>\r\n \t<li>Collaborating with development teams to support the software development lifecycle</li>\r\n \t<li>Leading by example and serving as a model for excellence in the IT field</li>\r\n</ul>\r\n<h2 id=\"information-and-applications-s\">Information and Applications Support Services Team</h2>\r\n[table id=48 /]",
+            "sidebar_box_1_heading": "",
+            "sidebar_box_1_content": "",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -2750,7 +2906,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "Related Communication",
+            "sidebar_box_1_content": "<a href=\"https://cdlib.org/wp-content/uploads/2019/02/UC_Libraries_Open_Letter_to_Vendors.pdf\">Open Letter to Licensed Content Providers</a>\r\n\r\n<a href=\"https://cdlib.org/services/collections/licensed/projects-pilots-and-studies/challenges-to-licensing-from-some-publishers/\">Challenges to Licensing from Some Vendors</a>",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     },
     {
@@ -2777,7 +2939,13 @@
             "side_by_side_box_1_content": "",
             "side_by_side_box_2_heading": "",
             "side_by_side_box_2_content": "",
-            "bottom_content": ""
+            "bottom_content": "",
+            "sidebar_box_1_heading": "Related Communication",
+            "sidebar_box_1_content": "<a href=\"https://cdlib.org/wp-content/uploads/2019/02/UC_Libraries_Open_Letter_to_Vendors.pdf\">Open Letter to Licensed Content Providers</a>\r\n\r\n<a href=\"https://cdlib.org/services/collections/licensed/projects-pilots-and-studies/challenges-to-licensing-from-some-publishers/\">Challenges to Licensing from Some Vendors</a>",
+            "sidebar_box_2_heading": "",
+            "sidebar_box_2_content": "",
+            "sidebar_box_3_heading": "",
+            "sidebar_box_3_content": ""
         }
     }
 ]

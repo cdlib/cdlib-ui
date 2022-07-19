@@ -14,12 +14,9 @@
     </section>
   </aside>
   <aside aria-label="second" class="t-layout__sidebar2">
+    {{ render '@sidebarbox' }}
     {{ render '@sidebarpost' }}
     {{ render '@sidebarpost--2' }}
-    <section class="o-sidebarbox">
-      <header><h2>Subscribe</h2></header>
-      {{ render '@list' }}
-    </section>
   </aside>
   {{ render '@footer' }}
 </div>
