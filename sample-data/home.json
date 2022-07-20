@@ -1,0 +1,85 @@
+{
+    "id": 27550,
+    "title": {
+        "rendered": "Home Page"
+    },
+    "acf": {
+        "slide_1_heading": "eScholarship celebrates 20 years!",
+        "slide_1_main_text": "We reflect on how far UC’s eScholarship publishing program and institutional repository have come since their launch in 2002.",
+        "slide_1_link": "https://cdlib.org/cdlinfo/2022/04/28/escholarship-celebrates-its-20-year-anniversary",
+        "slide_1_image": "https://cdlib.org/wp-content/uploads/2022/06/escholarship-hero-image-balloons.jpg",
+        "slide_1_credits": "Photo by Luca Upper",
+        "slide_2_heading": "Welcome, UC Library Search!",
+        "slide_2_main_text": "UC Libraries launch a new unified discovery and borrowing system",
+        "slide_2_link": "https://cdlib.org/cdlinfo/2021/07/27/welcome-uc-library-search",
+        "slide_2_image": "https://cdlib.org/wp-content/uploads/2021/01/ucls_launch_students_v7.jpg",
+        "slide_2_credits": "",
+        "slide_3_heading": "Calisphere soars past two million digital primary resource items!",
+        "slide_3_main_text": "Now with over two million historical images, texts, and other primary resources, Calisphere is your gateway to the state of California's remarkable digital collections.",
+        "slide_3_link": "https://cdlib.org/cdlinfo/2021/08/04/calisphere-soars-past-two-million-digital-primary-resource-items",
+        "slide_3_image": "https://cdlib.org/wp-content/uploads/2021/01/calisphere-080421.jpg",
+        "slide_3_credits": "UC Merced, Library and Special Collections",
+        "slide_4_heading": "UC strikes landmark open access deal",
+        "slide_4_main_text": "University secures trailblazing agreement with world’s largest scientific publisher, Elsevier",
+        "slide_4_link": "https://cdlib.org/cdlinfo/2021/03/16/uc-secures-landmark-open-access-deal-with-worlds-largest-scientific-publisher",
+        "slide_4_image": "https://cdlib.org/wp-content/uploads/2021/07/uc_open_access_deal.jpg",
+        "slide_4_credits": "",
+        "meet_main_text": "Meet Joe Somontan, Systems Architect, Infrastructure and Applications Support",
+        "meet_link": "https://cdlib.org/contact/staff_directory/joe-somontan-staff-profile",
+        "meet_image": "https://cdlib.org/wp-content/uploads/2021/01/joe-somontan-050621-v2.jpg",
+        "twitter_link": "https://twitter.com/caldiglib"
+    },
+    "_links": {
+        "self": [
+            {
+                "href": "https://cdlib.org/wp-json/wp/v2/pages/27550"
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://cdlib.org/wp-json/wp/v2/pages"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://cdlib.org/wp-json/wp/v2/types/page"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://cdlib.org/wp-json/wp/v2/users/159"
+            }
+        ],
+        "replies": [
+            {
+                "embeddable": true,
+                "href": "https://cdlib.org/wp-json/wp/v2/comments?post=27550"
+            }
+        ],
+        "version-history": [
+            {
+                "count": 67,
+                "href": "https://cdlib.org/wp-json/wp/v2/pages/27550/revisions"
+            }
+        ],
+        "predecessor-version": [
+            {
+                "id": 58764,
+                "href": "https://cdlib.org/wp-json/wp/v2/pages/27550/revisions/58764"
+            }
+        ],
+        "wp:attachment": [
+            {
+                "href": "https://cdlib.org/wp-json/wp/v2/media?parent=27550"
+            }
+        ],
+        "curies": [
+            {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+            }
+        ]
+    }
+}
