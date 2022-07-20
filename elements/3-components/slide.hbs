@@ -1,0 +1,12 @@
+<figure class="c-slideshow__slide">
+  <figcaption>
+    <h2>
+      <a href="{{ slide.link }}">{{{ slide.heading }}}</a>
+    </h2>
+    <p>{{{ slide.text }}}</p>
+    <small>{{{ slide.credits }}}</small>
+  </figcaption>
+  <div class="c-slideshow__slide-image">
+    <img srcset="{{ slide.imageSmall }} 740w, {{ slide.imageLarge }} 1095w" sizes="(min-width: 760px) 77vw, 100vw" src="{{ slide.imageLarge }}" alt="{{ slide.alt }}">
+  </div>
+</figure>

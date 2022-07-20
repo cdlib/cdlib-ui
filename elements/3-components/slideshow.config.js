@@ -1,35 +1,51 @@
-const faker = require('faker/locale/en');
-const samplelinks = ['https://calisphere.org', 'https://escholarship.org', 'https://dmptool.org', 'https://www.hathitrust.org'];
-const fakerData = [];
-
-for (var i = 0; i < 4; i++) {
-
-  if (process.env.NODE_ENV === 'testing') {
-    faker.seed(123);
-    var imageSmallUrl = 'https://loremflickr.com/740/500/nature?lock=123'
-    var imageLargeUrl = 'https://loremflickr.com/1095/740/nature?lock=123'
-  } else {
-    var imageSmallUrl = 'https://loremflickr.com/740/500/nature?size=small&random=' + i;
-    var imageLargeUrl = 'https://loremflickr.com/1095/740/nature?size=big&random=' + i
-  }
-
-  fakerData.push({
-    slide: {
-      heading: faker.commerce.productName(),
-      text: faker.lorem.sentences(2),
-      link: faker.helpers.randomize(samplelinks),
-      imageSmall: imageSmallUrl,
-      imageLarge: imageLargeUrl,
-      alt: faker.commerce.productName(),
-      credits: 'Photo by ' + faker.name.findName()+ '. Courtesy of ' + faker.lorem.words(),
-      number: i + 1
-    }
-  });
-}
+const slideshow = require('../../sample-data/home.json')
 
 module.exports = {
   label: 'Slideshow',
   context: {
-    slides: fakerData
+    slide1: {
+      slide: {
+        heading: slideshow.acf.slide_1_heading,
+        text: slideshow.acf.slide_1_main_text,
+        link: slideshow.acf.slide_1_link,
+        imageSmall: slideshow.acf.slide_1_image,
+        imageLarge: slideshow.acf.slide_1_image,
+        alt: slideshow.acf.slide_1_heading,
+        credits: slideshow.acf.slide_1_credits
+      }
+    },
+    slide2: {
+      slide: {
+        heading: slideshow.acf.slide_2_heading,
+        text: slideshow.acf.slide_2_main_text,
+        link: slideshow.acf.slide_2_link,
+        imageSmall: slideshow.acf.slide_2_image,
+        imageLarge: slideshow.acf.slide_2_image,
+        alt: slideshow.acf.slide_2_heading,
+        credits: slideshow.acf.slide_2_credits
+      }
+    },
+    slide3: {
+      slide: {
+        heading: slideshow.acf.slide_3_heading,
+        text: slideshow.acf.slide_3_main_text,
+        link: slideshow.acf.slide_3_link,
+        imageSmall: slideshow.acf.slide_3_image,
+        imageLarge: slideshow.acf.slide_3_image,
+        alt: slideshow.acf.slide_3_heading,
+        credits: slideshow.acf.slide_3_credits
+      }
+    },
+    slide4: {
+      slide: {
+        heading: slideshow.acf.slide_4_heading,
+        text: slideshow.acf.slide_4_main_text,
+        link: slideshow.acf.slide_4_link,
+        imageSmall: slideshow.acf.slide_4_image,
+        imageLarge: slideshow.acf.slide_4_image,
+        alt: slideshow.acf.slide_4_heading,
+        credits: slideshow.acf.slide_4_credits
+      }
+    }
   }
-};
+}
