@@ -7,6 +7,7 @@ Browse the following REST API endpoints and save the resulting JSON as JSON file
 ## Public Endpoints
 
 * https://cdlib.org/wp-json/wp/v2/categories?per_page=100&_fields=id,link,name,parent
+* https://cdlib.org/wp-json/wp/v2/media/53321/?_fields=id,alt_text,media_details
 * https://cdlib.org/wp-json/wp/v2/pages?per_page=100&_fields=id,title,content,acf
 * https://cdlib.org/wp-json/wp/v2/pages/27550/?_fields=id,title,acf
 * https://cdlib.org/wp-json/wp/v2/posts?offset=2&_fields=id,modified,link,title,content,excerpt,author,categories

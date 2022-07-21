@@ -47,10 +47,6 @@ module.exports = {
         text: 'Contact Information'
       }
     },
-    avatar: {
-      img: 'https://cdlib.org/wp-content/uploads/2019/11/t_brady.jpg',
-      alt: firstName + ' ' + lastName
-    },
     program: programService,
     title: jobTitle,
     responsibilities: responsibilities,

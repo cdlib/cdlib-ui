@@ -1,15 +1,13 @@
-const faker = require('faker/locale/en');
-
-if (process.env.NODE_ENV === 'testing') {
-  faker.seed(123);
-}
+const image = require('../../sample-data/media/user-image1.json')
+const imageUrl = image.media_details.sizes.full.source_url
+const imageAlt = image.alt_text
 
 module.exports = {
   label: 'Avatar',
   context: {
     avatar: {
-      img: faker.image.avatar(),
-      alt: faker.name.findName()
+      img: imageUrl,
+      alt: imageAlt
     }
   }
-};
+}
