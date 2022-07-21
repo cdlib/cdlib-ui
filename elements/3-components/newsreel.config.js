@@ -1,15 +1,16 @@
-const faker = require('faker/locale/en');
-const fakerData = [];
+const posts = require('../../sample-data/posts.json')
+const sampleNews = [];
 
-for (var i = 0; i < 5; i++) {
-  if (process.env.NODE_ENV === 'testing') {
-    faker.seed(123);
-  }
-  fakerData.push({
+for (let i = 0; i < 10; i++) {
+  const link = posts[i].link
+  const title = posts[i].title.rendered
+
+  sampleNews.push({
     link: {
-      text: faker.commerce.productName() + faker.helpers.randomize([' with CDL for ', ' at CDL with ', ' with CDL and ', ' at CDL for ']) + faker.commerce.productName()
+      text: title,
+      url: link
     }
-  });
+  })
 }
 
 module.exports = {
@@ -19,9 +20,10 @@ module.exports = {
       level: '2',
       text: 'Latest News from CDL'
     },
-    list: fakerData,
+    list: sampleNews,
     link: {
-      text: 'View all news'
+      text: 'View all news',
+      url: 'https://cdlib.org/cdlinfo/'
     }
   }
-};
+}

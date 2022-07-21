@@ -1,19 +1,19 @@
-const faker = require('faker/locale/en');
-
-if (process.env.NODE_ENV === 'testing') {
-  faker.seed(123);
-}
+const meet = require('../../sample-data/home.json')
+const meetImage = meet.acf.meet_image
+const meetText = meet.acf.meet_main_text
+const meetUrl = meet.acf.meet_link
 
 module.exports = {
   label: 'Meet',
   context: {
     meet: {
-      img: faker.image.avatar(),
-      alt: faker.name.findName(),
-      caption: 'Meet ' + faker.name.findName() + ', ' + faker.helpers.randomize(['DMPTool', 'Calisphere', 'User Experience', 'Web Production', 'Collections Program']) + ' ' +faker.name.jobTitle()
+      img: meetImage,
+      alt: 'Joe Somontan',
+      caption: meetText
     },
     link: {
-      text: 'Read more'
+      text: 'Read more',
+      url: meetUrl
     }
   }
-};
+}
