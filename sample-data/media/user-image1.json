@@ -1,0 +1,62 @@
+{
+    "id": 53321,
+    "alt_text": "terry brady",
+    "media_details": {
+        "width": 200,
+        "height": 220,
+        "file": "2019/11/t_brady.jpg",
+        "sizes": {
+            "thumbnail": {
+                "file": "t_brady-150x150.jpg",
+                "width": 150,
+                "height": 150,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cdlib.org/wp-content/uploads/2019/11/t_brady-150x150.jpg"
+            },
+            "full": {
+                "file": "t_brady.jpg",
+                "width": 200,
+                "height": 220,
+                "mime_type": "image/jpeg",
+                "source_url": "https://cdlib.org/wp-content/uploads/2019/11/t_brady.jpg"
+            }
+        },
+        "image_meta": {
+            "aperture": "0",
+            "credit": "",
+            "camera": "",
+            "caption": "",
+            "created_timestamp": "0",
+            "copyright": "",
+            "focal_length": "0",
+            "iso": "0",
+            "shutter_speed": "0",
+            "title": "",
+            "orientation": "0",
+            "keywords": []
+        }
+    },
+    "_links": {
+        "self": [
+            {
+                "href": "https://cdlib.org/wp-json/wp/v2/media/53321"
+            }
+        ],
+        "collection": [
+            {
+                "href": "https://cdlib.org/wp-json/wp/v2/media"
+            }
+        ],
+        "about": [
+            {
+                "href": "https://cdlib.org/wp-json/wp/v2/types/attachment"
+            }
+        ],
+        "author": [
+            {
+                "embeddable": true,
+                "href": "https://cdlib.org/wp-json/wp/v2/users/128"
+            }
+        ]
+    }
+}
