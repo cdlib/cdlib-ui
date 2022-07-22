@@ -1,4 +1,4 @@
-<div class="t-layout--3">
+<div class="t-layout--2">
   {{ render '@skipnav' }}
   {{ render '@header' }}
   {{ render '@breadcrumb' }}
@@ -7,7 +7,7 @@
   </aside>
   <main id="maincontent">
     {{> @heading--1 mainheading }}
-    {{> @rssfeed cdlalert }}
+    {{ render '@rssfeed' }}
     {{ render '@status' }}
   </main>
   {{ render '@updated' }}
