@@ -1,36 +1,39 @@
-const faker = require('faker/locale/en');
-const fakerData = [];
-const filetypes = ['pdf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'txt', 'zip', 'html', 'rtf'];
-const keywords = ['digital', 'library', 'books', 'report', 'campus'];
-const unbrokenText = ' UnbrokenTextloremipsumdolorsitametconsecteturadipisicingelitNequedignissimosfugitnamreprehenderitminimadelenitiquamquiasitisteexpeditatemp'
+const posts = require('../../sample-data/search-results.json')
+const filetypes = ['pdf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'txt', 'zip', 'html', 'rtf']
+const searchResultData = []
 
-for (var i = 0; i < 20; i++) {
-  if (process.env.NODE_ENV === 'testing') {
-    faker.seed(123);
-  }
-  fakerData.push({
-    heading: {
-      level: '2'
+for (const i of posts.keys()) {
+  const post = [i]
+  const postDateUnformatted = new Date(posts[post].modified)
+  const dateFormat = {year: 'numeric', month: 'long', day: 'numeric'};
+  const postDate = postDateUnformatted.toLocaleDateString('en-US', dateFormat)
+  const filetype = filetypes[i]
+  const postTitle = posts[i].title.rendered
+  const postLink = posts[i].link
+  const postExcerpt = posts[i].excerpt.rendered
+  const postExcpertReformatted = postExcerpt.replaceAll('<em>', '<mark>').replaceAll('</em>', '</mark>')
+
+  searchResultData.push({
+    searchresultheading: {
+      heading: {
+        level: '2'
+      },
+      link1: true,
+      link2: false,
+      link: {
+        text: postTitle,
+        url: postLink
+      }
     },
-    link1: true,
-    link2: false,
-    link: {
-      text: faker.commerce.productName(),
-      url: 'file.' + faker.helpers.randomize(filetypes),
-    },
-    searchresult: {
-      doctype: faker.helpers.randomize(filetypes),
-      excerptFirstHalf: faker.lorem.words(15) + unbrokenText,
-      keyword: faker.helpers.randomize(keywords),
-      excerptSecondHalf: faker.lorem.words(15),
-      datetime: faker.date.month() + ' ' + faker.random.number({min: 1, max: 30}) + ', ' + faker.random.number({min: 2000, max: 2018}),
-    }
-  });
+    doctype: filetype,
+    excerpt: postExcpertReformatted,
+    datetime: postDate
+  })
 }
 
 module.exports = {
   label: 'Search Results',
   context: {
-    list: fakerData,
+    searchresult: searchResultData
   }
-};
+}
