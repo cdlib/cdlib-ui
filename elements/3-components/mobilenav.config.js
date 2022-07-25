@@ -2,9 +2,6 @@ const faker = require('faker/locale/en');
 const navList = [];
 
 for (var i = 0; i < 5; i++) {
-  if (process.env.NODE_ENV === 'testing') {
-    faker.seed(123);
-  }
   navList.push({
     link: {
       text: faker.commerce.productName()

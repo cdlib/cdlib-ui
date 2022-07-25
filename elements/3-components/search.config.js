@@ -2,9 +2,6 @@ const faker = require('faker/locale/en');
 const fakerData = [];
 
 for (var i = 0; i < 10; i++) {
-  if (process.env.NODE_ENV === 'testing') {
-    faker.seed(123);
-  }
   fakerData.push({
     datalist: {
       option: faker.commerce.productName()

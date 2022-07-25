@@ -14,9 +14,6 @@ function* range(start, stop) {
 }
 
 for (let i of range(startNum, endNum, 1)) {
-  if (process.env.NODE_ENV === 'testing') {
-    faker.seed(123);
-  }
   fakerData.push({
     pagination: {
       number: i,
