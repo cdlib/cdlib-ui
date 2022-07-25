@@ -1,25 +1,16 @@
 const faker = require('faker/locale/en');
 const program = ['UC Curation Center (UC3)', 'Collection Development & Management', 'Infrastructure and Applications Support', 'Discovery & Delivery', 'Shared Cataloging Program (UC San Diego)', 'Collection Development & Management - Mass Digitization', 'Business Services'];
-const tableData = [];
+const tableData = []
 
-for (var i = 0; i < 15; i++) {
-  if (process.env.NODE_ENV === 'testing') {
-    faker.seed(123);
-  }
+for (var i = 0; i < 7; i++) {
   tableData.push({
-    firstname: {
-      text: faker.name.firstName()
-    },
-    lastname: {
-      text: faker.name.lastName()
-    },
-    title: {
-      text: faker.name.jobTitle()
-    },
-    program: {
-      text: faker.helpers.randomize(program)
+    staff: {
+      firstname: faker.name.firstName(),
+      lastname: faker.name.lastName(),
+      title: faker.name.jobTitle(),
+      program: program[i]
     }
-  });
+  })
 }
 
 module.exports = {
@@ -27,4 +18,4 @@ module.exports = {
   context: {
     row: tableData
   }
-};
+}
