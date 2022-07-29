@@ -4,14 +4,14 @@ function goToSlide (n) {
   if (enhanced) {
     // slides:
     slides[currentSlide].classList.remove('active')
-    var currentSlideLinks = slides[currentSlide].querySelectorAll('a')
-    for (var i0 = 0; i0 < currentSlideLinks.length; i0++) {
+    let currentSlideLinks = slides[currentSlide].querySelectorAll('a')
+    for (let i0 = 0; i0 < currentSlideLinks.length; i0++) {
       currentSlideLinks[i0].setAttribute('tabindex', -1)
     }
     currentSlide = (n + slides.length) % slides.length
     slides[currentSlide].classList.add('active')
     currentSlideLinks = slides[currentSlide].querySelectorAll('a')
-    for (var i1 = 0; i1 < currentSlideLinks.length; i1++) {
+    for (let i1 = 0; i1 < currentSlideLinks.length; i1++) {
       currentSlideLinks[i1].setAttribute('tabindex', 0)
     }
     // goto slide buttons:
@@ -39,7 +39,7 @@ function nextSlide () {
 
 // test if browser CSS.supports API is supported, then define it to 'enhanced' variable:
 
-var supportsCSS = !!((window.CSS && window.CSS.supports) || window.supportsCSS || false)
+const supportsCSS = !!((window.CSS && window.CSS.supports) || window.supportsCSS || false)
 var enhanced = false
 
 if (supportsCSS) {
@@ -48,30 +48,30 @@ if (supportsCSS) {
 }
 
 if (document.querySelector('.c-slideshow')) {
-  var mode = document.querySelector('.c-slideshow')
-  var slideGroups = document.querySelectorAll('.c-slideshow__slide')
+  const mode = document.querySelector('.c-slideshow')
+  const slideGroups = document.querySelectorAll('.c-slideshow__slide')
   var slides = document.querySelectorAll('.c-slideshow__slide figcaption')
-  var slideshowLinks = document.querySelectorAll('.c-slideshow__slide a')
-  var firstSlide = document.querySelector('.c-slideshow figcaption')
+  const slideshowLinks = document.querySelectorAll('.c-slideshow__slide a')
+  const firstSlide = document.querySelector('.c-slideshow figcaption')
   var currentSlide = 0
   var goToButtons = document.querySelectorAll('.c-slideshow__goto')
-  var firstGoToButton = document.querySelector('#c-slideshow__goto1')
+  const firstGoToButton = document.querySelector('#c-slideshow__goto1')
   var currentGoToButton = 0
   var transitionSpeed = 11000
   var slideInterval = setInterval(nextSlide, transitionSpeed)
   var playButton = document.querySelector('.c-slideshow__play')
   var pauseButton = document.querySelector('.c-slideshow__pause')
-  var slide1button = document.querySelector('#c-slideshow__goto1')
-  var slide2button = document.querySelector('#c-slideshow__goto2')
-  var slide3button = document.querySelector('#c-slideshow__goto3')
-  var slide4button = document.querySelector('#c-slideshow__goto4')
-  var randomSlide = Math.floor(Math.random() * slideGroups.length)
+  const slide1button = document.querySelector('#c-slideshow__goto1')
+  const slide2button = document.querySelector('#c-slideshow__goto2')
+  const slide3button = document.querySelector('#c-slideshow__goto3')
+  const slide4button = document.querySelector('#c-slideshow__goto4')
+  const randomSlide = Math.floor(Math.random() * slideGroups.length)
 
   // initial states:
 
   if (!enhanced) {
     mode.classList.add('basic')
-    for (var i2 = 0; i2 < slideGroups.length; i2++) {
+    for (let i2 = 0; i2 < slideGroups.length; i2++) {
       slideGroups[randomSlide].classList.add('fixed')
     }
   } else {
@@ -79,7 +79,7 @@ if (document.querySelector('.c-slideshow')) {
     playButton.style.display = 'none'
     firstSlide.classList.add('active')
     firstGoToButton.setAttribute('aria-current', 'true')
-    for (var i3 = 0; i3 < slideshowLinks.length; i3++) {
+    for (let i3 = 0; i3 < slideshowLinks.length; i3++) {
       slideshowLinks[i3].setAttribute('tabindex', -1)
     }
   }
@@ -97,8 +97,8 @@ if (document.querySelector('.c-slideshow')) {
   slide1button.onclick = function () {
     pauseSlideshow()
     slides[currentSlide].classList.remove('active')
-    var currentSlideLinks = slides[currentSlide].querySelectorAll('a')
-    for (var i4 = 0; i4 < currentSlideLinks.length; i4++) {
+    const currentSlideLinks = slides[currentSlide].querySelectorAll('a')
+    for (let i4 = 0; i4 < currentSlideLinks.length; i4++) {
       currentSlideLinks[i4].setAttribute('tabindex', -1)
     };
     goToSlide(currentSlide = 0)
@@ -107,8 +107,8 @@ if (document.querySelector('.c-slideshow')) {
   slide2button.onclick = function () {
     pauseSlideshow()
     slides[currentSlide].classList.remove('active')
-    var currentSlideLinks = slides[currentSlide].querySelectorAll('a')
-    for (var i5 = 0; i5 < currentSlideLinks.length; i5++) {
+    const currentSlideLinks = slides[currentSlide].querySelectorAll('a')
+    for (let i5 = 0; i5 < currentSlideLinks.length; i5++) {
       currentSlideLinks[i5].setAttribute('tabindex', -1)
     };
     goToSlide(currentSlide = 1)
@@ -117,8 +117,8 @@ if (document.querySelector('.c-slideshow')) {
   slide3button.onclick = function () {
     pauseSlideshow()
     slides[currentSlide].classList.remove('active')
-    var currentSlideLinks = slides[currentSlide].querySelectorAll('a')
-    for (var i6 = 0; i6 < currentSlideLinks.length; i6++) {
+    const currentSlideLinks = slides[currentSlide].querySelectorAll('a')
+    for (let i6 = 0; i6 < currentSlideLinks.length; i6++) {
       currentSlideLinks[i6].setAttribute('tabindex', -1)
     };
     goToSlide(currentSlide = 2)
@@ -127,8 +127,8 @@ if (document.querySelector('.c-slideshow')) {
   slide4button.onclick = function () {
     pauseSlideshow()
     slides[currentSlide].classList.remove('active')
-    var currentSlideLinks = slides[currentSlide].querySelectorAll('a')
-    for (var i7 = 0; i7 < currentSlideLinks.length; i7++) {
+    const currentSlideLinks = slides[currentSlide].querySelectorAll('a')
+    for (let i7 = 0; i7 < currentSlideLinks.length; i7++) {
       currentSlideLinks[i7].setAttribute('tabindex', -1)
     };
     goToSlide(currentSlide = 3)

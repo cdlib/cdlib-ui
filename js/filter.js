@@ -15,8 +15,8 @@ function filterItems (listItems) {
 }
 
 if (document.querySelector('.c-filter')) {
-  var showItems = document.querySelectorAll('#js-filter__show-group li')
-  var sortItems = document.querySelectorAll('#js-filter__sort-group li')
+  const showItems = document.querySelectorAll('#js-filter__show-group li')
+  const sortItems = document.querySelectorAll('#js-filter__sort-group li')
 
   filterItems(showItems)
   filterItems(sortItems)

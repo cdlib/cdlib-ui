@@ -3,9 +3,9 @@
 // Secondary Nav Component:
 
 if (document.querySelector('.c-secondarynav')) {
-  var secondaryNavCloseButton = document.querySelector('.js-secondarynav__close-button')
-  var secondaryNavOpenButton = document.querySelector('.js-secondarynav__open-button')
-  var secondaryNavBody = document.querySelector('.js-secondarynav__body')
+  const secondaryNavCloseButton = document.querySelector('.js-secondarynav__close-button')
+  const secondaryNavOpenButton = document.querySelector('.js-secondarynav__open-button')
+  const secondaryNavBody = document.querySelector('.js-secondarynav__body')
 
   secondaryNavOpenButton.addEventListener('click', function () {
     secondaryNavCloseButton.classList.add('is-shown')
@@ -25,13 +25,13 @@ if (document.querySelector('.c-secondarynav')) {
 // Header Component:
 
 if (document.querySelector('.c-header')) {
-  var headerSearchControl = document.querySelector('.js-header__search-control')
-  var headerMenuControl = document.querySelector('.js-header__menu-control')
-  var headerSearch = document.querySelector('.js-header__search')
-  var searchField = document.querySelector('#c-search-field')
-  var headerCloseSearch = document.querySelector('.js-header__close-search')
-  var headerMainNav = document.querySelector('.js-header__header-nav')
-  var headerUtilNav = document.querySelector('.js-header__utility-nav')
+  const headerSearchControl = document.querySelector('.js-header__search-control')
+  const headerMenuControl = document.querySelector('.js-header__menu-control')
+  const headerSearch = document.querySelector('.js-header__search')
+  const searchField = document.querySelector('#c-search-field')
+  const headerCloseSearch = document.querySelector('.js-header__close-search')
+  const headerMainNav = document.querySelector('.js-header__header-nav')
+  const headerUtilNav = document.querySelector('.js-header__utility-nav')
 
   headerSearchControl.addEventListener('click', function () {
     headerSearch.classList.add('is-open')

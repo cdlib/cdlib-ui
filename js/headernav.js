@@ -2,8 +2,8 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   if (document.querySelector('.c-headernav')) {
-    var subMenuItems = document.querySelectorAll('.c-headernav > ul > li.menu-item-has-children')
-    var allMenuItems = document.querySelectorAll('.c-headernav > ul > li');
+    const subMenuItems = document.querySelectorAll('.c-headernav > ul > li.menu-item-has-children')
+    const allMenuItems = document.querySelectorAll('.c-headernav > ul > li');
 
     [].forEach.call(subMenuItems, function (el) {
       document.querySelector('.c-headernav').classList.remove('c-headernav-no-js')

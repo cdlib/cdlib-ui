@@ -27,18 +27,18 @@ function nextItem () {
 if (document.querySelector('.c-newsreel')) {
   var items = document.querySelectorAll('.c-newsreel li')
   var newsreelLinks = document.querySelectorAll('.c-newsreel a')
-  var firstItem = document.querySelector('.c-newsreel li:first-child')
+  const firstItem = document.querySelector('.c-newsreel li:first-child')
   var currentItem = 0
   var reelSpeed = 7000
   var itemInterval = setInterval(nextItem, reelSpeed)
   var playControl = document.querySelector('.c-newsreel__play')
   var pauseControl = document.querySelector('.c-newsreel__pause')
-  var tabControl = document.querySelector('.c-newsreel li a')
+  const tabControl = document.querySelector('.c-newsreel li a')
 
   // initial states:
   playControl.style.display = 'none'
   firstItem.setAttribute('aria-current', 'true')
-  for (var i = 0; i < newsreelLinks.length; i++) {
+  for (let i = 0; i < newsreelLinks.length; i++) {
     newsreelLinks[i].setAttribute('tabindex', -1)
   }
 

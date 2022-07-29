@@ -1,6 +1,6 @@
 // Media Queries //
 
-var screen2 = window.matchMedia('(min-width: 760px)')
+const screen2 = window.matchMedia('(min-width: 760px)')
 
 function secondaryNavComp (screenWidth) {
   if (screenWidth.matches) {
@@ -45,10 +45,10 @@ if (document.querySelector('.c-secondarynav')) {
 // Header Component
 
 if (document.querySelector('.c-header')) {
-  var headerControls = document.querySelector('.js-header__controls')
+  const headerControls = document.querySelector('.js-header__controls')
   var headerMenuControl = document.querySelector('.js-header__menu-control')
   var headerSearch = document.querySelector('.js-header__search')
-  var headerCloseSearch = document.querySelector('.js-header__close-search')
+  const headerCloseSearch = document.querySelector('.js-header__close-search')
   var headerMainNav = document.querySelector('.js-header__header-nav')
   var headerUtilNav = document.querySelector('.js-header__utility-nav')
 
