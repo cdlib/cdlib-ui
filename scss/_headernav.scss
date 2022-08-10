@@ -49,7 +49,7 @@ $headernav-item-margin: $space3;
     @include screen2 {
       @include o-link4;
       padding: $space1;
-      background: linear-gradient($color-light-gray, darken($color-light-gray, 10%));
+      background: linear-gradient($color-light-gray, $color-gray);
       text-align: center;
     }
 

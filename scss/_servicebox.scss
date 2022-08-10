@@ -1,5 +1,7 @@
 // ***** Service Box Component ***** //
 
+@use "sass:color";
+
 .c-servicebox {
 
   @include screen1 {
@@ -9,7 +11,7 @@
 
   section {
     padding: $space2;
-    background-image: linear-gradient(lighten($color-light-blue, 5%), $color-light-blue);
+    background-image: linear-gradient(color.adjust($color-light-blue, $lightness: 5%), $color-light-blue);
 
     @include screen1 {
       flex: 1 1 45%;
