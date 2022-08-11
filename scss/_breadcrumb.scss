@@ -2,8 +2,6 @@
 
 .c-breadcrumb {
 
-  $icon-padding: 1.7rem;
-
   @media print {
     display: none;
   }
@@ -14,9 +12,8 @@
 
   li {
     display: inline-flex;
+    align-items: center;
     margin-bottom: $space1;
-    background-repeat: no-repeat;
-    background-size: 1.4rem;
     font-size: 0.9rem;
 
     &:not(:nth-last-of-type(2)) {
@@ -29,24 +26,39 @@
     }
 
     &:nth-last-of-type(2) {
-      padding-left: $icon-padding;
-      background-image: url('angle-left-light.svg' param(--color #{$color-blue}));
-      background-position: left center;
 
-      @include screen1 {
-        padding-left: 0;
+      &::before {
+        content: '';
+        flex: none;
+        block-size: 1.2rem;
+        inline-size: 1.2rem;
+        margin-inline-end: 0.25rem;
+        background-color: $color-blue;
+        mask: url('../icons/angle-left-light.svg') center / contain;
       }
 
+      @include screen1 {
+
+        &::before {
+          content: none;
+        }
+      }
     }
 
     @include screen1 {
 
       &:not(:last-child) {
-        padding-right: $icon-padding;
-        background-image: url('angle-right-light.svg' param(--color #{$color-blue}));
-        background-position: right center;
-      }
 
+        &::after {
+          content: '';
+          flex: none;
+          block-size: 1.2rem;
+          inline-size: 1.2rem;
+          margin-inline-start: 0.25rem;
+          background-color: $color-blue;
+          mask: url('../icons/angle-right-light.svg') center / contain;
+        }
+      }
     }
 
     a {
