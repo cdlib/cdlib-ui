@@ -57,14 +57,22 @@
 
 %o-button5 {
   @extend %o-button;
-  padding-right: 2.3em;
+  gap: $space2;
   border: 2px solid $color-white;
   border-radius: $round-corner;
   background-color: $color-blue;
-  background-image: url('caret-up.svg' param(--color #{$color-white}));
-  background-position: right $space2 center;
-  background-size: 1.4em;
   color: $color-white;
+
+  &::after {
+    content: '';
+    flex: none;
+    block-size: 1rem;
+    inline-size: 1rem;
+    background-color: $color-white;
+    mask-size: 1.6rem;
+    mask-position: center;
+    mask-image: url('../icons/caret-up.svg');
+  }
 }
 
 .o-button5 {
@@ -73,7 +81,10 @@
 
 %o-button6 {
   @extend %o-button5;
-  background-image: url('caret-down.svg' param(--color #{$color-white}));
+
+  &::after {
+    mask-image: url('../icons/caret-down.svg');
+  }
 }
 
 .o-button6 {
