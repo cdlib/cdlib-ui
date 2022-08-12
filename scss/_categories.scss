@@ -34,10 +34,6 @@
     break-inside: avoid;
     page-break-inside: avoid; // Firefox
 
-    summary {
-      display: inline-block;
-    }
-
     ul {
       @extend %u-reset-list-styles;
       margin-left: $details-summary-left-space * 2;

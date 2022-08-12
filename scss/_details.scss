@@ -1,47 +1,43 @@
 // ***** Details Object ***** //
 
+// $details-summary-left-space variable is defined in _variables and used in categories component to align the disclosure widget arrows and list items.
+
 details {
   margin-bottom: $space2;
 
   summary {
-    padding-left: $details-summary-left-space;
-    background-image: url('caret-right.svg' param(--color #{$color-blue}));
-    background-repeat: no-repeat;
-    background-position: left 0.3rem top -0.2rem;
-    background-size: 0.9em;
-
-    // remove default arrow in Firefox:
-    list-style: none;
+    display: flex;
     cursor: pointer;
     user-select: none;
 
-    // remove default arrow in Chrome and Safari:
+    &::before {
+      content: '';
+      flex: none;
+      block-size: calc($details-summary-left-space / 1.5);
+      inline-size: calc($details-summary-left-space / 1.5);
+      margin-inline: calc($details-summary-left-space / 6);
+      background-color: $color-blue;
+      mask-repeat: no-repeat;
+      mask-size: 0.9rem;
+      mask-position: center;
+      mask-image: url('../icons/caret-right.svg');
+    }
+
+    // remove default arrow in Safari:
     // sass-lint:disable no-vendor-prefixes
     &::-webkit-details-marker {
       display: none;
     }
-
-    // remove right arrow applied from details polyfill:
-    &::before {
-      content: normal;
-    }
-
   }
 
   &[open] {
-
     summary {
-      background-image: url('caret-down.svg' param(--color #{$color-blue}));
-      background-position: left -0.2rem top -0.2rem;
-      background-size: 1.4em;
 
-      // remove down arrow applied from details polyfill:
       &::before {
-        content: normal;
+        margin-inline: 0 calc($details-summary-left-space / 3);
+        mask-size: 1.4rem;
+        mask-image: url('../icons/caret-down.svg');
       }
-
     }
-
   }
-
 }
