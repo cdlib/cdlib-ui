@@ -1,14 +1,22 @@
 // ***** News Component ***** //
 
+// Augments Sidebarbox component with upper-right icon styled below:
+
 .c-news {
-  
-  header {
-    background: url('rss.svg' param(--color #{$color-gold})) top right / 1em no-repeat;
 
-    h2 {
-      padding-right: $space4;
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space2;
+
+    &::after {
+      content: '';
+      flex: none;
+      block-size: 1rem;
+      inline-size: 1rem;
+      background-color: $color-gold;
+      mask: url('../icons/rss.svg') center / contain;
     }
-
   }
-
 }
