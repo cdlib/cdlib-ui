@@ -11,12 +11,12 @@ function goToItem (n) {
 function playNewsreel () {
   itemInterval = setInterval(nextItem, reelSpeed)
   playControl.style.display = 'none'
-  pauseControl.style.display = 'inline-block'
+  pauseControl.style.display = 'inline-flex'
 }
 
 function pauseNewsreel () {
   clearInterval(itemInterval)
-  playControl.style.display = 'inline-block'
+  playControl.style.display = 'inline-flex'
   pauseControl.style.display = 'none'
 }
 
