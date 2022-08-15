@@ -82,14 +82,14 @@ $slideshow-caption-width: 20rem;
 .c-slideshow__play {
 
   &::after {
-    mask-image: url('../icons/play.svg');
+    mask-image: url('data-url:../icons/play.svg');
   }
 }
 
 .c-slideshow__pause {
 
   &::after {
-    mask-image: url('../icons/pause.svg');
+    mask-image: url('data-url:../icons/pause.svg');
   }
 }
 

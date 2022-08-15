@@ -40,7 +40,7 @@
 
     &::before {
       content: '';
-      mask-image: url('../icons/angle-left-light.svg');
+      mask-image: url('data-url:../icons/angle-left-light.svg');
     }
   }
 }
@@ -52,7 +52,7 @@
 
     &::after {
       content: '';
-      mask-image: url('../icons/angle-right-light.svg');
+      mask-image: url('data-url:../icons/angle-right-light.svg');
     }
   }
 }

@@ -106,13 +106,13 @@
 .c-newsreel__play {
 
   &::after {
-    mask-image: url('../icons/play.svg');
+    mask-image: url('data-url:../icons/play.svg');
   }
 }
 
 .c-newsreel__pause {
   
   &::after {
-    mask-image: url('../icons/pause.svg');
+    mask-image: url('data-url:../icons/pause.svg');
   }
 }

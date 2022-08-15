@@ -31,7 +31,7 @@
 
     &::after {
       background-color: $color-gold;
-      mask-image: url('../icons/external-link-alt.svg');
+      mask-image: url('data-url:../icons/external-link-alt.svg');
     }
   }
 
@@ -40,7 +40,7 @@
 
     &::after {
       background-color: $color-gold;
-      mask-image: url('../icons/envelope.svg');
+      mask-image: url('data-url:../icons/envelope.svg');
     }
   }
 
@@ -51,7 +51,7 @@
     &::after {
       background-color: $color-red;
       mask-size: 0.8rem;
-      mask-image: url('../icons/lock.svg');
+      mask-image: url('data-url:../icons/lock.svg');
     }
   }
 

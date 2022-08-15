@@ -29,7 +29,7 @@
       block-size: 1rem;
       inline-size: 1rem;
       background-color: $color-white;
-      mask: url('../icons/external-link-alt.svg') center / contain;
+      mask: url('data-url:../icons/external-link-alt.svg') center / contain;
     }
   }
 

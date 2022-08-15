@@ -34,7 +34,7 @@
         inline-size: 1.2rem;
         margin-inline-end: 0.25rem;
         background-color: $color-blue;
-        mask: url('../icons/angle-left-light.svg') center / contain;
+        mask: url('data-url:../icons/angle-left-light.svg') center / contain;
       }
 
       @include screen1 {
@@ -56,7 +56,7 @@
           inline-size: 1.2rem;
           margin-inline-start: 0.25rem;
           background-color: $color-blue;
-          mask: url('../icons/angle-right-light.svg') center / contain;
+          mask: url('data-url:../icons/angle-right-light.svg') center / contain;
         }
       }
     }
