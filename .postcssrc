@@ -1,9 +1,0 @@
-{
-  "plugins": {
-    "postcss-import": true,
-    "postcss-svg": {
-      "dirs": "icons/",
-      "svgo": true
-    }
-  }
-}
