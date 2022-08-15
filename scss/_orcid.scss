@@ -1,19 +1,19 @@
 // ***** Orcid ID Object ***** //
 
 .o-orcid {
-  @include u-disable-general-link-icon;
-  display: inline-block;
-  position: relative;
-  padding-left: 1.6em;
+  display: inline-flex;
+  align-items: center;
+  gap: $space2;
 
   &::before {
-    content: url('orcid.svg');
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 1.1em;
-    margin-right: 1em;
+    content: '';
+    flex: none;
+    block-size: 1.2rem;
+    inline-size: 1.2rem;
+    background: url('../icons/orcid.svg') center / contain;
   }
 
+  &::after {
+    content: none !important;
+  }
 }
