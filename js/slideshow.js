@@ -24,12 +24,12 @@ function goToSlide (n) {
 function playSlideshow () {
   slideInterval = setInterval(nextSlide, transitionSpeed)
   playButton.style.display = 'none'
-  pauseButton.style.display = 'inline-block'
+  pauseButton.style.display = 'inline-flex'
 }
 
 function pauseSlideshow () {
   clearInterval(slideInterval)
-  playButton.style.display = 'inline-block'
+  playButton.style.display = 'inline-flex'
   pauseButton.style.display = 'none'
 }
 
