@@ -70,7 +70,7 @@ module.exports = {
       name: '8', // link--8.hbs
       context: {
         link: {
-          text: 'Link to Sharepoint content',
+          text: 'Link to UCOP Sharepoint site',
           url: 'https://sp.ucop.edu'
         }
       }
@@ -88,7 +88,7 @@ module.exports = {
       name: '10', // link--10.hbs
       context: {
         link: {
-          text: 'Link to protected document',
+          text: 'Link to UCOP Sharepoint PDF',
           url: 'https://sp.ucop.edu/document.pdf'
         }
       }
