@@ -12,52 +12,6 @@ a {
   }
 }
 
-// Default with switched underline focus/hover:
-
-%o-link2 {
-  text-decoration: none;
-
-  &:focus,
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.o-link2 {
-  @extend %o-link2;
-}
-
-// Black with switched underline focus/hover:
-
-@mixin o-link3 {
-  color: var(--color-light-black);
-  text-decoration: none;
-
-  &:focus,
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.o-link3 {
-  @include o-link3;
-}
-
-// Black with default color underline focus/hover:
-
-@mixin o-link4 {
-  color: var(--color-light-black);
-
-  &:focus,
-  &:hover {
-    color: var(--color-blue);
-  }
-}
-
-.o-link4 {
-  @include o-link4;
-}
-
 // File type icons:
 
 a:is([href$='.pdf'], [href$='.doc'], [href$='.xls'], [href$='.txt'], [href$='.zip'], [href$='.rtf']) {

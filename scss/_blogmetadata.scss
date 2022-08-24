@@ -5,7 +5,12 @@
   color: $color-light-black;
 
   a {
-    @extend %o-link2;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   ul {

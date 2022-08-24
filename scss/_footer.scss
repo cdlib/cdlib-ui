@@ -25,10 +25,15 @@
   }
 
   a {
-    @include o-link3;
+    color: var(--color-light-black);
     font-size: 0.9rem;
-  }
+    text-decoration: none;
 
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .c-footer__main {

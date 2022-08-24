@@ -72,10 +72,15 @@
   }
 
   a {
-    @extend %o-link2;
     display: block;
     color: $color-light-blue;
     line-height: $line-height0;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   > a {

@@ -1,13 +1,18 @@
 // ***** Social Link Component ***** //
 
 .c-social {
-  @extend %o-link2;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: $space2;
   padding: $space2;
   border: 1px solid $color-blue;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
 
   &::after {
     content: '';

@@ -51,22 +51,23 @@
         z-index: 2;
         opacity: 1;
       }
-
-      a {
-        @extend %o-link2;
-      }
-
     }
-
   }
 
   // 'view all' link:
   > a {
-    @extend %o-link2;
     order: 4;
     margin-left: auto;
   }
 
+  a {
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .c-newsreel__play,
