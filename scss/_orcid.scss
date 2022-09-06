@@ -13,7 +13,8 @@
     background: url('data-url:../icons/orcid.svg') center / contain;
   }
 
+  // disable external link icon:
   &::after {
-    content: none !important;
+    content: none;
   }
 }

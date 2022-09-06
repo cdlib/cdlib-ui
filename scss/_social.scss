@@ -17,9 +17,9 @@
   &::after {
     content: '';
     flex: none;
-    block-size: 1.6rem !important;
-    inline-size: 1.6rem !important;
-    background-color: #1da1f2 !important;
-    mask: url('data-url:../icons/twitter.svg') center / contain !important;
+    block-size: 1.6rem;
+    inline-size: 1.6rem;
+    background-color: #1da1f2;
+    mask: url('data-url:../icons/twitter.svg') center / contain;
   }
 }
