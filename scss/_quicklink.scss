@@ -11,6 +11,11 @@
     &:hover {
       text-decoration: underline;
     }
+
+    // disable external link icon:
+    &::after {
+      content: none;
+    }
   }
 }
 
