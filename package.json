@@ -67,7 +67,7 @@
     "source-sans": "^3.28.0",
     "standard": "^17.0.0",
     "start-server-and-test": "^1.14.0",
-    "stylelint": "^14.8.2",
+    "stylelint": "^14.11.0",
     "stylelint-config-property-sort-order-smacss": "^9.0.0",
     "stylelint-config-recommended-scss": "^6.0.0",
     "stylelint-scss": "^4.2.0"

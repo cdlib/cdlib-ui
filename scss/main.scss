@@ -19,24 +19,25 @@
 
 // ***** Objects ***** //
 
-@import 'blockquote';
-@import 'button';
-@import 'details';
-@import 'docicon';
-@import 'figure';
-@import 'heading';
-@import 'image';
-@import 'input';
-@import 'label';
-@import 'link';
-@import 'list';
-@import 'orcid';
-@import 'paragraph';
-@import 'rule';
-@import 'select';
-@import 'sidebarbox';
-@import 'sidebarnav';
-@import 'table';
+@layer objects {
+  @import 'blockquote';
+  @import 'button';
+  @import 'details';
+  @import 'docicon';
+  @import 'figure';
+  @import 'heading';
+  @import 'image';
+  @import 'input';
+  @import 'label';
+  @import 'link';
+  @import 'list';
+  @import 'paragraph';
+  @import 'rule';
+  @import 'select';
+  @import 'sidebarbox';
+  @import 'sidebarnav';
+  @import 'table';
+}
 
 // ***** Components ***** //
 
@@ -59,6 +60,7 @@
 @import 'news';
 @import 'newsreel';
 @import 'numbers';
+@import 'orcid';
 @import 'pagination';
 @import 'postnav';
 @import 'quicklink';
