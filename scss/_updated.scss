@@ -6,15 +6,17 @@
     display: none;
   }
 
-  address {
-    font-style: normal;
+  a {
 
-    a {
-      @include u-disable-general-link-icon;
+    // disable external link icon:
+    &::after {
+      content: none;
     }
-
   }
 
+  address {
+    font-style: normal;
+  }
 }
 
 .c-updated__label {

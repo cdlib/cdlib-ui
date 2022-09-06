@@ -11,15 +11,19 @@
     / 2.7em 1fr;
   margin-bottom: $space4;
 
+  a {
+    color: $color-blue;
+
+    // disable link icon:
+    &::after {
+      content: none;
+    }
+  }
+
   h2 {
     display: inline-block;
     grid-area: result-heading;
     margin: 0;
-
-    a {
-      @include u-disable-filetype-link-icon;
-      color: $color-blue;
-    }
   }
 
   mark {

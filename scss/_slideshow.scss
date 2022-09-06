@@ -128,6 +128,14 @@ $slideshow-caption-width: 20rem;
     opacity: 0;
   }
 
+  a {
+
+    // disable link icon:
+    &::after {
+      content: none;
+    }
+  }
+
   // caption heading:
   h2 {
     margin-top: 0;
@@ -137,7 +145,6 @@ $slideshow-caption-width: 20rem;
     font-weight: 400;
 
     a {
-      @include u-disable-general-link-icon;
       text-decoration: none;
 
       &:focus,
@@ -153,7 +160,6 @@ $slideshow-caption-width: 20rem;
 
     // if there's a link in the copy:
     a {
-      @include u-disable-general-link-icon;
       color: $color-light-gold;
       text-decoration: underline;
 

@@ -85,28 +85,6 @@ $test3: #080 solid 1px; // green
 
 }
 
-// Disable general link icons:
-
-@mixin u-disable-general-link-icon {
-
-  &[data-wpel-link],
-  &[href] {
-    padding-right: 0;
-    background: none;
-  }
-
-}
-
-// Disable file type link icons:
-
-@mixin u-disable-filetype-link-icon {
-
-  &::after {
-    content: '' !important;
-    background-color: transparent;
-  }
-}
-
 // Unordered lists without space or bullets:
 
 %u-reset-list-styles {
