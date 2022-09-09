@@ -83,11 +83,7 @@
 %o-button7 {
   @extend %o-button;
 
-  &[aria-current='false'] {
-    background-color: $color-white;
-  }
-
-  &[aria-current='true'] {
+  &[aria-current='page'] {
     background-color: $color-light-blue;
   }
 

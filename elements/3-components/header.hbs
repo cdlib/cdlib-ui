@@ -1,21 +1,19 @@
-<header class="c-header" v-onmedia.screen2="detectMediaQuery2">
+<header class="c-header">
   <a class="c-header__logo" href="">
     <img src="{{ path '/ui-assets/images/logo-cdl.svg' }}" alt="California Digital Library logo">
   </a>
-  <div class="c-header__controls" v-if="!$mq.screen2" v-cloak>
-    <button class="o-button1" v-on:click="headerToggle1" aria-label="search"></button>
-    <button class="o-button3" v-on:click="headerToggle3" aria-label="menu"></button>
+  <div class="c-header__controls js-header__controls" hidden>
+    <button class="js-header__search-control o-button1" aria-label="show search"></button>
+    <button class="js-header__menu-control o-button3" aria-label="menu"></button>
   </div>
-  <transition name="c-header__offscreen">
-    <div class="c-header__search" v-if="isOpen1" v-cloak>
-      {{ render '@search' }}
-      <button class="o-button2" v-on:click="headerToggle2" v-if="!$mq.screen2" aria-label="close search"></button>
-    </div>
-  </transition>
-  <div class="c-header__header-nav" v-if="isOpen2" v-cloak>
+  <div class="c-header__search js-header__search is-open">
+    {{ render '@search' }}
+    <button class="c-header__close-search js-header__close-search o-button2" aria-label="hide search" hidden></button>
+  </div>
+  <div class="c-header__header-nav js-header__header-nav is-open">
   {{ render '@headernav' }}
   </div>
-  <div class="c-header__utility-nav" v-if="isOpen2" v-cloak>
+  <div class="c-header__utility-nav js-header__utility-nav is-open">
     {{ render '@utilitynav' }}
   </div>
 </header>

@@ -1,12 +1,12 @@
-<nav aria-labelledby="secondarynav-heading" class="c-secondarynav o-sidebarnav" v-onmedia.screen2="detectMediaQuery">
+<nav aria-labelledby="secondarynav-heading" class="c-secondarynav o-sidebarnav">
   <header>
     {{> @heading }}
-    <template v-if="!$mq.screen2">
-      <button aria-label="close navigation menu" aria-expanded="true" class="o-button5" v-on:click="toggle1" v-if="isDisplayed">{{ secondarynav.closeButtonText }}</button>
-      <button aria-label="open navigation menu" aria-expanded="false" class="o-button6" v-on:click="toggle1" v-if="!isDisplayed">{{ secondarynav.openButtonText }}</button>
-    </template>
+    <div class="c-secondarynav__buttons js-secondarynav__buttons">
+      <button aria-label="close navigation menu" aria-expanded="true" class="c-secondarynav__close-button js-secondarynav__close-button o-button5">{{ secondarynav.closeButtonText }}</button>
+      <button aria-label="open navigation menu" aria-expanded="false" class="c-secondarynav__open-button js-secondarynav__open-button o-button6 is-shown">{{ secondarynav.openButtonText }}</button>
+    </div>
   </header>
-  <div v-if="isDisplayed" v-cloak>
+  <div class="c-secondarynav__body js-secondarynav__body is-open">
     <ul>
       <li>{{> @link }}
         <ul>

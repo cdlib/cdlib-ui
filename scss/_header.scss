@@ -50,32 +50,43 @@ $header-logo-height: 50px;
 }
 
 .c-header__controls {
-  @include u-hide-until-vue-ready();
   grid-area: header-controls;
+
+  @include screen2 {
+    display: none;
+  }
 }
 
 .c-header__search {
-  @include u-hide-until-vue-ready();
   display: flex;
-  position: absolute; // to .c-header
+  position: fixed; // to .c-header
   z-index: 1;
   right: 0;
   left: 0;
   grid-area: header-search;
   align-items: flex-start;
+  width: 100%;
   height: $header-logo-height;
+  padding-left: $space1;
+  transform: translateX(100%);
+  transition: transform 0.5s;
   background-color: $color-white;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  @include screen1 {
+    padding-left: $space2;
+  }
 
   @include screen2 {
     position: static;
     grid-column: 1 / 3;
     align-items: center;
     justify-content: center;
+    padding-left: 0;
     background-color: transparent;
-  }
-
-  > button {
-    margin-left: $space1;
   }
 
   .c-search {
@@ -90,8 +101,15 @@ $header-logo-height: 50px;
 
 }
 
+.c-header__close-search {
+  margin-left: $space1;
+
+  @include screen2 {
+    display: none;
+  }
+}
+
 .c-header__header-nav {
-  @include u-hide-until-vue-ready($screen2);
   grid-area: header-nav;
 
   .c-mobilenav {
@@ -109,7 +127,6 @@ $header-logo-height: 50px;
 }
 
 .c-header__utility-nav {
-  @include u-hide-until-vue-ready($screen2);
   grid-area: header-util-nav;
 
   @include screen2 {
@@ -118,22 +135,13 @@ $header-logo-height: 50px;
 
 }
 
-// Vue enter/leave transitions:
+// JS interactivity:
 
-.c-header__offscreen-enter-active {
-  transition: transform 0.5s;
+.c-header__header-nav,
+.c-header__utility-nav {
+  display: none;
 
-  @include screen2 {
-    transition: none;
+  &.is-open {
+    display: block;
   }
-
-}
-
-.c-header__offscreen-leave-active {
-  transition: transform 0.5s;
-}
-
-.c-header__offscreen-enter,
-.c-header__offscreen-leave-to {
-  transform: translateX(100%);
 }

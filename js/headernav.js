@@ -2,10 +2,9 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   if (document.querySelector('.c-headernav')) {
-    var subMenuItems = document.querySelectorAll('.c-headernav > ul > li.menu-item-has-children')
-    var allMenuItems = document.querySelectorAll('.c-headernav > ul > li');
+    const allMenuItems = document.querySelectorAll('.c-headernav > ul > li');
 
-    [].forEach.call(subMenuItems, function (el) {
+    [].forEach.call(allMenuItems, function (el) {
       document.querySelector('.c-headernav').classList.remove('c-headernav-no-js')
       document.querySelector('.c-headernav').classList.add('c-headernav-js')
       el.querySelector('a').setAttribute('aria-haspopup', 'true')
