@@ -69,37 +69,50 @@
 
 }
 
-%c-newsreel__buttons {
+.c-newsreel__play,
+.c-newsreel__pause {
+  display: inline-flex;
   flex: 0 0 auto;
   order: 3;
-  width: 2em;
-  height: 2em;
   margin-left: auto;
   padding: 0;
-  border: none;
+  border-style: none;
   background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 0.8em;
   cursor: pointer;
+
+  &::after {
+    content: '';
+    flex: none;
+    block-size: 2rem;
+    inline-size: 2rem;
+    background-color: $color-black;
+    mask-size: 0.8rem;
+    mask-position: center;
+    mask-repeat: no-repeat;
+  }
+
+  &:focus,
+  &:hover {
+    &::after {
+      background-color: $color-gold;
+    }
+  }
 
   span {
     @include u-hide;
   }
-
 }
 
-@each $class, $image in (play, play), (pause, pause) {
+.c-newsreel__play {
 
-  .c-newsreel__#{$class} {
-    @extend %c-newsreel__buttons;
-    background-image: url('#{$image}.svg' param(--color #{$color-black}));
-
-    &:focus,
-    &:hover {
-      background-image: url('#{$image}.svg' param(--color #{$color-gold}));
-    }
-
+  &::after {
+    mask-image: url('data-url:../icons/play.svg');
   }
+}
 
+.c-newsreel__pause {
+  
+  &::after {
+    mask-image: url('data-url:../icons/pause.svg');
+  }
 }

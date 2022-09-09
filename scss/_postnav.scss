@@ -10,30 +10,49 @@
 
   a {
     @extend %o-link2;
-    background-repeat: no-repeat;
-    background-size: 1.4em;
   }
+}
 
+.c-postnav__newer,
+.c-postnav__older {
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: $space1;
+
+    &::before,
+    &::after {
+      flex: none;
+      block-size: 1rem;
+      inline-size: 1rem;
+      background-color: $color-blue;
+      mask-size: 1.4rem;
+      mask-position: center;
+    }
+  }
 }
 
 .c-postnav__newer {
   margin-right: auto;
 
   a {
-    padding-left: 1em;
-    background-image: url('angle-left-light.svg' param(--color #{$color-blue}));
-    background-position: left -0.4em center;
-  }
 
+    &::before {
+      content: '';
+      mask-image: url('data-url:../icons/angle-left-light.svg');
+    }
+  }
 }
 
 .c-postnav__older {
   margin-left: auto;
 
   a {
-    padding-right: 1em;
-    background-image: url('angle-right-light.svg' param(--color #{$color-blue}));
-    background-position: right -0.4em center;
-  }
 
+    &::after {
+      content: '';
+      mask-image: url('data-url:../icons/angle-right-light.svg');
+    }
+  }
 }

@@ -1,7 +1,5 @@
 // ***** Staff Component ***** //
 
-$staff-icon-size: 1.5em;
-
 .c-staff {
   table-layout: auto;
 
@@ -28,15 +26,19 @@ $staff-icon-size: 1.5em;
     td {
 
       &:last-child {
-        width: $staff-icon-size;
-        padding: 0;
 
         a {
-          display: block;
-          width: $staff-icon-size;
-          height: $staff-icon-size;
-          margin: 0 auto;
-          background: url('user-circle.svg' param(--color #{$color-gold})) center / contain no-repeat;
+          display: flex;
+          justify-content: center;
+
+          &::before {
+            content: '';
+            flex: none;
+            block-size: 1.5rem;
+            inline-size: 1.5rem;
+            background-color: $color-gold;
+            mask: url('data-url:../icons/user-circle.svg') center / contain;
+          }
 
           span {
             @include u-hide();

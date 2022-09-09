@@ -2,16 +2,19 @@
 
 .c-social {
   @extend %o-link2;
-  @include u-disable-general-link-icon;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: $space2;
   padding: $space2;
   border: 1px solid $color-blue;
 
-  // match u-disable-general-link-icon mixin selector:
-  &[href] {
-    padding-right: 3em;
-    background: url('twitter.svg') right center / 2.5em no-repeat;
+  &::after {
+    content: '';
+    flex: none;
+    block-size: 1.6rem !important;
+    inline-size: 1.6rem !important;
+    background-color: #1da1f2 !important;
+    mask: url('data-url:../icons/twitter.svg') center / contain !important;
   }
-
 }

@@ -46,6 +46,8 @@
   "devDependencies": {
     "@frctl/fractal": "^1.5.13",
     "@frctl/mandelbrot": "^1.4.0",
+    "@parcel/optimizer-data-url": "^2.5.0",
+    "@parcel/transformer-inline-string": "^2.5.0",
     "@parcel/transformer-sass": "^2.5.0",
     "@percy/cli": "^1.2.1",
     "del-cli": "^4.0.1",
@@ -60,8 +62,6 @@
     "pa11y-ci": "^3.0.1",
     "parcel": "^2.5.0",
     "parcel-namer-custom": "^0.2.0",
-    "postcss-import": "^14.1.0",
-    "postcss-svg": "^3.0.0",
     "sitemap-generator-cli": "^7.5.0",
     "snazzy": "^9.0.0",
     "source-sans": "^3.28.0",

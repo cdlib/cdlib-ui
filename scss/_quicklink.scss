@@ -2,32 +2,33 @@
 
 // This component is based on style and structure from sidebarnav.
 
-%c-quicklink {
-
-  ul {
-
-    li {
-
-      a {
-        @include o-link3;
-      }
-
-    }
-
+.c-quicklink1,
+.c-quicklink2 {
+  a {
+    @include o-link3;
   }
-
-}
-
-.c-quicklink1 {
-  @extend %c-quicklink;
 }
 
 .c-quicklink2 {
-  @extend %c-quicklink;
 
   header {
-    padding-right: 2.1em;
-    background: $color-blue url('external-link-alt.svg' param(--color #{$color-gold})) right $space1 center / 1.3em no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 $space2;
+    gap: $space2;
+
+    &::after {
+      content: '';
+      flex: none;
+      block-size: 1.3rem;
+      inline-size: 1.3rem;
+      background-color: $color-gold;
+      mask: url('data-url:../icons/external-link-alt.svg') center / contain;
+    }
   }
 
+  h2 {
+    padding: $space2 0;
+  }
 }

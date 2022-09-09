@@ -1,10 +1,18 @@
 // ***** Link Objects ***** //
 
 %o-link__icon {
-  padding-right: $link-icon-padding;
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 1em;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    block-size: 0.9rem;
+    inline-size: 0.9rem;
+    margin-inline-start: 0.4rem;
+    mask-size: 0.9rem;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    transform: translateY(0.05rem);
+  }
 }
 
 %o-link__type {
@@ -20,18 +28,31 @@
 
   &[data-wpel-link='external'] {
     @extend %o-link__icon;
-    background-image: url('external-link-alt.svg' param(--color #{$color-gold}));
+
+    &::after {
+      background-color: $color-gold;
+      mask-image: url('data-url:../icons/external-link-alt.svg');
+    }
   }
 
   &[href^='mailto:'] {
     @extend %o-link__icon;
-    background-image: url('envelope.svg' param(--color #{$color-gold}));
+
+    &::after {
+      background-color: $color-gold;
+      mask-image: url('data-url:../icons/envelope.svg');
+    }
   }
 
   &[href^='https://sp.ucop.edu'] {
     @extend %o-link__icon;
-    background-image: url('lock.svg' param(--color #{$color-red}));
-    background-size: 0.8em;
+    @include u-disable-filetype-link-icon;
+
+    &::after {
+      background-color: $color-red;
+      mask-size: 0.8rem;
+      mask-image: url('data-url:../icons/lock.svg');
+    }
   }
 
   // File type link icons:
