@@ -55,36 +55,6 @@ $test3: #080 solid 1px; // green
   }
 }
 
-// Set an interactive element's minimum width and height:
-
-@mixin u-interactive-element-min-size($state: enabled) {
-
-  @if $state == enabled {
-    // default sizing:
-    min-width: $pointer-size-fine;
-    min-height: $pointer-size-fine;
-    
-    // for touch screens:
-    @media (any-pointer: coarse) {
-      min-width: $pointer-size-coarse;
-      min-height: $pointer-size-coarse;
-    }
-
-  }
-
-  @if $state == disabled {
-    min-width: auto;
-    min-height: auto;
-
-    @media (any-pointer: coarse) {
-      min-width: auto;
-      min-height: auto;
-    }
-
-  }
-
-}
-
 // Unordered lists without space or bullets:
 
 %u-reset-list-styles {

@@ -1,10 +1,9 @@
 // ***** Button Objects ***** //
 
 %o-button {
-  @include u-interactive-element-min-size;
   display: inline-flex;
   align-items: center;
-  padding: $space1 $space2;
+  padding: 0.4rem $space2;
   border: none;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -14,8 +13,9 @@
 
 %o-button__header-controls {
   @extend %o-button;
-  width: 2em;
-  background-size: 1.8em;
+  block-size: 2.1rem;
+  inline-size: 2.1rem;
+  background-size: 2.1em;
 }
 
 %o-button1 {

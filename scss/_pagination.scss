@@ -9,10 +9,10 @@
   }
 
   a {
-    @include u-interactive-element-min-size;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    block-size: 2rem;
     padding: 0 $space2;
     color: $color-blue;
     text-decoration: none;
