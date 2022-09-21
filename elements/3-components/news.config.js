@@ -22,9 +22,6 @@ module.exports = {
       level: '2',
       text: 'Recent Posts'
     },
-    list: sampleData,
-    link: {
-      text: 'More Posts...'
-    }
+    list: sampleData
   }
 };
