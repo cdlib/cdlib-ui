@@ -1,23 +1,19 @@
-// ***** Libraries ***** //
+@layer normalize, global, objects, components, templates;
 
-@import '../node_modules/modern-normalize/modern-normalize.css';
-
-// ***** Variables ***** //
-
+// Sass variables, extends and mixins that may be inserted into any imported file below. //
 @import 'breakpoints';
 @import 'variables';
-
-// ***** Utilities ***** //
-
 @import 'utilities';
 
-// ***** Global ***** //
+@layer normalize {
+  @import '../node_modules/modern-normalize/modern-normalize';
+}
 
-@import 'body';
-@import 'fonts';
-@import 'resets';
-
-// ***** Objects ***** //
+@layer global {
+  @import 'body';
+  @import 'fonts';
+  @import 'resets';
+}
 
 @layer objects {
   @import 'blockquote';
@@ -39,56 +35,56 @@
   @import 'table';
 }
 
-// ***** Components ***** //
+@layer components {
+  @import 'avatar';
+  @import 'blogmetadata';
+  @import 'blogresult';
+  @import 'breadcrumb';
+  @import 'categories';
+  @import 'checkbox';
+  @import 'contact';
+  @import 'footer';
+  @import 'halfboxes';
+  @import 'header';
+  @import 'headernav';
+  @import 'homeheading';
+  @import 'mainbox';
+  @import 'meet';
+  @import 'mainheading';
+  @import 'mobilenav';
+  @import 'news';
+  @import 'newsreel';
+  @import 'numbers';
+  @import 'orcid';
+  @import 'pagination';
+  @import 'postnav';
+  @import 'quicklink';
+  @import 'records';
+  @import 'refine';
+  @import 'rssfeed';
+  @import 'search';
+  @import 'searchresult';
+  @import 'secondarynav';
+  @import 'servicebox';
+  @import 'serviceheading';
+  @import 'sidebarpost';
+  @import 'skipnav';
+  @import 'slideshow';
+  @import 'social';
+  @import 'staff';
+  @import 'status';
+  @import 'textcolor';
+  @import 'timeline';
+  @import 'updated';
+  @import 'utilitynav';
+  @import 'well';
+  @import 'yearlist';
+}
 
-@import 'avatar';
-@import 'blogmetadata';
-@import 'blogresult';
-@import 'breadcrumb';
-@import 'categories';
-@import 'checkbox';
-@import 'contact';
-@import 'footer';
-@import 'halfboxes';
-@import 'header';
-@import 'headernav';
-@import 'homeheading';
-@import 'mainbox';
-@import 'meet';
-@import 'mainheading';
-@import 'mobilenav';
-@import 'news';
-@import 'newsreel';
-@import 'numbers';
-@import 'orcid';
-@import 'pagination';
-@import 'postnav';
-@import 'quicklink';
-@import 'records';
-@import 'refine';
-@import 'rssfeed';
-@import 'search';
-@import 'searchresult';
-@import 'secondarynav';
-@import 'servicebox';
-@import 'serviceheading';
-@import 'sidebarpost';
-@import 'skipnav';
-@import 'slideshow';
-@import 'social';
-@import 'staff';
-@import 'status';
-@import 'textcolor';
-@import 'timeline';
-@import 'updated';
-@import 'utilitynav';
-@import 'well';
-@import 'yearlist';
-
-// ***** Templates ***** //
-
-@import 'home';
-@import 'layout1';
-@import 'layout2';
-@import 'layout3';
-@import 'layout4';
+@layer templates {
+  @import 'home';
+  @import 'layout1';
+  @import 'layout2';
+  @import 'layout3';
+  @import 'layout4';
+}
