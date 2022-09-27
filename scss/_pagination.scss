@@ -3,7 +3,7 @@
 %c-pagination {
 
   ul {
-    @extend %u-reset-list-styles;
+    @include u-reset-list-styles;
     display: inline-flex;
     flex-wrap: wrap;
   }

@@ -3,7 +3,7 @@
 $yearlist-border-size: 1px;
 
 .c-yearlist {
-  @extend %u-reset-list-styles;
+  @include u-reset-list-styles;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: $space2;

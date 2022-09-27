@@ -3,7 +3,7 @@
 .c-postnav {
 
   ul {
-    @extend %u-reset-list-styles;
+    @include u-reset-list-styles;
     display: flex;
     flex-wrap: wrap;
   }

@@ -1,7 +1,7 @@
 // ***** Mobile Navigation Component ***** //
 
 .c-mobilenav {
-  @extend %u-reset-list-styles;
+  @include u-reset-list-styles;
 
   @media (max-width: $screen2) {
 

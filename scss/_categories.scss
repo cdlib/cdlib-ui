@@ -1,12 +1,7 @@
 // ***** Categories Component ***** //
 
-%category-items-vertical-space {
-  margin-top: $space2;
-  margin-bottom: $space2;
-}
-
 .c-categories {
-  @extend %u-reset-list-styles;
+  @include u-reset-list-styles;
 
   @include screen1 {
     column-gap: $space3;
@@ -27,28 +22,21 @@
   }
 
   li {
-    @extend %category-items-vertical-space;
+    margin-block: $space2;
+  }
+
+  li li {
+    padding-inline-start: $details-summary-left-space * 2;
   }
 
   > li > a {
     display: block;
-    margin-left: $details-summary-left-space;
+    margin-inline-start: $details-summary-left-space;
   }
 
   details {
+    margin-block-end: 0;
     break-inside: avoid;
     page-break-inside: avoid; // Firefox
-
-    ul {
-      @extend %u-reset-list-styles;
-      margin-left: $details-summary-left-space * 2;
-
-      li {
-        @extend %category-items-vertical-space;
-      }
-
-    }
-
   }
-
 }

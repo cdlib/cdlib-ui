@@ -57,7 +57,7 @@ $test3: #080 solid 1px; // green
 
 // Unordered lists without space or bullets:
 
-%u-reset-list-styles {
+@mixin u-reset-list-styles {
   margin-top: 0;
   margin-bottom: 0;
   padding-right: 0;
@@ -70,7 +70,6 @@ $test3: #080 solid 1px; // green
     margin-bottom: 0;
     padding-left: 0;
   }
-
 }
 
 // Hide something visually but not for screen readers:

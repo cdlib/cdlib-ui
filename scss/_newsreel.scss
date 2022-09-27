@@ -35,7 +35,7 @@
   }
 
   ul {
-    @extend %u-reset-list-styles;
+    @include u-reset-list-styles;
     display: grid;
     flex: 1 1 auto;
     order: 2;
