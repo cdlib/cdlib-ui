@@ -40,7 +40,7 @@
 }
 
 .c-searchresult__excerpt {
-  @extend %u-break-words;
+  @include u-break-words;
   grid-area: result-excerpt;
 }
 

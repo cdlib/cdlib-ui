@@ -11,7 +11,7 @@
   direction: rtl;
 
   figcaption {
-    @extend %u-break-words;
+    @include u-break-words;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
