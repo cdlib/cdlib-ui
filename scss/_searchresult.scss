@@ -1,15 +1,14 @@
 // ***** Search Result Component ***** //
 
 .c-searchresult {
-  /* autoprefixer grid: off */
   display: grid;
-  gap: $space2;
   grid-template:
     'result-doctype result-heading'
     'result-doctype result-excerpt'
     'result-doctype result-datetime'
     / 2.7em 1fr;
   margin-bottom: $space4;
+  column-gap: $space2;
 
   a {
     color: $color-blue;
