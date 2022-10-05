@@ -73,7 +73,7 @@
     "stylelint-scss": "^4.2.0"
   },
   "browserslist": [
-    "> 2% in my stats"
+    "defaults"
   ],
   "parcel-namer-custom": {
     "scss/.*": "css/[name].css"
