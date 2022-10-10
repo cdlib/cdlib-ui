@@ -17,8 +17,11 @@
     margin: 0;
 
     a {
-      @include u-disable-filetype-link-icon;
       color: $color-blue;
+
+      &::after {
+        font-size: 0.75rem;
+      }
     }
   }
 
