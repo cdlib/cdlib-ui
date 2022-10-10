@@ -17,12 +17,48 @@
       background-color: $color-dark-gray;
     }
 
+    @else if $filetype == 'docx' {
+      background-color: $color-blue;
+    }
+
+    @else if $filetype == 'html' {
+      background-color: $color-blue;
+    }
+
+    @else if $filetype == 'page' {
+      background-color: $color-blue;
+    }
+
+    @else if $filetype == 'pdf' {
+      background-color: $color-light-red;
+    }
+
     @else if $filetype == 'post' {
       background-color: $color-light-black;
     }
 
+    @else if $filetype == 'ppt' {
+      background-color: $color-dark-orange;
+    }
+
+    @else if $filetype == 'pptx' {
+      background-color: $color-dark-orange;
+    }
+
+    @else if $filetype == 'xls' {
+      background-color: $color-green;
+    }
+
+    @else if $filetype == 'xlsx' {
+      background-color: $color-green;
+    }
+
+    @else if $filetype == 'zip' {
+      background-color: $color-light-black;
+    }
+
     @else {
-      background-color: $color-blue;
+      background-color: $color-dark-gray;
     }
   }
 

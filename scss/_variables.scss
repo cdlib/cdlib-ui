@@ -2,6 +2,8 @@
 
 // Colors
 
+$color-green: rgb(82, 122, 0); // #527A00
+$color-light-red: rgb(219, 0, 0); // #DB0000
 $color-red: rgb(151, 54, 32); // #973620
 $color-light-blue: rgb(229, 238, 244); // #e5eef4
 $color-medium-blue: rgb(46, 91, 132); // #2e5b84
@@ -30,7 +32,7 @@ $space4: ($space2 + $space3);
 
 $box-shadow: 3px 3px 3px $color-gray;
 $details-summary-left-space: 1.5rem;
-$filetypes: doc, page, post;
+$filetypes: doc, docx, html, page, pdf, post, ppt, pptx, rtf, txt, xls, xlsx, zip;
 $line-height0: 1.1;
 $line-height1: 1.3;
 $link-icon-padding: 1.3rem;
