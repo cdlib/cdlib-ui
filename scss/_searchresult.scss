@@ -26,8 +26,9 @@
   }
 
   mark {
-    background-color: $color-light-tan;
-    color: $color-black;
+    background-color: transparent;
+    color: $color-light-black;
+    font-weight: bold;
   }
 }
 
