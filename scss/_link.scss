@@ -1,6 +1,123 @@
-// ***** Link Objects ***** //
+// ***** Links ***** //
 
-%o-link__icon {
+// Default styling:
+
+a {
+  color: $color-blue;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// Default with switched underline behavior:
+
+a.o-link2 {
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Black with switched underline behavior:
+
+a.o-link3 {
+  color: $color-light-black;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Black with default underline behavior:
+
+a.o-link4 {
+  color: $color-light-black;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: $color-blue;
+  }
+}
+
+// File type icons:
+
+a:is([href$='.pdf'], [href$='.doc'], [href$='.xls'], [href$='.txt'], [href$='.zip'], [href$='.rtf']) {
+
+  &::after {
+    content: '';
+    display: inline-flex;
+    align-items: center;
+    block-size: 1rem;
+    margin-inline-start: 0.4rem;
+    padding-inline: 0.2rem;
+    transform: translateY(-0.1rem);
+    color: $color-white;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+}
+
+a[href$='.pdf'] {
+
+  &::after {
+    content: 'pdf';
+    background-color: $color-light-red;
+  }
+}
+
+a[href$='.doc'] {
+
+  &::after {
+    content: 'doc';
+    background-color: $color-teal;
+  }
+}
+
+a[href$='.xls'] {
+
+  &::after {
+    content: 'xls';
+    background-color: $color-green;
+  }
+}
+
+a[href$='.txt'] {
+  
+  &::after {
+    content: 'txt';
+    background-color: $color-dark-gray;
+  }
+}
+
+a[href$='.zip'] {
+  
+  &::after {
+    content: 'zip';
+    background-color: $color-dark-gray;
+  }
+}
+
+a[href$='.rtf'] {
+  
+  &::after {
+    content: 'rtf';
+    background-color: $color-dark-gray;
+  }
+}
+
+// External, mailto and secured icons:
+
+a:is([data-wpel-link='external'], [href^='mailto:'], [href^='https://sp.ucop.edu']) {
 
   &::after {
     content: '';
@@ -8,101 +125,41 @@
     block-size: 0.9rem;
     inline-size: 0.9rem;
     margin-inline-start: 0.4rem;
+    transform: translateY(0.05rem);
     mask-size: 0.9rem;
     mask-position: center;
     mask-repeat: no-repeat;
-    transform: translateY(0.05rem);
   }
 }
 
-%o-link__type {
+a[data-wpel-link='external'] {
 
   &::after {
-    margin-left: 0.5em;
+    background-color: $color-gold;
+    mask-image: url('data-url:../icons/external-link-alt.svg');
   }
-
 }
 
-%o-link {
-  // General link icons:
+a[href^='mailto:'] {
 
-  &[data-wpel-link='external'] {
-    @extend %o-link__icon;
-
-    &::after {
-      background-color: $color-gold;
-      mask-image: url('data-url:../icons/external-link-alt.svg');
-    }
+  &::after {
+    background-color: $color-gold;
+    mask-image: url('data-url:../icons/envelope.svg');
   }
-
-  &[href^='mailto:'] {
-    @extend %o-link__icon;
-
-    &::after {
-      background-color: $color-gold;
-      mask-image: url('data-url:../icons/envelope.svg');
-    }
-  }
-
-  &[href^='https://sp.ucop.edu'] {
-    @extend %o-link__icon;
-    @include u-disable-filetype-link-icon;
-
-    &::after {
-      background-color: $color-red;
-      mask-size: 0.8rem;
-      mask-image: url('data-url:../icons/lock.svg');
-    }
-  }
-
-  // File type link icons:
-
-  @each $filetype in $filetypes {
-
-    @if $filetype != 'html' {
-
-      &[href$='.#{$filetype}'] {
-
-        &::after {
-          @extend %o-docicon__#{$filetype};
-          content: '#{$filetype}';
-          margin-left: 0.5em;
-        }
-
-      }
-
-    }
-
-  }
-
 }
 
-// Default link styling:
+a[href^='https://sp.ucop.edu'] {
 
-%o-link1 {
-  @extend %o-link;
-  color: $color-blue;
-
-  &:focus,
-  &:hover {
-    text-decoration: none;
+  &::after {
+    background-color: $color-red;
+    mask-size: 0.8rem;
+    mask-image: url('data-url:../icons/lock.svg');
   }
-
-  @media print {
-    @include u-disable-general-link-icon;
-    @include u-disable-filetype-link-icon;
-  }
-
-}
-
-a {
-  @extend %o-link1;
 }
 
 // Alternative link styling:
 
 %o-link2 {
-  @extend %o-link;
   color: $color-blue;
   text-decoration: none;
 
