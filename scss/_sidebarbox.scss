@@ -12,21 +12,16 @@
       border-bottom: 1px solid $color-gray;
       font-weight: 500;
     }
-
   }
 
-  ul {
+  a {
+    display: flex; // position link icons to right of sidebarbox container
+    justify-content: space-between; // " "
+    text-decoration: none;
 
-    li {
-
-      a {
-        @extend %o-link2;
-        // position link icons to right of sidebarbox container:
-        display: block;
-      }
-
+    &:focus,
+    &:hover {
+      text-decoration: underline;
     }
-
   }
-
 }

@@ -47,12 +47,18 @@ $headernav-item-margin: $space3;
   > ul > li > a {
 
     @include screen2 {
-      @include o-link4;
       padding: $space1;
       background: linear-gradient($color-light-gray, $color-gray);
+      color: var(--color-light-black);
       text-align: center;
-    }
+      text-decoration: none;
 
+      &:focus,
+      &:hover {
+        color: var(--color-blue);
+        text-decoration: underline;
+      }
+    }
   }
 
   // Panels:
@@ -88,9 +94,14 @@ $headernav-item-margin: $space3;
 
   // Panel list links:
   > ul > li > ul > li > a {
-    @extend %o-link2;
     margin-bottom: $headernav-item-margin;
     color: $color-red;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   // Panel sub-list 'heading' links:
@@ -107,7 +118,12 @@ $headernav-item-margin: $space3;
 
    // Panel sub-list links:
   > ul > li > ul > li > ul > li > a {
-    @extend %o-link2;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   // All panel list items:

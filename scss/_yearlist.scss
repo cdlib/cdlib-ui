@@ -13,13 +13,16 @@ $yearlist-border-size: 1px;
     margin-top: -($yearlist-border-size);
     margin-left: -($yearlist-border-size);
     border: $yearlist-border-size solid $color-blue;
-
-    a {
-      @extend %o-link2;
-      display: block;
-      padding: $space2;
-    }
-
   }
 
+  a {
+    display: block;
+    padding: $space2;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

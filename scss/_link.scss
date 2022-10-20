@@ -3,46 +3,12 @@
 // Default styling:
 
 a {
-  color: $color-blue;
+  color: var(--color-blue);
+  text-decoration: underline;
 
   &:focus,
   &:hover {
     text-decoration: none;
-  }
-}
-
-// Default with switched underline behavior:
-
-a.o-link2 {
-  text-decoration: none;
-
-  &:focus,
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-// Black with switched underline behavior:
-
-a.o-link3 {
-  color: $color-light-black;
-  text-decoration: none;
-
-  &:focus,
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-// Black with default underline behavior:
-
-a.o-link4 {
-  color: $color-light-black;
-  text-decoration: none;
-
-  &:focus,
-  &:hover {
-    color: $color-blue;
   }
 }
 
@@ -155,51 +121,4 @@ a[href^='https://sp.ucop.edu'] {
     mask-size: 0.8rem;
     mask-image: url('data-url:../icons/lock.svg');
   }
-}
-
-// Alternative link styling:
-
-%o-link2 {
-  color: $color-blue;
-  text-decoration: none;
-
-  &:focus,
-  &:hover {
-    text-decoration: underline;
-  }
-
-}
-
-.o-link2 {
-  @extend %o-link2;
-}
-
-@mixin o-link3 {
-  color: $color-light-black;
-  text-decoration: none;
-
-  &:focus,
-  &:hover {
-    text-decoration: underline;
-  }
-
-}
-
-.o-link3 {
-  @include o-link3;
-}
-
-@mixin o-link4 {
-  color: $color-light-black;
-  text-decoration: none;
-
-  &:focus,
-  &:hover {
-    color: $color-blue;
-  }
-
-}
-
-.o-link4 {
-  @include o-link4;
 }

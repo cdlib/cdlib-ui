@@ -7,10 +7,6 @@
     display: flex;
     flex-wrap: wrap;
   }
-
-  a {
-    @extend %o-link2;
-  }
 }
 
 .c-postnav__newer,
@@ -20,6 +16,12 @@
     display: inline-flex;
     align-items: center;
     gap: $space1;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
 
     &::before,
     &::after {
