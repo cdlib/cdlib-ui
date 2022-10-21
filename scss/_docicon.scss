@@ -1,32 +1,27 @@
 // ***** Document Icon Objects ***** //
 
-@each $filetype in $filetypes {
+.o-docicon__doc,
+.o-docicon__page,
+.o-docicon__post {
+  display: inline-block;
+  padding: 0.2rem 0.2rem 0.05rem 0.3rem;
+  color: $color-white;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
 
-  %o-docicon__#{$filetype} {
-    display: inline-block;
-    padding: 0.2rem 0.2rem 0.05rem 0.3rem;
-    color: $color-white;
-    font-family: Consolas, Monaco, monospace;
-    font-size: 0.7em;
-    letter-spacing: 0.1em;
-    line-height: 1;
-    text-transform: uppercase;
-    white-space: nowrap;
+.o-docicon__doc {
+  background-color: $color-light-red;
+}
 
-    @if $filetype == 'doc' {
-      background-color: $color-light-red;
-    }
+.o-docicon__page {
+  background-color: $color-blue;
+}
 
-    @else if $filetype == 'post' {
-      background-color: $color-green;
-    }
-
-    @else { // page default post type
-      background-color: $color-blue;
-    }
-  }
-
-  .o-docicon__#{$filetype} {
-    @extend %o-docicon__#{$filetype};
-  }
+.o-docicon__post {
+  background-color: $color-green;
 }
