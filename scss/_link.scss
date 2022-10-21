@@ -17,18 +17,17 @@ a {
 a:is([href$='.pdf'], [href$='.doc'], [href$='.xls'], [href$='.txt'], [href$='.zip'], [href$='.rtf']) {
 
   &::after {
-    content: '';
     display: inline-flex;
     align-items: center;
     block-size: 1rem;
     margin-inline-start: 0.4rem;
     padding-inline: 0.2rem;
     transform: translateY(-0.1rem);
-    color: $color-white;
+    border: 1px solid $color-light-black;
+    color: $color-light-black;
     font-family: Consolas, Monaco, monospace;
     font-size: 0.6rem;
     letter-spacing: 0.1rem;
-    text-transform: uppercase;
     white-space: nowrap;
   }
 }
@@ -37,7 +36,6 @@ a[href$='.pdf'] {
 
   &::after {
     content: 'pdf';
-    background-color: $color-light-red;
   }
 }
 
@@ -45,7 +43,6 @@ a[href$='.doc'] {
 
   &::after {
     content: 'doc';
-    background-color: $color-teal;
   }
 }
 
@@ -53,7 +50,6 @@ a[href$='.xls'] {
 
   &::after {
     content: 'xls';
-    background-color: $color-green;
   }
 }
 
@@ -61,7 +57,6 @@ a[href$='.txt'] {
   
   &::after {
     content: 'txt';
-    background-color: $color-dark-gray;
   }
 }
 
@@ -69,7 +64,6 @@ a[href$='.zip'] {
   
   &::after {
     content: 'zip';
-    background-color: $color-dark-gray;
   }
 }
 
@@ -77,7 +71,6 @@ a[href$='.rtf'] {
   
   &::after {
     content: 'rtf';
-    background-color: $color-dark-gray;
   }
 }
 
