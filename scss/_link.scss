@@ -14,7 +14,7 @@ a {
 
 // File type icons:
 
-a:is([href$='.pdf'], [href$='.doc'], [href$='.xls'], [href$='.txt'], [href$='.zip'], [href$='.rtf']) {
+a:is([href$='.pdf'], [href$='.doc'], [href$='.docx'], [href$='.xls'], [href$='.xlsx'], [href$='.txt'], [href$='.zip'], [href$='.rtf'] [href$='.ppt'], [href$='.pptx']) {
 
   &::after {
     display: inline-flex;
@@ -46,10 +46,24 @@ a[href$='.doc'] {
   }
 }
 
+a[href$='.docx'] {
+
+  &::after {
+    content: 'docx';
+  }
+}
+
 a[href$='.xls'] {
 
   &::after {
     content: 'xls';
+  }
+}
+
+a[href$='.xlsx'] {
+
+  &::after {
+    content: 'xlsx';
   }
 }
 
@@ -71,6 +85,20 @@ a[href$='.rtf'] {
   
   &::after {
     content: 'rtf';
+  }
+}
+
+a[href$='.ppt'] {
+
+  &::after {
+    content: 'ppt';
+  }
+}
+
+a[href$='.pptx'] {
+
+  &::after {
+    content: 'pptx';
   }
 }
 
