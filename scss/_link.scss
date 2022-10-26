@@ -28,6 +28,7 @@ a:is([href$='.pdf'], [href$='.doc'], [href$='.docx'], [href$='.xls'], [href$='.x
     font-family: Consolas, Monaco, monospace;
     font-size: 0.6rem;
     letter-spacing: 0.1rem;
+    text-transform: uppercase;
     white-space: nowrap;
   }
 }
