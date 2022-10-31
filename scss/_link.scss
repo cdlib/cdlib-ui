@@ -17,12 +17,10 @@ a {
 a:is([href$='.pdf'], [href$='.doc'], [href$='.docx'], [href$='.xls'], [href$='.xlsx'], [href$='.txt'], [href$='.zip'], [href$='.rtf'] [href$='.ppt'], [href$='.pptx']) {
 
   &::after {
-    display: inline-flex;
-    align-items: center;
-    block-size: 1rem;
+    display: inline-block;
     margin-inline-start: 0.4rem;
-    padding-inline: 0.2rem;
-    transform: translateY(-0.1rem);
+    padding: 0.1rem 0.2rem 0.05rem 0.3rem;
+    transform: translateY(-0.15rem);
     border: 1px solid $color-light-black;
     color: $color-light-black;
     font-family: Consolas, Monaco, monospace;
