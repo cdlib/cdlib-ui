@@ -5,7 +5,13 @@
 .c-quicklink1,
 .c-quicklink2 {
   a {
-    @include o-link3;
+    color: var(--color-light-black);
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 

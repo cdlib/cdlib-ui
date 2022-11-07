@@ -13,7 +13,6 @@
       }
 
       a {
-        @extend %o-link2;
         @include u-interactive-element-min-size;
         display: flex;
         align-items: center;
@@ -38,14 +37,15 @@
       @extend %o-heading4;
       margin: 0;
       color: $color-white;
-
-      a {
-        @extend %o-link2;
-        color: inherit;
-      }
-
     }
-
   }
 
+  a {
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

@@ -23,9 +23,13 @@
   a {
 
     @include screen2 {
-      @include o-link3;
+      color: var(--color-light-black);
+      text-decoration: none;
+
+      &:focus,
+      &:hover {
+        text-decoration: underline;
+      }
     }
-
   }
-
 }

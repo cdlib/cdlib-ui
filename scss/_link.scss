@@ -1,6 +1,109 @@
-// ***** Link Objects ***** //
+// ***** Links ***** //
 
-%o-link__icon {
+// Default styling:
+
+a {
+  color: var(--color-blue);
+  text-decoration: underline;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// File type icons:
+
+a:is([href$='.pdf'], [href$='.doc'], [href$='.docx'], [href$='.xls'], [href$='.xlsx'], [href$='.txt'], [href$='.zip'], [href$='.rtf'] [href$='.ppt'], [href$='.pptx']) {
+
+  &::after {
+    display: inline-block;
+    margin-inline-start: 0.4rem;
+    padding: 0.1rem 0.2rem 0.05rem 0.3rem;
+    transform: translateY(-0.15rem);
+    border: 1px solid $color-light-black;
+    color: $color-light-black;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+}
+
+a[href$='.pdf'] {
+
+  &::after {
+    content: 'pdf';
+  }
+}
+
+a[href$='.doc'] {
+
+  &::after {
+    content: 'doc';
+  }
+}
+
+a[href$='.docx'] {
+
+  &::after {
+    content: 'docx';
+  }
+}
+
+a[href$='.xls'] {
+
+  &::after {
+    content: 'xls';
+  }
+}
+
+a[href$='.xlsx'] {
+
+  &::after {
+    content: 'xlsx';
+  }
+}
+
+a[href$='.txt'] {
+  
+  &::after {
+    content: 'txt';
+  }
+}
+
+a[href$='.zip'] {
+  
+  &::after {
+    content: 'zip';
+  }
+}
+
+a[href$='.rtf'] {
+  
+  &::after {
+    content: 'rtf';
+  }
+}
+
+a[href$='.ppt'] {
+
+  &::after {
+    content: 'ppt';
+  }
+}
+
+a[href$='.pptx'] {
+
+  &::after {
+    content: 'pptx';
+  }
+}
+
+// External, mailto and secured icons:
+
+a:is([data-wpel-link='external'], [href^='mailto:'], [href^='https://sp.ucop.edu']) {
 
   &::after {
     content: '';
@@ -8,141 +111,34 @@
     block-size: 0.9rem;
     inline-size: 0.9rem;
     margin-inline-start: 0.4rem;
+    transform: translateY(0.05rem);
     mask-size: 0.9rem;
     mask-position: center;
     mask-repeat: no-repeat;
-    transform: translateY(0.05rem);
   }
 }
 
-%o-link__type {
+a[data-wpel-link='external'] {
 
   &::after {
-    margin-left: 0.5em;
+    background-color: $color-gold;
+    mask-image: url('data-url:../icons/external-link-alt.svg');
   }
-
 }
 
-%o-link {
-  // General link icons:
+a[href^='mailto:'] {
 
-  &[data-wpel-link='external'] {
-    @extend %o-link__icon;
-
-    &::after {
-      background-color: $color-gold;
-      mask-image: url('data-url:../icons/external-link-alt.svg');
-    }
+  &::after {
+    background-color: $color-gold;
+    mask-image: url('data-url:../icons/envelope.svg');
   }
-
-  &[href^='mailto:'] {
-    @extend %o-link__icon;
-
-    &::after {
-      background-color: $color-gold;
-      mask-image: url('data-url:../icons/envelope.svg');
-    }
-  }
-
-  &[href^='https://sp.ucop.edu'] {
-    @extend %o-link__icon;
-    @include u-disable-filetype-link-icon;
-
-    &::after {
-      background-color: $color-red;
-      mask-size: 0.8rem;
-      mask-image: url('data-url:../icons/lock.svg');
-    }
-  }
-
-  // File type link icons:
-
-  @each $filetype in $filetypes {
-
-    @if $filetype != 'html' {
-
-      &[href$='.#{$filetype}'] {
-
-        &::after {
-          @extend %o-docicon__#{$filetype};
-          content: '#{$filetype}';
-          margin-left: 0.5em;
-        }
-
-      }
-
-    }
-
-  }
-
 }
 
-// Default link styling:
+a[href^='https://sp.ucop.edu'] {
 
-%o-link1 {
-  @extend %o-link;
-  color: $color-blue;
-
-  &:focus,
-  &:hover {
-    text-decoration: none;
+  &::after {
+    background-color: $color-red;
+    mask-size: 0.8rem;
+    mask-image: url('data-url:../icons/lock.svg');
   }
-
-  @media print {
-    @include u-disable-general-link-icon;
-    @include u-disable-filetype-link-icon;
-  }
-
-}
-
-a {
-  @extend %o-link1;
-}
-
-// Alternative link styling:
-
-%o-link2 {
-  @extend %o-link;
-  color: $color-blue;
-  text-decoration: none;
-
-  &:focus,
-  &:hover {
-    text-decoration: underline;
-  }
-
-}
-
-.o-link2 {
-  @extend %o-link2;
-}
-
-@mixin o-link3 {
-  color: $color-light-black;
-  text-decoration: none;
-
-  &:focus,
-  &:hover {
-    text-decoration: underline;
-  }
-
-}
-
-.o-link3 {
-  @include o-link3;
-}
-
-@mixin o-link4 {
-  color: $color-light-black;
-  text-decoration: none;
-
-  &:focus,
-  &:hover {
-    color: $color-blue;
-  }
-
-}
-
-.o-link4 {
-  @include o-link4;
 }

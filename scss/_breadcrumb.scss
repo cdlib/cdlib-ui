@@ -60,11 +60,14 @@
         }
       }
     }
-
-    a {
-      @extend %o-link2;
-    }
-
   }
 
+  a {
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

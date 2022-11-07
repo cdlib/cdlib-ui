@@ -1,66 +1,27 @@
 // ***** Document Icon Objects ***** //
 
-@each $filetype in $filetypes {
+.o-docicon__doc,
+.o-docicon__page,
+.o-docicon__post {
+  display: inline-block;
+  padding: 0.2rem 0.2rem 0.05rem 0.3rem;
+  color: $color-white;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
 
-  $docicon-light-red: rgb(219, 0, 0); // #DB0000
-  $docicon-light-blue: rgb(0, 116, 173); // #0074AD
-  $docicon-green: rgb(82, 122, 0); // #527A00
+.o-docicon__doc {
+  background-color: $color-light-red;
+}
 
-  %o-docicon__#{$filetype} {
-    display: inline-block;
-    padding: 0.2rem 0.2rem 0.05rem 0.3rem;
-    color: $color-white;
-    font-family: Consolas, Monaco, monospace;
-    font-size: 0.7em;
-    letter-spacing: 0.1em;
-    line-height: 1;
-    text-transform: uppercase;
-    white-space: nowrap;
+.o-docicon__page {
+  background-color: $color-blue;
+}
 
-    @if $filetype == 'pdf' {
-      background-color: $docicon-light-red;
-    }
-
-    @else if $filetype == 'html' {
-      background-color: $docicon-light-blue;
-    }
-
-    @else if $filetype == 'doc' {
-      background-color: $docicon-light-blue;
-    }
-
-    @else if $filetype == 'docx' {
-      background-color: $docicon-light-blue;
-    }
-
-    @else if $filetype == 'xls' {
-      background-color: $docicon-green;
-    }
-
-    @else if $filetype == 'xlsx' {
-      background-color: $docicon-green;
-    }
-
-    @else if $filetype == 'ppt' {
-      background-color: $color-dark-orange;
-    }
-
-    @else if $filetype == 'pptx' {
-      background-color: $color-dark-orange;
-    }
-
-    @else if $filetype == 'zip' {
-      background-color: $color-light-black;
-    }
-
-    @else {
-      background-color: $color-dark-gray;
-    }
-
-  }
-
-  .o-docicon__#{$filetype} {
-    @extend %o-docicon__#{$filetype};
-  }
-
+.o-docicon__post {
+  background-color: $color-green;
 }

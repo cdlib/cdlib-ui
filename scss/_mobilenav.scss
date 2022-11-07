@@ -15,7 +15,6 @@
       }
 
       a {
-        @include o-link3;
         @include u-interactive-element-min-size;
         display: flex;
         align-items: center;
@@ -23,6 +22,13 @@
         gap: $space2;
         padding-right: $space2;
         padding-left: $space2;
+        color: var(--color-light-black);
+        text-decoration: none;
+
+        &:focus,
+        &:hover {
+          text-decoration: underline;
+        }
 
         &::after {
           content: '';

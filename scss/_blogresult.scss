@@ -10,21 +10,19 @@
   h2 {
     margin-bottom: $space2;
     color: $color-blue;
-
-    a {
-      @extend %o-link2;
-    }
-
   }
 
   p {
     margin-top: 0;
     margin-bottom: $space2;
-
-    a {
-      @extend %o-link2;
-    }
-
   }
 
+  a {
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

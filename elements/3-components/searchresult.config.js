@@ -1,5 +1,5 @@
 const posts = require('../../sample-data/search-results.json')
-const filetypes = ['pdf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'txt', 'zip', 'html', 'rtf']
+const filetypes = ['post', 'page', 'doc', 'page', 'post', 'post', 'doc', 'page', 'page', 'doc', 'post']
 const searchResultData = []
 
 for (const i of posts.keys()) {
