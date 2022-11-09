@@ -9,7 +9,7 @@ $headernav-item-margin: $space3;
   position: relative;
 
   ul {
-    @extend %u-reset-list-styles;
+    @include u-reset-list-styles;
   }
 
   a {

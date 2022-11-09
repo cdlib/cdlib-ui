@@ -3,7 +3,7 @@
 .c-utilitynav {
 
   ul {
-    @extend %u-reset-list-styles;
+    @include u-reset-list-styles;
 
     @include screen2 {
       display: flex;

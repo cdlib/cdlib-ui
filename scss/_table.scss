@@ -20,7 +20,7 @@ table {
   }
 
   td {
-    @extend %u-break-words;
+    @include u-break-words;
   }
 
   thead {

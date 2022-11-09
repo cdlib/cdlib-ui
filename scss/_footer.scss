@@ -21,7 +21,7 @@
   }
 
   ul {
-    @extend %u-reset-list-styles;
+    @include u-reset-list-styles;
   }
 
   a {
@@ -32,6 +32,11 @@
     &:focus,
     &:hover {
       text-decoration: underline;
+    }
+
+    // disable external link icon:
+    &::after {
+      content: none;
     }
   }
 }
@@ -44,7 +49,6 @@
   }
 
   a {
-    @include u-interactive-element-min-size;
     display: flex;
     align-items: center;
     padding: $space1 0;
@@ -123,13 +127,6 @@
     flex-wrap: wrap;
     align-items: center;
     font-size: 0.7rem;
-
-    a {
-      @include u-disable-general-link-icon;
-      margin-right: $space1;
-      font-size: 0.7rem;
-    }
-
   }
 
 }

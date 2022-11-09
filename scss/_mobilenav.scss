@@ -1,7 +1,7 @@
 // ***** Mobile Navigation Component ***** //
 
 .c-mobilenav {
-  @extend %u-reset-list-styles;
+  @include u-reset-list-styles;
 
   @media (max-width: $screen2) {
 
@@ -15,13 +15,11 @@
       }
 
       a {
-        @include u-interactive-element-min-size;
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: $space2;
-        padding-right: $space2;
-        padding-left: $space2;
+        padding: $space2;
         color: var(--color-light-black);
         text-decoration: none;
 

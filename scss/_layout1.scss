@@ -17,11 +17,6 @@
     min-height: auto;
   }
 
-  // This class used only to highlight the grid in layout1.hbs:
-  &.highlight-grid {
-    @extend %u-highlight-grid-areas;
-  }
-
   .c-header {
     grid-area: layout1a;
   }
