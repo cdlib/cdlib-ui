@@ -14,7 +14,7 @@ a {
 
 // File type icons:
 
-a:is([href$='.pdf'], [href$='.doc'], [href$='.docx'], [href$='.xls'], [href$='.xlsx'], [href$='.txt'], [href$='.zip'], [href$='.rtf'] [href$='.ppt'], [href$='.pptx']) {
+a:is([href$='.pdf'], [href$='.doc'], [href$='.docx'], [href$='.xls'], [href$='.xlsx'], [href$='.txt'], [href$='.zip'], [href$='.rtf'], [href$='.ppt'], [href$='.pptx']) {
 
   &::after {
     display: inline-block;
