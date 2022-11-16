@@ -14,12 +14,14 @@
       color: $color-white;
     }
   }
+}
 
-  // WP class to reset all facetWP container <div>s:
+// FacetWP Styles (facetWP plugin stylesheet is loaded in footer, so !important is required to override some styles below):
 
-  .facetwp-facet {
-    margin-bottom: revert;
-  }
+// WP class to reset all facetWP container <div>s:
+
+.facetwp-facet {
+  margin-block-end: 0 !important;
 }
 
 // WP classes for facetWP radio containers <div>
