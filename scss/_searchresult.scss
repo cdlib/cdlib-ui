@@ -10,15 +10,6 @@
   margin-bottom: $space4;
   column-gap: $space2;
 
-  a {
-    color: $color-blue;
-
-    // disable link icon:
-    &::after {
-      content: none;
-    }
-  }
-
   h2 {
     display: inline-block;
     grid-area: result-heading;
@@ -26,10 +17,6 @@
 
     a {
       color: $color-blue;
-
-      &::after {
-        font-size: 0.75rem;
-      }
     }
   }
 
