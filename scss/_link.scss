@@ -14,131 +14,97 @@ a {
 
 // File type icons:
 
-a:is([href$='.pdf'], [href$='.doc'], [href$='.docx'], [href$='.xls'], [href$='.xlsx'], [href$='.txt'], [href$='.zip'], [href$='.rtf'], [href$='.ppt'], [href$='.pptx']) {
-
-  &::after {
-    display: inline-block;
-    margin-inline-start: 0.4rem;
-    padding: 0.1rem 0.2rem 0.05rem 0.3rem;
-    transform: translateY(-0.15rem);
-    border: 1px solid $color-light-black;
-    color: $color-light-black;
-    font-family: Consolas, Monaco, monospace;
-    font-size: 0.6rem;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-    white-space: nowrap;
-  }
+a[href$='.pdf']::after,
+a[href$='.doc']::after,
+a[href$='.docx']::after,
+a[href$='.xls']::after,
+a[href$='.xlsx']::after,
+a[href$='.txt']::after,
+a[href$='.zip']::after,
+a[href$='.rtf']::after,
+a[href$='.ppt']::after,
+a[href$='.pptx']::after {
+  display: inline-block;
+  margin-inline-start: 0.4rem;
+  padding: 0.1rem 0.2rem 0.05rem 0.3rem;
+  transform: translateY(-0.15rem);
+  border: 1px solid $color-light-black;
+  color: $color-light-black;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
-a[href$='.pdf'] {
-
-  &::after {
-    content: 'pdf';
-  }
+a[href$='.pdf']::after {
+  content: 'pdf';
 }
 
-a[href$='.doc'] {
-
-  &::after {
-    content: 'doc';
-  }
+a[href$='.doc']::after {
+  content: 'doc';
 }
 
-a[href$='.docx'] {
-
-  &::after {
-    content: 'docx';
-  }
+a[href$='.docx']::after {
+  content: 'docx';
 }
 
-a[href$='.xls'] {
-
-  &::after {
-    content: 'xls';
-  }
+a[href$='.xls']::after {
+  content: 'xls';
 }
 
-a[href$='.xlsx'] {
-
-  &::after {
-    content: 'xlsx';
-  }
+a[href$='.xlsx']::after {
+  content: 'xlsx';
 }
 
-a[href$='.txt'] {
-  
-  &::after {
-    content: 'txt';
-  }
+a[href$='.txt']::after {
+  content: 'txt';
 }
 
-a[href$='.zip'] {
-  
-  &::after {
-    content: 'zip';
-  }
+a[href$='.zip']::after {
+  content: 'zip';
 }
 
-a[href$='.rtf'] {
-  
-  &::after {
-    content: 'rtf';
-  }
+a[href$='.rtf']::after {
+  content: 'rtf';
 }
 
-a[href$='.ppt'] {
-
-  &::after {
-    content: 'ppt';
-  }
+a[href$='.ppt']::after {
+  content: 'ppt';
 }
 
-a[href$='.pptx'] {
-
-  &::after {
-    content: 'pptx';
-  }
+a[href$='.pptx']::after {
+  content: 'pptx';
 }
 
 // External, mailto and secured icons:
 
-a:is([data-wpel-link='external'], [href^='mailto:'], [href^='https://sp.ucop.edu']) {
-
-  &::after {
-    content: '';
-    display: inline-block;
-    block-size: 0.9rem;
-    inline-size: 0.9rem;
-    margin-inline-start: 0.4rem;
-    transform: translateY(0.05rem);
-    mask-size: 0.9rem;
-    mask-position: center;
-    mask-repeat: no-repeat;
-  }
+a[data-wpel-link='external']::after,
+a[href^='mailto:']::after,
+a[href^='https://sp.ucop.edu']::after {
+  content: '';
+  display: inline-block;
+  block-size: 0.9rem;
+  inline-size: 0.9rem;
+  margin-inline-start: 0.4rem;
+  transform: translateY(0.05rem);
+  mask-size: 0.9rem;
+  mask-position: center;
+  mask-repeat: no-repeat;
 }
 
-a[data-wpel-link='external'] {
-
-  &::after {
-    background-color: $color-gold;
-    mask-image: url('data-url:../icons/external-link-alt.svg');
-  }
+a[data-wpel-link='external']::after {
+  background-color: $color-gold;
+  mask-image: url('data-url:../icons/external-link-alt.svg');
 }
 
-a[href^='mailto:'] {
-
-  &::after {
-    background-color: $color-gold;
-    mask-image: url('data-url:../icons/envelope.svg');
-  }
+a[href^='mailto:']::after {
+  background-color: $color-gold;
+  mask-image: url('data-url:../icons/envelope.svg');
 }
 
-a[href^='https://sp.ucop.edu'] {
-
-  &::after {
-    background-color: $color-red;
-    mask-size: 0.8rem;
-    mask-image: url('data-url:../icons/lock.svg');
-  }
+a[href^='https://sp.ucop.edu']::after {
+  background-color: $color-red;
+  mask-size: 0.8rem;
+  mask-image: url('data-url:../icons/lock.svg');
 }
