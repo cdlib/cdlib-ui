@@ -11,7 +11,7 @@ for (const i of posts.keys()) {
   const postTitle = posts[i].title.rendered
   const postLink = posts[i].link
   const postExcerpt = posts[i].excerpt.rendered
-  const postExcpertReformatted = postExcerpt.replaceAll('<em>', '<mark>').replaceAll('</em>', '</mark>')
+  const postExcpertReformatted = postExcerpt.replaceAll('<em>', '<mark>').replaceAll('</em>', '</mark>').replaceAll('<p>', '').replaceAll('</p>', '')
 
   searchResultData.push({
     searchresultheading: {
