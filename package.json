@@ -5,7 +5,6 @@
   "scripts": {
     "serve": "npm-run-all clean --parallel parcel-dev fractal-dev watchstyles watchjs --silent",
     "build": "run-s clean parcel-build fractal-build lintstyles lintjs --silent",
-    "publish": "run-s clean parcel-build fractal-build lintstyles lintjs github-pages --silent",
     "clean": "del dist ui-assets",
     "fractal-dev": "fractal start --sync --watch",
     "fractal-build": "fractal build",
@@ -15,7 +14,6 @@
     "watchjs": "onchange -i js/* -- npm run lintjs",
     "lintstyles": "stylelint scss/*",
     "lintjs": "standard js/* --verbose | snazzy || exit 0",
-    "github-pages": "gh-pages -d dist",
     "push-assets-local": "rsync -rvu --delete --exclude '.DS_Store' dist/ui-assets ~/'Local Sites'/cdlib/app/public/wp-content/themes/cdlib",
     "push-assets-dev": "rsync -rvu --delete --exclude '.DS_Store' ./dist/ui-assets cdlib@web-cdlib2x2-dev.cdlib.org:/apps/cdlib/apache/htdocs/wp-content/themes/cdlib",
     "push-assets-stage": "rsync -rvu --delete --exclude '.DS_Store' ./dist/ui-assets cdlib@web-cdlib2x2-stg-2a.cdlib.org:/apps/cdlib/apache/htdocs/wp-content/themes/cdlib",
@@ -54,7 +52,6 @@
     "del-cli": "^4.0.1",
     "faker": "^4.1.0",
     "format-json-files": "^1.0.6",
-    "gh-pages": "^4.0.0",
     "http-server": "^14.1.0",
     "modern-normalize": "^1.1.0",
     "npm-run-all": "^4.1.5",
