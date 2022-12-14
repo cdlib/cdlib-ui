@@ -1,4 +1,4 @@
-const faker = require('faker/locale/en');
+const { faker } = require('@faker-js/faker/locale/en');
 const fakerList1 = [];
 
 for (var i = 0; i < 5; i++) {

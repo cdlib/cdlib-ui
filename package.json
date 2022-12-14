@@ -42,6 +42,7 @@
   },
   "homepage": "https://github.com/cdlib/cdlib-ui#readme",
   "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
     "@frctl/fractal": "^1.5.13",
     "@frctl/mandelbrot": "^1.4.0",
     "@parcel/optimizer-data-url": "^2.8.0",
@@ -50,7 +51,6 @@
     "@parcel/transformer-sass": "^2.8.0",
     "@percy/cli": "^1.2.1",
     "del-cli": "^4.0.1",
-    "faker": "^4.1.0",
     "format-json-files": "^1.0.6",
     "http-server": "^14.1.0",
     "modern-normalize": "^1.1.0",

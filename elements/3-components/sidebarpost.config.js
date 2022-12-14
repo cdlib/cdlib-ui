@@ -1,4 +1,4 @@
-const faker = require('faker/locale/en');
+const { faker } = require('@faker-js/faker/locale/en');
 const fakerData1 = [];
 const authorUrls = ['https://www.cdlib.org/cdlinfo/author/abrin/', 'https://www.cdlib.org/cdlinfo/author/bhui/', 'https://www.cdlib.org/cdlinfo/author/cli/', 'https://www.cdlib.org/cdlinfo/author/dlowenberg/', 'https://www.cdlib.org/cdlinfo/author/eproulx/'];
 const authorNames = ['Adam Brin', 'Barbara Hui', 'Chan Li', 'Daniella Lowenberg', 'Elise Proulx'];
@@ -11,7 +11,7 @@ for (var i = 0; i < authorUrls.length; i++) {
     select: {
       option: {
         value: authorUrls[i],
-        label: authorNames[i] + ' (' + faker.random.number({min: 1, max: 20}) + ')'
+        label: authorNames[i] + ' (' + faker.datatype.number({min: 1, max: 20}) + ')'
       }
     }
   });
@@ -22,7 +22,7 @@ for (var i = 0; i < monthUrls.length; i++) {
     select: {
       option: {
         value: monthUrls[i],
-        label: months[i] + ' 2019' + ' (' + faker.random.number({min: 1, max: 20}) + ')'
+        label: months[i] + ' 2019' + ' (' + faker.datatype.number({min: 1, max: 20}) + ')'
       }
     }
   });

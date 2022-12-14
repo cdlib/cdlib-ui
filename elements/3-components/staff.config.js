@@ -1,4 +1,4 @@
-const faker = require('faker/locale/en');
+const { faker } = require('@faker-js/faker/locale/en');
 const program = ['UC Curation Center (UC3)', 'Collection Development & Management', 'Infrastructure and Applications Support', 'Discovery & Delivery', 'Shared Cataloging Program (UC San Diego)', 'Collection Development & Management - Mass Digitization', 'Business Services'];
 const tableData = []
 

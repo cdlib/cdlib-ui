@@ -1,11 +1,11 @@
-const faker = require('faker/locale/en');
-const fakerData = [];
+const years = [];
+const currentYear = new Date().getFullYear();
 
 for (var i = 0; i < 22; i++) {
-  fakerData.push({
+  years.push({
     link: {
-      text: 2018 - i,
-      url: '#' + (2018 - i)
+      text: currentYear - i,
+      url: '#' + (currentYear - i)
     }
   });
 }
@@ -13,6 +13,6 @@ for (var i = 0; i < 22; i++) {
 module.exports = {
   label: 'Year Anchor List',
   context: {
-    list: fakerData
+    list: years
   }
 };

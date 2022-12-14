@@ -1,4 +1,4 @@
-const faker = require('faker/locale/en');
+const { faker } = require('@faker-js/faker/locale/en');
 const tableHeader = [];
 const tableData = [];
 const tableHeaderLabels = ['Country', 'Latitude', 'Longitude', 'City', 'Product', 'Inventory ID'];
