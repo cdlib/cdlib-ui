@@ -1,7 +1,7 @@
 // ***** Slideshow Component ***** //
 
 @mixin slideshow-caption-bg {
-  background-color: rgba($color-medium-blue, 0.9);
+  background-color: rgb(var(--color-medium-blue) / 90%);
 }
 
 $slideshow-caption-width: 20rem;
@@ -39,7 +39,7 @@ $slideshow-caption-width: 20rem;
   grid-row: 2;
   align-items: center;
   justify-content: space-evenly;
-  border-top: 1px solid $color-white;
+  border-top: 1px solid rgb(var(--color-white));
 
   @include screen1 {
     margin: 0 $space2 $space2 $space2;
@@ -54,7 +54,7 @@ $slideshow-caption-width: 20rem;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 0.8em;
-    color: $color-light-gold;
+    color: rgb(var(--color-light-gold));
     cursor: pointer;
 
     span {
@@ -72,7 +72,7 @@ $slideshow-caption-width: 20rem;
     flex: none;
     block-size: 100%; // size relative to button size defined in '.c-slideshow__controls button' selector above
     inline-size: 100%; // " "
-    background-color: $color-light-gold;
+    background-color: rgb(var(--color-light-gold));
     mask-size: 0.8rem;
     mask-position: center;
     mask-repeat: no-repeat;
@@ -96,8 +96,8 @@ $slideshow-caption-width: 20rem;
 .c-slideshow__goto {
 
   &[aria-current] {
-    background-color: $color-white;
-    color: $color-medium-blue;
+    background-color: rgb(var(--color-white));
+    color: rgb(var(--color-medium-blue));
   }
 }
 
@@ -116,7 +116,7 @@ $slideshow-caption-width: 20rem;
   grid-row: 1;
   flex-direction: column;
   padding: $space2;
-  color: $color-white;
+  color: rgb(var(--color-white));
 
   @include screen1 {
     margin: $space2 $space2 0 $space2;
@@ -160,7 +160,7 @@ $slideshow-caption-width: 20rem;
 
     // if there's a link in the copy:
     a {
-      color: $color-light-gold;
+      color: rgb(var(--color-light-gold));
       text-decoration: underline;
 
       &:focus,
@@ -182,7 +182,7 @@ $slideshow-caption-width: 20rem;
       max-width: 50%;
       margin-left: $slideshow-caption-width;
       padding: $space2;
-      background-color: rgba($color-black, 0.6);
+      background-color: rgb(var(--color-black) / 60%);
       font-size: 1em;
       text-align: right;
     }

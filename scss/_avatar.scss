@@ -4,7 +4,7 @@
   margin-bottom: $space3;
   margin-left: $space3;
   float: right;
-  border: 1px solid $color-black;
+  border: 1px solid rgb(var(--color-black));
 
   @include screen1 {
     margin-right: 3vw;

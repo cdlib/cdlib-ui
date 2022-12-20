@@ -6,7 +6,7 @@
   justify-content: space-between;
   gap: $space2;
   padding: $space2;
-  border: 1px solid $color-blue;
+  border: 1px solid rgb(var(--color-blue));
   text-decoration: none;
 
   &:focus,

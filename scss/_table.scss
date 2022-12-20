@@ -11,7 +11,7 @@ table {
   td {
     padding: $space2;
     overflow: hidden;
-    border: 1px solid $color-gray;
+    border: 1px solid rgb(var(--color-gray));
     vertical-align: top;
   }
 
@@ -26,8 +26,8 @@ table {
   thead {
 
     th {
-      background-color: $color-light-blue;
-      color: $color-red;
+      background-color: rgb(var(--color-light-blue));
+      color: rgb(var(--color-red));
     }
 
   }
@@ -37,7 +37,7 @@ table {
     th {
 
       &:first-child {
-        background-color: $color-light-gray;
+        background-color: rgb(var(--color-light-gray));
         font-weight: 600;
       }
 
@@ -51,7 +51,7 @@ table {
     th,
     td {
       padding: $space2 !important;
-      border: 1px solid $color-gray !important;
+      border: 1px solid rgb(var(--color-gray)) !important;
       text-align: middle !important;
     }
 
@@ -62,15 +62,15 @@ table {
     thead {
 
       th {
-        background-color: $color-light-blue !important;
+        background-color: rgb(var(--color-light-blue)) !important;
 
         &:focus {
-          outline: solid 1px $color-blue;
+          outline: solid 1px rgb(var(--color-blue));
         }
 
         &:focus,
         &:hover {
-          background-color: $color-light-blue !important;
+          background-color: rgb(var(--color-light-blue)) !important;
         }
 
       }

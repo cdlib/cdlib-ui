@@ -19,8 +19,8 @@
     padding: $space2;
     gap: $space2;
     border-style: none;
-    background-color: $color-blue;
-    color: $color-white;
+    background-color: rgb(var(--color-blue));
+    color: rgb(var(--color-white));
     cursor: pointer;
 
     &::after {
@@ -28,7 +28,7 @@
       flex: none;
       block-size: 1rem;
       inline-size: 1rem;
-      background-color: $color-white;
+      background-color: rgb(var(--color-white));
       mask: url('data-url:../icons/external-link-alt.svg') center / contain;
     }
   }

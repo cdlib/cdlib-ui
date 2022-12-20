@@ -6,8 +6,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, auto));
   grid-template-rows: 1fr auto;
-  border: 1px solid $color-darker-gray;
-  background-color: $color-darker-gray;
+  border: 1px solid rgb(var(--color-darker-gray));
+  background-color: rgb(var(--color-darker-gray));
   direction: rtl;
 
   figcaption {
@@ -16,13 +16,13 @@
     flex-direction: column;
     justify-content: space-between;
     padding: $space2;
-    color: $color-white;
+    color: rgb(var(--color-white));
     line-height: $line-height1;
     text-align: left;
 
     a {
       margin-top: $space2;
-      color: $color-light-gold;
+      color: rgb(var(--color-light-gold));
     }
 
   }

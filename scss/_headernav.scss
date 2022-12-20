@@ -36,7 +36,7 @@ $headernav-item-margin: $space3;
 
       // Nav bar main items:
       &:not(:last-child) {
-        border-right: 1px solid $color-dark-gray;
+        border-right: 1px solid rgb(var(--color-dark-gray));
       }
 
     }
@@ -48,14 +48,14 @@ $headernav-item-margin: $space3;
 
     @include screen2 {
       padding: $space1;
-      background: linear-gradient($color-light-gray, $color-gray);
-      color: var(--color-light-black);
+      background: linear-gradient(rgb(var(--color-light-gray)), rgb(var(--color-gray)));
+      color: rgb(var(--color-light-black));
       text-align: center;
       text-decoration: none;
 
       &:focus,
       &:hover {
-        color: var(--color-blue);
+        color: rgb(var(--color-blue));
         text-decoration: underline;
       }
     }
@@ -67,12 +67,12 @@ $headernav-item-margin: $space3;
     position: absolute;
     padding: $headernav-section-padding;
     column-gap: $headernav-section-padding * 2;
-    column-rule: 1px solid $color-gray;
+    column-rule: 1px solid rgb(var(--color-gray));
     column-width: 9.5em;
-    border-right: 1px solid $color-gray;
-    border-bottom: 1px solid $color-gray;
-    border-left: 1px solid $color-gray;
-    background-color: $color-light-gray;
+    border-right: 1px solid rgb(var(--color-gray));
+    border-bottom: 1px solid rgb(var(--color-gray));
+    border-left: 1px solid rgb(var(--color-gray));
+    background-color: rgb(var(--color-light-gray));
     box-shadow: $box-shadow;
   }
 
@@ -95,7 +95,7 @@ $headernav-item-margin: $space3;
   // Panel list links:
   > ul > li > ul > li > a {
     margin-bottom: $headernav-item-margin;
-    color: $color-red;
+    color: rgb(var(--color-red));
     text-decoration: none;
 
     &:focus,
@@ -106,7 +106,7 @@ $headernav-item-margin: $space3;
 
   // Panel sub-list 'heading' links:
   > ul > li > ul > li > a:only-child {
-    color: $color-blue;
+    color: rgb(var(--color-blue));
   }
 
   // Panel sub-lists:

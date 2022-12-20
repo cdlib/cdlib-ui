@@ -15,7 +15,7 @@
   }
 
   ul ul ul {
-    border-top: 1px solid $color-gray;
+    border-top: 1px solid rgb(var(--color-gray));
 
     // 2nd level list:
     a {
@@ -44,7 +44,7 @@
 
   // sass-lint:disable class-name-format
   .current_page_item > a {
-    background-color: $color-light-blue;
+    background-color: rgb(var(--color-light-blue));
   }
 
 }

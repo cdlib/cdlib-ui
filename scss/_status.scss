@@ -1,13 +1,5 @@
 // ***** System Status Component ***** //
 
-$status-color-green: #080;
-$status-color-orange: #ffa500;
-$status-color-red: #f00;
-
-%c-status__indicator-opacity {
-  opacity: 1;
-}
-
 .c-status {
   table-layout: auto;
 
@@ -43,8 +35,8 @@ $status-color-red: #f00;
   &.up {
 
     &::before {
-      @extend %c-status__indicator-opacity;
-      background-color: $status-color-green;
+      opacity: 1;
+      background-color: rgb(var(--color-green));
     }
 
   }
@@ -52,8 +44,8 @@ $status-color-red: #f00;
   &.partial {
 
     &::before {
-      @extend %c-status__indicator-opacity;
-      background-color: $status-color-orange;
+      opacity: 1;
+      background-color: rgb(var(--color-orange));
     }
 
   }
@@ -61,8 +53,8 @@ $status-color-red: #f00;
   &.down {
 
     &::before {
-      @extend %c-status__indicator-opacity;
-      background-color: $status-color-red;
+      opacity: 1;
+      background-color: rgb(var(--color-light-red));
     }
 
   }

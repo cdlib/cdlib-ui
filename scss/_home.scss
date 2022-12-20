@@ -48,7 +48,7 @@
     > * {
       // sass-lint:disable property-sort-order
       all: unset;
-      background-color: $color-light-blue;
+      background-color: rgb(var(--color-light-blue));
     }
 
   }

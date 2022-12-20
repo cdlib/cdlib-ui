@@ -5,14 +5,14 @@
   &:not(:last-child) {
     margin-right: 0.5em;
     padding-right: 0.5em;
-    border-right: 1px solid $color-light-black;
+    border-right: 1px solid rgb(var(--color-light-black));
   }
 
 }
 
 .c-footer {
   margin-bottom: $space2;
-  border-top: 1px solid $color-gray;
+  border-top: 1px solid rgb(var(--color-gray));
 
   @media print {
     margin-top: $space2;
@@ -25,7 +25,7 @@
   }
 
   a {
-    color: var(--color-light-black);
+    color: rgb(var(--color-light-black));
     font-size: 0.9rem;
     text-decoration: none;
 
@@ -97,8 +97,8 @@
   margin-bottom: $space2;
   padding-top: $space2;
   padding-bottom: $space2;
-  border-top: 1px solid $color-gray;
-  border-bottom: 1px solid $color-gray;
+  border-top: 1px solid rgb(var(--color-gray));
+  border-bottom: 1px solid rgb(var(--color-gray));
 
   @media print {
     display: none;

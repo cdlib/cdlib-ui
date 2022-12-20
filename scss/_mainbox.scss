@@ -4,12 +4,12 @@
   margin-top: $space3;
   margin-bottom: $space3;
   padding: $space2;
-  border: 1px solid $color-gray;
+  border: 1px solid rgb(var(--color-gray));
 
   header {
     margin: (-$space2) (-$space2) $space3;
     padding: $space2;
-    background-color: $color-light-blue;
+    background-color: rgb(var(--color-light-blue));
 
     h2 {
       @extend %o-heading3;
@@ -22,11 +22,11 @@
   h3 {
     @extend %o-heading3;
     margin-top: $space3;
-    color: $color-blue;
+    color: rgb(var(--color-blue));
 
     &:not(:first-of-type) {
       padding-top: $space3;
-      border-top: 1px solid $color-gray;
+      border-top: 1px solid rgb(var(--color-gray));
     }
 
   }

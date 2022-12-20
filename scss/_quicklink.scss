@@ -5,7 +5,7 @@
 .c-quicklink1,
 .c-quicklink2 {
   a {
-    color: var(--color-light-black);
+    color: rgb(var(--color-light-black));
     text-decoration: none;
 
     &:focus,
@@ -34,7 +34,7 @@
       flex: none;
       block-size: 1.3rem;
       inline-size: 1.3rem;
-      background-color: $color-gold;
+      background-color: rgb(var(--color-gold));
       mask: url('data-url:../icons/external-link-alt.svg') center / 1.3rem;
     }
   }

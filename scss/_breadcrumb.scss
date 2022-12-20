@@ -33,7 +33,7 @@
         block-size: 1.2rem;
         inline-size: 1.2rem;
         margin-inline-end: 0.25rem;
-        background-color: $color-blue;
+        background-color: rgb(var(--color-blue));
         mask: url('data-url:../icons/angle-left-light.svg') center / contain;
       }
 
@@ -55,7 +55,7 @@
           block-size: 1.2rem;
           inline-size: 1.2rem;
           margin-inline-start: 0.25rem;
-          background-color: $color-blue;
+          background-color: rgb(var(--color-blue));
           mask: url('data-url:../icons/angle-right-light.svg') center / contain;
         }
       }

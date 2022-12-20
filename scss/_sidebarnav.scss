@@ -1,7 +1,7 @@
 // ***** Sidebar Navigation Object ***** //
 
 .o-sidebarnav {
-  border: 1px solid $color-blue;
+  border: 1px solid rgb(var(--color-blue));
 
   ul {
     @include u-reset-list-styles;
@@ -9,7 +9,7 @@
     li {
 
       &:not(:last-child) {
-        border-bottom: 1px solid $color-gray;
+        border-bottom: 1px solid rgb(var(--color-gray));
       }
 
       a {
@@ -22,12 +22,12 @@
 
   header {
     padding: $space2;
-    background-color: $color-blue;
+    background-color: rgb(var(--color-blue));
 
     h2 {
       @extend %o-heading4;
       margin: 0;
-      color: $color-white;
+      color: rgb(var(--color-white));
     }
   }
 

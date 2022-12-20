@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding: $space2;
-  border: 1px solid $color-blue;
+  border: 1px solid rgb(var(--color-blue));
 
   @include screen1 {
     flex-direction: row;
@@ -29,7 +29,7 @@
   h2 {
     order: 1;
     margin: 0;
-    color: $color-black;
+    color: rgb(var(--color-black));
     font-size: 1em;
     font-weight: 600;
   }
@@ -86,7 +86,7 @@
     flex: none;
     block-size: 2rem;
     inline-size: 2rem;
-    background-color: $color-black;
+    background-color: rgb(var(--color-black));
     mask-size: 0.8rem;
     mask-position: center;
     mask-repeat: no-repeat;
@@ -95,7 +95,7 @@
   &:focus,
   &:hover {
     &::after {
-      background-color: $color-gold;
+      background-color: rgb(var(--color-gold));
     }
   }
 

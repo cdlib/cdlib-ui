@@ -5,5 +5,5 @@ hr {
   margin-bottom: $space2;
   border-width: 1px;
   border-style: solid none none;
-  border-color: $color-gray;
+  border-color: rgb(var(--color-gray));
 }

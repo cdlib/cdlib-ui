@@ -36,7 +36,7 @@
             flex: none;
             block-size: 1.5rem;
             inline-size: 1.5rem;
-            background-color: $color-gold;
+            background-color: rgb(var(--color-gold));
             mask: url('data-url:../icons/user-circle.svg') center / contain;
           }
 
@@ -54,7 +54,7 @@
     td {
 
       &:first-child {
-        background-color: $color-light-gray;
+        background-color: rgb(var(--color-light-gray));
         font-weight: 600;
       }
 

@@ -23,7 +23,7 @@
   a {
 
     @include screen2 {
-      color: var(--color-light-black);
+      color: rgb(var(--color-light-black));
       text-decoration: none;
 
       &:focus,

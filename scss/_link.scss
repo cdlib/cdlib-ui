@@ -3,7 +3,7 @@
 // Default styling:
 
 a {
-  color: var(--color-blue);
+  color: rgb(var(--color-blue));
   text-decoration: underline;
 
   &:focus,
@@ -28,8 +28,8 @@ a[href$='.pptx']::after {
   margin-inline-start: 0.4rem;
   padding: 0.1rem 0.2rem 0.05rem 0.3rem;
   transform: translateY(-0.15rem);
-  border: 1px solid $color-light-black;
-  color: $color-light-black;
+  border: 1px solid rgb(var(--color-light-black));
+  color: rgb(var(--color-light-black));
   font-family: Consolas, Monaco, monospace;
   font-size: 0.6rem;
   letter-spacing: 0.1rem;
@@ -94,17 +94,17 @@ a[href^='https://sp.ucop.edu']::after {
 }
 
 a[data-wpel-link='external']::after {
-  background-color: $color-gold;
+  background-color: rgb(var(--color-gold));
   mask-image: url('data-url:../icons/external-link-alt.svg');
 }
 
 a[href^='mailto:']::after {
-  background-color: $color-gold;
+  background-color: rgb(var(--color-gold));
   mask-image: url('data-url:../icons/envelope.svg');
 }
 
 a[href^='https://sp.ucop.edu']::after {
-  background-color: $color-red;
+  background-color: rgb(var(--color-red));
   mask-size: 0.8rem;
   mask-image: url('data-url:../icons/lock.svg');
 }

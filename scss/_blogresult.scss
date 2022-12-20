@@ -4,12 +4,12 @@
 
   + .c-blogresult {
     margin-top: $space2;
-    border-top: 1px solid $color-gray;
+    border-top: 1px solid rgb(var(--color-gray));
   }
 
   h2 {
     margin-bottom: $space2;
-    color: $color-blue;
+    color: rgb(var(--color-blue));
   }
 
   p {

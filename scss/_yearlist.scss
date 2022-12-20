@@ -12,7 +12,7 @@ $yearlist-border-size: 1px;
   li {
     margin-top: -($yearlist-border-size);
     margin-left: -($yearlist-border-size);
-    border: $yearlist-border-size solid $color-blue;
+    border: $yearlist-border-size solid rgb(var(--color-blue));
   }
 
   a {

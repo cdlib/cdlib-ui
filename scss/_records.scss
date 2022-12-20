@@ -2,10 +2,10 @@
 
 .c-records {
   margin-bottom: $space3;
-  color: $color-black;
+  color: rgb(var(--color-black));
   font-size: 1em;
 
   strong {
-    color: $color-light-black;
+    color: rgb(var(--color-light-black));
   }
 }
