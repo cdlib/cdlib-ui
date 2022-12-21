@@ -82,19 +82,19 @@ $test3: #080 solid 1px; // green
 // Bleed component to left/right of viewport by equalling <body> left/right padding:
 
 %u-page-bleed {
-  margin-right: (-$space1);
-  margin-left: (-$space1);
+  margin-right: (-var(--space1));
+  margin-left: (-var(--space1));
 
   @include screen2 {
-    margin-right: (-$space2);
-    margin-left: (-$space2);
+    margin-right: (-var(--space2));
+    margin-left: (-var(--space2));
   }
 
 }
 
 @mixin u-sidebar-grid {
   display: grid;
-  grid-gap: $space3;
+  grid-gap: var(--space3);
   align-self: start;
 
   > * {

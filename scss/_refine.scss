@@ -1,11 +1,11 @@
 // ***** Refine Search Component ***** //
 
 .c-refine {
-  margin-bottom: $space3;
+  margin-bottom: var(--space3);
   border: 1px solid rgb(var(--color-blue));
 
   header {
-    padding: $space2;
+    padding: var(--space2);
     background-color: rgb(var(--color-blue));
 
     h2 {
@@ -28,7 +28,7 @@
 
 .facetwp-type-radio,
 .facetwp-type-sort {
-  padding: $space2;
+  padding: var(--space2);
 }
 
 // WP classes for facetWP link <div>
@@ -36,8 +36,8 @@
 .facetwp-link {
   display: flex;
   justify-content: space-between;
-  gap: $space2;
-  padding: $space1 $space2;
+  gap: var(--space2);
+  padding: var(--space1) var(--space2);
   color: rgb(var(--color-blue));
 
   &:hover {

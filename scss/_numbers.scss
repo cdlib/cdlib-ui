@@ -14,7 +14,7 @@
 
       strong {
         width: 50%;
-        padding: $space2 $space2 $space2 0;
+        padding: var(--space2) var(--space2) var(--space2) 0;
         border-right: 3px solid rgb(var(--color-blue));
         font-weight: 600;
         text-align: right;
@@ -22,7 +22,7 @@
 
       a {
         width: 50%;
-        padding: $space2 0 $space2 $space2;
+        padding: var(--space2) 0 var(--space2) var(--space2);
       }
 
     }

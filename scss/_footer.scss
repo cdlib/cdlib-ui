@@ -11,13 +11,13 @@
 }
 
 .c-footer {
-  margin-bottom: $space2;
+  margin-bottom: var(--space2);
   border-top: 1px solid rgb(var(--color-gray));
 
   @media print {
-    margin-top: $space2;
+    margin-top: var(--space2);
     margin-bottom: 0;
-    padding-top: $space2;
+    padding-top: var(--space2);
   }
 
   ul {
@@ -42,7 +42,7 @@
 }
 
 .c-footer__main {
-  margin-bottom: $space2;
+  margin-bottom: var(--space2);
 
   @media print {
     display: none;
@@ -51,13 +51,13 @@
   a {
     display: flex;
     align-items: center;
-    padding: $space1 0;
+    padding: var(--space1) 0;
   }
 
   > ul {
 
     @include screen1 {
-      column-gap: $space2;
+      column-gap: var(--space2);
       column-count: 4;
     }
 
@@ -74,7 +74,7 @@
         width: 100%;
 
         &:not(:last-child) {
-          margin-right: $space2;
+          margin-right: var(--space2);
         }
 
       }
@@ -94,9 +94,9 @@
 }
 
 .c-footer__legal {
-  margin-bottom: $space2;
-  padding-top: $space2;
-  padding-bottom: $space2;
+  margin-bottom: var(--space2);
+  padding-top: var(--space2);
+  padding-bottom: var(--space2);
   border-top: 1px solid rgb(var(--color-gray));
   border-bottom: 1px solid rgb(var(--color-gray));
 

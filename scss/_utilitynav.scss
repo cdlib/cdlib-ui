@@ -13,7 +13,7 @@
     li {
 
       @include screen2 {
-        margin: 0 $space2; 
+        margin: 0 var(--space2); 
       }
 
     }

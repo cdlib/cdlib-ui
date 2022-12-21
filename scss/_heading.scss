@@ -1,8 +1,8 @@
 // ***** heading Objects ***** //
 
 %o-heading {
-  margin-top: $space4;
-  margin-bottom: $space2;
+  margin-top: var(--space4);
+  margin-bottom: var(--space2);
   font-weight: 400;
 
   a {

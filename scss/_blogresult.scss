@@ -3,18 +3,18 @@
 .c-blogresult {
 
   + .c-blogresult {
-    margin-top: $space2;
+    margin-top: var(--space2);
     border-top: 1px solid rgb(var(--color-gray));
   }
 
   h2 {
-    margin-bottom: $space2;
+    margin-bottom: var(--space2);
     color: rgb(var(--color-blue));
   }
 
   p {
     margin-top: 0;
-    margin-bottom: $space2;
+    margin-bottom: var(--space2);
   }
 
   a {

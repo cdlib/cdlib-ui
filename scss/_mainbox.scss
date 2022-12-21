@@ -1,14 +1,14 @@
 // ***** Main Box Component ***** //
 
 .c-mainbox {
-  margin-top: $space3;
-  margin-bottom: $space3;
-  padding: $space2;
+  margin-top: var(--space3);
+  margin-bottom: var(--space3);
+  padding: var(--space2);
   border: 1px solid rgb(var(--color-gray));
 
   header {
-    margin: (-$space2) (-$space2) $space3;
-    padding: $space2;
+    margin: calc(var(--space2) * -1) calc(var(--space2) * -1) var(--space3);
+    padding: var(--space2);
     background-color: rgb(var(--color-light-blue));
 
     h2 {
@@ -21,11 +21,11 @@
 
   h3 {
     @extend %o-heading3;
-    margin-top: $space3;
+    margin-top: var(--space3);
     color: rgb(var(--color-blue));
 
     &:not(:first-of-type) {
-      padding-top: $space3;
+      padding-top: var(--space3);
       border-top: 1px solid rgb(var(--color-gray));
     }
 

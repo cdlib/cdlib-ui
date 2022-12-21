@@ -10,14 +10,14 @@
   }
 
   section {
-    padding: $space2;
+    padding: var(--space2);
     background-image: linear-gradient(rgb(var(--color-lighter-blue)), rgb(var(--color-light-blue)));
 
     @include screen1 {
       flex: 1 1 45%;
 
       &:nth-child(odd) {
-        margin-right: $space2;
+        margin-right: var(--space2);
       }
 
     }
@@ -26,7 +26,7 @@
       flex: 1 1 20%;
 
       &:not(:last-child) {
-        margin-right: $space2;
+        margin-right: var(--space2);
       }
 
     }

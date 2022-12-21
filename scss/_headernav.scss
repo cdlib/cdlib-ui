@@ -2,10 +2,10 @@
 
 // Read notes in component config
 
-$headernav-section-padding: $space3;
-$headernav-item-margin: $space3;
-
 .c-headernav {
+  --headernav-section-padding: var(--space3);
+  --headernav-item-margin: var(--space3);
+
   position: relative;
 
   ul {
@@ -47,7 +47,7 @@ $headernav-item-margin: $space3;
   > ul > li > a {
 
     @include screen2 {
-      padding: $space1;
+      padding: var(--space1);
       background: linear-gradient(rgb(var(--color-light-gray)), rgb(var(--color-gray)));
       color: rgb(var(--color-light-black));
       text-align: center;
@@ -65,8 +65,8 @@ $headernav-item-margin: $space3;
   > ul > li > ul {
     display: none;
     position: absolute;
-    padding: $headernav-section-padding;
-    column-gap: $headernav-section-padding * 2;
+    padding: var(--headernav-section-padding);
+    column-gap: calc(var(--headernav-section-padding) * 2);
     column-rule: 1px solid rgb(var(--color-gray));
     column-width: 9.5em;
     border-right: 1px solid rgb(var(--color-gray));
@@ -94,7 +94,7 @@ $headernav-item-margin: $space3;
 
   // Panel list links:
   > ul > li > ul > li > a {
-    margin-bottom: $headernav-item-margin;
+    margin-bottom: var(--headernav-item-margin);
     color: rgb(var(--color-red));
     text-decoration: none;
 
@@ -111,8 +111,8 @@ $headernav-item-margin: $space3;
 
   // Panel sub-lists:
   > ul > li > ul > li > ul {
-    padding-right: $space1;
-    padding-left: $space1;
+    padding-right: var(--space1);
+    padding-left: var(--space1);
     page-break-inside: avoid; // Firefox
   }
 
@@ -128,7 +128,7 @@ $headernav-item-margin: $space3;
 
   // All panel list items:
   > ul > li li {
-    margin-bottom: $headernav-item-margin;
+    margin-bottom: var(--headernav-item-margin);
   }
 
   // **** Panel Toggle **** //

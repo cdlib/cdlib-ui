@@ -26,8 +26,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 $space2;
-    gap: $space2;
+    padding: 0 var(--space2);
+    gap: var(--space2);
 
     &::after {
       content: '';
@@ -40,6 +40,6 @@
   }
 
   h2 {
-    padding: $space2 0;
+    padding: var(--space2) 0;
   }
 }

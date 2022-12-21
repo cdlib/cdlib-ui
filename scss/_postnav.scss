@@ -15,7 +15,7 @@
   a {
     display: inline-flex;
     align-items: center;
-    gap: $space1;
+    gap: var(--space1);
     text-decoration: none;
 
     &:focus,

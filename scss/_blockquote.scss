@@ -1,8 +1,8 @@
 // ***** Blockquote Object ***** //
 
 blockquote {
-  margin: 0 0 $space2;
-  padding: $space3 2.5em;
+  margin: 0 0 var(--space2);
+  padding: var(--space3) 2.5em;
   font-style: italic;
 
   p {

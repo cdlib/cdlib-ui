@@ -26,7 +26,7 @@
     content: '';
     width: 1em;
     height: 1em;
-    margin-right: $space2;
+    margin-right: var(--space2);
     transition: opacity 1s;
     border-radius: 50%;
     opacity: 0;

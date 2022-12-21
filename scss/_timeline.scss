@@ -24,7 +24,7 @@
   }
 
   > ul > li > ul {
-    margin-left: $space2;
+    margin-left: var(--space2);
     padding-top: $year-section-space;
     padding-bottom: $year-section-space;
     border-left: 3px solid rgb(var(--color-blue));
@@ -33,7 +33,7 @@
   > ul > li > ul > li {
     margin-top: $year-item-space;
     margin-bottom: $year-item-space;
-    margin-left: $space2;
+    margin-left: var(--space2);
   }
 
 }

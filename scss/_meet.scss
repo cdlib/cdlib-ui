@@ -15,13 +15,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: $space2;
+    padding: var(--space2);
     color: rgb(var(--color-white));
     line-height: $line-height1;
     text-align: left;
 
     a {
-      margin-top: $space2;
+      margin-top: var(--space2);
       color: rgb(var(--color-light-gold));
     }
 

@@ -4,7 +4,7 @@
   @include u-reset-list-styles;
 
   @include screen1 {
-    column-gap: $space3;
+    column-gap: var(--space3);
     column-count: 2;
   }
 
@@ -22,7 +22,7 @@
   }
 
   li {
-    margin-block: $space2;
+    margin-block: var(--space2);
   }
 
   li li {

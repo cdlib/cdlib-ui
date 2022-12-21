@@ -7,8 +7,8 @@
     'result-doctype result-excerpt'
     'result-doctype result-datetime'
     / 2.7em 1fr;
-  margin-bottom: $space4;
-  gap: $space2;
+  margin-bottom: var(--space4);
+  gap: var(--space2);
 
   h2 {
     display: inline-block;

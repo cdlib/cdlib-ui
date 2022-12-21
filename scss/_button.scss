@@ -3,7 +3,7 @@
 %o-button {
   display: inline-flex;
   align-items: center;
-  padding: 0.4rem $space2;
+  padding: 0.4rem var(--space2);
   border: none;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -57,7 +57,7 @@
 
 %o-button5 {
   @extend %o-button;
-  gap: $space2;
+  gap: var(--space2);
   border: 2px solid rgb(var(--color-white));
   border-radius: $round-corner;
   background-color: rgb(var(--color-blue));

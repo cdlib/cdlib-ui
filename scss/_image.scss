@@ -4,9 +4,9 @@ main {
 
   img {
     width: auto; // reset fixed width attribute applied via WP editor
-    max-width: calc(100vw - #{$space2});
+    max-width: calc(100vw - var(--space2));
     height: auto; // reset fixed height attribute applied via WP editor
-    max-height: calc(100vh - #{$space2});
+    max-height: calc(100vh - var(--space2));
   }
 
 }

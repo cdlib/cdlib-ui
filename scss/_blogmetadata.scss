@@ -1,7 +1,7 @@
 // ***** Blog Meta Data Component ***** //
 
 .c-blogmetadata {
-  margin-bottom: $space2;
+  margin-bottom: var(--space2);
   color: rgb(var(--color-light-black));
 
   a {

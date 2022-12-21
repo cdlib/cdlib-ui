@@ -3,16 +3,16 @@
 $list-indentation: 30px;
 
 %o-list {
-  margin-top: $space2;
-  margin-bottom: $space2;
+  margin-top: var(--space2);
+  margin-bottom: var(--space2);
   line-height: $line-height1;
 }
 
 // List items:
 
 li {
-  margin-top: $space2;
-  margin-bottom: $space2;
+  margin-top: var(--space2);
+  margin-bottom: var(--space2);
 
   // nested lists:
   li {
@@ -62,6 +62,6 @@ dt {
 }
 
 dd {
-  margin-bottom: $space2;
+  margin-bottom: var(--space2);
   margin-left: $list-indentation;
 }

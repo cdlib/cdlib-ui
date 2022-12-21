@@ -2,14 +2,14 @@
 
 table {
   width: 100%;
-  margin-top: $space3;
-  margin-bottom: $space3;
+  margin-top: var(--space3);
+  margin-bottom: var(--space3);
   table-layout: fixed;
   border-collapse: collapse;
 
   th,
   td {
-    padding: $space2;
+    padding: var(--space2);
     overflow: hidden;
     border: 1px solid rgb(var(--color-gray));
     vertical-align: top;
@@ -50,13 +50,13 @@ table {
 
     th,
     td {
-      padding: $space2 !important;
+      padding: var(--space2) !important;
       border: 1px solid rgb(var(--color-gray)) !important;
       text-align: middle !important;
     }
 
     th[class*='sorting'] {
-      padding: $space2 $space3 $space2 $space2 !important;
+      padding: var(--space2) var(--space3) var(--space2) var(--space2) !important;
     }
 
     thead {

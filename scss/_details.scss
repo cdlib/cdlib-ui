@@ -3,7 +3,7 @@
 // $details-summary-left-space variable is defined in _variables and used in categories component to align the disclosure widget arrows and list items.
 
 details {
-  margin-bottom: $space2;
+  margin-bottom: var(--space2);
 
   summary {
     display: flex;

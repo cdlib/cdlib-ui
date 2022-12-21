@@ -1,7 +1,7 @@
 // ***** Search Records Component ***** //
 
 .c-records {
-  margin-bottom: $space3;
+  margin-bottom: var(--space3);
   color: rgb(var(--color-black));
   font-size: 1em;
 

@@ -13,7 +13,7 @@
   li {
     display: inline-flex;
     align-items: center;
-    margin-bottom: $space1;
+    margin-bottom: var(--space1);
     font-size: 0.9rem;
 
     &:not(:nth-last-of-type(2)) {

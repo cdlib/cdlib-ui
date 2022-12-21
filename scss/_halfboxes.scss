@@ -1,8 +1,8 @@
 // ***** Half Width Boxes Component ***** //
 
 .c-halfboxes {
-  margin-top: $space3;
-  margin-bottom: $space3;
+  margin-top: var(--space3);
+  margin-bottom: var(--space3);
 
   @include screen1 {
     display: flex;
@@ -11,7 +11,7 @@
       flex: 1 1 50%;
 
       &:nth-child(2) {
-        margin-left: $space2;
+        margin-left: var(--space2);
       }
 
     }

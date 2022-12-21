@@ -6,7 +6,7 @@ $yearlist-border-size: 1px;
   @include u-reset-list-styles;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: $space2;
+  margin-bottom: var(--space2);
   padding-top: $yearlist-border-size;
 
   li {
@@ -17,7 +17,7 @@ $yearlist-border-size: 1px;
 
   a {
     display: block;
-    padding: $space2;
+    padding: var(--space2);
     text-decoration: none;
 
     &:focus,

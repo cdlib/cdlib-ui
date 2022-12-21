@@ -15,13 +15,13 @@
       a {
         display: flex;
         align-items: center;
-        padding: 0.35rem $space2;
+        padding: 0.35rem var(--space2);
       }
     }
   }
 
   header {
-    padding: $space2;
+    padding: var(--space2);
     background-color: rgb(var(--color-blue));
 
     h2 {

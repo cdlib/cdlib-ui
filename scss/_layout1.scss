@@ -2,7 +2,7 @@
 
 .t-layout--1 {
   display: grid;
-  grid-row-gap: $space3;
+  grid-row-gap: var(--space3);
   grid-template:
     'layout1a'
     'layout1b'

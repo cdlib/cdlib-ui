@@ -2,7 +2,7 @@
 
 .t-layout--4 {
   display: grid;
-  grid-row-gap: $space3;
+  grid-row-gap: var(--space3);
   grid-template:
     'layout4a'
     'layout4b'
@@ -14,7 +14,7 @@
   min-height: 100vh;
 
   @include screen2 {
-    grid-gap: $space3;
+    grid-gap: var(--space3);
     grid-template:
       'layout4a layout4a'
       'layout4b layout4b'

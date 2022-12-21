@@ -7,8 +7,8 @@
   opacity: 0;
 
   &:focus {
-    top: $space1;
-    left: $space1;
+    top: var(--space1);
+    left: var(--space1);
     opacity: 1;
   }
 

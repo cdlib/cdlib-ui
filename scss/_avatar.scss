@@ -1,8 +1,8 @@
 // ***** Avatar Component ***** //
 
 .c-avatar {
-  margin-bottom: $space3;
-  margin-left: $space3;
+  margin-bottom: var(--space3);
+  margin-left: var(--space3);
   float: right;
   border: 1px solid rgb(var(--color-black));
 

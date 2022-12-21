@@ -1,7 +1,7 @@
 // ***** Checkbox Component ***** //
 
 .c-checkbox {
-  padding-top: $space3;
+  padding-top: var(--space3);
 
   p { // WP Contact Form 7 generated
     margin: 0;
@@ -15,10 +15,10 @@
   label {
     display: flex;
     align-items: center;
-    margin-bottom: $space2;
+    margin-bottom: var(--space2);
 
     input {
-      margin-right: $space1;
+      margin-right: var(--space1);
     }
 
   }
