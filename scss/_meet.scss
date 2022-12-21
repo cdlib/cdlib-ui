@@ -17,7 +17,7 @@
     justify-content: space-between;
     padding: var(--space2);
     color: rgb(var(--color-white));
-    line-height: $line-height1;
+    line-height: var(--line-height1);
     text-align: left;
 
     a {

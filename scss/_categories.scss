@@ -1,5 +1,7 @@
 // ***** Categories Component ***** //
 
+// The --details-summary-left-space variable used below is defined in _variables.scss and also used in _details.scss to align the disclosure widget arrows and list items.
+
 .c-categories {
   @include u-reset-list-styles;
 
@@ -26,12 +28,12 @@
   }
 
   li li {
-    padding-inline-start: $details-summary-left-space * 2;
+    padding-inline-start: calc(var(--details-summary-left-space) * 2);
   }
 
   > li > a {
     display: block;
-    margin-inline-start: $details-summary-left-space;
+    margin-inline-start: var(--details-summary-left-space);
   }
 
   details {

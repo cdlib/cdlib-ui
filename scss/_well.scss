@@ -74,7 +74,7 @@
   a {
     display: block;
     color: rgb(var(--color-light-blue));
-    line-height: $line-height0;
+    line-height: var(--line-height0);
     text-decoration: none;
 
     &:focus,

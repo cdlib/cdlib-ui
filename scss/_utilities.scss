@@ -63,7 +63,7 @@ $test3: #080 solid 1px; // green
   padding-right: 0;
   padding-left: 0;
   list-style-type: none;
-  line-height: $line-height0;
+  line-height: var(--line-height0);
 
   li {
     margin-top: 0;
@@ -126,7 +126,7 @@ $test3: #080 solid 1px; // green
   figcaption {
     padding: 0;
     font-style: normal;
-    line-height: $line-height0;
+    line-height: var(--line-height0);
   }
 
 }

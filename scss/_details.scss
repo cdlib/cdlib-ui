@@ -1,6 +1,6 @@
 // ***** Details Object ***** //
 
-// $details-summary-left-space variable is defined in _variables and used in categories component to align the disclosure widget arrows and list items.
+// The --details-summary-left-space variable used below is defined in _variables.scss and also used in _categories.scss to align the disclosure widget arrows and list items.
 
 details {
   margin-bottom: var(--space2);
@@ -13,9 +13,9 @@ details {
     &::before {
       content: '';
       flex: none;
-      block-size: calc($details-summary-left-space / 1.5);
-      inline-size: calc($details-summary-left-space / 1.5);
-      margin-inline: calc($details-summary-left-space / 6);
+      block-size: calc(var(--details-summary-left-space) / 1.5);
+      inline-size: calc(var(--details-summary-left-space) / 1.5);
+      margin-inline: calc(var(--details-summary-left-space) / 6);
       background-color: rgb(var(--color-blue));
       mask-repeat: no-repeat;
       mask-size: 0.9rem;
@@ -34,7 +34,7 @@ details {
     summary {
 
       &::before {
-        margin-inline: 0 calc($details-summary-left-space / 3);
+        margin-inline: 0 calc(var(--details-summary-left-space) / 3);
         mask-size: 1.4rem;
         mask-image: url('data-url:../icons/caret-down.svg');
       }

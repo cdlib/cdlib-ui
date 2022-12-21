@@ -24,7 +24,7 @@
     'layout3c layout3e'
     '........ layout3f'
     'layout3g layout3g'
-    / $sidebar-width 1fr;
+    / var(--sidebar-width) 1fr;
   }
 
   @include screen3 {
@@ -34,7 +34,7 @@
     'layout3c layout3d layout3e' 1fr
     '........ layout3f ........'
     'layout3g layout3g layout3g'
-    / $sidebar-width 1fr $sidebar-width;
+    / var(--sidebar-width) 1fr var(--sidebar-width);
   }
 
   @media print {

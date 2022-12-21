@@ -21,7 +21,7 @@
       'layout2c layout2d' 1fr
       '........ layout2e'
       'layout2f layout2f'
-      / $sidebar-width 1fr;
+      / var(--sidebar-width) 1fr;
   }
 
   @media print {

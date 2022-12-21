@@ -1,11 +1,9 @@
 // ***** List Objects ***** //
 
-$list-indentation: 30px;
-
 %o-list {
   margin-top: var(--space2);
   margin-bottom: var(--space2);
-  line-height: $line-height1;
+  line-height: var(--line-height1);
 }
 
 // List items:
@@ -16,7 +14,7 @@ li {
 
   // nested lists:
   li {
-    padding-left: $list-indentation;
+    padding-left: var(--list-indentation);
   }
 
 }
@@ -32,7 +30,7 @@ ul {
 
   // WP inline style 'list-style-type' equal to circle, disc, or square (read notes in list.config.js):
   &[style^='list-style-type:'] {
-    padding-left: $list-indentation;
+    padding-left: var(--list-indentation);
 
     li {
       padding-left: 0;
@@ -46,7 +44,7 @@ ul {
 
 ol {
   @extend %o-list;
-  padding-left: $list-indentation;
+  padding-left: var(--list-indentation);
 }
 
 // Description lists:
@@ -63,5 +61,5 @@ dt {
 
 dd {
   margin-bottom: var(--space2);
-  margin-left: $list-indentation;
+  margin-left: var(--list-indentation);
 }

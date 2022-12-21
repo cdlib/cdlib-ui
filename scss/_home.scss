@@ -39,7 +39,7 @@
     'servicebox meet'
     'newsreel social'
     'footer footer'
-    / 1fr $sidebar-width;
+    / 1fr var(--sidebar-width);
   }
 
   // This class used only to highlight the grid in layout4.hbs:

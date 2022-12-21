@@ -17,7 +17,7 @@ figure {
     padding-left: 0.5em;
     font-size: 0.9em;
     font-style: italic;
-    line-height: $line-height1;
+    line-height: var(--line-height1);
   }
 
 }

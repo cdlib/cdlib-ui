@@ -5,7 +5,7 @@ body {
   padding-inline: var(--space3);
   font-family: 'Source Sans', Arial, sans-serif;
   font-weight: 400;
-  line-height: $line-height0;
+  line-height: var(--line-height0);
 
   @include screen1 {
     max-width: 1400px;

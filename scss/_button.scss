@@ -59,7 +59,7 @@
   @extend %o-button;
   gap: var(--space2);
   border: 2px solid rgb(var(--color-white));
-  border-radius: $round-corner;
+  border-radius: 3px;
   background-color: rgb(var(--color-blue));
   color: rgb(var(--color-white));
 

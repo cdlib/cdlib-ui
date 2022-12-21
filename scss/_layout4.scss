@@ -21,7 +21,7 @@
       'layout4c layout4d'
       'layout4c layout4e' 1fr
       'layout4f layout4f'
-      / 1fr $sidebar-width;
+      / 1fr var(--sidebar-width);
   }
 
   @media print {
