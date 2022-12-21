@@ -56,12 +56,12 @@
 
   > ul {
 
-    @include screen1 {
+    @media (--min-width1) {
       column-gap: var(--space2);
       column-count: 4;
     }
 
-    @include screen2 {
+    @media (--min-width2) {
       display: flex;
       column-count: auto;
     }
@@ -70,7 +70,7 @@
       break-inside: avoid;
       page-break-inside: avoid; // Firefox
 
-      @include screen2 {
+      @media (--min-width2) {
         width: 100%;
 
         &:not(:last-child) {

@@ -2,8 +2,6 @@
 
 // The 'theme' layer above is defined within the WordPress theme stylesheet: https://github.com/cdlib/cdlib/blob/master/wp-content/themes/cdlib/style.css
 
-// Sass variables, extends and mixins that may be inserted into any imported file below. //
-@import 'breakpoints';
 @import 'variables';
 @import 'utilities';
 

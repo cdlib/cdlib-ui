@@ -6,7 +6,7 @@
   p { // WP Contact Form 7 generated
     margin: 0;
 
-    @include screen1 {
+    @media (--min-width1) {
       column-count: 2;
     }
 

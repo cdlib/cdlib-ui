@@ -19,7 +19,7 @@
     &:not(:nth-last-of-type(2)) {
       display: none;
 
-      @include screen1 {
+      @media (--min-width1) {
         display: inline-flex;
       }
 
@@ -37,7 +37,7 @@
         mask: url('data-url:../icons/angle-left-light.svg') center / contain;
       }
 
-      @include screen1 {
+      @media (--min-width1) {
 
         &::before {
           content: none;
@@ -45,7 +45,7 @@
       }
     }
 
-    @include screen1 {
+    @media (--min-width1) {
 
       &:not(:last-child) {
 

@@ -6,7 +6,7 @@
   float: right;
   border: 1px solid rgb(var(--color-black));
 
-  @include screen1 {
+  @media (--min-width1) {
     margin-right: 3vw;
     margin-left: 3vw;
   }

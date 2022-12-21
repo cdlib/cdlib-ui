@@ -36,3 +36,13 @@
   --list-indentation: 30px;
   --sidebar-width: 20%;
 }
+
+// Media Queries:
+
+@custom-media --min-width1 (width >= 480px);
+@custom-media --min-width2 (width >= 760px);
+@custom-media --max-width2 (width < 760px);
+@custom-media --min-width3 (width >= 870px);
+@custom-media --max-width3 (width < 870px);
+@custom-media --min-width4 (width >= 1280px);
+@custom-media --min-width5 (width >= 1400px);

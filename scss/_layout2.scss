@@ -13,7 +13,7 @@
     / 1fr;
   min-height: 100vh;
 
-  @include screen2 {
+  @media (--min-width2) {
     grid-gap: var(--space3);
     grid-template:
       'layout2a layout2a'

@@ -4,7 +4,7 @@
 
 .c-servicebox {
 
-  @include screen1 {
+  @media (--min-width1) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -13,7 +13,7 @@
     padding: var(--space2);
     background-image: linear-gradient(rgb(var(--color-lighter-blue)), rgb(var(--color-light-blue)));
 
-    @include screen1 {
+    @media (--min-width1) {
       flex: 1 1 45%;
 
       &:nth-child(odd) {
@@ -22,7 +22,7 @@
 
     }
 
-    @include screen2 {
+    @media (--min-width2) {
       flex: 1 1 20%;
 
       &:not(:last-child) {

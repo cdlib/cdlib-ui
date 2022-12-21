@@ -4,7 +4,7 @@
   margin-top: var(--space3);
   margin-bottom: var(--space3);
 
-  @include screen1 {
+  @media (--min-width1) {
     display: flex;
 
     > * {

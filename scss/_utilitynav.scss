@@ -5,14 +5,14 @@
   ul {
     @include u-reset-list-styles;
 
-    @include screen2 {
+    @media (--min-width2) {
       display: flex;
       justify-content: flex-end;
     }
 
     li {
 
-      @include screen2 {
+      @media (--min-width2) {
         margin: 0 var(--space2); 
       }
 
@@ -22,7 +22,7 @@
 
   a {
 
-    @include screen2 {
+    @media (--min-width2) {
       color: rgb(var(--color-light-black));
       text-decoration: none;
 

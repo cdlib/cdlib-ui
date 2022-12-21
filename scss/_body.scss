@@ -7,7 +7,7 @@ body {
   font-weight: 400;
   line-height: var(--line-height0);
 
-  @include screen1 {
+  @media (--min-width1) {
     max-width: 1400px;
     padding-inline: var(--space2);
   }

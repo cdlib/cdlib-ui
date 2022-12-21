@@ -19,7 +19,7 @@
   // Sections:
   > ul {
 
-    @include screen2 {
+    @media (--min-width2) {
       display: flex;
 
       > li {
@@ -32,7 +32,7 @@
 
   > ul > li {
 
-    @include screen2 {
+    @media (--min-width2) {
 
       // Nav bar main items:
       &:not(:last-child) {
@@ -46,7 +46,7 @@
   // Nav bar links:
   > ul > li > a {
 
-    @include screen2 {
+    @media (--min-width2) {
       padding: var(--space1);
       background: linear-gradient(rgb(var(--color-light-gray)), rgb(var(--color-gray)));
       color: rgb(var(--color-light-black));
@@ -135,7 +135,7 @@
 
   @mixin panel-toggle {
 
-    @include screen2 {
+    @media (--min-width2) {
       display: block;
       z-index: 10;
     }

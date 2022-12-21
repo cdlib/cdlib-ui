@@ -3,7 +3,7 @@
 .c-mobilenav {
   @include u-reset-list-styles;
 
-  @media (max-width: $screen2) {
+  @media (--max-width2) {
 
     li {
       border-right: 1px solid rgb(var(--color-gray));

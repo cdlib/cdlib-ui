@@ -11,7 +11,7 @@ $slideshow-caption-width: 20rem;
   position: relative;
   grid-template-rows: 1fr auto;
 
-  @include screen1 {
+  @media (--min-width1) {
     grid-template-columns: $slideshow-caption-width auto;
   }
 
@@ -41,7 +41,7 @@ $slideshow-caption-width: 20rem;
   justify-content: space-evenly;
   border-top: 1px solid rgb(var(--color-white));
 
-  @include screen1 {
+  @media (--min-width1) {
     margin: 0 var(--space2) var(--space2) var(--space2);
   }
 
@@ -118,7 +118,7 @@ $slideshow-caption-width: 20rem;
   padding: var(--space2);
   color: rgb(var(--color-white));
 
-  @include screen1 {
+  @media (--min-width1) {
     margin: var(--space2) var(--space2) 0 var(--space2);
   }
 
@@ -174,7 +174,7 @@ $slideshow-caption-width: 20rem;
   small {
     display: none;
 
-    @include screen1 {
+    @media (--min-width1) {
       display: block;
       position: absolute; // to .c-slideshow
       right: 0;
@@ -211,7 +211,7 @@ $slideshow-caption-width: 20rem;
     display: none;
   }
 
-  @include screen1 {
+  @media (--min-width1) {
     z-index: -1;
     grid-column: 1 / 3;
     grid-row: 1 / 3;

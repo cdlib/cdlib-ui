@@ -13,7 +13,7 @@
     / 1fr;
   min-height: 100vh;
 
-  @include screen2 {
+  @media (--min-width2) {
     grid-gap: var(--space3);
     grid-template:
       'layout4a layout4a'
@@ -64,14 +64,14 @@
       'sidebar-item4'
       / 1fr;
 
-    @include screen1 {
+    @media (--min-width1) {
       grid-template:
         'sidebar-item1 sidebar-item2'
         'sidebar-item3 sidebar-item4'
         / 1fr 1fr;
     }
 
-    @include screen2 {
+    @media (--min-width2) {
       grid-template:
         'sidebar-item1'
         'sidebar-item2'

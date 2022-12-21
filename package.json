@@ -72,6 +72,11 @@
   "browserslist": [
     "defaults"
   ],
+  "@parcel/transformer-css": {
+    "drafts": {
+      "customMedia": true
+    }
+  },
   "parcel-namer-custom": {
     "scss/.*": "css/[name].css"
   },

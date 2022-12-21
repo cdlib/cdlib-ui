@@ -16,7 +16,7 @@
     / 1fr;
   min-height: 100vh;
 
-  @media (min-width: $screen2) and (max-width: $screen3) {
+  @media (--min-width2) and (--max-width3) {
     grid-template:
     'layout3a layout3a'
     '........ layout3b'
@@ -27,7 +27,7 @@
     / var(--sidebar-width) 1fr;
   }
 
-  @include screen3 {
+  @media (--min-width3) {
     grid-template:
     'layout3a layout3a layout3a'
     '........ layout3b ........'
@@ -81,14 +81,14 @@
       'sidebar-item4'
       / 1fr;
 
-    @include screen2 {
+    @media (--min-width2) {
       grid-template:
         'sidebar-item1 sidebar-item2'
         'sidebar-item3 sidebar-item4'
         / 1fr 1fr;
     }
 
-    @include screen3 {
+    @media (--min-width3) {
       grid-template:
         'sidebar-item1'
         'sidebar-item2'

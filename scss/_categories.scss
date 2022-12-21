@@ -5,12 +5,12 @@
 .c-categories {
   @include u-reset-list-styles;
 
-  @include screen1 {
+  @media (--min-width1) {
     column-gap: var(--space3);
     column-count: 2;
   }
 
-  @include screen2 {
+  @media (--min-width2) {
     column-count: auto;
   }
 
