@@ -1,13 +1,5 @@
 // ***** Utilities ***** //
 
-// Element Highlighting for Testing
-
-// Ex: outline: $test1;
-
-$test1: #f00 solid 1px; // red
-$test2: #00f solid 1px; // blue
-$test3: #080 solid 1px; // green
-
 // Unordered lists without space or bullets:
 
 @mixin u-reset-list-styles {
@@ -30,19 +22,6 @@ $test3: #080 solid 1px; // green
 @mixin u-hide {
   position: absolute;
   left: -9999px;
-}
-
-// Bleed component to left/right of viewport by equalling <body> left/right padding:
-
-%u-page-bleed {
-  margin-right: calc(var(--space1) * -1);
-  margin-left: calc(var(--space1) * -1);
-
-  @media (--min-width2) {
-    margin-right: calc(var(--space2) * -1);
-    margin-left: calc(var(--space2) * -1);
-  }
-
 }
 
 @mixin u-sidebar-grid {
