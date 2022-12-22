@@ -80,12 +80,6 @@
   "parcel-namer-custom": {
     "scss/.*": "css/[name].css"
   },
-  "eslintConfig": {
-    "extends": "standard",
-    "globals": {
-      "Vue": "readonly"
-    }
-  },
   "percy": {
     "version": 1,
     "snapshot": {
