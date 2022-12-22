@@ -1,8 +1,8 @@
 // ***** Global Header Component ***** //
 
-$header-logo-height: 50px;
-
 .c-header {
+  --header-logo-height: 50px;
+
   display: grid;
   position: relative;
   grid-template:
@@ -39,7 +39,7 @@ $header-logo-height: 50px;
 
   img {
     display: block;
-    height: $header-logo-height;
+    height: var(--header-logo-height);
 
     @media (--min-width2) {
       height: 4.4rem;
@@ -66,7 +66,7 @@ $header-logo-height: 50px;
   grid-area: header-search;
   align-items: flex-start;
   width: 100%;
-  height: $header-logo-height;
+  height: var(--header-logo-height);
   padding-left: var(--space1);
   transform: translateX(100%);
   transition: transform 0.5s;

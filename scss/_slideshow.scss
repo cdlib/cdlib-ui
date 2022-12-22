@@ -1,18 +1,15 @@
 // ***** Slideshow Component ***** //
 
-@mixin slideshow-caption-bg {
-  background-color: rgb(var(--color-medium-blue) / 90%);
-}
-
-$slideshow-caption-width: 20rem;
-
 .c-slideshow {
+  --slideshow-caption-bg: rgb(var(--color-medium-blue) / 90%);
+  --slideshow-caption-width: 20rem;
+
   display: grid;
   position: relative;
   grid-template-rows: 1fr auto;
 
   @media (--min-width1) {
-    grid-template-columns: $slideshow-caption-width auto;
+    grid-template-columns: var(--slideshow-caption-width) auto;
   }
 
   // show single random fixed image if display: grid and display: contents css not supported:
@@ -32,7 +29,6 @@ $slideshow-caption-width: 20rem;
 }
 
 .c-slideshow__controls {
-  @include slideshow-caption-bg;
   display: flex;
   z-index: 1;
   grid-column: 1;
@@ -40,6 +36,7 @@ $slideshow-caption-width: 20rem;
   align-items: center;
   justify-content: space-evenly;
   border-top: 1px solid rgb(var(--color-white));
+  background-color: var(--slideshow-caption-bg);
 
   @media (--min-width1) {
     margin: 0 var(--space2) var(--space2) var(--space2);
@@ -109,13 +106,13 @@ $slideshow-caption-width: 20rem;
 }
 
 .c-slideshow__slide figcaption {
-  @include slideshow-caption-bg;
   display: flex; // allows 'read more' link to align to bottom
   z-index: -1;
   grid-column: 1;
   grid-row: 1;
   flex-direction: column;
   padding: var(--space2);
+  background-color: var(--slideshow-caption-bg);
   color: rgb(var(--color-white));
 
   @media (--min-width1) {
@@ -180,7 +177,7 @@ $slideshow-caption-width: 20rem;
       right: 0;
       bottom: 0;
       max-width: 50%;
-      margin-left: $slideshow-caption-width;
+      margin-left: var(--slideshow-caption-width);
       padding: var(--space2);
       background-color: rgb(var(--color-black) / 60%);
       font-size: 1em;

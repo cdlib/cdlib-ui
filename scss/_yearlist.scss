@@ -1,18 +1,18 @@
 // ***** Year List Component ***** //
 
-$yearlist-border-size: 1px;
-
 .c-yearlist {
+  --yearlist-border-size: 1px;
+
   @include u-reset-list-styles;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: var(--space2);
-  padding-top: $yearlist-border-size;
+  padding-top: var(--yearlist-border-size);
 
   li {
-    margin-top: -($yearlist-border-size);
-    margin-left: -($yearlist-border-size);
-    border: $yearlist-border-size solid rgb(var(--color-blue));
+    margin-top: calc(var(--yearlist-border-size) * -1);
+    margin-left: calc(var(--yearlist-border-size) * -1);
+    border: var(--yearlist-border-size) solid rgb(var(--color-blue));
   }
 
   a {

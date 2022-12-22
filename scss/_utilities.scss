@@ -35,12 +35,12 @@ $test3: #080 solid 1px; // green
 // Bleed component to left/right of viewport by equalling <body> left/right padding:
 
 %u-page-bleed {
-  margin-right: (-var(--space1));
-  margin-left: (-var(--space1));
+  margin-right: calc(var(--space1) * -1);
+  margin-left: calc(var(--space1) * -1);
 
   @media (--min-width2) {
-    margin-right: (-var(--space2));
-    margin-left: (-var(--space2));
+    margin-right: calc(var(--space2) * -1);
+    margin-left: calc(var(--space2) * -1);
   }
 
 }

@@ -1,8 +1,8 @@
 // ***** Timeline Component ***** //
 
 .c-timeline {
-  $year-item-space: .6rem;
-  $year-section-space: .3rem;
+  --year-item-space: .6rem;
+  --year-section-space: .3rem;
 
   // Remove WordPress auto-generated break tags:
   br {
@@ -17,7 +17,7 @@
     display: flex;
 
     strong {
-      margin-top: $year-item-space + $year-section-space;
+      margin-top: var(--year-item-space) + var(--year-section-space);
       font-weight: 600;
     }
 
@@ -25,14 +25,14 @@
 
   > ul > li > ul {
     margin-left: var(--space2);
-    padding-top: $year-section-space;
-    padding-bottom: $year-section-space;
+    padding-top: var(--year-section-space);
+    padding-bottom: var(--year-section-space);
     border-left: 3px solid rgb(var(--color-blue));
   }
 
   > ul > li > ul > li {
-    margin-top: $year-item-space;
-    margin-bottom: $year-item-space;
+    margin-top: var(--year-item-space);
+    margin-bottom: var(--year-item-space);
     margin-left: var(--space2);
   }
 
