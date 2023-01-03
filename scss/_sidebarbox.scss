@@ -15,7 +15,8 @@
   }
 
   a {
-    display: flex; // position link icons to right of sidebarbox container
+    display: flex; // position link icons to top-right of text in sidebarbox container
+    align-items: flex-start;
     justify-content: space-between; // " "
     text-decoration: none;
 
