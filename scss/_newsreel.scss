@@ -87,7 +87,7 @@
     block-size: 2rem;
     inline-size: 2rem;
     background-color: rgb(var(--color-black));
-    mask-size: 0.8rem;
+    mask-size: 0.7rem;
     mask-position: center;
     mask-repeat: no-repeat;
   }
@@ -107,13 +107,13 @@
 .c-newsreel__play {
 
   &::after {
-    mask-image: url('data-url:../icons/play.svg');
+    mask-image: url('data-url:/fa-solid/play.svg');
   }
 }
 
 .c-newsreel__pause {
   
   &::after {
-    mask-image: url('data-url:../icons/pause.svg');
+    mask-image: url('data-url:/fa-solid/pause.svg');
   }
 }

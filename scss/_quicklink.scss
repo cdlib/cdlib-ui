@@ -32,10 +32,10 @@
     &::after {
       content: '';
       flex: none;
-      block-size: 1.3rem;
-      inline-size: 1.3rem;
+      block-size: 1.1rem;
+      inline-size: 1.1rem;
       background-color: rgb(var(--color-gold));
-      mask: url('data-url:../icons/external-link-alt.svg') center / 1.3rem;
+      mask: url('data-url:/fa-solid/arrow-up-right-from-square.svg') center / contain;
     }
   }
 

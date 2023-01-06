@@ -70,6 +70,14 @@
     "stylelint-config-recommended-scss": "^6.0.0",
     "stylelint-scss": "^4.2.0"
   },
+  "alias": {
+    "fa-brands/*": "./node_modules/@fortawesome/fontawesome-pro/svgs/brands/$1",
+    "fa-light/*": "./node_modules/@fortawesome/fontawesome-pro/svgs/light/$1",
+    "fa-regular/*": "./node_modules/@fortawesome/fontawesome-pro/svgs/regular/$1",
+    "fa-sharp-solid/*": "./node_modules/@fortawesome/fontawesome-pro/svgs/sharp-solid/$1",
+    "fa-solid/*": "./node_modules/@fortawesome/fontawesome-pro/svgs/solid/$1",
+    "fa-thin/*": "./node_modules/@fortawesome/fontawesome-pro/svgs/thin/$1"
+  },
   "browserslist": [
     "defaults"
   ],

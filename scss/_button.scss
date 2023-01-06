@@ -11,16 +11,12 @@
   cursor: pointer;
 }
 
-%o-button__header-controls {
-  @extend %o-button;
-  block-size: 2.1rem;
-  inline-size: 2.1rem;
-  background-size: 2.1em;
-}
-
 %o-button1 {
-  @extend %o-button__header-controls;
-  background-image: url('data-url:../icons/search-light.svg');
+  @extend %o-button;
+  block-size: 1.9rem;
+  inline-size: 1.9rem;
+  background-image: url('data-url:/fa-light/magnifying-glass.svg');
+  background-size: 1.9em;
 }
 
 .o-button1 {
@@ -28,8 +24,11 @@
 }
 
 %o-button2 {
-  @extend %o-button__header-controls;
-  background-image: url('data-url:../icons/times-light.svg');
+  @extend %o-button;
+  block-size: 1.5rem;
+  inline-size: 1.5rem;
+  background-image: url('data-url:/fa-light/xmark.svg');
+  background-size: 1.5em;
 }
 
 .o-button2 {
@@ -37,8 +36,11 @@
 }
 
 %o-button3 {
-  @extend %o-button__header-controls;
-  background-image: url('data-url:../icons/bars-light.svg');
+  @extend %o-button;
+  block-size: 1.9rem;
+  inline-size: 1.9rem;
+  background-image: url('data-url:/fa-light/bars.svg');
+  background-size: 1.9em;
 }
 
 .o-button3 {
@@ -69,9 +71,9 @@
     block-size: 1rem;
     inline-size: 1rem;
     background-color: rgb(var(--color-white));
-    mask-size: 1.6rem;
+    mask-size: 1rem;
     mask-position: center;
-    mask-image: url('data-url:../icons/caret-up.svg');
+    mask-image: url('data-url:/fa-solid/caret-up.svg');
   }
 }
 
@@ -83,7 +85,7 @@
   @extend %o-button5;
 
   &::after {
-    mask-image: url('data-url:../icons/caret-down.svg');
+    mask-image: url('data-url:/fa-solid/caret-down.svg');
   }
 }
 

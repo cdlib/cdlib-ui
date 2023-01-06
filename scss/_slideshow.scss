@@ -70,7 +70,7 @@
     block-size: 100%; // size relative to button size defined in '.c-slideshow__controls button' selector above
     inline-size: 100%; // " "
     background-color: rgb(var(--color-light-gold));
-    mask-size: 0.8rem;
+    mask-size: 0.7rem;
     mask-position: center;
     mask-repeat: no-repeat;
   }
@@ -79,14 +79,14 @@
 .c-slideshow__play {
 
   &::after {
-    mask-image: url('data-url:../icons/play.svg');
+    mask-image: url('data-url:/fa-solid/play.svg');
   }
 }
 
 .c-slideshow__pause {
 
   &::after {
-    mask-image: url('data-url:../icons/pause.svg');
+    mask-image: url('data-url:/fa-solid/pause.svg');
   }
 }
 
