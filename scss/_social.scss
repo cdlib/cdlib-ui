@@ -19,7 +19,7 @@
     flex: none;
     block-size: 1.6rem;
     inline-size: 1.6rem;
-    background-color: #1da1f2;
+    background-color: rgb(var(--color-twitter-blue));
     mask: url('data-url:/fa-brands/twitter.svg') center / contain;
   }
 }
