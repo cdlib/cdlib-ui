@@ -1,8 +1,8 @@
-// ***** Document Icon Objects ***** //
+// ***** Post Type Components ***** //
 
-.o-docicon__doc,
-.o-docicon__page,
-.o-docicon__post {
+.c-posttype__doc,
+.c-posttype__page,
+.c-posttype__post {
   display: inline-block;
   padding: 0.2rem 0.2rem 0.05rem 0.3rem;
   color: rgb(var(--color-white));
@@ -14,14 +14,14 @@
   white-space: nowrap;
 }
 
-.o-docicon__doc {
+.c-posttype__doc {
   background-color: rgb(var(--color-light-red));
 }
 
-.o-docicon__page {
+.c-posttype__page {
   background-color: rgb(var(--color-blue));
 }
 
-.o-docicon__post {
+.c-posttype__post {
   background-color: rgb(var(--color-green));
 }

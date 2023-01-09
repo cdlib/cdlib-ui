@@ -3,9 +3,9 @@
 .c-searchresult {
   display: grid;
   grid-template:
-    'result-doctype result-heading'
-    'result-doctype result-excerpt'
-    'result-doctype result-datetime'
+    'result-posttype result-heading'
+    'result-posttype result-excerpt'
+    'result-posttype result-datetime'
     / 2.7em 1fr;
   margin-bottom: var(--space4);
   gap: var(--space2);
@@ -27,8 +27,8 @@
   }
 }
 
-.c-searchresult__doctype {
-  grid-area: result-doctype;
+.c-searchresult__posttype {
+  grid-area: result-posttype;
   align-self: start;
   margin-top: 0.3em;
   justify-self: end;
