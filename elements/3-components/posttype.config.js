@@ -1,5 +1,5 @@
 module.exports = {
   collated: true,
   default: '1',
-  label: 'Document Icons'
+  label: 'Post Types'
 }

@@ -19,7 +19,6 @@
   @import 'blockquote';
   @import 'button';
   @import 'details';
-  @import 'docicon';
   @import 'figure';
   @import 'heading';
   @import 'image';
@@ -30,8 +29,6 @@
   @import 'paragraph';
   @import 'rule';
   @import 'select';
-  @import 'sidebarbox';
-  @import 'sidebarnav';
   @import 'table';
 }
 
@@ -58,6 +55,7 @@
   @import 'orcid';
   @import 'pagination';
   @import 'postnav';
+  @import 'posttype';
   @import 'quicklink';
   @import 'records';
   @import 'refine';
@@ -67,6 +65,8 @@
   @import 'secondarynav';
   @import 'servicebox';
   @import 'serviceheading';
+  @import 'sidebarbox';
+  @import 'sidebarnav';
   @import 'sidebarpost';
   @import 'skipnav';
   @import 'slideshow';

@@ -1,7 +1,7 @@
 {{#each searchresult}}
 <div class="c-searchresult">
   {{> @heading searchresultheading }}
-  <span class="c-searchresult__doctype o-docicon__{{doctype}}" aria-label="{{doctype}} document">{{doctype}}</span>
+  <span class="c-searchresult__posttype c-posttype__{{doctype}}" aria-label="{{doctype}} document">{{doctype}}</span>
   <div class="c-searchresult__excerpt">{{{excerpt}}}</div>
   <div class="c-searchresult__datetime">
     <time>{{datetime}}</time>
