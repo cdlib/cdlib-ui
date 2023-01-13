@@ -3,7 +3,7 @@
 // The --details-summary-left-space variable used below is defined in _variables.scss and also used in _categories.scss to align the disclosure widget arrows and list items.
 
 details {
-  margin-bottom: var(--space2);
+  margin-block-end: var(--space2);
 
   summary {
     display: flex;

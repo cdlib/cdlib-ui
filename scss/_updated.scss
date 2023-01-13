@@ -20,8 +20,8 @@
 }
 
 .c-updated__label {
-  float: left;
-  clear: left;
+  float: inline-start;
+  clear: inline-start;
 
   &::after {
     content: '\00a0'; // non-breaking space

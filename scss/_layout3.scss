@@ -14,7 +14,7 @@
     'layout3f'
     'layout3g'
     / 1fr;
-  min-height: 100vh;
+  min-block-size: 100vh;
 
   @media (--min-width2) and (--max-width3) {
     grid-template:
@@ -39,7 +39,7 @@
 
   @media print {
     display: block;
-    min-height: auto;
+    min-block-size: auto;
   }
 
   .c-header {
@@ -98,7 +98,7 @@
     }
 
     @media print {
-      margin-top: var(--space3);
+      margin-block-start: var(--space3);
     }
 
   }

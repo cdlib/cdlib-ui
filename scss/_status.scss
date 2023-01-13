@@ -8,7 +8,7 @@
     th {
 
       &:first-child {
-        width: 30%;
+        inline-size: 30%;
       }
 
     }
@@ -24,9 +24,9 @@
 
   &::before {
     content: '';
-    width: 1em;
-    height: 1em;
-    margin-right: var(--space2);
+    block-size: 1em;
+    inline-size: 1em;
+    margin-inline-end: var(--space2);
     transition: opacity 1s;
     border-radius: 50%;
     opacity: 0;

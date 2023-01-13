@@ -1,9 +1,8 @@
 // ***** Table Object ***** //
 
 table {
-  width: 100%;
-  margin-top: var(--space3);
-  margin-bottom: var(--space3);
+  inline-size: 100%;
+  margin-block: var(--space3);
   table-layout: fixed;
   border-collapse: collapse;
 
@@ -16,7 +15,7 @@ table {
   }
 
   th {
-    text-align: left;
+    text-align: start;
   }
 
   td {

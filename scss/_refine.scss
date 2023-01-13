@@ -1,7 +1,7 @@
 // ***** Refine Search Component ***** //
 
 .c-refine {
-  margin-bottom: var(--space3);
+  margin-block-end: var(--space3);
   border: 1px solid rgb(var(--color-blue));
 
   header {
@@ -45,7 +45,7 @@
   }
 
   &:not(:last-child) {
-    border-bottom: 1px solid rgb(var(--color-gray));
+    border-block-end: 1px solid rgb(var(--color-gray));
   }
 
   .facetwp-counter {

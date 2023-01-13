@@ -3,17 +3,14 @@
 // Unordered lists without space or bullets:
 
 @mixin u-reset-list-styles {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-right: 0;
-  padding-left: 0;
+  margin-block: 0;
+  padding-inline: 0;
   list-style-type: none;
   line-height: var(--line-height0);
 
   li {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+    margin-block: 0;
+    padding-inline-start: 0;
   }
 }
 
@@ -21,7 +18,7 @@
 
 @mixin u-hide {
   position: absolute;
-  left: -9999px;
+  inset-inline-start: -9999px;
 }
 
 @mixin u-sidebar-grid {
@@ -52,7 +49,7 @@
 // Reset <figure> and <figcaption> styles defined in _figure.scss:
 
 @mixin u-reset-figure {
-  width: auto;
+  inline-size: auto;
   margin: 0;
 
   figcaption {

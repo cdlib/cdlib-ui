@@ -1,8 +1,7 @@
 // ***** Main Box Component ***** //
 
 .c-mainbox {
-  margin-top: var(--space3);
-  margin-bottom: var(--space3);
+  margin-block: var(--space3);
   padding: var(--space2);
   border: 1px solid rgb(var(--color-gray));
 
@@ -21,12 +20,12 @@
 
   h3 {
     @extend %o-heading3;
-    margin-top: var(--space3);
+    margin-block-start: var(--space3);
     color: rgb(var(--color-blue));
 
     &:not(:first-of-type) {
-      padding-top: var(--space3);
-      border-top: 1px solid rgb(var(--color-gray));
+      padding-block-start: var(--space3);
+      border-block-start: 1px solid rgb(var(--color-gray));
     }
 
   }

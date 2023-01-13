@@ -6,12 +6,12 @@
   @media (--max-width2) {
 
     li {
-      border-right: 1px solid rgb(var(--color-gray));
-      border-bottom: 1px solid rgb(var(--color-gray));
-      border-left: 1px solid rgb(var(--color-gray));
+      border-inline-end: 1px solid rgb(var(--color-gray));
+      border-block-end: 1px solid rgb(var(--color-gray));
+      border-inline-start: 1px solid rgb(var(--color-gray));
 
       &:first-child {
-        border-top: 1px solid rgb(var(--color-gray));
+        border-block-start: 1px solid rgb(var(--color-gray));
       }
 
       a {

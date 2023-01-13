@@ -18,7 +18,7 @@
 
   h2,
   h3 {
-    margin-top: 0;
+    margin-block-start: 0;
   }
 
   blockquote {
@@ -49,7 +49,7 @@
 
     ~ * {
       @include u-clearfix;
-      min-width: 10rem;
+      min-inline-size: 10rem;
       clear: none; // override elements styled with 'clear: both' in WP style.css
     }
 
@@ -62,7 +62,7 @@
 .c-well2 {
   @extend %c-well;
   display: inline-block;
-  margin-top: var(--space2);
+  margin-block-start: var(--space2);
   padding: var(--space2) var(--space3);
   background-color: rgb(var(--color-blue));
   text-align: center;
@@ -87,7 +87,7 @@
     font-size: 1.2em;
 
     + a {
-      margin-top: var(--space2);
+      margin-block-start: var(--space2);
       font-size: 1.1em;
     }
 
@@ -97,7 +97,7 @@
     font-size: 1.2em;
 
     + p {
-      margin-top: var(--space2);
+      margin-block-start: var(--space2);
       font-size: 1.1em;
     }
 

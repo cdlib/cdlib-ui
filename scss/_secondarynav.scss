@@ -9,27 +9,27 @@
 
     button {
       flex-shrink: 0;
-      margin-left: var(--space2);
+      margin-inline-start: var(--space2);
     }
 
   }
 
   ul ul ul {
-    border-top: 1px solid rgb(var(--color-gray));
+    border-block-start: 1px solid rgb(var(--color-gray));
 
     // 2nd level list:
     a {
-      padding-left: 30px;
+      padding-inline-start: 30px;
     }
 
     // 3rd level list:
     ul a {
-      padding-left: 50px;
+      padding-inline-start: 50px;
     }
 
     // 4th level list:
     ul ul a {
-      padding-left: 70px;
+      padding-inline-start: 70px;
     }
 
   }

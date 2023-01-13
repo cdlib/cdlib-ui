@@ -3,10 +3,10 @@
 main {
 
   img {
-    width: auto; // reset fixed width attribute applied via WP editor
-    max-width: calc(100vw - var(--space2));
-    height: auto; // reset fixed height attribute applied via WP editor
-    max-height: calc(100vh - var(--space2));
+    block-size: auto; // reset fixed height attribute applied via WP editor
+    max-block-size: calc(100vh - var(--space2));
+    inline-size: auto; // reset fixed height attribute applied via WP editor
+    max-inline-size: calc(100vw - var(--space2));
   }
 
 }

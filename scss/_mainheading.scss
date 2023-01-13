@@ -1,7 +1,7 @@
 // ***** Main Heading Component ***** //
 
 .c-mainheading {
-  margin-bottom: var(--space3);
+  margin-block-end: var(--space3);
 
   p {
     @extend %o-heading3;

@@ -6,12 +6,12 @@
   @include u-reset-list-styles;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: var(--space2);
-  padding-top: var(--yearlist-border-size);
+  margin-block-end: var(--space2);
+  padding-block-start: var(--yearlist-border-size);
 
   li {
-    margin-top: calc(var(--yearlist-border-size) * -1);
-    margin-left: calc(var(--yearlist-border-size) * -1);
+    margin-block-start: calc(var(--yearlist-border-size) * -1);
+    margin-inline-start: calc(var(--yearlist-border-size) * -1);
     border: var(--yearlist-border-size) solid rgb(var(--color-blue));
   }
 

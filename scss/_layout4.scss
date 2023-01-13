@@ -11,7 +11,7 @@
     'layout4e'
     'layout4f'
     / 1fr;
-  min-height: 100vh;
+  min-block-size: 100vh;
 
   @media (--min-width2) {
     grid-gap: var(--space3);
@@ -26,7 +26,7 @@
 
   @media print {
     display: block;
-    min-height: auto;
+    min-block-size: auto;
   }
 
   .c-header {

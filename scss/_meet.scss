@@ -18,10 +18,10 @@
     padding: var(--space2);
     color: rgb(var(--color-white));
     line-height: var(--line-height1);
-    text-align: left;
+    text-align: start;
 
     a {
-      margin-top: var(--space2);
+      margin-block-start: var(--space2);
       color: rgb(var(--color-light-gold));
     }
 
@@ -32,24 +32,21 @@
 .c-meet__avatar {
   position: relative;
   overflow: hidden;
-  text-align: left;
+  text-align: start;
 
   img {
     display: block;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: auto;
+    inset: 0;
+    block-size: auto;
     object-fit: cover;
 
     @supports (display: grid) {
       position: absolute;
-      width: 100%;
+      inline-size: 100%;
     }
 
     @supports (object-fit: cover) {
-      height: 100%;
+      block-size: 100%;
     }
 
   }

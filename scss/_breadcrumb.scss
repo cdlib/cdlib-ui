@@ -20,7 +20,7 @@
     display: inline-flex;
     align-items: center;
     gap: var(--separator-spacing);
-    margin-bottom: var(--space1);
+    margin-block-end: var(--space1);
     font-size: 0.9rem;
 
     &:not(:nth-last-of-type(2)) {

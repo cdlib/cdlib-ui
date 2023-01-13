@@ -17,7 +17,7 @@
       flex: 1 1 45%;
 
       &:nth-child(odd) {
-        margin-right: var(--space2);
+        margin-inline-end: var(--space2);
       }
 
     }
@@ -26,7 +26,7 @@
       flex: 1 1 20%;
 
       &:not(:last-child) {
-        margin-right: var(--space2);
+        margin-inline-end: var(--space2);
       }
 
     }

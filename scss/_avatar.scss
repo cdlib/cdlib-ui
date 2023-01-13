@@ -1,18 +1,17 @@
 // ***** Avatar Component ***** //
 
 .c-avatar {
-  margin-bottom: var(--space3);
-  margin-left: var(--space3);
-  float: right;
+  margin-block-end: var(--space3);
+  margin-inline-start: var(--space3);
+  float: inline-end;
   border: 1px solid rgb(var(--color-black));
 
   @media (--min-width1) {
-    margin-right: 3vw;
-    margin-left: 3vw;
+    margin-inline: 3vw;
   }
 
   + h2 {
-    margin-top: 0;
+    margin-block-start: 0;
   }
 
   // reset WP clear styles from style.css:

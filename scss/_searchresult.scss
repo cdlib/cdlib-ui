@@ -7,7 +7,7 @@
     'result-posttype result-excerpt'
     'result-posttype result-datetime'
     / 2.7em 1fr;
-  margin-bottom: var(--space4);
+  margin-block-end: var(--space4);
   gap: var(--space2);
 
   h2 {
@@ -30,7 +30,7 @@
 .c-searchresult__posttype {
   grid-area: result-posttype;
   align-self: start;
-  margin-top: 0.3em;
+  margin-block-start: 0.3em;
   justify-self: end;
 }
 

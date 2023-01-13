@@ -10,11 +10,11 @@
     'layout1d'
     'layout1e'
     / 1fr;
-  min-height: 100vh;
+  min-block-size: 100vh;
 
   @media print {
     display: block;
-    min-height: auto;
+    min-block-size: auto;
   }
 
   .c-header {

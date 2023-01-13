@@ -10,7 +10,7 @@
     'header-nav header-nav'
     'header-util-nav header-util-nav'
     / 1fr auto;
-  margin-top: var(--space1);
+  margin-block-start: var(--space1);
 
   @media (--min-width2) {
     grid-template:
@@ -18,7 +18,7 @@
       'header-logo header-search'
       'header-nav header-nav'
       / auto 1fr;
-    margin-top: var(--space2);
+    margin-block-start: var(--space2);
   }
 
   @media print {
@@ -30,7 +30,7 @@
 .c-header__logo {
   display: block;
   grid-area: header-logo;
-  margin-bottom: var(--space2);
+  margin-block-end: var(--space2);
 
   @media (--min-width2) {
     // stack over spanned grid-column in .c-header__search:
@@ -39,10 +39,10 @@
 
   img {
     display: block;
-    height: var(--header-logo-height);
+    block-size: var(--header-logo-height);
 
     @media (--min-width2) {
-      height: 4.4rem;
+      block-size: 4.4rem;
     }
 
   }
@@ -66,13 +66,12 @@
   position: fixed; // to .c-header
   z-index: 1;
   gap: var(--space2);
-  right: 0;
-  left: 0;
+  inset-inline: 0;
   grid-area: header-search;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  height: var(--header-logo-height);
+  block-size: var(--header-logo-height);
+  inline-size: 100%;
   padding-inline: var(--space1);
   transform: translateX(100%);
   transition: transform 0.5s;
@@ -83,7 +82,7 @@
   }
 
   @media (--min-width1) {
-    padding-left: var(--space2);
+    padding-inline-start: var(--space2);
   }
 
   @media (--min-width2) {
@@ -91,7 +90,7 @@
     grid-column: 1 / 3;
     align-items: center;
     justify-content: center;
-    padding-left: 0;
+    padding-inline-start: 0;
     background-color: transparent;
   }
 
@@ -100,7 +99,7 @@
 
     @media (--min-width2) {
       flex: 0 1 auto;
-      width: 18rem;
+      inline-size: 18rem;
     }
 
   }
@@ -122,7 +121,7 @@
     li {
 
       &:last-child {
-        border-bottom: none;
+        border-block-end: none;
       }
 
     }
@@ -135,7 +134,7 @@
   grid-area: header-util-nav;
 
   @media (--min-width2) {
-    margin-top: 0;
+    margin-block-start: 0;
   }
 
 }

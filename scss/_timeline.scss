@@ -17,23 +17,21 @@
     display: flex;
 
     strong {
-      margin-top: var(--year-item-space) + var(--year-section-space);
+      margin-block-start: var(--year-item-space) + var(--year-section-space);
       font-weight: 600;
     }
 
   }
 
   > ul > li > ul {
-    margin-left: var(--space2);
-    padding-top: var(--year-section-space);
-    padding-bottom: var(--year-section-space);
-    border-left: 3px solid rgb(var(--color-blue));
+    margin-inline-start: var(--space2);
+    padding-block: var(--year-section-space);
+    border-inline-start: 3px solid rgb(var(--color-blue));
   }
 
   > ul > li > ul > li {
-    margin-top: var(--year-item-space);
-    margin-bottom: var(--year-item-space);
-    margin-left: var(--space2);
+    margin-block: var(--year-item-space);
+    margin-inline-start: var(--space2);
   }
 
 }

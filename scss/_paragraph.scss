@@ -1,7 +1,6 @@
 // ***** Paragraph Object ***** //
 
 p {
-  margin-top: var(--space2);
-  margin-bottom: var(--space2);
+  margin-block: var(--space2);
   line-height: var(--line-height1);
 }

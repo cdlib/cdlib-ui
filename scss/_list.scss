@@ -1,20 +1,18 @@
 // ***** List Objects ***** //
 
 %o-list {
-  margin-top: var(--space2);
-  margin-bottom: var(--space2);
+  margin-block: var(--space2);
   line-height: var(--line-height1);
 }
 
 // List items:
 
 li {
-  margin-top: var(--space2);
-  margin-bottom: var(--space2);
+  margin-block: var(--space2);
 
   // nested lists:
   li {
-    padding-left: var(--list-indentation);
+    padding-inline-start: var(--list-indentation);
   }
 
 }
@@ -25,15 +23,15 @@ ul {
   @extend %o-list;
 
   // Default (top/bottom margin with no bullets or indentation):
-  padding-left: 0;
+  padding-inline-start: 0;
   list-style-type: none;
 
   // WP inline style 'list-style-type' equal to circle, disc, or square (read notes in list.config.js):
   &[style^='list-style-type:'] {
-    padding-left: var(--list-indentation);
+    padding-inline-start: var(--list-indentation);
 
     li {
-      padding-left: 0;
+      padding-inline-start: 0;
     }
 
   }
@@ -44,7 +42,7 @@ ul {
 
 ol {
   @extend %o-list;
-  padding-left: var(--list-indentation);
+  padding-inline-start: var(--list-indentation);
 }
 
 // Description lists:
@@ -54,12 +52,12 @@ dl {
 }
 
 dt {
-  margin-bottom: 0.2rem;
+  margin-block-end: 0.2rem;
   color: rgb(var(--color-red));
   font-weight: 500;
 }
 
 dd {
-  margin-bottom: var(--space2);
-  margin-left: var(--list-indentation);
+  margin-block-end: var(--space2);
+  margin-inline-start: var(--list-indentation);
 }

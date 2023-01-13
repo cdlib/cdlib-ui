@@ -36,7 +36,7 @@
 
       // Nav bar main items:
       &:not(:last-child) {
-        border-right: 1px solid rgb(var(--color-dark-gray));
+        border-inline-end: 1px solid rgb(var(--color-dark-gray));
       }
 
     }
@@ -69,9 +69,8 @@
     column-gap: calc(var(--headernav-section-padding) * 2);
     column-rule: 1px solid rgb(var(--color-gray));
     column-width: 9.5em;
-    border-right: 1px solid rgb(var(--color-gray));
-    border-bottom: 1px solid rgb(var(--color-gray));
-    border-left: 1px solid rgb(var(--color-gray));
+    border-inline: 1px solid rgb(var(--color-gray));
+    border-block-end: 1px solid rgb(var(--color-gray));
     background-color: rgb(var(--color-light-gray));
     box-shadow: 3px 3px 3px rgb(var(--color-gray));
   }
@@ -94,7 +93,7 @@
 
   // Panel list links:
   > ul > li > ul > li > a {
-    margin-bottom: var(--headernav-item-margin);
+    margin-block-end: var(--headernav-item-margin);
     color: rgb(var(--color-red));
     text-decoration: none;
 
@@ -111,8 +110,7 @@
 
   // Panel sub-lists:
   > ul > li > ul > li > ul {
-    padding-right: var(--space1);
-    padding-left: var(--space1);
+    padding-inline: var(--space1);
     page-break-inside: avoid; // Firefox
   }
 
@@ -128,7 +126,7 @@
 
   // All panel list items:
   > ul > li li {
-    margin-bottom: var(--headernav-item-margin);
+    margin-block-end: var(--headernav-item-margin);
   }
 
   // **** Panel Toggle **** //

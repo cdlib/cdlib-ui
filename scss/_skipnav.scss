@@ -7,8 +7,8 @@
   opacity: 0;
 
   &:focus {
-    top: var(--space1);
-    left: var(--space1);
+    inset-block-start: var(--space1);
+    inset-inline-start: var(--space1);
     opacity: 1;
   }
 

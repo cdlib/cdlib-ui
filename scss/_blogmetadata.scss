@@ -1,7 +1,7 @@
 // ***** Blog Meta Data Component ***** //
 
 .c-blogmetadata {
-  margin-bottom: var(--space2);
+  margin-block-end: var(--space2);
   color: rgb(var(--color-light-black));
 
   a {
@@ -31,9 +31,9 @@
   > * {
 
     &:not(:last-child) {
-      margin-right: 0.2em;
-      padding-right: 0.5em;
-      border-right: 2px solid rgb(var(--color-dark-gray));
+      margin-inline-end: 0.2em;
+      padding-inline-end: 0.5em;
+      border-inline-end: 2px solid rgb(var(--color-dark-gray));
     }
 
   }

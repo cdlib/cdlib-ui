@@ -3,13 +3,13 @@
 .c-sidebarbox {
 
   header {
-    margin-bottom: var(--space2);
+    margin-block-end: var(--space2);
 
     h2 {
       @extend %o-heading3;
       margin: 0;
-      padding-bottom: var(--space1);
-      border-bottom: 1px solid rgb(var(--color-gray));
+      padding-block-end: var(--space1);
+      border-block-end: 1px solid rgb(var(--color-gray));
       font-weight: 500;
     }
   }
