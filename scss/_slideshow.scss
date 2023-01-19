@@ -35,7 +35,7 @@
   grid-row: 2;
   align-items: center;
   justify-content: space-evenly;
-  border-block-start: 1px solid rgb(var(--color-white));
+  border-block-start: 1px solid white;
   background-color: var(--slideshow-caption-bg);
 
   @media (--min-width1) {
@@ -93,7 +93,7 @@
 .c-slideshow__goto {
 
   &[aria-current] {
-    background-color: rgb(var(--color-white));
+    background-color: white;
     color: rgb(var(--color-medium-blue));
   }
 }
@@ -113,7 +113,7 @@
   flex-direction: column;
   padding: var(--space2);
   background-color: var(--slideshow-caption-bg);
-  color: rgb(var(--color-white));
+  color: white;
 
   @media (--min-width1) {
     margin: var(--space2) var(--space2) 0 var(--space2);
@@ -178,7 +178,7 @@
       max-inline-size: 50%;
       margin-inline-start: var(--slideshow-caption-width);
       padding: var(--space2);
-      background-color: rgb(var(--color-black) / 60%);
+      background-color: oklch(0% 0 0 / 60%); // black at 60% opacity
       font-size: 1em;
       text-align: end;
     }

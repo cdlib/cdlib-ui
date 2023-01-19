@@ -50,7 +50,7 @@
 %o-button4 {
   @extend %o-button;
   background-color: rgb(var(--color-light-black));
-  color: rgb(var(--color-white));
+  color: white;
 }
 
 .o-button4 {
@@ -60,17 +60,17 @@
 %o-button5 {
   @extend %o-button;
   gap: var(--space2);
-  border: 2px solid rgb(var(--color-white));
+  border: 2px solid white;
   border-radius: 3px;
   background-color: rgb(var(--color-blue));
-  color: rgb(var(--color-white));
+  color: white;
 
   &::after {
     content: '';
     flex: none;
     block-size: 1rem;
     inline-size: 1rem;
-    background-color: rgb(var(--color-white));
+    background-color: white;
     mask-size: 1rem;
     mask-position: center;
     mask-image: url('data-url:/fa-solid/caret-up.svg');

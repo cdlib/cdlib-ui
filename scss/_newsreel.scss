@@ -29,7 +29,7 @@
   h2 {
     order: 1;
     margin: 0;
-    color: rgb(var(--color-black));
+    color: black;
     font-size: 1em;
     font-weight: 600;
   }
@@ -86,7 +86,7 @@
     flex: none;
     block-size: 2rem;
     inline-size: 2rem;
-    background-color: rgb(var(--color-black));
+    background-color: black;
     mask-size: 0.7rem;
     mask-position: center;
     mask-repeat: no-repeat;
