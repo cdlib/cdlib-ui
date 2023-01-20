@@ -54,7 +54,7 @@
     td {
 
       &:first-child {
-        background-color: rgb(var(--color-light-gray));
+        background-color: oklch(95% 0 0);
         font-weight: 600;
       }
 

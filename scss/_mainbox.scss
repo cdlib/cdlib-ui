@@ -3,7 +3,7 @@
 .c-mainbox {
   margin-block: var(--space3);
   padding: var(--space2);
-  border: 1px solid rgb(var(--color-gray));
+  border: 1px solid oklch(88% 0 0);
 
   header {
     margin: calc(var(--space2) * -1) calc(var(--space2) * -1) var(--space3);
@@ -25,7 +25,7 @@
 
     &:not(:first-of-type) {
       padding-block-start: var(--space3);
-      border-block-start: 1px solid rgb(var(--color-gray));
+      border-block-start: 1px solid oklch(88% 0 0);
     }
 
   }

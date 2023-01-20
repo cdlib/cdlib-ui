@@ -5,14 +5,14 @@
   &:not(:last-child) {
     margin-inline-end: 0.5em;
     padding-inline-end: 0.5em;
-    border-inline-end: 1px solid rgb(var(--color-light-black));
+    border-inline-end: 1px solid oklch(36% 0 0);
   }
 
 }
 
 .c-footer {
   margin-block-end: var(--space2);
-  border-block-start: 1px solid rgb(var(--color-gray));
+  border-block-start: 1px solid oklch(88% 0 0);
 
   @media print {
     margin-block: var(--space2) 0;
@@ -24,7 +24,7 @@
   }
 
   a {
-    color: rgb(var(--color-light-black));
+    color: oklch(36% 0 0);
     font-size: 0.9rem;
     text-decoration: none;
 
@@ -95,7 +95,7 @@
 .c-footer__legal {
   margin-block-end: var(--space2);
   padding-block: var(--space2);
-  border-block: 1px solid rgb(var(--color-gray));
+  border-block: 1px solid oklch(88% 0 0);
 
   @media print {
     display: none;

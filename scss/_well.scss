@@ -107,10 +107,10 @@
 
 .c-well3 {
   @extend %c-well__block;
-  background-color: rgb(var(--color-light-gray));
+  background-color: oklch(95% 0 0);
 
   @media print {
-    border: 1px solid rgb(var(--color-light-gray));
+    border: 1px solid oklch(95% 0 0);
   }
 
   h2,

@@ -5,7 +5,7 @@
 .c-quicklink1,
 .c-quicklink2 {
   a {
-    color: rgb(var(--color-light-black));
+    color: oklch(36% 0 0);
     text-decoration: none;
 
     &:focus,

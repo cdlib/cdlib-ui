@@ -9,7 +9,7 @@
     li {
 
       &:not(:last-child) {
-        border-block-end: 1px solid rgb(var(--color-gray));
+        border-block-end: 1px solid oklch(88% 0 0);
       }
 
       a {

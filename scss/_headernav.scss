@@ -36,7 +36,7 @@
 
       // Nav bar main items:
       &:not(:last-child) {
-        border-inline-end: 1px solid rgb(var(--color-dark-gray));
+        border-inline-end: 1px solid oklch(55% 0 0);
       }
 
     }
@@ -48,8 +48,8 @@
 
     @media (--min-width2) {
       padding: var(--space1);
-      background: linear-gradient(rgb(var(--color-light-gray)), rgb(var(--color-gray)));
-      color: rgb(var(--color-light-black));
+      background: linear-gradient(oklch(95% 0 0), oklch(88% 0 0));
+      color: oklch(36% 0 0);
       text-align: center;
       text-decoration: none;
 
@@ -67,12 +67,12 @@
     position: absolute;
     padding: var(--headernav-section-padding);
     column-gap: calc(var(--headernav-section-padding) * 2);
-    column-rule: 1px solid rgb(var(--color-gray));
+    column-rule: 1px solid oklch(88% 0 0);
     column-width: 9.5em;
-    border-inline: 1px solid rgb(var(--color-gray));
-    border-block-end: 1px solid rgb(var(--color-gray));
-    background-color: rgb(var(--color-light-gray));
-    box-shadow: 3px 3px 3px rgb(var(--color-gray));
+    border-inline: 1px solid oklch(88% 0 0);
+    border-block-end: 1px solid oklch(88% 0 0);
+    background-color: oklch(95% 0 0);
+    box-shadow: 3px 3px 3px oklch(88% 0 0);
   }
 
   // Panel columns (no columns, by default). These are set via 'columns-[#]' classes defined in the top-level menu items within WP Menus:

@@ -9,7 +9,7 @@
       @extend %o-heading3;
       margin: 0;
       padding-block-end: var(--space1);
-      border-block-end: 1px solid rgb(var(--color-gray));
+      border-block-end: 1px solid oklch(88% 0 0);
       font-weight: 500;
     }
   }

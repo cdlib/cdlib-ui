@@ -49,7 +49,7 @@
 
 %o-button4 {
   @extend %o-button;
-  background-color: rgb(var(--color-light-black));
+  background-color: oklch(36% 0 0);
   color: white;
 }
 

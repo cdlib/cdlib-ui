@@ -28,8 +28,8 @@ a[href$='.pptx']::after {
   margin-inline-start: 0.4rem;
   padding: 0.1rem 0.2rem 0.05rem 0.3rem;
   transform: translateY(-0.15rem);
-  border: 1px solid rgb(var(--color-light-black));
-  color: rgb(var(--color-light-black));
+  border: 1px solid oklch(36% 0 0);
+  color: oklch(36% 0 0);
   font-family: Consolas, Monaco, monospace;
   font-size: 0.6rem;
   letter-spacing: 0.1rem;
