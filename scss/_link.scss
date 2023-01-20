@@ -3,7 +3,7 @@
 // Default styling:
 
 a {
-  color: rgb(var(--color-blue));
+  color: var(--color-blue);
   text-decoration: underline;
 
   &:focus,

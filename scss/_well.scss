@@ -33,15 +33,15 @@
 .c-well1 {
   @extend %c-well__block;
   @include u-clearfix;
-  background-color: rgb(var(--color-light-blue));
+  background-color: var(--color-light-blue);
 
   @media print {
-    border: 1px solid rgb(var(--color-light-blue));
+    border: 1px solid var(--color-light-blue);
   }
 
   h2,
   h3 {
-    color: rgb(var(--color-blue));
+    color: var(--color-blue);
   }
 
   // When embedded element (like image) is aligned left via WP editor:
@@ -64,16 +64,16 @@
   display: inline-block;
   margin-block-start: var(--space2);
   padding: var(--space2) var(--space3);
-  background-color: rgb(var(--color-blue));
+  background-color: var(--color-blue);
   text-align: center;
 
   @media print {
-    border: 1px solid rgb(var(--color-blue));
+    border: 1px solid var(--color-blue);
   }
 
   a {
     display: block;
-    color: rgb(var(--color-light-blue));
+    color: var(--color-light-blue);
     line-height: var(--line-height0);
     text-decoration: none;
 

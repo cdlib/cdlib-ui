@@ -25,7 +25,7 @@ table {
   thead {
 
     th {
-      background-color: rgb(var(--color-light-blue));
+      background-color: var(--color-light-blue);
       color: rgb(var(--color-red));
     }
 
@@ -61,15 +61,15 @@ table {
     thead {
 
       th {
-        background-color: rgb(var(--color-light-blue)) !important;
+        background-color: var(--color-light-blue) !important;
 
         &:focus {
-          outline: solid 1px rgb(var(--color-blue));
+          outline: solid 1px var(--color-blue);
         }
 
         &:focus,
         &:hover {
-          background-color: rgb(var(--color-light-blue)) !important;
+          background-color: var(--color-light-blue) !important;
         }
 
       }

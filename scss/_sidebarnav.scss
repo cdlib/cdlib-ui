@@ -1,7 +1,7 @@
 // ***** Sidebar Navigation Component ***** //
 
 .c-sidebarnav {
-  border: 1px solid rgb(var(--color-blue));
+  border: 1px solid var(--color-blue);
 
   ul {
     @include u-reset-list-styles;
@@ -22,7 +22,7 @@
 
   header {
     padding: var(--space2);
-    background-color: rgb(var(--color-blue));
+    background-color: var(--color-blue);
 
     h2 {
       @extend %o-heading4;

@@ -55,7 +55,7 @@
 
       &:focus,
       &:hover {
-        color: rgb(var(--color-blue));
+        color: var(--color-blue);
         text-decoration: underline;
       }
     }
@@ -105,7 +105,7 @@
 
   // Panel sub-list 'heading' links:
   > ul > li > ul > li > a:only-child {
-    color: rgb(var(--color-blue));
+    color: var(--color-blue);
   }
 
   // Panel sub-lists:

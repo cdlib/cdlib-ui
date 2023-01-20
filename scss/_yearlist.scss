@@ -12,7 +12,7 @@
   li {
     margin-block-start: calc(var(--yearlist-border-size) * -1);
     margin-inline-start: calc(var(--yearlist-border-size) * -1);
-    border: var(--yearlist-border-size) solid rgb(var(--color-blue));
+    border: var(--yearlist-border-size) solid var(--color-blue);
   }
 
   a {

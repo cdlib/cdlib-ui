@@ -39,7 +39,7 @@
         flex: none;
         block-size: 0.6rem;
         inline-size: 0.6rem;
-        background-color: rgb(var(--color-blue));
+        background-color: var(--color-blue);
         mask: url('data-url:/fa-solid/angle-left.svg') center / 0.5rem no-repeat;
       }
 
@@ -60,7 +60,7 @@
           flex: none;
           block-size: 0.6rem;
           inline-size: 0.6rem;
-          background-color: rgb(var(--color-blue));
+          background-color: var(--color-blue);
           mask: url('data-url:/fa-solid/angle-right.svg') center / 0.5rem no-repeat;
         }
       }

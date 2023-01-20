@@ -6,7 +6,7 @@
   justify-content: space-between;
   gap: var(--space2);
   padding: var(--space2);
-  border: 1px solid rgb(var(--color-blue));
+  border: 1px solid var(--color-blue);
   text-decoration: none;
 
   &:focus,
@@ -19,7 +19,7 @@
     flex: none;
     block-size: 1.6rem;
     inline-size: 1.6rem;
-    background-color: rgb(var(--color-twitter-blue));
+    background-color: oklch(68.18% 0.158 243.35); // twitter blue
     mask: url('data-url:/fa-brands/twitter.svg') center / contain;
   }
 }

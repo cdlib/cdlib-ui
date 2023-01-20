@@ -11,7 +11,9 @@
 
   section {
     padding: var(--space2);
-    background-image: linear-gradient(rgb(var(--color-lighter-blue)), rgb(var(--color-light-blue)));
+
+    // First gradient oklch color is a very light version of --color-light-blue:
+    background-image: linear-gradient(oklch(98% 0.02 250), var(--color-light-blue));
 
     @media (--min-width1) {
       flex: 1 1 45%;

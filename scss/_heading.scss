@@ -22,7 +22,7 @@
 %o-heading1 {
   @extend %o-heading;
   margin-block-start: 0;
-  color: rgb(var(--color-blue));
+  color: var(--color-blue);
   font-size: 1.75em;
 }
 

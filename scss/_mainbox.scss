@@ -8,7 +8,7 @@
   header {
     margin: calc(var(--space2) * -1) calc(var(--space2) * -1) var(--space3);
     padding: var(--space2);
-    background-color: rgb(var(--color-light-blue));
+    background-color: var(--color-light-blue);
 
     h2 {
       @extend %o-heading3;
@@ -21,7 +21,7 @@
   h3 {
     @extend %o-heading3;
     margin-block-start: var(--space3);
-    color: rgb(var(--color-blue));
+    color: var(--color-blue);
 
     &:not(:first-of-type) {
       padding-block-start: var(--space3);

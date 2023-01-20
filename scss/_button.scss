@@ -62,7 +62,7 @@
   gap: var(--space2);
   border: 2px solid white;
   border-radius: 3px;
-  background-color: rgb(var(--color-blue));
+  background-color: var(--color-blue);
   color: white;
 
   &::after {
@@ -97,7 +97,7 @@
   @extend %o-button;
 
   &[aria-current='page'] {
-    background-color: rgb(var(--color-light-blue));
+    background-color: var(--color-light-blue);
   }
 
 }

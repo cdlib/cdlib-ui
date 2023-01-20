@@ -1,7 +1,9 @@
 // ***** Slideshow Component ***** //
 
 .c-slideshow {
-  --slideshow-caption-bg: rgb(var(--color-medium-blue) / 90%);
+
+  // --color-blue at 90% opacity:
+  --slideshow-caption-bg: oklch(45% 0.12 250 / 90%);
   --slideshow-caption-width: 20rem;
 
   display: grid;
@@ -94,7 +96,7 @@
 
   &[aria-current] {
     background-color: white;
-    color: rgb(var(--color-medium-blue));
+    color: var(--color-blue);
   }
 }
 

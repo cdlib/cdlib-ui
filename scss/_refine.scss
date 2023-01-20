@@ -2,11 +2,11 @@
 
 .c-refine {
   margin-block-end: var(--space3);
-  border: 1px solid rgb(var(--color-blue));
+  border: 1px solid var(--color-blue);
 
   header {
     padding: var(--space2);
-    background-color: rgb(var(--color-blue));
+    background-color: var(--color-blue);
 
     h2 {
       @extend %o-heading4;
@@ -38,7 +38,7 @@
   justify-content: space-between;
   gap: var(--space2);
   padding: var(--space1) var(--space2);
-  color: rgb(var(--color-blue));
+  color: var(--color-blue);
 
   &:hover {
     text-decoration: underline;

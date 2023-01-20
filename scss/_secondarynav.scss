@@ -44,7 +44,7 @@
 
   // sass-lint:disable class-name-format
   .current_page_item > a {
-    background-color: rgb(var(--color-light-blue));
+    background-color: var(--color-light-blue);
   }
 
 }

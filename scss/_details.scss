@@ -16,7 +16,7 @@ details {
       block-size: calc(var(--details-summary-left-space) / 1.5);
       inline-size: calc(var(--details-summary-left-space) / 1.5);
       margin-inline: calc(var(--details-summary-left-space) / 6);
-      background-color: rgb(var(--color-blue));
+      background-color: var(--color-blue);
       mask-repeat: no-repeat;
       mask-size: 0.6rem;
       mask-position: left center;
