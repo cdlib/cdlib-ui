@@ -36,7 +36,7 @@
 
     &::before {
       opacity: 1;
-      background-color: rgb(var(--color-green));
+      background-color: var(--color-green);
     }
 
   }
@@ -45,7 +45,7 @@
 
     &::before {
       opacity: 1;
-      background-color: rgb(var(--color-orange));
+      background-color: var(--color-gold);
     }
 
   }

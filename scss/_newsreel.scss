@@ -95,7 +95,7 @@
   &:focus,
   &:hover {
     &::after {
-      background-color: rgb(var(--color-gold));
+      background-color: var(--color-gold);
     }
   }
 

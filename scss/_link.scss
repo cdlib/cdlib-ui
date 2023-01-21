@@ -94,12 +94,12 @@ a[href^='https://sp.ucop.edu']::after {
 }
 
 a[data-wpel-link='external']::after {
-  background-color: rgb(var(--color-gold));
+  background-color: var(--color-gold);
   mask-image: url('data-url:/fa-solid/arrow-up-right-from-square.svg');
 }
 
 a[href^='mailto:']::after {
-  background-color: rgb(var(--color-gold));
+  background-color: var(--color-gold);
   mask-image: url('data-url:/fa-solid/envelope.svg');
 }
 

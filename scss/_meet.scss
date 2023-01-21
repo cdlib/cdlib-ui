@@ -22,7 +22,7 @@
 
     a {
       margin-block-start: var(--space2);
-      color: rgb(var(--color-light-gold));
+      color: oklch(86% 0.13 80); // lighter version of --color-gold for better a11y contrast against background
     }
 
   }

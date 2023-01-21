@@ -1,16 +1,14 @@
 // ***** Variables ***** //
 
 :root {
-  // Colors in RGB:
+  // Colors in OKLCH:
 
   --color-light-blue: oklch(94% 0.02 250);
   --color-blue: oklch(45% 0.12 250);
   --color-red: oklch(56% 0.22 30);
   --color-dark-red: oklch(45% 0.18 30);
-  --color-orange: 255 153 0;
-  --color-green: 82 122 0;
-  --color-light-gold: 255 197 71;
-  --color-gold: 255 181 17;
+  --color-green: oklch(56% 0.16 135);
+  --color-gold: oklch(82% 0.16 80);
 
   // Spacing:
 
