@@ -32,7 +32,7 @@ h1 {
 
 %o-heading2 {
   @extend %o-heading;
-  color: rgb(var(--color-red));
+  color: var(--color-dark-red);
   font-size: 1.25em;
   font-weight: 600;
 }
@@ -43,7 +43,7 @@ h2 {
 
 %o-heading3 {
   @extend %o-heading;
-  color: rgb(var(--color-red));
+  color: var(--color-dark-red);
   font-size: 1.125em;
 }
 
@@ -53,7 +53,7 @@ h3 {
 
 %o-heading4 {
   @extend %o-heading;
-  color: rgb(var(--color-red));
+  color: var(--color-dark-red);
   font-size: 1em;
   font-weight: 600;
 }

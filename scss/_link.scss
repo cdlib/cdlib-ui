@@ -104,7 +104,7 @@ a[href^='mailto:']::after {
 }
 
 a[href^='https://sp.ucop.edu']::after {
-  background-color: rgb(var(--color-red));
+  background-color: var(--color-dark-red);
   mask-size: 0.8rem;
   mask-image: url('data-url:/fa-solid/lock.svg');
 }

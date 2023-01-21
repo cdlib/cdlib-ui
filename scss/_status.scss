@@ -54,7 +54,7 @@
 
     &::before {
       opacity: 1;
-      background-color: rgb(var(--color-light-red));
+      background-color: var(--color-red);
     }
 
   }

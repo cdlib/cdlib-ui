@@ -94,7 +94,7 @@
   // Panel list links:
   > ul > li > ul > li > a {
     margin-block-end: var(--headernav-item-margin);
-    color: rgb(var(--color-red));
+    color: var(--color-dark-red);
     text-decoration: none;
 
     &:focus,
