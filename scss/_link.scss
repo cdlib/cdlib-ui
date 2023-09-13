@@ -81,7 +81,7 @@ a[href$='.pptx']::after {
 
 a[data-wpel-link='external']::after,
 a[href^='mailto:']::after,
-a[href^='https://sp.ucop.edu']::after {
+a[href^='https://ucofficeofthepresident.sharepoint.com']::after {
   content: '';
   display: inline-block;
   block-size: 0.9rem;
@@ -103,7 +103,7 @@ a[href^='mailto:']::after {
   mask-image: url('data-url:/fa-solid/envelope.svg');
 }
 
-a[href^='https://sp.ucop.edu']::after {
+a[href^='https://ucofficeofthepresident.sharepoint.com']::after {
   background-color: var(--color-dark-red);
   mask-size: 0.8rem;
   mask-image: url('data-url:/fa-solid/lock.svg');

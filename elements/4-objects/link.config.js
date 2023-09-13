@@ -68,7 +68,7 @@ module.exports = {
       context: {
         link: {
           text: 'Link to UCOP Sharepoint site',
-          url: 'https://sp.ucop.edu'
+          url: 'https://ucofficeofthepresident.sharepoint.com'
         }
       }
     },
@@ -86,7 +86,7 @@ module.exports = {
       context: {
         link: {
           text: 'Link to UCOP Sharepoint PDF',
-          url: 'https://sp.ucop.edu/document.pdf'
+          url: 'https://ucofficeofthepresident.sharepoint.com/document.pdf'
         }
       }
     },
