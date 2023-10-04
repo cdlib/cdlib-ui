@@ -49,6 +49,7 @@ module.exports = {
     },
     program: programService,
     title: jobTitle,
+    pronouns: 'he, him',
     responsibilities: responsibilities,
     education: education,
     background: background,
