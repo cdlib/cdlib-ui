@@ -18,7 +18,10 @@ jobs:
           npm config set '//npm.fontawesome.com/:_authToken' "${{ secrets.FONTAWESOME_TOKEN }}"
           npm install @fortawesome/fontawesome-pro --dry-run
       - name: Install dependencies
-        run: npm ci
+        run: |
+          npm config set '@fortawesome:registry=https://npm.fontawesome.com/'
+          npm config set '//npm.fontawesome.com/:_authToken' "${{ secrets.FONTAWESOME_TOKEN }}"
+          npm ci
       - name: Create test build
         run: npm run test-build
       - name: Cache test build
