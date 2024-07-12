@@ -5,7 +5,7 @@ module.exports = {
   context: {
     link: {
       text: 'Blue, underlined by default',
-      external: false,
+      url: 'https://cdlib.org',
       linebreak: true
     }
   },
@@ -14,7 +14,8 @@ module.exports = {
       name: '2', // link--2.hbs
       context: {
         link: {
-          text: 'Blue, underlined on focus/hover'
+          text: 'Blue, underlined on focus/hover',
+          url: 'https://cdlib.org'
         }
       }
     },
@@ -23,8 +24,7 @@ module.exports = {
       context: {
         link: {
           text: 'Blue, underlined by default, external link',
-          url: 'wordpress/external/link',
-          external: true
+          url: 'wordpress/external/link'
         }
       }
     },
@@ -33,8 +33,7 @@ module.exports = {
       context: {
         link: {
           text: 'Blue, underlined on focus/hover, external link',
-          url: 'wordpress/external/link',
-          external: true
+          url: 'wordpress/external/link'
         }
       }
     },
@@ -42,7 +41,8 @@ module.exports = {
       name: '5', // link--5.hbs
       context: {
         link: {
-          text: 'Light black, underlined on focus/hover'
+          text: 'Light black, underlined on focus/hover',
+          url: 'https://cdlib.org'
         }
       }
     },
@@ -50,7 +50,8 @@ module.exports = {
       name: '6', // link--6.hbs
       context: {
         link: {
-          text: 'Light black, blue on focus/hover'
+          text: 'Light black, blue on focus/hover',
+          url: 'https://cdlib.org'
         }
       }
     },
