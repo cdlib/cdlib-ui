@@ -4,59 +4,32 @@ module.exports = {
   label: 'Links',
   context: {
     link: {
-      text: 'Blue, underlined by default',
+      text: 'Default link to cdlib.org page',
       url: 'https://cdlib.org',
       linebreak: true
     }
   },
   variants: [
     {
-      name: '2', // link--2.hbs
+      name: '2',
       context: {
         link: {
-          text: 'Blue, underlined on focus/hover',
-          url: 'https://cdlib.org'
+          text: 'Anchor link to reference',
+          url: '#some-heading'
         }
       }
     },
     {
-      name: '3', // link--3.hbs
+      name: '3',
       context: {
         link: {
-          text: 'Blue, underlined by default, external link',
+          text: 'Link to external site',
           url: 'wordpress/external/link'
         }
       }
     },
     {
-      name: '4', // link--4.hbs
-      context: {
-        link: {
-          text: 'Blue, underlined on focus/hover, external link',
-          url: 'wordpress/external/link'
-        }
-      }
-    },
-    {
-      name: '5', // link--5.hbs
-      context: {
-        link: {
-          text: 'Light black, underlined on focus/hover',
-          url: 'https://cdlib.org'
-        }
-      }
-    },
-    {
-      name: '6', // link--6.hbs
-      context: {
-        link: {
-          text: 'Light black, blue on focus/hover',
-          url: 'https://cdlib.org'
-        }
-      }
-    },
-    {
-      name: '7', // link--7.hbs
+      name: '4',
       context: {
         link: {
           text: 'Link to email address',
@@ -65,7 +38,7 @@ module.exports = {
       }
     },
     {
-      name: '8', // link--8.hbs
+      name: '5',
       context: {
         link: {
           text: 'Link to UCOP Sharepoint site',
@@ -74,7 +47,7 @@ module.exports = {
       }
     },
     {
-      name: '9', // link--9.hbs
+      name: '6',
       context: {
         link: {
           text: 'Link to PDF',
@@ -83,7 +56,7 @@ module.exports = {
       }
     },
     {
-      name: '10', // link--10.hbs
+      name: '7',
       context: {
         link: {
           text: 'Link to UCOP Sharepoint PDF',
@@ -92,7 +65,7 @@ module.exports = {
       }
     },
     {
-      name: '11', // link--11.hbs
+      name: '8',
       context: {
         link: {
           text: 'Link to Word document',
@@ -101,7 +74,7 @@ module.exports = {
       }
     },
     {
-      name: '12', // link--12.hbs
+      name: '9',
       context: {
         link: {
           text: 'Link to Excel spreadsheet',
@@ -110,7 +83,7 @@ module.exports = {
       }
     },
     {
-      name: '13', // link--13.hbs
+      name: '10',
       context: {
         link: {
           text: 'Link to text file',
@@ -119,7 +92,7 @@ module.exports = {
       }
     },
     {
-      name: '14', // link--14.hbs
+      name: '11',
       context: {
         link: {
           text: 'Link to ZIP file',
@@ -128,7 +101,7 @@ module.exports = {
       }
     },
     {
-      name: '15', // link--15.hbs
+      name: '12',
       context: {
         link: {
           text: 'Link to Rich Text file',
