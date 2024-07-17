@@ -88,7 +88,7 @@ a {
 // External, mailto and secured icons:
 
 @layer external-icons {
-  a:not([href^='https://cdlib'])::after {
+  a:not([href^='https://cdlib'], [href^='#'])::after {
     content: '';
     display: inline-block;
     block-size: 0.9rem;
