@@ -1,6 +1,6 @@
 // ***** Links ***** //
 
-@layer external-icons, file-icons;
+@layer external-icons, file-icons, secured-icons;
 
 // Default styling:
 
@@ -88,23 +88,31 @@ a {
 // External, mailto and secured icons:
 
 @layer external-icons {
-  a:not([href^='https://cdlib'])::after,
-  a[href^='mailto:']::after,
-  a[href^='https://ucofficeofthepresident.sharepoint.com']::after {
+  a:not([href^='https://cdlib'])::after {
     content: '';
     display: inline-block;
     block-size: 0.9rem;
     inline-size: 0.9rem;
     margin-inline-start: 0.4rem;
     transform: translateY(0.05rem);
+    background-color: var(--color-gold);
     mask-size: 0.8rem;
     mask-position: center;
     mask-repeat: no-repeat;
-  }
-
-  a:not([href^='https://cdlib'])::after {
-    background-color: var(--color-gold);
     mask-image: url('data-url:/fa-solid/arrow-up-right-from-square.svg');
+  }
+}
+
+@layer secured-icons {
+  a[href^='mailto:']::after,
+  a[href^='https://ucofficeofthepresident.sharepoint.com']::after {
+    content: '';
+    block-size: 0.9rem;
+    inline-size: 0.9rem;
+    transform: translateY(0.05rem);
+    mask-size: 0.8rem;
+    mask-position: center;
+    mask-repeat: no-repeat;
   }
 
   a[href^='mailto:']::after {
@@ -114,7 +122,6 @@ a {
 
   a[href^='https://ucofficeofthepresident.sharepoint.com']::after {
     background-color: var(--color-dark-red);
-    mask-size: 0.8rem;
     mask-image: url('data-url:/fa-solid/lock.svg');
   }
 }
