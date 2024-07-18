@@ -41,8 +41,8 @@ module.exports = {
       name: '5',
       context: {
         link: {
-          text: 'Link to UCOP Sharepoint site',
-          url: 'https://ucofficeofthepresident.sharepoint.com'
+          text: 'Link to UCOP Sharepoint page',
+          url: 'https://cdlib.org/contact/cdl-document-request?document-link=https://ucofficeofthepresident.sharepoint.com/sites/cdl/cpa/licensed-resources'
         }
       }
     },
@@ -59,8 +59,8 @@ module.exports = {
       name: '7',
       context: {
         link: {
-          text: 'Link to UCOP Sharepoint PDF',
-          url: 'https://ucofficeofthepresident.sharepoint.com/document.pdf'
+          text: 'Link to Excel spreadsheet on UCOP Sharepoint',
+          url: 'https://cdlib.org/contact/cdl-document-request?document-link=https://ucofficeofthepresident.sharepoint.com/sites/cdl/cpa/licensed-resources/CDL-licensed-resources-with-tier-info.xlsx'
         }
       }
     },

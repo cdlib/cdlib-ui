@@ -105,10 +105,12 @@ a {
 
 @layer secured-icons {
   a[href^='mailto:']::after,
-  a[href^='https://ucofficeofthepresident.sharepoint.com']::after {
+  a[href*='https://ucofficeofthepresident.sharepoint.com']::after {
     content: '';
+    display: inline-block;
     block-size: 0.9rem;
     inline-size: 0.9rem;
+    margin-inline-start: 0.4rem;
     transform: translateY(0.05rem);
     mask-size: 0.8rem;
     mask-position: center;
@@ -120,7 +122,7 @@ a {
     mask-image: url('data-url:/fa-solid/envelope.svg');
   }
 
-  a[href^='https://ucofficeofthepresident.sharepoint.com']::after {
+  a[href*='https://ucofficeofthepresident.sharepoint.com']::after {
     background-color: var(--color-dark-red);
     mask-image: url('data-url:/fa-solid/lock.svg');
   }
