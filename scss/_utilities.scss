@@ -1,12 +1,5 @@
 // ***** Utilities ***** //
 
-// Hide something visually but not for screen readers:
-
-@mixin u-hide {
-  position: absolute;
-  inset-inline-start: -9999px;
-}
-
 @mixin u-sidebar-grid {
   display: grid;
   grid-gap: var(--space3);

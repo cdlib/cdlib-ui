@@ -57,7 +57,8 @@
     cursor: pointer;
 
     span {
-      @include u-hide;
+      position: absolute;
+      inset-inline-start: -9999px;
     }
   }
 }

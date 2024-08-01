@@ -1,5 +1,6 @@
 // ***** Home Heading Component ***** //
 
 .c-homeheading {
-  @include u-hide;
+  position: absolute;
+  inset-inline-start: -9999px;
 }
