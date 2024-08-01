@@ -32,7 +32,7 @@
 
 .c-well1 {
   @extend %c-well__block;
-  @include u-clearfix;
+  display: flow-root;
   background-color: var(--color-light-blue);
 
   @media print {
@@ -48,7 +48,7 @@
   .alignleft {
 
     ~ * {
-      @include u-clearfix;
+      display: flow-root;
       min-inline-size: 10rem;
       clear: none; // override elements styled with 'clear: both' in WP style.css
     }

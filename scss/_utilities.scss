@@ -18,15 +18,3 @@
   }
 
 }
-
-// Clear floats:
-
-@mixin u-clearfix {
-  overflow: hidden;
-
-  @supports (display: flow-root) {
-    display: flow-root;
-    overflow: visible;
-  }
-
-}
