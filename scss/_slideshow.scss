@@ -102,8 +102,6 @@
 }
 
 .c-slideshow__slide {
-  @include u-reset-figure;
-
   // remove <figure> element so that <figcaption> and .c-slideshow__slide-image become grid items of .c-slideshow grid:
   display: contents;
 }
@@ -117,6 +115,7 @@
   padding: var(--space2);
   background-color: var(--slideshow-caption-bg);
   color: white;
+  font-style: normal;
 
   @media (--min-width1) {
     margin: var(--space2) var(--space2) 0 var(--space2);

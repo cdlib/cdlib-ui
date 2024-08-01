@@ -19,20 +19,6 @@
 
 }
 
-// Reset <figure> and <figcaption> styles defined in _figure.scss:
-
-@mixin u-reset-figure {
-  inline-size: auto;
-  margin: 0;
-
-  figcaption {
-    padding: 0;
-    font-style: normal;
-    line-height: var(--line-height0);
-  }
-
-}
-
 // Clear floats:
 
 @mixin u-clearfix {
