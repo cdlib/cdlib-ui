@@ -19,12 +19,6 @@
 
 }
 
-@mixin u-break-words {
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: break-word;
-}
-
 // Reset <figure> and <figcaption> styles defined in _figure.scss:
 
 @mixin u-reset-figure {

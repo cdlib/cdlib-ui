@@ -19,7 +19,9 @@ table {
   }
 
   td {
-    @include u-break-words;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
   }
 
   thead {
