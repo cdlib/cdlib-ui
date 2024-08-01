@@ -7,10 +7,13 @@
   }
 
   ul {
-    @include u-reset-list-styles;
+    all: unset;
+    list-style-type: none;
 
     li {
       display: flex;
+      margin: unset;
+      padding: unset;
 
       strong {
         inline-size: 50%;

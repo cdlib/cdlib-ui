@@ -3,7 +3,8 @@
 // The --details-summary-left-space variable used below is defined in _variables.scss and also used in _details.scss to align the disclosure widget arrows and list items.
 
 .c-categories {
-  @include u-reset-list-styles;
+  all: unset;
+  list-style-type: none;
 
   @media (--min-width1) {
     column-gap: var(--space3);
@@ -24,7 +25,9 @@
   }
 
   li {
+    margin: unset;
     margin-block: var(--space2);
+    padding: unset;
   }
 
   li li {

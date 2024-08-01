@@ -3,7 +3,8 @@
 .c-utilitynav {
 
   ul {
-    @include u-reset-list-styles;
+    all: unset;
+    list-style-type: none;
 
     @media (--min-width2) {
       display: flex;
@@ -11,6 +12,8 @@
     }
 
     li {
+      margin: unset;
+      padding: unset;
 
       @media (--min-width2) {
         margin: 0 var(--space2); 

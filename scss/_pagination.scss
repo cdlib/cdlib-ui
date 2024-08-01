@@ -3,9 +3,15 @@
 %c-pagination {
 
   ul {
-    @include u-reset-list-styles;
+    all: unset;
     display: inline-flex;
     flex-wrap: wrap;
+    list-style-type: none;
+
+    li {
+      margin: unset;
+      padding: unset;
+    }
   }
 
   a {

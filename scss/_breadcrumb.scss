@@ -9,18 +9,20 @@
   }
 
   ul {
-    @include u-reset-list-styles;
-
+    all: unset;
     display: flex;
     flex-wrap: wrap;
+    list-style-type: none;
     gap: var(--separator-spacing);
   }
 
   li {
     display: inline-flex;
     align-items: center;
-    gap: var(--separator-spacing);
+    margin: unset;
     margin-block-end: var(--space1);
+    padding: unset;
+    gap: var(--separator-spacing);
     font-size: 0.9rem;
 
     &:not(:nth-last-of-type(2)) {

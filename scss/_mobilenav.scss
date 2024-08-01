@@ -1,7 +1,13 @@
 // ***** Mobile Navigation Component ***** //
 
 .c-mobilenav {
-  @include u-reset-list-styles;
+  all: unset;
+  list-style-type: none;
+
+  li {
+    margin: unset;
+    padding: unset;
+  }
 
   @media (--max-width2) {
 

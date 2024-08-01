@@ -35,15 +35,18 @@
   }
 
   ul {
-    @include u-reset-list-styles;
+    all: unset;
     display: grid;
     flex: 1 1 auto;
     order: 2;
+    list-style-type: none;
 
     li {
       z-index: 1;
       grid-column: 1;
       grid-row: 1;
+      margin: unset;
+      padding: unset;
       transition: opacity 1s;
       opacity: 0;
 

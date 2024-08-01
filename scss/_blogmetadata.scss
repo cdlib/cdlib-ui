@@ -14,11 +14,14 @@
   }
 
   ul {
-    @include u-reset-list-styles;
+    all: unset;
     display: inline;
+    list-style-type: none;
 
     li {
       display: inline;
+      margin: unset;
+      padding: unset;
 
       &:not(:last-child)::after {
         content: ', ';

@@ -9,7 +9,13 @@
   position: relative;
 
   ul {
-    @include u-reset-list-styles;
+    all: unset;
+    list-style-type: none;
+
+    li {
+      margin: unset;
+      padding: unset;
+    }
   }
 
   a {

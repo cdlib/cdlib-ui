@@ -10,7 +10,13 @@
   }
 
   ul {
-    @include u-reset-list-styles;
+    all: unset;
+    list-style-type: none;
+
+    li {
+      margin: unset;
+      padding: unset;
+    }
   }
 
   > ul > li {

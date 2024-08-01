@@ -4,9 +4,12 @@
   border: 1px solid var(--color-blue);
 
   ul {
-    @include u-reset-list-styles;
+    all: unset;
+    list-style-type: none;
 
     li {
+      margin: unset;
+      padding: unset;
 
       &:not(:last-child) {
         border-block-end: 1px solid oklch(88% 0 0);
