@@ -42,7 +42,6 @@
 
   /* wp_nav_menu current item style: */
 
-  /* sass-lint:disable class-name-format */
   .current_page_item > a {
     background-color: var(--color-light-blue);
   }
