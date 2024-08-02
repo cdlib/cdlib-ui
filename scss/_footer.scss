@@ -1,15 +1,5 @@
 // ***** Global Footer Component ***** //
 
-@mixin footer-pipe-separator {
-
-  &:not(:last-child) {
-    margin-inline-end: 0.5em;
-    padding-inline-end: 0.5em;
-    border-inline-end: 1px solid oklch(36% 0 0);
-  }
-
-}
-
 .c-footer {
   margin-block-end: var(--space2);
   border-block-start: 1px solid oklch(88% 0 0);
@@ -113,8 +103,13 @@
   }
 
   li {
-    @include footer-pipe-separator;
     text-align: center;
+
+    &:not(:last-child) {
+      margin-inline-end: 0.5em;
+      padding-inline-end: 0.5em;
+      border-inline-end: 1px solid oklch(36% 0 0);
+    }
   }
 
 }
@@ -125,11 +120,16 @@
   justify-content: center;
 
   small {
-    @include footer-pipe-separator;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     font-size: 0.7rem;
+
+    &:not(:last-child) {
+      margin-inline-end: 0.5em;
+      padding-inline-end: 0.5em;
+      border-inline-end: 1px solid oklch(36% 0 0);
+    }
   }
 
 }
