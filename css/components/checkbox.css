@@ -1,9 +1,9 @@
-// ***** Checkbox Component ***** //
+/***** Checkbox Component *****/
 
 .c-checkbox {
   padding-block-start: var(--space3);
 
-  p { // WP Contact Form 7 generated
+  p { /* WP Contact Form 7 generated */
     margin: 0;
 
     @media (--min-width1) {

@@ -1,6 +1,6 @@
-// ***** Header Nav Component ***** //
+/***** Header Nav Component *****/
 
-// Read notes in component config
+/* Read notes in component config */
 
 .c-headernav {
   --headernav-section-padding: var(--space3);
@@ -22,7 +22,7 @@
     display: block;
   }
 
-  // Sections:
+  /* Sections: */
   > ul {
 
     @media (--min-width2) {
@@ -40,7 +40,7 @@
 
     @media (--min-width2) {
 
-      // Nav bar main items:
+      /* Nav bar main items: */
       &:not(:last-child) {
         border-inline-end: 1px solid oklch(55% 0 0);
       }
@@ -49,7 +49,7 @@
 
   }
 
-  // Nav bar links:
+  /* Nav bar links: */
   > ul > li > a {
 
     @media (--min-width2) {
@@ -67,7 +67,7 @@
     }
   }
 
-  // Panels:
+  /* Panels: */
   > ul > li > ul {
     display: none;
     position: absolute;
@@ -81,7 +81,7 @@
     box-shadow: 3px 3px 3px oklch(88% 0 0 / 70%);
   }
 
-  // Panel columns (no columns, by default). These are set via 'columns-[#]' classes defined in the top-level menu items within WP Menus:
+  /* Panel columns (no columns, by default). These are set via 'columns-[#]' classes defined in the top-level menu items within WP Menus: */
 
   > ul > .columns-2 > ul {
     column-count: 2;
@@ -91,13 +91,13 @@
     column-count: 3;
   }
 
-  // Panel lists:
+  /* Panel lists: */
   > ul > li > ul > li {
     break-inside: avoid;
-    page-break-inside: avoid; // Firefox
+    page-break-inside: avoid; /* Firefox */
   }
 
-  // Panel list links:
+  /* Panel list links: */
   > ul > li > ul > li > a {
     margin-block-end: var(--headernav-item-margin);
     color: var(--color-dark-red);
@@ -109,18 +109,18 @@
     }
   }
 
-  // Panel sub-list 'heading' links:
+  /* Panel sub-list 'heading' links: */
   > ul > li > ul > li > a:only-child {
     color: var(--color-blue);
   }
 
-  // Panel sub-lists:
+  /* Panel sub-lists: */
   > ul > li > ul > li > ul {
     padding-inline: var(--space1);
-    page-break-inside: avoid; // Firefox
+    page-break-inside: avoid; /* Firefox */
   }
 
-   // Panel sub-list links:
+   /* Panel sub-list links: */
   > ul > li > ul > li > ul > li > a {
     text-decoration: none;
 
@@ -130,14 +130,14 @@
     }
   }
 
-  // All panel list items:
+  /* All panel list items: */
   > ul > li li {
     margin-block-end: var(--headernav-item-margin);
   }
 
-  // **** Panel Toggle **** //
+  /**** Panel Toggle ****/
 
-  // If c-headernav JS not supported:
+  /* If c-headernav JS not supported: */
 
   &.c-headernav-no-js {
 
@@ -149,7 +149,7 @@
       }
     }
 
-    // If :focus-within not supported. Only primary links accessible via tabkey:
+    /* If :focus-within not supported. Only primary links accessible via tabkey: */
 
     > ul > li a:focus {
 
@@ -159,7 +159,7 @@
       }
     }
 
-    // If :focus-within supported. All links accessbile via focus. No toggle state on primary links, so user must tab through every secondary link in each section to reach the next section:
+    /* If :focus-within supported. All links accessbile via focus. No toggle state on primary links, so user must tab through every secondary link in each section to reach the next section: */
 
     > ul > li:focus-within > ul {
 
@@ -171,11 +171,11 @@
 
   }
 
-  // If c-headernav JS supported:
+  /* If c-headernav JS supported: */
 
   &.c-headernav-js {
 
-    // Primary links disabled via JS and used as a toggle for each section. Hover and focus states handled by JS and set via 'open' class:
+    /* Primary links disabled via JS and used as a toggle for each section. Hover and focus states handled by JS and set via 'open' class: */
 
     li.open ul {
 

@@ -1,6 +1,6 @@
-// ***** Resets ***** //
+/***** Resets *****/
 
-// sass-lint:disable no-vendor-prefixes
+/* sass-lint:disable no-vendor-prefixes */
 
 fieldset {
   padding: 0;
@@ -21,7 +21,7 @@ label {
   font-weight: 600;
 }
 
-// IE 11:
+/* IE 11: */
 main {
   display: block;
 }

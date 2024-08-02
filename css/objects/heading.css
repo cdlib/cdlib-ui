@@ -1,4 +1,4 @@
-// ***** heading Objects ***** //
+/***** heading Objects *****/
 
 h1,
 h2,
@@ -43,7 +43,7 @@ h4 {
   font-weight: 600;
 }
 
-// The following heading tags and class will style an "FAQ heading". The class is added by the WP editor in the "format" menu:
+/* The following heading tags and class will style an "FAQ heading". The class is added by the WP editor in the "format" menu: */
 
 h2,
 h3 {

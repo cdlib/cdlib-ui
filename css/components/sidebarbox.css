@@ -1,4 +1,4 @@
-// ***** Sidebar Box Component ***** //
+/***** Sidebar Box Component *****/
 
 .c-sidebarbox {
 
@@ -16,9 +16,9 @@
   }
 
   a {
-    display: flex; // position link icons to top-right of text in sidebarbox container
+    display: flex; /* position link icons to top-right of text in sidebarbox container */
     align-items: flex-start;
-    justify-content: space-between; // " "
+    justify-content: space-between; /* same as above */
     text-decoration: none;
 
     &:focus,

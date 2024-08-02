@@ -1,9 +1,9 @@
-// ***** Staff Component ***** //
+/***** Staff Component *****/
 
 .c-staff {
   table-layout: auto;
 
-  // Remove WordPress auto-generated break tags:
+  /* Remove WordPress auto-generated break tags: */
   br {
     display: none;
   }

@@ -1,6 +1,6 @@
-// ***** RSS Feed Component ***** //
+/***** RSS Feed Component *****/
 
-// WP RSS Aggregator CSS:
+/* WP RSS Aggregator CSS: */
 .rss-aggregator {
 
   li {
@@ -14,7 +14,7 @@
 
   }
 
-  + br { // WP auto-generated
+  + br { /* WP auto-generated */
     display: none;
   }
 

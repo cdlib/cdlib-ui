@@ -1,4 +1,4 @@
-// ***** Newsreel Component ***** //
+/***** Newsreel Component *****/
 
 .c-newsreel {
   display: flex;
@@ -57,7 +57,7 @@
     }
   }
 
-  // 'view all' link:
+  /* 'view all' link: */
   > a {
     order: 4;
     margin-inline-start: auto;

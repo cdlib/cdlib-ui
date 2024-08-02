@@ -1,4 +1,4 @@
-// ***** Service Box Component ***** //
+/***** Service Box Component *****/
 
 .c-servicebox {
 
@@ -10,7 +10,7 @@
   section {
     padding: var(--space2);
 
-    // First gradient oklch color is a very light version of --color-light-blue:
+    /* First gradient oklch color is a very light version of --color-light-blue: */
     background-image: linear-gradient(oklch(98% 0.02 250), var(--color-light-blue));
 
     @media (--min-width1) {

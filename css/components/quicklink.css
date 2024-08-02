@@ -1,6 +1,6 @@
-// ***** Quick Link Component ***** //
+/***** Quick Link Component *****/
 
-// This component is based on style and structure from sidebarnav.
+/* This component is based on style and structure from sidebarnav. */
 
 .c-quicklink1,
 .c-quicklink2 {
@@ -13,7 +13,7 @@
       text-decoration: underline;
     }
 
-    // disable external link icon:
+    /* disable external link icon: */
     &::after {
       content: none;
     }

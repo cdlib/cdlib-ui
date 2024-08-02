@@ -1,6 +1,6 @@
-// ***** Details Object ***** //
+/***** Details Object *****/
 
-// The --details-summary-left-space variable used below is defined in _variables.scss and also used in _categories.scss to align the disclosure widget arrows and list items.
+/* The --details-summary-left-space variable used below is defined in _variables.scss and also used in _categories.scss to align the disclosure widget arrows and list items. */
 
 details {
   margin-block-end: var(--space2);
@@ -23,7 +23,7 @@ details {
       mask-image: url('data-url:/fa-solid/caret-right.svg');
     }
 
-    // remove default arrow in Safari:
+    /* remove default arrow in Safari: */
 
     &::-webkit-details-marker {
       display: none;

@@ -1,4 +1,4 @@
-// ***** Social Link Component ***** //
+/***** Social Link Component *****/
 
 .c-social {
   display: flex;
@@ -19,7 +19,7 @@
     flex: none;
     block-size: 1.6rem;
     inline-size: 1.6rem;
-    background-color: oklch(68.18% 0.158 243.35); // twitter blue
+    background-color: oklch(68.18% 0.158 243.35); /* twitter blue */
     mask: url('data-url:/fa-brands/twitter.svg') center / contain;
   }
 }

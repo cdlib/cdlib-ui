@@ -1,4 +1,4 @@
-// ***** Well Components ***** //
+/***** Well Components *****/
 
 .c-well1,
 .c-well2,
@@ -27,7 +27,7 @@
   }
 }
 
-// Block Well:
+/* Block Well: */
 
 .c-well1 {
   display: flow-root;
@@ -42,20 +42,20 @@
     color: var(--color-blue);
   }
 
-  // When embedded element (like image) is aligned left via WP editor:
+  /* When embedded element (like image) is aligned left via WP editor: */
   .alignleft {
 
     ~ * {
       display: flow-root;
       min-inline-size: 10rem;
-      clear: none; // override elements styled with 'clear: both' in WP style.css
+      clear: none; /* override elements styled with 'clear: both' in WP style.css */
     }
 
   }
 
 }
 
-// Link Well:
+/* Link Well: */
 
 .c-well2 {
   display: inline-block;

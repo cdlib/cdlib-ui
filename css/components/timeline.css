@@ -1,10 +1,10 @@
-// ***** Timeline Component ***** //
+/***** Timeline Component *****/
 
 .c-timeline {
   --year-item-space: .6rem;
   --year-section-space: .3rem;
 
-  // Remove WordPress auto-generated break tags:
+  /* Remove WordPress auto-generated break tags: */
   br {
     display: none;
   }

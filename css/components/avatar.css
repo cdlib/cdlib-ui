@@ -1,4 +1,4 @@
-// ***** Avatar Component ***** //
+/***** Avatar Component *****/
 
 .c-avatar {
   margin-block-end: var(--space3);
@@ -14,7 +14,7 @@
     margin-block-start: 0;
   }
 
-  // reset WP clear styles from style.css:
+  /* reset WP clear styles from style.css: */
   ~ h2,
     h3,
     h4,

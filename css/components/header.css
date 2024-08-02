@@ -1,4 +1,4 @@
-// ***** Global Header Component ***** //
+/***** Global Header Component *****/
 
 .c-header {
   --header-logo-height: 50px;
@@ -33,7 +33,7 @@
   margin-block-end: var(--space2);
 
   @media (--min-width2) {
-    // stack over spanned grid-column in .c-header__search:
+    /* stack over spanned grid-column in .c-header__search: */
     z-index: 2;
   }
 
@@ -63,7 +63,7 @@
 
 .c-header__search {
   display: flex;
-  position: fixed; // to .c-header
+  position: fixed; /* to .c-header */
   z-index: 1;
   gap: var(--space2);
   inset-inline: 0;
@@ -139,7 +139,7 @@
 
 }
 
-// JS interactivity:
+/* JS interactivity: */
 
 .c-header__header-nav,
 .c-header__utility-nav {

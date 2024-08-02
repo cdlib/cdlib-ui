@@ -1,4 +1,4 @@
-// ***** Orcid ID Object ***** //
+/***** Orcid ID Object *****/
 
 .o-orcid {
   display: inline-flex;
@@ -13,7 +13,7 @@
     background: url('data-url:../images/orcid.svg') center / contain;
   }
 
-  // disable external link icon:
+  /* disable external link icon: */
   &::after {
     content: none;
   }

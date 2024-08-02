@@ -1,4 +1,4 @@
-// ***** Meet Component ***** //
+/***** Meet Component *****/
 
 .c-meet {
   all: unset;
@@ -24,7 +24,7 @@
 
     a {
       margin-block-start: var(--space2);
-      color: oklch(86% 0.13 80); // lighter version of --color-gold for better a11y contrast against background
+      color: oklch(86% 0.13 80); /* lighter version of --color-gold for better a11y contrast against background */
     }
 
   }

@@ -1,4 +1,4 @@
-// ***** Half Width Boxes Component ***** //
+/***** Half Width Boxes Component *****/
 
 .c-halfboxes {
   margin-block: var(--space3);
@@ -17,7 +17,7 @@
 
   }
 
-  // remove predefined margins on mainbox component:
+  /* remove predefined margins on mainbox component: */
   .c-mainbox {
     margin-block: 0;
   }

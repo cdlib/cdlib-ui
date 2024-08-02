@@ -1,4 +1,4 @@
-// ***** Refine Search Component ***** //
+/***** Refine Search Component *****/
 
 .c-refine {
   margin-block-end: var(--space3);
@@ -17,22 +17,22 @@
   }
 }
 
-// FacetWP Styles (facetWP plugin stylesheet is loaded in footer, so !important is required to override some styles below):
+/* FacetWP Styles (facetWP plugin stylesheet is loaded in footer, so !important is required to override some styles below): */
 
-// WP class to reset all facetWP container <div>s:
+/* WP class to reset all facetWP container <div>s: */
 
 .facetwp-facet {
   margin-block-end: 0 !important;
 }
 
-// WP classes for facetWP radio containers <div>
+/* WP classes for facetWP radio containers <div> */
 
 .facetwp-type-radio,
 .facetwp-type-sort {
   padding: var(--space2);
 }
 
-// WP classes for facetWP link <div>
+/* WP classes for facetWP link <div> */
 
 .facetwp-link {
   display: flex;

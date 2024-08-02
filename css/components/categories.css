@@ -1,6 +1,6 @@
-// ***** Categories Component ***** //
+/***** Categories Component *****/
 
-// The --details-summary-left-space variable used below is defined in _variables.scss and also used in _details.scss to align the disclosure widget arrows and list items.
+/* The --details-summary-left-space variable used below is defined in _variables.scss and also used in _details.scss to align the disclosure widget arrows and list items. */
 
 .c-categories {
   all: unset;
@@ -42,6 +42,6 @@
   details {
     margin-block-end: 0;
     break-inside: avoid;
-    page-break-inside: avoid; // Firefox
+    page-break-inside: avoid; /* Firefox */
   }
 }

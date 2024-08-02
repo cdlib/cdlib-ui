@@ -1,6 +1,6 @@
-// ***** Layout 3 Template ***** //
+/***** Layout 3 Template *****/
 
-// grid-template within media query 'screen2' is not getting cascaded over with 'screen3' in IE for some reason (perhaps autoprefixer), so added 'max-width' media feature to 'screen2' queries
+/* grid-template within media query 'screen2' is not getting cascaded over with 'screen3' in IE for some reason (perhaps autoprefixer), so added 'max-width' media feature to 'screen2' queries */
 
 .t-layout--3 {
   display: grid;

@@ -1,4 +1,4 @@
-// ***** Global Footer Component ***** //
+/***** Global Footer Component *****/
 
 .c-footer {
   margin-block-end: var(--space2);
@@ -29,7 +29,7 @@
       text-decoration: underline;
     }
 
-    // disable external link icon:
+    /* disable external link icon: */
     &::after {
       content: none;
     }
@@ -63,7 +63,7 @@
 
     > li {
       break-inside: avoid;
-      page-break-inside: avoid; // Firefox
+      page-break-inside: avoid; /* Firefox */
 
       @media (--min-width2) {
         inline-size: 100%;
@@ -79,7 +79,7 @@
       }
 
       > ul {
-        page-break-inside: avoid; // Firefox
+        page-break-inside: avoid; /* Firefox */
       }
 
     }

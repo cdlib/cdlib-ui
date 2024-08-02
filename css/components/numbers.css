@@ -1,7 +1,7 @@
-// ***** By The Numbers Component ***** //
+/***** By The Numbers Component *****/
 
 .c-numbers {
-  // Remove WordPress auto-generated break tags:
+  /* Remove WordPress auto-generated break tags: */
   br {
     display: none;
   }

@@ -1,25 +1,25 @@
-// ***** SCP Text Color Component ***** //
+/***** SCP Text Color Component *****/
 
 em {
 
   &.textcolor__scp-titles-added {
-    color: #006100; // dark-green
+    color: #006100; /* dark-green */
   }
 
   &.textcolor__scp-titles-removed {
-    color: #b30000; // dark-red
+    color: #b30000; /* dark-red */
   }
 
   &.textcolor__scp-package-added {
-    color: #800080; // dark-purple
+    color: #800080; /* dark-purple */
   }
 
   &.textcolor__scp-package-removed {
-    color: #c75000; // dark-orange
+    color: #c75000; /* dark-orange */
   }
 
   &.textcolor__scp-package-change {
-    color: #005e75; // dark-teal
+    color: #005e75; /* dark-teal */
   }
 
 }

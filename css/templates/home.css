@@ -1,4 +1,4 @@
-// ***** Home Template ***** //
+/***** Home Template *****/
 
 .t-home {
   display: grid;
@@ -42,11 +42,11 @@
     / 1fr var(--sidebar-width);
   }
 
-  // This class used only to highlight the grid in layout4.hbs:
+  /* This class used only to highlight the grid in layout4.hbs: */
   &.highlight-grid {
 
     > * {
-      // sass-lint:disable property-sort-order
+      /* sass-lint:disable property-sort-order */
       all: unset;
       background-color: var(--color-light-blue);
     }

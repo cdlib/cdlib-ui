@@ -1,11 +1,11 @@
-// ***** Image in Content Object ***** //
+/***** Image in Content Object *****/
 
 main {
 
   img {
-    block-size: auto; // reset fixed height attribute applied via WP editor
+    block-size: auto; /* reset fixed height attribute applied via WP editor */
     max-block-size: calc(100vh - var(--space2));
-    inline-size: auto; // reset fixed height attribute applied via WP editor
+    inline-size: auto; /* reset fixed height attribute applied via WP editor */
     max-inline-size: calc(100vw - var(--space2));
   }
 

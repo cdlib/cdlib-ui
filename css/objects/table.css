@@ -1,4 +1,4 @@
-// ***** Table Object ***** //
+/***** Table Object *****/
 
 table {
   inline-size: 100%;
@@ -46,7 +46,7 @@ table {
 
   }
 
-  // WP TablePress plugin:
+  /* WP TablePress plugin: */
   &.tablepress {
 
     th,

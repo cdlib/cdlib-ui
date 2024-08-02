@@ -1,6 +1,6 @@
-// ***** Custom Fonts ***** //
+/***** Custom Fonts *****/
 
-// Regular:
+/* Regular: */
 
 @font-face {
   font-family: 'Source Sans';
@@ -11,7 +11,7 @@
   font-display: swap;
 }
 
-// Semi Bold:
+/* Semi Bold: */
 
 @font-face {
   font-family: 'Source Sans';
@@ -22,7 +22,7 @@
   font-display: swap;
 }
 
-// Bold:
+/* Bold: */
 
 @font-face {
   font-family: 'Source Sans';
@@ -33,7 +33,7 @@
   font-display: swap;
 }
 
-// Italic:
+/* Italic: */
 
 @font-face {
   font-family: 'Source Sans';
@@ -45,7 +45,7 @@
   font-display: swap;
 }
 
-// Semi Bold Italic:
+/* Semi Bold Italic: */
 
 @font-face {
   font-family: 'Source Sans';
@@ -57,7 +57,7 @@
   font-display: swap;
 }
 
-// Bold Italic:
+/* Bold Italic: */
 
 @font-face {
   font-family: 'Source Sans';

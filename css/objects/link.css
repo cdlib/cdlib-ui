@@ -1,8 +1,8 @@
-// ***** Links ***** //
+/***** Links *****/
 
 @layer external-icons, file-icons, secured-icons;
 
-// Default styling:
+/* Default styling: */
 
 a {
   color: var(--color-blue);
@@ -14,7 +14,7 @@ a {
   }
 }
 
-// File type icons:
+/* File type icons: */
 
 @layer file-icons {
   a[href$='.pdf']::after,
@@ -85,7 +85,7 @@ a {
   }
 }
 
-// External, mailto and secured icons:
+/* External, mailto and secured icons: */
 
 @layer external-icons {
   a:not([href^='https://cdlib'], [href^='#'])::after {

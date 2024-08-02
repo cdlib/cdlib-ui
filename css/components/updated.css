@@ -1,4 +1,4 @@
-// ***** Last Updated Component ***** //
+/***** Last Updated Component *****/
 
 .c-updated {
 
@@ -8,7 +8,7 @@
 
   a {
 
-    // disable external link icon:
+    /* disable external link icon: */
     &::after {
       content: none;
     }
@@ -24,7 +24,7 @@
   clear: left;
 
   &::after {
-    content: '\00a0'; // non-breaking space
+    content: '\00a0'; /* non-breaking space */
   }
 
 }
