@@ -56,6 +56,10 @@
   gap: var(--space2);
   margin-block-start: var(--space2);
 
+  &[hidden] {
+    display: none;
+  }
+
   @media (--min-width2) {
     display: none;
   }
