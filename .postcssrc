@@ -1,0 +1,6 @@
+{
+  "plugins": {
+    "postcss-import-ext-glob": true,
+    "postcss-import": true
+  }
+}
