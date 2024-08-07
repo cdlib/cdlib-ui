@@ -1,0 +1,79 @@
+/***** Button Objects *****/
+
+.o-button1,
+.o-button2,
+.o-button3,
+.o-button4,
+.o-button5,
+.o-button6,
+.o-button7 {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem var(--space2);
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.o-button1 {
+  block-size: 1.9rem;
+  inline-size: 1.9rem;
+  background-image: url('data-url:npm:fa-light/magnifying-glass.svg');
+  background-size: 1.9em;
+}
+
+.o-button2 {
+  block-size: 1.5rem;
+  inline-size: 1.5rem;
+  background-image: url('data-url:npm:fa-light/xmark.svg');
+  background-size: 1.5em;
+}
+
+.o-button3 {
+  block-size: 1.9rem;
+  inline-size: 1.9rem;
+  background-image: url('data-url:npm:fa-light/bars.svg');
+  background-size: 1.9em;
+}
+
+.o-button4 {
+  background-color: oklch(36% 0 0);
+  color: white;
+}
+
+.o-button5,
+.o-button6 {
+  gap: var(--space2);
+  border: 2px solid white;
+  border-radius: 3px;
+  background-color: var(--color-blue);
+  color: white;
+
+  &::after {
+    content: '';
+    flex: none;
+    block-size: 1rem;
+    inline-size: 1rem;
+    background-color: white;
+    mask-size: 1rem;
+    mask-position: center;
+    mask-image: url('data-url:npm:fa-solid/caret-up.svg');
+  }
+}
+
+.o-button6 {
+
+  &::after {
+    mask-image: url('data-url:npm:fa-solid/caret-down.svg');
+  }
+}
+
+.o-button7 {
+
+  &[aria-current='page'] {
+    background-color: var(--color-light-blue);
+  }
+
+}

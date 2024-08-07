@@ -1,0 +1,44 @@
+/***** Blog Meta Data Component *****/
+
+.c-blogmetadata {
+  margin-block-end: var(--space2);
+  color: oklch(36% 0 0);
+
+  a {
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    all: unset;
+    display: inline;
+    list-style-type: none;
+
+    li {
+      display: inline;
+      margin: unset;
+      padding: unset;
+
+      &:not(:last-child)::after {
+        content: ', ';
+      }
+
+    }
+
+  }
+
+  > * {
+
+    &:not(:last-child) {
+      margin-inline-end: 0.2em;
+      padding-inline-end: 0.5em;
+      border-inline-end: 2px solid oklch(55% 0 0);
+    }
+
+  }
+
+}

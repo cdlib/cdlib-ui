@@ -1,0 +1,6 @@
+/***** Home Heading Component *****/
+
+.c-homeheading {
+  position: absolute;
+  inset-inline-start: -9999px;
+}

@@ -1,0 +1,11 @@
+/***** Search Records Component *****/
+
+.c-records {
+  margin-block-end: var(--space3);
+  color: black;
+  font-size: 1em;
+
+  strong {
+    color: oklch(36% 0 0);
+  }
+}

@@ -1,0 +1,56 @@
+/***** Meet Component *****/
+
+.c-meet {
+  all: unset;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  grid-template-rows: 1fr auto;
+  border: 1px solid oklch(46% 0 0);
+  background-color: oklch(46% 0 0);
+  direction: rtl;
+
+  figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--space2);
+    color: white;
+    font-style: normal;
+    line-height: var(--line-height1);
+    text-align: start;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+
+    a {
+      margin-block-start: var(--space2);
+      color: oklch(86% 0.13 80); /* lighter version of --color-gold for better a11y contrast against background */
+    }
+
+  }
+
+}
+
+.c-meet__avatar {
+  position: relative;
+  overflow: hidden;
+  text-align: start;
+
+  img {
+    display: block;
+    inset: 0;
+    block-size: auto;
+    object-fit: cover;
+
+    @supports (display: grid) {
+      position: absolute;
+      inline-size: 100%;
+    }
+
+    @supports (object-fit: cover) {
+      block-size: 100%;
+    }
+
+  }
+
+}

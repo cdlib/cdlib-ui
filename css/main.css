@@ -1,0 +1,10 @@
+@layer theme, normalize, objects, components, templates;
+
+/* The 'theme' layer above is defined within the WordPress theme stylesheet: https://github.com/cdlib/cdlib/blob/master/wp-content/themes/cdlib/style.css */
+
+@import 'variables.css';
+@import 'fonts.css';
+@import '../node_modules/modern-normalize/modern-normalize.css' layer(normalize);
+@import-glob './objects/*.css' layer(objects);
+@import-glob './components/*.css' layer(components);
+@import-glob './templates/*.css' layer(templates);

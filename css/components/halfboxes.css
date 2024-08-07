@@ -1,0 +1,25 @@
+/***** Half Width Boxes Component *****/
+
+.c-halfboxes {
+  margin-block: var(--space3);
+
+  @media (--min-width1) {
+    display: flex;
+
+    > * {
+      flex: 1 1 50%;
+
+      &:nth-child(2) {
+        margin-inline-start: var(--space2);
+      }
+
+    }
+
+  }
+
+  /* remove predefined margins on mainbox component: */
+  .c-mainbox {
+    margin-block: 0;
+  }
+
+}

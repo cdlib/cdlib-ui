@@ -1,0 +1,8 @@
+/***** Horizontal Rule Object *****/
+
+hr {
+  margin-block: var(--space2);
+  border-width: 1px;
+  border-style: solid none none;
+  border-color: oklch(88% 0 0);
+}

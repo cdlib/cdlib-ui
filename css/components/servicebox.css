@@ -1,0 +1,49 @@
+/***** Service Box Component *****/
+
+.c-servicebox {
+
+  @media (--min-width1) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  section {
+    padding: var(--space2);
+
+    /* First gradient oklch color is a very light version of --color-light-blue: */
+    background-image: linear-gradient(oklch(98% 0.02 250), var(--color-light-blue));
+
+    @media (--min-width1) {
+      flex: 1 1 45%;
+
+      &:nth-child(odd) {
+        margin-inline-end: var(--space2);
+      }
+
+    }
+
+    @media (--min-width2) {
+      flex: 1 1 20%;
+
+      &:not(:last-child) {
+        margin-inline-end: var(--space2);
+      }
+
+    }
+
+    h3 {
+      margin: 0;
+      color: black;
+      font-weight: 600;
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

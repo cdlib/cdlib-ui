@@ -1,0 +1,16 @@
+/***** Skip Navigation Component *****/
+
+.c-skipnav {
+  position: absolute;
+  inset-inline-start: -9999px;
+  z-index: 5;
+  transition: opacity 0.5s;
+  opacity: 0;
+
+  &:focus {
+    inset-block-start: var(--space1);
+    inset-inline-start: var(--space1);
+    opacity: 1;
+  }
+
+}

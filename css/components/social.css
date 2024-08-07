@@ -1,0 +1,25 @@
+/***** Social Link Component *****/
+
+.c-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space2);
+  padding: var(--space2);
+  border: 1px solid var(--color-blue);
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &::after {
+    content: '';
+    flex: none;
+    block-size: 1.6rem;
+    inline-size: 1.6rem;
+    background-color: oklch(68.18% 0.158 243.35); /* twitter blue */
+    mask: url('data-url:npm:fa-brands/twitter.svg') center / contain;
+  }
+}

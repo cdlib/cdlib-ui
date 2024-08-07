@@ -1,0 +1,56 @@
+/***** heading Objects *****/
+
+h1,
+h2,
+h3,
+h4 {
+  margin-block: var(--space4) var(--space2);
+  font-weight: 400;
+
+  a {
+    color: inherit;
+  }
+
+  abbr[title] {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline dotted;
+    }
+  }
+}
+
+h1 {
+  margin-block-start: 0;
+  color: var(--color-blue);
+  font-size: 1.75em;
+}
+
+h2 {
+  color: var(--color-dark-red);
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+h3 {
+  color: var(--color-dark-red);
+  font-size: 1.125em;
+}
+
+h4 {
+  color: var(--color-dark-red);
+  font-size: 1em;
+  font-weight: 600;
+}
+
+/* The following heading tags and class will style an "FAQ heading". The class is added by the WP editor in the "format" menu: */
+
+h2,
+h3 {
+
+  &.o-heading__faq {
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+}

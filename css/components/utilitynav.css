@@ -1,0 +1,38 @@
+/***** Utility Navigation *****/
+
+.c-utilitynav {
+
+  ul {
+    all: unset;
+    list-style-type: none;
+
+    @media (--min-width2) {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    li {
+      margin: unset;
+      padding: unset;
+
+      @media (--min-width2) {
+        margin: 0 var(--space2); 
+      }
+
+    }
+
+  }
+
+  a {
+
+    @media (--min-width2) {
+      color: oklch(36% 0 0);
+      text-decoration: none;
+
+      &:focus,
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

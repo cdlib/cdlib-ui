@@ -1,0 +1,43 @@
+/***** Timeline Component *****/
+
+.c-timeline {
+  --year-item-space: .6rem;
+  --year-section-space: .3rem;
+
+  /* Remove WordPress auto-generated break tags: */
+  br {
+    display: none;
+  }
+
+  ul {
+    all: unset;
+    list-style-type: none;
+
+    li {
+      margin: unset;
+      padding: unset;
+    }
+  }
+
+  > ul > li {
+    display: flex;
+
+    strong {
+      margin-block-start: calc(var(--year-item-space) + var(--year-section-space));
+      font-weight: 600;
+    }
+
+  }
+
+  > ul > li > ul {
+    margin-inline-start: var(--space2);
+    padding-block: var(--year-section-space);
+    border-inline-start: 3px solid var(--color-blue);
+  }
+
+  > ul > li > ul > li {
+    margin-block: var(--year-item-space);
+    margin-inline-start: var(--space2);
+  }
+
+}

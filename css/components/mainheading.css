@@ -1,0 +1,11 @@
+/***** Main Heading Component *****/
+
+.c-mainheading {
+  margin-block-end: var(--space3);
+
+  p {
+    color: var(--color-dark-red);
+    font-size: 1.125em;
+  }
+
+}

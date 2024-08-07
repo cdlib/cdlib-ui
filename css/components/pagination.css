@@ -1,0 +1,38 @@
+/***** Pagination Component *****/
+
+.c-pagination {
+
+  ul {
+    all: unset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+
+    li {
+      margin: unset;
+      padding: unset;
+    }
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    block-size: 2rem;
+    padding: 0 var(--space2);
+    color: var(--color-blue);
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+
+  }
+
+  [aria-current] {
+    border: 1px solid oklch(55% 0 0);
+  }
+
+}

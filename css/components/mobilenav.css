@@ -1,0 +1,48 @@
+/***** Mobile Navigation Component *****/
+
+.c-mobilenav {
+  all: unset;
+  list-style-type: none;
+
+  li {
+    margin: unset;
+    padding: unset;
+  }
+
+  @media (--max-width2) {
+
+    li {
+      border-inline-end: 1px solid oklch(88% 0 0);
+      border-block-end: 1px solid oklch(88% 0 0);
+      border-inline-start: 1px solid oklch(88% 0 0);
+
+      &:first-child {
+        border-block-start: 1px solid oklch(88% 0 0);
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--space2);
+        padding: var(--space2);
+        color: oklch(36% 0 0);
+        text-decoration: none;
+
+        &:focus,
+        &:hover {
+          text-decoration: underline;
+        }
+
+        &::after {
+          content: '';
+          flex: none;
+          block-size: 1rem;
+          inline-size: 1rem;
+          background-color: oklch(88% 0 0);
+          mask: url('data-url:npm:fa-light/angle-right.svg') center / 0.7rem no-repeat;
+        }
+      }
+    }
+  }
+}

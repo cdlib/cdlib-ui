@@ -1,0 +1,117 @@
+/***** Well Components *****/
+
+.c-well1,
+.c-well2,
+.c-well3 {
+  p {
+    margin: 0;
+  }
+
+  @media print {
+    break-inside: avoid;
+  }
+}
+
+.c-well1,
+.c-well3 {
+  padding: var(--space3) 2.5em;
+
+  h2,
+  h3 {
+    margin-block-start: 0;
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Block Well: */
+
+.c-well1 {
+  display: flow-root;
+  background-color: var(--color-light-blue);
+
+  @media print {
+    border: 1px solid var(--color-light-blue);
+  }
+
+  h2,
+  h3 {
+    color: var(--color-blue);
+  }
+
+  /* When embedded element (like image) is aligned left via WP editor: */
+  .alignleft {
+
+    ~ * {
+      display: flow-root;
+      min-inline-size: 10rem;
+      clear: none; /* override elements styled with 'clear: both' in WP style.css */
+    }
+
+  }
+
+}
+
+/* Link Well: */
+
+.c-well2 {
+  display: inline-block;
+  margin-block-start: var(--space2);
+  padding: var(--space2) var(--space3);
+  background-color: var(--color-blue);
+  text-align: center;
+
+  @media print {
+    border: 1px solid var(--color-blue);
+  }
+
+  a {
+    display: block;
+    color: var(--color-light-blue);
+    line-height: var(--line-height0);
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  > a {
+    font-size: 1.2em;
+
+    + a {
+      margin-block-start: var(--space2);
+      font-size: 1.1em;
+    }
+
+  }
+
+  > p {
+    font-size: 1.2em;
+
+    + p {
+      margin-block-start: var(--space2);
+      font-size: 1.1em;
+    }
+
+  }
+
+}
+
+.c-well3 {
+  background-color: oklch(95% 0 0);
+
+  @media print {
+    border: 1px solid oklch(95% 0 0);
+  }
+
+  h2,
+  h3 {
+    color: var(--color-dark-red);
+  }
+
+}

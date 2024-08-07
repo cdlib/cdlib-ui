@@ -1,0 +1,40 @@
+/***** Layout 1 Template *****/
+
+.t-layout--1 {
+  display: grid;
+  grid-row-gap: var(--space3);
+  grid-template:
+    'layout1a'
+    'layout1b'
+    'layout1c' 1fr
+    'layout1d'
+    'layout1e'
+    / 1fr;
+  min-block-size: 100vh;
+
+  @media print {
+    display: block;
+    min-block-size: auto;
+  }
+
+  .c-header {
+    grid-area: layout1a;
+  }
+
+  .c-breadcrumb {
+    grid-area: layout1b;
+  }
+
+  main {
+    grid-area: layout1c;
+  }
+
+  .c-updated {
+    grid-area: layout1d;
+  }
+
+  .c-footer {
+    grid-area: layout1e;
+  }
+
+}

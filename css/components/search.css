@@ -1,0 +1,10 @@
+/***** Search Component *****/
+
+.c-search {
+  display: flex;
+
+  .o-input1 {
+    flex: 1 0 auto;
+  }
+
+}

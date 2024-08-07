@@ -1,0 +1,31 @@
+/***** Year List Component *****/
+
+.c-yearlist {
+  --yearlist-border-size: 1px;
+
+  all: unset;
+  display: flex;
+  flex-wrap: wrap;
+  margin-block-end: var(--space2);
+  padding-block-start: var(--yearlist-border-size);
+  list-style-type: none;
+
+  li {
+    margin: unset;
+    margin-block-start: calc(var(--yearlist-border-size) * -1);
+    margin-inline-start: calc(var(--yearlist-border-size) * -1);
+    padding: unset;
+    border: var(--yearlist-border-size) solid var(--color-blue);
+  }
+
+  a {
+    display: block;
+    padding: var(--space2);
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

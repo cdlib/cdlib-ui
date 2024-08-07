@@ -1,0 +1,30 @@
+/***** Last Updated Component *****/
+
+.c-updated {
+
+  @media print {
+    display: none;
+  }
+
+  a {
+
+    /* disable external link icon: */
+    &::after {
+      content: none;
+    }
+  }
+
+  address {
+    font-style: normal;
+  }
+}
+
+.c-updated__label {
+  float: left;
+  clear: left;
+
+  &::after {
+    content: '\00a0'; /* non-breaking space */
+  }
+
+}

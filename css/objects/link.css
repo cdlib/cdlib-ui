@@ -1,0 +1,129 @@
+/***** Links *****/
+
+@layer external-icons, file-icons, secured-icons;
+
+/* Default styling: */
+
+a {
+  color: var(--color-blue);
+  text-decoration: underline;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+/* File type icons: */
+
+@layer file-icons {
+  a[href$='.pdf']::after,
+  a[href$='.doc']::after,
+  a[href$='.docx']::after,
+  a[href$='.xls']::after,
+  a[href$='.xlsx']::after,
+  a[href$='.txt']::after,
+  a[href$='.zip']::after,
+  a[href$='.rtf']::after,
+  a[href$='.ppt']::after,
+  a[href$='.pptx']::after {
+    display: inline-block;
+    block-size: auto;
+    inline-size: auto;
+    margin-inline-start: 0.4rem;
+    padding: 0.1rem 0.2rem 0.05rem 0.3rem;
+    transform: translateY(-0.15rem);
+    border: 1px solid oklch(36% 0 0);
+    background-color: transparent;
+    color: oklch(36% 0 0);
+    font-family: Consolas, Monaco, monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    mask: none;
+  }
+
+  a[href$='.pdf']::after {
+    content: 'pdf';
+  }
+
+  a[href$='.doc']::after {
+    content: 'doc';
+  }
+
+  a[href$='.docx']::after {
+    content: 'docx';
+  }
+
+  a[href$='.xls']::after {
+    content: 'xls';
+  }
+
+  a[href$='.xlsx']::after {
+    content: 'xlsx';
+  }
+
+  a[href$='.txt']::after {
+    content: 'txt';
+  }
+
+  a[href$='.zip']::after {
+    content: 'zip';
+  }
+
+  a[href$='.rtf']::after {
+    content: 'rtf';
+  }
+
+  a[href$='.ppt']::after {
+    content: 'ppt';
+  }
+
+  a[href$='.pptx']::after {
+    content: 'pptx';
+  }
+}
+
+/* External, mailto and secured icons: */
+
+@layer external-icons {
+  a:not([href^='https://cdlib'], [href^='#'])::after {
+    content: '';
+    display: inline-block;
+    block-size: 0.9rem;
+    inline-size: 0.9rem;
+    margin-inline-start: 0.4rem;
+    transform: translateY(0.05rem);
+    background-color: var(--color-gold);
+    mask-size: 0.8rem;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-image: url('data-url:npm:fa-solid/arrow-up-right-from-square.svg');
+  }
+}
+
+@layer secured-icons {
+  a[href^='mailto:']::after,
+  a[href*='https://ucofficeofthepresident.sharepoint.com']::after {
+    content: '';
+    display: inline-block;
+    block-size: 0.9rem;
+    inline-size: 0.9rem;
+    margin-inline-start: 0.4rem;
+    transform: translateY(0.05rem);
+    mask-size: 0.8rem;
+    mask-position: center;
+    mask-repeat: no-repeat;
+  }
+
+  a[href^='mailto:']::after {
+    background-color: var(--color-gold);
+    mask-image: url('data-url:npm:fa-solid/envelope.svg');
+  }
+
+  a[href*='https://ucofficeofthepresident.sharepoint.com']::after {
+    background-color: var(--color-dark-red);
+    mask-image: url('data-url:npm:fa-solid/lock.svg');
+  }
+}

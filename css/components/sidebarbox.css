@@ -1,0 +1,29 @@
+/***** Sidebar Box Component *****/
+
+.c-sidebarbox {
+
+  header {
+    margin-block-end: var(--space2);
+
+    h2 {
+      margin: unset;
+      padding-block-end: var(--space1);
+      border-block-end: 1px solid oklch(88% 0 0);
+      color: var(--color-dark-red);
+      font-size: 1.125em;
+      font-weight: 500;
+    }
+  }
+
+  a {
+    display: flex; /* position link icons to top-right of text in sidebarbox container */
+    align-items: flex-start;
+    justify-content: space-between; /* same as above */
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

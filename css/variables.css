@@ -1,0 +1,37 @@
+/***** Variables *****/
+
+:root {
+  /* Colors in OKLCH: */
+
+  --color-light-blue: oklch(94% 0.02 250);
+  --color-blue: oklch(45% 0.12 250);
+  --color-red: oklch(56% 0.22 30);
+  --color-dark-red: oklch(45% 0.18 30);
+  --color-green: oklch(56% 0.16 135);
+  --color-gold: oklch(82% 0.16 80);
+
+  /* Spacing: */
+
+  --space1: 5px;
+  --space2: calc(var(--space1) * 2);
+  --space3: calc(var(--space2) * 2);
+  --space4: calc(var(--space2) + var(--space3));
+
+  /* Misc: */
+
+  --details-summary-left-space: 1.5rem;
+  --line-height0: 1.1;
+  --line-height1: 1.3;
+  --list-indentation: 30px;
+  --sidebar-width: 20%;
+}
+
+/* Media Queries: */
+
+@custom-media --min-width1 (width >= 480px);
+@custom-media --min-width2 (width >= 760px);
+@custom-media --max-width2 (width < 760px);
+@custom-media --min-width3 (width >= 870px);
+@custom-media --max-width3 (width < 870px);
+@custom-media --min-width4 (width >= 1280px);
+@custom-media --min-width5 (width >= 1400px);

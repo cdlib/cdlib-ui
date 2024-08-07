@@ -1,0 +1,27 @@
+/***** Blog Result Component *****/
+
+.c-blogresult {
+
+  + .c-blogresult {
+    margin-block-start: var(--space2);
+    border-block-start: 1px solid oklch(88% 0 0);
+  }
+
+  h2 {
+    margin-block-end: var(--space2);
+    color: var(--color-blue);
+  }
+
+  p {
+    margin-block: 0 var(--space2);
+  }
+
+  a {
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

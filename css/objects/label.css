@@ -1,0 +1,10 @@
+/***** Form Label Objects *****/
+
+label {
+  font-weight: 600;
+}
+
+.o-label1 {
+  position: absolute;
+  inset-inline-start: -9999px;
+}

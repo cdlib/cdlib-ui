@@ -1,0 +1,22 @@
+/***** News Component *****/
+
+/* Augments Sidebarbox component with upper-right icon styled below: */
+
+.c-news {
+
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space2);
+
+    &::after {
+      content: '';
+      flex: none;
+      block-size: 1rem;
+      inline-size: 1rem;
+      background-color: var(--color-gold);
+      mask: url('data-url:npm:fa-solid/rss.svg') center / contain no-repeat;
+    }
+  }
+}

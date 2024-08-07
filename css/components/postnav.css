@@ -1,0 +1,67 @@
+/***** Post Navigation Component *****/
+
+.c-postnav {
+
+  ul {
+    all: unset;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+
+    li {
+      margin: unset;
+      padding: unset;
+    }
+  }
+}
+
+.c-postnav__newer,
+.c-postnav__older {
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space1);
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &::before,
+    &::after {
+      flex: none;
+      block-size: 1rem;
+      inline-size: 1rem;
+      background-color: var(--color-blue);
+      mask-repeat: no-repeat;
+      mask-size: 0.6rem;
+      mask-position: center;
+    }
+  }
+}
+
+.c-postnav__newer {
+  margin-inline-end: auto;
+
+  a {
+
+    &::before {
+      content: '';
+      mask-image: url('data-url:npm:fa-solid/angle-left.svg');
+    }
+  }
+}
+
+.c-postnav__older {
+  margin-inline-start: auto;
+
+  a {
+
+    &::after {
+      content: '';
+      mask-image: url('data-url:npm:fa-solid/angle-right.svg');
+    }
+  }
+}

@@ -1,0 +1,19 @@
+/***** Figure & Caption Object *****/
+
+figure {
+  inline-size: min-content;
+  margin: 0 1em 1em 0;
+
+  img {
+    display: block;
+  }
+
+  figcaption {
+    padding-block-start: 1em;
+    padding-inline: 0.5em;
+    font-size: 0.9em;
+    font-style: italic;
+    line-height: var(--line-height1);
+  }
+
+}

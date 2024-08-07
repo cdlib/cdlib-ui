@@ -1,0 +1,63 @@
+/***** Layout 2 Template *****/
+
+.t-layout--2 {
+  display: grid;
+  grid-row-gap: var(--space3);
+  grid-template:
+    'layout2a'
+    'layout2b'
+    'layout2c'
+    'layout2d' 1fr
+    'layout2e'
+    'layout2f'
+    / 1fr;
+  min-block-size: 100vh;
+
+  @media (--min-width2) {
+    grid-gap: var(--space3);
+    grid-template:
+      'layout2a layout2a'
+      '........ layout2b'
+      'layout2c layout2d' 1fr
+      '........ layout2e'
+      'layout2f layout2f'
+      / var(--sidebar-width) 1fr;
+  }
+
+  @media print {
+    display: block;
+    min-block-size: auto;
+  }
+
+  .c-header {
+    grid-area: layout2a;
+  }
+
+  .c-breadcrumb {
+    grid-area: layout2b;
+  }
+
+  main {
+    grid-area: layout2d;
+  }
+
+  .c-updated {
+    grid-area: layout2e;
+  }
+
+  .c-footer {
+    grid-area: layout2f;
+  }
+
+  /* Grid areas that may contain multiple components: */
+
+  .t-layout__sidebar1 {
+    grid-area: layout2c;
+
+    @media print {
+      display: none;
+    }
+
+  }
+
+}
