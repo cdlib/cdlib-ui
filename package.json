@@ -114,8 +114,5 @@
       ],
       "no-descending-specificity": null
     }
-  },
-  "dependencies": {
-    "details-element-polyfill": "^2.4.0"
   }
 }
