@@ -12,7 +12,7 @@
     "parcel-build": "parcel build css/main.css js/main.js images/* --dist-dir ui-assets --public-url . --no-cache --no-source-maps",
     "watchstyles": "onchange -i css/* -- npm run lintstyles",
     "watchjs": "onchange -i js/* -- npm run lintjs",
-    "lintstyles": "stylelint css/*",
+    "lintstyles": "stylelint 'css/**/*.css' '!css/main.css'",
     "lintjs": "standard js/* --verbose | snazzy || exit 0",
     "push-assets-local": "rsync -rvu --delete --exclude '.DS_Store' dist/ui-assets ~/'Local Sites'/cdlib/app/public/wp-content/themes/cdlib",
     "push-assets-dev": "rsync -rvu --delete --exclude '.DS_Store' ./dist/ui-assets cdlib@web-cdlib2x2-dev.cdlib.org:/apps/cdlib/apache/htdocs/wp-content/themes/cdlib",
@@ -66,10 +66,9 @@
     "source-sans": "^3.28.0",
     "standard": "^17.0.0",
     "start-server-and-test": "^1.14.0",
-    "stylelint": "^14.11.0",
-    "stylelint-config-property-sort-order-smacss": "^9.0.0",
-    "stylelint-config-recommended-scss": "^6.0.0",
-    "stylelint-scss": "^4.2.0"
+    "stylelint": "^16.8.1",
+    "stylelint-config-property-sort-order-smacss": "^10.0.0",
+    "stylelint-config-standard": "^36.0.1"
   },
   "alias": {
     "fa-brands/*": "@fortawesome/fontawesome-pro/svgs/brands/$1",
@@ -99,10 +98,11 @@
   "stylelint": {
     "defaultSeverity": "warning",
     "extends": [
-      "stylelint-config-recommended-scss",
+      "stylelint-config-standard",
       "stylelint-config-property-sort-order-smacss"
     ],
     "rules": {
+      "import-notation": null,
       "max-nesting-depth": [
         4,
         {
@@ -112,7 +112,13 @@
           ]
         }
       ],
-      "no-descending-specificity": null
+      "no-descending-specificity": null,
+      "selector-class-pattern": [
+        "^([a-z][a-z0-9]*)(-[a-z0-9]+)*((__([a-z][a-z0-9]*)(-[a-z0-9]+)*)?(--([a-z][a-z0-9]*)(-[a-z0-9]+)*)?)$",
+        {
+          "message": "Expected class pattern to be BEM style"
+        }
+      ]
     }
   }
 }
