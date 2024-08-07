@@ -18,8 +18,3 @@ fieldset {
 label {
   font-weight: 600;
 }
-
-/* IE 11: */
-main {
-  display: block;
-}
