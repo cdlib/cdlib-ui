@@ -1,0 +1,11 @@
+/***** Fieldset Object *****/
+
+fieldset {
+  padding: 0;
+  border: none;
+  font-weight: 600;
+
+  label {
+    font-weight: 400;
+  }
+}
