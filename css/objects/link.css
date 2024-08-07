@@ -99,7 +99,7 @@ a {
     mask-size: 0.8rem;
     mask-position: center;
     mask-repeat: no-repeat;
-    mask-image: url('data-url:/fa-solid/arrow-up-right-from-square.svg');
+    mask-image: url('data-url:npm:fa-solid/arrow-up-right-from-square.svg');
   }
 }
 
@@ -119,11 +119,11 @@ a {
 
   a[href^='mailto:']::after {
     background-color: var(--color-gold);
-    mask-image: url('data-url:/fa-solid/envelope.svg');
+    mask-image: url('data-url:npm:fa-solid/envelope.svg');
   }
 
   a[href*='https://ucofficeofthepresident.sharepoint.com']::after {
     background-color: var(--color-dark-red);
-    mask-image: url('data-url:/fa-solid/lock.svg');
+    mask-image: url('data-url:npm:fa-solid/lock.svg');
   }
 }

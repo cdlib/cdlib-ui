@@ -20,7 +20,7 @@ details {
       mask-repeat: no-repeat;
       mask-size: 0.6rem;
       mask-position: left center;
-      mask-image: url('data-url:/fa-solid/caret-right.svg');
+      mask-image: url('data-url:npm:fa-solid/caret-right.svg');
     }
 
     /* remove default arrow in Safari: */
@@ -36,7 +36,7 @@ details {
       &::before {
         margin-inline: 0 calc(var(--details-summary-left-space) / 3);
         mask-size: 0.9rem;
-        mask-image: url('data-url:/fa-solid/caret-down.svg');
+        mask-image: url('data-url:npm:fa-solid/caret-down.svg');
       }
     }
   }

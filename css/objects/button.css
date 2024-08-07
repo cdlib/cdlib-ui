@@ -20,21 +20,21 @@
 .o-button1 {
   block-size: 1.9rem;
   inline-size: 1.9rem;
-  background-image: url('data-url:/fa-light/magnifying-glass.svg');
+  background-image: url('data-url:npm:fa-light/magnifying-glass.svg');
   background-size: 1.9em;
 }
 
 .o-button2 {
   block-size: 1.5rem;
   inline-size: 1.5rem;
-  background-image: url('data-url:/fa-light/xmark.svg');
+  background-image: url('data-url:npm:fa-light/xmark.svg');
   background-size: 1.5em;
 }
 
 .o-button3 {
   block-size: 1.9rem;
   inline-size: 1.9rem;
-  background-image: url('data-url:/fa-light/bars.svg');
+  background-image: url('data-url:npm:fa-light/bars.svg');
   background-size: 1.9em;
 }
 
@@ -59,14 +59,14 @@
     background-color: white;
     mask-size: 1rem;
     mask-position: center;
-    mask-image: url('data-url:/fa-solid/caret-up.svg');
+    mask-image: url('data-url:npm:fa-solid/caret-up.svg');
   }
 }
 
 .o-button6 {
 
   &::after {
-    mask-image: url('data-url:/fa-solid/caret-down.svg');
+    mask-image: url('data-url:npm:fa-solid/caret-down.svg');
   }
 }
 

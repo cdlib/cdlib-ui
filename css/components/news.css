@@ -16,7 +16,7 @@
       block-size: 1rem;
       inline-size: 1rem;
       background-color: var(--color-gold);
-      mask: url('data-url:/fa-solid/rss.svg') center / contain no-repeat;
+      mask: url('data-url:npm:fa-solid/rss.svg') center / contain no-repeat;
     }
   }
 }

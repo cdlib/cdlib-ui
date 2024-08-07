@@ -49,7 +49,7 @@
 
     &::before {
       content: '';
-      mask-image: url('data-url:/fa-solid/angle-left.svg');
+      mask-image: url('data-url:npm:fa-solid/angle-left.svg');
     }
   }
 }
@@ -61,7 +61,7 @@
 
     &::after {
       content: '';
-      mask-image: url('data-url:/fa-solid/angle-right.svg');
+      mask-image: url('data-url:npm:fa-solid/angle-right.svg');
     }
   }
 }

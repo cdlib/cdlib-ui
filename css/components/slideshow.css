@@ -82,14 +82,14 @@
 .c-slideshow__play {
 
   &::after {
-    mask-image: url('data-url:/fa-solid/play.svg');
+    mask-image: url('data-url:npm:fa-solid/play.svg');
   }
 }
 
 .c-slideshow__pause {
 
   &::after {
-    mask-image: url('data-url:/fa-solid/pause.svg');
+    mask-image: url('data-url:npm:fa-solid/pause.svg');
   }
 }
 
