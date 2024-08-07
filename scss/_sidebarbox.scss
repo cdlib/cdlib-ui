@@ -6,10 +6,11 @@
     margin-block-end: var(--space2);
 
     h2 {
-      @extend %o-heading3;
-      margin: 0;
+      margin: unset;
       padding-block-end: var(--space1);
       border-block-end: 1px solid oklch(88% 0 0);
+      color: var(--color-dark-red);
+      font-size: 1.125em;
       font-weight: 500;
     }
   }

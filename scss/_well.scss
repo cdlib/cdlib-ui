@@ -1,7 +1,8 @@
 // ***** Well Components ***** //
 
-%c-well {
-
+.c-well1,
+.c-well2,
+.c-well3 {
   p {
     margin: 0;
   }
@@ -9,11 +10,10 @@
   @media print {
     break-inside: avoid;
   }
-
 }
 
-%c-well__block {
-  @extend %c-well;
+.c-well1,
+.c-well3 {
   padding: var(--space3) 2.5em;
 
   h2,
@@ -25,13 +25,11 @@
     margin: 0;
     padding: 0;
   }
-
 }
 
 // Block Well:
 
 .c-well1 {
-  @extend %c-well__block;
   display: flow-root;
   background-color: var(--color-light-blue);
 
@@ -60,7 +58,6 @@
 // Link Well:
 
 .c-well2 {
-  @extend %c-well;
   display: inline-block;
   margin-block-start: var(--space2);
   padding: var(--space2) var(--space3);
@@ -106,7 +103,6 @@
 }
 
 .c-well3 {
-  @extend %c-well__block;
   background-color: oklch(95% 0 0);
 
   @media print {

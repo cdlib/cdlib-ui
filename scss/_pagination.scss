@@ -1,11 +1,12 @@
 // ***** Pagination Component ***** //
 
-%c-pagination {
+.c-pagination {
 
   ul {
     all: unset;
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     list-style-type: none;
 
     li {
@@ -32,24 +33,6 @@
 
   [aria-current] {
     border: 1px solid oklch(55% 0 0);
-  }
-
-}
-
-.c-pagination {
-  @extend %c-pagination;
-  display: flex;
-  justify-content: center;
-}
-
-%c-pagination__controls {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 1em;
-
-  span {
-    position: absolute;
-    inset-inline-start: -9999px;
   }
 
 }

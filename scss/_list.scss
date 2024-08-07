@@ -1,6 +1,8 @@
 // ***** List Objects ***** //
 
-%o-list {
+ul,
+ol,
+dl {
   margin-block: var(--space2);
   line-height: var(--line-height1);
 }
@@ -20,7 +22,6 @@ li {
 // Unordered lists:
 
 ul {
-  @extend %o-list;
 
   // Default (top/bottom margin with no bullets or indentation):
   padding-inline-start: 0;
@@ -41,15 +42,10 @@ ul {
 // Ordered lists:
 
 ol {
-  @extend %o-list;
   padding-inline-start: var(--list-indentation);
 }
 
 // Description lists:
-
-dl {
-  @extend %o-list;
-}
 
 dt {
   margin-block-end: 0.2rem;

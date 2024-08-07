@@ -11,15 +11,14 @@
     background-color: var(--color-light-blue);
 
     h2 {
-      @extend %o-heading3;
       margin: 0;
+      font-size: 1.125em;
       font-weight: 500;
     }
 
   }
 
   h3 {
-    @extend %o-heading3;
     margin-block-start: var(--space3);
     color: var(--color-blue);
 
