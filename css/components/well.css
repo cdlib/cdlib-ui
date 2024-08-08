@@ -44,15 +44,12 @@
 
   /* When embedded element (like image) is aligned left via WP editor: */
   .alignleft {
-
     ~ * {
       display: flow-root;
       min-inline-size: 10rem;
       clear: none; /* override elements styled with 'clear: both' in WP style.css */
     }
-
   }
-
 }
 
 /* Link Well: */
@@ -87,7 +84,6 @@
       margin-block-start: var(--space2);
       font-size: 1.1em;
     }
-
   }
 
   > p {
@@ -97,21 +93,18 @@
       margin-block-start: var(--space2);
       font-size: 1.1em;
     }
-
   }
-
 }
 
 .c-well3 {
-  background-color: oklch(95% 0 0);
+  background-color: oklch(95% 0 0deg);
 
   @media print {
-    border: 1px solid oklch(95% 0 0);
+    border: 1px solid oklch(95% 0 0deg);
   }
 
   h2,
   h3 {
     color: var(--color-dark-red);
   }
-
 }

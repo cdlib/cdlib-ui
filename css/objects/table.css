@@ -10,7 +10,7 @@ table {
   td {
     padding: var(--space2);
     overflow: hidden;
-    border: 1px solid oklch(88% 0 0);
+    border: 1px solid oklch(88% 0 0deg);
     vertical-align: top;
   }
 
@@ -25,7 +25,6 @@ table {
   }
 
   thead {
-
     th {
       background-color: var(--color-light-blue);
       color: var(--color-dark-red);
@@ -34,11 +33,9 @@ table {
   }
 
   tbody {
-
     th {
-
       &:first-child {
-        background-color: oklch(95% 0 0);
+        background-color: oklch(95% 0 0deg);
         font-weight: 600;
       }
 
@@ -48,11 +45,10 @@ table {
 
   /* WP TablePress plugin: */
   &.tablepress {
-
     th,
     td {
       padding: var(--space2) !important;
-      border: 1px solid oklch(88% 0 0) !important;
+      border: 1px solid oklch(88% 0 0deg) !important;
       text-align: middle !important;
     }
 
@@ -61,7 +57,6 @@ table {
     }
 
     thead {
-
       th {
         background-color: var(--color-light-blue) !important;
 

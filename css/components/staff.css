@@ -9,24 +9,17 @@
   }
 
   @media print {
-
     th,
     td {
-
       &:last-child {
         display: none;
       }
-
     }
-
   }
 
   tbody tr {
-
     td {
-
       &:last-child {
-
         a {
           display: flex;
           justify-content: center;
@@ -44,23 +37,16 @@
             position: absolute;
             inset-inline-start: -9999px;
           }
-
         }
-
       }
-
     }
 
     th,
     td {
-
       &:first-child {
-        background-color: oklch(95% 0 0);
+        background-color: oklch(95% 0 0deg);
         font-weight: 600;
       }
-
     }
-
   }
-
 }

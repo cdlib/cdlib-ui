@@ -1,13 +1,11 @@
 /***** Last Updated Component *****/
 
 .c-updated {
-
   @media print {
     display: none;
   }
 
   a {
-
     /* disable external link icon: */
     &::after {
       content: none;
@@ -26,5 +24,4 @@
   &::after {
     content: '\00a0'; /* non-breaking space */
   }
-
 }

@@ -12,14 +12,11 @@
       &:nth-child(2) {
         margin-inline-start: var(--space2);
       }
-
     }
-
   }
 
   /* remove predefined margins on mainbox component: */
   .c-mainbox {
     margin-block: 0;
   }
-
 }

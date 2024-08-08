@@ -68,7 +68,6 @@
     @media print {
       display: none;
     }
-
   }
 
   .t-layout__sidebar2 {
@@ -118,7 +117,5 @@
     @media print {
       margin-block-start: var(--space3);
     }
-
   }
-
 }

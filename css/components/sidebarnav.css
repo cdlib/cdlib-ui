@@ -12,7 +12,7 @@
       padding: unset;
 
       &:not(:last-child) {
-        border-block-end: 1px solid oklch(88% 0 0);
+        border-block-end: 1px solid oklch(88% 0 0deg);
       }
 
       a {

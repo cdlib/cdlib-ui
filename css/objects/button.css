@@ -39,7 +39,7 @@
 }
 
 .o-button4 {
-  background-color: oklch(36% 0 0);
+  background-color: oklch(36% 0 0deg);
   color: white;
 }
 
@@ -64,14 +64,12 @@
 }
 
 .o-button6 {
-
   &::after {
     mask-image: url('data-url:npm:fa-solid/caret-down.svg');
   }
 }
 
 .o-button7 {
-
   &[aria-current='page'] {
     background-color: var(--color-light-blue);
   }

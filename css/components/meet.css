@@ -5,8 +5,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, auto));
   grid-template-rows: 1fr auto;
-  border: 1px solid oklch(46% 0 0);
-  background-color: oklch(46% 0 0);
+  border: 1px solid oklch(46% 0 0deg);
+  background-color: oklch(46% 0 0deg);
   direction: rtl;
 
   figcaption {
@@ -24,11 +24,9 @@
 
     a {
       margin-block-start: var(--space2);
-      color: oklch(86% 0.13 80); /* lighter version of --color-gold for better a11y contrast against background */
+      color: oklch(86% 0.13 80deg); /* lighter version of --color-gold for better a11y contrast against background */
     }
-
   }
-
 }
 
 .c-meet__avatar {
@@ -50,7 +48,5 @@
     @supports (object-fit: cover) {
       block-size: 100%;
     }
-
   }
-
 }

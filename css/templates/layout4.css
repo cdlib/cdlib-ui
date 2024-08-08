@@ -51,7 +51,6 @@
     @media print {
       display: none;
     }
-
   }
 
   .t-layout__sidebar2 {
@@ -101,7 +100,5 @@
     @media print {
       display: none;
     }
-
   }
-
 }

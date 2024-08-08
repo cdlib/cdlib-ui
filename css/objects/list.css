@@ -22,7 +22,6 @@ li {
 /* Unordered lists: */
 
 ul {
-
   /* Default (top/bottom margin with no bullets or indentation): */
   padding-inline-start: 0;
   list-style-type: none;

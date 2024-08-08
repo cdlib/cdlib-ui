@@ -1,7 +1,6 @@
 /***** SCP Text Color Component *****/
 
 em {
-
   &.textcolor__scp-titles-added {
     color: #006100; /* dark-green */
   }
@@ -21,5 +20,4 @@ em {
   &.textcolor__scp-package-change {
     color: #005e75; /* dark-teal */
   }
-
 }

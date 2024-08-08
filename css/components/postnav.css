@@ -1,7 +1,6 @@
 /***** Post Navigation Component *****/
 
 .c-postnav {
-
   ul {
     all: unset;
     display: flex;
@@ -17,7 +16,6 @@
 
 .c-postnav__newer,
 .c-postnav__older {
-
   a {
     display: inline-flex;
     align-items: center;
@@ -46,7 +44,6 @@
   margin-inline-end: auto;
 
   a {
-
     &::before {
       content: '';
       mask-image: url('data-url:npm:fa-solid/angle-left.svg');
@@ -58,7 +55,6 @@
   margin-inline-start: auto;
 
   a {
-
     &::after {
       content: '';
       mask-image: url('data-url:npm:fa-solid/angle-right.svg');

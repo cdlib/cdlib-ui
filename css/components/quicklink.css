@@ -5,7 +5,7 @@
 .c-quicklink1,
 .c-quicklink2 {
   a {
-    color: oklch(36% 0 0);
+    color: oklch(36% 0 0deg);
     text-decoration: none;
 
     &:focus,
@@ -21,7 +21,6 @@
 }
 
 .c-quicklink2 {
-
   header {
     display: flex;
     align-items: center;

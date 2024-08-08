@@ -1,7 +1,6 @@
 /***** Image in Content Object *****/
 
 main {
-
   img {
     block-size: auto; /* reset fixed height attribute applied via WP editor */
     max-block-size: calc(100vh - var(--space2));

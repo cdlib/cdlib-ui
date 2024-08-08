@@ -32,7 +32,6 @@ details {
 
   &[open] {
     summary {
-
       &::before {
         margin-inline: 0 calc(var(--details-summary-left-space) / 3);
         mask-size: 0.9rem;

@@ -2,7 +2,7 @@
 
 .c-blogmetadata {
   margin-block-end: var(--space2);
-  color: oklch(36% 0 0);
+  color: oklch(36% 0 0deg);
 
   a {
     text-decoration: none;
@@ -26,19 +26,14 @@
       &:not(:last-child)::after {
         content: ', ';
       }
-
     }
-
   }
 
   > * {
-
     &:not(:last-child) {
       margin-inline-end: 0.2em;
       padding-inline-end: 0.5em;
-      border-inline-end: 2px solid oklch(55% 0 0);
+      border-inline-end: 2px solid oklch(55% 0 0deg);
     }
-
   }
-
 }

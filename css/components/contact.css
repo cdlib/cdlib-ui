@@ -1,7 +1,6 @@
 /***** Contact Component *****/
 
 .c-contact {
-
   /* Styles for only <a class="c-contact">: */
 
   display: inline; /* gets overridden in :is(a) selector below: */

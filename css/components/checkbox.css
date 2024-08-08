@@ -9,7 +9,6 @@
     @media (--min-width1) {
       column-count: 2;
     }
-
   }
 
   label {
@@ -20,7 +19,5 @@
     input {
       margin-inline-end: var(--space1);
     }
-
   }
-
 }
