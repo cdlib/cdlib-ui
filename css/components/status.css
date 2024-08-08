@@ -4,17 +4,12 @@
   table-layout: auto;
 
   thead tr {
-
     th {
-
       &:first-child {
         inline-size: 30%;
       }
-
     }
-
   }
-
 }
 
 .c-status__indicator {
@@ -33,30 +28,23 @@
   }
 
   &.up {
-
     &::before {
       opacity: 1;
       background-color: var(--color-green);
     }
-
   }
 
   &.partial {
-
     &::before {
       opacity: 1;
       background-color: var(--color-gold);
     }
-
   }
 
   &.down {
-
     &::before {
       opacity: 1;
       background-color: var(--color-red);
     }
-
   }
-
 }

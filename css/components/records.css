@@ -6,6 +6,6 @@
   font-size: 1em;
 
   strong {
-    color: oklch(36% 0 0);
+    color: oklch(36% 0 0deg);
   }
 }

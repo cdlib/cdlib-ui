@@ -24,7 +24,6 @@
   @media print {
     display: none;
   }
-
 }
 
 .c-header__logo {
@@ -44,9 +43,7 @@
     @media (--min-width2) {
       block-size: 4.4rem;
     }
-
   }
-
 }
 
 .c-header__controls {
@@ -105,13 +102,10 @@
       flex: 0 1 auto;
       inline-size: 18rem;
     }
-
   }
-
 }
 
 .c-header__close-search {
-
   @media (--min-width2) {
     display: none;
   }
@@ -121,17 +115,12 @@
   grid-area: header-nav;
 
   .c-mobilenav {
-
     li {
-
       &:last-child {
         border-block-end: none;
       }
-
     }
-
   }
-
 }
 
 .c-header__utility-nav {
@@ -140,7 +129,6 @@
   @media (--min-width2) {
     margin-block-start: 0;
   }
-
 }
 
 /* JS interactivity: */

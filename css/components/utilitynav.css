@@ -1,7 +1,6 @@
 /***** Utility Navigation *****/
 
 .c-utilitynav {
-
   ul {
     all: unset;
     list-style-type: none;
@@ -18,15 +17,12 @@
       @media (--min-width2) {
         margin: 0 var(--space2); 
       }
-
     }
-
   }
 
   a {
-
     @media (--min-width2) {
-      color: oklch(36% 0 0);
+      color: oklch(36% 0 0deg);
       text-decoration: none;
 
       &:focus,

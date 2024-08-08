@@ -22,16 +22,15 @@
 
   mark {
     background-color: transparent;
-    color: oklch(36% 0 0);
+    color: oklch(36% 0 0deg);
     font-weight: bold;
   }
 }
 
 .c-searchresult__posttype {
   grid-area: result-posttype;
-  align-self: start;
+  place-self: start end;
   margin-block-start: 0.3em;
-  justify-self: end;
 }
 
 .c-searchresult__excerpt {

@@ -1,7 +1,6 @@
 /***** Breadcrumb Component *****/
 
 .c-breadcrumb {
-
   --separator-spacing: 0.5rem;
 
   @media print {
@@ -31,11 +30,9 @@
       @media (--min-width1) {
         display: inline-flex;
       }
-
     }
 
     &:nth-last-of-type(2) {
-
       &::before {
         content: '';
         flex: none;
@@ -46,7 +43,6 @@
       }
 
       @media (--min-width1) {
-
         &::before {
           content: none;
         }
@@ -54,9 +50,7 @@
     }
 
     @media (--min-width1) {
-
       &:not(:last-child) {
-
         &::after {
           content: '';
           flex: none;

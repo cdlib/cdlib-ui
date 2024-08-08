@@ -1,14 +1,13 @@
 /***** Sidebar Box Component *****/
 
 .c-sidebarbox {
-
   header {
     margin-block-end: var(--space2);
 
     h2 {
       margin: unset;
       padding-block-end: var(--space1);
-      border-block-end: 1px solid oklch(88% 0 0);
+      border-block-end: 1px solid oklch(88% 0 0deg);
       color: var(--color-dark-red);
       font-size: 1.125em;
       font-weight: 500;

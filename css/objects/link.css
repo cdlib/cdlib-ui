@@ -33,9 +33,9 @@ a {
     margin-inline-start: 0.4rem;
     padding: 0.1rem 0.2rem 0.05rem 0.3rem;
     transform: translateY(-0.15rem);
-    border: 1px solid oklch(36% 0 0);
+    border: 1px solid oklch(36% 0 0deg);
     background-color: transparent;
-    color: oklch(36% 0 0);
+    color: oklch(36% 0 0deg);
     font-family: Consolas, Monaco, monospace;
     font-size: 0.6rem;
     letter-spacing: 0.1rem;

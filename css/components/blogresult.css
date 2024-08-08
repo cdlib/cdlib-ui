@@ -1,10 +1,9 @@
 /***** Blog Result Component *****/
 
 .c-blogresult {
-
   + .c-blogresult {
     margin-block-start: var(--space2);
-    border-block-start: 1px solid oklch(88% 0 0);
+    border-block-start: 1px solid oklch(88% 0 0deg);
   }
 
   h2 {

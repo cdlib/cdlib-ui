@@ -3,7 +3,7 @@
 .c-mainbox {
   margin-block: var(--space3);
   padding: var(--space2);
-  border: 1px solid oklch(88% 0 0);
+  border: 1px solid oklch(88% 0 0deg);
 
   header {
     margin: calc(var(--space2) * -1) calc(var(--space2) * -1) var(--space3);
@@ -15,7 +15,6 @@
       font-size: 1.125em;
       font-weight: 500;
     }
-
   }
 
   h3 {
@@ -24,9 +23,7 @@
 
     &:not(:first-of-type) {
       padding-block-start: var(--space3);
-      border-block-start: 1px solid oklch(88% 0 0);
+      border-block-start: 1px solid oklch(88% 0 0deg);
     }
-
   }
-
 }

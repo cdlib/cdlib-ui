@@ -1,9 +1,8 @@
 /***** Slideshow Component *****/
 
 .c-slideshow {
-
   /* --color-blue at 90% opacity: */
-  --slideshow-caption-bg: oklch(45% 0.12 250 / 90%);
+  --slideshow-caption-bg: oklch(45% 0.12 250deg / 90%);
   --slideshow-caption-width: 20rem;
 
   display: grid;
@@ -80,21 +79,18 @@
 }
 
 .c-slideshow__play {
-
   &::after {
     mask-image: url('data-url:npm:fa-solid/play.svg');
   }
 }
 
 .c-slideshow__pause {
-
   &::after {
     mask-image: url('data-url:npm:fa-solid/pause.svg');
   }
 }
 
 .c-slideshow__goto {
-
   &[aria-current] {
     background-color: white;
     color: var(--color-blue);
@@ -128,7 +124,6 @@
   }
 
   a {
-
     /* disable link icon: */
     &::after {
       content: none;
@@ -181,7 +176,7 @@
       max-inline-size: 50%;
       margin-inline-start: var(--slideshow-caption-width);
       padding: var(--space2);
-      background-color: oklch(0% 0 0 / 60%);
+      background-color: oklch(0% 0 0deg / 60%);
       font-size: 1em;
       text-align: end;
     }
@@ -204,7 +199,6 @@
 }
 
 .c-slideshow__slide-image {
-
   /* no image at mobile sizes: */
   img {
     display: none;

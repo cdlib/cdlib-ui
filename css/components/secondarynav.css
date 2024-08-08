@@ -1,7 +1,6 @@
 /***** Secondary Navigation Component *****/
 
 .c-secondarynav {
-
   header {
     display: flex;
     align-items: flex-start;
@@ -11,11 +10,10 @@
       flex-shrink: 0;
       margin-inline-start: var(--space2);
     }
-
   }
 
   ul ul ul {
-    border-block-start: 1px solid oklch(88% 0 0);
+    border-block-start: 1px solid oklch(88% 0 0deg);
 
     /* 2nd level list: */
     a {
@@ -31,7 +29,6 @@
     ul ul a {
       padding-inline-start: 70px;
     }
-
   }
 
   /* Remove top-level link generated from wp_nav_menu, which is a duplicate of header link: */
@@ -45,7 +42,6 @@
   .current_page_item > a {
     background-color: var(--color-light-blue);
   }
-
 }
 
 .c-secondarynav__buttons,

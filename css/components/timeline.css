@@ -26,7 +26,6 @@
       margin-block-start: calc(var(--year-item-space) + var(--year-section-space));
       font-weight: 600;
     }
-
   }
 
   > ul > li > ul {
@@ -39,5 +38,4 @@
     margin-block: var(--year-item-space);
     margin-inline-start: var(--space2);
   }
-
 }

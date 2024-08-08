@@ -44,7 +44,6 @@
 
   /* This class used only to highlight the grid in layout4.hbs: */
   &.highlight-grid {
-
     > * {
       all: unset;
       background-color: var(--color-light-blue);
