@@ -6,11 +6,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Use Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '16.x'
+          node-version: '20.x'
           cache: 'npm'
       - name: Set Font Awesome token and dry run installation
         run: |
@@ -22,7 +22,7 @@ jobs:
       - name: Create test build
         run: npm run test-build
       - name: Cache test build
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: dist
           key: run-id-${{ github.run_id }}
@@ -32,16 +32,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Use Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '16.x'
+          node-version: '20.x'
           cache: 'npm'
       - name: Install dependencies
         run: npm ci
       - name: Retrieve cached test build
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: dist
           key: run-id-${{ github.run_id }}
@@ -53,16 +53,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Use Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '16.x'
+          node-version: '20.x'
           cache: 'npm'
       - name: Install dependencies
         run: npm ci
       - name: Retrieve cached test build
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: dist
           key: run-id-${{ github.run_id }}
