@@ -1,6 +1,6 @@
 /***** Layout 4 Template *****/
 
-.t-layout--4 {
+.t-layout--4 { /* stylelint-disable-line selector-class-pattern */
   display: grid;
   grid-row-gap: var(--space3);
   grid-template:

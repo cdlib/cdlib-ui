@@ -2,7 +2,7 @@
 
 /* grid-template within media query 'screen2' is not getting cascaded over with 'screen3' in IE for some reason (perhaps autoprefixer), so added 'max-width' media feature to 'screen2' queries */
 
-.t-layout--3 {
+.t-layout--3 { /* stylelint-disable-line selector-class-pattern */
   display: grid;
   grid-gap: var(--space3);
   grid-template:
