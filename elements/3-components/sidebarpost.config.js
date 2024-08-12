@@ -11,7 +11,7 @@ for (var i = 0; i < authorUrls.length; i++) {
     select: {
       option: {
         value: authorUrls[i],
-        label: authorNames[i] + ' (' + faker.datatype.number({min: 1, max: 20}) + ')'
+        label: authorNames[i] + ' (' + faker.number.int({min: 1, max: 20}) + ')'
       }
     }
   });
@@ -22,7 +22,7 @@ for (var i = 0; i < monthUrls.length; i++) {
     select: {
       option: {
         value: monthUrls[i],
-        label: months[i] + ' 2019' + ' (' + faker.datatype.number({min: 1, max: 20}) + ')'
+        label: months[i] + ' 2019' + ' (' + faker.number.int({min: 1, max: 20}) + ')'
       }
     }
   });

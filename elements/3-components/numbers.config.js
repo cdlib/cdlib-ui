@@ -4,7 +4,7 @@ const fakerData = [];
 for (var i = 0; i < 15; i++) {
   fakerData.push({
     numbers: {
-      item: faker.datatype.number() + ' ' + faker.lorem.words(4)
+      item: faker.number.int(100) + ' ' + faker.lorem.words(4)
     },
     link: {
       text: faker.lorem.words(5)

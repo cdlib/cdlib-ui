@@ -5,7 +5,7 @@ module.exports = {
   context: {
     figure: {
       alignmentClass: '',
-      imageUrl: faker.image.nature(300, 200),
+      imageUrl: faker.image.urlPicsumPhotos(),
       caption: faker.lorem.sentences()
     }
   }

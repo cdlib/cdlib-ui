@@ -14,22 +14,22 @@ for (var i = 0; i < tableHeaderLabels.length; i++) {
 for (var i = 0; i < 15; i++) {
   tableData.push({
     cell1: {
-      data: faker.address.country()
+      data: faker.location.country()
     },
     cell2: {
-      data: faker.address.latitude()
+      data: faker.location.latitude()
     },
     cell3: {
-      data: faker.address.longitude()
+      data: faker.location.longitude()
     },
     cell4: {
-      data: faker.address.city()
+      data: faker.location.city()
     },
     cell5: {
       data: faker.commerce.productName()
     },
     cell6: {
-      data: faker.address.zipCode()
+      data: faker.location.zipCode()
     }
   });
 }

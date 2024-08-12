@@ -4,7 +4,7 @@ module.exports = {
   label: 'Images in Content',
   context: {
     image: {
-      src: faker.image.nature(800, 600),
+      src: faker.image.urlPicsumPhotos(),
       alt: faker.lorem.sentence()
     }
   }

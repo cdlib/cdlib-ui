@@ -5,9 +5,9 @@ const tableData = []
 for (var i = 0; i < 7; i++) {
   tableData.push({
     staff: {
-      firstname: faker.name.firstName(),
-      lastname: faker.name.lastName(),
-      title: faker.name.jobTitle(),
+      firstname: faker.person.firstName(),
+      lastname: faker.person.lastName(),
+      title: faker.person.jobTitle(),
       program: program[i]
     }
   })
