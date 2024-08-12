@@ -36,12 +36,6 @@
   > div > ul > li > a {
     display: none;
   }
-
-  /* wp_nav_menu current item style: */
-
-  .current_page_item > a {
-    background-color: var(--color-light-blue);
-  }
 }
 
 .c-secondarynav__buttons,
