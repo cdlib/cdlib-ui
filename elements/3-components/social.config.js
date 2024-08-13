@@ -3,7 +3,7 @@ module.exports = {
   context: {
     social: {
       url: 'https://twitter.com/caldiglib',
-      text: 'Follow us on Twitter'
+      text: 'Follow us on X'
     }
   }
 };
