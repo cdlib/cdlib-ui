@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "The UI for the California Digital Library website",
   "scripts": {
-    "serve": "npm-run-all clean --parallel parcel-dev fractal-dev watchstyles watchjs --silent",
+    "start": "npm-run-all clean --parallel parcel-dev fractal-dev watchstyles watchjs --silent",
     "build": "run-s clean parcel-build fractal-build lintstyles lintjs --silent",
     "clean": "del dist ui-assets",
     "fractal-dev": "fractal start --sync --watch",
