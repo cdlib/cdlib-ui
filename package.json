@@ -41,6 +41,10 @@
     "url": "https://github.com/cdlib/cdlib-ui/issues"
   },
   "homepage": "https://github.com/cdlib/cdlib-ui#readme",
+  "engines": {
+    "node": "~20",
+    "npm": "~10"
+  },
   "devDependencies": {
     "@faker-js/faker": "^8.4.1",
     "@fortawesome/fontawesome-pro": "^6.6.0",
