@@ -106,15 +106,7 @@
     ],
     "rules": {
       "import-notation": null,
-      "max-nesting-depth": [
-        4,
-        {
-          "ignore": [
-            "blockless-at-rules",
-            "pseudo-classes"
-          ]
-        }
-      ],
+      "max-nesting-depth": 4,
       "no-descending-specificity": null,
       "selector-class-pattern": [
         "^([a-z][a-z0-9]*)(-[a-z0-9]+)*((__([a-z][a-z0-9]*)(-[a-z0-9]+)*)?(--([a-z][a-z0-9]*)(-[a-z0-9]+)*)?)$",
