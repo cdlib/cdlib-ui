@@ -45,7 +45,6 @@
     "@faker-js/faker": "^8.4.1",
     "@fortawesome/fontawesome-pro": "^6.6.0",
     "@frctl/fractal": "^1.5.15",
-    "@frctl/mandelbrot": "^1.10.3",
     "@parcel/optimizer-data-url": "^2.12.0",
     "@parcel/transformer-inline-string": "^2.12.0",
     "@parcel/transformer-raw": "^2.12.0",

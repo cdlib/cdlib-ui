@@ -23,12 +23,3 @@ fractal.web.set('builder.dest', __dirname + '/dist');
 
 // Default Fractal template:
 fractal.components.set('default.preview', '@template-default');
-
-// Mandelbrot theme with custom configuration:
-const mandelbrot = require('@frctl/mandelbrot');
-
-const CDLIBTheme = mandelbrot({
-  panels: ['notes', 'html', 'view', 'context', 'resources', 'info'],
-});
-
-fractal.web.theme(CDLIBTheme);
