@@ -91,7 +91,7 @@
     "errorRecovery": true
   },
   "percy": {
-    "version": 1,
+    "version": 2,
     "snapshot": {
       "widths": [
         1000
