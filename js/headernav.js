@@ -1,62 +1,63 @@
 // Headernav Component:
-
 const headerNavMediaQuery = window.matchMedia('(min-width: 760px)')
-
-function clickLink (event) {
-  if (this.parentElement.classList.contains('open') === false) {
-    this.parentElement.classList.add('open')
-    this.setAttribute('aria-expanded', 'true')
-  } else {
-    this.parentElement.classList.remove('open')
-    this.setAttribute('aria-expanded', 'false')
-  }
-  event.preventDefault()
-}
+const headerNav = document.querySelector('.js-headernav')
+const subNavs = headerNav.querySelectorAll(':scope > ul > li:has(> ul)')
+let counter = 1
 
 const headerNavToggles = e => {
   if (document.querySelector('.c-headernav') && e.matches) {
-    const allMenuItems = document.querySelectorAll('.c-headernav > ul > li');
+    for (const subNav of subNavs) {
+      const subNavSiblingLink = subNav.querySelector('a')
+      const subNavPopover = subNav.querySelector('ul')
+      subNavPopover.popover = ''
 
-    [].forEach.call(allMenuItems, function (el) {
-      document.querySelector('.c-headernav').classList.remove('c-headernav-no-js')
-      document.querySelector('.c-headernav').classList.add('c-headernav-js')
-      el.querySelector('a').setAttribute('aria-haspopup', 'true')
-      el.querySelector('a').setAttribute('aria-expanded', 'false')
+      // Anchor each sibling link to its popover using unique anchor names:
+      const anchorName = '--anchor' + counter++
+      subNavSiblingLink.style.setProperty('anchor-name', anchorName)
+      subNavPopover.style.setProperty('position-anchor', anchorName)
 
-      el.addEventListener('mouseover', function (event) {
-        this.classList.add('open')
-        this.querySelector('a').setAttribute('aria-expanded', 'true')
+      // Only a <button> as a popover control has built-in accessiblity bindings, so set and toggle sibling link aria expanded state:
+      subNavSiblingLink.setAttribute('aria-expanded', 'false') // initial state
+
+      const expandedState = () => {
+        if (subNavPopover.matches(':popover-open')) {
+          subNavSiblingLink.setAttribute('aria-expanded', 'true')
+        } else {
+          subNavSiblingLink.setAttribute('aria-expanded', 'false')
+        }
+      }
+
+      // Show/hide subnav on mouse pointer over and out.
+      subNav.addEventListener('mouseover', () => {
+        subNavPopover.showPopover()
+        expandedState()
       })
 
-      el.addEventListener('mouseout', function (event) {
-        this.classList.remove('open')
-        this.querySelector('a').setAttribute('aria-expanded', 'false')
+      subNav.addEventListener('mouseout', () => {
+        subNavPopover.hidePopover()
+        expandedState()
       })
 
-      el.querySelector('a').addEventListener('click', clickLink)
-    });
-
-    [].forEach.call(allMenuItems, function (el) {
-      el.querySelector('a').addEventListener('focus', function (event) {
-        [].forEach.call(
-          allMenuItems,
-          function (el) {
-            if (el !== this.parentElement) {
-              el.classList.remove('open')
-              el.querySelector('a').setAttribute('aria-expanded', 'false')
-            }
-          }, this
-        )
+      // Toggle subnav if sibling link is clicked by keyboard return key:
+      subNavSiblingLink.addEventListener('click', (e) => {
+        subNavPopover.togglePopover()
+        e.preventDefault() // disable link from going to its URL when clicked
+        expandedState()
       })
-    })
-  } else {
-    const allMenuItems = document.querySelectorAll('.c-headernav > ul > li');
 
-    [].forEach.call(allMenuItems, function (el) {
-      el.querySelector('a').removeEventListener('click', clickLink)
-    })
+      // Hide subnav when keyboard focus leaves its popover control:
+      subNav.addEventListener('focusout', (e) => {
+        if (!e.currentTarget.contains(e.relatedTarget)) {
+          subNavPopover.hidePopover()
+          expandedState()
+        }
+      })
+    }
   }
 }
 
-headerNavMediaQuery.addEventListener('change', headerNavToggles)
-headerNavToggles(headerNavMediaQuery)
+if (window.HTMLElement.prototype.hasOwnProperty('popover')) { // eslint-disable-line no-prototype-builtins
+  headerNav.classList.remove('no-popover')
+  headerNavMediaQuery.addEventListener('change', headerNavToggles)
+  headerNavToggles(headerNavMediaQuery)
+}
