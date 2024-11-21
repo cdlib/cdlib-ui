@@ -42,6 +42,10 @@
           mask: url('data-url:npm:fa-light/angle-right.svg') center / 0.7rem no-repeat;
         }
       }
+
+      ul {
+        display: none;
+      }
     }
   }
 }
