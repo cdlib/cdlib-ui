@@ -1,15 +1,18 @@
 /***** Header Nav Component *****/
 
-/* Read notes in component config */
-
 .c-headernav {
   --headernav-section-padding: var(--space3);
   --headernav-item-margin: var(--space3);
 
-  position: relative;
+  .no-popover & {
+    ul ul {
+      display: none;
+    }
+  }
 
   ul {
-    all: unset;
+    margin: unset;
+    padding: unset;
     list-style-type: none;
 
     li {
@@ -18,39 +21,32 @@
     }
   }
 
-  a {
-    display: block;
-  }
-
-  /* Sections: */
-  > ul {
-    @media (--min-width2) {
-      display: flex;
-
-      > li {
-        flex: 1 1 auto;
-      }
+  @media (--min-width2) {
+    a {
+      display: block;
     }
-  }
+  
+    /* Sections: */
+    > ul {
+      display: flex;
+    }
+  
+    > ul > li {
+      flex: 1 1 auto;
 
-  > ul > li {
-    @media (--min-width2) {
-      /* Nav bar main items: */
       &:not(:last-child) {
         border-inline-end: 1px solid oklch(55% 0 0deg);
       }
     }
-  }
-
-  /* Nav bar links: */
-  > ul > li > a {
-    @media (--min-width2) {
+  
+    /* Nav bar links: */
+    > ul > li > a {
       padding: var(--space1);
       background: linear-gradient(oklch(95% 0 0deg), oklch(88% 0 0deg));
       color: oklch(36% 0 0deg);
       text-align: center;
       text-decoration: none;
-
+  
       &:focus,
       &:hover {
         color: var(--color-blue);
@@ -60,9 +56,28 @@
   }
 
   /* Panels: */
-  > ul > li > ul {
-    display: none;
+
+  [popover] {
     position: absolute;
+    top: anchor(bottom);
+    left: anchor(left);
+    margin: 0;
+    transition-property: opacity, display, overlay;
+    transition-duration: .3s;
+    transition-behavior: allow-discrete;
+    border: unset;
+    opacity: 0;
+  
+    &:popover-open {
+      opacity: 1;
+  
+      @starting-style {
+        opacity: 0;
+      }
+    }
+  }
+
+  > ul > li > ul {
     padding: var(--headernav-section-padding);
     column-gap: calc(var(--headernav-section-padding) * 2);
     column-rule: 1px solid oklch(88% 0 0deg);
@@ -125,49 +140,5 @@
   /* All panel list items: */
   > ul > li li {
     margin-block-end: var(--headernav-item-margin);
-  }
-
-  /**** Panel Toggle ****/
-
-  /* If c-headernav JS not supported: */
-
-  &.c-headernav-no-js {
-    > ul > li:hover > ul {
-      @media (--min-width2) {
-        display: block;
-        z-index: 10;
-      }
-    }
-
-    /* If :focus-within not supported. Only primary links accessible via tabkey: */
-
-    > ul > li a:focus {
-      @media (--min-width2) {
-        display: block;
-        z-index: 10;
-      }
-    }
-
-    /* If :focus-within supported. All links accessbile via focus. No toggle state on primary links, so user must tab through every secondary link in each section to reach the next section: */
-
-    > ul > li:focus-within > ul {
-      @media (--min-width2) {
-        display: block;
-        z-index: 10;
-      }
-    }
-  }
-
-  /* If c-headernav JS supported: */
-
-  &.c-headernav-js {
-    /* Primary links disabled via JS and used as a toggle for each section. Hover and focus states handled by JS and set via 'open' class: */
-
-    li.open ul {
-      @media (--min-width2) {
-        display: block;
-        z-index: 10;
-      }
-    }
   }
 }
