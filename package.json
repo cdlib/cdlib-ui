@@ -115,5 +115,8 @@
         }
       ]
     }
+  },
+  "dependencies": {
+    "@oddbird/css-anchor-positioning": "^0.4.0"
   }
 }

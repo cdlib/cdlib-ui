@@ -1,3 +1,4 @@
+import './anchor-positioning.js'
 import './headernav.js'
 import './mediaqueries.js'
 import './newsreel.js'
