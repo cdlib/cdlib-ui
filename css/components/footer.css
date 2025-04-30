@@ -3,7 +3,6 @@
 .c-footer {
   margin-block-end: var(--space2);
   border-block-start: 1px solid oklch(88% 0 0deg);
-  border-block-end: solid green;
 
   @media print {
     margin-block: var(--space2) 0;
