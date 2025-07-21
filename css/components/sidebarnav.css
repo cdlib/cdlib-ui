@@ -14,12 +14,6 @@
       &:not(:last-child) {
         border-block-end: 1px solid oklch(88% 0 0deg);
       }
-
-      a {
-        display: flex;
-        align-items: center;
-        padding: 0.35rem var(--space2);
-      }
     }
   }
 
@@ -36,11 +30,29 @@
   }
 
   a {
+    display: block;
+    padding: 0.35rem var(--space2);
     text-decoration: none;
 
     &:focus,
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+@media (--min-width2) {
+  /* Balance all sidebarnav (quicklink) link heights
+  with all available vertical space within sidebarnav boxes: */
+  
+  .c-sidebarnav,
+  .c-sidebarnav :is(ul, li, a) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .c-sidebarnav a {
+    justify-content: center;
   }
 }

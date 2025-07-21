@@ -9,8 +9,7 @@
     'serviceheading'
     'servicebox'
     'newsreel'
-    'quicklink1'
-    'quicklink2'
+    'quicklinks'
     'meet'
     'social'
     'footer'
@@ -24,7 +23,7 @@
     'serviceheading serviceheading'
     'servicebox servicebox'
     'newsreel newsreel'
-    'quicklink1 quicklink2'
+    'quicklinks quicklinks'
     'meet social'
     'footer footer'
     / 1fr 1fr;
@@ -33,9 +32,9 @@
   @media (--min-width2) {
     grid-template:
     'header header'
-    'slideshow quicklink1'
-    'slideshow quicklink2' 1fr
-    'serviceheading quicklink2'
+    'slideshow quicklinks'
+    'slideshow quicklinks'
+    'serviceheading quicklinks'
     'servicebox meet'
     'newsreel social'
     'footer footer'
@@ -70,12 +69,11 @@
     grid-area: newsreel;
   }
 
-  .c-quicklink1 {
-    grid-area: quicklink1;
-  }
-
-  .c-quicklink2 {
-    grid-area: quicklink2;
+  .c-quicklinks {
+    display: flex;
+    grid-area: quicklinks;
+    flex-direction: column;
+    gap: var(--space2);
   }
 
   .c-meet {
