@@ -30,6 +30,11 @@ details {
     }
   }
 
+  summary:not(:has(a)) {
+    color: var(--color-dark-red);
+    font-weight: bold;
+  }
+
   &[open] {
     summary {
       &::before {
@@ -40,13 +45,15 @@ details {
     }
   }
 
-  /* Remove block margins and font sizes from direct child elements of <summary>,
-  like headings for example: <summary><h4>[text]</h4></summary>.
-  Applying "display: inline" is typically recommended but won't work
+  /* Remove block margins, colors, font sizes and font weights from direct child elements of <summary>,
+  like headings for example: <summary><h4>[text]</h4></summary>, except links.
+  Applying "display: inline" is typically recommended for removing block margin but won't work
   here because of "display: flex" on <summary> on line 9 above. */
 
-  summary > * {
+  summary > *:not(a) {
     margin-block: unset;
+    color: unset;
     font-size: unset;
+    font-weight: unset;
   }
 }
