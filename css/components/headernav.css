@@ -26,21 +26,23 @@
       display: block;
     }
   
-    /* Sections: */
+    /* Nav bar and top sections: */
     > ul {
       display: flex;
     }
   
     > ul > li {
       flex: 1 1 auto;
+      anchor-scope: all;
 
       &:not(:last-child) {
         border-inline-end: 1px solid oklch(55% 0 0deg);
       }
     }
   
-    /* Nav bar links: */
+    /* Nav bar links are anchors for popover panels: */
     > ul > li > a {
+      anchor-name: --headernav-anchor;
       padding: var(--space1);
       background: linear-gradient(oklch(95% 0 0deg), oklch(88% 0 0deg));
       color: oklch(36% 0 0deg);
@@ -55,15 +57,14 @@
     }
   }
 
-  /* Panels: */
-
+  /* Popover panels: */
   [popover] {
-    position: absolute;
+    position-anchor: --headernav-anchor;
     top: anchor(bottom);
     left: anchor(left);
     margin: 0;
-    transition-property: opacity, display, overlay;
-    transition-duration: .3s;
+    transition: opacity, display, overlay;
+    transition-duration: 0.3s;
     transition-behavior: allow-discrete;
     border: unset;
     opacity: 0;
@@ -89,7 +90,6 @@
   }
 
   /* Panel columns (no columns, by default). These are set via 'columns-[#]' classes defined in the top-level menu items within WP Menus: */
-
   > ul > .columns-2 > ul {
     column-count: 2;
   }
@@ -127,7 +127,7 @@
     page-break-inside: avoid; /* Firefox */
   }
 
-   /* Panel sub-list links: */
+  /* Panel sub-list links: */
   > ul > li > ul > li > ul > li > a {
     text-decoration: none;
 
