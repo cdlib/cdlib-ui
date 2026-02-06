@@ -1,0 +1,5 @@
+{
+  "data": "src/generated-content",
+  "layouts": "tool/layouts",
+  "partials": ["src/objects", "src/components", "src/pages", "src/templates"]
+}
