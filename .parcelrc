@@ -1,6 +1,8 @@
 {
   "extends": "@parcel/config-default",
+  "resolvers": ["@parcel/resolver-glob", "parcel-resolver-ignore", "..."],
   "transformers": {
-    "*.ico": ["@parcel/transformer-raw"]
+    "*.ico": ["@parcel/transformer-raw"],
+    "*.{hbs,handlebars}": ["@marcotss/parcel-transformer-handlebars-json"]
   }
 }
