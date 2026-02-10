@@ -1,10 +1,10 @@
 <div class="c-blogmetadata">
   <time>{{ blogmetadata.date }}</time>
-  <span>Author: {{> @link blogmetadata.author}}</span>
+  <span>Author: {{> link blogmetadata.author}}</span>
   <span>Categories:
     <ul>
       {{#each blogmetadata.categoryList}}
-      <li>{{> @link }}</li>
+      <li>{{> link }}</li>
       {{/each}}
     </ul>
   </span>

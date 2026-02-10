@@ -1,13 +1,13 @@
 <div class="t-layout--3">
   {{ render '@skipnav' }}
   {{ render '@header' }}
-  {{> @breadcrumb }}
+  {{> breadcrumb }}
   <aside aria-label="first" class="t-layout__sidebar1">
     {{ render '@secondarynav' }}
   </aside>
   <main id="maincontent">
-    {{> @heading--1 }}
-    {{> @contact }}
+    {{> heading--1 }}
+    {{> contact }}
     {{ render '@avatar' }}
     <h2>Program / Service</h2>
     <p>{{{ program }}}</p>
@@ -47,7 +47,7 @@
     <p>{{{ papers }}}</p>
     {{#if orcid.url }}
       <h2><abbr title="Orchid">ORCID</abbr> ID</h2>
-      {{> @orcid }}
+      {{> orcid }}
     {{/if}}
     {{#if linkedin.url }}
       <h2>LinkedIn Profile</h2>

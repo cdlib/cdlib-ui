@@ -1,4 +1,4 @@
-{{> @label--2 }}
+{{> label--2 }}
 <select class="o-select" {{#if select.name}}name="{{ select.name }}"{{/if}} {{#if select.id}}id="{{ select.id }}"{{/if}} {{#if select.labelledby}}aria-labelledby="{{ select.labelledby }}"{{/if}}>
   {{#if select.placeholder.exists}}<option value="">{{ select.placeholder.label }}</option>{{/if}}
   {{#each selectoption}}

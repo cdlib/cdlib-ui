@@ -1,6 +1,6 @@
 <nav aria-labelledby="secondarynav-heading" class="c-secondarynav c-sidebarnav">
   <header>
-    {{> @heading }}
+    {{> heading }}
     <div class="c-secondarynav__buttons js-secondarynav__buttons">
       <button aria-expanded="true" class="c-secondarynav__close-button js-secondarynav__close-button o-button5">{{ secondarynav.closeButtonText }}</button>
       <button aria-expanded="false" class="c-secondarynav__open-button js-secondarynav__open-button o-button6 is-shown">{{ secondarynav.openButtonText }}</button>
@@ -8,10 +8,10 @@
   </header>
   <div class="c-secondarynav__body js-secondarynav__body is-open">
     <ul>
-      <li>{{> @link }}
+      <li>{{> link }}
         <ul>
           {{#each list}}
-          <li>{{> @link }}</li>
+          <li>{{> link }}</li>
           {{/each}}
         </ul>
       </li>
