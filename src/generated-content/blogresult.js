@@ -60,8 +60,5 @@ for (const i of posts.keys()) {
 }
 
 module.exports = {
-  label: 'Blog Results',
-  context: {
-    blogresult: blogData
-  }
+  blogresult: blogData
 }

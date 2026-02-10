@@ -14,14 +14,9 @@ for (let i = 0; i < 3; i++) {
 }
 
 module.exports = {
-  collated: true,
-  default: '1',
-  label: 'News',
-  context: {
-    heading: {
-      level: '2',
-      text: 'Recent Posts'
-    },
-    list: sampleData
-  }
-};
+  heading: {
+    level: '2',
+    text: 'Recent Posts'
+  },
+  list: sampleData
+}

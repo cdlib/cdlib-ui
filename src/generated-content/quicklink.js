@@ -21,23 +21,18 @@ homeQuicklinks(homeQuicklinks1, sampleMenu1)
 homeQuicklinks(homeQuicklinks2, sampleMenu2)
 
 module.exports = {
-  collated: true,
-  default: '1',
-  label: 'Quick Link',
-  context: {
-    quicklink1: {
-      heading: {
-        level: '2',
-        text: 'Resources For...'
-      },
-      menu: sampleMenu1
+  quicklink1: {
+    heading: {
+      level: '2',
+      text: 'Resources For...'
     },
-    quicklink2: {
-      heading: {
-        level: '2',
-        text: 'Go Directly To'
-      },
-      menu: sampleMenu2
-    }
+    menu: sampleMenu1
+  },
+  quicklink2: {
+    heading: {
+      level: '2',
+      text: 'Go Directly To'
+    },
+    menu: sampleMenu2
   }
-};
+}

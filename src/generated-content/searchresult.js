@@ -32,8 +32,5 @@ for (const i of posts.keys()) {
 }
 
 module.exports = {
-  label: 'Search Results',
-  context: {
-    searchresult: searchResultData
-  }
+  searchresult: searchResultData
 }

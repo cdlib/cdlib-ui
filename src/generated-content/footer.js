@@ -31,9 +31,6 @@ for (const i of legalNav.keys()) {
 }
 
 module.exports = {
-  label: 'Footer',
-  context: {
-    list: footerNavData,
-    list2: legalNavData
-  }
+  list: footerNavData,
+  list2: legalNavData
 }

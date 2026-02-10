@@ -14,8 +14,5 @@ for (const i of utilityNav.keys()) {
 }
 
 module.exports = {
-  label: 'Utility Nav',
-  context: {
-    list: navList,
-  }
-};
+  list: navList,
+}

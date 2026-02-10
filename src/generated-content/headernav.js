@@ -23,8 +23,5 @@ for (const navItem of navSorted) {
 }
 
 module.exports = {
-  label: 'Header Nav',
-  context: {
-    list: navData
-  }
+  list: navData
 }

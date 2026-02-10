@@ -10,12 +10,9 @@ for (var i = 0; i < 5; i++) {
 }
 
 module.exports = {
-  label: 'Sidebar Nav',
-  context: {
-    heading: {
-      level: '2',
-      text: faker.commerce.productName()
-    },
-    list1: fakerList1,
-  }
-};
+  heading: {
+    level: '2',
+    text: faker.commerce.productName()
+  },
+  list1: fakerList1,
+}

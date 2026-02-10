@@ -14,8 +14,5 @@ for (var i = 0; i < 7; i++) {
 }
 
 module.exports = {
-  label: 'Staff Table',
-  context: {
-    row: tableData
-  }
+  row: tableData
 }

@@ -29,52 +29,40 @@ for (var i = 0; i < monthUrls.length; i++) {
 }
 
 module.exports = {
-  collated: true,
-  default: '1',
-  label: 'Sidebar Post',
-  context: {
-    heading: {
-      id: 'c-sidebarpost--author-heading',
-      text: 'Authors'
-    },
-    label: {
-      exists: false,
-    },
-    select: {
-      labelledby: 'c-sidebarpost--author-heading',
-      placeholder: {
-        exists: true,
-        label: 'Select Author'
-      },
-    },
-    sidebarpost: {
-      button: 'View All by Author'
-    },
-    selectoption: fakerData1
+  heading: {
+    id: 'c-sidebarpost--author-heading',
+    text: 'Authors'
   },
-  variants: [
-    {
-      name: '2', // sidebarpost--2.hbs
-      context: {
-        heading: {
-          id: 'c-sidebarpost--month-heading',
-          text: 'Months of Publication'
-        },
-        label: {
-          exists: false,
-        },
-        select: {
-          labelledby: 'c-sidebarpost--month-heading',
-          placeholder: {
-            exists: true,
-            label: 'Select Month'
-          },
-        },
-        sidebarpost: {
-          button: 'View All from Month'
-        },
-        selectoption: fakerData2
-      }
-    }
-  ]
-};
+  label: {
+    exists: false,
+  },
+  select: {
+    labelledby: 'c-sidebarpost--author-heading',
+    placeholder: {
+      exists: true,
+      label: 'Select Author'
+    },
+  },
+  sidebarpost: {
+    button: 'View All by Author'
+  },
+  selectoption: fakerData1,
+  heading: {
+    id: 'c-sidebarpost--month-heading',
+    text: 'Months of Publication'
+  },
+  label: {
+    exists: false,
+  },
+  select: {
+    labelledby: 'c-sidebarpost--month-heading',
+    placeholder: {
+      exists: true,
+      label: 'Select Month'
+    },
+  },
+  sidebarpost: {
+    button: 'View All from Month'
+  },
+  selectoption: fakerData2
+}

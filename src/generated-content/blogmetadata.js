@@ -32,17 +32,14 @@ for (const postCategoryId of postCategoryIds) {
 }
 
 module.exports = {
-  label: 'Blog Metadata',
-  context: {
-    blogmetadata: {
-      date: postDate,
-      author: {
-        link: {
-          text: authorname,
-          url: authorlink
-        },
+  blogmetadata: {
+    date: postDate,
+    author: {
+      link: {
+        text: authorname,
+        url: authorlink
       },
-      categoryList: categoryData
-    }
+    },
+    categoryList: categoryData
   }
-};
+}

@@ -11,8 +11,5 @@ for (var i = 0; i < 22; i++) {
 }
 
 module.exports = {
-  label: 'Year Anchor List',
-  context: {
-    list: years
-  }
-};
+  list: years
+}

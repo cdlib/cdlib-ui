@@ -19,8 +19,5 @@ for (const category of categoriesFiltered) {
 }
 
 module.exports = {
-  label: 'Categories',
-  context: {
-    list: categoryData
-  }
+ list: categoryData
 }

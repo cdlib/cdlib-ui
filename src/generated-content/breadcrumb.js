@@ -11,11 +11,8 @@ for (const breadcrumbLevel of breadcrumbLevels) {
 }
 
 module.exports = {
-  label: 'Breadcrumb Nav',
-  context: {
-    breadcrumb: {
-      list: breadcrumbSamples,
-      activelevel: 'Active Page'
-    }
+  breadcrumb: {
+    list: breadcrumbSamples,
+    activelevel: 'Active Page'
   }
-};
+}

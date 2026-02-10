@@ -23,9 +23,6 @@ for (var i = 0; i < 1; i++) {
 }
 
 module.exports = {
-  label: 'Timeline',
-  context: {
-    list1: fakerData1,
-    list2: fakerData2
-  }
-};
+  list1: fakerData1,
+  list2: fakerData2
+}

@@ -41,14 +41,8 @@ for (var i = 0; i < 2; i++) {
 }
 
 module.exports = {
-  collated: true,
-  default: '1',
-  label: 'Lists',
-  context: {
-    list: fakerList,
-    compoundlist1: fakerCompoundList1,
-    compoundlist2: fakerCompoundList2,
-    compoundlist3: fakerCompoundList3,
-  },
-  notes: "By default, WP will not apply an inline style to `ul` or `ol` tags. Therefore, this setting is styled as a non-bulleted list. If 'circle', 'disc', or 'square' is selected for 'Bulleted list' in the editor, the inline style with that attribute will be added. 'Numbered list' in the WP editor does not have an alternative style."
-};
+  list: fakerList,
+  compoundlist1: fakerCompoundList1,
+  compoundlist2: fakerCompoundList2,
+  compoundlist3: fakerCompoundList3,
+}

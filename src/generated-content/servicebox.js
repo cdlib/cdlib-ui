@@ -28,35 +28,32 @@ serviceBox(homeServices3, sampleMenu3)
 serviceBox(homeServices4, sampleMenu4)
 
 module.exports = {
-  label: 'Service Boxes',
-  context: {
-    service_box1: {
-      heading: {
-        level: '3',
-        text: 'Collect'
-      },
-      menu: sampleMenu1
+  service_box1: {
+    heading: {
+      level: '3',
+      text: 'Collect'
     },
-    service_box2: {
-      heading: {
-        level: '3',
-        text: 'Publish'
-      },
-      menu: sampleMenu2
+    menu: sampleMenu1
+  },
+  service_box2: {
+    heading: {
+      level: '3',
+      text: 'Publish'
     },
-    service_box3: {
-      heading: {
-        level: '3',
-        text: 'Preserve'
-      },
-      menu: sampleMenu3
+    menu: sampleMenu2
+  },
+  service_box3: {
+    heading: {
+      level: '3',
+      text: 'Preserve'
     },
-    service_box4: {
-      heading: {
-        level: '3',
-        text: 'Access'
-      },
-      menu: sampleMenu4
-    }
+    menu: sampleMenu3
+  },
+  service_box4: {
+    heading: {
+      level: '3',
+      text: 'Access'
+    },
+    menu: sampleMenu4
   }
-};
+}

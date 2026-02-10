@@ -51,9 +51,5 @@ const list = [
 ]
 
 module.exports = {
-  label: 'Menu',
-  context: {
-    list
-  },
-  notes: 'Recursive nested list Handlebars templating adapted from: http://www.boduch.ca/2014/03/recursive-list-building-with-handlebars.html (see menu-items partial).'
+  list
 }

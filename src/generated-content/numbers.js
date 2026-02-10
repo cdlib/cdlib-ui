@@ -13,8 +13,5 @@ for (var i = 0; i < 15; i++) {
 }
 
 module.exports = {
-  label: 'By The Numbers',
-  context: {
-    list: fakerData
-  }
-};
+  list: fakerData
+}

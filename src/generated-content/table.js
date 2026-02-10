@@ -35,9 +35,6 @@ for (var i = 0; i < 15; i++) {
 }
 
 module.exports = {
-  label: 'Table',
-  context: {
-    row1: tableHeader,
-    row2: tableData
-  }
-};
+  row1: tableHeader,
+  row2: tableData
+}

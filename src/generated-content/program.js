@@ -12,9 +12,5 @@ for (var i = 0; i < 7; i++) {
 }
 
 module.exports = {
-  label: 'Program',
-  preview: '@template-page',
-  context: {
-    row: tableData
-  }
+  row: tableData
 }

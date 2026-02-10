@@ -23,10 +23,7 @@ for (let i of range(startNum, endNum, 1)) {
 }
 
 module.exports = {
-  label: 'Pagination',
-  context: {
-    list: fakerData,
-    minimumNumber: minNum,
-    maximumNumber: maxNum
-  }
-};
+  list: fakerData,
+  minimumNumber: minNum,
+  maximumNumber: maxNum
+}

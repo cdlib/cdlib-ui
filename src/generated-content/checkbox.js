@@ -10,9 +10,5 @@ for (var i = 0; i < 6; i++) {
 }
 
 module.exports = {
-  label: 'Checkbox',
-  context: {
-    checkbox: fakerData
-  },
-  notes: 'Markup for this component reflects the WordPress Contact Form 7 plugin.'
-};
+  checkbox: fakerData
+}

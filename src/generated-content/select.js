@@ -13,22 +13,19 @@ for (var i = 0; i < 10; i++) {
 }
 
 module.exports = {
-  label: 'Select',
-  context: {
-    label: {
+  label: {
+    exists: true,
+    for: 'select',
+    text: 'Label'
+  },
+  select: {
+    name: 'name',
+    id: 'select',
+    labelledby: 'labelledby',
+    placeholder: {
       exists: true,
-      for: 'select',
-      text: 'Label'
+      label: 'Choose Your Option'
     },
-    select: {
-      name: 'name',
-      id: 'select',
-      labelledby: 'labelledby',
-      placeholder: {
-        exists: true,
-        label: 'Choose Your Option'
-      },
-    },
-    selectoption: fakerData
-  }
-};
+  },
+  selectoption: fakerData
+}
