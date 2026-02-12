@@ -1,37 +1,54 @@
-
 module.exports = {
-  button1: {
-    ariaLabel: 'button 1 aria label',
-    text: 'Button 1'
+  button: {
+    class: 'o-button1',
+    label: 'button 1 aria label',
   },
-  button2: {
-    ariaLabel: 'button 2 aria label',
-    text: 'Button 2'
+  style2: {
+    button: {
+      class: 'o-button2',
+      label: 'button 2 aria label',
+    }
   },
-  button3: {
-    ariaLabel: 'button 3 aria label',
-    text: 'Button 3'
+  style3: {
+    button: {
+      class: 'o-button3',
+      label: 'button 3 aria label',
+    }
   },
-  button4: {
-    type: 'submit',
-    ariaLabel: 'button 4 aria label',
-    text: 'Button 4'
+  style4: {
+    button: {
+      type: 'submit',
+      class: 'o-button4',
+      label: 'button 4 aria label',
+      text: 'Button 4'
+    }
   },
-  button5: {
-    ariaLabel: 'button 5 aria label',
-    text: 'Close'
+  style5: {
+    button: {
+      class: 'o-button5',
+      label: 'button 5 aria label',
+      text: 'Close'
+    }
   },
-  button6: {
-    ariaLabel: 'button 6 aria label',
-    text: 'Open'
+  style6: {
+    button: {
+      class: 'o-button6',
+      label: 'button 6 aria label',
+      text: 'Open'
+    }
   },
-  button7: {
-    text: 'Toggle (un-pressed)'
+  style7: {
+    button: {
+      class: 'o-button7',
+      pressed: false,
+      text: 'Toggle (un-pressed)'
+    }
   },
-  button8: {
-    text: 'Toggle (pressed)'
-  },
-  button9: {
-    text: 'Contact Information'
+  style8: {
+    button: {
+      class: 'o-button7',
+      pressed: true,
+      text: 'Toggle (pressed)'
+    }
   }
 }
