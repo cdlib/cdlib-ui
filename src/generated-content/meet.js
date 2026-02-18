@@ -7,10 +7,10 @@ module.exports = {
   meet: {
     img: meetImage,
     alt: 'Joe Somontan',
-    caption: meetText
-  },
-  link: {
-    text: 'Read more',
-    url: meetUrl
+    caption: meetText,
+    link: {
+      text: 'Read more',
+      url: meetUrl
+    }
   }
 }

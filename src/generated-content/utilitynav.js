@@ -14,5 +14,7 @@ for (const i of utilityNav.keys()) {
 }
 
 module.exports = {
-  list: navList,
+  utilitynav: {
+    list: navList
+  }
 }

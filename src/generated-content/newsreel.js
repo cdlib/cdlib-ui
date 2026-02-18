@@ -14,13 +14,15 @@ for (let i = 0; i < 10; i++) {
 }
 
 module.exports = {
-  heading: {
-    level: '2',
-    text: 'Latest News from CDL'
-  },
-  list: sampleNews,
-  link: {
-    text: 'View all news',
-    url: 'https://cdlib.org/cdlinfo/'
+  newsreel: {
+    heading: {
+      level: '2',
+      text: 'Latest News from CDL'
+    },
+    link: {
+      text: 'View all news',
+      url: 'https://cdlib.org/cdlinfo/'
+    },
+    list: sampleNews
   }
 }

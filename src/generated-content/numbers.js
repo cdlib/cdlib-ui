@@ -13,5 +13,7 @@ for (var i = 0; i < 15; i++) {
 }
 
 module.exports = {
-  list: fakerData
+  numbers: {
+    list: fakerData
+  }
 }

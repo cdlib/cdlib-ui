@@ -35,6 +35,8 @@ for (var i = 0; i < 15; i++) {
 }
 
 module.exports = {
-  row1: tableHeader,
-  row2: tableData
+  table: {
+    row1: tableHeader,
+    row2: tableData
+  }
 }

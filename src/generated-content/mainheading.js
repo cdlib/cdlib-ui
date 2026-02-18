@@ -4,11 +4,13 @@ const pageHeading = pages[page].title.rendered
 const pageTagline = pages[page].acf.tagline
 
 module.exports = {
-  heading: {
-    level: '1',
-    text: pageHeading
-  },
-  tagline: {
-    text: pageTagline
+  mainheading: {
+    heading: {
+      level: '1',
+      text: pageHeading
+    },
+    tagline: {
+      text: pageTagline
+    }
   }
 }

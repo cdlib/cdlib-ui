@@ -10,9 +10,11 @@ for (var i = 0; i < 5; i++) {
 }
 
 module.exports = {
-  heading: {
-    level: '2',
-    text: faker.commerce.productName()
-  },
-  list1: fakerList1,
+  sidebarnav: {
+    heading: {
+      level: '2',
+      text: faker.commerce.productName()
+    },
+    list1: fakerList1,
+  }
 }

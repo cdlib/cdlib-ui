@@ -4,10 +4,10 @@ const url = users[50].link
 
 module.exports = {
   updated: {
-    date: 'February 27, 2018'
-  },
-  link: {
-    url: url,
-    text: name
+    date: 'February 27, 2018',
+    link: {
+      url: url,
+      text: name
+    }
   }
 }

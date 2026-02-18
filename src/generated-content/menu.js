@@ -1,4 +1,4 @@
-const list = [
+const menulist = [
   {
     title: {
       rendered: 'menu item 1'
@@ -51,5 +51,5 @@ const list = [
 ]
 
 module.exports = {
-  list
+  menulist
 }

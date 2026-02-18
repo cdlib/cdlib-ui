@@ -1,6 +1,8 @@
 module.exports = {
-  heading: {
-    level: '1',
-    text: 'CDLINFO News'
+  blogindex: {
+    heading: {
+      level: '1',
+      text: 'CDLINFO News'
+    }
   }
 }

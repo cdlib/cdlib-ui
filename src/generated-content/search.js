@@ -11,24 +11,26 @@ for (var i = 0; i < 10; i++) {
 
 module.exports = {
   search: {
-    action: '/'
-  },
-  label: {
-    exists: true,
-    for: 'c-search-field',
-    text: 'Search the California Digital Library'
-  },
-  input1: {
-    id: 'c-search-field',
-    type: 'search',
-    list: 'c-search-list',
-    name: 's',
-    value: '',
-    placeholder: ''
-  },
-  button4: {
-    type: 'submit',
-    text: 'Search'
-  },
-  list: fakerData,
+    search: {
+      action: '/'
+    },
+    label: {
+      exists: true,
+      for: 'c-search-field',
+      text: 'Search the California Digital Library'
+    },
+    input1: {
+      id: 'c-search-field',
+      type: 'search',
+      list: 'c-search-list',
+      name: 's',
+      value: '',
+      placeholder: ''
+    },
+    button4: {
+      type: 'submit',
+      text: 'Search'
+    },
+    list: fakerData
+  }
 }

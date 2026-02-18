@@ -14,9 +14,11 @@ for (let i = 0; i < 3; i++) {
 }
 
 module.exports = {
-  heading: {
-    level: '2',
-    text: 'Recent Posts'
-  },
-  list: sampleData
+  news: {
+    heading: {
+      level: '2',
+      text: 'Recent Posts'
+    },
+    list: sampleData
+  }
 }

@@ -17,18 +17,20 @@ for (const i of menuItemsSkipFirst.keys()) {
 }
 
 module.exports = {
-  heading: {
-    level: '2',
-    id: 'secondarynav-heading'
-  },
-  link1: true,
-  link: {
-    text: firstTitle,
-    url: firstUrl
-  },
   secondarynav: {
-    closeButtonText: 'Close Menu',
-    openButtonText: 'Open Menu',
-  },
-  list: sampleData
+    heading: {
+      level: '2',
+      id: 'secondarynav-heading'
+    },
+    link1: true,
+    link: {
+      text: firstTitle,
+      url: firstUrl
+    },
+    secondarynav: {
+      closeButtonText: 'Close Menu',
+      openButtonText: 'Open Menu',
+    },
+    list: sampleData
+  }
 }

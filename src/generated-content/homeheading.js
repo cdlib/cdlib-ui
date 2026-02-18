@@ -1,5 +1,7 @@
 module.exports = {
-  heading: {
-    text: 'California Digital Library'
+  homeheading: {
+    heading: {
+      text: 'California Digital Library'
+    }
   }
 }

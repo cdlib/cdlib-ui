@@ -23,7 +23,9 @@ for (let i of range(startNum, endNum, 1)) {
 }
 
 module.exports = {
-  list: fakerData,
-  minimumNumber: minNum,
-  maximumNumber: maxNum
+  pagination: {
+    list: fakerData,
+    minimumNumber: minNum,
+    maximumNumber: maxNum
+  }
 }

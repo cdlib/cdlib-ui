@@ -19,5 +19,7 @@ for (const category of categoriesFiltered) {
 }
 
 module.exports = {
- list: categoryData
+  categories: {
+    list: categoryData
+  }
 }

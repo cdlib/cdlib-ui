@@ -23,5 +23,7 @@ for (const navItem of navSorted) {
 }
 
 module.exports = {
-  list: navData
+  headernav: {
+    list: navData
+  }
 }

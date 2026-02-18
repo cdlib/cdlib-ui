@@ -10,5 +10,7 @@ for (var i = 0; i < 5; i++) {
 }
 
 module.exports = {
-  list: navList
+  mobilenav: {
+    list: navList
+  }
 }

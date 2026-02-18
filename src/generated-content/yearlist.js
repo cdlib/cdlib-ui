@@ -11,5 +11,7 @@ for (var i = 0; i < 22; i++) {
 }
 
 module.exports = {
-  list: years
+  yearlist: {
+    list: years
+  }
 }

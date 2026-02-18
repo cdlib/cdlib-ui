@@ -26,40 +26,42 @@ for (const breadcrumbLevel of breadcrumbLevels) {
 }
 
 module.exports = {
-  breadcrumb: {
-    list: breadcrumbSamples,
-    activelevel: pageTitle
-  },
-  heading: {
-    level: '1',
-    text: pageTitle
-  },
-  contact: {
-    firstname: firstName,
-    lastname: lastName,
-    button: {
-      text: 'Contact Information'
+  staffprofile: {
+    breadcrumb: {
+      list: breadcrumbSamples,
+      activelevel: pageTitle
     },
-    link: {
-      text: 'Contact Information'
+    heading: {
+      level: '1',
+      text: pageTitle
+    },
+    contact: {
+      firstname: firstName,
+      lastname: lastName,
+      button: {
+        text: 'Contact Information'
+      },
+      link: {
+        text: 'Contact Information'
+      }
+    },
+    program: programService,
+    title: jobTitle,
+    pronouns: 'he, him',
+    responsibilities: responsibilities,
+    education: education,
+    background: background,
+    interests: professionalInterests,
+    affiliations: committeesAffiliations,
+    publications: publications,
+    papers: papersAndPresentations,
+    orcid: {
+      url: orcidId,
+      text: orcidId
+    },
+    linkedin: {
+      heading: 'LinkedIn Profile',
+      url: linkedinProfile
     }
-  },
-  program: programService,
-  title: jobTitle,
-  pronouns: 'he, him',
-  responsibilities: responsibilities,
-  education: education,
-  background: background,
-  interests: professionalInterests,
-  affiliations: committeesAffiliations,
-  publications: publications,
-  papers: papersAndPresentations,
-  orcid: {
-    url: orcidId,
-    text: orcidId
-  },
-  linkedin: {
-    heading: 'LinkedIn Profile',
-    url: linkedinProfile
   }
 }
