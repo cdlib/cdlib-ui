@@ -1,12 +1,13 @@
 module.exports = {
   label: {
-    exists: true,
-    for: '',
-    text: 'Label 1 (Hidden Offscreen)'
+    for: 'some-input-id',
+    text: 'Default Label'
   },
-  label: {
-    exists: true,
-    for: '',
-    text: 'Label 2'
+  label_sample2: {
+    label: {
+      class: 'o-label1',
+      for: 'some-input-id',
+      text: 'Label Hidden Offscreen'
+    }
   }
 }
