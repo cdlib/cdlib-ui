@@ -1,10 +1,10 @@
 module.exports = {
-  input1: {
+  input: {
     id: 'c-search-field',
     type: 'text',
     list: '',
     name: '',
     value: '',
-    placeholder: 'input 1 placeholder text'
+    placeholder: 'input placeholder text'
   }
 }
