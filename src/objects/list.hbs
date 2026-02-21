@@ -1,6 +1,70 @@
-{{!-- Read notes in list.config.js --}}
+<p><strong>Notes:</strong> If 'circle', 'disc', or 'square' is selected for the 'Bulleted list' formatting option in the WordPress editor, the bullet style with that attribute will be added as shown in the examples below. The 'Numbered list' formatting option in the editor does not have an alternative style.</p>
+
+<h3>Default List Style (no bullets)</h3>
+
 <ul>
   {{#each list}}
   <li>{{ list.text }}</li>
   {{/each}}
 </ul>
+
+<h3>List Style Type Circle</h3>
+
+<ul style="list-style-type: circle;">
+  {{#each list}}
+  <li>{{ list.text }}</li>
+  {{/each}}
+</ul>
+
+<h3>List Style Type Disc</h3>
+
+<ul style="list-style-type: disc;">
+  {{#each list}}
+  <li>{{ list.text }}</li>
+  {{/each}}
+</ul>
+
+<h3>List Style Type Square</h3>
+
+<ul style="list-style-type: square;">
+  {{#each list}}
+  <li>{{ list.text }}</li>
+  {{/each}}
+</ul>
+
+<h3>Compound List</h3>
+
+<ul style="list-style-type: disc;">
+  {{#each compoundlist1}}
+  <li>{{ compoundlist1.text }}
+    <ul style="list-style-type: circle;">
+      {{#each ../compoundlist2}}
+      <li>{{ compoundlist2.text }}
+        <ul style="list-style-type: square;">
+          {{#each ../../compoundlist3}}
+          <li>{{ compoundlist3.text }}</li>
+          {{/each}}
+        </ul>
+      </li>
+      {{/each}}
+    </ul>
+  </li>
+  {{/each}}
+</ul>
+
+<h3>Ordered List</h3>
+
+<ol>
+  {{#each list}}
+  <li>{{ list.text }}</li>
+  {{/each}}
+</ol>
+
+<h3>Definition List</h3>
+
+<dl>
+  {{#each list}}
+  <dt>{{ list.term }}</dt>
+  <dd>{{ list.definition }}</dd>
+  {{/each}}
+</dl>
