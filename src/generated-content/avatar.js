@@ -1,10 +1,8 @@
-const image = require('../../sample-data/media/user-image1.json')
-const imageUrl = image.media_details.sizes.full.source_url
-const imageAlt = image.alt_text
+const { faker } = require('@faker-js/faker')
 
 module.exports = {
   avatar: {
-    img: imageUrl,
-    alt: imageAlt
+    url: faker.image.personPortrait({ size: '256' }),
+    alt: faker.person.fullName()
   }
 }
