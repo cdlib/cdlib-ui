@@ -15,18 +15,14 @@ for (var i = 0; i < 10; i++) {
 module.exports = {
   select: {
     label: {
-      exists: true,
       for: 'select',
-      text: 'Label'
+      text: 'Select Label'
     },
-    select: {
-      name: 'name',
-      id: 'select',
-      labelledby: 'labelledby',
-      placeholder: {
-        exists: true,
-        label: 'Choose Your Option'
-      }
+    name: 'name',
+    id: 'select',
+    labelledby: 'labelledby',
+    placeholder: {
+      label: 'Choose Your Option'
     },
     selectoption: fakerData
   }
