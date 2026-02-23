@@ -44,7 +44,7 @@
     "npm": "~10"
   },
   "devDependencies": {
-    "@faker-js/faker": "^8.4.1",
+    "@faker-js/faker": "^10.3.0",
     "@fortawesome/fontawesome-pro": "^6.6.0",
     "@marcotss/parcel-transformer-handlebars-json": "^1.0.0",
     "@parcel/optimizer-data-url": "^2.12.0",
