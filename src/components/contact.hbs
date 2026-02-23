@@ -1,5 +1,11 @@
+<h3>Example Component for a Staff Member at UCOP</h3>
+
 <form class="c-contact" method="post" action="https://www.ucop.edu/directory-search/index.php">
   <input type="hidden" name="first_name" value="{{ contact.firstname }}">
   <input type="hidden" name="last_name" value="{{ contact.lastname }}">
   <button name="submit">{{ contact.button.text }}</button>
 </form>
+
+<h3>Example Component for a Staff Member at UCSD</h3>
+
+<a class="c-contact" href="{{ contact.link.url }}">{{ contact.link.text }}</a>
