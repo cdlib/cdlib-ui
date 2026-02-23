@@ -37,12 +37,11 @@ for (const i of posts.keys()) {
   blogData.push({
     blogheading: {
       heading: {
-        level: '2'
-      },
-      link1: true,
-      link: {
-        text: posts[i].title.rendered,
-        url: posts[i].link
+        level: '2',
+        link: {
+          text: posts[i].title.rendered,
+          url: posts[i].link
+        }
       }
     },
     blogmetadata: {
