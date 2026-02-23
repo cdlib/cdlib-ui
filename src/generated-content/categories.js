@@ -1,6 +1,6 @@
-const categories = require('../../sample-data/categories.json')
-const categoryParents = categories.filter(el => el.parent === 0)
-const categoryChildren = categories.filter(el => el.parent !== 0)
+const categoriesJson = require('../../sample-data/categories.json')
+const categoryParents = categoriesJson.filter(el => el.parent === 0)
+const categoryChildren = categoriesJson.filter(el => el.parent !== 0)
 const categoriesFiltered = categoryParents.concat(categoryChildren)
 const categoriesMap = new Map()
 const categoryData = []
@@ -8,18 +8,16 @@ const categoryData = []
 // Nest JSON child objects within their parents using id and parent properties. Adapted from https://stackoverflow.com/questions/72320459/restructure-2-arrays-with-objects-as-a-nested-array:
 
 for (const category of categoriesFiltered) {
-  category.list = []
+  category.categories = []
   categoriesMap.set(category.id, category)
 
   if (category.parent === 0) {
     categoryData.push(category)
   } else {
-    categoriesMap.get(category.parent).list.push(category)
+    categoriesMap.get(category.parent).categories.push(category)
   }
 }
 
 module.exports = {
-  categories: {
-    list: categoryData
-  }
+  categories: categoryData
 }
