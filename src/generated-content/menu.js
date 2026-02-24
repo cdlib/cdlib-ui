@@ -1,4 +1,4 @@
-const menulist = [
+const menu = [
   {
     title: {
       rendered: 'menu item 1'
@@ -13,7 +13,7 @@ const menulist = [
     title: {
       rendered: 'menu item 3'
     },
-    list: [
+    menu: [
       {
         title: {
           rendered: 'nested menu item 4'
@@ -23,7 +23,7 @@ const menulist = [
         title: {
           rendered: 'nested menu item 5'
         },
-        list: [
+        menu: [
           {
             title: {
               rendered: 'nested menu item 6'
@@ -51,5 +51,5 @@ const menulist = [
 ]
 
 module.exports = {
-  menulist
+  menu
 }
