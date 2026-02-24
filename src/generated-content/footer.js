@@ -8,13 +8,13 @@ const footerNavData = []
 const legalNavData = []
 
 for (const footerNavItem of footerNavSorted) {
-  footerNavItem.list = []
+  footerNavItem.menu = []
   footerNavMap.set(footerNavItem.id, footerNavItem)
 
   if (footerNavItem.parent === 0) {
     footerNavData.push(footerNavItem)
   } else {
-    footerNavMap.get(footerNavItem.parent).list.push(footerNavItem)
+    footerNavMap.get(footerNavItem.parent).menu.push(footerNavItem)
   }
 }
 
@@ -32,7 +32,7 @@ for (const i of legalNav.keys()) {
 
 module.exports = {
   footer: {
-    list: footerNavData,
+    menu: footerNavData,
     list2: legalNavData
   }
 }
