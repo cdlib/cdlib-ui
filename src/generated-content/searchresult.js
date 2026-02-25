@@ -16,13 +16,11 @@ for (const i of posts.keys()) {
   searchResultData.push({
     searchresultheading: {
       heading: {
-        level: '2'
-      },
-      link1: true,
-      link2: false,
-      link: {
-        text: postTitle,
-        url: postLink
+        level: '2',
+        link: {
+          text: postTitle,
+          url: postLink
+        }
       }
     },
     doctype: filetype,
