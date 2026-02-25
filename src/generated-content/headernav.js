@@ -10,7 +10,7 @@ const navData = []
 // Nest JSON child objects within their parents using id and parent properties. Adapted from https://stackoverflow.com/questions/72320459/restructure-2-arrays-with-objects-as-a-nested-array:
 
 for (const navItem of navSorted) {
-  navItem.list = []
+  navItem.menu = []
   navMap.set(navItem.id, navItem)
 
   if (navItem.parent === 0) {
@@ -18,12 +18,12 @@ for (const navItem of navSorted) {
     parentIndex++
     navData.push(navItem)
   } else {
-    navMap.get(navItem.parent).list.push(navItem)
+    navMap.get(navItem.parent).menu.push(navItem)
   }
 }
 
 module.exports = {
   headernav: {
-    list: navData
+    menu: navData
   }
 }
