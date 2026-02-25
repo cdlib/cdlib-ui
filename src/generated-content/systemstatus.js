@@ -1,5 +1,5 @@
 module.exports = {
-  mainheading: {
+  systemstatus: {
     heading: {
       level: '1',
       text: 'System Status'
