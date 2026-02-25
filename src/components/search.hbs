@@ -1,10 +1,10 @@
-<form role="search" action="{{ search.action }}" class="c-search">
-  {{> label--1 }}
-  {{> input }}
+<form role="search" action="{{ search.form.action }}" class="c-search">
+  {{> label search }}
+  {{> input search }}
   <datalist id="c-search-list">
-    {{#each list}}
+    {{#each search.list}}
     <option value="{{ datalist.option }} ">
     {{/each}}
   </datalist>
-  {{> button--4 }}
+  {{> button search }}
 </form>

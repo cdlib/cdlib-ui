@@ -11,15 +11,15 @@ for (var i = 0; i < 10; i++) {
 
 module.exports = {
   search: {
-    search: {
+    form: {
       action: '/'
     },
     label: {
-      exists: true,
+      class: 'o-label1',
       for: 'c-search-field',
       text: 'Search the California Digital Library'
     },
-    input1: {
+    input: {
       id: 'c-search-field',
       type: 'search',
       list: 'c-search-list',
@@ -27,7 +27,8 @@ module.exports = {
       value: '',
       placeholder: ''
     },
-    button4: {
+    button: {
+      class: 'o-button4',
       type: 'submit',
       text: 'Search'
     },
