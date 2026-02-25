@@ -7,13 +7,13 @@
     <button class="js-header__menu-control o-button3" aria-label="menu"></button>
   </div>
   <div class="c-header__search js-header__search is-open">
-    {{ render '@search' }}
+    {{> search }}
     <button class="c-header__close-search js-header__close-search o-button2" aria-label="hide search" hidden></button>
   </div>
   <div class="c-header__header-nav js-header__header-nav is-open">
-  {{ render '@headernav' }}
+  {{> headernav }}
   </div>
   <div class="c-header__utility-nav js-header__utility-nav is-open">
-    {{ render '@utilitynav' }}
+    {{> utilitynav }}
   </div>
 </header>

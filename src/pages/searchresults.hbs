@@ -1,14 +1,14 @@
 <div class="t-layout--2">
-  {{ render '@skipnav' }}
-  {{ render '@header' }}
-  {{ render '@breadcrumb' }}
+  {{> skipnav }}
+  {{> header }}
+  {{> breadcrumb }}
   <aside class="t-layout__sidebar1">
-    {{ render '@refine' }}
+    {{> refine }}
   </aside>
   <main id="maincontent">
-    {{ render '@records' }}
-    {{ render '@searchresult' }}
-    {{ render '@pagination' }}
+    {{> records }}
+    {{> searchresult }}
+    {{> pagination }}
   </main>
-  {{ render '@footer' }}
+  {{> footer }}
 </div>

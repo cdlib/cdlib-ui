@@ -1,14 +1,14 @@
 <div class="t-layout--3">
-  {{ render '@skipnav' }}
-  {{ render '@header' }}
+  {{> skipnav }}
+  {{> header }}
   {{> breadcrumb }}
   <aside aria-label="first" class="t-layout__sidebar1">
-    {{ render '@secondarynav' }}
+    {{> secondarynav }}
   </aside>
   <main id="maincontent">
     {{> heading--1 }}
     {{> contact }}
-    {{ render '@avatar' }}
+    {{> avatar }}
     <h2>Program / Service</h2>
     <p>{{{ program }}}</p>
     <h2>Job Title</h2>
@@ -55,8 +55,8 @@
     {{/if}}
   </main>
   <aside aria-label="second" class="t-layout__sidebar2">
-    {{ render '@news' }}
+    {{> news }}
   </aside>
-  {{ render '@updated' }}
-  {{ render '@footer' }}
+  {{> updated }}
+  {{> footer }}
 </div>
