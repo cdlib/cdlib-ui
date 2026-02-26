@@ -1,7 +1,15 @@
 <section class="c-sidebarpost c-sidebarbox js-sidebarpost--author">
   <header>
-    <h2 id="{{ heading.id }}">{{ heading.text }}</h2>
+    <h2 id="{{ sidebarpost1.heading.id }}">{{ sidebarpost1.heading.text }}</h2>
   </header>
-  {{> select }}
-  <button type="button" aria-disabled="true">{{ sidebarpost.button }}</button>
+  {{> select sidebarpost1 }}
+  <button type="button" aria-disabled="true">{{ sidebarpost1.button }}</button>
+</section>
+
+<section class="c-sidebarpost c-sidebarbox js-sidebarpost--month">
+  <header>
+    <h2 id="{{ sidebarpost2.heading.id }}">{{ sidebarpost2.heading.text }}</h2>
+  </header>
+  {{> select sidebarpost2 }}
+  <button type="button" aria-disabled="true">{{ sidebarpost2.button }}</button>
 </section>

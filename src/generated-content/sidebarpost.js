@@ -29,42 +29,38 @@ for (var i = 0; i < monthUrls.length; i++) {
 }
 
 module.exports = {
-  sidebarpost: {
+  sidebarpost1: {
     heading: {
       id: 'c-sidebarpost--author-heading',
       text: 'Authors'
     },
-    label: {
-      exists: false,
-    },
     select: {
+      label: {
+        class: 'o-label1' // hidden
+      },
       labelledby: 'c-sidebarpost--author-heading',
       placeholder: {
-        exists: true,
         label: 'Select Author'
       },
+      selectoption: fakerData1
     },
-    sidebarpost: {
-      button: 'View All by Author'
-    },
-    selectoption: fakerData1,
+    button: 'View All by Author'
+  },
+  sidebarpost2: {
     heading: {
       id: 'c-sidebarpost--month-heading',
       text: 'Months of Publication'
     },
-    label: {
-      exists: false,
-    },
     select: {
+      label: {
+        class: 'o-label1' // hidden
+      },
       labelledby: 'c-sidebarpost--month-heading',
       placeholder: {
-        exists: true,
         label: 'Select Month'
       },
+      selectoption: fakerData2
     },
-    sidebarpost: {
-      button: 'View All from Month'
-    },
-    selectoption: fakerData2
+    button: 'View All from Month',
   }
 }
