@@ -1,10 +1,10 @@
 <nav class="c-sidebarnav">
   <header>
-    {{> heading }}
+    {{> heading sidebarnav }}
   </header>
   <div>
     <ul>
-      {{#each list1}}
+      {{#each sidebarnav.list1}}
       <li>{{> link }}</li>
       {{/each}}
     </ul>
