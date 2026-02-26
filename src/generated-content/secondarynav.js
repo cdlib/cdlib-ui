@@ -20,17 +20,20 @@ module.exports = {
   secondarynav: {
     heading: {
       level: '2',
-      id: 'secondarynav-heading'
+      id: 'secondarynav-heading',
+      link: {
+        text: firstTitle,
+        url: firstUrl
+      }
     },
-    link1: true,
-    link: {
-      text: firstTitle,
-      url: firstUrl
+    hidden_link: {
+      link: {
+        text: firstTitle,
+        url: firstUrl
+      }
     },
-    secondarynav: {
-      closeButtonText: 'Close Menu',
-      openButtonText: 'Open Menu',
-    },
+    closeButtonText: 'Close Menu',
+    openButtonText: 'Open Menu',
     list: sampleData
   }
 }
