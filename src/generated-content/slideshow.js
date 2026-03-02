@@ -1,48 +1,54 @@
-const slideshow = require('../../sample-data/home.json')
+const { faker } = require('@faker-js/faker')
+
+function titleCase(str) {
+  return str.toLowerCase().split(' ').map(function(word) {
+    return (word.charAt(0).toUpperCase() + word.slice(1));
+  }).join(' ');
+}
 
 module.exports = {
   slide1: {
     slide: {
-      heading: slideshow.acf.slide_1_heading,
-      text: slideshow.acf.slide_1_main_text,
-      link: slideshow.acf.slide_1_link,
-      imageSmall: slideshow.acf.slide_1_image,
-      imageLarge: slideshow.acf.slide_1_image,
-      alt: slideshow.acf.slide_1_heading,
-      credits: slideshow.acf.slide_1_credits
+      heading: titleCase(faker.lorem.words(10)),
+      text: faker.lorem.paragraph(),
+      link: faker.internet.url(),
+      imageSmall: faker.image.urlPicsumPhotos({ width: 700, blur: 0 }),
+      imageLarge: faker.image.urlPicsumPhotos({ width: 1000, blur: 0 }),
+      alt: titleCase(faker.lorem.words(10)),
+      credits: 'Photo by ' + faker.person.fullName()
     }
   },
   slide2: {
     slide: {
-      heading: slideshow.acf.slide_2_heading,
-      text: slideshow.acf.slide_2_main_text,
-      link: slideshow.acf.slide_2_link,
-      imageSmall: slideshow.acf.slide_2_image,
-      imageLarge: slideshow.acf.slide_2_image,
-      alt: slideshow.acf.slide_2_heading,
-      credits: slideshow.acf.slide_2_credits
+      heading: titleCase(faker.lorem.words(10)),
+      text: faker.lorem.paragraph(),
+      link: faker.internet.url(),
+      imageSmall: faker.image.urlPicsumPhotos({ width: 700, blur: 0 }),
+      imageLarge: faker.image.urlPicsumPhotos({ width: 1000, blur: 0 }),
+      alt: titleCase(faker.lorem.words(10)),
+      credits: 'Photo by ' + faker.person.fullName()
     }
   },
   slide3: {
     slide: {
-      heading: slideshow.acf.slide_3_heading,
-      text: slideshow.acf.slide_3_main_text,
-      link: slideshow.acf.slide_3_link,
-      imageSmall: slideshow.acf.slide_3_image,
-      imageLarge: slideshow.acf.slide_3_image,
-      alt: slideshow.acf.slide_3_heading,
-      credits: slideshow.acf.slide_3_credits
+      heading: titleCase(faker.lorem.words(10)),
+      text: faker.lorem.paragraph(),
+      link: faker.internet.url(),
+      imageSmall: faker.image.urlPicsumPhotos({ width: 700, blur: 0 }),
+      imageLarge: faker.image.urlPicsumPhotos({ width: 1000, blur: 0 }),
+      alt: titleCase(faker.lorem.words(10)),
+      credits: 'Photo by ' + faker.person.fullName()
     }
   },
   slide4: {
     slide: {
-      heading: slideshow.acf.slide_4_heading,
-      text: slideshow.acf.slide_4_main_text,
-      link: slideshow.acf.slide_4_link,
-      imageSmall: slideshow.acf.slide_4_image,
-      imageLarge: slideshow.acf.slide_4_image,
-      alt: slideshow.acf.slide_4_heading,
-      credits: slideshow.acf.slide_4_credits
+      heading: titleCase(faker.lorem.words(10)),
+      text: faker.lorem.paragraph(),
+      link: faker.internet.url(),
+      imageSmall: faker.image.urlPicsumPhotos({ width: 700, blur: 0 }),
+      imageLarge: faker.image.urlPicsumPhotos({ width: 1000, blur: 0 }),
+      alt: titleCase(faker.lorem.words(10)),
+      credits: 'Photo by ' + faker.person.fullName()
     }
   }
 }
