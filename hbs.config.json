@@ -1,5 +1,5 @@
 {
   "data": "src/generated-content",
   "layouts": "tool/layouts",
-  "partials": ["src/objects", "src/components", "src/pages", "src/templates"]
+  "partials": ["src/objects", "src/components", "src/templates", "src/pages"]
 }
