@@ -6,52 +6,52 @@
     {{> secondarynav }}
   </aside>
   <main id="maincontent">
-    {{> heading--1 }}
-    {{> contact }}
+    {{> heading staffprofile }}
+    {{> contact_1 staffprofile }}
     {{> avatar }}
     <h2>Program / Service</h2>
-    <p>{{{ program }}}</p>
+    <p>{{{ staffprofile.program }}}</p>
     <h2>Job Title</h2>
-    <p>{{{ title }}}</p>
-    {{#if pronouns }}
+    <p>{{{ staffprofile.title }}}</p>
+    {{#if staffprofile.pronouns }}
       <h2>Pronouns</h2>
-      <p>{{{ pronouns }}}</p>
+      <p>{{{ staffprofile.pronouns }}}</p>
     {{/if}}
-    {{#if responsibilities }}
+    {{#if staffprofile.responsibilities }}
       <h2>Responsibilities</h2>
     {{/if}}
-    <p>{{{ responsibilities }}}</p>
-    {{#if education }}
+    <p>{{{ staffprofile.responsibilities }}}</p>
+    {{#if staffprofile.education }}
       <h2>Education</h2>
     {{/if}}
-    <p>{{{ education }}}</p>
-    {{#if background }}
+    <p>{{{ staffprofile.education }}}</p>
+    {{#if staffprofile.background }}
       <h2>Background</h2>
     {{/if}}
-    <p>{{{ background }}}</p>
-    {{#if interests }}
+    <p>{{{ staffprofile.background }}}</p>
+    {{#if staffprofile.interests }}
       <h2>Professional Interests</h2>
     {{/if}}
-    <p>{{{ interests }}}</p>
-    {{#if affiliations }}
+    <p>{{{ staffprofile.interests }}}</p>
+    {{#if staffprofile.affiliations }}
       <h2>Committees / Affiliations</h2>
     {{/if}}
-    <p>{{{ affiliations }}}</p>
-    {{#if publications }}
+    <p>{{{ staffprofile.affiliations }}}</p>
+    {{#if staffprofile.publications }}
       <h2>Publications</h2>
     {{/if}}
-    <p>{{{ publications }}}</p>
+    <p>{{{ staffprofile.publications }}}</p>
     {{#if papers }}
       <h2>Papers and Presentations</h2>
     {{/if}}
-    <p>{{{ papers }}}</p>
+    <p>{{{ staffprofile.papers }}}</p>
     {{#if orcid.url }}
       <h2><abbr title="Orchid">ORCID</abbr> ID</h2>
       {{> orcid }}
     {{/if}}
-    {{#if linkedin.url }}
+    {{#if staffprofile.linkedin.url }}
       <h2>LinkedIn Profile</h2>
-      <a href="{{ linkedin.url }}">{{ linkedin.url }}</a>
+      <a href="{{ linkedin.url }}">{{ staffprofile.linkedin.url }}</a>
     {{/if}}
   </main>
   <aside aria-label="second" class="t-layout__sidebar2">
