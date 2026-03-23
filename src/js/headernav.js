@@ -2,10 +2,10 @@
 
 import { popoverSupport } from './popover-support'
 const headerNav = document.querySelector('.js-headernav')
-const subNavs = headerNav.querySelectorAll(':scope > ul > li:has(> ul)')
 const headerNavMediaQuery = window.matchMedia('(min-width: 760px)')
 
 if (headerNav && popoverSupport()) {
+  const subNavs = headerNav.querySelectorAll(':scope > ul > li:has(> ul)')
   for (const subNav of subNavs) {
     const subNavLink = subNav.querySelector('a')
     const subNavPopover = subNav.querySelector('ul')
