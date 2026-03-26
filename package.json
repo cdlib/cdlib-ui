@@ -66,7 +66,7 @@
     "postcss-import": "^16.1.0",
     "postcss-import-ext-glob": "^2.1.1",
     "snazzy": "^9.0.0",
-    "source-sans": "^3.46.0",
+    "source-sans": "^3.52.0",
     "standard": "^17.1.0",
     "start-server-and-test": "^2.0.5",
     "static-sitemap-cli": "^2.2.5",
