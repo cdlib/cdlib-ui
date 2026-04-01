@@ -4,7 +4,7 @@
 
 .t-layout--3 { /* stylelint-disable-line selector-class-pattern */
   display: grid;
-  grid-gap: var(--space3);
+  gap: var(--space3);
   grid-template:
     'layout3a'
     'layout3b'
@@ -73,7 +73,7 @@
   .t-layout__sidebar2 {
     display: grid;
     grid-area: layout3e;
-    grid-gap: var(--space3);
+    gap: var(--space3);
     grid-template:
       'sidebar-item1'
       'sidebar-item2'

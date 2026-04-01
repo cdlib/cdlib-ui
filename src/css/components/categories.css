@@ -41,7 +41,6 @@
 
   details {
     margin-block-end: 0;
-    break-inside: avoid;
-    page-break-inside: avoid; /* Firefox */
+    break-inside: avoid; /* Firefox */
   }
 }

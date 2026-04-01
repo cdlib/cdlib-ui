@@ -85,8 +85,7 @@
 
   /* Panel lists: */
   > ul > li > ul > li {
-    break-inside: avoid;
-    page-break-inside: avoid; /* Firefox */
+    break-inside: avoid; /* Firefox */
   }
 
   /* Panel list links: */
@@ -109,7 +108,7 @@
   /* Panel sub-lists: */
   > ul > li > ul > li > ul {
     padding-inline: var(--space1);
-    page-break-inside: avoid; /* Firefox */
+    break-inside: avoid; /* Firefox */
   }
 
    /* Panel sub-list links: */

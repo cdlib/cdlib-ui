@@ -36,8 +36,6 @@
 .c-searchresult__excerpt {
   grid-area: result-excerpt;
   overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: break-word;
 }
 
 .c-searchresult__datetime {

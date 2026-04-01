@@ -20,8 +20,6 @@ table {
 
   td {
     overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: break-word;
   }
 
   thead {
@@ -49,7 +47,7 @@ table {
     td {
       padding: var(--space2) !important;
       border: 1px solid oklch(88% 0 0deg) !important;
-      text-align: middle !important;
+      text-align: center !important;
     }
 
     th[class*='sorting'] {

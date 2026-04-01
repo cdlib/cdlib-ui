@@ -19,8 +19,6 @@
     line-height: var(--line-height1);
     text-align: start;
     overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: break-word;
 
     a {
       margin-block-start: var(--space2);

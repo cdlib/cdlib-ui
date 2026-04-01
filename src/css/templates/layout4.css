@@ -2,7 +2,7 @@
 
 .t-layout--4 { /* stylelint-disable-line selector-class-pattern */
   display: grid;
-  grid-row-gap: var(--space3);
+  row-gap: var(--space3);
   grid-template:
     'layout4a'
     'layout4b'
@@ -14,7 +14,7 @@
   min-block-size: 100vh;
 
   @media (--min-width2) {
-    grid-gap: var(--space3);
+    gap: var(--space3);
     grid-template:
       'layout4a layout4a'
       'layout4b layout4b'
@@ -56,7 +56,7 @@
   .t-layout__sidebar2 {
     display: grid;
     grid-area: layout4e;
-    grid-gap: var(--space3);
+    gap: var(--space3);
     grid-template:
       'sidebar-item1'
       'sidebar-item2'

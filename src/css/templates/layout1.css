@@ -2,7 +2,7 @@
 
 .t-layout--1 { /* stylelint-disable-line selector-class-pattern */
   display: grid;
-  grid-row-gap: var(--space3);
+  row-gap: var(--space3);
   grid-template:
     'layout1a'
     'layout1b'

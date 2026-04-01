@@ -70,9 +70,9 @@
     "standard": "^17.1.0",
     "start-server-and-test": "^2.0.5",
     "static-sitemap-cli": "^2.2.5",
-    "stylelint": "^16.8.1",
-    "stylelint-config-property-sort-order-smacss": "^10.0.0",
-    "stylelint-config-standard": "^36.0.1"
+    "stylelint": "^17.6.0",
+    "stylelint-config-property-sort-order-smacss": "^11.2.0",
+    "stylelint-config-standard": "^40.0.0"
   },
   "alias": {
     "fa-brands/*": "@fortawesome/fontawesome-pro/svgs/brands/$1",
