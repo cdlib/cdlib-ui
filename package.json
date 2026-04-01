@@ -1,6 +1,6 @@
 {
   "name": "cdlib-ui",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "The user interface for the California Digital Library website",
   "scripts": {
     "start": "run-p parcel:dev watch:styles watch:js --silent",
