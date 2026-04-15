@@ -1,4 +1,4 @@
-// Headernav Component //
+// Header Nav Component //
 
 import { popoverSupport } from './popover-support'
 const headerNav = document.querySelector('.js-headernav')
@@ -9,6 +9,9 @@ if (headerNav && popoverSupport()) {
   for (const subNav of subNavs) {
     const subNavLink = subNav.querySelector('a')
     const subNavPopover = subNav.querySelector('ul')
+    subNav.classList.add('c-headernav__section')
+    subNavLink.classList.add('c-headernav__link')
+    subNavPopover.classList.add('c-headernav__popover')
     subNavPopover.popover = 'auto'
     subNavLink.setAttribute('role', 'button')
 

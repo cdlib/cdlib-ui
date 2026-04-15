@@ -1,8 +1,13 @@
 /***** Header Nav Component *****/
 
 .c-headernav {
-  --headernav-section-padding: var(--space3);
-  --headernav-item-margin: var(--space3);
+  /* Remove all section lists if the Popover API isn't supported,
+  leaving only the top nav section links available to click.
+  The selector 'ul ul' is needed instead of '.c-headernav__popover'
+  because using the latter would result in a brief jump of the nav
+  before headernav.js loads and creates the '.c-headernav__section',
+  '.c-headernav__link' and '.c-headernav__popover selectors':
+  */
 
   .no-popover & {
     ul ul {
@@ -12,101 +17,80 @@
 
   ul {
     margin: unset;
-    padding: unset;
-    list-style-type: none;
-
-    li {
-      margin: unset;
-      padding: unset;
-    }
   }
 
-  @media (--min-width2) {
-    a {
-      display: block;
-    }
-  
-    /* Nav bar and top sections: */
-    > ul {
-      display: flex;
-    }
-  
-    > ul > li {
-      flex: 1 1 auto;
-      anchor-scope: all;
+  /* Section columns (no columns by default).
+  These are set using 'columns-[#]' classes
+  defined in the top-level menu items within WP Menus:
+  */
 
-      &:not(:last-child) {
-        border-inline-end: 1px solid oklch(55% 0 0deg);
-      }
-    }
-  
-    /* Nav bar links are anchors for popover panels: */
-    > ul > li > a {
-      anchor-name: --headernav-anchor;
-      padding: var(--space1);
-      background: linear-gradient(oklch(95% 0 0deg), oklch(88% 0 0deg));
-      color: oklch(36% 0 0deg);
-      text-align: center;
-      text-decoration: none;
-  
-      &:focus,
-      &:hover {
-        color: var(--color-blue);
-        text-decoration: underline;
-      }
-    }
-  }
-
-  /* Popover panels: */
-  [popover] {
-    position-anchor: --headernav-anchor;
-    top: anchor(bottom);
-    left: anchor(left);
-    margin: 0;
-    transition: opacity, display, overlay;
-    transition-duration: 0.3s;
-    transition-behavior: allow-discrete;
-    border: unset;
-    opacity: 0;
-  
-    &:popover-open {
-      opacity: 1;
-  
-      @starting-style {
-        opacity: 0;
-      }
-    }
-  }
-
-  > ul > li > ul {
-    padding: var(--headernav-section-padding);
-    column-gap: calc(var(--headernav-section-padding) * 2);
-    column-rule: 1px solid oklch(88% 0 0deg);
-    column-width: 9.5em;
-    border-inline: 1px solid oklch(88% 0 0deg);
-    border-block-end: 1px solid oklch(88% 0 0deg);
-    background-color: oklch(95% 0 0deg);
-    box-shadow: 3px 3px 3px oklch(88% 0 0deg / 70%);
-  }
-
-  /* Panel columns (no columns, by default). These are set via 'columns-[#]' classes defined in the top-level menu items within WP Menus: */
-  > ul > .columns-2 > ul {
+  .columns-2 .c-headernav__popover {
     column-count: 2;
   }
 
-  > ul > .columns-3 > ul {
+  .columns-3 .c-headernav__popover {
     column-count: 3;
   }
+}
 
-  /* Panel lists: */
-  > ul > li > ul > li {
-    break-inside: avoid; /* Firefox */
+.c-headernav__popover {
+  position-anchor: --headernav-anchor;
+  top: anchor(bottom);
+  left: anchor(left);
+  margin: 0;
+  padding-block-end: var(--space3);
+  padding-inline: var(--space3);
+  column-gap: calc(var(--space3) * 2);
+  column-rule: 1px solid oklch(88% 0 0deg);
+  transition: opacity, display, overlay;
+  transition-duration: 0.3s;
+  transition-behavior: allow-discrete;
+  border: unset;
+  border-inline: 1px solid oklch(88% 0 0deg);
+  border-block-end: 1px solid oklch(88% 0 0deg);
+  opacity: 0;
+  background-color: oklch(95% 0 0deg);
+  box-shadow: 3px 3px 3px oklch(88% 0 0deg / 70%);
+
+  &:popover-open {
+    opacity: 1;
+
+    @starting-style {
+      opacity: 0;
+    }
   }
 
-  /* Panel list links: */
-  > ul > li > ul > li > a {
-    margin-block-end: var(--headernav-item-margin);
+  /* Keep section lists together with their heading link: */
+
+  li {
+    break-inside: avoid;
+  }
+
+  /* The first list items within each section: */
+
+  > li {
+    display: grid;
+    width: 12rem;
+  }
+
+  /* Section lists after their heading link: */
+
+  > li > ul {
+    display: grid;
+    gap: 1rem;
+  }
+
+  /* Section heading links: */
+
+  > li > a {
+    margin-block: var(--space3);
+    margin-inline-start: -0.3rem;
     color: var(--color-dark-red);
+  }
+
+  /* Link underline styles for all links: */
+
+  a {
     text-decoration: none;
 
     &:focus,
@@ -115,29 +99,42 @@
     }
   }
 
-  /* Panel sub-list 'heading' links: */
-  > ul > li > ul > li > a:only-child {
+  /* Links without a following list: */
+
+  a:only-child {
     color: var(--color-blue);
   }
+}
 
-  /* Panel sub-lists: */
-  > ul > li > ul > li > ul {
-    padding-inline: var(--space1);
-    break-inside: avoid; /* Firefox */
+@media (--min-width2) {
+  .c-headernav {
+    > ul {
+      display: flex;
+    }
   }
 
-  /* Panel sub-list links: */
-  > ul > li > ul > li > ul > li > a {
+  .c-headernav__section {
+    flex: 1 1 auto;
+    anchor-scope: all;
+
+    &:not(:last-child) {
+      border-inline-end: 1px solid oklch(55% 0 0deg);
+    }
+  }
+
+  .c-headernav__link {
+    display: block;
+    anchor-name: --headernav-anchor;
+    padding: var(--space1);
+    background: linear-gradient(oklch(95% 0 0deg), oklch(88% 0 0deg));
+    color: oklch(36% 0 0deg);
+    text-align: center;
     text-decoration: none;
 
     &:focus,
     &:hover {
+      color: var(--color-blue);
       text-decoration: underline;
     }
-  }
-
-  /* All panel list items: */
-  > ul > li li {
-    margin-block-end: var(--headernav-item-margin);
   }
 }
