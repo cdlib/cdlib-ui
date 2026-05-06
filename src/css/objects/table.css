@@ -44,7 +44,6 @@ table {
     td {
       padding: var(--space2) !important;
       border: 1px solid oklch(88% 0 0deg) !important;
-      text-align: center !important;
     }
 
     th[class*='sorting'] {
