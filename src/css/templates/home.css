@@ -6,8 +6,7 @@
   grid-template:
     'header'
     'slideshow'
-    'serviceheading'
-    'servicebox'
+    'services'
     'newsreel'
     'quicklinks'
     'meet'
@@ -20,8 +19,7 @@
     grid-template:
     'header header'
     'slideshow slideshow'
-    'serviceheading serviceheading'
-    'servicebox servicebox'
+    'services services'
     'newsreel newsreel'
     'quicklinks quicklinks'
     'meet social'
@@ -34,8 +32,8 @@
     'header header'
     'slideshow quicklinks'
     'slideshow quicklinks'
-    'serviceheading quicklinks'
-    'servicebox meet'
+    'services quicklinks'
+    'services meet'
     'newsreel social'
     'footer footer'
     / 1fr var(--sidebar-width);
@@ -57,12 +55,8 @@
     grid-area: slideshow;
   }
 
-  .c-serviceheading {
-    grid-area: serviceheading;
-  }
-
-  .c-servicebox {
-    grid-area: servicebox;
+  .c-services {
+    grid-area: services;
   }
 
   .c-newsreel {
