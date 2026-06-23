@@ -1,0 +1,40 @@
+/***** Quick Links Component *****/
+
+.c-quicklinks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: var(--space2);
+
+  a {
+    color: oklch(36% 0 0deg);
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+
+    /* disable external link icon: */
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.c-quicklinks .c-sidebarnav:last-child {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space2);
+
+    &::after {
+      content: '';
+      flex: none;
+      block-size: 1lh;
+      inline-size: 1lh;
+      background-color: var(--color-gold);
+      mask: url('data-url:npm:fa-solid/arrow-up-right-from-square.svg') center / contain;
+    }
+  }
+}

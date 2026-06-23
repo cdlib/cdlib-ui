@@ -21,18 +21,22 @@ homeQuicklinks(homeQuicklinks1, sampleMenu1)
 homeQuicklinks(homeQuicklinks2, sampleMenu2)
 
 module.exports = {
-  quicklink1: {
-    heading: {
-      level: '2',
-      text: 'Resources For...'
-    },
-    menu: sampleMenu1
+  quicklink_1: {
+    sidebarnav: {
+      heading: {
+        level: '2',
+        text: 'Resources For...'
+      },
+      list1: sampleMenu1
+    }
   },
-  quicklink2: {
-    heading: {
-      level: '2',
-      text: 'Go Directly To'
-    },
-    menu: sampleMenu2
+  quicklink_2: {
+    sidebarnav: {
+      heading: {
+        level: '2',
+        text: 'Go Directly To'
+      },
+      list1: sampleMenu2
+    }
   }
 }
