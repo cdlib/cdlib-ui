@@ -1,0 +1,47 @@
+/***** Services Component *****/
+
+.c-services {
+  display: grid;
+  gap: var(--space2);
+
+  h2 {
+    margin: unset;
+    padding: var(--space3) var(--space2);
+    background-color: var(--color-blue);
+    color: white;
+    font-size: 1.5rem;
+  }
+}
+
+.c-services__sections {
+  --column-min-width: 11rem;
+
+  display: grid;
+  column-gap: var(--space2);
+
+  section {
+    padding: var(--space2);
+    background-image: linear-gradient(oklch(from var(--color-light-blue) calc(l + 0.04) c h), var(--color-light-blue));
+  }
+
+  h3 {
+    margin: unset;
+    color: black;
+    font-weight: 600;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (--min-width1) {
+  .c-services__sections {
+    grid-template-columns: repeat(auto-fit, minmax(var(--column-min-width), 1fr) minmax(var(--column-min-width), 1fr));
+  }
+}

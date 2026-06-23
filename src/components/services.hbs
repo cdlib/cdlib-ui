@@ -1,0 +1,37 @@
+<section class="c-services">
+  {{> heading services}}
+  <div class="c-services__sections">
+    <section>
+      {{> heading service_1 }}
+      <ul>
+      {{#each service_1.menu}}
+        <li>{{> link }}</li>
+      {{/each}}
+      </ul>
+    </section>
+    <section>
+      {{> heading service_2 }}
+      <ul>
+      {{#each service_2.menu}}
+        <li>{{> link }}</li>
+      {{/each}}
+      </ul>
+    </section>
+    <section>
+      {{> heading service_3 }}
+      <ul>
+      {{#each service_3.menu}}
+        <li>{{> link }}</li>
+      {{/each}}
+      </ul>
+    </section>
+    <section>
+      {{> heading service_4 }}
+      <ul>
+      {{#each service_4.menu}}
+        <li>{{> link }}</li>
+      {{/each}}
+      </ul>
+    </section>
+  </div>
+</section>
