@@ -40,19 +40,3 @@
     }
   }
 }
-
-@media (--min-width2) {
-  /* Balance all sidebarnav (quicklink) link heights
-  with all available vertical space within sidebarnav boxes: */
-  
-  .c-sidebarnav,
-  .c-sidebarnav :is(ul, li, a) {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-  }
-
-  .c-sidebarnav a {
-    justify-content: center;
-  }
-}
