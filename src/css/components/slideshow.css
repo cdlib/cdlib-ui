@@ -52,7 +52,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 0.8em;
-    color: var(--color-gold);
+    color: white;
     cursor: pointer;
 
     span {
@@ -71,7 +71,7 @@
     flex: none;
     block-size: 100%; /* size relative to button size defined in '.c-slideshow__controls button' selector above */
     inline-size: 100%; /* same as above */
-    background-color: var(--color-gold);
+    background-color: white;
     mask-size: 0.7rem;
     mask-position: center;
     mask-repeat: no-repeat;
@@ -154,7 +154,7 @@
 
     /* if there's a link in the copy: */
     a {
-      color: var(--color-gold);
+      color: white;
       text-decoration: underline;
 
       &:focus,
