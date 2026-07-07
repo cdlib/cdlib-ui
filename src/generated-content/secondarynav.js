@@ -18,10 +18,9 @@ for (const i of menuItemsSkipFirst.keys()) {
 
 module.exports = {
   secondarynav: {
-    heading: {
-      level: '2',
-      id: 'secondarynav-heading',
+    header: {
       link: {
+        id: 'secondarynav-heading',
         text: firstTitle,
         url: firstUrl
       }

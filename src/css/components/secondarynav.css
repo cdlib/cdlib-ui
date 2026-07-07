@@ -10,6 +10,11 @@
       flex-shrink: 0;
       margin-inline-start: var(--space2);
     }
+
+    a {
+      color: white;
+      font-weight: 600;
+    }
   }
 
   ul ul ul {
