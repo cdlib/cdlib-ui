@@ -68,5 +68,12 @@ module.exports = {
       text: 'Link to Rich Text file',
       url: 'sample-url/document.rtf'
     }
+  },
+  sample13: {
+    link: {
+      id: 'link_id',
+      text: 'Link with an ID attribute',
+      url: 'https://cdlib.org'
+    }
   }
 }
