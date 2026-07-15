@@ -36,6 +36,7 @@ for (var i = 0; i < 15; i++) {
 
 module.exports = {
   table: {
+    caption: 'Table Caption Text',
     row1: tableHeader,
     row2: tableData
   }

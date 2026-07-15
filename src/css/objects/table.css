@@ -6,6 +6,14 @@ table {
   table-layout: fixed;
   border-collapse: collapse;
 
+  caption {
+    margin-block-end: var(--space2);
+    color: var(--color-dark-red);
+    font-size: 1.25em;
+    font-weight: 600;
+    text-align: start;
+  }
+
   th,
   td {
     padding: var(--space2);
