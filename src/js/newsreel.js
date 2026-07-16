@@ -1,7 +1,7 @@
 // ***** Newsreel Component ***** //
 
 const items = document.querySelectorAll('.c-newsreel li')
-const newsreelLinks = document.querySelectorAll('.c-newsreel a')
+const newsreelLinks = document.querySelectorAll('.c-newsreel ul a')
 const firstItem = document.querySelector('.c-newsreel li:first-child')
 const reelSpeed = 7000
 const playControl = document.querySelector('.c-newsreel__play')
