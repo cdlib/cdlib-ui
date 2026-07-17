@@ -29,18 +29,6 @@ if (headerNav && popoverSupport()) {
         // Initial state:
         expandedState()
 
-        // Show subnav on mouseover:
-        subNav.addEventListener('mouseover', () => {
-          subNavPopover.showPopover()
-          expandedState()
-        })
-
-        // Hide subnav on mouseout:
-        subNav.addEventListener('mouseout', () => {
-          subNavPopover.hidePopover()
-          expandedState()
-        })
-
         // Toggle subnav if link clicked:
         subNavLink.addEventListener('click', (e) => {
           subNavPopover.togglePopover()
