@@ -96,7 +96,7 @@ a {
     margin-inline-start: 0.4rem;
     transform: translateY(0.05rem);
     background-color: var(--color-gold);
-    mask-size: 0.8rem;
+    mask-size: contain;
     mask-position: center;
     mask-repeat: no-repeat;
     mask-image: url('data-url:npm:fa-solid/arrow-up-right-from-square.svg');
@@ -112,7 +112,7 @@ a {
     inline-size: 0.9rem;
     margin-inline-start: 0.4rem;
     transform: translateY(0.05rem);
-    mask-size: 0.8rem;
+    mask-size: contain;
     mask-position: center;
     mask-repeat: no-repeat;
   }
