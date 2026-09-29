@@ -1,8 +1,6 @@
-import './anchor-positioning.js'
 import './headernav.js'
 import './mediaqueries.js'
 import './newsreel.js'
-import './popover-support.js'
 import './sidebarposts.js'
 import './slideshow.js'
 import './toggles.js'

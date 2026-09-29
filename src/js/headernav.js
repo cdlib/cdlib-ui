@@ -1,52 +1,62 @@
-// Header Nav Component //
+// Headernav Component:
 
-import { popoverSupport } from './popover-support'
-const headerNav = document.querySelector('.js-headernav')
 const headerNavMediaQuery = window.matchMedia('(min-width: 760px)')
 
-if (headerNav && popoverSupport()) {
-  const subNavs = headerNav.querySelectorAll(':scope > ul > li:has(> ul)')
-  for (const subNav of subNavs) {
-    const subNavLink = subNav.querySelector('a')
-    const subNavPopover = subNav.querySelector('ul')
-    subNav.classList.add('c-headernav__section')
-    subNavLink.classList.add('c-headernav__link')
-    subNavPopover.classList.add('c-headernav__popover')
-    subNavPopover.popover = 'auto'
-    subNavLink.setAttribute('role', 'button')
+function clickLink (event) {
+  if (this.parentElement.classList.contains('open') === false) {
+    this.parentElement.classList.add('open')
+    this.setAttribute('aria-expanded', 'true')
+  } else {
+    this.parentElement.classList.remove('open')
+    this.setAttribute('aria-expanded', 'false')
+  }
+  event.preventDefault()
+}
 
-    const headerNavToggles = mq => {
-      // Only a <button> as a popover invoker has built-in accessiblity bindings, so set and toggle the link's aria expanded state:
-      const expandedState = () => {
-        if (subNavPopover.matches(':popover-open')) {
-          subNavLink.setAttribute('aria-expanded', 'true')
-        } else {
-          subNavLink.setAttribute('aria-expanded', 'false')
-        }
-      }
+const headerNavToggles = e => {
+  if (document.querySelector('.c-headernav') && e.matches) {
+    const allMenuItems = document.querySelectorAll('.c-headernav > ul > li');
 
-      if (mq.matches) {
-        // Initial state:
-        expandedState()
+    [].forEach.call(allMenuItems, function (el) {
+      document.querySelector('.c-headernav').classList.remove('c-headernav-no-js')
+      document.querySelector('.c-headernav').classList.add('c-headernav-js')
+      el.querySelector('a').setAttribute('aria-haspopup', 'true')
+      el.querySelector('a').setAttribute('aria-expanded', 'false')
 
-        // Toggle subnav if link clicked:
-        subNavLink.addEventListener('click', (e) => {
-          subNavPopover.togglePopover()
-          expandedState()
-          e.preventDefault() // disable link from going to its URL when clicked
-        })
+      el.addEventListener('mouseover', function (event) {
+        this.classList.add('open')
+        this.querySelector('a').setAttribute('aria-expanded', 'true')
+      })
 
-        // Hide previously opened subnav when keyboard focus leaves it:
-        subNav.addEventListener('focusout', (e) => {
-          if (!e.currentTarget.contains(e.relatedTarget)) {
-            subNavPopover.hidePopover()
-            expandedState()
-          }
-        })
-      }
-    }
+      el.addEventListener('mouseout', function (event) {
+        this.classList.remove('open')
+        this.querySelector('a').setAttribute('aria-expanded', 'false')
+      })
 
-    headerNavMediaQuery.addEventListener('change', headerNavToggles)
-    headerNavToggles(headerNavMediaQuery)
+      el.querySelector('a').addEventListener('click', clickLink)
+    });
+
+    [].forEach.call(allMenuItems, function (el) {
+      el.querySelector('a').addEventListener('focus', function (event) {
+        [].forEach.call(
+          allMenuItems,
+          function (el) {
+            if (el !== this.parentElement) {
+              el.classList.remove('open')
+              el.querySelector('a').setAttribute('aria-expanded', 'false')
+            }
+          }, this
+        )
+      })
+    })
+  } else {
+    const allMenuItems = document.querySelectorAll('.c-headernav > ul > li');
+
+    [].forEach.call(allMenuItems, function (el) {
+      el.querySelector('a').removeEventListener('click', clickLink)
+    })
   }
 }
+
+headerNavMediaQuery.addEventListener('change', headerNavToggles)
+headerNavToggles(headerNavMediaQuery)
