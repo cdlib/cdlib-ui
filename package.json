@@ -62,7 +62,7 @@
     "pa11y-ci": "^4.1.0",
     "parcel": "^2.16.4",
     "parcel-resolver-ignore": "^2.2.1",
-    "postcss": "^8.5.8",
+    "postcss": "^8.5.26",
     "postcss-import": "^16.1.1",
     "postcss-import-ext-glob": "^2.1.1",
     "snazzy": "^9.0.0",
