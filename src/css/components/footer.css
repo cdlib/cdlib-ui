@@ -85,7 +85,7 @@
 .c-footer__legal {
   margin-block-end: var(--space2);
   padding-block: var(--space2);
-  border-block: 1px solid oklch(88% 0 0deg);
+  border-block: 1px solid blue;
 
   @media print {
     display: none;
